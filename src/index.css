@@ -1,1 +1,130 @@
-/* Intentionally minimal. Main styling lives in src/styles/main.scss */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary: #cc2a09;
+  --primary-hover: #a51f04;
+  --heading: #272727;
+  --text: #4c4949;
+  --white: #ffffff;
+  --circle: #7b0053;
+  --stats-bg: #6e1a17;
+  --about-soft-bg: #f6f6f6;
+  --about-shadow-color: rgba(39, 39, 39, 0.16);
+  --about-accent: #031270;
+  --radius: 1.25rem;
+  --radius-small: 0.5rem;
+  --radius-large: 1.8125rem;
+  --container-width: 90%;
+  --max-width: 100rem;
+  --about-section-padding: 6.25rem;
+  --about-section-padding-tablet: 3.625rem;
+  --about-section-padding-mobile: 2.625rem;
+  --about-gap-desktop: 4.375rem;
+  --about-gap-large: 3.75rem;
+  --about-gap-laptop: 2.875rem;
+  --about-gap-mobile: 1.875rem;
+  --about-title-max: 37.5625rem;
+  --about-copy-max: 49.1875rem;
+  --about-title-margin: 2.5rem;
+  --about-copy-margin: 3.125rem;
+  --about-image-min: 20rem;
+  --about-image-max: 45.3125rem;
+  --about-image-height: 39.5625rem;
+  --about-image-height-laptop: 32.5rem;
+  --about-hover-offset: -0.5rem;
+  --about-hover-shadow: 0 1.5rem 3.125rem var(--about-shadow-color);
+  --about-accent-width: 36.5rem;
+  --about-accent-thickness: 0.25rem;
+  --about-accent-spacing: 1.125rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #ffffff;
+  color: #272727;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.about-page {
+  background: var(--white);
+  color: var(--heading);
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-page h1,
+.about-page h2,
+.about-page h3,
+.about-page h4,
+.about-page h5,
+.about-page h6,
+.about-page p,
+.about-page a,
+.about-page span,
+.about-page strong {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0;
+}
+
+.about-container {
+  width: var(--container-width);
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+.about-title {
+  width: min(100%, var(--about-title-max));
+  margin: 0 0 var(--about-title-margin);
+  color: var(--heading);
+  font-size: clamp(2.625rem, 4.4vw, 4.375rem);
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: capitalize;
+}
+
+.about-title-accent {
+  position: relative;
+  display: inline-block;
+  padding-bottom: var(--about-accent-spacing);
+}
+
+.about-title-accent::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: min(100%, var(--about-accent-width));
+  border-bottom: var(--about-accent-thickness) solid var(--about-accent);
+}
+
+.about-description {
+  width: min(100%, var(--about-copy-max));
+  margin: 0 0 var(--about-copy-margin);
+  color: var(--text);
+  font-size: clamp(1.125rem, 2vw, 2rem);
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: justify;
+}
