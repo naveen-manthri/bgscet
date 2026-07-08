@@ -1,11 +1,11 @@
 import BannerSection from '../components/BannerSection/BannerSection';
 import AboutMutt from '../components/AboutMutt/AboutMutt';
-import Statistics from '../components/Statistics/Statistics';
 import GuruSection from '../components/GuruSection/GuruSection';
 import CampusPlacements from '../components/CampusPlacements/CampusPlacements';
 import StudentTestimonials from '../components/StudentTestimonials/StudentTestimonials';
 import VisitCampus from '../components/VisitCampus/VisitCampus';
 import Advertisement from '../components/Advertisement/Advertisement';
+import Statistics from '../components/Statistics/Statistics';
 
 function AboutPage() {
   return (

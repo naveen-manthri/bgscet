@@ -16,11 +16,6 @@ const AboutMutt = () => {
           >
             {aboutMutt.title}
           </h2>
-
-          <div
-            className="about-mutt__divider"
-            aria-hidden="true"
-          />
         </header>
 
         <div className="about-mutt__content">

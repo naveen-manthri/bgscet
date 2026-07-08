@@ -1,7 +1,6 @@
 import HomeHeroCarousel from '../components/HomeHeroCarousel/HomeHeroCarousel';
 import Advertisement from '../components/Advertisement/Advertisement';
 import HomeAboutUniversity from '../components/HomeAboutUniversity/HomeAboutUniversity';
-import HomeStatistics from '../components/HomeStatistics/HomeStatistics';
 import HomeAboutMutt from '../components/HomeAboutMutt/HomeAboutMutt';
 import HomeVisionMission from '../components/HomeVisionMission/HomeVisionMission';
 import HomeAcademicPrograms from '../components/HomeAcademicPrograms/HomeAcademicPrograms';
@@ -11,6 +10,7 @@ import HomeCampusLife from '../components/HomeCampusLife/HomeCampusLife';
 import CampusPlacements from '../components/CampusPlacements/CampusPlacements';
 import StudentTestimonials from '../components/StudentTestimonials/StudentTestimonials';
 import VisitCampus from '../components/VisitCampus/VisitCampus';
+import Statistics from '../components/Statistics/Statistics';
 
 // const aboutImages = [
 //   'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=900&q=80',
@@ -30,7 +30,7 @@ function HomePage() {
 
         <HomeAboutUniversity />
 
-        <HomeStatistics />
+        <Statistics />
 
         <HomeAboutMutt />
 

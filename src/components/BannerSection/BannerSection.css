@@ -1,5 +1,4 @@
 :root {
-  --primary: #25d366;
   --white: #ffffff;
   --black: #000000;
   --overlay: rgba(0, 0, 0, 0.4);
@@ -10,17 +9,13 @@
 
 .banner-section {
   width: 100%;
-  padding: 2rem 1rem;
 }
 
 .banner-wrapper {
   position: relative;
   width: 100%;
-  max-width: 90rem;
   height: 24rem;
   margin: 0 auto;
-  overflow: hidden;
-  border-radius: var(--radius);
 }
 
 .banner-image {
