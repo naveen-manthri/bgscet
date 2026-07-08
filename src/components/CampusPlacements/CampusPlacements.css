@@ -50,7 +50,7 @@
   display: flex;
   width: max-content;
   gap: clamp(1rem, 3vw, 2rem);
-  animation: campus-logo-marquee 28s linear infinite;
+  animation: campus-logo-marquee 20s linear infinite;
   will-change: transform;
 }
 
@@ -69,8 +69,8 @@
 }
 
 .campus-placements__logo {
-  width: clamp(2.35rem, 5vw, 3.4rem);
-  height: clamp(2.35rem, 5vw, 3.4rem);
+  width: clamp(2.35rem, 5vw, 5rem);
+  height: clamp(2.35rem, 5vw, 4rem);
   object-fit: contain;
   margin-right: 0.45rem;
 }

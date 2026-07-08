@@ -49,12 +49,11 @@
   display: grid;
   grid-template-columns: 35rem 24rem;
   grid-template-rows: repeat(2, 17rem);
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .past-event-card {
   overflow: hidden;
-  border-radius: 1rem;
   background: var(--surface);
   box-shadow: var(--shadow);
   transition:
