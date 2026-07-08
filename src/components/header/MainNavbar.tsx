@@ -3,77 +3,88 @@ import { Link, NavLink } from 'react-router-dom';
 import { navItems } from '../../data/navData';
 
 function MainNavbar() {
+  const [isOpen, setIsOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
+  const closeMenu = () => {
+    setIsOpen(false);
+    setOpenDropdown(null);
+  };
+
   return (
-    <nav className="navbar navbar-expand-lg main-navbar sticky-top">
-      <div className="container">
-        <Link className="navbar-brand d-lg-none" to="/">
+    <nav className="main-navbar" aria-label="Primary navigation">
+      <div className="main-navbar__inner">
+        <Link className="main-navbar__brand" to="/" onClick={closeMenu}>
           BGSCET
         </Link>
 
         <button
-          className="navbar-toggler"
+          className="main-navbar__toggle"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNav"
-          aria-controls="mainNav"
-          aria-expanded="false"
+          aria-controls="main-navbar-menu"
+          aria-expanded={isOpen}
           aria-label="Toggle navigation"
+          onClick={() => setIsOpen((current) => !current)}
         >
-          <span className="navbar-toggler-icon" />
+          <span />
+          <span />
+          <span />
         </button>
 
-        <div className="collapse navbar-collapse" id="mainNav">
-          <ul className="navbar-nav mx-auto mb-2 mb-lg-0 nav-screenshot-wrap">
-            {navItems.map((item) => {
-              const hasChildren = Boolean(item.children?.length);
+        <ul className={`main-navbar__menu${isOpen ? ' is-open' : ''}`} id="main-navbar-menu">
+          {navItems.map((item) => {
+            const hasChildren = Boolean(item.children?.length);
 
-              if (hasChildren) {
-                return (
-                  <li
-                    className="nav-item dropdown"
-                    key={item.label}
-                    onMouseEnter={() => setOpenDropdown(item.label)}
-                    onMouseLeave={() => setOpenDropdown(null)}
-                  >
-                    <NavLink
-                      className={({ isActive }) =>
-                        `nav-link dropdown-toggle ${isActive ? 'active' : ''}`
-                      }
-                      to={item.path}
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded={openDropdown === item.label}
-                    >
-                      {item.label}
-                    </NavLink>
-                    <ul className={`dropdown-menu dropdown-menu-end ${openDropdown === item.label ? 'show' : ''}`}>
-                      {item.children?.map((child) => (
-                        <li key={child.label}>
-                          <Link className="dropdown-item" to={child.path}>
-                            {child.label}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </li>
-                );
-              }
-
-              return (
-                <li className="nav-item" key={item.label}>
+            return (
+              <li
+                className="main-navbar__item"
+                key={item.label}
+                onMouseEnter={() => setOpenDropdown(item.label)}
+                onMouseLeave={() => setOpenDropdown(null)}
+              >
+                {/* <div className="main-navbar__link-row">
                   <NavLink
-                    className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
+                    className={({ isActive }) => `main-navbar__link${isActive ? ' is-active' : ''}`}
                     to={item.path}
+                    onClick={closeMenu}
                   >
                     {item.label}
                   </NavLink>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
+
+                  {hasChildren ? (
+                    <button
+                      className="main-navbar__dropdown-button"
+                      type="button"
+                      aria-label={`Toggle ${item.label} menu`}
+                      aria-expanded={openDropdown === item.label}
+                      onClick={() => setOpenDropdown((current) => (current === item.label ? null : item.label))}
+                    >
+                      v
+                    </button>
+                  ) : null}
+                </div> */}
+
+                <div className="main-navbar__link-row">
+                  <NavLink className={({ isActive }) => `main-navbar__link${isActive ? ' is-active' : ''}`
+                    } to={item.path} onClick={closeMenu}> {item.label}
+                  </NavLink>
+                </div>
+
+                {hasChildren ? (
+                  <ul className={`main-navbar__dropdown${openDropdown === item.label ? ' is-open' : ''}`}>
+                    {item.children?.map((child) => (
+                      <li key={child.label}>
+                        <Link className="main-navbar__dropdown-link" to={child.path} onClick={closeMenu}>
+                          {child.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </nav>
   );

@@ -1,0 +1,136 @@
+:root {
+  --primary: #25d366;
+  --white: #ffffff;
+  --black: #000000;
+  --overlay: rgba(0, 0, 0, 0.4);
+  --radius: 1rem;
+  --transition: 0.3s ease;
+  --shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.banner-section {
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+.banner-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 90rem;
+  height: 24rem;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--overlay);
+  z-index: 1;
+}
+
+.banner-title {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.banner-whatsapp {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 3;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.banner-whatsapp:hover {
+  transform: scale(1.08);
+}
+
+.banner-whatsapp-icon {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+@media (max-width: 64rem) {
+  .banner-wrapper {
+    height: 20rem;
+  }
+
+  .banner-title {
+    font-size: 2.5rem;
+  }
+
+  .banner-whatsapp {
+    width: 3rem;
+    height: 3rem;
+    right: 1.25rem;
+    bottom: 1.25rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .banner-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .banner-wrapper {
+    height: 14rem;
+    border-radius: 0.75rem;
+  }
+
+  .banner-title {
+    padding: 0 1rem;
+    font-size: 1.8rem;
+  }
+
+  .banner-whatsapp {
+    width: 2.6rem;
+    height: 2.6rem;
+    right: 0.8rem;
+    bottom: 0.8rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .banner-wrapper {
+    height: 12rem;
+  }
+
+  .banner-title {
+    font-size: 1.5rem;
+  }
+
+  .banner-whatsapp {
+    width: 2.3rem;
+    height: 2.3rem;
+    right: 0.6rem;
+    bottom: 0.6rem;
+  }
+}

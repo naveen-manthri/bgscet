@@ -1,0 +1,106 @@
+.home-about-university {
+  padding: clamp(3rem, 6vw, 5rem) 0;
+  background: var(--surface);
+}
+
+.home-about-university__inner {
+  width: var(--home-container-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  align-items: center;
+  gap: clamp(2.2rem, 5vw, 4.4rem);
+}
+
+.home-about-university__media {
+  position: relative;
+  min-height: clamp(20rem, 36vw, 28rem);
+}
+
+.home-about-university__image {
+  position: absolute;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+}
+
+.home-about-university__image--front {
+  left: 0;
+  bottom: 0.6rem;
+  z-index: 2;
+  width: 47%;
+  height: 76%;
+}
+
+.home-about-university__image--back {
+  left: 49%;
+  top: 1.2rem;
+  z-index: 1;
+  width: 50%;
+  height: 82%;
+  margin-left: 0.5rem;
+}
+
+.home-about-university__badge {
+  position: absolute;
+  left: 37%;
+  bottom: 23%;
+  z-index: 3;
+  width: clamp(3.8rem, 10vw, 6.5rem);
+  height: clamp(3.8rem, 10vw, 6.5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 0.6rem;
+  border-radius: var(--radius-pill);
+  background: var(--badge-bg);
+  color: var(--white);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.home-about-university__badge img {
+  width: 42%;
+  height: 42%;
+  object-fit: contain;
+  border-radius: var(--radius-pill);
+}
+
+.home-about-university__badge span {
+  max-width: 5.4rem;
+  font-size: clamp(0.48rem, 0.9vw, 0.62rem);
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.home-about-university__content p {
+  margin: 1.25rem 0 1.75rem;
+  color: var(--text-soft);
+  font-size: var(--body);
+  line-height: 1.58;
+  text-align: justify;
+}
+
+.home-about-university .home-section-title::after {
+  border-bottom: 0.25rem solid var(--about-title-underline);
+}
+
+@media (max-width: 52em) {
+  .home-about-university__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .home-about-university__media {
+    width: min(100%, 34rem);
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 36em) {
+  .home-about-university__media {
+    min-height: 18rem;
+  }
+}

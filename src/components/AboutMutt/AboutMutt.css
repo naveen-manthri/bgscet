@@ -1,0 +1,115 @@
+:root {
+  /* Colors */
+  --color-primary: #2d3d8f;
+  --color-background: #ffffff;
+  --color-heading: #1f1f1f;
+  --color-text: #4b4b4b;
+
+  /* Typography */
+  --font-family: "Poppins", sans-serif;
+
+  --font-size-sm: 0.95rem;
+  --font-size-base: 1rem;
+  --font-size-xl: 2rem;
+  --font-size-2xl: 2.75rem;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-normal: 1.8;
+
+  /* Spacing */
+  --spacing-2: 0.5rem;
+  --spacing-4: 1rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-10: 2.5rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+
+  /* Layout */
+  --container-width: 75rem;
+}
+
+.about-mutt {
+  width: 100%;
+  background: var(--color-background);
+  padding: var(--spacing-4) 0;
+  margin:0 1rem;
+}
+
+.about-mutt__container {
+  width: min(100% - 2rem, var(--container-width));
+  margin: 0 auto;
+  padding: 0 var(--spacing-8);
+}
+
+.about-mutt__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: var(--spacing-12);
+}
+
+.about-mutt__title {
+  margin: 0;
+  color: var(--color-heading);
+  font-family: var(--font-family);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.about-mutt__divider {
+  width: 7rem;
+  height: 0.2rem;
+  margin-top: var(--spacing-4);
+  background: var(--color-primary);
+  border-radius: 999px;
+}
+
+.about-mutt__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+}
+
+.about-mutt__paragraph {
+  margin: 0;
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+  text-align: justify;
+}
+
+.about-mutt__paragraph strong {
+  color: var(--color-heading);
+  font-weight: var(--font-weight-bold);
+}
+
+@media (max-width: 768px) {
+  .about-mutt {
+    padding: var(--spacing-12) 0;
+  }
+
+  .about-mutt__title {
+    font-size: var(--font-size-xl);
+  }
+
+  .about-mutt__content {
+    gap: var(--spacing-6);
+  }
+
+  .about-mutt__paragraph {
+    font-size: var(--font-size-sm);
+  }
+
+  .about-mutt__divider {
+    width: 5rem;
+  }
+}

@@ -5,41 +5,22 @@ import rightLogo from '../../assets/images/bgscet_logo-2.png';
 function MainHeader() {
   return (
     <header className="main-header">
-      <div className="container-fluid px-3 px-lg-4 py-3 py-lg-2">
-        <div className="row align-items-center g-2 g-lg-3 flex-nowrap header-masthead">
-          <div className="col-auto">
-            <Link to="/" className="d-inline-flex align-items-center text-decoration-none">
-              <img
-                className="header-logo-image"
-                src={leftLogo}
-                alt="BGSCET logo"
-                loading="eager"
-              />
-            </Link>
-          </div>
+      <div className="main-header__inner">
+        <Link to="/" className="main-header__logo-link" aria-label="Go to BGSCET home">
+          <img className="main-header__logo" src={leftLogo} alt="BGSCET logo" loading="eager" />
+        </Link>
 
-          <div className="col text-center header-copy-col">
-            <p className="header-pretitle mb-1">|| Jai Sri Gurudev ||</p>
-            <p className="header-subtitle mb-1">
-              BGSKH Education Trust (R.) - A unit of Sri Adichunchanagiri Shikshana Trust(R.)
-            </p>
-            <h1 className="college-name mb-1">BGS College of Engineering and Technology (BGSCET)</h1>
-            <p className="header-meta mb-0">
-              (Approved by AICTE, New Delhi and Affiliated to VTU, Belagavi)
-            </p>
-          </div>
-
-          <div className="col-auto d-none d-md-flex align-items-center gap-2 gap-lg-3">
-            <img
-              className="header-emblem-image"
-              src={rightLogo}
-              alt="BGSCET emblem"
-              loading="eager"
-            />
-          </div>
+        <div className="main-header__copy">
+          <p className="main-header__pretitle">|| Jai Sri Gurudev ||</p>
+          <p className="main-header__subtitle">
+            BGSKH Education Trust (R.) - A unit of Sri Adichunchanagiri Shikshana Trust(R.)
+          </p>
+          <h1 className="main-header__title">BGS College of Engineering and Technology (BGSCET)</h1>
+          <p className="main-header__meta">(Approved by AICTE, New Delhi and Affiliated to VTU, Belagavi)</p>
         </div>
+
+        <img className="main-header__emblem" src={rightLogo} alt="BGSCET emblem" loading="eager" />
       </div>
-      <div className="header-divider" />
     </header>
   );
 }
