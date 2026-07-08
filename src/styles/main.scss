@@ -20,13 +20,13 @@
 html,
 body,
 #root {
+  font-family: "Poppins", sans-serif !important;
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: 'Manrope', sans-serif;
   color: var(--ink);
   background: linear-gradient(180deg, #f9f5f4 0%, #ffffff 18rem);
   overflow-x: hidden;
@@ -38,7 +38,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'DM Serif Display', serif;
   letter-spacing: 0.2px;
 }
 
@@ -430,7 +429,6 @@ a {
 }
 
 .ratio-value {
-  font-family: 'DM Serif Display', serif;
   font-size: clamp(1.8rem, 3vw, 2.65rem);
   line-height: 1;
   color: #fff;

@@ -10,8 +10,6 @@
 
   --container-width: 75rem;
 
-  --font-family: "Poppins", sans-serif;
-
   --fs-title: 1.95rem;
   --fs-subtitle: 1.85rem;
   --fs-heading: 1.12rem;
@@ -46,7 +44,6 @@
 }
 
 body {
-  font-family: var(--font-family);
   background: #f8f8f8;
 }
 

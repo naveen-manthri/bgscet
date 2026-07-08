@@ -53,8 +53,8 @@
   --text-sm: clamp(0.72rem, 1.2vw, 0.86rem);
   --footer-text: clamp(0.74rem, 1.25vw, 0.875rem);
   --button-text: clamp(0.82rem, 1.45vw, 1rem);
-  --font-main: Inter, Poppins, system-ui, sans-serif;
-  --button-font: poppins, system-ui, sans-serif;
+  --font-main: "Poppins", sans-serif;
+  --button-font: var(--font-main);
 }
 
 * {
