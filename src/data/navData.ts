@@ -9,22 +9,22 @@ export const navItems: NavItem[] = [
   {
     label: 'About',
     path: '/about',
-    children: [
-      { label: 'Vision & Mission', path: '/about#vision' },
-      { label: 'Chairman Message', path: '/about#chairman' },
-      { label: 'Principal Message', path: '/about#principal' },
-      { label: 'Governing Body', path: '/about#governing' },
-    ],
+    // children: [
+    //   { label: 'Vision & Mission', path: '/about#vision' },
+    //   { label: 'Chairman Message', path: '/about#chairman' },
+    //   { label: 'Principal Message', path: '/about#principal' },
+    //   { label: 'Governing Body', path: '/about#governing' },
+    // ],
   },
   {
     label: 'Admissions',
     path: '/admissions',
-    children: [
-      { label: 'Eligibility', path: '/admissions#eligibility' },
-      { label: 'Fee Structure', path: '/admissions#fees' },
-      { label: 'Scholarships', path: '/admissions#scholarships' },
-      { label: 'Apply Now', path: '/admissions#apply' },
-    ],
+    // children: [
+    //   { label: 'Eligibility', path: '/admissions#eligibility' },
+    //   { label: 'Fee Structure', path: '/admissions#fees' },
+    //   { label: 'Scholarships', path: '/admissions#scholarships' },
+    //   { label: 'Apply Now', path: '/admissions#apply' },
+    // ],
   },
   {
     label: 'UG Programs',

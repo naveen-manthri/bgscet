@@ -12,7 +12,7 @@ function AboutPage() {
     <div className="about-page">
       <BannerSection
         image="https://res.cloudinary.com/dxjzq6f0g/image/upload/v1697040913/BGSCET-PROJECT/Images/about-banner_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_kv7b5k.jpg"
-        title="About BGSCET"
+        title="About Mutt"
         whatsappLink="https://wa.me/919900000000"
         />
       <Advertisement />
