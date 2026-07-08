@@ -6,7 +6,7 @@
 }
 
 .student-testimonials__inner {
-  width: var(--container-width);
+  width: min(94%, 80rem);
   margin: 0 auto;
 }
 

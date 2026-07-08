@@ -80,7 +80,7 @@
   flex: 0 0 17rem;
   height: 20rem;
   overflow: hidden;
-  border-radius: 1rem;
+  border-radius: var(--radius);
   cursor: pointer;
   transition: transform var(--transition);
 }
