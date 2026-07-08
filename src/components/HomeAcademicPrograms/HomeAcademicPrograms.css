@@ -1,0 +1,202 @@
+
+.home-academic {
+  padding: var(--section-padding);
+  background: var(--white);
+  overflow: hidden;
+}
+
+.home-academic .container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+}
+
+.section-heading-academic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section-heading-academic h2 {
+  position: relative;
+  width: fit-content;
+  margin: 0;
+  color: var(--text);
+  font-size: var(--heading-size);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.section-heading-academic h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  margin-top: 0.5rem;
+  border-bottom: 0.12rem solid var(--text);
+  border-radius: var(--radius-pill);
+}
+
+.heading-line {
+  display: none;
+}
+
+
+.programs-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.programs-track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  animation: academic-scroll 28s linear infinite;
+}
+
+.programs-slider:hover .programs-track {
+  animation-play-state: paused;
+}
+
+@keyframes academic-scroll {
+
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+
+}
+
+
+.program-card {
+  position: relative;
+  flex: 0 0 17rem;
+  height: 20rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: transform var(--transition);
+}
+
+.program-card:hover {
+  transform: translateY(-0.4rem);
+}
+
+.program-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+.program-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem;
+  background: linear-gradient(
+    to top,
+    rgba(9, 23, 97, 0.92) 0%,
+    rgba(9, 23, 97, 0.72) 30%,
+    rgba(9, 23, 97, 0.18) 65%,
+    transparent 100%
+  );
+}
+
+.program-overlay h3 {
+  margin: 0;
+  color: var(--white);
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+
+.admission-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.admission-btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1rem 2.5rem;
+  border-radius: 0.5rem;
+  background: var(--secondary-deep);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 600;
+  transition:
+    background var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.admission-btn:hover {
+  background: var(--secondary);
+  transform: translateY(-0.2rem);
+  box-shadow: var(--shadow);
+}
+
+.admission-btn:focus-visible {
+  outline: 0.18rem solid var(--primary);
+  outline-offset: 0.25rem;
+}
+
+
+@media (max-width: 64rem) {
+
+  .program-card {
+    flex-basis: 15rem;
+    height: 20rem;
+  }
+
+}
+
+@media (max-width: 48rem) {
+
+  .home-academic .container {
+    gap: 2.5rem;
+  }
+
+  .program-card {
+    flex-basis: 13rem;
+    height: 17rem;
+  }
+
+  .program-overlay {
+    padding: 1rem;
+  }
+
+  .program-overlay h3 {
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 36rem) {
+
+  .program-card {
+    flex-basis: 11rem;
+    height: 15rem;
+  }
+
+  .program-overlay h3 {
+    font-size: 0.95rem;
+  }
+
+  .admission-btn {
+    width: 100%;
+    max-width: 20rem;
+  }
+}

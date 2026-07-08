@@ -1,22 +1,41 @@
-import { aboutMutt } from '../../data/aboutData';
-import './AboutMutt.css';
+import { aboutMutt } from "../../data/aboutMutt";
 
-function AboutMutt() {
+import "./AboutMutt.css";
+
+const AboutMutt = () => {
   return (
-    <section className="about-mutt-section" aria-labelledby="about-mutt-title">
-      <div className="about-container about-two-column">
-        <div className="about-copy">
-          <h2 id="about-mutt-title" className="about-title">
+    <section
+      className="about-mutt"
+      aria-labelledby="about-mutt-title"
+    >
+      <div className="about-mutt__container">
+        <header className="about-mutt__header">
+          <h2
+            id="about-mutt-title"
+            className="about-mutt__title"
+          >
             {aboutMutt.title}
           </h2>
-          <p className="about-description">{aboutMutt.description}</p>
-        </div>
-        <div className="about-image-panel">
-          <img src={aboutMutt.image} alt="Sri Adichunchanagiri Mutt event" loading="lazy" />
+
+          <div
+            className="about-mutt__divider"
+            aria-hidden="true"
+          />
+        </header>
+
+        <div className="about-mutt__content">
+          {aboutMutt.description.map((paragraph, index) => (
+            <p
+              key={index}
+              className="about-mutt__paragraph"
+            >
+              {paragraph}
+            </p>
+          ))}
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default AboutMutt;

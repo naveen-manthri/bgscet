@@ -1,92 +1,38 @@
-import { Link } from 'react-router-dom';
+import { footerColumns, footerInfo } from '../../data/landingData';
+import './Footer.css';
 
 function Footer() {
   return (
-    <footer className="site-footer">
-      <div className="footer-top py-5">
-        <div className="container">
-          <div className="row g-4">
-            <div className="col-lg-4">
-              <div className="d-flex align-items-start gap-3 mb-3">
-                <div className="college-logo-placeholder small">
-                  <i className="bi bi-mortarboard-fill" />
-                </div>
-                <div>
-                  <h4 className="footer-title mb-1">BGS College of Engineering & Technology</h4>
-                  <p className="footer-text mb-0">
-                    Nurturing future-ready engineers with academic excellence, innovation, and values.
-                  </p>
-                </div>
-              </div>
-              <ul className="footer-contact list-unstyled mb-0">
-                <li>
-                  <i className="bi bi-geo-alt-fill" /> Kengeri, Bengaluru, Karnataka - 560060
-                </li>
-                <li>
-                  <i className="bi bi-telephone-fill" /> +91 80 1234 5678
-                </li>
-                <li>
-                  <i className="bi bi-envelope-fill" /> admissions@bgscet.edu.in
-                </li>
-              </ul>
-            </div>
+    <footer className="footer">
+      <div className="footer__main">
+        <section className="footer__brand" aria-label="College information">
+          <img className="footer__logo" src={footerInfo.logo} alt="BGS College of Engineering and Technology logo" />
+          <p className="footer__description">{footerInfo.description}</p>
+        </section>
 
-            <div className="col-6 col-md-3 col-lg-2">
-              <h5 className="footer-heading">Schools</h5>
-              <ul className="footer-links list-unstyled mb-0">
-                <li><Link to="/departments/cse">School of Computing</Link></li>
-                <li><Link to="/departments/ece">School of Electronics</Link></li>
-                <li><Link to="/departments/mech">School of Mechanical</Link></li>
-                <li><Link to="/departments/civil">School of Civil</Link></li>
+        <nav className="footer__nav" aria-label="Footer navigation">
+          {footerColumns.map((column) => (
+            <section className="footer__column" key={column.id} aria-labelledby={`footer-column-${column.id}`}>
+              <h2 className="footer__heading" id={`footer-column-${column.id}`}>
+                {column.title}
+              </h2>
+              <ul className="footer__list">
+                {column.links.map((link) => (
+                  <li className="footer__item" key={link}>
+                    <a className="footer__link" href="/">
+                      {link}
+                    </a>
+                  </li>
+                ))}
               </ul>
-            </div>
-
-            <div className="col-6 col-md-3 col-lg-2">
-              <h5 className="footer-heading">Colleges</h5>
-              <ul className="footer-links list-unstyled mb-0">
-                <li><Link to="/about">About BGSCET</Link></li>
-                <li><Link to="/facilities">Campus Life</Link></li>
-                <li><Link to="/placements">Placements</Link></li>
-                <li><Link to="/gallery">Gallery</Link></li>
-              </ul>
-            </div>
-
-            <div className="col-6 col-md-3 col-lg-2">
-              <h5 className="footer-heading">Quick Links</h5>
-              <ul className="footer-links list-unstyled mb-0">
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">Vision & Mission</Link></li>
-                <li><Link to="/departments">Departments</Link></li>
-                <li><Link to="/contact">Contact Us</Link></li>
-              </ul>
-            </div>
-
-            <div className="col-6 col-md-3 col-lg-2">
-              <h5 className="footer-heading">Admissions</h5>
-              <ul className="footer-links list-unstyled mb-0">
-                <li><Link to="/admissions#eligibility">Eligibility</Link></li>
-                <li><Link to="/admissions#fees">Fee Structure</Link></li>
-                <li><Link to="/admissions#scholarships">Scholarships</Link></li>
-                <li><Link to="/admissions#apply">Apply Now</Link></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+            </section>
+          ))}
+        </nav>
       </div>
 
-      <div className="footer-bottom py-3">
-        <div className="container">
-          <div className="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
-            <p className="mb-0">© 2026 Engineering College. All Rights Reserved.</p>
-            <p className="mb-0">Designed & Developed By BGSCET Web Team</p>
-            <div className="social-links d-flex gap-2">
-              <a href="#" aria-label="Facebook"><i className="bi bi-facebook" /></a>
-              <a href="#" aria-label="Instagram"><i className="bi bi-instagram" /></a>
-              <a href="#" aria-label="LinkedIn"><i className="bi bi-linkedin" /></a>
-              <a href="#" aria-label="YouTube"><i className="bi bi-youtube" /></a>
-            </div>
-          </div>
-        </div>
+      <div className="footer__bottom">
+        <p className="footer__copyright">(c) www.bgscet.ac.in All rights reserved</p>
+        <p className="footer__credit">Designed By Curator Design</p>
       </div>
     </footer>
   );

@@ -1,0 +1,119 @@
+.guru-card {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--spacing-10);
+  align-items: start;
+  margin-bottom: var(--spacing-16);
+  padding: 0 var(--spacing-8);
+}
+
+.guru-card--reverse {
+  grid-template-columns: 1fr 2fr;
+}
+
+.guru-card--reverse .guru-card__content {
+  order: 2;
+}
+
+.guru-card--reverse .guru-card__figure {
+  order: 1;
+}
+
+.guru-card__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.guru-card__title {
+  margin: 0 0 var(--spacing-6);
+  color: var(--color-heading);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+}
+
+.guru-card__paragraph {
+  margin: 0 0 var(--spacing-5);
+  color: var(--color-text);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-relaxed);
+  text-align: justify;
+}
+
+.guru-card__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.guru-card__figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.guru-card__image {
+  width: 100%;
+  max-width: 22rem;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.guru-card__caption {
+  margin-top: var(--spacing-4);
+  color: var(--color-heading);
+  background-color: var(--guru-image-desc);
+  padding: var(--spacing-2) var(--spacing-4);
+  border-radius: var(--radius-md);
+  width: 100%;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  text-align: center;
+  line-height: var(--line-height-normal);
+}
+
+@media (max-width: 64rem) {
+  .guru-card,
+  .guru-card--reverse {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-8);
+  }
+
+  .guru-card__content,
+  .guru-card__figure,
+  .guru-card--reverse .guru-card__content,
+  .guru-card--reverse .guru-card__figure {
+    order: initial;
+  }
+
+  .guru-card__figure {
+    justify-self: center;
+  }
+
+  .guru-card__title {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+@media (max-width: 48rem) {
+  .guru-card {
+    gap: var(--spacing-6);
+    margin-bottom: var(--spacing-12);
+  }
+
+  .guru-card__title {
+    font-size: var(--font-size-xl);
+  }
+
+  .guru-card__paragraph {
+    font-size: var(--font-size-sm);
+  }
+
+  .guru-card__image {
+    max-width: 18rem;
+  }
+}

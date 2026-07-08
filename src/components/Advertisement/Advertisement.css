@@ -1,0 +1,24 @@
+.advertisement{
+     margin: 0;
+  padding: 0.45rem 1rem;
+  background: var(--primary-deep);
+  color: var(--white);
+  font-size: clamp(0.72rem, 1.2vw, 0.9rem);
+  font-weight: 600;
+  line-height: 2.45;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .advertisement {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .advertisement {
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+}

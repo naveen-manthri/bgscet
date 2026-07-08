@@ -17,7 +17,7 @@ export const galleryItems: GalleryItem[] = [
   { id: 7, title: 'Library Reading Hall', category: 'Campus', image: 'https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=800&q=80' },
   { id: 8, title: 'Hackathon 2025', category: 'Events', image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80' },
   { id: 9, title: 'AI/ML Workshop', category: 'Workshops', image: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80' },
-  { id: 10, title: 'Football Tournament', category: 'Sports', image: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80' },
+  { id: 10, title: 'Cricket Tournament', category: 'Sports', image: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80' },
   { id: 11, title: 'Dance Performance', category: 'Cultural', image: 'https://images.unsplash.com/photo-1547153760-18fc86324498?w=800&q=80' },
   { id: 12, title: 'Convocation Ceremony', category: 'Convocation', image: 'https://images.unsplash.com/photo-1627556704302-624286467c65?w=800&q=80' },
   { id: 13, title: 'Campus Green Zone', category: 'Campus', image: 'https://images.unsplash.com/photo-1562774053-701939374585?w=800&q=80' },

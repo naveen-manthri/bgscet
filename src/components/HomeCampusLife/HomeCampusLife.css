@@ -1,0 +1,219 @@
+.home-campus-life {
+  padding: var(--section-padding);
+  background: var(--white);
+}
+
+.home-campus-life .container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+
+.section-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: var(--heading-size);
+  font-weight: 700;
+  color: var(--text);
+}
+
+.heading-line {
+  width: 10rem;
+  height: 0.12rem;
+  background: var(--text);
+  border-radius: 999rem;
+}
+
+/* 
+.campus-life-grid {
+  display: grid;
+
+  grid-template-columns:
+    1.35fr
+    1fr
+    1.35fr;
+
+  grid-template-rows:
+    13rem
+    13rem
+    13rem;
+
+  gap: 1.5rem;
+}
+
+.campus-life-card {
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.campus-life-card:hover {
+  transform: translateY(-0.35rem);
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.15);
+}
+
+.campus-life-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+.campus-life-card-1 {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+
+.campus-life-card-2 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.campus-life-card-3 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.campus-life-card-4 {
+  grid-column: 3;
+  grid-row: 1 / 3;
+}
+
+.campus-life-card-5 {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+
+.campus-life-card-6 {
+  grid-column: 2;
+  grid-row: 2 / 4;
+} */
+
+.campus-life-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  grid-template-rows:
+    15rem   
+    17rem   
+    14rem;  
+
+  gap: 1.5rem;
+
+  grid-template-areas:
+    "one one two"
+    "three four two"
+    "five five six";
+}
+
+.campus-life-card {
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.campus-life-card:hover {
+  transform: translateY(-0.35rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .15);
+}
+
+.campus-life-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.campus-life-card-1 {
+  grid-area: one;
+}
+
+.campus-life-card-2 {
+  grid-area: two;
+}
+
+.campus-life-card-3 {
+  grid-area: three;
+}
+
+.campus-life-card-4 {
+  grid-area: four;
+}
+
+.campus-life-card-5 {
+  grid-area: five;
+}
+
+.campus-life-card-6 {
+  grid-area: six;
+}
+
+@media (max-width:64rem){
+
+    .campus-life-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        grid-template-rows:auto;
+
+    }
+
+    .campus-life-card{
+
+        grid-column:auto !important;
+
+        grid-row:auto !important;
+
+        aspect-ratio:4/3;
+
+    }
+
+}
+
+@media (max-width:48rem){
+
+    .campus-life-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .campus-life-card{
+
+        aspect-ratio:16/10;
+
+    }
+
+}
+
+@media (max-width:36rem){
+
+    .home-campus-life .container{
+
+        gap:2rem;
+
+    }
+
+    .heading-line{
+
+        width:8rem;
+
+    }
+
+}
