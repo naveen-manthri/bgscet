@@ -1,5 +1,5 @@
 import "./AdmissionSection.css";
-import admissionImage from "../../assets/images/about-mutt.jpg";
+import admissionImage from "../../assets/images/admission/admission-image-1.jpg";
 
 const courses: string[] = [
   "COMPUTER SCIENCE AND ENGINEERING",

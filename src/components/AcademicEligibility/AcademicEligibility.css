@@ -96,7 +96,6 @@
 
 .image-card {
   overflow: hidden;
-  border-radius: var(--radius);
 }
 
 .image-card img {
@@ -120,7 +119,6 @@
 }
 
 .eligibility-list li {
-  margin-bottom: 1.5rem;
   font-size: 1rem;
   line-height: 1.85;
   text-align: justify;
@@ -131,9 +129,8 @@
 }
 
 .exam-list {
-  margin-top: 2rem;
   margin-bottom: 2.5rem;
-  padding-left: 1.3rem;
+  padding-left: 2rem;
   color: var(--text);
 }
 

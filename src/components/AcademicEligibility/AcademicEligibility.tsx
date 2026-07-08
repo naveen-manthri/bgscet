@@ -1,9 +1,6 @@
 import "./AcademicEligibility.css";
-
-import topImage from "../../assets/images/academic/artificial-intelligence.jpg";
- import bottomImage from "../../assets/images/academic/civil-engineering.jpg";
-
-
+import topImage from "../../assets/images/admission/admission-image-2.jpg";
+ import bottomImage from "../../assets/images/admission/admission-image-3.jpg";
 
 function AcademicEligibility() {
   return (
@@ -35,43 +32,21 @@ function AcademicEligibility() {
           <div className="eligibility-content">
 
             <ol className="eligibility-list">
-
               <li>
-                
                   FOR GENERAL MERIT CANDIDATES:
                 
-
-                A candidate who has Passed in 2nd PUC / 12th Std /
-                Equivalent Examination with English as one of the Language
-                and obtained a Minimum of 45% of Marks in aggregate in
-                Physics and Mathematics as compulsory subjects along with
-                Chemistry / Bio Technology / Biology / Computer Science /
-                Electronics as optional subjects in the qualifying
-                examination is eligible to pursue undergraduate programs
-                (B.E.).
+                A candidate who has Passed in 2nd PUC / 12th Std / Equivalent Examination with English as one of the Language and obtained a Minimum of 45% of Marks in aggregate in Physics and Mathematics as compulsory subjects along with Chemistry / Bio Technology / Biology / Computer Science / Electronics as optional subjects in the qualifying examination is eligible to pursue in under graduate programs (B.E.).
               </li>
 
               <li>
                   FOR SC/ST &amp; OBC (Cat-I, 2A, 2B, 3A &amp; 3B)
                   CATEGORY CANDIDATES:
                 
-
-                A candidate who has Passed in 2nd PUC / 12th Std /
-                Equivalent Examination with English as one of the Language
-                and obtained a Minimum of 40% of Marks in aggregate in
-                Physics and Mathematics as compulsory subjects along with
-                Chemistry / Bio Technology / Biology / Computer Science /
-                Electronics as optional subjects in the qualifying
-                examination is eligible to pursue undergraduate programs
-                (B.E.).
+                A candidate who has Passed in 2nd PUC / 12th Std / Equivalent Examination with English as one of the Language and obtained a Minimum of 40% of Marks in aggregate in Physics and Mathematics as compulsory subjects along with Chemistry / Bio Technology / Biology / Computer Science / Electronics as optional subjects in the qualifying examination is eligible to pursue in under graduate programs (B.E.).
 
                 <br />
 
-                The marks obtained by the candidate in Biotechnology /
-                Biology / Computer Science / Electronics in the qualifying
-                examination will be considered in the place of Chemistry if
-                the marks obtained in Chemistry are less for the required
-                aggregate percentage.
+                The marks obtained by the candidate in Biotechnology/Biology/Computer Science / Electronics in the qualifying examination will be considered in the place of Chemistry in case the marks obtained in Chemistry is less for the required aggregate percentage for the pursue of determination of eligibility.
               </li>
 
             </ol>
@@ -84,8 +59,8 @@ function AcademicEligibility() {
               </li>
 
               <li>
-                Management Quota Admissions :
-                <span> Students have to take any one Entrance Examination.</span>
+                For Management Quota Admissions:
+                <span> Students have to take any one of the Entrance Examination.</span>
               </li>
 
             </ul>
