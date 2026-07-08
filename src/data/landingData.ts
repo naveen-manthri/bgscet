@@ -1,4 +1,4 @@
-import collegeLogo from '../assets/images/bgscet_logo-1.png';
+import collegeLogo from '../assets/images/bgscet_footer_logo.png';
 import Student1 from '../assets/images/students-img/student-01.png';
 import Student2 from '../assets/images/students-img/student-02.png';
 import Student3 from '../assets/images/students-img/student-03.png';

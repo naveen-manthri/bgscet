@@ -45,12 +45,11 @@
 .news-grid {
   display: grid;
   grid-template-rows: repeat(2, 17rem);
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .news-card {
   overflow: hidden;
-  border-radius: 1rem;
   background: var(--surface);
   box-shadow: var(--shadow);
   transition:

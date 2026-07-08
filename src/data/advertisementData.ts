@@ -5,5 +5,5 @@ export interface AdvertisementData {
 
 export const advertisementData: AdvertisementData = {
   id: 1,
-  text: "Advertisement: Admissions are now open for 2025 at BGSCET Engineering College.",
+  text: "Advertisement : Admission open by 2026 by BGSCET Engineering College",
 };

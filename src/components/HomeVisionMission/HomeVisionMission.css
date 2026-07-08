@@ -1,5 +1,5 @@
 .home-vision-mission {
-  padding: clamp(3rem, 6vw, 5rem) 0;
+  padding: clamp(3rem, 6vw, 3rem) 0;
   
   background: var(--section-soft);
 }

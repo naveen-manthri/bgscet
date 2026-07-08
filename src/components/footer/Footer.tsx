@@ -31,7 +31,7 @@ function Footer() {
       </div>
 
       <div className="footer__bottom">
-        <p className="footer__copyright">(c) www.bgscet.ac.in All rights reserved</p>
+        <p className="footer__copyright">© www.bgscet.ac.in All rights reserved</p>
         <p className="footer__credit">Designed By Curator Design</p>
       </div>
     </footer>
