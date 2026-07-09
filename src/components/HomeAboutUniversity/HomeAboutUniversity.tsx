@@ -1,4 +1,5 @@
 import { homeAboutUniversity } from '../../data/homePageData';
+import AdmissionButton from "../../components/AdmissionButton/AdmissionButton";
 import './HomeAboutUniversity.css';
 
 function HomeAboutUniversity() {
@@ -17,7 +18,7 @@ function HomeAboutUniversity() {
             alt="BGSCET campus building"
           />
           <div className="home-about-university__badge" aria-label="Innovation driven excellence">
-            <img src={homeAboutUniversity.badgeImage} alt="" aria-hidden="true" />
+            {/* <img src={homeAboutUniversity.badgeImage} alt="" aria-hidden="true" /> */}
             <span>Innovation Driven Excellence</span>
           </div>
         </div>
@@ -28,7 +29,7 @@ function HomeAboutUniversity() {
           </h2>
           <p>{homeAboutUniversity.description}</p>
           <button className="home-button" type="button">
-            For Admission Click Here
+            <AdmissionButton variant="primary" />
           </button>
         </div>
       </div>

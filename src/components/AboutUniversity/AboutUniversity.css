@@ -69,29 +69,15 @@
 }
 
 .admission-button {
-  width: min(100%, 34.375rem);
-  min-height: 7.5rem;
-  padding: 2.25rem 3.125rem;
   border: 0;
   border-radius: var(--radius-small);
-  background: var(--primary);
-  color: var(--white);
+  background: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(1.25rem, 2.25vw, 2.25rem);
-  font-weight: 700;
-  line-height: 1.15;
   text-align: center;
-  transition: background 0.3s ease, transform 0.3s ease;
 }
 
-.admission-button:hover,
-.admission-button:focus-visible {
-  background: var(--primary-hover);
-  color: var(--white);
-  transform: translateY(-0.1875rem);
-}
 
 @media (max-width: 75rem) {
   .about-university-grid {

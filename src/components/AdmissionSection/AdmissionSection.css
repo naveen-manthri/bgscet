@@ -53,24 +53,15 @@ img {
 }
 
 .admission {
-  padding: 4rem 1.5rem;
+  padding: 0;
+  background: var(--background);
 }
 
 .admission__container {
   max-width: var(--container-width);
-  margin: auto;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
   background: var(--background);
-  border-radius: var(--radius-md);
-  padding: 2.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 3.5rem;
-  box-shadow: var(--shadow);
-}
-
-.admission__content {
-  flex: 1;
 }
 
 .admission__title {
@@ -78,7 +69,19 @@ img {
   font-size: var(--fs-title);
   font-weight: var(--fw-bold);
   line-height: 1.25;
-  margin-bottom: 0.45rem;
+  margin-top:1rem;
+  margin-bottom: 0.3rem;
+}
+
+.admission__body {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.admission__content {
+  width: 100%;
 }
 
 .admission__subtitle-wrapper {
@@ -162,52 +165,67 @@ img {
   font-weight: var(--fw-semibold);
   line-height: 1.5;
 }
+
 .admission__image-wrapper {
-  flex: 0.95;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
+  margin-top: 2.1rem;
 }
-
 .admission__image {
   width: 100%;
-  max-width: 28rem;
+  max-width: 25rem;
+  height: 20rem;
+  display: block;
   object-fit: cover;
   border-radius: 0.35rem;
 }
 
+
 @media (max-width: 64rem) {
   .admission__container {
-    gap: 2.5rem;
-    padding: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .admission__body {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .admission__title {
     font-size: 1.8rem;
+    margin-bottom: 1.5rem;
   }
 
   .admission__subtitle {
     font-size: 1.35rem;
   }
 
+  .admission__image-wrapper {
+    justify-content: center;
+  }
+
   .admission__image {
-    max-width: 22rem;
+    max-width: 24rem;
   }
 }
 
 @media (max-width: 48rem) {
   .admission {
-    padding: 2rem 1rem;
+    padding: 1rem 0;
   }
 
   .admission__container {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 2rem;
-    padding: 1.5rem;
+    padding: 1.5rem 0.75rem;
+  }
+
+  .admission__body {
+    gap: 1.5rem;
   }
 
   .admission__title {
     font-size: 1.6rem;
+    margin-bottom: 1.25rem;
   }
 
   .admission__subtitle {
@@ -223,12 +241,10 @@ img {
   }
 
   .admission__image-wrapper {
-    width: 100%;
     justify-content: center;
   }
 
   .admission__image {
-    width: 100%;
     max-width: 100%;
   }
 }

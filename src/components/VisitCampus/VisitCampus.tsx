@@ -1,4 +1,5 @@
 import './VisitCampus.css';
+import AdmissionButton from "../../components/AdmissionButton/AdmissionButton";
 
 function VisitCampus() {
   return (
@@ -10,10 +11,10 @@ function VisitCampus() {
 
         <div className="visit-campus__actions" aria-label="Campus visit actions">
           <button className="visit-campus__button" type="button">
-            For Admission Click Here
+            <AdmissionButton variant="secondary" />
           </button>
           <button className="visit-campus__button" type="button">
-            Schedule a Tour
+            <AdmissionButton variant="outline" />
           </button>
         </div>
       </div>

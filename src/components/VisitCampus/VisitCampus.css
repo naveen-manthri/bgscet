@@ -37,24 +37,13 @@
 }
 
 .visit-campus__button {
-  min-width: min(100%, 16.5rem);
-  min-height: 3.4rem;
-  padding: 0.85rem 1.35rem;
-  border: 0.08rem solid var(--button-border);
+  border: 0.09rem solid var(--visit-campus-btn);
   border-radius: var(--radius);
-  background: linear-gradient(180deg, var(--button-bg) 0%, var(--primary-dark) 100%);
-  color: var(--white);
-  box-shadow: var(--shadow-soft);
-  font-size: var(--button-text);
-  font-weight: 700;
-  line-height: 1.2;
-  transition: transform var(--transition), background var(--transition), box-shadow var(--transition);
+  background: none;
 }
 
 .visit-campus__button:hover {
   transform: translateY(-0.12rem);
-  background: linear-gradient(180deg, var(--button-hover) 0%, var(--primary-dark) 100%);
-  box-shadow: var(--shadow);
 }
 
 .visit-campus__button:focus-visible {

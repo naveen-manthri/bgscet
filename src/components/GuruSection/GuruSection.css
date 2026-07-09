@@ -5,6 +5,7 @@
 
   --color-background: #ffffff;
   --color-heading: #272727;
+ --guru-section-bg:  #EEEEEE;
 
   --color-text: #4b5563;
   --color-border: #e5e7eb;
@@ -66,7 +67,7 @@
 .guru-section {
   width: 100%;
   padding: var(--spacing-16) 0;
-  background-color: var(--color-background);
+  background-color: var(--guru-section-bg);
 }
 
 .guru-section__container {

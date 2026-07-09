@@ -1,6 +1,7 @@
 import "./AcademicEligibility.css";
 import topImage from "../../assets/images/admission/admission-image-2.jpg";
  import bottomImage from "../../assets/images/admission/admission-image-3.jpg";
+ import AdmissionButton from "../../components/AdmissionButton/AdmissionButton";
 
 function AcademicEligibility() {
   return (
@@ -66,7 +67,7 @@ function AcademicEligibility() {
             </ul>
 
             <button className="admission-btn">
-              For Admission Click Here
+              <AdmissionButton variant="primary" />
             </button>
 
           </div>
