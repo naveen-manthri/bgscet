@@ -6,9 +6,10 @@
 .guru-card__title {
   margin: 0 0 var(--spacing-8);
   color: var(--color-heading);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-3xl);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-tight);
+  letter-spacing: 1px;
 }
 
 .guru-card__body {

@@ -38,7 +38,7 @@
 
 .visit-campus__button {
   border: 0.09rem solid var(--visit-campus-btn);
-  border-radius: var(--radius);
+  border-radius: var(--btn-radius);
   background: none;
 }
 

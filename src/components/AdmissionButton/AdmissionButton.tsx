@@ -16,7 +16,7 @@ const AdmissionButton = ({
     <button
       type="button"
       className={`admission-button admission-button--${variant}`}
-      onClick={openEnquiry}
+      onClick={variant !== "outline" ? openEnquiry : undefined}
     >
       {admissionButtonData[variant].text}
     </button>
