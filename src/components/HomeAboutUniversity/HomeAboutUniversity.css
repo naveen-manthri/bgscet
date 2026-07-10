@@ -29,15 +29,15 @@
   bottom: 0.6rem;
   z-index: 2;
   width: 47%;
-  height: 76%;
+  height: 77%;
 }
 
 .home-about-university__image--back {
   left: 49%;
   top: 1.2rem;
   z-index: 1;
-  width: 50%;
-  height: 82%;
+  width: 47%;
+  height: 80%;
   margin-left: 0.5rem;
 }
 
@@ -61,12 +61,6 @@
   text-align: center;
 }
 
-.home-about-university__badge img {
-  width: 42%;
-  height: 42%;
-  object-fit: contain;
-  border-radius: var(--radius-pill);
-}
 
 .home-about-university__badge span {
   max-width: 5.4rem;

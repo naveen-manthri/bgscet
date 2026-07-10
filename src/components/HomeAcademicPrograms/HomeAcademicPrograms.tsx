@@ -1,6 +1,7 @@
  
 import './HomeAcademicPrograms.css';
 import { academicPrograms } from '../../data/academicProgramsData';
+import AdmissionButton from "../../components/AdmissionButton/AdmissionButton";
 
 function HomeAcademicPrograms() {
   return (
@@ -38,7 +39,7 @@ function HomeAcademicPrograms() {
             className="admission-btn"
             type="button"
           >
-            For Admission Click Here
+            <AdmissionButton variant="primary" />
           </button>
 
         </div>

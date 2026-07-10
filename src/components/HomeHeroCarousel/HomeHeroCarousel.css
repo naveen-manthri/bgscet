@@ -5,7 +5,7 @@
 .home-hero__carousel {
   position: relative;
   width: 100%;
-  height: clamp(15rem, 38vw, 27rem);
+  height: clamp(25rem, 42vw, 30rem);
   overflow: hidden;
   background: var(--surface-muted);
 }

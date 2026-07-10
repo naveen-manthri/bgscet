@@ -24,6 +24,7 @@
   --button-bg: #671006;
   --button-hover: #430600;
   --button-border: rgba(255, 255, 255, 0.65);
+  --visit-campus-btn: #ffffff;
   --focus: #ffd9d1;
   --logo-blue: #2367a2;
   --about-title-underline: #031270;
@@ -137,13 +138,16 @@ img {
   border-radius: var(--radius-pill);
 }
 
-.main-header__logo,
-.main-header__emblem {
+.main-header__logo{
   width: clamp(3.8rem, 7.5vw, 7rem);
   height: clamp(3.8rem, 7.5vw, 7rem);
   object-fit: contain;
 }
-
+.main-header__emblem {
+  width: clamp(4.3rem, 8.5vw, 8rem);
+  height: clamp(4.3rem, 8.5vw, 8rem);
+  object-fit: contain;
+}
 .main-header__copy {
   text-align: center;
 }
@@ -433,24 +437,10 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 3.2rem;
   padding: 0.85rem 1.35rem;
   border: 0;
   font-family: var(--button-font);
-  border-radius: var(--radius);
-  background: var(--secondary-deep);
-  color: var(--white);
-  box-shadow: var(--shadow-soft);
-  font-size: var(--button-text);
-  font-weight: 800;
-  line-height: 1.2;
-  transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
-}
-
-.home-button:hover {
-  background: var(--secondary);
-  transform: translateY(-0.12rem);
-  box-shadow: var(--shadow);
+  background: none;
 }
 
 .section-heading {

@@ -12,6 +12,7 @@ import StudentTestimonials from '../components/StudentTestimonials/StudentTestim
 import VisitCampus from '../components/VisitCampus/VisitCampus';
 import Statistics from '../components/Statistics/Statistics';
 
+
 // const aboutImages = [
 //   'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=900&q=80',
 //   'https://images.unsplash.com/photo-1562774053-701939374585?w=900&q=80',
@@ -43,6 +44,8 @@ function HomePage() {
         <HomeNewsAnnouncements />
 
         <HomeCampusLife />
+
+        
 
         <CampusPlacements />
 
