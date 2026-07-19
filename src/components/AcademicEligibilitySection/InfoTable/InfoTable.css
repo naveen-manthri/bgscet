@@ -1,0 +1,31 @@
+.academic-info-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.academic-info-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--background);
+}
+
+.academic-info-table th,
+.academic-info-table td {
+  padding: 0.7rem;
+  border: 0.0625rem solid var(--academic-table-border);
+  font-size: 1rem;
+  line-height: 1.4;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.academic-info-table th {
+  padding: 0.7rem;
+  font-weight: 700;
+  color: var(--academic-heading-black);
+  background: #f3f3f3;
+}
+
+.academic-info-table td {
+  color: var(--academic-paragraph);
+}

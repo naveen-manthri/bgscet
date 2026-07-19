@@ -10,22 +10,21 @@
   margin: 0 auto;
 }
 
-.student-testimonials__title {
-  margin-bottom: clamp(1.7rem, 4vw, 2.4rem);
-  display: table; 
-  width: fit-content;
-  margin: 0 auto clamp(1.6rem, 3.8vw, 2.2rem);
-  position: relative;
+.student-testimonials .shared-section-heading {
+  margin-bottom: 2.8rem;
 }
 
-.student-testimonials__title::after {
-  content: "";
-  display: block;
-  width: 94%;         
-  height: 2px;
+.student-testimonials .section-subtitle {
+  color: #000000;
+}
+
+.student-testimonials .section-title,
+.student-testimonials .section-title-second-line {
+  color: #040404;
+}
+
+.student-testimonials .section-heading-line {
   background: #000000;
-  margin: 0.6rem auto 0;
-  border-radius: 2px;
 }
 
 .student-testimonials__scroller {

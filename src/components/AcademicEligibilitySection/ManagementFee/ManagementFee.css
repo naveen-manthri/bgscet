@@ -1,0 +1,38 @@
+.management-fee {
+  display: flex;
+  flex-direction: column;
+  gap: var(--academic-content-gap);
+}
+
+.management-fee__table {
+  width: 100%;
+}
+
+.management-fee__notes {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.management-fee__notes h3 {
+  margin: 0 ;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--academic-paragraph);
+}
+
+.management-fee__notes ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.management-fee__notes li {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--academic-paragraph);
+  text-transform: uppercase;
+}
+
+.management-fee__notes li:last-child {
+  margin-bottom: 0;
+}

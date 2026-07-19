@@ -1,19 +1,32 @@
-import { statistics } from '../../data/statsData';
-import './Statistics.css';
+import "./Statistics.css";
+import { statistics } from "../../data/statistics";
 
-function Statistics() {
+const Statistics = () => {
   return (
-    <section className="home-statistics" aria-label="College statistics">
-      <div className="home-statistics__inner">
-        {statistics.map((statistic) => (
-          <article className="home-statistics__card" key={statistic.id}>
-            <strong>{statistic.value}</strong>
-            <span>{statistic.label}</span>
-          </article>
-        ))}
+    <section className="statistics">
+      <div className="statistics-container">
+        <div className="statistics-header">
+          <p className="statistics-unit">UNIT OF</p>
+
+          <h2 className="statistics-title">
+            Sri Adichunchanagiri Shikshana Trust (R)
+          </h2>
+
+          <span className="statistics-underline" />
+        </div>
+
+        <div className="statistics-grid">
+          {statistics.map((item) => (
+            <article key={item.id} className="statistics-card">
+              <h3 className="statistics-value">{item.value}</h3>
+
+              <p className="statistics-label">{item.label}</p>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   );
-}
+};
 
 export default Statistics;

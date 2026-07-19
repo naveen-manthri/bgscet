@@ -1,0 +1,47 @@
+.department-achievements {
+  --primary-color: #1f3a93;
+  --text-color: #222222;
+  --border-color: #d9d9d9;
+  --background-color: #ffffff;
+
+  --content-gap: 2rem;
+  --title-margin: 1.5rem;
+  --divider-margin: 2.5rem;
+
+  --title-font-size: 1.75rem;
+  --title-line-height: 1.5;
+  --title-font-weight: 700;
+
+  --image-max-width: 62.5rem;
+}
+.department-achievements {
+  width: 100%;
+}
+
+.achievement-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--content-gap);
+  margin-top: var(--content-gap);
+}
+
+.achievement-title {
+  margin-bottom: var(--title-margin);
+  color: var(--text-color);
+  font-size: var(--title-font-size);
+  font-weight: var(--title-font-weight);
+  line-height: var(--title-line-height);
+}
+
+.achievement-image {
+  width: 100%;
+  max-width: var(--image-max-width);
+  height: auto;
+  object-fit: contain;
+}
+
+.achievement-divider {
+  margin-top: var(--divider-margin);
+  border: 0;
+  border-top: 0.0625rem solid var(--border-color);
+}

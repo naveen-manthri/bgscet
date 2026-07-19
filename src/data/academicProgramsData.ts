@@ -1,15 +1,15 @@
 // src/data/academicProgramsData.ts
 
-import mechanicalEngineering from '../assets/images/academic/mechanical-engineering.jpg';
-import electronicsEngineering from '../assets/images/academic/electronics-engineering.jpg';
-import computerScienceEngineering from '../assets/images/academic/computer-science.jpg';
-import civilEngineering from '../assets/images/academic/civil-engineering.jpg';
-import artificialIntelligence from '../assets/images/academic/artificial-intelligence.jpg';
-import mba from '../assets/images/academic/mba.jpg';
+import mechanicalEngineering from "../assets/images/academic/mechanical-engineering.jpg";
+import electronicsEngineering from "../assets/images/academic/electronics-engineering.jpg";
+import computerScienceEngineering from "../assets/images/academic/computer-science.jpg";
 
 export interface AcademicProgram {
   id: number;
   title: string;
+  duration: string;
+  description: string;
+  readMore: string;
   image: string;
   slug: string;
 }
@@ -17,38 +17,32 @@ export interface AcademicProgram {
 export const academicPrograms: AcademicProgram[] = [
   {
     id: 1,
-    title: 'Mechanical Engineering',
+    title: "Computer Science",
+    duration: "Duration- 4 Years",
+    description:
+      "It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page",
+    readMore: "Read More",
     image: mechanicalEngineering,
-    slug: 'mechanical-engineering',
+    slug: "computer-science",
   },
   {
     id: 2,
-    title: 'Electronics & Communication',
+    title: "Information Science",
+    duration: "Duration- 4 Years",
+    description:
+      "It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page",
+    readMore: "Read More",
     image: electronicsEngineering,
-    slug: 'electronics-communication',
+    slug: "information-science",
   },
   {
     id: 3,
-    title: 'Computer Science Engineering',
+    title: "AIML Department",
+    duration: "Duration- 4 Years",
+    description:
+      "It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page",
+    readMore: "Read More",
     image: computerScienceEngineering,
-    slug: 'computer-science-engineering',
-  },
-  {
-    id: 4,
-    title: 'Civil Engineering',
-    image: civilEngineering,
-    slug: 'civil-engineering',
-  },
-  {
-    id: 5,
-    title: 'Artificial Intelligence & Machine Learning',
-    image: artificialIntelligence,
-    slug: 'artificial-intelligence-machine-learning',
-  },
-  {
-    id: 6,
-    title: 'Master of Business Administration',
-    image: mba,
-    slug: 'master-of-business-administration',
+    slug: "aiml-department",
   },
 ];

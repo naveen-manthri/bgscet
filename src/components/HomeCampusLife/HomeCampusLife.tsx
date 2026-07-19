@@ -1,21 +1,25 @@
-import './HomeCampusLife.css';
+import "./HomeCampusLife.css";
 
-import SectionHeading from '../common/SectionHeading';
+import SectionHeading from "../common/SectionHeading";
 
-import { campusLife } from '../../data/campusLifeData';
+import {
+  campusLife,
+  campusLifeGalleryLink,
+} from "../../data/campusLifeData";
 
 function HomeCampusLife() {
   return (
     <section className="home-campus-life section-space">
       <div className="container">
-
         <SectionHeading
-          title="Campus Life"
+          subtitle="Campus Life"
+          title="A Campus That"
+          titleSecondLine="Lives After Dark."
+          underlineFitContent
           center
         />
 
         <div className="campus-life-grid">
-
           {campusLife.map((item, index) => (
             <article
               key={item.id}
@@ -28,9 +32,16 @@ function HomeCampusLife() {
               />
             </article>
           ))}
-
         </div>
 
+        <div className="campus-life-button-wrapper">
+          <a
+            href={campusLifeGalleryLink}
+            className="campus-life-button"
+          >
+            View Full Gallery
+          </a>
+        </div>
       </div>
     </section>
   );

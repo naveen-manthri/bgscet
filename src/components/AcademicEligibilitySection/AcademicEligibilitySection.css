@@ -1,0 +1,9 @@
+.academic-eligibility-section {
+  width: 100%;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}

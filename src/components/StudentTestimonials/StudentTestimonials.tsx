@@ -1,6 +1,10 @@
 import { useRef, useState } from 'react';
 import type { PointerEvent } from 'react';
+
 import { testimonials } from '../../data/landingData';
+
+import SectionHeading from '../common/SectionHeading';
+
 import './StudentTestimonials.css';
 
 function StudentTestimonials() {
@@ -35,14 +39,24 @@ function StudentTestimonials() {
   };
 
   return (
-    <section className="student-testimonials" aria-labelledby="student-testimonials-title">
+    <section
+      className="student-testimonials"
+      aria-labelledby="student-testimonials-title"
+    >
       <div className="student-testimonials__inner">
-        <h2 className="section-heading student-testimonials__title" id="student-testimonials-title">
-          Student Testimonials
-        </h2>
+
+        <SectionHeading
+          subtitle="Student Voices"
+          title="Four Years"
+          titleSecondLine="That Changed Everything."
+          underlineFitContent
+          center
+        />
 
         <div
-          className={`student-testimonials__scroller${isDragging ? ' is-dragging' : ''}`}
+          className={`student-testimonials__scroller${
+            isDragging ? ' is-dragging' : ''
+          }`}
           ref={scrollerRef}
           role="list"
           tabIndex={0}
@@ -54,11 +68,29 @@ function StudentTestimonials() {
           onPointerLeave={() => setIsDragging(false)}
         >
           {testimonials.map((testimonial) => (
-            <article className="student-testimonials__card" key={testimonial.id} role="listitem">
-              <img  className="student-testimonials__image" src={testimonial.image} alt={`${testimonial.name}, ${testimonial.department}`}  draggable="false"/>
-              <h3 className="student-testimonials__name">{testimonial.name}</h3>
-              <p className="student-testimonials__department">{testimonial.department}</p>
-              <p className="student-testimonials__quote">{testimonial.quote}</p>
+            <article
+              className="student-testimonials__card"
+              key={testimonial.id}
+              role="listitem"
+            >
+              <img
+                className="student-testimonials__image"
+                src={testimonial.image}
+                alt={`${testimonial.name}, ${testimonial.department}`}
+                draggable="false"
+              />
+
+              <h3 className="student-testimonials__name">
+                {testimonial.name}
+              </h3>
+
+              <p className="student-testimonials__department">
+                {testimonial.department}
+              </p>
+
+              <p className="student-testimonials__quote">
+                {testimonial.quote}
+              </p>
             </article>
           ))}
         </div>

@@ -1,16 +1,19 @@
-import HomeHeroCarousel from '../components/HomeHeroCarousel/HomeHeroCarousel';
+// import HomeHeroCarousel from '../components/HomeHeroCarousel/HomeHeroCarousel';
+import BannerSection from '../components/BannerSection/BannerSection';
+import homeBanner from '../assets/images/home/bgscet-clg.jpg';
 import Advertisement from '../components/Advertisement/Advertisement';
 import HomeAboutUniversity from '../components/HomeAboutUniversity/HomeAboutUniversity';
 import HomeAboutMutt from '../components/HomeAboutMutt/HomeAboutMutt';
 import HomeVisionMission from '../components/HomeVisionMission/HomeVisionMission';
 import HomeAcademicPrograms from '../components/HomeAcademicPrograms/HomeAcademicPrograms';
-import HomePastEvents from '../components/HomePastEvents/HomePastEvents';
-import HomeNewsAnnouncements from '../components/HomeNewsAnnouncements/HomeNewsAnnouncements';
+// import HomePastEvents from '../components/HomePastEvents/HomePastEvents';
+// import HomeNewsAnnouncements from '../components/HomeNewsAnnouncements/HomeNewsAnnouncements';
 import HomeCampusLife from '../components/HomeCampusLife/HomeCampusLife';
 import CampusPlacements from '../components/CampusPlacements/CampusPlacements';
 import StudentTestimonials from '../components/StudentTestimonials/StudentTestimonials';
 import VisitCampus from '../components/VisitCampus/VisitCampus';
 import Statistics from '../components/Statistics/Statistics';
+
 
 
 // const aboutImages = [
@@ -26,7 +29,12 @@ import Statistics from '../components/Statistics/Statistics';
 function HomePage() {
   return (
     <div>
-    <HomeHeroCarousel />
+    {/* <HomeHeroCarousel /> */}
+    <BannerSection
+        image={homeBanner}
+        title=""
+        whatsappLink="https://wa.me/919900000000"
+        />
         <Advertisement />
 
         <HomeAboutUniversity />
@@ -39,15 +47,13 @@ function HomePage() {
 
         <HomeAcademicPrograms />
         
-        <HomePastEvents />
+        {/* <HomePastEvents /> */}
 
-        <HomeNewsAnnouncements />
+        {/* <HomeNewsAnnouncements /> */}
+        <CampusPlacements />
 
         <HomeCampusLife />
 
-        
-
-        <CampusPlacements />
 
         <StudentTestimonials />
 
