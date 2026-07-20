@@ -1,4 +1,4 @@
-import AcademicHeading from "../../common/AcademicEligibilityHeading/AcademicEligibilityHeading";
+// import AcademicHeading from "../../common/AcademicEligibilityHeading/AcademicEligibilityHeading";
 import "./AdmissionInformation.css";
 
 
@@ -11,9 +11,9 @@ import { admissionInformationData } from "../../../data/academic";
 export default function AdmissionInformation() {
   return (
     <section className="admission-information">
-      <AcademicHeading
-  blackTitle="For Admission Related Information:"
-/>
+       <h2 className="admission-information__title">
+         {admissionInformationData.title}
+      </h2>
 
       <div className="admission-information__contacts">
   {admissionInformationData.contacts.map((contact) => (

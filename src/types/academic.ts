@@ -61,6 +61,7 @@ export interface AdmissionContact {
 }
 
 export interface AdmissionInformationSection {
-  title: AcademicTitle;
+  // title: AcademicTitle;
+  title:string;
   contacts: AdmissionContact[];
 }

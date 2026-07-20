@@ -20,7 +20,7 @@
   box-sizing: border-box;
   width: min(100%, var(--container-width));
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
   border-radius: 0;
 }
 
