@@ -57,7 +57,7 @@
   --font-main: "Poppins", sans-serif;
   --button-font: var(--font-main);
   --academic-heading-underline: #031270;
---academic-section-gap: 4rem;
+--academic-section-gap: 1rem;
 --academic-content-gap: 1.5rem;
 --academic-card-gap: 2rem;
 --academic-table-border: #cfcfcf;

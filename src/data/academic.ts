@@ -149,10 +149,7 @@ export const managementFeeData: ManagementFeeSection = {
 
 
 export const admissionInformationData: AdmissionInformationSection = {
-  title: {
-    black: "For Admission Related Information:",
-    red: "",
-  },
+  title: "For Admission Related Information:",
 
   contacts: [
     {

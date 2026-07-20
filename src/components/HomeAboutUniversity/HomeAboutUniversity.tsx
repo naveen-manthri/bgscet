@@ -31,7 +31,7 @@ function HomeAboutUniversity() {
               <circle className="home-about-university__badge-fill" cx="60" cy="60" r="58" />
               <text className="home-about-university__badge-text">
                 <textPath href={`#${badgeTextPathId}`} startOffset="0%">
-                  ADMISSION OPEN BY 2026 • BGSCET •
+                  ADMISSION OPEN BY 2026  BGSCET 
                 </textPath>
               </text>
             </svg>
