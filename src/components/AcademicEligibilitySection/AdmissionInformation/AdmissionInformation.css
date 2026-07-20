@@ -1,0 +1,85 @@
+.admission-information {
+  display: flex;
+  flex-direction: column;
+  gap: var(--academic-section-gap);
+}
+
+
+
+.admission-information__card {
+  padding: 1.5rem;
+  background: var(--surface);
+  border: 0.0625rem solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+}
+
+.admission-information__card h3 {
+  margin: 0 0 1rem;
+  color: var(--academic-heading-red);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.admission-information__card p {
+  margin: 0 0 0.75rem;
+  color: var(--academic-paragraph);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.admission-information__card p:last-child {
+  margin-bottom: 0;
+}
+
+.admission-information__card strong {
+  color: var(--academic-heading-black);
+}
+
+.admission-information__features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--academic-card-gap);
+}
+
+.admission-information__features figure {
+  margin: 0;
+}
+
+.admission-information__features img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  object-fit: cover;
+  box-shadow: var(--shadow-soft);
+}
+.admission-information__contacts {
+  margin: 2rem 0 3rem;
+}
+
+.admission-information__contact {
+  margin-bottom: 1rem;
+}
+
+.admission-information__contact:last-child {
+  margin-bottom: 0;
+}
+
+.admission-information__contact h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--academic-heading-black);
+}
+
+.admission-information__contact p {
+  margin: .15rem 0;
+  font-size: 1rem;
+  line-height: 1.45;
+  color: var(--academic-paragraph);
+}
+
+.admission-information__contact p:first-of-type {
+  font-weight: 500;
+}

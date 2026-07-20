@@ -29,7 +29,7 @@
   --logo-blue: #2367a2;
   --about-title-underline: #031270;
   --badge-bg: #7B0053;
-  --navbar-link-clr: #7D2720;;
+  --navbar-link-clr: #ffffff;
   --home-about-mutt__content-font-size: clamp(1.28rem, 1.5vw, 1rem);
   --whatsapp: #24d366;
   --control-bg: rgba(0, 0, 0, 0.42);
@@ -56,6 +56,19 @@
   --button-text: clamp(0.82rem, 1.45vw, 1rem);
   --font-main: "Poppins", sans-serif;
   --button-font: var(--font-main);
+  --academic-heading-underline: #031270;
+--academic-section-gap: 4rem;
+--academic-content-gap: 1.5rem;
+--academic-card-gap: 2rem;
+--academic-table-border: #cfcfcf;
+--academic-heading-black: #111111;
+--academic-heading-red: #d84525;
+--academic-paragraph: #4C4949;
+--academic-note: #666666;
+--academic-table-header: #f5f5f5;
+--academic-table-border: #7a7a7a;
+--academic-sub-heading-black: #4C4949;
+--academic-heading-red: #d84525;
 }
 
 * {
@@ -170,16 +183,12 @@ img {
   line-height: 1.5;
 }
 
-/* ===========================
-   MAIN NAVBAR
-=========================== */
 
 .main-navbar {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: var(--surface);
-  border-bottom: 0.08rem solid var(--border);
+  background: var(--primary-deep);
   box-shadow: var(--shadow-soft);
 }
 
@@ -226,7 +235,6 @@ img {
   list-style: none;
 }
 
-/* ---------- Desktop ---------- */
 
 .main-navbar__menu {
   display: flex;
@@ -268,7 +276,9 @@ img {
   transition: color var(--transition);
 }
 
-.main-navbar__link:hover,
+.main-navbar__link:hover{
+  color: var(--primary-deep);
+}
 .main-navbar__link.is-active,
 .main-navbar__link:focus {
   color: var(--navbar-link-clr);
@@ -304,15 +314,15 @@ img {
   display: block;
   padding: 0.7rem 1rem;
   white-space: nowrap;
-  transition: background var(--transition);
+  color: var(--primary-deep);
+  transition: background var(--transition), color var(--transition);
 }
 
 .main-navbar__dropdown-link:hover {
   background: var(--section-soft);
-  color: var(--navbar-link-clr);
+  color: var(--primary-dark);
 }
 
-/* ---------- Mobile ---------- */
 
 @media (max-width: 58em) {
 

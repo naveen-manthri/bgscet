@@ -1,0 +1,48 @@
+.infrastructure-faculty {
+  --clr-title: #111111;
+  --clr-text: #555555;
+
+  --ff-primary: "Poppins", sans-serif;
+
+  --fw-regular: 400;
+
+  --fs-body: 1rem;
+
+}
+
+.infrastructure-faculty {
+  width: 100%;
+  padding: 0rem;
+  margin-bottom: 0;
+}
+
+.infrastructure-faculty__content {
+  margin-top: 2.5rem;
+}
+
+.infrastructure-faculty__description {
+  margin: 0;
+
+  color: var(--clr-text);
+
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  line-height: 1.9;
+
+  text-align: justify;
+}
+
+@media (max-width: 48rem) {
+  .infrastructure-faculty {
+    padding-bottom: 3rem;
+  }
+
+  .infrastructure-faculty__content {
+    margin-top: 2rem;
+  }
+
+  .infrastructure-faculty__description {
+    text-align: left;
+  }
+}

@@ -1,5 +1,6 @@
 import "./AdmissionSection.css";
 import admissionImage from "../../assets/images/admission/admission-image-1.jpg";
+import AcademicHeading from "../common/AcademicEligibilityHeading/AcademicEligibilityHeading";
 
 const courses: string[] = [
   "COMPUTER SCIENCE AND ENGINEERING",
@@ -14,24 +15,17 @@ const AdmissionSection = () => {
     <section className="admission">
       <div className="admission__container">
 
-        {/* Title */}
-        <h2 className="admission__title">
-          Admission For Management Quota Seats Is Underway
-        </h2>
+        <AcademicHeading
+          className="admission__title"
+          blackTitle={"Admission For Management Quota\nSeats Is Underway "}
+          redTitle={"For First Year\nB.E. Courses : 2026-27"}
+        />
 
         {/* Two Column Layout */}
         <div className="admission__body">
 
           {/* Left Content */}
           <div className="admission__content">
-
-            <div className="admission__subtitle-wrapper">
-              <h3 className="admission__subtitle">
-                For First Year B.E. Courses : 2025-26
-              </h3>
-
-              <div className="admission__divider"></div>
-            </div>
 
             <p className="admission__heading">
               Four Years Bachelor of Engineering (B.E.) Courses:

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap');
-
+@use "./variable" as *;
 :root {
   --brand: #8e2f24;
   --brand-dark: #5b1714;
@@ -1083,4 +1083,45 @@ a {
   .footer-bottom {
     text-align: center;
   }
+}
+
+
+
+
+
+.academic-heading {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: var(--content-gap);
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: .18rem;
+    margin-top: .8rem;
+    background: var(--line);
+  }
+}
+
+.academic-heading__title {
+  display: flex;
+  flex-direction: column;
+  gap: .15rem;
+}
+
+.academic-heading__black {
+  margin: 0;
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--primary);
+}
+
+.academic-heading__red {
+  margin: 0;
+  font-size: 2.3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--secondary);
 }

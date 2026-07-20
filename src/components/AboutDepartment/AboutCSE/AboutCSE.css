@@ -1,0 +1,48 @@
+.about-cse {
+  --clr-title: #111111;
+  --clr-text: #555555;
+
+  --ff-primary: "Poppins", sans-serif;
+
+  --fw-regular: 400;
+
+  --fs-body: 1rem;
+
+}
+
+.about-cse {
+  width: 100%;
+  margin-top: 4rem;
+  padding: 0 0 4rem;
+}
+
+.about-cse__content {
+  margin-top: 2.5rem;
+}
+
+.about-cse__description {
+  margin: 0;
+
+  color: var(--clr-text);
+
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  line-height: 1.9;
+
+  text-align: justify;
+}
+
+@media (max-width: 48rem) {
+  .about-cse {
+    padding-bottom: 3rem;
+  }
+
+  .about-cse__content {
+    margin-top: 2rem;
+  }
+
+  .about-cse__description {
+    text-align: left;
+  }
+}

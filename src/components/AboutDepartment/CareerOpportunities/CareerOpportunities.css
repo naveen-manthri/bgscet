@@ -1,0 +1,88 @@
+.career-opportunities {
+  --clr-primary: #e44a3a;
+  --clr-text: #555555;
+  --clr-title: #111111;
+  --clr-border: #d9d9d9;
+
+  --ff-primary: "Poppins", sans-serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+
+  --fs-body: 1rem;
+  --fs-list: 1rem;
+
+}
+.career-opportunities {
+  width: 100%;
+  padding: 0 0 4rem;
+}
+
+.career-opportunities__content {
+  margin-top: 2rem;
+}
+
+.career-opportunities__description {
+  margin: 0 0 1.5rem;
+
+  color: var(--clr-text);
+
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.8;
+
+  text-align: justify;
+}
+
+.career-opportunities__body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.career-opportunities__list {
+  flex: 0 0 32%;
+
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.career-opportunities__item {
+  margin-bottom: 0.5rem;
+
+  color: var(--clr-text);
+
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.career-opportunities__image-wrapper {
+  flex: 1;
+}
+
+.career-opportunities__image {
+  width: 100%;
+  height: auto;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+@media (max-width: 48rem) {
+  .career-opportunities__body {
+    flex-direction: column;
+  }
+
+  .career-opportunities__list {
+    flex: unset;
+    width: 100%;
+  }
+
+  .career-opportunities__image-wrapper {
+    width: 100%;
+  }
+}

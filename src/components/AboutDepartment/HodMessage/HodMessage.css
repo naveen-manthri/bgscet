@@ -1,0 +1,144 @@
+.hod-message {
+  --clr-primary: #e44a3a;
+  --clr-title: #111111;
+  --clr-text: #555555;
+  --clr-black: #000000;
+  --clr-white: #ffffff;
+  --clr-border: #d9d9d9;
+
+  --ff-primary: "Poppins", sans-serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --fs-name: 1.375rem;
+  --fs-designation: 1rem;
+  --fs-body: 1rem;
+
+  --transition: 0.3s ease;
+}
+
+.hod-message {
+  width: 100%;
+  padding-bottom: 4rem;
+}
+
+.hod-message__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 3.5rem;
+
+  margin-top: 2.5rem;
+}
+
+.hod-message__profile {
+  flex: 0 0 21rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hod-message__image {
+  width: 100%;
+  height: auto;
+
+  display: block;
+
+  border-radius: 0.25rem;
+  object-fit: cover;
+}
+
+.hod-message__details {
+  margin-top: 1.5rem;
+  background:var(--clr-border);
+width: 100%;
+padding:0.8rem;
+  text-align: center;
+}
+
+.hod-message__name {
+  margin: 0 0 0.75rem;
+
+  color: var(--clr-title);
+
+  font-family: var(--ff-primary);
+  font-size: var(--fs-name);
+  font-weight: var(--fw-bold);
+  line-height: 1.3;
+}
+
+.hod-message__designation {
+  margin: 0.25rem 0;
+
+  color: var(--clr-black);
+
+  font-family: var(--ff-primary);
+  font-size: var(--fs-designation);
+  font-weight: var(--fw-regular);
+  line-height: 1.6;
+}
+
+.hod-message__designation:last-child {
+  margin-top: 1rem;
+  text-decoration: underline;;
+  font-weight: var(--fw-medium);
+
+  cursor: pointer;
+}
+
+.hod-message__description {
+  flex: 1;
+}
+
+.hod-message__description p {
+  margin: 0;
+
+  color: var(--clr-text);
+
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  line-height: 1.9;
+
+  text-align: justify;
+}
+
+@media (max-width: 64rem) {
+  .hod-message__content {
+    gap: 2.5rem;
+  }
+
+  .hod-message__profile {
+    flex-basis: 18rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .hod-message {
+    padding-bottom: 3rem;
+  }
+
+  .hod-message__content {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .hod-message__profile {
+    flex-basis: auto;
+    width: 100%;
+    max-width: 22rem;
+  }
+
+  .hod-message__description {
+    width: 100%;
+  }
+
+  .hod-message__description p {
+    text-align: left;
+  }
+}

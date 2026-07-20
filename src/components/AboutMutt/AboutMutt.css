@@ -37,11 +37,12 @@
   background: var(--color-background);
   padding: var(--spacing-6) 0;
   /* margin:1rem 0.7rem; */
-  margin: 2.4rem 0.7rem 1rem 0.7rem;
+  margin: 2.4rem 0.7rem 1.5rem 0.7rem;
 }
 
 .about-mutt__container {
-  width: min(100% - 2rem, var(--container-width));
+  width: 100%;
+  padding: 0 var(--spacing-8);
   margin: 0 auto;
 }
 

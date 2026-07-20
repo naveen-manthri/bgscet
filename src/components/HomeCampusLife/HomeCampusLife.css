@@ -1,65 +1,45 @@
+:root {
+  --campus-gap: 1rem;
+
+  --campus-card-radius: 0.5rem;
+
+  --campus-button-bg: #031270;
+  --campus-button-text: #ffffff;
+
+  --campus-button-padding-y: 0.9rem;
+  --campus-button-padding-x: 3rem;
+
+  --campus-button-radius: 0.3rem;
+
+  --campus-image-height-large: 31rem;
+  --campus-image-height-small: 15rem;
+
+  --campus-grid-margin-top: 3rem;
+  --campus-button-margin-top: 2.5rem;
+}
+
 .home-campus-life {
-  padding: var(--section-padding);
-  background: var(--white);
+  width: 100%;
+  margin-top: 4rem;
 }
 
 .home-campus-life .container {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
-}
-
-
-.section-heading {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 1rem;
 }
 
-.section-heading h2 {
-  margin: 0;
-  font-size: var(--heading-size);
-  font-weight: 700;
-  color: var(--text);
-}
-
-.heading-line {
-  width: 10rem;
-  height: 0.12rem;
-  background: var(--text);
-  border-radius: 999rem;
-}
-
-/* 
 .campus-life-grid {
   display: grid;
-
-  grid-template-columns:
-    1.35fr
-    1fr
-    1.35fr;
-
-  grid-template-rows:
-    13rem
-    13rem
-    13rem;
-
-  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr 1.6fr;
+  grid-template-rows: 17rem 20rem;
+  gap: 1rem;
+  margin-top: 3rem;
 }
 
 .campus-life-card {
   overflow: hidden;
-  border-radius: 1rem;
-  box-shadow: var(--shadow);
-  transition:
-    transform var(--transition),
-    box-shadow var(--transition);
-}
-
-.campus-life-card:hover {
-  transform: translateY(-0.35rem);
-  box-shadow: 0 1rem 2rem rgba(0,0,0,.15);
+  border-radius: 0.5rem;
 }
 
 .campus-life-card img {
@@ -69,151 +49,91 @@
   object-fit: cover;
 }
 
-
 .campus-life-card-1 {
-  grid-column: 1;
-  grid-row: 1 / 3;
-}
-
-
-.campus-life-card-2 {
-  grid-column: 1;
-  grid-row: 3;
-}
-
-.campus-life-card-3 {
-  grid-column: 2;
+  grid-column: 1 / 3;
   grid-row: 1;
 }
 
-.campus-life-card-4 {
+.campus-life-card-2 {
   grid-column: 3;
   grid-row: 1 / 3;
 }
 
-.campus-life-card-5 {
-  grid-column: 3;
-  grid-row: 3;
+.campus-life-card-3 {
+  grid-column: 1;
+  grid-row: 2;
 }
 
-
-.campus-life-card-6 {
+.campus-life-card-4 {
   grid-column: 2;
-  grid-row: 2 / 4;
-} */
-
-.campus-life-grid {
-  display: grid;
-  grid-template-columns:1fr 1fr 1.35fr ;
-
-  grid-template-rows:
-    15rem   
-    20rem   
-    14rem;  
-
-  gap: 1.5rem;
-
-  grid-template-areas:
-    "one one two"
-    "three four two"
-    "five five six";
+  grid-row: 2;
 }
 
 .campus-life-card {
   overflow: hidden;
-  border-radius: 1rem;
-  box-shadow: var(--shadow);
-  transition:
-    transform var(--transition),
-    box-shadow var(--transition);
+  border-radius: var(--campus-card-radius);
 }
 
-.campus-life-card:hover {
-  transform: translateY(-0.35rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .15);
-}
 
-.campus-life-card img {
+
+.campus-life-button-wrapper {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
+  margin-top: var(--campus-button-margin-top);
+  margin-bottom: var(--campus-button-margin-top);
 }
 
-.campus-life-card-1 {
-  grid-area: one;
+.campus-life-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: var(--campus-button-padding-y)
+    var(--campus-button-padding-x);
+
+  border-radius: var(--campus-button-radius);
+
+  background: var(--campus-button-bg);
+
+  color: var(--campus-button-text);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+
+  text-decoration: none;
+
+  transition: background 0.25s ease;
 }
 
-.campus-life-card-2 {
-  grid-area: two;
+.campus-life-button:hover {
+  background: #0522a8;
 }
 
-.campus-life-card-3 {
-  grid-area: three;
+@media (max-width: 64rem) {
+  .campus-life-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 18rem);
+  }
+
+  .campus-life-card-1,
+  .campus-life-card-2,
+  .campus-life-card-3,
+  .campus-life-card-4 {
+    grid-column: auto;
+    grid-row: auto;
+  }
 }
 
-.campus-life-card-4 {
-  grid-area: four;
-}
+@media (max-width: 48rem) {
+  .campus-life-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 18rem);
+  }
 
-.campus-life-card-5 {
-  grid-area: five;
-}
-
-.campus-life-card-6 {
-  grid-area: six;
-}
-
-@media (max-width:64rem){
-
-    .campus-life-grid{
-
-        grid-template-columns:repeat(2,1fr);
-
-        grid-template-rows:auto;
-
-    }
-
-    .campus-life-card{
-
-        grid-column:auto !important;
-
-        grid-row:auto !important;
-
-        aspect-ratio:4/3;
-
-    }
-
-}
-
-@media (max-width:48rem){
-
-    .campus-life-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .campus-life-card{
-
-        aspect-ratio:16/10;
-
-    }
-
-}
-
-@media (max-width:36rem){
-
-    .home-campus-life .container{
-
-        gap:2rem;
-
-    }
-
-    .heading-line{
-
-        width:8rem;
-
-    }
-
+  .campus-life-button {
+    width: 100%;
+    max-width: 18rem;
+  }
 }

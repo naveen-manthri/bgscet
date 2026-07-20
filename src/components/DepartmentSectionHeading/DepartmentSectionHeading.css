@@ -1,0 +1,76 @@
+:root {
+  --clr-primary: #e44a3a;
+  --clr-title: #000000;
+  --underline-clr:#031270;
+
+  --ff-primary: "Poppins", sans-serif;
+
+  --fw-bold: 700;
+
+  --fs-section-title: 2rem;
+
+  --heading-underline-width: 5rem;
+  --heading-underline-height: 0.1875rem;
+
+  --transition: 0.3s ease;
+}
+.department-section-heading {
+  margin-bottom: 2.5rem;
+}
+
+.department-section-heading__title {
+  position: relative;
+  display: inline-block;
+
+  margin: 0;
+  padding-bottom: 1rem;
+
+  color: var(--clr-title);
+
+  font-family: var(--ff-primary);
+  font-size: var(--fs-section-title);
+  font-weight: var(--fw-bold);
+  line-height: 1.2;
+}
+
+.department-section-heading__title::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 0.1275rem;
+
+  background-color: var(--underline-clr);
+  border-radius: 999rem;
+}
+@media (max-width: 64rem) {
+  .department-section-heading {
+    margin-bottom: 2rem;
+  }
+
+  .department-section-heading__title {
+    font-size: 1.75rem;
+  }
+
+  .department-section-heading__underline {
+    width: 4.5rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .department-section-heading {
+    margin-bottom: 1.75rem;
+  }
+
+  .department-section-heading__title {
+    font-size: 1.5rem;
+  }
+
+  .department-section-heading__underline {
+    width: 4rem;
+    margin-top: 0.5rem;
+  }
+}
