@@ -1,0 +1,33 @@
+.ug-department {
+  --container-width: 80rem;
+  --clr-title: #111111;
+  --clr-text: #555555;
+  --ff-primary: "Poppins", sans-serif;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fs-body: 1rem;
+  --fs-name: 1.375rem;
+  --fs-designation: 1rem;
+
+  width: 100%;
+  margin: 0 auto;
+  padding: 4rem 0 1rem;
+}
+
+.ug-department__tab-content {
+  box-sizing: border-box;
+  width: min(100%, var(--container-width));
+  margin: 0 auto;
+  padding: 0 1rem;
+  border-radius: 0;
+}
+
+@media (max-width: 48rem) {
+  .ug-department {
+    padding: 3rem 0 4rem;
+  }
+
+  .ug-department__tab-content {
+    padding: 0 1.25rem 3rem;
+  }
+}

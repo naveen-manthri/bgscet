@@ -1,10 +1,23 @@
 import { Navigate, useParams } from 'react-router-dom';
 import PageBanner from '../components/common/PageBanner';
 import { departments } from '../data/departmentsData';
+import UGDepartment from './UGDepartment/UGDepartment';
+import type { UGDepartmentData } from '../types/ugprograms';
+
+const ugDepartmentModules = import.meta.glob('../data/UGPrograms/*Department.ts', {
+  eager: true,
+}) as Record<string, { default: UGDepartmentData }>;
+
+const ugDepartments = Object.values(ugDepartmentModules).map(({ default: department }) => department);
 
 function DepartmentDetailPage() {
   const { slug } = useParams();
+  const ugDepartment = ugDepartments.find((item) => item.slug === slug);
   const department = departments.find((item) => item.slug === slug);
+
+  if (ugDepartment) {
+    return <UGDepartment data={ugDepartment} />;
+  }
 
   if (!department) {
     return <Navigate to="/departments" replace />;

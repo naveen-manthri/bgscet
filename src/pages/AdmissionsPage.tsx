@@ -1,5 +1,5 @@
 // import AcademicEligibility from '../components/AcademicEligibility/AcademicEligibility';
-import AdmissionSection from '../components/AdmissionSection/AdmissionSection';
+import AdmissionSection from '../components/admissioncontent/AdmissionSection/AdmissionSection';
 import Advertisement from '../components/Advertisement/Advertisement';
 import BannerSection from '../components/BannerSection/BannerSection';
 import Statistics from '../components/Statistics/Statistics';

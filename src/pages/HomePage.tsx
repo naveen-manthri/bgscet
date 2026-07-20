@@ -2,13 +2,13 @@
 import BannerSection from '../components/BannerSection/BannerSection';
 import homeBanner from '../assets/images/home/bgscet-clg.jpg';
 import Advertisement from '../components/Advertisement/Advertisement';
-import HomeAboutUniversity from '../components/HomeAboutUniversity/HomeAboutUniversity';
-import HomeAboutMutt from '../components/HomeAboutMutt/HomeAboutMutt';
-import HomeVisionMission from '../components/HomeVisionMission/HomeVisionMission';
-import HomeAcademicPrograms from '../components/HomeAcademicPrograms/HomeAcademicPrograms';
+import HomeAboutUniversity from '../components/homecontent/HomeAboutUniversity/HomeAboutUniversity';
+import HomeAboutMutt from '../components/homecontent/HomeAboutMutt/HomeAboutMutt';
+import HomeVisionMission from '../components/homecontent/HomeVisionMission/HomeVisionMission';
+import HomeAcademicPrograms from '../components/homecontent/HomeAcademicPrograms/HomeAcademicPrograms';
 // import HomePastEvents from '../components/HomePastEvents/HomePastEvents';
 // import HomeNewsAnnouncements from '../components/HomeNewsAnnouncements/HomeNewsAnnouncements';
-import HomeCampusLife from '../components/HomeCampusLife/HomeCampusLife';
+import HomeCampusLife from '../components/homecontent/HomeCampusLife/HomeCampusLife';
 import CampusPlacements from '../components/CampusPlacements/CampusPlacements';
 import StudentTestimonials from '../components/StudentTestimonials/StudentTestimonials';
 import VisitCampus from '../components/VisitCampus/VisitCampus';
