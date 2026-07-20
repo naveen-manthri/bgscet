@@ -1,4 +1,4 @@
-import AcademicHeading from "../../common/AcademicEligibilityHeading/AcademicEligibilityHeading";
+// import AcademicHeading from "../../common/AcademicEligibilityHeading/AcademicEligibilityHeading";
 import "./AdmissionInformation.css";
 
 
