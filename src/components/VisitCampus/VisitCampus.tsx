@@ -1,5 +1,5 @@
 import "./VisitCampus.css";
-import AdmissionButton from "../../components/AdmissionButton/AdmissionButton";
+import AdmissionButton from "../AdmissionButton/AdmissionButton";
 import { visitCampusData } from "../../data/visitCampusData";
 
 function VisitCampus() {

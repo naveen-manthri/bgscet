@@ -11,7 +11,6 @@ const PlacementsPage = lazy(() => import('../pages/PlacementsPage'));
 const FacilitiesPage = lazy(() => import('../pages/FacilitiesPage'));
 const GalleryPage = lazy(() => import('../pages/GalleryPage'));
 const ContactPage = lazy(() => import('../pages/ContactPage'));
-const CSEDepartment = lazy(() => import('../pages/CSEDepartment/CSEDepartment'));
 const NotFoundPage = lazy(() => import('../pages/NotFoundPage'));
 
 function AppRoutes() {
@@ -22,7 +21,6 @@ function AppRoutes() {
           <Route index element={<HomePage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="departments" element={<DepartmentsPage />} />
-          <Route path="departments/cse" element={<CSEDepartment />} />
           <Route path="departments/:slug" element={<DepartmentDetailPage />} />
           <Route path="admissions" element={<AdmissionsPage />} />
           <Route path="placements" element={<PlacementsPage />} />

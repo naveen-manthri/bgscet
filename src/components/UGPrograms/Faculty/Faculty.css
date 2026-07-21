@@ -1,0 +1,64 @@
+.department-faculty {
+  width: 100%;
+}
+
+.department-faculty__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  margin-top: 2rem;
+}
+
+.department-faculty__card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.department-faculty__image {
+  width: 100%;
+  display: block;
+  padding-bottom: 1.5rem;
+}
+
+.department-faculty__info {
+  padding: 0.75rem;
+
+  text-align: center;
+
+  background: #dddddd;
+}
+
+.department-faculty__name {
+  margin: 0;
+
+  color: var(--clr-title);
+
+  font-family: var(--ff-primary);
+  font-size: 2rem;
+  font-weight: var(--fw-bold);
+  line-height: 1.2;
+}
+
+.department-faculty__designation {
+  margin-top: 0.25rem;
+
+  color: var(--clr-title);
+
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+  font-weight: var(--fw-regular);
+}
+
+@media (max-width: 64rem) {
+  .department-faculty__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 48rem) {
+  .department-faculty__grid {
+    grid-template-columns: 1fr;
+  }
+}
