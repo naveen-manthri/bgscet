@@ -22,6 +22,8 @@ function AppRoutes() {
           <Route path="about" element={<AboutPage />} />
           <Route path="departments" element={<DepartmentsPage />} />
           <Route path="departments/:slug" element={<DepartmentDetailPage />} />
+          <Route path="ug-programs" element={<DepartmentsPage />} />
+          <Route path="ug-programs/:slug" element={<DepartmentDetailPage />} />
           <Route path="admissions" element={<AdmissionsPage />} />
           <Route path="placements" element={<PlacementsPage />} />
           <Route path="facilities" element={<FacilitiesPage />} />

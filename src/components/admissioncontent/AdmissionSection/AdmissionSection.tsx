@@ -1,5 +1,6 @@
 import "./AdmissionSection.css";
-import admissionImage from "../../assets/images/admission/admission-image-1.jpg";
+// import admissionImage from "../../assets/images/admission/admission-image-1.jpg";
+import admissionImage from "../../../assets/images/admission/admission-image-1.jpg";
 import AcademicHeading from "../../common/AcademicEligibilityHeading/AcademicEligibilityHeading";
 
 const courses: string[] = [
