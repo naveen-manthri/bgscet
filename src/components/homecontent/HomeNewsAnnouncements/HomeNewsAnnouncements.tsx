@@ -1,5 +1,5 @@
 import './HomeNewsAnnouncements.css';
-import { newsAnnouncements } from '../../data/newsAnnouncementsData';
+import { newsAnnouncements } from '../../../data/newsAnnouncementsData';
 
 function HomeNewsAnnouncements() {
   return (
