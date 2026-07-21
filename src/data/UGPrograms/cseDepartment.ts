@@ -96,7 +96,7 @@ export const infrastructureFaculty: InfrastructureFaculty = {
   title: "Infrastructure & Faculty",
 
   description:
-    "TThe department will have the best infrastructure with the latest high-end computing facilities to cater to the academic needs of the VTU-prescribed syllabus and provide a real-time experience to the students. The department will have renowned faculty members with long academic experience and experts from industries in India and abroad.",
+    "The department will have the best infrastructure with the latest high-end computing facilities to cater to the academic needs of the VTU-prescribed syllabus and provide a real-time experience to the students. The department will have renowned faculty members with long academic experience and experts from industries in India and abroad.",
 };
 
 
