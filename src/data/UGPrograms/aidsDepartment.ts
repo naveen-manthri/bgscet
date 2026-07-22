@@ -270,7 +270,6 @@ const aidsDepartment: UGDepartmentData = {
   banner: {
     image: aidsBannerImage,
     title: "AI & DS Department",
-    whatsappLink: "https://wa.me/919964897207",
   },
   tabs: departmentTabs,
   hodMessage,

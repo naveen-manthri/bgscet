@@ -242,7 +242,6 @@ const iseDepartment: UGDepartmentData = {
   banner: {
     image: iseBannerImage,
     title: "ISE Department",
-    whatsappLink: "https://wa.me/919964897207",
   },
   tabs: departmentTabs,
   hodMessage,

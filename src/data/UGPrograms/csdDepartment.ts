@@ -294,7 +294,6 @@ const csdDepartment: UGDepartmentData = {
   banner: {
     image: csdBannerImage,
     title: "CSD Department",
-    whatsappLink: "https://wa.me/919964897207",
   },
   tabs: departmentTabs,
   hodMessage,

@@ -224,7 +224,6 @@ const aimlDepartment: UGDepartmentData = {
   banner: {
     image: aimlBannerImage,
     title: "AIML Department",
-    whatsappLink: "https://wa.me/919964897207",
   },
   tabs: departmentTabs,
   hodMessage,
