@@ -10,7 +10,7 @@ import {
 function HomeCampusLife() {
   return (
     <section className="home-campus-life section-space">
-      <div className="container">
+      {/* <div className="container"> */}
         <SectionHeading
           subtitle="Campus Life"
           title="A Campus That"
@@ -42,7 +42,7 @@ function HomeCampusLife() {
             View Full Gallery
           </a>
         </div>
-      </div>
+      {/* </div> */}
     </section>
   );
 }

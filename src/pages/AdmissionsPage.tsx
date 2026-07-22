@@ -5,7 +5,7 @@ import BannerSection from '../components/BannerSection/BannerSection';
 import Statistics from '../components/Statistics/Statistics';
 import VisitCampus from '../components/VisitCampus/VisitCampus';
 import AcademicEligibilitySection from '../components/AcademicEligibilitySection/AcademicEligibilitySection';
-import AdmissionBanner from '../assets/images/banner/bgscet-clg.jpg';
+import AdmissionBanner from '../assets/images/banner/admission-banner.png';
 
 
 function AdmissionsPage() {
@@ -14,7 +14,6 @@ function AdmissionsPage() {
       <BannerSection
         image={AdmissionBanner}
         title="Admissions"
-        whatsappLink="https://wa.me/919900000000"
         />
       <Advertisement />
       <AdmissionSection />

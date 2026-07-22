@@ -21,6 +21,7 @@
 .home-campus-life {
   width: 100%;
   margin-top: 4rem;
+  padding: 0 4rem;
 }
 
 .home-campus-life .container {
@@ -32,7 +33,7 @@
 .campus-life-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1.6fr;
-  grid-template-rows: 17rem 20rem;
+  grid-template-rows: 18rem 24rem;
   gap: 1rem;
   margin-top: 3rem;
 }

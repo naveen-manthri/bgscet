@@ -41,11 +41,11 @@
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: var(--academic-content-gap);
-
+  width: 70%;
   h2 {
     margin: 0;
     font-family: var(--font-main);
-    font-size: 2.6rem;
+    font-size: 3rem;
     font-weight: 800;
     line-height: 1.25;
   }
@@ -54,10 +54,6 @@
 .academic-section-heading__black,
 .academic-section-heading__red {
   display: block;
-}
-
-.academic-section-heading__black {
-  color: var(--academic-heading-black);
 }
 
 .academic-section-heading__red {

@@ -1,55 +1,39 @@
 .home-about-university {
-  padding: clamp(3rem, 6vw, 5rem) 0;
-  background: var(--surface);
-}
-
-.home-about-university__inner {
-  width: var(--home-container-width);
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
-  align-items: center;
-  gap: clamp(2.2rem, 5vw, 4.4rem);
+  display: flex;
+  gap: 2rem;
+  padding: clamp(3.25rem, 5vw, 4rem);
+  padding-bottom:0;
 }
 
 .home-about-university__media {
+  display: flex;
+  gap: 1.5rem;
+  flex: 1;
+  padding-top: 1rem;
   position: relative;
-  min-height: clamp(20rem, 36vw, 28rem);
-}
-
-.home-about-university__image {
-  position: absolute;
-  object-fit: cover;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-soft);
 }
 
 .home-about-university__image--front {
-  left: 0;
-  bottom: 0.6rem;
-  z-index: 2;
-  width: 47%;
-  height: 77%;
+  transform: translateY(10%);
+  width: 40%;
+  height: 75%;
 }
 
 .home-about-university__image--back {
-  left: 49%;
-  top: 1.2rem;
-  z-index: 1;
-  width: 47%;
-  height: 80%;
-  margin-left: 0.5rem;
+  transform: translateY(-10%);
+  width: 45%;
+  height: 75%;
 }
 
 .home-about-university__badge {
   position: absolute;
-  left: 36%;
-  bottom: 22%;
+  left: 33%;
+  bottom: 25%;
   z-index: 3;
-  width: clamp(4.2rem, 11vw, 7rem);
-  height: clamp(4.2rem, 11vw, 7rem);
+  width: clamp(5.4rem, 11vw, 7.7rem);
+  height: clamp(5.4rem, 11vw, 7.7rem);
   border-radius: 50%;
-  box-shadow: var(--shadow);
+  box-shadow: 0 14px 30px rgba(91, 23, 20, 0.26);
 }
 
 .home-about-university__badge-ring {
@@ -59,16 +43,19 @@
 }
 
 .home-about-university__badge-fill {
-  fill: var(--badge-bg);
+  fill: #7b0053;
+}
+
+.home-about-university__badge-core {
+  fill: #f2ddea;
 }
 
 .home-about-university__badge-text {
-  font-family: 'Inter', sans-serif;
   fill: var(--white);
   font-size: 10px;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  word-spacing: 0.25rem;
+  word-spacing: 0.5rem;
 }
 
 @keyframes home-about-university-badge-spin {
@@ -88,30 +75,60 @@
 }
 
 .home-about-university__content p {
-  margin: 1.25rem 0 1.75rem;
-  color: var(--text-soft);
-  font-size: var(--body);
-  line-height: 1.58;
+  font-size: 1.125rem;
+  line-height: 1.75;
   text-align: justify;
 }
 
-.home-about-university .home-section-title::after {
-  border-bottom: 0.25rem solid var(--about-title-underline);
+.home-section-title {
+  font-size: var(--section-title);
+  font-weight: 800;
+}
+
+.home-about-university__content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1.5rem;
+}
+
+.home-about-university__cta {
+  display: inline-flex;
+}
+
+.home-about-university__cta .admission-button {
+  width: clamp(11.5rem, 16vw, 14rem);
+  height: 3.35rem;
 }
 
 @media (max-width: 52em) {
-  .home-about-university__inner {
-    grid-template-columns: 1fr;
-  }
-
   .home-about-university__media {
     width: min(100%, 34rem);
+    margin: 0 auto;
+  }
+
+  .home-about-university__content {
+    max-width: 34rem;
     margin: 0 auto;
   }
 }
 
 @media (max-width: 36em) {
   .home-about-university__media {
-    min-height: 18rem;
+    min-height: 19rem;
+  }
+
+  .home-about-university__image--front {
+    width: 34%;
+  }
+
+  .home-about-university__image--back {
+    left: 29%;
+    width: 52%;
+  }
+
+  .home-about-university__badge {
+    left: 34%;
+    bottom: 3%;
   }
 }

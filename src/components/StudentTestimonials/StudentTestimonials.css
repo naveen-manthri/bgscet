@@ -6,8 +6,7 @@
 }
 
 .student-testimonials__inner {
-  width: min(94%, 80rem);
-  margin: 0 auto;
+  padding: 0 4rem;
 }
 
 .student-testimonials .shared-section-heading {

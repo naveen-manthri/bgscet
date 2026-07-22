@@ -35,8 +35,10 @@
 }
 
 .home-academic {
-  padding: var(--section-padding);
-  background: var(--white);
+  padding: 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .home-academic .container {
@@ -55,23 +57,16 @@
 
 .academic-subtitle {
   margin: 0;
-
-  font-family: "Poppins", sans-serif;
   font-size: var(--academic-subtitle-size);
   font-weight: 400;
-
   color: #000000;
 }
 
 .academic-title {
   margin: 0.4rem 0 0;
-
-  font-family: "Poppins", sans-serif;
-  font-size: var(--academic-title-size);
+  font-size: var(--section-title);
   font-weight: 700;
-
   color: #040404;
-
   line-height: 1.15;
 }
 
@@ -86,13 +81,9 @@
 }
 .programs-grid {
   width: 100%;
-
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-
-  gap: 1.5rem;
-
-  align-items: stretch;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
 }
 .program-card {
   display: flex;
@@ -214,10 +205,6 @@
   border-radius: 0.2rem;
 }
 
-.program-card {
-  min-height: 26rem;
-}
-
 .program-image {
   object-position: center;
 }
@@ -229,11 +216,6 @@
 .section-heading-academic {
   margin-bottom: 0.25rem;
 }
-
-.programs-grid {
-  margin-inline: auto;
-}
-
 
 .program-card:hover {
   transform: translateY(-0.35rem);

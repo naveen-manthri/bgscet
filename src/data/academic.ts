@@ -7,7 +7,7 @@ import type {
 export const academicData: AcademicSection = {
   title: {
     black: "Academic Eligibility For Admissions To Four Years Under Graduate",
-    red: "Programs Through KEA/COMED-K/Management:",
+    red: "Programs Through KEA/COMED-K/ Management:",
   },
 
   eligibility: {

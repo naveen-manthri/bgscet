@@ -1,9 +1,9 @@
 .campus-placements {
   width: 100%;
-  padding:  2.2rem 4rem;
+  padding:  2.2rem 0;
   overflow: hidden;
   color: var(--white);
-  background: linear-gradient(93.82deg, #7d2720 22.99%, #e3473a 128.56%);
+  background: linear-gradient(to bottom, #E3473A, #7D2720);
   margin-top: 1rem;
 }
 

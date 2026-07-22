@@ -3,22 +3,15 @@ import './HomeVisionMission.css';
 
 function HomeVisionMission() {
   return (
-    <section className="home-vision-mission" aria-labelledby="home-vision-mission-title">
-      <div className="home-vision-mission__inner">
-        <img
-          className="home-vision-mission__image"
-          src={homeVisionMission.image}
-          alt="BGSCET faculty and students"
-        />
-
-        <article className="home-vision-mission__content">
-          <h2 className="home-section-title home-section-title--left" id="home-vision-mission-title">
-            {homeVisionMission.title}
-          </h2>
-          <p>{homeVisionMission.description}</p>
-        </article>
-      </div>
-    </section>
+    <section className="home-vision-mission" aria-labelledby="home-vision-mission">
+          <img className="home-vision-mission__image" src={homeVisionMission.image} alt="Sri Adichunchanagiri Mutt event" />
+          <div className="home-vision-mission__content">
+            <h2 className="home-section-title" id="home-vision-mission-title">
+              {homeVisionMission.title}
+            </h2>
+            <p>{homeVisionMission.description}</p>
+          </div>
+        </section>
   );
 }
 

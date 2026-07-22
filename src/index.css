@@ -43,7 +43,7 @@
   --container-width: min(92%, 72rem);
   --home-container-width: min(88%, 68rem);
   --section-padding: clamp(2.2rem, 5vw, 2.5rem);
-  --section-title: clamp(1.8rem, 4vw, 2.25rem);
+  --section-title: clamp(1.8rem, 4vw, 2.5rem);
   --heading-size: var(--section-title);
   --heading-size-mobile: clamp(1.55rem, 8vw, 1.9rem);
   --card-title: clamp(0.95rem, 1.6vw, 1.25rem);
@@ -190,6 +190,7 @@ img {
   z-index: 10;
   background: var(--primary-deep);
   box-shadow: var(--shadow-soft);
+  height: 6.25rem;
 }
 
 .main-navbar__inner {
@@ -243,7 +244,7 @@ img {
   align-items: center;
   flex-wrap: wrap;              
   column-gap: 2rem;
-  padding: 0.5rem 0;
+  padding: 0.25rem 0;
 }
 
 .main-navbar__item {
@@ -321,6 +322,11 @@ img {
 .main-navbar__dropdown-link:hover {
   background: var(--section-soft);
   color: var(--primary-dark);
+}
+.underline {
+  width: fit-content;
+  padding-bottom: 1rem;
+  border-bottom: 3.5px solid var(--text);
 }
 
 
@@ -420,28 +426,6 @@ img {
 .home-button:focus-visible {
   outline: 0.18rem solid var(--focus);
   outline-offset: 0.18rem;
-}
-.home-section-title {
-  position: relative;
-  display: inline-block;
-  margin: 0;
-  color: var(--text);
-  font-size: var(--section-title);
-  font-weight: 800;
-  line-height: 1.15;
-}
-
-.home-section-title::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 0;
-  margin-top: 0.55rem;
-  border-bottom: 0.12rem solid var(--text);
-}
-
-.home-section-title--left {
-  text-align: left;
 }
 
 .home-button {

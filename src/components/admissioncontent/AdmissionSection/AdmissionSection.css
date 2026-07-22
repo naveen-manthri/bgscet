@@ -7,13 +7,9 @@
   --white-clr:#ffffff;
 
   background: #ffffff;
-  padding: 2.5rem 1rem;
-}
-
-.admission__container {
-  width: min(100%, var(--admission-container-width));
-  margin: 0 auto;
-  padding: 0rem;
+  padding: 4rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .admission__title.academic-section-heading {
@@ -33,10 +29,6 @@
   white-space: pre-line;
 }
 
-.admission__title .academic-section-heading__black {
-  color: var(--admission-title);
-}
-
 .admission__title .academic-section-heading__red {
   margin: 0;
   color: var(--admission-primary);
@@ -49,17 +41,10 @@
   background: var(--admission-divider);
 }
 
-.admission__body {
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(20rem, 1fr);
-  gap: 3rem;
-  align-items: start;
-}
-
 .admission__heading {
   margin: 0 0 2.3rem;
   color: var(--admission-title);
-  font-size: 1.12rem;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.4;
 }
@@ -86,12 +71,12 @@
   flex: 0 0 1.2rem;
   align-items: center;
   justify-content: center;
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 50%;
   background: var(--admission-primary);
   color: var(--white-clr);
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1;
 }
@@ -108,35 +93,19 @@
 }
 
 .admission__course {
-  padding-top: 0.02rem;
   color: var(--admission-course);
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.4;
 }
 
-.admission__image-wrapper {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: -4.7rem;
-}
-
 .admission__image {
-  display: block;
-  width: 100%;
-  max-width: 85%;
-  height: 21.9rem;
-  object-fit: cover;
+  width: 40%;
 }
 
 @media (max-width: 64rem) {
   .admission__title.academic-section-heading h2 {
     font-size: 2.1rem;
-  }
-
-  .admission__body {
-    grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.8fr);
-    gap: 2rem;
   }
 
   .admission__image {
@@ -155,11 +124,6 @@
 
   .admission__title.academic-section-heading h2 {
     font-size: 1.8rem;
-  }
-
-  .admission__body {
-    grid-template-columns: 1fr;
-    gap: 2rem;
   }
 
   .admission__image-wrapper {

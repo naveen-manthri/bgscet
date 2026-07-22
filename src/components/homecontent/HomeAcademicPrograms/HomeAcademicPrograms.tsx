@@ -5,17 +5,15 @@ import AdmissionButton from "../../../components/AdmissionButton/AdmissionButton
 function HomeAcademicPrograms() {
   return (
     <section className="home-academic section-space">
-      <div className="container academic-programs-container">
+      {/* <div className="container academic-programs-container"> */}
         <div className="section-heading-academic">
           <p className="academic-subtitle">Academics</p>
 
           <h2 className="academic-title">
             Programs Designed
             <br />
-            Like <em>Products.</em>
+            <span className="underline">Like <em>Products.</em></span>
           </h2>
-
-          <div className="academic-title-divider" />
         </div>
 
         <div className="programs-grid">
@@ -55,7 +53,7 @@ function HomeAcademicPrograms() {
         <div className="admission-btn-wrapper">
           <AdmissionButton variant="primary" />
         </div>
-      </div>
+      {/* </div> */}
     </section>
   );
 }
