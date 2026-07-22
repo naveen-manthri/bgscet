@@ -91,3 +91,15 @@
 .admission-information__contact p:first-of-type {
   font-weight: 500;
 }
+.unique-features{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+}
+.unique-features__left-image, .unique-features__right-image{
+  width: 49%;
+  height: auto;
+  object-fit: cover;
+  box-shadow: var(--shadow-soft);
+}

@@ -4,7 +4,7 @@ import techIumImage from "../../assets/images/achievement/tech-ium.jpg";
 import internshipImage from "../../assets/images/achievement/internship.jpg";
 import event1Image from "../../assets/images/cseevents/event-1.jpg";
 import event2Image from "../../assets/images/cseevents/event-2.jpg";
-import cseBannerImage from "../../assets/images/academic/computer-science.jpg";
+import cseBannerImage from "../../assets/images/banner/department-banner-cse.png";
 
 import type {
   DepartmentTab,
@@ -200,7 +200,6 @@ const cseDepartment: UGDepartmentData = {
   banner: {
     image: cseBannerImage,
     title: "CSE Department",
-    whatsappLink: "https://wa.me/919964897207",
   },
   tabs: departmentTabs,
   hodMessage,

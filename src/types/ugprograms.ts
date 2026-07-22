@@ -6,7 +6,6 @@ export interface DepartmentTab {
 export interface DepartmentBanner {
   image: string;
   title: string;
-  whatsappLink: string;
 }
 
 export interface HodMessage {

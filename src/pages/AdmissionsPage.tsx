@@ -18,9 +18,7 @@ function AdmissionsPage() {
       <Advertisement />
       <AdmissionSection />
       <Statistics />
-      {/* <AcademicEligibility /> */}
       <AcademicEligibilitySection />
-      
       <VisitCampus />
     </>
   );
