@@ -5,6 +5,16 @@ import internshipImage from "../../assets/images/achievement/internship.jpg";
 import event1Image from "../../assets/images/cseevents/event-1.jpg";
 import event2Image from "../../assets/images/cseevents/event-2.jpg";
 import cseBannerImage from "../../assets/images/banner/department-banner-cse.png";
+import sumanthCGowda from "../../assets/images/csedepartment/sumanth-c-gowda.jpeg";
+import manasaCK from "../../assets/images/csedepartment/Manasa-CK.jpeg";
+import mrSatishG from "../../assets/images/csedepartment/Mr-Satish-g.jpeg";
+import drVaniV from "../../assets/images/csedepartment/dr-vani-v.jpeg";
+import mrChethanHV from "../../assets/images/csedepartment/Mr.-Chethan-H-V.jpg";
+import mrsVedha from "../../assets/images/csedepartment/Mrs.vedha.jpg";
+import pricipal from "../../assets/images/csedepartment/pricipal.jpg";
+import jayashree from "../../assets/images/csedepartment/jayashree.jpeg";
+import rohiniC from "../../assets/images/csedepartment/rohini-c.jpeg";
+import mrsAshaSN from "../../assets/images/csedepartment/Mrs.-Asha-S-N.jpg";
 
 import type {
   DepartmentTab,
@@ -125,15 +135,73 @@ export const visionMission: DepartmentVisionMission = {
 export const facultyMembers: FacultyMember[] = [
   {
     id: 1,
-    image: hodImage,
-    name: "Dr. Manjula G",
-    designation: "Professor and HOD",
+    image: pricipal,
+    name: "Dr. Ravikumar GK",
+    designation: "Principal",
   },
 
   {
     id: 2,
     image: hodImage,
-    name: "Faculty Name",
+    name: "Dr. Manjula G",
+    designation: "Professor and HOD",
+  },
+  {
+    id: 3,
+    image: mrsVedha,
+    name: "Mrs.Vedha.C",
+    designation: "Assistant Professor",
+  },
+
+  {
+    id: 4,
+    image: mrChethanHV,
+    name: "Mr.Chethan H V",
+    designation: "Associate Professor",
+  },
+  {
+    id: 5,
+    image: drVaniV,
+    name: "Dr Vani V",
+    designation: "Associate Professor",
+  },
+
+  {
+    id: 6,
+    image: mrSatishG,
+    name: "Mr. SATHISHA G",
+    designation: "Assistant Professor",
+  },
+  {
+    id: 7,
+    image: mrsAshaSN,
+    name: "Mrs. Asha S N",
+    designation: "Assistant Professor",
+  },
+
+  {
+    id: 8,
+    image: rohiniC,
+    name: "Rohini C",
+    designation: "Assistant Professor",
+  },
+  {
+    id: 9,
+    image: manasaCK,
+    name: "Manasa C.K",
+    designation: "Assistant Professor",
+  },
+
+  {
+    id: 10,
+    image: sumanthCGowda,
+    name: "Sumanth C Gowda",
+    designation: "Assistant Professor",
+  },
+  {
+    id: 11,
+    image: jayashree,
+    name: "Jayashree",
     designation: "Assistant Professor",
   },
 ];

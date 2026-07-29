@@ -76,9 +76,12 @@ As we endeavor to uphold the vision upon which our department was founded, we ta
 export const aboutDepartment: AboutDepartment = {
   title: "About AI & DS",
 
-  description: `The department of Artificial intelligence and Machine learning(AI&ML) is established during the academic year 2022-23 with an intake of 60.
+  description: `The department of Artificial Intelligence and Data Science (AI&DS) is established during the academic year 2022-23 with an intake of 60.
 
-Artificial intelligence and Machine learning(AI&ML) areas are the branches of Computer Science and rapidly growing technologies, used to create intelligent systems that can simulate human thinking capability and behavior across service and non-service sectors. In other words, AI&ML enables the Computer to mimic the human brain in terms of making decisions accurately without manual intervention. AI&ML is an exciting field of study that brings together theories, standards, methods, and innovative ideas from various domains like mathematics, cognitive science, electronics, and embedded systems. Its purpose is to create remarkable advancements by leveraging the power of these diverse disciplines, intelligent systems that mimic human behaviour.`
+Artificial Intelligence is a human-like intelligence provided to machines where machines act and think as humanly & solve problems faster than humans. Speech recognition, translation tools, etc., are the building areas of AI.
+Artificial Intelligence is the implementation of a predictive model to forecast future events and trends, Automation of the process & uses machine learning techniques
+Data Science is a subset of Artificial Intelligence. Data science is a collection of data to analyze and make a decision. It uses scientific methods, processes, algorithms, and insights from many structural and unstructured data.
+Data Science is a detailed process that mainly involves pre-processing analysis, visualization, and prediction with a high degree of scientific processing & extensive tools will be used to process the data uses the technique of data analysis and data analytics.`
 };
 
 
