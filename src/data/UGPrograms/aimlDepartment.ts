@@ -1,10 +1,16 @@
-import hodImage from "../../assets/images/csedepartment/hod.png";
 import careerImage from "../../assets/images/csedepartment/career-opportunities.jpg";
 import techIumImage from "../../assets/images/achievement/tech-ium.jpg";
 import internshipImage from "../../assets/images/achievement/internship.jpg";
 import event1Image from "../../assets/images/cseevents/event-1.jpg";
 import event2Image from "../../assets/images/cseevents/event-2.jpg";
 import aimlBannerImage from "../../assets/images/academic/artificial-intelligence.jpg";
+import laxmi from "../../assets/images/aimldepartment/Laxmi.jpg";
+import nishitaNMurthy from "../../assets/images/aimldepartment/Nishita N Murthy.png";
+import pratyakshaS from "../../assets/images/aimldepartment/Pratyaksha S.jpeg";
+import drMadhuraGangaiah from "../../assets/images/aimldepartment/Dr.-Madhura-Gangaiah.jpg";
+import drManjulaL from "../../assets/images/aimldepartment/Dr. Manjula L.jpeg";
+import msVandanaSSardar from "../../assets/images/aimldepartment/Ms.-Vandana-S-Sardar.jpg";
+import hod from "../../assets/images/aimldepartment/Dr.JalajaG.jpg";
 
 import type {
   DepartmentTab,
@@ -47,7 +53,7 @@ export const departmentTabs: DepartmentTab[] = [
 export const hodMessage: HodMessage = {
   title: "HOD's Message",
 
-  image: hodImage,
+  image: hod,
 
   name: "Dr. Jalaja G",
 
@@ -130,17 +136,47 @@ export const visionMission: DepartmentVisionMission = {
 export const facultyMembers: FacultyMember[] = [
   {
     id: 1,
-    image: hodImage,
-    name: "Dr. Manjula G",
+    image: hod,
+    name: "Dr. Jalaja G",
     designation: "Professor and HOD",
   },
 
   {
-    id: 2,
-    image: hodImage,
-    name: "Faculty Name",
-    designation: "Assistant Professor",
-  },
+  id: 2,
+  image: msVandanaSSardar,
+  name: "Vandana S Sardar",
+  designation: "Assistant Professor",
+},
+{
+  id: 3,
+  image: drManjulaL,
+  name: "Dr. Manjula L",
+  designation: "Associate Professor",
+},
+{
+  id: 4,
+  image: drMadhuraGangaiah,
+  name: "Dr. Madhura Gangaiah",
+  designation: "Professor",
+},
+{
+  id: 5,
+  image: pratyakshaS,
+  name: "Pratyaksha S",
+  designation: "Assistant Professor",
+},
+{
+  id: 6,
+  image: nishitaNMurthy,
+  name: "Nishita N Murthy",
+  designation: "Assistant Professor",
+},
+{
+  id: 7,
+  image: laxmi,
+  name: "Laxmi",
+  designation: "Assistant Professor",
+},
 ];
 
 
