@@ -16,9 +16,7 @@ const AboutDepartment = ({
   return (
     <section className="about-cse">
 
-      <DepartmentSectionHeading
-        title={data.title}
-      />
+      <DepartmentSectionHeading title={data.title}  />
 
       <div className="about-cse__content">
         <p className="about-cse__description">
