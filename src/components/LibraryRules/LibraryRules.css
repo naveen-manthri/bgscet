@@ -1,0 +1,49 @@
+.library-rules {
+
+    --fs-body:1.25rem;
+  padding: 5rem 0;
+  background: var(--white);
+}
+
+.library-rules__container {
+  width: min(90%, var(--container-width));
+  margin: 0 auto;
+}
+
+.library-rules__list {
+  margin: 2rem 0 0;
+  padding-left: 1.5rem;
+}
+
+.library-rules__item {
+  margin-bottom: 0.7rem;
+  color: var(--academic-paragraph);
+  font-size: var(--fs-body);
+  line-height: 1.8;
+}
+
+.library-rules__item::marker {
+  color: var(--title);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 64rem) {
+  .library-rules {
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 48rem) {
+  .library-rules {
+    padding: 3rem 0;
+  }
+
+  .library-rules__list {
+    margin-top: 1.5rem;
+  }
+
+  .library-rules__item {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}
