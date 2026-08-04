@@ -9,8 +9,16 @@ const DepartmentDetailPage = lazy(() => import('../pages/DepartmentDetailPage'))
 const AdmissionsPage = lazy(() => import('../pages/AdmissionsPage'));
 const PlacementsPage = lazy(() => import('../pages/PlacementsPage'));
 const FacilitiesPage = lazy(() => import('../pages/FacilitiesPage'));
+const LibraryPage = lazy(() => import('../pages/LibraryPage'));
+const AuditoriumPage = lazy(() => import('../pages/facilities/AuditoriumPage'));
+const BoardRoomPage = lazy(() => import('../pages/facilities/BoardRoomPage'));
+const DigitalClassroomPage = lazy(() => import('../pages/facilities/DigitalClassroomPage'));
+const SeminarHallPage = lazy(() => import('../pages/facilities/SeminarHallPage'));
 const GalleryPage = lazy(() => import('../pages/GalleryPage'));
 const ContactPage = lazy(() => import('../pages/ContactPage'));
+const AicteApprovalLettersPage = lazy(() => import('../pages/AicteApprovalLettersPage'));
+const VtuApprovalLettersPage = lazy(() => import('../pages/VtuApprovalLettersPage'));
+const CommitteesPage = lazy(() => import('../pages/committePage'));
 const NotFoundPage = lazy(() => import('../pages/NotFoundPage'));
 
 function AppRoutes() {
@@ -27,8 +35,16 @@ function AppRoutes() {
           <Route path="admissions" element={<AdmissionsPage />} />
           <Route path="placements" element={<PlacementsPage />} />
           <Route path="facilities" element={<FacilitiesPage />} />
+          <Route path="facilities/library" element={<LibraryPage />} />
+          <Route path="facilities/auditorium" element={<AuditoriumPage />} />
+          <Route path="facilities/board-room" element={<BoardRoomPage />} />
+          <Route path="facilities/digital-classroom" element={<DigitalClassroomPage />} />
+          <Route path="facilities/seminar-hall" element={<SeminarHallPage />} />
           <Route path="gallery" element={<GalleryPage />} />
           <Route path="contact" element={<ContactPage />} />
+          <Route path="quick-links/aicte-approval-letters" element={<AicteApprovalLettersPage />} />
+          <Route path="quick-links/vtu-approval-letters" element={<VtuApprovalLettersPage />} />
+          <Route path="quick-links/committees" element={<CommitteesPage />} />
           <Route path="404" element={<NotFoundPage />} />
           <Route path="*" element={<Navigate to="/404" replace />} />
         </Route>

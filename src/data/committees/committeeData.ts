@@ -3,7 +3,7 @@ import type { Committee } from "../../types/committee";
 export const committeeData: Committee[] = [
   {
     title: "Internal Complaint & Anti-Sexual Harassment Committee",
-    pdf: "pdfs/commitees/Internal-Complaint-Anti-Sexual-harrasment-Committee.pdf",
+    pdf: "/pdfs/committees/Internal-Complaint-Anti-Sexual-harrasment-Committee.pdf",
   },
   {
     title: "Grievance Redressal",

@@ -6,8 +6,9 @@
 }
 
 .library-about__container {
-  width: min(90%, var(--container-width));
+  width: 100%;
   margin: 0 auto;
+  padding: 0 4rem;
 }
 
 .library-about__content {
@@ -46,7 +47,7 @@
 }
 
 .library-about__item-title {
-  color: var(--color-red);
+  color: inherit;
   font-weight: var(--fw-semibold);
 }
 
@@ -82,6 +83,10 @@
 
   .library-about__content {
     margin-top: 1.5rem;
+  }
+
+  .library-about__container {
+    padding: 0 1.25rem;
   }
 
   .library-about__heading {
