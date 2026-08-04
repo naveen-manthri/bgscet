@@ -16,9 +16,7 @@ const HodMessage = ({
   return (
     <section className="hod-message">
 
-      <DepartmentSectionHeading
-        title={data.title}
-      />
+      <DepartmentSectionHeading  title={data.title} />
 
 
       <div className="hod-message__content">

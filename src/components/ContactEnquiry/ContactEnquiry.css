@@ -1,0 +1,236 @@
+.contact-enquiry {
+
+    
+  --fs-body: 1.25rem;
+  padding: 5rem 0;
+  background: var(--white);
+}
+
+.contact-enquiry__container {
+  width: min(90%, var(--container-width));
+  margin: 0 auto;
+}
+
+.contact-enquiry__description {
+  width: 100%;
+  margin: 1.5rem 0 3rem;
+  color: var(--primary);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-medium);
+  line-height: 1.8;
+}
+
+.contact-enquiry__contacts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contact-card {
+  padding: 2rem;
+  background: var(--white);
+  border: 0.0625rem solid var(--color-border-light);
+  border-radius: 1rem;
+  transition: var(--transition);
+}
+
+
+
+.contact-card__name {
+  color: var(--academic-paragraph);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+}
+
+.contact-card__designation,
+.contact-card__organization{
+  color: var(--academic-paragraph);
+  font-size: var(--fs-body);
+}
+
+.contact-card__link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--academic-paragraph);
+  text-decoration: none;
+  font-size: var(--fs-body);
+  transition: var(--transition);
+}
+
+.contact-card__link:hover {
+  color: var(--divider);
+}
+
+
+.contact-enquiry__form {
+  margin-bottom: 5rem;
+  overflow: hidden;
+  border: 0.0625rem solid var(--color-border-light);
+  border-radius: 1rem;
+}
+
+.contact-enquiry__form-frame {
+  width: 100%;
+  height: 75rem;
+  border: none;
+  display: block;
+}
+
+.visit-us {
+  display: grid;
+  grid-template-columns: 0.9fr 1.3fr;
+  gap: 4rem;
+  align-items: start;
+  margin-top: 5rem;
+}
+
+.visit-us__left {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.visit-us__left .department-section-heading {
+  margin-bottom: 2rem;
+}
+
+.visit-us__address {
+  margin: 0 ;
+  color: var(--academic-paragraph);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-medium);
+  line-height: 1.6;
+}
+
+.visit-us__contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--academic-paragraph);
+  text-decoration: none;
+  font-size: var(--fs-body);
+  font-weight: var(--fw-medium);
+}
+
+.visit-us__right {
+  width: 100%;
+}
+
+.visit-us__map-frame {
+  width: 100%;
+  height: 22rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+
+.visit-us__contact:hover {
+  color: var(--divider);
+}
+
+
+
+
+
+@media (max-width: 64rem) {
+  .contact-enquiry {
+    padding: 4rem 0;
+  }
+
+  .contact-enquiry__description {
+    max-width: 42rem;
+    margin: 1.25rem auto 2.5rem;
+  }
+
+  .contact-enquiry__contacts {
+    gap: 1.5rem;
+  }
+
+  .contact-card {
+    padding: 1.5rem;
+  }
+
+  .contact-enquiry__form {
+    margin-bottom: 4rem;
+  }
+
+  .contact-enquiry__form-frame {
+    height: 65rem;
+  }
+
+  .visit-us {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2.5rem;
+  }
+
+  .visit-us__details {
+    order: 2;
+  }
+
+  .visit-us__map {
+    order: 1;
+  }
+
+  .visit-us__map-frame {
+    height: 24rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .contact-enquiry {
+    padding: 3rem 0;
+  }
+
+  .contact-enquiry__description {
+    margin: 1rem auto 2rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .contact-enquiry__contacts {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .contact-card {
+    padding: 1.25rem;
+  }
+
+  .contact-card__name {
+    font-size: 1.125rem;
+  }
+
+  .contact-card__designation,
+  .contact-card__organization,
+  .contact-card__link,
+  .visit-us__address,
+  .visit-us__contact, .contact-card__link .material-symbols-outlined {
+    font-size: 0.95rem;
+  }
+
+  .contact-enquiry__form {
+    margin-bottom: 3rem;
+    border-radius: 0.75rem;
+  }
+
+  .contact-enquiry__form-frame {
+    height: 55rem;
+  }
+
+  .visit-us {
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .visit-us__map {
+    border-radius: 0.75rem;
+  }
+
+  .visit-us__map-frame {
+    height: 20rem;
+  }
+}

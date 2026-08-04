@@ -1,0 +1,124 @@
+.about-librarian {
+  padding: 5rem 0;
+  background: var(--white);
+}
+
+.about-librarian__container {
+  width: min(90%, var(--container-width));
+  margin: 0 auto;
+}
+
+.about-librarian__content {
+  margin-top: 2rem;
+}
+
+.about-librarian__paragraph {
+  margin-bottom: 1rem;
+  color: var(--academic-paragraph);
+  font-size: var(--fs-body);
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.about-librarian__member-title {
+  margin: 2rem 0 1rem;
+  color: var(--title);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+}
+
+.about-librarian__member-list {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.about-librarian__member-item {
+  margin-bottom: 0.5rem;
+  color: var(--academic-paragraph);
+  font-size: var(--fs-body);
+  line-height: 1.8;
+}
+
+.about-librarian__member-item::marker {
+  color: var(--title);
+  font-size: 0.8rem;
+}
+
+.about-librarian__staff {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.about-librarian__card {
+  width: 17rem;
+  overflow: hidden;
+  background: var(--white);
+}
+
+.about-librarian__image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+}
+
+.about-librarian__card-content {
+  padding: 0.8rem;
+  background: #e3473a;
+  text-align: center;
+}
+
+.about-librarian__name {
+  margin-bottom: 0.35rem;
+  color: var(--white);
+  font-size: 0.95rem;
+  font-weight: var(--fw-semibold);
+  text-transform: uppercase;
+}
+
+.about-librarian__designation,
+.about-librarian__qualification {
+  color: var(--white);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 64rem) {
+  .about-librarian {
+    padding: 4rem 0;
+  }
+
+  .about-librarian__staff {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .about-librarian {
+    padding: 3rem 0;
+  }
+
+  .about-librarian__content {
+    margin-top: 1.5rem;
+  }
+
+  .about-librarian__paragraph,
+  .about-librarian__member-item,
+  .about-librarian__member-title {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .about-librarian__staff {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .about-librarian__card {
+    width: min(100%, 18rem);
+  }
+}
