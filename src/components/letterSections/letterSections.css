@@ -1,0 +1,31 @@
+.letter-sections {
+  padding: 0 4rem;
+}
+
+.letter-section {
+  margin-top: 3rem;
+}
+
+.letter-section__heading {
+  margin-bottom: 1rem;
+  color: var(--btn-primary);
+}
+
+.letter-section__list {
+  padding-left: 1.5rem;
+}
+
+.letter-section__list li {
+  margin-bottom: 0.75rem;
+}
+
+.letter-section__link {
+  color: var(--btn-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.letter-section__link:hover {
+  color: var(--btn-primary-hover);
+  text-decoration: underline;
+}

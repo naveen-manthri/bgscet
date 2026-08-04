@@ -36,12 +36,7 @@ function MainNavbar() {
             const hasChildren = Boolean(item.children?.length);
 
             return (
-              <li
-                className="main-navbar__item"
-                key={item.label}
-                onMouseEnter={() => setOpenDropdown(item.label)}
-                onMouseLeave={() => setOpenDropdown(null)}
-              >
+              <li  className="main-navbar__item" key={item.label}  onMouseEnter={() => setOpenDropdown(item.label)} onMouseLeave={() => setOpenDropdown(null)} >
                 {/* <div className="main-navbar__link-row">
                   <NavLink
                     className={({ isActive }) => `main-navbar__link${isActive ? ' is-active' : ''}`}
