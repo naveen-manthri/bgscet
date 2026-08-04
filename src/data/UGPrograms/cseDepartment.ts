@@ -1,7 +1,6 @@
 import hodImage from "../../assets/images/csedepartment/hod.png";
 import careerImage from "../../assets/images/csedepartment/career-opportunities.jpg";
-import techIumImage from "../../assets/images/achievement/tech-ium.jpg";
-import internshipImage from "../../assets/images/achievement/internship.jpg";
+
 import event1Image from "../../assets/images/cseevents/event-1.jpg";
 import event2Image from "../../assets/images/cseevents/event-2.jpg";
 import cseBannerImage from "../../assets/images/banner/department-banner-cse.png";
@@ -15,6 +14,16 @@ import pricipal from "../../assets/images/csedepartment/pricipal.jpg";
 import jayashree from "../../assets/images/csedepartment/jayashree.jpeg";
 import rohiniC from "../../assets/images/csedepartment/rohini-c.jpeg";
 import mrsAshaSN from "../../assets/images/csedepartment/Mrs.-Asha-S-N.jpg";
+import volleyballTour from "../../assets/images/achievement/cse-achievements/Volleyball-tour-.jpg";
+import jvtmImage from "../../assets/images/achievement/cse-achievements/JVTM-image-.jpeg";
+import rohiniInternship from "../../assets/images/achievement/cse-achievements/Rohini-internship.jpeg";
+import devSprintHackathon from "../../assets/images/achievement/cse-achievements/DEVSPRINT-A-24-Hour-Hackathon.jpeg";
+import cseExhibition from "../../assets/images/achievement/cse-achievements/Students-CSE-Won-2nd-Prize-in-Dance-JVTM-2024.jpg";
+import toppers20222026FourthSem from "../../assets/images/achievement/cse-achievements/Toppers-of-2022-2026-4th-sem-VTU-Aug-Sep-2024.jpeg";
+import toppers20222026FifthSem from "../../assets/images/achievement/cse-achievements/Toppers-2022-2026-5th-sem-VTU.jpeg";
+import toppers20232027 from "../../assets/images/achievement/cse-achievements/Toppers-Batch-2023-2027.jpeg";
+import techIUMwinners from "../../assets/images/achievement/cse-achievements/Tech-IUM-Winners.jpeg";
+
 
 import type {
   DepartmentTab,
@@ -67,14 +76,14 @@ export const hodMessage: HodMessage = {
     "Watch on YouTube",
   ],
 
-  description: `Greetings from the Department of Computer Science and Engineering, BGSCET. It has been universally accredited that the flagship branch of engineering, computer science discipline, is dedicated to ensuring great careers for its students. The Department is committed to working towards developing Engineers with a rich blend of competent, technical, managerial, and social skills and contributing to societal needs and nation-building. This tends to forge deeper industry associations than ever before, creating a research culture from day one and ensuring unified education using the best technology available anywhere. We are focused not only on delivering technical education to our students but also on the leadership proficiencies through which they can lead to economic development for others. The intellectual ambiance in the Department of CSE is conducive to the holistic development of the students. The excellent infrastructure, experienced and scholarly team of faculty members are dedicated to strengthening effective teaching-learning processes, thereby ensuring quality education. The department places emphasis on reinforcing the laboratory infrastructure by adopting novel industry-relevant technologies to empower students to learn and stimulate integrated learning to take up industry-relevant projects. Innovative teaching and learning methods are used to achieve learning abilities through practice, exposure, and motivation. Our goal is to foster critical thinking and analytical skills to ensure that graduates are employable, entrepreneurs, and ethical members of Society.`
+  description: `Greetings from the Department of Computer Science and Engineering, BGSCET. It has been universally accredited that the flagship branch of engineering, computer science discipline, is dedicated to ensuring great careers for its students. The Department is committed to working towards developing Engineers with a rich blend of competent, technical, managerial, and social skills and contributing to societal needs and nation-building. This tends to forge deeper industry associations than ever before, creating a research culture from day one and ensuring unified education using the best technology available anywhere. We are focused not only on delivering technical education to our students but also on the leadership proficiencies through which they can lead to economic development for others. The intellectual ambiance in the Department of CSE is conducive to the holistic development of the students. The excellent infrastructure, experienced and scholarly team of faculty members are dedicated to strengthening effective teaching-learning processes, thereby ensuring quality education. The department places emphasis on reinforcing the laboratory infrastructure by adopting novel industry-relevant technologies to empower students to learn and stimulate integrated learning to take up industry-relevant projects. Innovative teaching and learning methods are used to achieve learning abilities through practice, exposure, and motivation. Our goal is to foster critical thinking and analytical skills to ensure that graduates are employable, entrepreneurs, and ethical members of Society.`
 };
 
 
 export const aboutDepartment: AboutDepartment = {
   title: "About CSE",
 
-  description: `The CSE department, established in 2022-23 with an intake of 60, now has an intake of 120 students for the current year, CSE is a branch of Engineering that deals with computing theories, programming languages, program design, algorithms, computer hardware and software, and integrates several fields of computer science. Computer science engineers are involved in many aspects of computing, from the design of individual microprocessors, personal computers, and supercomputers to circuit designing and writing software. CSE offers abundant opportunities for graduates to be at the forefront of technological innovation. From robotics and nanotechnology to space structures and weaponry, the systems of computer frameworks are at the center of the new-age world.
+  description: `The CSE department, established in 2022-23 with an intake of 60, now has an intake of 120 students for the current year, CSE is a branch of Engineering that deals with computing theories, programming languages, program design, algorithms, computer hardware and software, and integrates several fields of computer science. Computer science engineers are involved in many aspects of computing, from the design of individual microprocessors, personal computers, and supercomputers to circuit designing and writing software. CSE offers abundant opportunities for graduates to be at the forefront of technological innovation. From robotics and nanotechnology to space structures and weaponry, the systems of computer frameworks are at the center of the new-age world.
 `
 };
 
@@ -211,20 +220,61 @@ export const achievementData: AchievementSectionData = {
   title: "Student Success Stories",
 
   achievements: [
-    {
-      id: 1,
-      title: "Tech IUM Winners",
-      image: techIumImage,
-      alt: "Tech IUM Winners",
-    },
-
-    {
-      id: 2,
-      title: "3rd Sem CSE Student, Manushree V & Rohini M, Gained Internship Opportunity At Vinjey's Software Systems With Stipend Of 20K",
-      image: internshipImage,
-      alt: "Internship Achievement",
-    },
-  ],
+  {
+    id: 1,
+    title: "Tech IUM Winners",
+    image: techIUMwinners,
+    alt: "Tech IUM Winners",
+  },
+  {
+    id: 2,
+    title: "Toppers of the Batch 2023–2027 in the 3rd Semester in VTU Examination",
+    image: toppers20232027,
+    alt: "Toppers of the Batch 2023–2027",
+  },
+  {
+    id: 3,
+    title: "Toppers of the Batch 2022–2026 in the 5th Semester in VTU Examination",
+    image: toppers20222026FifthSem,
+    alt: "Toppers of the Batch 2022–2026 in the 5th Semester",
+  },
+  {
+    id: 4,
+    title: "Toppers of the Batch 2022–2026 in the 4th Semester in VTU Examination Held in August–September 2024",
+    image: toppers20222026FourthSem,
+    alt: "Toppers of the Batch 2022–2026 in the 4th Semester",
+  },
+  {
+    id: 5,
+    title: "Students from Department of CSE Exhibited Their Extraordinary Talent and Won 2nd Prize in Dance at JVTM Cultural Fest, February 2024",
+    image: cseExhibition,
+    alt: "CSE Students Won 2nd Prize in Dance",
+  },
+  {
+    id: 6,
+    title: "Students from Department of CSE Participated in 'DEVSPRINT – A 24 Hour Hackathon' on 21st–22nd December 2023 at Vidyavardhaka College of Engineering, Mysuru, and Bagged 2nd Prize",
+    image: devSprintHackathon,
+    alt: "DEVSPRINT Hackathon Achievement",
+  },
+  {
+    id: 7,
+    title: "3rd Sem CSE Students Manushree V & Rohini M Gained Internship Opportunity at Vinjey's Software Systems with a Stipend of ₹20K",
+    image: rohiniInternship,
+    alt: "Internship Achievement",
+  },
+  {
+    id: 8,
+    title: "Students of CSE at JVTM – Jnana Vignana Tantragnana Mela, 19th & 20th February 2024, with Beloved Swamiji and Principal Dr. Ravikumar G K",
+    image: jvtmImage,
+    alt: "JVTM Exhibition",
+  },
+  {
+    id: 9,
+    title: "Sports: CSE 3rd Semester Girls Represented BGSCET at CMRIT–VTU Throwball Tournament (13th February 2024) and Volleyball Tournament (11th January 2024)",
+    image: volleyballTour,
+    alt: "Sports Achievement",
+  },
+],
 };
 
 

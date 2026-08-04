@@ -11,7 +11,8 @@ import nagarajKalligud from "../../assets/images/csddepartment/Nagaraj_kalligud.
 import drChandrakalaHL from "../../assets/images/csddepartment/Dr. Chandrakala-H-L.jpeg";
 import hod from "../../assets/images/csddepartment/Dr.-Madhu-Patil.jpg";
 import aishwaryaS from "../../assets/images/csddepartment/Trisha-s.png";
-
+import kavya from "../../assets/images/csddepartment/KavyaR.png";
+import chethanKumar from "../../assets/images/csddepartment/ChethanKumar_CSD.jpeg";
 
 
 import type {
@@ -171,7 +172,20 @@ export const facultyMembers: FacultyMember[] = [
 },
 ];
 
-
+export const technicalSupportTeam: FacultyMember[] = [
+  {
+    id: 1,
+    image: kavya,
+    name: "KAVYA R",
+    designation: "Programmer",
+  },
+  {
+    id: 2,
+    image: chethanKumar,
+    name: "Chethan Kumar N K",
+    designation: "Computer Operator",
+  },
+];
 export const achievementData: AchievementSectionData = {
   title: "Student Success Stories",
 
