@@ -81,6 +81,7 @@ export const navItems: NavItem[] = [
     path: '/placements',
     children: [
       { label: 'Placements', path: '/placements' },
+      { label: 'Student Material', path: '/student-material' },
       { label: 'Gallery', path: '/gallery' },
       { label: 'Contact', path: '/contact' },
     ],
