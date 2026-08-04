@@ -60,12 +60,12 @@ export const navItems: NavItem[] = [
   { label: 'Contact us', path: '/contact' },
   {
     label: 'Quick Links',
-    path: '/gallery',
+    path: '/quicklinks',
     children: [
       { label: 'Gallery', path: '/gallery' },
-      { label: 'Events', path: '/gallery#events' },
-      { label: 'News', path: '/gallery#news' },
-      { label: 'Downloads', path: '/about#governing' },
+      { label: 'Committees', path: '/committees' },
+      { label: 'AICTE Approval Letters', path: '/aicte-approval-letters' },
+      { label: 'VTU Approval Letters', path: '/vtu-approval-letters' },
     ],
   },
   {

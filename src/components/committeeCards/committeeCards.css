@@ -1,0 +1,37 @@
+.committee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 0 4rem;
+}
+
+.committee-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 70px;
+  padding: 1rem;
+
+  text-align: center;
+  text-decoration: none;
+
+  color: #fff;
+  background: var(--btn-primary);
+
+  border-radius: 8px;
+
+  font-weight: 600;
+
+  transition: background-color .3s ease,
+              transform .2s ease;
+}
+
+.committee-btn:hover {
+  background: var(--btn-primary-hover);
+  transform: translateY(-2px);
+}
+
+.committee-btn:active {
+  background: var(--btn-secondary);
+}
