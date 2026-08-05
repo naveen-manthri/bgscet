@@ -1,0 +1,80 @@
+.mess-timings {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mess-timings__wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.mess-timings__table {
+  width: 100%;
+  min-width: 30rem;
+  border-collapse: collapse;
+  background: var(--white-color);
+}
+
+.mess-timings__table th,
+.mess-timings__table td {
+  padding: 1rem;
+  border: 0.063rem solid var(--border-color);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.mess-timings__table th {
+  background: var(--primary-color);
+  color: var(--white-color);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.mess-timings__table td {
+  color: var(--text-color);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.mess-timings__table tbody tr:nth-child(even) {
+  background: var(--light-background);
+}
+
+.mess-timings__table tbody tr:hover {
+  background: var(--hover-background);
+}
+
+@media (max-width: 48rem) {
+  .mess-timings {
+    gap: 1.5rem;
+  }
+
+  .mess-timings__table {
+    min-width: 26rem;
+  }
+
+  .mess-timings__table th,
+  .mess-timings__table td {
+    padding: 0.875rem;
+  }
+
+  .mess-timings__table th {
+    font-size: 0.95rem;
+  }
+
+  .mess-timings__table td {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 36rem) {
+  .mess-timings__table {
+    min-width: 22rem;
+  }
+
+  .mess-timings__table th,
+  .mess-timings__table td {
+    padding: 0.75rem;
+  }
+}
