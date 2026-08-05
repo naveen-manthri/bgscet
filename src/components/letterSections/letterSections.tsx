@@ -1,4 +1,4 @@
-import "./LetterSections.css";
+import "./letterSections.css";
 // import DepartmentSectionHeading from "../DepartmentSectionHeading/DepartmentSectionHeading";
 import type { LetterPageData } from "../../types/letterSection";
 
