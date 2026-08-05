@@ -1,0 +1,110 @@
+.about-hostel {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.about-hostel__content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.about-hostel__carousel {
+  width: 100%;
+}
+
+.about-hostel__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 32rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.about-hostel__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.about-hostel__description p {
+  margin: 0;
+  color: var(--text-color);
+  font-size: 1.05rem;
+  line-height: 2;
+  text-align: justify;
+}
+
+.about-hostel__dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.about-hostel__dot {
+  width: 0.7rem;
+  height: 0.7rem;
+  border: none;
+  border-radius: 50%;
+  background: var(--border-color);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.about-hostel__dot--active {
+  background: var(--primary-color);
+}
+
+@media (max-width: 62rem) {
+  .about-hostel__content {
+    gap: 1.5rem;
+  }
+
+  .about-hostel__image {
+    min-height: 28rem;
+  }
+
+  .about-hostel__description p {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+}
+
+@media (max-width: 48rem) {
+  .about-hostel__content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hostel__image {
+    min-height: 22rem;
+  }
+
+  .about-hostel__description {
+    gap: 1.5rem;
+  }
+
+  .about-hostel__description p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 36rem) {
+  .about-hostel__image {
+    min-height: 18rem;
+  }
+
+  .about-hostel__description {
+    gap: 1rem;
+  }
+
+  .about-hostel__description p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+}

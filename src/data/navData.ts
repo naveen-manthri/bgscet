@@ -56,6 +56,7 @@ export const navItems: NavItem[] = [
       { label: 'Board Room', path: '/facilities/board-room' },
       { label: 'Digital Classroom', path: '/facilities/digital-classroom' },
       { label: 'Seminar Hall', path: '/facilities/seminar-hall' },
+      { label: 'Hostel', path: '/facilities/hostel' },
     ],
   },
   { label: 'Contact us', path: '/contact' },
