@@ -14,6 +14,7 @@ const AuditoriumPage = lazy(() => import('../pages/facilities/AuditoriumPage'));
 const BoardRoomPage = lazy(() => import('../pages/facilities/BoardRoomPage'));
 const DigitalClassroomPage = lazy(() => import('../pages/facilities/DigitalClassroomPage'));
 const SeminarHallPage = lazy(() => import('../pages/facilities/SeminarHallPage'));
+const HostelPage = lazy(() => import('../pages/HostelPage'));
 const GalleryPage = lazy(() => import('../pages/GalleryPage'));
 const ContactPage = lazy(() => import('../pages/ContactPage'));
 const AicteApprovalLettersPage = lazy(() => import('../pages/AicteApprovalLettersPage'));
@@ -41,6 +42,7 @@ function AppRoutes() {
           <Route path="facilities/board-room" element={<BoardRoomPage />} />
           <Route path="facilities/digital-classroom" element={<DigitalClassroomPage />} />
           <Route path="facilities/seminar-hall" element={<SeminarHallPage />} />
+          <Route path="facilities/hostel" element={<HostelPage />} />
           <Route path="gallery" element={<GalleryPage />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="quick-links/aicte-approval-letters" element={<AicteApprovalLettersPage />} />

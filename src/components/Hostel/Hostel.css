@@ -1,0 +1,36 @@
+.hostel {
+    --color-paragraph: #4C4949;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+  padding: 0 4rem 4rem;
+  box-sizing: border-box;
+}
+.hostel-page p,
+.hostel-page li {
+  color: var(--color-paragraph);
+  font-size: 1.25rem;
+
+}
+
+@media (max-width: 62rem) {
+  .hostel {
+    gap: 3rem;
+    padding: 0 3rem 3rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .hostel {
+    gap: 2.5rem;
+    padding: 0 2rem 2rem;
+  }
+}
+
+@media (max-width: 36rem) {
+  .hostel {
+    gap: 2rem;
+    padding: 0 1rem 2rem;
+  }
+}

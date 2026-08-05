@@ -1,0 +1,90 @@
+.committee-table {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.committee-table__wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.committee-table__table {
+  width: 100%;
+  min-width: 62rem;
+  border-collapse: collapse;
+  background: var(--white-color);
+}
+
+.committee-table__table th,
+.committee-table__table td {
+  padding: 1rem;
+  border: 0.063rem solid var(--border-color);
+  text-align: left;
+  vertical-align: top;
+}
+
+.committee-table__table th {
+  background: var(--primary-color);
+  color: var(--white-color);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.committee-table__table td {
+  color: var(--text-color);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.committee-table__table tbody tr:nth-child(even) {
+  background: var(--light-background);
+}
+
+.committee-table__table tbody tr:hover {
+  background: var(--hover-background);
+}
+
+.committee-table__cell {
+  display: block;
+}
+
+@media (max-width: 62rem) {
+  .committee-table {
+    gap: 1.5rem;
+  }
+
+  .committee-table__table {
+    min-width: 56rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .committee-table__table {
+    min-width: 48rem;
+  }
+
+  .committee-table__table th,
+  .committee-table__table td {
+    padding: 0.875rem;
+  }
+
+  .committee-table__table th {
+    font-size: 0.95rem;
+  }
+
+  .committee-table__table td {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 36rem) {
+  .committee-table__table {
+    min-width: 42rem;
+  }
+
+  .committee-table__table th,
+  .committee-table__table td {
+    padding: 0.75rem;
+  }
+}
