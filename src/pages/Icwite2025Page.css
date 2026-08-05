@@ -1,0 +1,22 @@
+.icwite-2025 {
+  width: var(--container-width);
+  margin: 0 auto;
+  padding: clamp(2.5rem, 6vw, 4.5rem) 0;
+}
+
+.icwite-2025__link {
+  color: var(--primary-deep);
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+.icwite-2025__link:hover {
+  color: var(--primary-dark);
+}
+
+.icwite-2025__link:focus-visible {
+  outline: 0.18rem solid var(--focus);
+  outline-offset: 0.18rem;
+}

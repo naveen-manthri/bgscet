@@ -1,0 +1,50 @@
+:root {
+  --advaya-page-padding: 4rem;
+  --btn-primary: #cc2a09;
+  --btn-primary-hover: #b82508;
+}
+
+.advaya {
+  width: 100%;
+}
+
+.advaya__container {
+  padding: 3rem var(--advaya-page-padding) 0;
+}
+
+.advaya__title {
+  margin: 3rem 0 1rem;
+  color: var(--btn-primary);
+}
+
+.advaya__files {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.advaya__files li {
+  margin-bottom: 0.75rem;
+}
+
+.advaya__file {
+  color: var(--btn-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.advaya__file:hover {
+  color: var(--btn-primary-hover);
+  text-decoration: underline;
+}
+
+.advaya__file:focus-visible {
+  outline: 0.18rem solid var(--focus);
+  outline-offset: 0.18rem;
+}
+
+@media (max-width: 48rem) {
+  .advaya__container {
+    padding: 0 1.5rem;
+  }
+
+}

@@ -71,10 +71,10 @@ export const navItems: NavItem[] = [
   },
   {
     label: 'Conference-2025',
-    path: '/gallery',
+    path: '/icwite-2025',
     children: [
-      { label: 'Highlights', path: '/gallery' },
-      { label: 'Speakers', path: '/about#governing' },
+      { label: 'ICWITE 2025', path: '/icwite-2025' },
+      { label: 'ERCICA-2024', path: '/conference-2024' },
     ],
   },
   {
@@ -104,7 +104,7 @@ export const navItems: NavItem[] = [
       { label: 'Publications', path: '/about#chairman' },
     ],
   },
-  { label: 'Advaya-2k25', path: '/gallery' },
+  { label: 'Advaya 2.0-2k26', path: '/advaya-2-0-2k26' },
 ];
 
 export const announcementItems: string[] = [

@@ -1,0 +1,38 @@
+:root {
+  --ercica-page-padding: 4rem;
+  --ercica-section-gap: 3.5rem;
+  --ercica-paragraph-gap: 1.5rem;
+
+  --ercica-text-color: #4c4949;
+  --ercica-line-height: 1.8;
+  --ercica-font-size: 1.25rem;
+}
+
+.ercica {
+  width: 100%;
+}
+
+.ercica__container {
+  padding: 0 var(--ercica-page-padding);
+}
+
+.ercica__section:not(:last-child) {
+  margin-bottom: var(--ercica-section-gap);
+}
+
+.ercica__content {
+  margin-top: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--ercica-paragraph-gap);
+}
+
+.ercica__content p {
+  margin: 0;
+
+  font-size: var(--ercica-font-size);
+  line-height: var(--ercica-line-height);
+  color: var(--ercica-text-color);
+  text-align: justify;
+}
