@@ -1,4 +1,4 @@
-import "./CommitteeCards.css";
+import "./committeeCards.css";
 import type { Committee } from "../../types/committee";
 
 interface CommitteeCardsProps {
