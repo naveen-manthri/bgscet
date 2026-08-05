@@ -3,9 +3,15 @@ export interface LetterItem {
   pdf: string;
 }
 
+export interface LetterGroup {
+  title: string;
+  items: LetterItem[];
+}
+
 export interface LetterSection {
   heading: string;
-  items: LetterItem[];
+  items?: LetterItem[];
+  groups?: LetterGroup[];
 }
 
 export interface LetterPageData {

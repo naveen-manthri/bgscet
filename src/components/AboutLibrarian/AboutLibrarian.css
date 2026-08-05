@@ -4,8 +4,9 @@
 }
 
 .about-librarian__container {
-  width: min(90%, var(--container-width));
+  width: 100%;
   margin: 0 auto;
+  padding: 0 4rem;
 }
 
 .about-librarian__content {
@@ -103,6 +104,10 @@
 
   .about-librarian__content {
     margin-top: 1.5rem;
+  }
+
+  .about-librarian__container {
+    padding: 0 1.25rem;
   }
 
   .about-librarian__paragraph,

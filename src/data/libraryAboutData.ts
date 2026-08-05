@@ -1,6 +1,6 @@
 import type { LibraryAboutData } from "../types/libraryAbout";
 
-import LibraryImage from "../assets/images/library/library.png";
+import LibraryImage from "../assets/images/library/bgs_lib_25_2 1.png";
 
 export const libraryAboutData: LibraryAboutData = {
   title: "About The Library",

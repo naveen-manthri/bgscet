@@ -6,8 +6,9 @@
 }
 
 .library-rules__container {
-  width: min(90%, var(--container-width));
+  width: 100%;
   margin: 0 auto;
+  padding: 0 4rem;
 }
 
 .library-rules__list {
@@ -36,6 +37,10 @@
 @media (max-width: 48rem) {
   .library-rules {
     padding: 3rem 0;
+  }
+
+  .library-rules__container {
+    padding: 0 1.25rem;
   }
 
   .library-rules__list {

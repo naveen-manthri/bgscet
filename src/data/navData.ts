@@ -51,10 +51,11 @@ export const navItems: NavItem[] = [
     label: 'Facilities',
     path: '/facilities',
     children: [
-      { label: 'Library', path: '/facilities#library' },
-      { label: 'Laboratories', path: '/facilities#labs' },
-      { label: 'Hostel', path: '/facilities#hostel' },
-      { label: 'Transportation', path: '/facilities#transportation' },
+      { label: 'Library', path: '/facilities/library' },
+      { label: 'Auditorium', path: '/facilities/auditorium' },
+      { label: 'Board Room', path: '/facilities/board-room' },
+      { label: 'Digital Classroom', path: '/facilities/digital-classroom' },
+      { label: 'Seminar Hall', path: '/facilities/seminar-hall' },
     ],
   },
   { label: 'Contact us', path: '/contact' },
@@ -62,10 +63,9 @@ export const navItems: NavItem[] = [
     label: 'Quick Links',
     path: '/quicklinks',
     children: [
-      { label: 'Gallery', path: '/gallery' },
-      { label: 'Committees', path: '/committees' },
-      { label: 'AICTE Approval Letters', path: '/aicte-approval-letters' },
-      { label: 'VTU Approval Letters', path: '/vtu-approval-letters' },
+      { label: 'AICTE Approval Letters', path: '/quick-links/aicte-approval-letters' },
+      { label: 'VTU Approval Letters', path: '/quick-links/vtu-approval-letters' },
+      { label: 'Committees', path: '/quick-links/committees' },
     ],
   },
   {
@@ -81,6 +81,7 @@ export const navItems: NavItem[] = [
     path: '/placements',
     children: [
       { label: 'Placements', path: '/placements' },
+      { label: 'Student Material', path: '/student-material' },
       { label: 'Gallery', path: '/gallery' },
       { label: 'Contact', path: '/contact' },
     ],

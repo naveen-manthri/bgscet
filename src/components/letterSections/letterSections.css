@@ -1,5 +1,8 @@
 .letter-sections {
-  padding: 0 4rem;
+  --btn-primary: #cc2a09;
+  --btn-primary-hover: #b82508;
+
+  padding: 3rem 4rem 0;
 }
 
 .letter-section {
@@ -8,11 +11,21 @@
 
 .letter-section__heading {
   margin-bottom: 1rem;
-  color: var(--btn-primary);
+  color: var(--btn-primary, #cc2a09);
 }
 
 .letter-section__list {
   padding-left: 1.5rem;
+}
+
+.letter-section__group + .letter-section__group {
+  margin-top: 1.5rem;
+}
+
+.letter-section .letter-section__group-title {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  color: var(--btn-primary, #cc2a09) !important;
 }
 
 .letter-section__list li {
@@ -20,12 +33,12 @@
 }
 
 .letter-section__link {
-  color: var(--btn-primary);
+  color: var(--btn-primary, #cc2a09);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .letter-section__link:hover {
-  color: var(--btn-primary-hover);
+  color: var(--btn-primary-hover, #b82508);
   text-decoration: underline;
 }
