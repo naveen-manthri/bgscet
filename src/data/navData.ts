@@ -67,6 +67,7 @@ export const navItems: NavItem[] = [
       { label: 'AICTE Approval Letters', path: '/quick-links/aicte-approval-letters' },
       { label: 'VTU Approval Letters', path: '/quick-links/vtu-approval-letters' },
       { label: 'Committees', path: '/quick-links/committees' },
+      { label: 'Careers', path: '/careers' },
       {label: 'Industry Institute Cell', path:'/pdfs/quicklinks/Industry-Inst-IT-Cell.pdf'},
       {label:'Institution Innovation Cell', path:'/pdfs/quicklinks/IIC-BGSCET.pdf'},
     ],
@@ -77,6 +78,7 @@ export const navItems: NavItem[] = [
     children: [
       { label: 'ICWITE 2025', path: '/icwite-2025' },
       { label: 'ERCICA-2024', path: '/conference-2024' },
+      {label: 'Careers', path:'/careers'},
     ],
   },
   {
@@ -102,11 +104,11 @@ export const navItems: NavItem[] = [
     path: '/placements',
     children: [
       {label: 'Career Development and Corporate Affairs’ Center', path: '/placements#career-development-and-corporate-affairs-center'},
-      {label: 'Internship & Employment', path: '/placements#internship-employment'},
-      {label: 'Training', path: '/placements#training'},
-      { label: 'Staff Details', path: '/placements#staf-details' },
-      { label: 'Corporate Lecture Series', path: '/placements#corporate-lecture-series' },
-      { label: 'Global connect cell', path: '/placements#global-connect-cell' },
+      {label: 'Internship & Employment', path: '/internship-employment'},
+      {label: 'Training', path: '/training'},
+      { label: 'Staff Details', path: '/staff-details' },
+      { label: 'Corporate Lecture Series', path: '/corporate-lecture-series' },
+      { label: 'Global connect cell', path: '/global-connect-cell' },
     ],
   },
   {

@@ -8,6 +8,9 @@ const DepartmentsPage = lazy(() => import('../pages/DepartmentsPage'));
 const DepartmentDetailPage = lazy(() => import('../pages/DepartmentDetailPage'));
 const AdmissionsPage = lazy(() => import('../pages/AdmissionsPage'));
 const PlacementsPage = lazy(() => import('../pages/PlacementsPage'));
+const PlacementMenuPage = lazy(() => import('../pages/PlacementMenuPage'));
+const StaffDetailsPage = lazy(() => import('../pages/StaffDetailsPage'));
+const CareerPage = lazy(() => import('../pages/CareerPage'));
 const FacilitiesPage = lazy(() => import('../pages/FacilitiesPage'));
 const LibraryPage = lazy(() => import('../pages/LibraryPage'));
 const AuditoriumPage = lazy(() => import('../pages/facilities/AuditoriumPage'));
@@ -39,6 +42,12 @@ function AppRoutes() {
           <Route path="ug-programs/:slug" element={<DepartmentDetailPage />} />
           <Route path="admissions" element={<AdmissionsPage />} />
           <Route path="placements" element={<PlacementsPage />} />
+          <Route path="internship-employment" element={<PlacementMenuPage type="internship-employment" />} />
+          <Route path="training" element={<PlacementMenuPage type="training" />} />
+          <Route path="corporate-lecture-series" element={<PlacementMenuPage type="corporate-lecture-series" />} />
+          <Route path="global-connect-cell" element={<PlacementMenuPage type="global-connect-cell" />} />
+          <Route path="staff-details" element={<StaffDetailsPage />} />
+          <Route path="careers" element={<CareerPage />} />
           <Route path="facilities" element={<FacilitiesPage />} />
           <Route path="facilities/library" element={<LibraryPage />} />
           <Route path="facilities/auditorium" element={<AuditoriumPage />} />

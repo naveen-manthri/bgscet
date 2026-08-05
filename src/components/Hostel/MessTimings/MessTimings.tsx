@@ -1,9 +1,9 @@
 import DepartmentSectionHeading from "../../DepartmentSectionHeading/DepartmentSectionHeading";
-import type { MessTimingsSection } from "../../../types/hostel";
+import type { TableData } from "../../../types/hostel";
 import "./MessTimings.css";
 
 interface MessTimingsProps {
-  data: MessTimingsSection;
+  data: TableData;
 }
 
 const MessTimings = ({ data }: MessTimingsProps) => {
