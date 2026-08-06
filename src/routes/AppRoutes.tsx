@@ -26,6 +26,9 @@ const StudentMaterialPage = lazy(() => import('../pages/StudentMaterialPage'));
 const CommitteesPage = lazy(() => import('../pages/committePage'));
 const Icwite2025Page = lazy(() => import('../pages/Icwite2025Page'));
 const Ercica2024Page = lazy(() => import('../pages/Ercica2024Page'));
+const IICPage = lazy(() => import("../pages/IICPage"));
+const IPRPage = lazy(() => import("../pages/iprCellPage"));
+const PatentPage = lazy(() => import("../pages/patentsPage"));
 const AdvayaPage = lazy(() => import('../pages/AdvayaPage'));
 const NotFoundPage = lazy(() => import('../pages/NotFoundPage'));
 
@@ -64,6 +67,9 @@ function AppRoutes() {
           <Route path="icwite-2025" element={<Icwite2025Page />} />
           <Route path="conference-2024" element={<Ercica2024Page />} />
           <Route path="ercica-2024" element={<Navigate to="/conference-2024" replace />} />
+          <Route path="research/iic" element={<IICPage />} />
+          <Route path="research/ipr-cell" element={<IPRPage />} />
+          <Route path="research/patents" element={<PatentPage />} />
           <Route path="advaya-2-0-2k26" element={<AdvayaPage />} />
           <Route path="404" element={<NotFoundPage />} />
           <Route path="*" element={<Navigate to="/404" replace />} />

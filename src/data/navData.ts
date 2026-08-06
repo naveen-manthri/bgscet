@@ -115,8 +115,9 @@ export const navItems: NavItem[] = [
     label: 'Research',
     path: '/about',
     children: [
-      { label: 'Projects', path: '/about#governing' },
-      { label: 'Publications', path: '/about#chairman' },
+      { label: 'IP Cell', path: '/research/ipr-cell' },
+      { label: 'IIC', path: '/research/iic' },
+      {label: 'Patents', path: 'research/patents'},
     ],
   },
   { label: 'Advaya 2.0-2k26', path: '/advaya-2-0-2k26' },
