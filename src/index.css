@@ -326,7 +326,7 @@ img {
 .underline {
   width: fit-content;
   padding-bottom: 1rem;
-  border-bottom: 3.5px solid var(--text);
+  border-bottom: 3.5px solid var(--about-title-underline);
 }
 
 

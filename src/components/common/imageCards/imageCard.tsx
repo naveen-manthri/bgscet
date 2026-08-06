@@ -1,9 +1,14 @@
 import { useState } from "react";
 import './imageCard.css';
+// import Lightbox from "yet-another-react-lightbox";
+// import Zoom from "yet-another-react-lightbox/plugins/zoom";
+// import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+
+// import "yet-another-react-lightbox/styles.css";
+
 import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
-
 import "yet-another-react-lightbox/styles.css";
 
 import DepartmentSectionHeading from "../../DepartmentSectionHeading/DepartmentSectionHeading";

@@ -26,6 +26,7 @@ const StudentMaterialPage = lazy(() => import('../pages/StudentMaterialPage'));
 const CommitteesPage = lazy(() => import('../pages/committePage'));
 const Icwite2025Page = lazy(() => import('../pages/Icwite2025Page'));
 const Ercica2024Page = lazy(() => import('../pages/Ercica2024Page'));
+const CareerDevelopmentPage = lazy(() => import("../pages/CareerDevelopmentPage"));
 const IICPage = lazy(() => import("../pages/IICPage"));
 const IPRPage = lazy(() => import("../pages/iprCellPage"));
 const PatentPage = lazy(() => import("../pages/patentsPage"));
@@ -65,6 +66,7 @@ function AppRoutes() {
           <Route path="student-material" element={<StudentMaterialPage />} />
           <Route path="quick-links/committees" element={<CommitteesPage />} />
           <Route path="icwite-2025" element={<Icwite2025Page />} />
+          <Route path="career-development" element={<CareerDevelopmentPage />} />
           <Route path="conference-2024" element={<Ercica2024Page />} />
           <Route path="ercica-2024" element={<Navigate to="/conference-2024" replace />} />
           <Route path="research/iic" element={<IICPage />} />

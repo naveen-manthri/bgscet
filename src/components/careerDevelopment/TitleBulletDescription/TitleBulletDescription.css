@@ -1,0 +1,31 @@
+:root {
+  --career-page-padding: 4rem;
+  --career-section-gap: 5rem;
+  --career-heading-gap: 2rem;
+  --career-paragraph-size: 1.25rem;
+  --career-paragraph-color: #4b5563;
+  --career-line-height: 1.8;
+  --career-font-family: "Poppins", sans-serif;
+}
+
+.title-description {
+  display: flex;
+  flex-direction: column;
+  gap: var(--career-heading-gap);
+  padding: 0 var(--career-page-padding);
+  margin-bottom: var(--career-section-gap);
+}
+
+.title-description p {
+  font-size: var(--career-paragraph-size);
+  color: var(--career-paragraph-color);
+  line-height: var(--career-line-height);
+  font-family: var(--career-font-family);
+  text-align: justify;
+}
+
+@media (max-width: 48rem) {
+  :root {
+    --career-page-padding: 2rem;
+  }
+}
