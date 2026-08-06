@@ -35,7 +35,7 @@ export const navItems: NavItem[] = [
       { label: 'AIML', path: '/ug-programs/aiml' },
       { label: 'AI & DS', path: '/ug-programs/aids' },
       { label: 'CSD', path: '/ug-programs/csd' },
-      { label: 'Civil', path: '/departments/civil' },
+      // { label: 'Civil', path: '/departments/civil' },
     ],
   },
   {
@@ -101,9 +101,9 @@ export const navItems: NavItem[] = [
   },
   {
     label: 'Placement',
-    path: '/placements',
+    path: '/career-development',
     children: [
-      {label: 'Career Development and Corporate Affairs’ Center', path: '/placements#career-development-and-corporate-affairs-center'},
+      {label: 'Career Development and Corporate Affairs’ Center', path: '/career-development'},
       {label: 'Internship & Employment', path: '/internship-employment'},
       {label: 'Training', path: '/training'},
       { label: 'Staff Details', path: '/staff-details' },
@@ -115,8 +115,9 @@ export const navItems: NavItem[] = [
     label: 'Research',
     path: '/about',
     children: [
-      { label: 'Projects', path: '/about#governing' },
-      { label: 'Publications', path: '/about#chairman' },
+      { label: 'IP Cell', path: '/research/ipr-cell' },
+      { label: 'IIC', path: '/research/iic' },
+      {label: 'Patents', path: 'research/patents'},
     ],
   },
   { label: 'Advaya 2.0-2k26', path: '/advaya-2-0-2k26' },

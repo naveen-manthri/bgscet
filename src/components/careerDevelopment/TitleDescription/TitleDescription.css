@@ -1,0 +1,48 @@
+:root {
+  --career-page-padding: 4rem;
+  --career-section-gap: 5rem;
+  --career-heading-gap: 2rem;
+  --career-list-gap: 1rem;
+  --career-paragraph-gap: 2rem;
+  --career-paragraph-size: 1.25rem;
+  --career-paragraph-color: #4b5563;
+  --career-line-height: 1.8;
+  --career-font-family: "Poppins", sans-serif;
+}
+
+.title-bullet-description {
+  display: flex;
+  flex-direction: column;
+  gap: var(--career-heading-gap);
+  padding: 0 var(--career-page-padding);
+  margin-bottom: var(--career-section-gap);
+}
+
+.title-bullet-description p {
+  font-size: var(--career-paragraph-size);
+  color: var(--career-paragraph-color);
+  font-family: var(--career-font-family);
+  line-height: var(--career-line-height);
+  text-align: justify;
+}
+
+.title-bullet-description__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--career-list-gap);
+  margin: 0;
+  padding-left: 2rem;
+}
+
+.title-bullet-description__item {
+  font-size: var(--career-paragraph-size);
+  color: var(--career-paragraph-color);
+  font-family: var(--career-font-family);
+  line-height: var(--career-line-height);
+}
+
+@media (max-width: 48rem) {
+  :root {
+    --career-page-padding: 2rem;
+  }
+}

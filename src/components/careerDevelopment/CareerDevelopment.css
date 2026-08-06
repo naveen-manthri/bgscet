@@ -1,0 +1,23 @@
+.career-development {
+  width: 100%;
+  padding: 0 4rem;
+  margin-top: 3rem;
+  box-sizing: border-box;
+}
+.career-development p {
+  color: var(--academic-paragraph);
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 64rem) {
+  .career-development {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .career-development {
+    padding: 0 1rem;
+  }
+}

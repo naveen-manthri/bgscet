@@ -1,0 +1,20 @@
+:root {
+  --page-padding: 4rem;
+  --margin-top:2rem;
+  --table-gap: 4rem;
+}
+
+.patent-page {
+  padding: 0 var(--page-padding);
+  display: flex;
+  flex-direction: column;
+  gap: var(--table-gap);
+  margin-top: var(--margin-top);
+}
+
+@media (max-width: 48rem) {
+  :root {
+    --page-padding: 2rem;
+    --table-gap: 3rem;
+  }
+}

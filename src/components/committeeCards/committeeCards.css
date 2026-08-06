@@ -6,6 +6,11 @@
   padding: 0 4rem;
 }
 
+.committee-heading {
+  padding: 0 4rem;
+  margin-top:3rem;
+}
+
 .committee-btn {
   display: flex;
   align-items: center;
