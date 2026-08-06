@@ -40,7 +40,7 @@ export const navItems: NavItem[] = [
   },
   {
     label: 'MBA',
-    path: '/about',
+    path: 'https://mba.bgscet.ac.in/',
     children: [
       // { label: 'Program Overview', path: '/about#vision' },
       // { label: 'Faculty', path: '/about#principal' },
