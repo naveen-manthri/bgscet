@@ -31,7 +31,7 @@ export interface HostelCommitteeSection {
 
 
 
-export interface MessTimingsSection {
+export interface TableData {
   title: string;
   table: HostelTable;
 }
@@ -58,7 +58,7 @@ export interface HostelData {
 
   hostelCommittee: HostelCommitteeSection;
 
-  messTimings: MessTimingsSection;
+  messTimings: TableData;
 
   hostelCommitteeResponsibilities: BulletSection;
 

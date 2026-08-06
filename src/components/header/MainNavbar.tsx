@@ -67,13 +67,29 @@ function MainNavbar() {
 
                 {hasChildren ? (
                   <ul className={`main-navbar__dropdown${openDropdown === item.label ? ' is-open' : ''}`}>
-                    {item.children?.map((child) => (
-                      <li key={child.label}>
-                        <Link className="main-navbar__dropdown-link" to={child.path} onClick={closeMenu}>
-                          {child.label}
-                        </Link>
-                      </li>
-                    ))}
+                    {item.children?.map((child) => {
+                      const isPdf = child.path.toLowerCase().endsWith('.pdf');
+
+                      return (
+                        <li key={child.label}>
+                          {isPdf ? (
+                            <a
+                              className="main-navbar__dropdown-link"
+                              href={child.path}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              onClick={closeMenu}
+                            >
+                              {child.label}
+                            </a>
+                          ) : (
+                            <Link className="main-navbar__dropdown-link" to={child.path} onClick={closeMenu}>
+                              {child.label}
+                            </Link>
+                          )}
+                        </li>
+                      );
+                    })}
                   </ul>
                 ) : null}
               </li>

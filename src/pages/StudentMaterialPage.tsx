@@ -8,7 +8,7 @@ function StudentMaterialPage() {
     <>
       <LetterSections data={studentMaterialData} />
       <div className="student-material__cta">
-        <a className="student-material__button" href="#">
+        <a className="student-material__button" href="https://vtu.ac.in/en/study-material/">
           VTU Study Materials
         </a>
       </div>
