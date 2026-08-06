@@ -47,3 +47,10 @@ export interface CareerDevelopmentData {
   whyRecruit: BulletSection;
   coordinator: ProfileSection;
 }
+
+export interface ImageTitleDescriptionSection {
+  title: string;
+  image: string;
+  alt: string;
+  description: string;
+}

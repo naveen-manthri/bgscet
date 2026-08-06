@@ -1,4 +1,5 @@
 .career-hero {
+   --radius-md: 0.75rem;
   padding: 2rem 4rem;
 
   display: flex;
@@ -7,8 +8,9 @@
 }
 
 .career-hero__image img {
-  width: 100%;
+  width: 60%;
   display: block;
+  margin: 0 auto;
   border-radius: var(--radius-md);
 }
 
@@ -24,6 +26,7 @@
   font-size: 1.25rem;
   color: #4c4949;
   line-height: 1.8;
+  text-align: justify;
 }
 
 .career-hero__button {

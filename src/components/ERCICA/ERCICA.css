@@ -6,10 +6,12 @@
   --ercica-text-color: #4c4949;
   --ercica-line-height: 1.8;
   --ercica-font-size: 1.25rem;
+  --ercica-margin-top:3rem;
 }
 
 .ercica {
   width: 100%;
+  margin-top: var(--ercica-margin-top);
 }
 
 .ercica__container {
