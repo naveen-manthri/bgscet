@@ -42,9 +42,9 @@ export const navItems: NavItem[] = [
     label: 'MBA',
     path: '/about',
     children: [
-      { label: 'Program Overview', path: '/about#vision' },
-      { label: 'Faculty', path: '/about#principal' },
-      { label: 'Research', path: '/about#governing' },
+      // { label: 'Program Overview', path: '/about#vision' },
+      // { label: 'Faculty', path: '/about#principal' },
+      // { label: 'Research', path: '/about#governing' },
     ],
   },
   {
