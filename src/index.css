@@ -285,6 +285,12 @@ img {
   color: var(--navbar-link-clr);
 }
 
+.main-navbar__link--parent {
+  cursor: pointer;
+  user-select: none;
+}
+
+
 .main-navbar__dropdown {
   position: absolute;
   top: 100%;
