@@ -19,7 +19,7 @@
 .library-rules__item {
   margin-bottom: 0.7rem;
   color: var(--academic-paragraph);
-  font-size: var(--fs-body);
+  font-size: 1.25rem;
   line-height: 1.8;
 }
 
