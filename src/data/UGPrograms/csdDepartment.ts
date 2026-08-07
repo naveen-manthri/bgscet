@@ -187,16 +187,16 @@ export const facultyMembers: FacultyMember[] = [
 export const technicalFacultyMembers: FacultyMember[] = [
   {
     id: 1,
-    image: hod,
-    name: "Dr.Madhu Patil",
-    designation: "Assistant Professor",
+    image: kavya,
+    name: "KAVYA R",
+    designation: "Programmer",
   },
 
   {
     id: 2,
-    image: drChandrakalaHL,
-    name: "Dr. Chandrakala H L",
-    designation: "Associate Professor",
+    image: chethanKumar,
+    name: "Chethan Kumar N K",
+    designation: "Computer Operator",
   },
 ];
 
