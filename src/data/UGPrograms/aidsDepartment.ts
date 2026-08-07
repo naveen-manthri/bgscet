@@ -220,6 +220,23 @@ export const facultyMembers: FacultyMember[] = [
 ];
 
 
+export const technicalFacultyMembers: FacultyMember[] = [
+  {
+    id: 1,
+    image: hod,
+    name: "Dr.Parvathi C",
+    designation: "Professor and HOD",
+  },
+
+  {
+    id: 2,
+    image: mrsMamatha,
+    name: "Mamatha Jadhav V",
+    designation: "Assistant Professor",
+  },
+];
+
+
 export const achievementData: AchievementSectionData = {
   title: "Student Success Stories",
 
@@ -453,6 +470,7 @@ const aidsDepartment: UGDepartmentData = {
   infrastructureFaculty,
   visionMission,
   facultyMembers,
+  technicalFacultyMembers,
   achievementData,
   eventsData: aidsEventsData,
 };

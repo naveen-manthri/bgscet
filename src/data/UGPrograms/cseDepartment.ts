@@ -235,6 +235,23 @@ export const facultyMembers: FacultyMember[] = [
 ];
 
 
+export const technicalFacultyMembers: FacultyMember[] = [
+  {
+    id: 1,
+    image: pricipal,
+    name: "Dr. Ravikumar GK",
+    designation: "Principal",
+  },
+
+  {
+    id: 2,
+    image: hodImage,
+    name: "Dr. Manjula G",
+    designation: "Professor and HOD",
+  },
+];
+
+
 export const achievementData: AchievementSectionData = {
   title: "Student Success Stories",
 
@@ -459,6 +476,7 @@ const cseDepartment: UGDepartmentData = {
   infrastructureFaculty,
   visionMission,
   facultyMembers,
+  technicalFacultyMembers,
   achievementData,
   eventsData: cseEventsData,
 };

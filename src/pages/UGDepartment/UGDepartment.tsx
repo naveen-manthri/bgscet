@@ -10,6 +10,7 @@ import AboutDepartment from "../../components/UGPrograms/AboutDepartment/AboutDe
 import Achievements from "../../components/UGPrograms/Achievements/Achievements";
 import EventsNewsletter from "../../components/UGPrograms/EventsNewsletter/EventsNewsletter";
 import Faculty from "../../components/UGPrograms/Faculty/Faculty";
+import TechnicalFaculty from "../../components/UGPrograms/Faculty/TechnicalFaculty";
 import VisionMission from "../../components/UGPrograms/VisionMission/VisionMission";
 
 import type { UGDepartmentData } from "../../types/ugprograms";
@@ -26,7 +27,12 @@ const UGDepartment = ({ data }: UGDepartmentProps) => {
       case "vision":
         return <VisionMission data={data.visionMission} />;
       case "faculty":
-        return <Faculty data={data.facultyMembers} />;
+        return (
+          <>
+            <Faculty data={data.facultyMembers} />
+            <TechnicalFaculty data={data.technicalFacultyMembers} />
+          </>
+        );
       case "achievements":
         return <Achievements data={data.achievementData} />;
       case "events":

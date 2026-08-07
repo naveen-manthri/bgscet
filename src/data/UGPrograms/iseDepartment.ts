@@ -198,6 +198,23 @@ export const facultyMembers: FacultyMember[] = [
 ];
 
 
+export const technicalFacultyMembers: FacultyMember[] = [
+  {
+    id: 1,
+    image: hod,
+    name: "Dr Chaitra Naveen",
+    designation: "Professor and HOD",
+  },
+
+  {
+    id: 2,
+    image: anoopNPrasad,
+    name: "Anoop N Prasad",
+    designation: "Assistant Professor",
+  },
+];
+
+
 export const achievementData: AchievementSectionData = {
   title: "Student Success Stories",
 
@@ -330,6 +347,7 @@ const iseDepartment: UGDepartmentData = {
   infrastructureFaculty,
   visionMission,
   facultyMembers,
+  technicalFacultyMembers,
   achievementData,
   eventsData: iseEventsData,
 };

@@ -96,6 +96,7 @@ export interface UGDepartmentData {
   infrastructureFaculty: InfrastructureFaculty;
   visionMission: DepartmentVisionMission;
   facultyMembers: FacultyMember[];
+  technicalFacultyMembers: FacultyMember[];
   achievementData: AchievementSectionData;
   eventsData: DepartmentEventsData;
 }

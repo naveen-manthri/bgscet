@@ -195,6 +195,23 @@ export const facultyMembers: FacultyMember[] = [
 ];
 
 
+export const technicalFacultyMembers: FacultyMember[] = [
+  {
+    id: 1,
+    image: hod,
+    name: "Dr. Jalaja G",
+    designation: "Professor and HOD",
+  },
+
+  {
+    id: 2,
+    image: msVandanaSSardar,
+    name: "Vandana S Sardar",
+    designation: "Assistant Professor",
+  },
+];
+
+
 export const achievementData: AchievementSectionData = {
   title: "Student Success Stories",
 
@@ -350,6 +367,7 @@ const aimlDepartment: UGDepartmentData = {
   infrastructureFaculty,
   visionMission,
   facultyMembers,
+  technicalFacultyMembers,
   achievementData,
   eventsData: aimlEventsData,
 };

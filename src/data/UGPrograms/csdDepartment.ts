@@ -184,6 +184,22 @@ export const facultyMembers: FacultyMember[] = [
 },
 ];
 
+export const technicalFacultyMembers: FacultyMember[] = [
+  {
+    id: 1,
+    image: hod,
+    name: "Dr.Madhu Patil",
+    designation: "Assistant Professor",
+  },
+
+  {
+    id: 2,
+    image: drChandrakalaHL,
+    name: "Dr. Chandrakala H L",
+    designation: "Associate Professor",
+  },
+];
+
 export const technicalSupportTeam: FacultyMember[] = [
   {
     id: 1,
@@ -336,6 +352,7 @@ const csdDepartment: UGDepartmentData = {
   infrastructureFaculty,
   visionMission,
   facultyMembers,
+  technicalFacultyMembers,
   achievementData,
   eventsData: csdEventsData,
 };
