@@ -3,11 +3,15 @@
   --btn-primary-hover: #b82508;
 
   padding: 3rem 4rem 0;
+  gap: 3rem;
+  display: flex;
+  flex-direction: column;
 }
 
 /* .letter-section {
-  margin-top: 3rem;
-} */
+   margin-top: 3rem; 
+  margin-bottom: 2rem;
+}  */
 
 /* .letter-section__heading {
   margin-bottom: 1rem;
