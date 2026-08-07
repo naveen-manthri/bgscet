@@ -38,7 +38,8 @@ import groupDanceImage from "../../assets/images/aidsdepartment/AI-DS-ACHIEVEMEN
 import rangoliEventManiaImage from "../../assets/images/aidsdepartment/AI-DS-ACHIEVEMENTS/Rangoli-Competition-1st-eventmania.png";
 import debateEventManiaImage from "../../assets/images/aidsdepartment/AI-DS-ACHIEVEMENTS/Debate-Competition-event-mania.png";
 import soloWesternDanceImage from "../../assets/images/aidsdepartment/AI-DS-ACHIEVEMENTS/Solo-Western-Dance-Compt-1.png";
-
+import niveditha from "../../assets/images/aidsdepartment/AI-DS-TECHFACULTY/Niveditha.jpeg";
+import sindu from "../../assets/images/aidsdepartment/AI-DS-TECHFACULTY/Sindhu.jpeg";
 
 import type {
   DepartmentTab,
@@ -223,16 +224,16 @@ export const facultyMembers: FacultyMember[] = [
 export const technicalFacultyMembers: FacultyMember[] = [
   {
     id: 1,
-    image: hod,
-    name: "Dr.Parvathi C",
-    designation: "Professor and HOD",
+    image: sindu,
+    name: "Ms Sindhu",
+    designation: "Programmer",
   },
 
   {
     id: 2,
-    image: mrsMamatha,
-    name: "Mamatha Jadhav V",
-    designation: "Assistant Professor",
+    image: niveditha,
+    name: "Niveditha P R",
+    designation: "SDC",
   },
 ];
 
