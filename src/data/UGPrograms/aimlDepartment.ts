@@ -26,6 +26,11 @@ import educationalTripImage from "../../assets/images/aimldepartment/AI-ML-ACHIE
 import sportsImage from "../../assets/images/aimldepartment/AI-ML-ACHIEVEMENTS/Sports-1.png";
 import logoCompetitionImage from "../../assets/images/aimldepartment/AI-ML-ACHIEVEMENTS/Logo-Competition-1.png";
 
+import monica from "../../assets/images/aimldepartment/AIML-TECHFACULTY/Monica.png";
+import akshata from "../../assets/images/aimldepartment/AIML-TECHFACULTY/Akshata.jpg";
+import ranjitha from "../../assets/images/aimldepartment/AIML-TECHFACULTY/ranjitha_sbgscet.png";
+import rithika from "../../assets/images/aimldepartment/AIML-TECHFACULTY/Rithika.jpeg";
+import harshitha from "../../assets/images/aimldepartment/AIML-TECHFACULTY/Harshitha-AIML.jpeg";
 
 import type {
   DepartmentTab,
@@ -198,16 +203,33 @@ export const facultyMembers: FacultyMember[] = [
 export const technicalFacultyMembers: FacultyMember[] = [
   {
     id: 1,
-    image: hod,
-    name: "Dr. Jalaja G",
-    designation: "Professor and HOD",
+    image: akshata,
+    name: "Akshata S Aiholli",
+    designation: "Programmer",
   },
-
   {
     id: 2,
-    image: msVandanaSSardar,
-    name: "Vandana S Sardar",
-    designation: "Assistant Professor",
+    image: harshitha,
+    name: "Harshitha",
+    designation: "Programmer",
+  },
+  {
+    id: 3,
+    image: ranjitha,
+    name: "Ranjitha S",
+    designation: "Programmer",
+  },
+  {
+    id: 4,
+    image: rithika,
+    name: "Rithika C K",
+    designation: "Programmer",
+  },
+  {
+    id: 5,
+    image: monica,
+    name: "Monica S",
+    designation: "Programmer",
   },
 ];
 
