@@ -1,6 +1,4 @@
 import careerImage from "../../assets/images/csedepartment/career-opportunities.jpg";
-import techIumImage from "../../assets/images/achievement/tech-ium.jpg";
-import internshipImage from "../../assets/images/achievement/internship.jpg";
 
 import aidsBannerImage from "../../assets/images/academic/artificial-intelligence.jpg";
 import ashwiniR from "../../assets/images/aidsdepartment/ASHWINI-R.jpeg";
@@ -29,6 +27,17 @@ import event16Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-
 import event17Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-17.jpeg";
 import event18Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-18.jpeg";
 import event19Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-19.jpeg";
+import mathExaminationImage from "../../assets/images/aidsdepartment/AI-DS-ACHIEVEMENTS/Math-examination-1.png";
+import missKhushiImage from "../../assets/images/aidsdepartment/AI-DS-ACHIEVEMENTS/Miss-Khushi.png";
+import debateKarnatakaImage from "../../assets/images/aidsdepartment/AI-DS-ACHIEVEMENTS/Debate-Competition-2nd.png";
+import rangoliKarnatakaImage from "../../assets/images/aidsdepartment/AI-DS-ACHIEVEMENTS/Rangoli-Competition-BGSCET.png";
+import kabbadiImage from "../../assets/images/aidsdepartment/AI-DS-ACHIEVEMENTS/Kabbadi-Competition.png";
+import relayImage from "../../assets/images/aidsdepartment/AI-DS-ACHIEVEMENTS/relay-Competition.png";
+import janaPadaImage from "../../assets/images/aidsdepartment/AI-DS-ACHIEVEMENTS/Jana-Pada-Group-Dance.png";
+import groupDanceImage from "../../assets/images/aidsdepartment/AI-DS-ACHIEVEMENTS/Group-Dance-Competition.png";
+import rangoliEventManiaImage from "../../assets/images/aidsdepartment/AI-DS-ACHIEVEMENTS/Rangoli-Competition-1st-eventmania.png";
+import debateEventManiaImage from "../../assets/images/aidsdepartment/AI-DS-ACHIEVEMENTS/Debate-Competition-event-mania.png";
+import soloWesternDanceImage from "../../assets/images/aidsdepartment/AI-DS-ACHIEVEMENTS/Solo-Western-Dance-Compt-1.png";
 
 
 import type {
@@ -217,71 +226,80 @@ export const achievementData: AchievementSectionData = {
   achievements: [
     {
       id: 1,
-      title: "1. Students from department of AI&DS exhibited their extraordinary talent & achieved a perfect score of 100 in the VTU Math examination.",
-      image: techIumImage,
-      alt: "Tech IUM Winners",
+      title:
+        "1. Students from department of AI&DS exhibited their extraordinary talent & achieved a perfect score of 100 in the VTU Math examination.",
+      image: mathExaminationImage,
+      alt: "AI&DS Students VTU Math Examination",
     },
-
     {
       id: 2,
-      title: "2. Miss Khushi C R topped in the class in 2nd semester with a score of 87%. Your dedication, hard work, and outstanding performance has earned you this well-deserved honor.",
-      image: internshipImage,
-      alt: "Internship Achievement",
+      title:
+        "2. Miss Khushi C R topped in the class in 2nd semester with a score of 87%. Your dedication, hard work, and outstanding performance has earned you this well-deserved honor.",
+      image: missKhushiImage,
+      alt: "Miss Khushi C R Achievement",
     },
     {
       id: 3,
-      title: "3. One of our AI&DS student has secured 2nd Place in the Debate Competition conducted by BGSCET on the occasion of Karnataka Rajyostava on Nov 01st 2023.",
-      image: techIumImage,
-      alt: "Tech IUM Winners",
+      title:
+        "3. One of our AI&DS student has secured 2nd Place in the Debate Competition conducted by BGSCET on the occasion of Karnataka Rajyostava on Nov 01st 2023.",
+      image: debateKarnatakaImage,
+      alt: "AI&DS Debate Competition Achievement",
     },
-
     {
       id: 4,
-      title: "4. One of our AI&DS students secured 2nd place in the Rangoli Competition conducted by BGSCET on the occasion Karnataka Rajyostava on Nov 01st 2023.",
-      image: internshipImage,
-      alt: "Internship Achievement",
+      title:
+        "4. One of our AI&DS students secured 2nd place in the Rangoli Competition conducted by BGSCET on the occasion Karnataka Rajyostava on Nov 01st 2023.",
+      image: rangoliKarnatakaImage,
+      alt: "AI&DS Rangoli Competition Achievement",
     },
     {
       id: 5,
-      title: "5. Students from department of AI&DS, secured 1st Place in the Department level Kabbadi Competition conducted by BGSCET on the occasion of Annual Sports Meet.",
-      image: internshipImage,
-      alt: "Internship Achievement",
+      title:
+        "5. Students from department of AI&DS, secured 1st Place in the Department level Kabbadi Competition conducted by BGSCET on the occasion of Annual Sports Meet.",
+      image: kabbadiImage,
+      alt: "AI&DS Kabbadi Competition Achievement",
     },
     {
       id: 6,
-      title: "6. One of our AI&DS students has secured 1st place in 200m race and 2nd place in the relay Competition conducted by BGSCET on the occasion of Annual Sports Meet.",
-      image: internshipImage,
-      alt: "Internship Achievement",
+      title:
+        "6. One of our AI&DS students has secured 1st place in 200m race and 2nd place in the relay Competition conducted by BGSCET on the occasion of Annual Sports Meet.",
+      image: relayImage,
+      alt: "AI&DS Relay Competition Achievement",
     },
     {
       id: 7,
-      title: "7. Students from department of AI&DS, have secured 1st Place in the Jana Pada Group Dance Competition at Intercollege level on the occasion of Sambrama-2023 Organized by SJCIT, Chikkaballapura District.",
-      image: internshipImage,
-      alt: "Internship Achievement",
+      title:
+        "7. Students from department of AI&DS, have secured 1st Place in the Jana Pada Group Dance Competition at Intercollege level on the occasion of Sambrama-2023 Organized by SJCIT, Chikkaballapura District.",
+      image: janaPadaImage,
+      alt: "AI&DS Jana Pada Group Dance Achievement",
     },
     {
       id: 8,
-      title: "8. Students from department of AI&DS secured 3rd place in the Group Dance Competition conducted by BGSCET on the occasion of Event Mania.",
-      image: internshipImage,
-      alt: "Internship Achievement",
+      title:
+        "8. Students from department of AI&DS secured 3rd place in the Group Dance Competition conducted by BGSCET on the occasion of Event Mania.",
+      image: groupDanceImage,
+      alt: "AI&DS Group Dance Competition Achievement",
     },
     {
       id: 9,
-      title: "9. Our AI&DS student secured 1st place in the Rangoli Competition conducted by BGSCET on the occasion of Event Mania.",
-      image: internshipImage,
-      alt: "Internship Achievement",
+      title:
+        "9. Our AI&DS student secured 1st place in the Rangoli Competition conducted by BGSCET on the occasion of Event Mania.",
+      image: rangoliEventManiaImage,
+      alt: "AI&DS Event Mania Rangoli Competition",
     },
-     {
+    {
       id: 10,
-      title: "10. Students from department of AI&DS secured 1st Place in the Debate Competition conducted by BGSCET on the occasion of Event Mania.",
-      image: internshipImage,
-      alt: "Internship Achievement",
+      title:
+        "10. Students from department of AI&DS secured 1st Place in the Debate Competition conducted by BGSCET on the occasion of Event Mania.",
+      image: debateEventManiaImage,
+      alt: "AI&DS Event Mania Debate Competition",
     },
-     {
+    {
       id: 11,
-      title: "11. Our students secured 1st and 2nd place in Solo Western Dance Competition conducted by BGSCET on the occasion of Event Mania.",
-      image: internshipImage,
-      alt: "Internship Achievement",
+      title:
+        "11. Our students secured 1st and 2nd place in Solo Western Dance Competition conducted by BGSCET on the occasion of Event Mania.",
+      image: soloWesternDanceImage,
+      alt: "AI&DS Solo Western Dance Competition",
     },
   ],
 };
