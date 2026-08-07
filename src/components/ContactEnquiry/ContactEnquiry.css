@@ -13,7 +13,7 @@
 
 .contact-enquiry__description {
   width: 100%;
-  margin: 1.5rem 0 3rem;
+  margin: 1.5rem 0 2rem;
   color: var(--primary);
   font-size: var(--fs-body);
   font-weight: var(--fw-medium);
@@ -28,7 +28,7 @@
 }
 
 .contact-card {
-  padding: 2rem;
+  padding: 2rem 0;
   background: var(--white);
   border: 0.0625rem solid var(--color-border-light);
   border-radius: 1rem;
