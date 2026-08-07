@@ -1,8 +1,6 @@
 import careerImage from "../../assets/images/csedepartment/career-opportunities.jpg";
 import techIumImage from "../../assets/images/achievement/tech-ium.jpg";
 import internshipImage from "../../assets/images/achievement/internship.jpg";
-import event1Image from "../../assets/images/cseevents/event-1.jpg";
-import event2Image from "../../assets/images/cseevents/event-2.jpg";
 import aimlBannerImage from "../../assets/images/academic/artificial-intelligence.jpg";
 import laxmi from "../../assets/images/aimldepartment/Laxmi.jpg";
 import nishitaNMurthy from "../../assets/images/aimldepartment/Nishita N Murthy.png";
@@ -11,6 +9,19 @@ import drMadhuraGangaiah from "../../assets/images/aimldepartment/Dr.-Madhura-Ga
 import drManjulaL from "../../assets/images/aimldepartment/Dr. Manjula L.jpeg";
 import msVandanaSSardar from "../../assets/images/aimldepartment/Ms.-Vandana-S-Sardar.jpg";
 import hod from "../../assets/images/aimldepartment/Dr.JalajaG.jpg";
+import event1Image from "../../assets/images/aimldepartment/AIML-EVENTS/AIML-EVENT-1.jpeg";
+import event2Image from "../../assets/images/aimldepartment/AIML-EVENTS/AIML-EVENT-2.jpg";
+import event3Image from "../../assets/images/aimldepartment/AIML-EVENTS/AIML-EVENT-3.jpg";
+import event4Image from "../../assets/images/aimldepartment/AIML-EVENTS/AIML-EVENT-4.jpg";
+import event5Image from "../../assets/images/aimldepartment/AIML-EVENTS/AIML-EVENT-5.jpg";
+import event6Image from "../../assets/images/aimldepartment/AIML-EVENTS/AIML-EVENT-6.jpg";
+import event7Image from "../../assets/images/aimldepartment/AIML-EVENTS/AIML-EVENT-7.jpg";
+import event8Image from "../../assets/images/aimldepartment/AIML-EVENTS/AIML-EVENT-8.jpg";
+import event9Image from "../../assets/images/aimldepartment/AIML-EVENTS/AIML-EVENT-9.jpeg";
+import event10Image from "../../assets/images/aimldepartment/AIML-EVENTS/AIML-EVENT-10.jpeg";
+import event11Image from "../../assets/images/aimldepartment/AIML-EVENTS/AIML-EVENT-11.jpeg";
+import event12Image from "../../assets/images/aimldepartment/AIML-EVENTS/AIML-EVENT-12.jpeg";
+import event13Image from "../../assets/images/aimldepartment/AIML-EVENTS/AIML-EVENT-13.jpeg";
 
 import type {
   DepartmentTab,
@@ -227,18 +238,83 @@ export const aimlEventsData: DepartmentEventsData = {
   events: [
     {
       id: 1,
-      title:
-        "BGS Invited Lecture Series Talk On Intellectual Property Rights (IPR)",
+      title: "Future Forge: Generative AI",
       image: event1Image,
-      alt: "IPR Lecture Series",
+      alt: "Future Forge: Generative AI",
     },
-
     {
       id: 2,
-      title:
-        "Three Days Skill Development Program On Generative AI Hands-On Learning From Concepts To Applications",
+      title: "IPR",
       image: event2Image,
-      alt: "AI Programme",
+      alt: "IPR",
+    },
+    {
+      id: 3,
+      title: "NAL",
+      image: event3Image,
+      alt: "NAL",
+    },
+    {
+      id: 4,
+      title: "Pep Talk",
+      image: event4Image,
+      alt: "Pep Talk",
+    },
+    {
+      id: 5,
+      title: "Chakaranova",
+      image: event5Image,
+      alt: "Chakaranova",
+    },
+    {
+      id: 6,
+      title: "Deep Learning",
+      image: event6Image,
+      alt: "Deep Learning",
+    },
+    {
+      id: 7,
+      title: "Hackathon",
+      image: event7Image,
+      alt: "Hackathon",
+    },
+    {
+      id: 8,
+      title: "Higher Studies",
+      image: event8Image,
+      alt: "Higher Studies",
+    },
+    {
+      id: 9,
+      title: "Present & Future Programs of CSIR-NAL",
+      image: event9Image,
+      alt: "Present & Future Programs of CSIR-NAL",
+    },
+    {
+      id: 10,
+      title: "Fine-Tuning LLaMA3 using evol-instruct",
+      image: event10Image,
+      alt: "Fine-Tuning LLaMA3 using evol-instruct",
+    },
+    {
+      id: 11,
+      title: "Activity Under Coding Club ‘Project Kick Start'",
+      image: event11Image,
+      alt: "Activity Under Coding Club Project Kick Start",
+    },
+    {
+      id: 12,
+      title:
+        "Generative AI: Hands on Learning from Concepts to Applications",
+      image: event12Image,
+      alt: "Generative AI: Hands on Learning from Concepts to Applications",
+    },
+    {
+      id: 13,
+      title:
+        "Generative AI: Hands on Learning from Concepts to Applications",
+      image: event13Image,
+      alt: "Generative AI: Hands on Learning from Concepts to Applications",
     },
   ],
 
@@ -247,7 +323,6 @@ export const aimlEventsData: DepartmentEventsData = {
       id: 1,
       title: "AIML Newsletter Vol 1",
     },
-
     {
       id: 2,
       title: "AIML Newsletter Vol 2",

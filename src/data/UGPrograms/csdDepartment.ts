@@ -1,8 +1,7 @@
 import careerImage from "../../assets/images/csedepartment/career-opportunities.jpg";
 import techIumImage from "../../assets/images/achievement/tech-ium.jpg";
 // import internshipImage from "../../assets/images/achievement/internship.jpg";
-import event1Image from "../../assets/images/cseevents/event-1.jpg";
-import event2Image from "../../assets/images/cseevents/event-2.jpg";
+
 import csdBannerImage from "../../assets/images/academic/academic-01.jpg";
 import trishaS from "../../assets/images/csddepartment/Trisha-s.png";
 import sowjanyaK from "../../assets/images/csddepartment/Sowjanya-K.png";
@@ -13,6 +12,11 @@ import hod from "../../assets/images/csddepartment/Dr.-Madhu-Patil.jpg";
 import aishwaryaS from "../../assets/images/csddepartment/Trisha-s.png";
 import kavya from "../../assets/images/csddepartment/KavyaR.png";
 import chethanKumar from "../../assets/images/csddepartment/ChethanKumar_CSD.jpeg";
+import event1Image from "../../assets/images/csddepartment/CSD-EVENTS/CSD-EVENTS-1.jpeg";
+import event2Image from "../../assets/images/csddepartment/CSD-EVENTS/CSD-EVENTS-2.jpeg";
+import event3Image from "../../assets/images/csddepartment/CSD-EVENTS/CSD-EVENTS-3.jpeg";
+import event4Image from "../../assets/images/csddepartment/CSD-EVENTS/CSD-EVENTS-4.jpeg";
+import event5Image from "../../assets/images/csddepartment/CSD-EVENTS/CSD-EVENTS-5.jpeg";
 
 
 import type {
@@ -312,18 +316,35 @@ export const csdEventsData: DepartmentEventsData = {
   events: [
     {
       id: 1,
-      title:
-        "BGS Invited Lecture Series Talk On Intellectual Property Rights (IPR)",
+      title: "VIDYUT HACKATHON",
       image: event1Image,
-      alt: "IPR Lecture Series",
+      alt: "VIDYUT HACKATHON",
     },
-
     {
       id: 2,
-      title:
-        "Three Days Skill Development Program On Generative AI Hands-On Learning From Concepts To Applications",
+      title: "Linux Unleashed – Practical Session",
       image: event2Image,
-      alt: "AI Programme",
+      alt: "Linux Unleashed – Practical Session",
+    },
+    {
+      id: 3,
+      title:
+        "Unleashing the Power of R: A Journey into Data Science and Statistical Computing",
+      image: event3Image,
+      alt: "Unleashing the Power of R",
+    },
+    {
+      id: 4,
+      title: "Accelerate Growth with DevOps Efficiency",
+      image: event4Image,
+      alt: "Accelerate Growth with DevOps Efficiency",
+    },
+    {
+      id: 5,
+      title:
+        "Generative AI: Hands-on Learning from Concepts to Applications",
+      image: event5Image,
+      alt: "Generative AI: Hands-on Learning from Concepts to Applications",
     },
   ],
 
@@ -332,7 +353,6 @@ export const csdEventsData: DepartmentEventsData = {
       id: 1,
       title: "CSD Newsletter Vol 1",
     },
-
     {
       id: 2,
       title: "CSD Newsletter Vol 2",

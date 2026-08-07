@@ -1,8 +1,7 @@
 import careerImage from "../../assets/images/csedepartment/career-opportunities.jpg";
 import techIumImage from "../../assets/images/achievement/tech-ium.jpg";
 import internshipImage from "../../assets/images/achievement/internship.jpg";
-import event1Image from "../../assets/images/cseevents/event-1.jpg";
-import event2Image from "../../assets/images/cseevents/event-2.jpg";
+
 import aidsBannerImage from "../../assets/images/academic/artificial-intelligence.jpg";
 import ashwiniR from "../../assets/images/aidsdepartment/ASHWINI-R.jpeg";
 import drChandiniAG from "../../assets/images/aidsdepartment/Dr. Chandini-A-G.jpeg";
@@ -11,6 +10,25 @@ import sushmaM from "../../assets/images/aidsdepartment/SUSHMA-M.jpeg";
 import sindhuG from "../../assets/images/aidsdepartment/SINDHU-G.jpeg";
 import mrsMamatha from "../../assets/images/aidsdepartment/Mrs-Mamatha.jpeg";
 import hod from "../../assets/images/aidsdepartment/Parvathi.jpeg";
+import event1Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-1.jpeg";
+import event2Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-2.jpeg";
+import event3Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-3.jpeg";
+import event4Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-4.jpeg";
+import event5Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-5.jpeg";
+import event6Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-6.jpeg";
+import event7Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-7.jpeg";
+import event8Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-8.jpeg";
+import event9Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-9.jpeg";
+import event10Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-10.jpeg";
+import event11Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-11.jpg";
+import event12Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-12.jpeg";
+import event13Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-13.jpeg";
+import event14Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-14.jpeg";
+import event15Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-15.jpeg";
+import event16Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-16.jpeg";
+import event17Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-17.jpeg";
+import event18Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-18.jpeg";
+import event19Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-19.jpeg";
 
 
 import type {
@@ -276,18 +294,119 @@ export const aidsEventsData: DepartmentEventsData = {
   events: [
     {
       id: 1,
-      title:
-        "BGS Invited Lecture Series Talk On Intellectual Property Rights (IPR)",
+      title: "AI Techniques and Implementation Using Python",
       image: event1Image,
-      alt: "IPR Lecture Series",
+      alt: "AI Techniques and Implementation Using Python",
     },
-
     {
       id: 2,
       title:
-        "Three Days Skill Development Program On Generative AI Hands-On Learning From Concepts To Applications",
+        "Emerging AI Technologies: From Machine Learning to Generative AI",
       image: event2Image,
-      alt: "AI Programme",
+      alt: "Emerging AI Technologies: From Machine Learning to Generative AI",
+    },
+    {
+      id: 3,
+      title: "Bizotic AIDS",
+      image: event3Image,
+      alt: "Bizotic AIDS",
+    },
+    {
+      id: 4,
+      title: "Karnataka Kalarava",
+      image: event4Image,
+      alt: "Karnataka Kalarava",
+    },
+    {
+      id: 5,
+      title: "Java Workshop",
+      image: event5Image,
+      alt: "Java Workshop",
+    },
+    {
+      id: 6,
+      title: "AIGNITE 2025",
+      image: event6Image,
+      alt: "AIGNITE 2025",
+    },
+    {
+      id: 7,
+      title: "Awareness To Online Coding Platforms",
+      image: event7Image,
+      alt: "Awareness To Online Coding Platforms",
+    },
+    {
+      id: 8,
+      title: "Digital Wizard Quiz",
+      image: event8Image,
+      alt: "Digital Wizard Quiz",
+    },
+    {
+      id: 9,
+      title: "Bridge Core and Emerging Disciplines",
+      image: event9Image,
+      alt: "Bridge Core and Emerging Disciplines",
+    },
+    {
+      id: 10,
+      title: "GATE JAM 2026 Outreach Program by IISc Bangalore",
+      image: event10Image,
+      alt: "GATE JAM 2026 Outreach Program by IISc Bangalore",
+    },
+    {
+      id: 11,
+      title: "FDP Program – 25",
+      image: event11Image,
+      alt: "FDP Program – 25",
+    },
+    {
+      id: 12,
+      title: "Big Data Tools and Technologies",
+      image: event12Image,
+      alt: "Big Data Tools and Technologies",
+    },
+    {
+      id: 13,
+      title: "MERN Stack Workshop",
+      image: event13Image,
+      alt: "MERN Stack Workshop",
+    },
+    {
+      id: 14,
+      title: "Accelerate Growth with DevOps Efficiency",
+      image: event14Image,
+      alt: "Accelerate Growth with DevOps Efficiency",
+    },
+    {
+      id: 15,
+      title:
+        "Generative AI: Hands on Learning from Concepts to Applications",
+      image: event15Image,
+      alt: "Generative AI: Hands on Learning from Concepts to Applications",
+    },
+    {
+      id: 16,
+      title: "Orientation Program for 3rd and 5th Sem",
+      image: event16Image,
+      alt: "Orientation Program for 3rd and 5th Sem",
+    },
+    {
+      id: 17,
+      title: "Code Sprint",
+      image: event17Image,
+      alt: "Code Sprint",
+    },
+    {
+      id: 18,
+      title: "Tech Kruthi",
+      image: event18Image,
+      alt: "Tech Kruthi",
+    },
+    {
+      id: 19,
+      title: "Kannada Rajyothsava",
+      image: event19Image,
+      alt: "Kannada Rajyothsava",
     },
   ],
 
@@ -296,7 +415,6 @@ export const aidsEventsData: DepartmentEventsData = {
       id: 1,
       title: "AI & DS Newsletter Vol 1",
     },
-
     {
       id: 2,
       title: "AI & DS Newsletter Vol 2",

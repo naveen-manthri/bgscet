@@ -1,8 +1,7 @@
 import hodImage from "../../assets/images/csedepartment/hod.png";
 import careerImage from "../../assets/images/csedepartment/career-opportunities.jpg";
 
-import event1Image from "../../assets/images/cseevents/event-1.jpg";
-import event2Image from "../../assets/images/cseevents/event-2.jpg";
+
 import cseBannerImage from "../../assets/images/banner/department-banner-cse.png";
 import sumanthCGowda from "../../assets/images/csedepartment/sumanth-c-gowda.jpeg";
 import manasaCK from "../../assets/images/csedepartment/Manasa-CK.jpeg";
@@ -23,6 +22,26 @@ import toppers20222026FourthSem from "../../assets/images/achievement/cse-achiev
 import toppers20222026FifthSem from "../../assets/images/achievement/cse-achievements/Toppers-2022-2026-5th-sem-VTU.jpeg";
 import toppers20232027 from "../../assets/images/achievement/cse-achievements/Toppers-Batch-2023-2027.jpeg";
 import techIUMwinners from "../../assets/images/achievement/cse-achievements/Tech-IUM-Winners.jpeg";
+import event1Image from "../../assets/images/csedepartment/CSE-EVENTS/CSE-EVENT-1.jpeg";
+import event2Image from "../../assets/images/csedepartment/CSE-EVENTS/CSE-EVENT-2.jpeg";
+import event3Image from "../../assets/images/csedepartment/CSE-EVENTS/CSE-EVENT-3.jpeg";
+import event4Image from "../../assets/images/csedepartment/CSE-EVENTS/CSE-EVENT-4.jpeg";
+import event5Image from "../../assets/images/csedepartment/CSE-EVENTS/CSE-EVENT-5.jpeg";
+import event6Image from "../../assets/images/csedepartment/CSE-EVENTS/CSE-EVENT-6.jpeg";
+import event7Image from "../../assets/images/csedepartment/CSE-EVENTS/CSE-EVENT-7.png";
+import event8Image from "../../assets/images/csedepartment/CSE-EVENTS/CSE-EVENT-8.jpeg";
+import event9Image from "../../assets/images/csedepartment/CSE-EVENTS/CSE-EVENT-9.jpeg";
+import event10Image from "../../assets/images/csedepartment/CSE-EVENTS/CSE-EVENT-10.jpeg";
+import event11Image from "../../assets/images/csedepartment/CSE-EVENTS/CSE-EVENT-11.png";
+import event12Image from "../../assets/images/csedepartment/CSE-EVENTS/CSE-EVENT-12.jpeg";
+import event13Image from "../../assets/images/csedepartment/CSE-EVENTS/CSE-EVENT-13.jpeg";
+import event14Image from "../../assets/images/csedepartment/CSE-EVENTS/CSE-EVENT-14.jpeg";
+import event15Image from "../../assets/images/csedepartment/CSE-EVENTS/CSE-EVENT-15.jpg";
+import event16Image from "../../assets/images/csedepartment/CSE-EVENTS/CSE-EVENT-16.jpeg";
+import event17Image from "../../assets/images/csedepartment/CSE-EVENTS/CSE-EVENT-17.jpeg";
+import event18Image from "../../assets/images/csedepartment/CSE-EVENTS/CSE-EVENT-18.jpeg";
+import event19Image from "../../assets/images/csedepartment/CSE-EVENTS/CSE-EVENT-19.jpeg";
+import event20Image from "../../assets/images/csedepartment/CSE-EVENTS/CSE-EVENT-20.jpeg";
 
 
 import type {
@@ -286,17 +305,132 @@ export const cseEventsData: DepartmentEventsData = {
     {
       id: 1,
       title:
-        "BGS Invited Lecture Series Talk On Intellectual Property Rights (IPR)",
+        "BGS Invited Lecture Series Talk on Intellectual Property Rights (IPR)",
       image: event1Image,
-      alt: "IPR Lecture Series",
+      alt: "BGS Invited Lecture Series Talk on Intellectual Property Rights (IPR)",
     },
-
     {
       id: 2,
       title:
-        "Three Days Skill Development Program On Generative AI Hands-On Learning From Concepts To Applications",
+        "Three Days Skill Development Program on Generative AI: Hands-On Learning from Concepts to Applications",
       image: event2Image,
-      alt: "AI Programme",
+      alt: "Three Days Skill Development Program on Generative AI",
+    },
+    {
+      id: 3,
+      title:
+        "Technical Talk on Beyond the Datacenter: How TinyML is Decarbonizing Intelligence",
+      image: event3Image,
+      alt: "Technical Talk on Beyond the Datacenter: How TinyML is Decarbonizing Intelligence",
+    },
+    {
+      id: 4,
+      title:
+        "Three Days Student Skill Enhancement Program on DevOps: Hands-on Learning from Concepts to Applications",
+      image: event4Image,
+      alt: "Three Days Student Skill Enhancement Program on DevOps",
+    },
+    {
+      id: 5,
+      title:
+        "Progressive Training Program for B.E – 3rd Semester Students",
+      image: event5Image,
+      alt: "Progressive Training Program for B.E – 3rd Semester Students",
+    },
+    {
+      id: 6,
+      title:
+        "Faculty Development Programme on AICTE Activity Points Tracking System (VTU App)",
+      image: event6Image,
+      alt: "Faculty Development Programme on AICTE Activity Points Tracking System",
+    },
+    {
+      id: 7,
+      title:
+        "Three Days Student Skill Enhancement Program on Mastering MERN Stack: From Development to Deployment",
+      image: event7Image,
+      alt: "Three Days Student Skill Enhancement Program on Mastering MERN Stack",
+    },
+    {
+      id: 8,
+      title: "FDP NLP Report",
+      image: event8Image,
+      alt: "FDP NLP Report",
+    },
+    {
+      id: 9,
+      title: "FDP NLP Report",
+      image: event9Image,
+      alt: "FDP NLP Report",
+    },
+    {
+      id: 10,
+      title: "Parallel Computing Report",
+      image: event10Image,
+      alt: "Parallel Computing Report",
+    },
+    {
+      id: 11,
+      title: "Tiny_ML",
+      image: event11Image,
+      alt: "Tiny ML",
+    },
+    {
+      id: 12,
+      title: "HACKSHASTRA – 2K25",
+      image: event12Image,
+      alt: "HACKSHASTRA – 2K25",
+    },
+    {
+      id: 13,
+      title:
+        "Technical Talk on The evolving landscape of Processor Architecture",
+      image: event13Image,
+      alt: "Technical Talk on The evolving landscape of Processor Architecture",
+    },
+    {
+      id: 14,
+      title: "Intellectual Property Rights (IPR)",
+      image: event14Image,
+      alt: "Intellectual Property Rights (IPR)",
+    },
+    {
+      id: 15,
+      title: "Accelerating Discovery with Parallel Processing",
+      image: event15Image,
+      alt: "Accelerating Discovery with Parallel Processing",
+    },
+    {
+      id: 16,
+      title: "Infosys Springboard Student Enablement Program",
+      image: event16Image,
+      alt: "Infosys Springboard Student Enablement Program",
+    },
+    {
+      id: 17,
+      title: "Accelerate Growth with Devops Efficiency",
+      image: event17Image,
+      alt: "Accelerate Growth with Devops Efficiency",
+    },
+    {
+      id: 18,
+      title:
+        "Generative AI: Hands on Learning from concepts to Applications",
+      image: event18Image,
+      alt: "Generative AI: Hands on Learning from concepts to Applications",
+    },
+    {
+      id: 19,
+      title:
+        "Unleashing the Power of R: A Journey into Data Science and Statistical Computing",
+      image: event19Image,
+      alt: "Unleashing the Power of R: A Journey into Data Science and Statistical Computing",
+    },
+    {
+      id: 20,
+      title: "International Women’s Equality Day",
+      image: event20Image,
+      alt: "International Women’s Equality Day",
     },
   ],
 
@@ -305,7 +439,6 @@ export const cseEventsData: DepartmentEventsData = {
       id: 1,
       title: "CSE Newsletter Vol 1",
     },
-
     {
       id: 2,
       title: "CSE Newsletter Vol 2",
