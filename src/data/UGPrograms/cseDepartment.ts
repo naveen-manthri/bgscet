@@ -43,6 +43,14 @@ import event18Image from "../../assets/images/csedepartment/CSE-EVENTS/CSE-EVENT
 import event19Image from "../../assets/images/csedepartment/CSE-EVENTS/CSE-EVENT-19.jpeg";
 import event20Image from "../../assets/images/csedepartment/CSE-EVENTS/CSE-EVENT-20.jpeg";
 
+import sahana from "../../assets/images/csedepartment/cseTechFaculty/sahana-CSE.jpeg";
+import pooja from "../../assets/images/csedepartment/cseTechFaculty/Pooja-CSE.jpg";
+import soumya from "../../assets/images/csedepartment/cseTechFaculty/soumya-CSE.jpeg";
+import vinayak from "../../assets/images/csedepartment/cseTechFaculty/Vinayak.jpeg";
+import bhoomika from "../../assets/images/csedepartment/cseTechFaculty/Bhoomika.jpg";
+import supriya from "../../assets/images/csedepartment/cseTechFaculty/SUPRIYA.jpeg";
+
+
 
 import type {
   DepartmentTab,
@@ -238,16 +246,39 @@ export const facultyMembers: FacultyMember[] = [
 export const technicalFacultyMembers: FacultyMember[] = [
   {
     id: 1,
-    image: pricipal,
-    name: "Dr. Ravikumar GK",
-    designation: "Principal",
+    image: sahana,
+    name: "Sahana S Gatti",
+    designation: "Programmer",
   },
-
   {
     id: 2,
-    image: hodImage,
-    name: "Dr. Manjula G",
-    designation: "Professor and HOD",
+    image: pooja,
+    name: "Pooja S N",
+    designation: "Lab Instructor",
+  },
+  {
+    id: 3,
+    image: soumya,
+    name: "Soumya",
+    designation: "Programmer",
+  },
+  {
+    id: 4,
+    image: vinayak,
+    name: "Vinayak P H",
+    designation: "System Administrator",
+  },
+  {
+    id: 5,
+    image: bhoomika,
+    name: "Bhoomika",
+    designation: "-",
+  },
+  {
+    id: 6,
+    image: supriya,
+    name: "SUPRIYA M S",
+    designation: "Programmer",
   },
 ];
 
