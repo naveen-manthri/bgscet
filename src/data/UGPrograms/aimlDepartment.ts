@@ -1,6 +1,4 @@
 import careerImage from "../../assets/images/csedepartment/career-opportunities.jpg";
-import techIumImage from "../../assets/images/achievement/tech-ium.jpg";
-import internshipImage from "../../assets/images/achievement/internship.jpg";
 import aimlBannerImage from "../../assets/images/academic/artificial-intelligence.jpg";
 import laxmi from "../../assets/images/aimldepartment/Laxmi.jpg";
 import nishitaNMurthy from "../../assets/images/aimldepartment/Nishita N Murthy.png";
@@ -22,6 +20,12 @@ import event10Image from "../../assets/images/aimldepartment/AIML-EVENTS/AIML-EV
 import event11Image from "../../assets/images/aimldepartment/AIML-EVENTS/AIML-EVENT-11.jpeg";
 import event12Image from "../../assets/images/aimldepartment/AIML-EVENTS/AIML-EVENT-12.jpeg";
 import event13Image from "../../assets/images/aimldepartment/AIML-EVENTS/AIML-EVENT-13.jpeg";
+import internshipImage from "../../assets/images/aimldepartment/AI-ML-ACHIEVEMENTS/Internship-1.png";
+import jvtmImage from "../../assets/images/aimldepartment/AI-ML-ACHIEVEMENTS/JVTM-1.png";
+import educationalTripImage from "../../assets/images/aimldepartment/AI-ML-ACHIEVEMENTS/Educational-Trip-1.png";
+import sportsImage from "../../assets/images/aimldepartment/AI-ML-ACHIEVEMENTS/Sports-1.png";
+import logoCompetitionImage from "../../assets/images/aimldepartment/AI-ML-ACHIEVEMENTS/Logo-Competition-1.png";
+
 
 import type {
   DepartmentTab,
@@ -197,35 +201,38 @@ export const achievementData: AchievementSectionData = {
   achievements: [
     {
       id: 1,
-      title: "1. Internship: Students of 3rd semester AI&ML department have successfully Completed Internship on “Computer Vision Using Cloud” From 14th-16th December 2023",
-      image: techIumImage,
-      alt: "Tech IUM Winners",
+      title:
+        "1. Internship: Students of 3rd semester AI&ML department have successfully Completed Internship on “Computer Vision Using Cloud” From 14th-16th December 2023",
+      image: internshipImage,
+      alt: "AI&ML Students Internship",
     },
-
     {
       id: 2,
-      title: "2. JVTM: Students from department of AI&ML exhibited their extraordinary talent & participated in JVTM Cultural Fest, Feb 2024",
-      image: internshipImage,
-      alt: "Internship Achievement",
+      title:
+        "2. JVTM: Students from department of AI&ML exhibited their extraordinary talent & participated in JVTM Cultural Fest, Feb 2024",
+      image: jvtmImage,
+      alt: "AI&ML Students at JVTM Cultural Fest",
     },
     {
       id: 3,
-      title: "3. Educational Trip: An Educational Trip was Oraginzed on 24th feb2024 for 3rd semester students. It was aimed to empower students to become informed, engaged, and compassionate global citizens.",
-      image: techIumImage,
-      alt: "Tech IUM Winners",
+      title:
+        "3. Educational Trip: An Educational Trip was Oraginzed on 24th feb2024 for 3rd semester students. It was aimed to empower students to become informed, engaged, and compassionate global citizens.",
+      image: educationalTripImage,
+      alt: "AI&ML Educational Trip",
     },
-
     {
       id: 4,
-      title: "4. Sports: Students participated in VTU State Level Taekwondo championship in 2022 and won 2nd prize in 2023",
-      image: internshipImage,
-      alt: "Internship Achievement",
+      title:
+        "4. Sports: Students participated in VTU State Level Taekwondo championship in 2022 and won 2nd prize in 2023",
+      image: sportsImage,
+      alt: "AI&ML Sports Achievement",
     },
     {
       id: 5,
-      title: "5. Logo Competition: Students actively came forward to design logo for department of Artificial Intelligence and machine learning",
-      image: internshipImage,
-      alt: "Internship Achievement",
+      title:
+        "5. Logo Competition: Students actively came forward to design logo for department of Artificial Intelligence and machine learning",
+      image: logoCompetitionImage,
+      alt: "AI&ML Logo Competition",
     },
   ],
 };
