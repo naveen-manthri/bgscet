@@ -9,10 +9,10 @@
   margin-top: 3rem;
 }
 
-.letter-section__heading {
+/* .letter-section__heading {
   margin-bottom: 1rem;
   color: var(--btn-primary, #cc2a09);
-}
+} */
 
 .letter-section__list {
   padding-left: 1.5rem;
@@ -22,11 +22,11 @@
   margin-top: 1.5rem;
 }
 
-.letter-section .letter-section__group-title {
+/* .letter-section .letter-section__group-title {
   margin-bottom: 0.75rem;
   font-size: 1.25rem;
   color: var(--btn-primary, #cc2a09) !important;
-}
+} */
 
 .letter-section__list li {
   margin-bottom: 0.75rem;
