@@ -1,21 +1,15 @@
 import type { DepartmentEvent } from "../../types/ugprograms";
 
-import event1Image from "../../assets/images/cseevents/event-1.jpg";
-import event2Image from "../../assets/images/cseevents/event-2.jpg";
+import event1Image from "../../assets/images/GLOBAL/global.jpeg";
 
 export const globalConnectCellData: DepartmentEvent[] = [
   {
     id: 1,
-    title: "Workshop on AI",
+    title: "Generative AI: Hands on Learning from Concepts to Applications",
     image: event1Image,
     alt: "Workshop on AI",
   },
-  {
-    id: 2,
-    title: "Technical Symposium",
-    image: event2Image,
-    alt: "Technical Symposium",
-  },
+  
 ];
 
 export default globalConnectCellData;

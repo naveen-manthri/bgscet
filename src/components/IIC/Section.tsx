@@ -1,4 +1,5 @@
 import type { IICSection } from "../../types/iic";
+import DepartmentSectionHeading from "../DepartmentSectionHeading/DepartmentSectionHeading";
 
 interface Props {
   section: IICSection;
@@ -7,7 +8,7 @@ interface Props {
 const Section = ({ section }: Props) => {
   return (
     <section className="iic-section">
-      <h2>{section.title}</h2>
+      <DepartmentSectionHeading title={section.title} />
 
       {section.content.map((content, index) => {
         if (content.type === "paragraph") {

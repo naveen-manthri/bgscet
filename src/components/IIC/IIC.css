@@ -5,8 +5,6 @@
   --container-padding: 4rem;
 
   --heading-1: 2.5rem;
-  --heading-2: 1.75rem;
-
   --paragraph-size: 1.25rem;
 
   --section-gap: 3rem;
@@ -28,15 +26,15 @@
   margin-bottom: var(--section-gap);
 }
 
-.iic-section h2 {
-  color: var(--primary-color);
-  font-size: var(--heading-2);
-  margin-bottom: 1.5rem;
-}
-
 .iic-section p {
   color: #4c4949;
   font-size: 1.25rem;
   line-height: var(--line-height);
   margin-bottom: var(--paragraph-gap);
+}
+
+.iic-section ol {
+  color: #4c4949;
+  font-size: 1.25rem;
+  line-height: var(--line-height);
 }

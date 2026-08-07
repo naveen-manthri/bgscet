@@ -131,11 +131,22 @@ export const studentMaterialData: LetterPageData = {
         },
         {
           title: "1st & 2nd Semester:",
-          items: [],
+          items: [
+            {
+              title: "1st & 2nd Semester Study Materials",
+              pdf: "https://drive.google.com/drive/folders/10iqYVokCbLo0MvfqOPBmIFY4AR3OOHbd",
+            },
+          ],
         },
+
         {
           title: "Notes:",
-          items: [],
+          items: [
+            {
+              title: "Notes",
+              pdf: "/pdfs/pyqs/3_SEMESTER_LECTURE_NOTES.pdf",
+            },
+          ],
         },
       ],
     },

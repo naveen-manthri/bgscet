@@ -8,4 +8,5 @@
   line-height: 1.8;
   font-size: 1.25rem;
   color: var(--color-text);
+  text-align: justify;
 }
