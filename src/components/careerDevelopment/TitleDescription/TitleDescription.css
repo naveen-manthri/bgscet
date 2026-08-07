@@ -18,7 +18,8 @@
   margin-bottom: var(--career-section-gap);
 }
 
-.title-bullet-description p {
+.title-bullet-description p,
+.title-description p {
   font-size: var(--career-paragraph-size);
   color: var(--career-paragraph-color);
   font-family: var(--career-font-family);
