@@ -1,11 +1,11 @@
 :root {
   --career-page-padding: 4rem;
   --career-section-gap: 5rem;
-  --career-heading-gap: 2rem;
-  --career-list-gap: 1rem;
+  --career-heading-gap: 1rem;
+  --career-list-gap: 0.75rem;
   --career-paragraph-size: 1.25rem;
   --career-paragraph-color: #4b5563;
-  --career-line-height: 1.8;
+  --career-line-height: 0.7;
   --career-font-family: "Poppins", sans-serif;
 }
 
@@ -21,8 +21,9 @@
   display: flex;
   flex-direction: column;
   gap: var(--career-list-gap);
+  margin-top: -1.8rem;
   padding-left: 2rem;
-  margin: 0;
+  
 }
 
 .bullet-section__item {
@@ -30,6 +31,8 @@
   color: var(--career-paragraph-color);
   font-family: var(--career-font-family);
   line-height: var(--career-line-height);
+  
+  
 }
 
 @media (max-width: 48rem) {
