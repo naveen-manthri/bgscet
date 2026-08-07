@@ -23,6 +23,9 @@ import topper2022_4semImage from "../../assets/images/isedepartment/ISE-Achievem
 import goldMedalImage from "../../assets/images/isedepartment/ISE-Achievements/ISE-Gold-medal.png";
 import danceImage from "../../assets/images/isedepartment/ISE-Achievements/ISE-dep-2nd-Prize-Dance-1.png";
 import volleyballImage from "../../assets/images/isedepartment/ISE-Achievements/ISE-VTU-Volleyball-Tournament-1.png";
+import Navya from "../../assets/images/isedepartment/iseTechFaculty/Navya.jpeg";
+import Arpitha from "../../assets/images/isedepartment/iseTechFaculty/Arpitha.jpeg";
+import Saahithi from "../../assets/images/isedepartment/iseTechFaculty/saahithi-ISE-.jpeg";
 
 import type {
   DepartmentTab,
@@ -201,17 +204,23 @@ export const facultyMembers: FacultyMember[] = [
 export const technicalFacultyMembers: FacultyMember[] = [
   {
     id: 1,
-    image: hod,
-    name: "Dr Chaitra Naveen",
-    designation: "Professor and HOD",
+    image: Saahithi,
+    name: "Ms Saahithi",
+    designation: "Programmer",
   },
 
   {
     id: 2,
-    image: anoopNPrasad,
-    name: "Anoop N Prasad",
-    designation: "Assistant Professor",
+    image: Navya,
+    name: "Ms Navya",
+    designation: "Programmer",
   },
+  {
+    id:3,
+    image:Arpitha,
+    name: "Arpitha N D",
+    designation: "Lab Instructor",
+  }
 ];
 
 
