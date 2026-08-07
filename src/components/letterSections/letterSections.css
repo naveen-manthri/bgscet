@@ -3,7 +3,7 @@
   --btn-primary-hover: #b82508;
 
   padding: 3rem 4rem 0;
-  gap: 3rem;
+  gap: 2rem;
   display: flex;
   flex-direction: column;
 }
