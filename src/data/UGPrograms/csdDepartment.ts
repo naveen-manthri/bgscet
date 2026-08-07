@@ -1,6 +1,5 @@
 import careerImage from "../../assets/images/csedepartment/career-opportunities.jpg";
-import techIumImage from "../../assets/images/achievement/tech-ium.jpg";
-// import internshipImage from "../../assets/images/achievement/internship.jpg";
+
 
 import csdBannerImage from "../../assets/images/academic/academic-01.jpg";
 import trishaS from "../../assets/images/csddepartment/Trisha-s.png";
@@ -17,6 +16,15 @@ import event2Image from "../../assets/images/csddepartment/CSD-EVENTS/CSD-EVENTS
 import event3Image from "../../assets/images/csddepartment/CSD-EVENTS/CSD-EVENTS-3.jpeg";
 import event4Image from "../../assets/images/csddepartment/CSD-EVENTS/CSD-EVENTS-4.jpeg";
 import event5Image from "../../assets/images/csddepartment/CSD-EVENTS/CSD-EVENTS-5.jpeg";
+
+import nityashreeImage from "../../assets/images/csddepartment/CSD-ACHIEVEMENTS/Nityashree-1.jpeg";
+import toppers3SemImage from "../../assets/images/csddepartment/CSD-ACHIEVEMENTS/3-sem-toppers-2023-batch.jpeg";
+import toppers5SemImage from "../../assets/images/csddepartment/CSD-ACHIEVEMENTS/5th-sem-toppers-2022-batch.jpeg";
+import toppers4SemImage from "../../assets/images/csddepartment/CSD-ACHIEVEMENTS/Topper-Batch-2022-2026-4th-SEM.jpeg";
+import radhikaLikithaImage from "../../assets/images/csddepartment/CSD-ACHIEVEMENTS/Radhika-Ran-Likitha.jpeg";
+import volleyballImage from "../../assets/images/csddepartment/CSD-ACHIEVEMENTS/AbhisheK-Prateek-Surendra-VOLLEYBALL.jpg";
+import iotCompetitionImage from "../../assets/images/csddepartment/CSD-ACHIEVEMENTS/Inter-Collg-IOT-Project-Competition-2023.jpg";
+import csdLabImage from "../../assets/images/csddepartment/CSD-ACHIEVEMENTS/3rd-sem-CSD-LAB.jpeg";
 
 
 import type {
@@ -190,6 +198,9 @@ export const technicalSupportTeam: FacultyMember[] = [
     designation: "Computer Operator",
   },
 ];
+
+
+
 export const achievementData: AchievementSectionData = {
   title: "Student Success Stories",
 
@@ -198,15 +209,15 @@ export const achievementData: AchievementSectionData = {
       id: 1,
       title:
         "Nityashree, CSD Department Won 1st Place On-Spot Painting at VTU Youth Festival!",
-      image: techIumImage,
-      alt: "Nityashree won 1st place on-spot painting at VTU Youth Festival",
+      image: nityashreeImage,
+      alt: "Nityashree won 1st place in on-spot painting at VTU Youth Festival",
     },
 
     {
       id: 2,
       title:
         "Toppers of the Batch 2023-2027 in the 3rd Semester in VTU Examination",
-      image: techIumImage,
+      image:toppers3SemImage,
       alt: "Toppers of Batch 2023-2027 in 3rd semester VTU examination",
     },
 
@@ -214,7 +225,7 @@ export const achievementData: AchievementSectionData = {
       id: 3,
       title:
         "Toppers of the Batch 2022-2026 in the 5th Semester in VTU Examination",
-      image: techIumImage,
+      image: toppers5SemImage,
       alt: "Toppers of Batch 2022-2026 in 5th semester VTU examination",
     },
 
@@ -222,88 +233,40 @@ export const achievementData: AchievementSectionData = {
       id: 4,
       title:
         "Toppers of the Batch 2022-2026 in the 4th Semester in VTU Examination Held in August-September 2024",
-      image: techIumImage,
+      image: toppers4SemImage,
       alt: "Toppers of Batch 2022-2026 in 4th semester VTU examination",
     },
 
     {
       id: 5,
       title:
-        "Radhika Rani Y P and Likitha J N, Students of 3rd Sem CSD Actively Participated in VTU Volleyball Tournament 2023-2024 Organized by KIT Tiptur",
-      image: techIumImage,
-      alt: "Students participated in VTU volleyball tournament organized by KIT Tiptur",
+        "Radhika Rani Y P and Likitha J N, Students of 3rd Sem CSD Actively Participated in VTU Volleyball Tournament 2023-2024 Organized by KIT Tiptur on 11/12/2023 and 12/12/2023.",
+      image:radhikaLikithaImage,
+      alt: "Radhika Rani Y P and Likitha J N participated in VTU volleyball tournament",
     },
 
     {
       id: 6,
       title:
-        "Abhishek, Prateek and Surendra, Students of 3rd Sem CSD Actively Participated in VTU Volleyball Tournament 2023-2024 Organized by HKBK College of Engineering, Bangalore",
-      image: techIumImage,
-      alt: "Students participated in VTU volleyball tournament organized by HKBK College",
+        "Abhishek, Prateek and Surendra, Students of 3rd Sem CSD Actively Participated in VTU Volleyball Tournament 2023-2024 Organized by HKBK College of Engineering, Bangalore on 09/02/2024.",
+      image: volleyballImage,
+      alt: "CSD students participated in VTU volleyball tournament organized by HKBK College of Engineering",
     },
 
     {
       id: 7,
       title:
-        "Likitha J N, Student of 3rd Sem CSD Actively Participated in VTU Throwball Tournament 2023-2024 Organized by ATRIA Institute of Technology, Bengaluru",
-      image: techIumImage,
-      alt: "Likitha J N participated in VTU throwball tournament organized by ATRIA Institute",
+        "1st Sem CSD Students Who Opted for IoT Under Emerging Technology Course of BGS College of Engineering and Technology, Bengaluru, Participated in Inter College IoT Project Competition-2023 Organized by BIT, Bangalore in Association with BIT IEEE Computer Society SB Chapter & IQAC.",
+      image:iotCompetitionImage,
+      alt: "CSD students participated in Inter College IoT Project Competition 2023",
     },
 
     {
       id: 8,
       title:
-        "Likitha J N, Student of 3rd Sem CSD Actively Participated and Secured 3rd Place in VTU Throwball Tournament 2023-2024 Organized by CMRIT, Bengaluru",
-      image: techIumImage,
-      alt: "Likitha J N secured 3rd place in VTU throwball tournament",
-    },
-
-    {
-      id: 9,
-      title:
-        "1st Sem CSD Students Participated in Inter College IoT Project Competition-2023 Organized by BIT Bangalore in Association with BIT IEEE Computer Society SB Chapter & IQAC",
-      image: techIumImage,
-      alt: "CSD students participated in Inter College IoT Project Competition",
-    },
-
-    {
-      id: 10,
-      title:
-        "Dhanyashree G and Yeshaswini R Presented Paper Titled Construction & Demolition Waste – Overview, Insights, Management, Reviews and its Future in International Conference SAIT for SD 2023",
-      image: techIumImage,
-      alt: "Students presented research paper in international conference",
-    },
-
-    {
-      id: 11,
-      title:
-        "Roshini and Shwetha Nayak of III Sem CSD Published Research Article 'Packet Sniffing' in Vandana Publications",
-      image: techIumImage,
-      alt: "Students published research article Packet Sniffing",
-    },
-
-    {
-      id: 12,
-      title:
-        "III Sem CSD Students Participated and Exhibited Their Projects at JVTM on February 19th and 20th 2024",
-      image: techIumImage,
+        "Students of IIIrd Sem CSD Participated and Exhibited Their Projects @JVTM on Feb 19th and 20th 2024.",
+      image: csdLabImage,
       alt: "CSD students exhibited their projects at JVTM",
-    },
-
-    {
-      id: 13,
-      title:
-        "Dhanyashree and Yeshaswini R Submitted Research Article Titled 'Proposal of ML Algorithm for the C&D Waste Prediction Rate' to International Conference at IIT Ropar",
-      image: techIumImage,
-      alt: "Students submitted research article on ML algorithm",
-    },
-
-    {
-      id: 14,
-      title:
-        "Dhanyashree and Yeshaswini R Published Research Article Titled 'Unmasking the Evolution of Social Engineering in Cyber Security: Techniques, Vulnerabilities, and Countermeasures' in Vandana Publications",
-      image: techIumImage,
-      alt: "Students published research article on cyber security",
     },
   ],
 };
