@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+
 import leftLogo from '../../assets/images/bgscet_logo-1.png';
 import rightLogo from '../../assets/images/bgscet_logo-2.png';
 

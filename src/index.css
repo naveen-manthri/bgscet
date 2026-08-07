@@ -158,8 +158,8 @@ img {
   object-fit: contain;
 }
 .main-header__emblem {
-  width: clamp(4.3rem, 8.5vw, 8rem);
-  height: clamp(4.3rem, 8.5vw, 8rem);
+  width: clamp(7.8rem, 11vw, 10rem);
+  height: clamp(7.8rem, 11vw, 10rem);
   object-fit: contain;
 }
 .main-header__copy {
