@@ -1,8 +1,7 @@
 import careerImage from "../../assets/images/csedepartment/career-opportunities.jpg";
 import techIumImage from "../../assets/images/achievement/tech-ium.jpg";
 import internshipImage from "../../assets/images/achievement/internship.jpg";
-import event1Image from "../../assets/images/cseevents/event-1.jpg";
-import event2Image from "../../assets/images/cseevents/event-2.jpg";
+
 import iseBannerImage from "../../assets/images/academic/academic-01.jpg";
 import sushmitaNS from "../../assets/images/isedepartment/SUSHMITA-N-S.png";
 import maheshwariPatil from "../../assets/images/isedepartment/Maheshwari_Patil.jpg";
@@ -11,6 +10,13 @@ import jyothiR from "../../assets/images/isedepartment/jyothi-r.jpg";
 import mrsHemalathaKN from "../../assets/images/isedepartment/Mrs.HemalathaKN.jpg";
 import anoopNPrasad from "../../assets/images/isedepartment/AnoopNPrasad-.jpg";
 import hod from "../../assets/images/isedepartment/chaitra_hod.jpeg";
+import event1Image from "../../assets/images/isedepartment/EVENTS/ise-1.jpg";
+import event2Image from "../../assets/images/isedepartment/EVENTS/ise-2.jpeg";
+import event3Image from "../../assets/images/isedepartment/EVENTS/ise-3.jpeg";
+import event4Image from "../../assets/images/isedepartment/EVENTS/ise-4.jpeg";
+import event5Image from "../../assets/images/isedepartment/EVENTS/ise-5.jpeg";
+import event6Image from "../../assets/images/isedepartment/EVENTS/ise-6.jpeg";
+import event7Image from "../../assets/images/isedepartment/EVENTS/ise-7.jpeg";
 
 import type {
   DepartmentTab,
@@ -244,18 +250,45 @@ export const iseEventsData: DepartmentEventsData = {
   events: [
     {
       id: 1,
-      title:
-        "BGS Invited Lecture Series Talk On Intellectual Property Rights (IPR)",
+      title: "ZeroOne init_to_win_IT CHAPTER – 1",
       image: event1Image,
-      alt: "IPR Lecture Series",
+      alt: "ZeroOne init_to_win_IT CHAPTER – 1",
     },
-
     {
       id: 2,
-      title:
-        "Three Days Skill Development Program On Generative AI Hands-On Learning From Concepts To Applications",
+      title: "Generative AI: Hands-On Learning from Concepts to Applications",
       image: event2Image,
-      alt: "AI Programme",
+      alt: "Generative AI: Hands-On Learning from Concepts to Applications",
+    },
+    {
+      id: 3,
+      title: "Big Data Tools and Technologies",
+      image: event3Image,
+      alt: "Big Data Tools and Technologies",
+    },
+    {
+      id: 4,
+      title: "Infosys Springboard Student Enablement Program",
+      image: event4Image,
+      alt: "Infosys Springboard Student Enablement Program",
+    },
+    {
+      id: 5,
+      title: "Unleashing the Power of R: A Journey into Data Science and Statistical Computing",
+      image: event5Image,
+      alt: "Unleashing the Power of R: A Journey into Data Science and Statistical Computing",
+    },
+    {
+      id: 6,
+      title: "Master Conversational AI: Building Intelligent Chatbot Applications",
+      image: event6Image,
+      alt: "Master Conversational AI: Building Intelligent Chatbot Applications",
+    },
+    {
+      id: 7,
+      title: "Accelerate Growth with DevOps Efficiency",
+      image: event7Image,
+      alt: "Accelerate Growth with DevOps Efficiency",
     },
   ],
 
@@ -264,13 +297,13 @@ export const iseEventsData: DepartmentEventsData = {
       id: 1,
       title: "ISE Newsletter Vol 1",
     },
-
     {
       id: 2,
       title: "ISE Newsletter Vol 2",
     },
   ],
 };
+
 
 const iseDepartment: UGDepartmentData = {
   slug: "ise",

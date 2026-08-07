@@ -13,6 +13,9 @@ import stemup from "../../assets/images/INTERNSHIP-EMPLOYEMENT/STEMUP.jpeg";
 import technodysis from "../../assets/images/INTERNSHIP-EMPLOYEMENT/TECHNODYSIS.jpeg";
 import typeVheta from "../../assets/images/INTERNSHIP-EMPLOYEMENT/TYPE VHETA.jpeg";
 import upGrad from "../../assets/images/INTERNSHIP-EMPLOYEMENT/upGrad.jpeg";
+import ENHUB from "../../assets/images/INTERNSHIP-EMPLOYEMENT/ENHUB.jpeg";
+import CyRAACS from "../../assets/images/INTERNSHIP-EMPLOYEMENT/CyRAACS.jpeg";
+import DelphyTVS from "../../assets/images/INTERNSHIP-EMPLOYEMENT/Delphy–TVS.jpeg";
 
 export const internshipEmploymentData: DepartmentEvent[] = [
   {
@@ -41,7 +44,7 @@ export const internshipEmploymentData: DepartmentEvent[] = [
   },
   {
     id: 5,
-    title: "L&T-TECH",
+    title: "L&T Technology Services",
     image: ltTech,
     alt: "L&T-TECH",
   },
@@ -92,6 +95,24 @@ export const internshipEmploymentData: DepartmentEvent[] = [
     title: "upGrad",
     image: upGrad,
     alt: "upGrad",
+  },
+  {
+    id: 14,
+    title: "ENHUB",
+    image:ENHUB,
+    alt:"ENHUB"
+  },
+  {
+    id: 15,
+    title: "CyRAACS",
+    image:CyRAACS,
+    alt:"CyRAACS"
+  },
+  {
+    id: 16,
+    title: "Delphy–TVS",
+    image:DelphyTVS,
+    alt:"Delphy–TVS"
   },
 ];
 
