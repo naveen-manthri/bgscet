@@ -1,6 +1,5 @@
 import careerImage from "../../assets/images/csedepartment/career-opportunities.jpg";
-import techIumImage from "../../assets/images/achievement/tech-ium.jpg";
-import internshipImage from "../../assets/images/achievement/internship.jpg";
+
 
 import iseBannerImage from "../../assets/images/academic/academic-01.jpg";
 import sushmitaNS from "../../assets/images/isedepartment/SUSHMITA-N-S.png";
@@ -17,6 +16,13 @@ import event4Image from "../../assets/images/isedepartment/EVENTS/ise-4.jpeg";
 import event5Image from "../../assets/images/isedepartment/EVENTS/ise-5.jpeg";
 import event6Image from "../../assets/images/isedepartment/EVENTS/ise-6.jpeg";
 import event7Image from "../../assets/images/isedepartment/EVENTS/ise-7.jpeg";
+import topper2024Image from "../../assets/images/isedepartment/ISE-Achievements/Topper-2024-2028.jpeg";
+import topper2023Image from "../../assets/images/isedepartment/ISE-Achievements/Toppers-2023-2027.jpeg";
+import topper2022_5semImage from "../../assets/images/isedepartment/ISE-Achievements/Toppers-2022-2026 -5sem-VTU.jpeg";
+import topper2022_4semImage from "../../assets/images/isedepartment/ISE-Achievements/Toppers-2022-2026-4th-sem-VTU.jpeg";
+import goldMedalImage from "../../assets/images/isedepartment/ISE-Achievements/ISE-Gold-medal.png";
+import danceImage from "../../assets/images/isedepartment/ISE-Achievements/ISE-dep-2nd-Prize-Dance-1.png";
+import volleyballImage from "../../assets/images/isedepartment/ISE-Achievements/ISE-VTU-Volleyball-Tournament-1.png";
 
 import type {
   DepartmentTab,
@@ -198,46 +204,52 @@ export const achievementData: AchievementSectionData = {
   achievements: [
     {
       id: 1,
-      title: "1. Toppers of the Batch 2024-2028 in the 1st semester in VTU examination",
-      image: techIumImage,
-      alt: "Tech IUM Winners",
+      title:
+        "1. Toppers of the Batch 2024-2028 in the 1st semester in VTU examination",
+      image: topper2024Image,
+      alt: "Toppers of the Batch 2024-2028",
     },
-
     {
       id: 2,
-      title: "2. Toppers of the Batch 2023-2027 in the 3rd semester in VTU examination",
-      image: internshipImage,
-      alt: "Internship Achievement",
+      title:
+        "2. Toppers of the Batch 2023-2027 in the 3rd semester in VTU examination",
+      image: topper2023Image,
+      alt: "Toppers of the Batch 2023-2027",
     },
     {
       id: 3,
-      title: "3. Toppers of the Batch 2022-2026 in the 5th semester in VTU examination",
-      image: internshipImage,
-      alt: "Internship Achievement",
+      title:
+        "3. Toppers of the Batch 2022-2026 in the 5th semester in VTU examination",
+      image: topper2022_5semImage,
+      alt: "Toppers of the Batch 2022-2026 5th Semester",
     },
     {
       id: 4,
-      title: "4. Toppers of the Batch 2022-2026 in the 4th semester in VTU examination held in August-September 2024",
-      image: internshipImage,
-      alt: "Internship Achievement",
+      title:
+        "4. Toppers of the Batch 2022-2026 in the 4th semester in VTU examination held in August-September 2024",
+      image: topper2022_4semImage,
+      alt: "Toppers of the Batch 2022-2026 4th Semester",
     },
     {
       id: 5,
-      title: "5. Mr. Vaddi Raghunandan, Department of ISE, has been awarded a Gold medal for successfully completing the course “BIG DATA COMPUTING” in NPTEL.",
-      image: internshipImage,
-      alt: "Internship Achievement",
+      title:
+        "5. Mr. Vaddi Raghunandan, Department of ISE, has been awarded a Gold medal for successfully completing the course “BIG DATA COMPUTING” in NPTEL.",
+      image: goldMedalImage,
+      alt: "ISE Gold Medal Achievement",
     },
     {
       id: 6,
-      title: "6. Students of the ISE department participated & won 2nd Prize in Dance @ JVTM Cultural Fest, Feb 2024",
-      image: internshipImage,
-      alt: "Internship Achievement",
+      title:
+        "6. Students of the ISE department participated & won 2nd Prize in Dance @ JVTM Cultural Fest, Feb 2024",
+      image: danceImage,
+      alt: "ISE Students Dance Achievement",
     },
     {
       id: 7,
-      title: "7. Our ISE 3rd Sem student Representing BGSCET @ CMRIT – VTU Throwball Tournament -13th Feb 2024 at Kalpatharu Institute of Technology, Tiptur in association with VTU, Volleyball Tournament, 11/01/2024",
-      image: internshipImage,
-      alt: "Internship Achievement",
+      title:
+        "7. Our ISE 3rd Sem student Representing BGSCET @ CMRIT – VTU Throwball Tournament -13th Feb 2024 at Kalpatharu Institute of Technology, Tiptur in association with VTU, Volleyball Tournament, 11/01/2024",
+      image: volleyballImage,
+      alt: "ISE VTU Volleyball Tournament Achievement",
     },
   ],
 };
