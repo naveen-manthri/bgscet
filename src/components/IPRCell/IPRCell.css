@@ -6,7 +6,7 @@
   --heading-size: 3rem;
   --paragraph-size: 1.25rem;
 
-  --section-margin: 5rem;
+  --section-margin: 3rem;
   --heading-margin: 2rem;
   --paragraph-margin: 4rem;
 
@@ -17,7 +17,7 @@
 
 .ipr {
   padding: 0 var(--page-padding);
-  margin: var(--section-margin) auto;
+  margin: var(--section-margin) auto 0;
 }
 
 
@@ -26,7 +26,7 @@
   font-size: var(--paragraph-size);
   color: var(--text-color);
   line-height: 1.8;
-  text-align: center;
+  text-align: justify;
   margin-bottom: var(--paragraph-margin);
 }
 
