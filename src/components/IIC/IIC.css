@@ -3,6 +3,7 @@
   --text-color: #4c4949;
 
   --container-padding: 4rem;
+  --container-marging-top: 3rem;
 
   --heading-1: 2.5rem;
   --paragraph-size: 1.25rem;
@@ -15,6 +16,7 @@
 .iic-container {
   padding: 0 4rem;
   text-align: justify;
+  margin-top: var(--container-marging-top);
 }
 
 .iic-container h1 {
