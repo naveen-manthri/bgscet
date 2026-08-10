@@ -14,6 +14,7 @@
 }
 .iic-container {
   padding: 0 4rem;
+  text-align: justify;
 }
 
 .iic-container h1 {
@@ -29,7 +30,7 @@
 .iic-section p {
   color: #4c4949;
   font-size: 1.25rem;
-  text-align:justify;
+  text-align: justify;
   line-height: var(--line-height);
   margin-bottom: var(--paragraph-gap);
 }
