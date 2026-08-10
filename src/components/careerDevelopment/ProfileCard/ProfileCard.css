@@ -13,7 +13,7 @@
 
 .profile-card {
   padding: 0 ;
-  margin-bottom: var(--career-section-gap);
+  /* margin-bottom: var(--career-section-gap); */
 }
 
 .profile-card__container {
