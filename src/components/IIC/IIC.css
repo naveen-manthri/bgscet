@@ -29,6 +29,7 @@
 .iic-section p {
   color: #4c4949;
   font-size: 1.25rem;
+  text-align:justify;
   line-height: var(--line-height);
   margin-bottom: var(--paragraph-gap);
 }
