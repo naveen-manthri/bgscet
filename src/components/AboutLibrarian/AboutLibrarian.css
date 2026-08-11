@@ -1,5 +1,5 @@
 .about-librarian {
-  padding: 5rem 0;
+  padding: 5rem 0 0 0;
   background: var(--white);
 }
 
@@ -47,7 +47,7 @@
 
 .about-librarian__staff {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 2rem;
   margin-top: 3rem;
   flex-wrap: wrap;
@@ -67,9 +67,10 @@
 }
 
 .about-librarian__card-content {
-  padding: 0.8rem;
+  padding: 1rem 0.8rem;
   background: #e3473a;
   text-align: center;
+  margin-top: 1rem;
 }
 
 .about-librarian__name {
