@@ -1,4 +1,5 @@
 .department-faculty {
+  --secondary-bg: #dddddd;
   width: 100%;
 }
 
@@ -27,7 +28,7 @@
 
   text-align: center;
 
-  background: #dddddd;
+  background:var(--secondary-bg);
 }
 
 .department-faculty__name {
@@ -50,7 +51,9 @@
   font-size: 1rem;
   font-weight: var(--fw-regular);
 }
-
+/* .TechnicalFaculty{
+  margin-top: 3rem;
+} */
 @media (max-width: 64rem) {
   .department-faculty__grid {
     grid-template-columns: repeat(2, 1fr);
