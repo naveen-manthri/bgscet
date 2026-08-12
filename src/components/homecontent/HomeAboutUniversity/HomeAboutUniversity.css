@@ -81,6 +81,7 @@
 }
 
 .home-section-title {
+  color: var(--color-heading);
   font-size: var(--section-title);
   font-weight: 800;
 }

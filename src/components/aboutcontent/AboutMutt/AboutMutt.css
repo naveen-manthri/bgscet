@@ -3,7 +3,7 @@
   --color-primary: #2d3d8f;
   --color-background: #ffffff;
   --color-heading: #1f1f1f;
-  --color-text: #4b4b4b;
+  /* --color-text: #4b4b4b; */
 
   /* Typography */
 
@@ -49,7 +49,7 @@
   position: relative;
   display: inline-block;
   margin: 0;
-  color: var(--text);
+  color: var(--color-heading);
   font-size: var(--section-title);
   font-weight: 800;
   line-height: 1.15;
@@ -73,7 +73,7 @@
 
 .about-mutt__paragraph {
   margin: 0;
-  color: var(--color-text);
+  color: var(--text);
   font-size: 1.25rem;
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-normal);
