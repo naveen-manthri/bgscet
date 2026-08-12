@@ -4,6 +4,7 @@
 
   --container-padding: 4rem;
   --container-marging-top: 3rem;
+  --section-margin-bottom:2rem;
 
   --heading-1: 2.5rem;
   --paragraph-size: 1.25rem;
@@ -25,10 +26,15 @@
   margin-bottom: 2rem;
 }
 
-.iic-section {
-  margin-bottom: var(--section-gap);
+ .iic-section {
+  /* margin-bottom: var(--section-gap); */
+  display:flex;
+  flex-direction: column;
+  margin-bottom: var(--section-margin-bottom);
+} 
+.iic-section:last-child {
+  margin-bottom: 0;
 }
-
 .iic-section p {
   color: #4c4949;
   font-size: 1.25rem;
