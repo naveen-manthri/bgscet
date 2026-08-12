@@ -88,7 +88,7 @@
   flex: 1;
   align-items: center;
   justify-content:space-between;
-  /* gap: var(--content-gap); */
+  gap: var(--content-gap);
 }
 
 .cse-event-description {
@@ -100,7 +100,7 @@
   line-height: 1.4;
   text-align: center;
   min-height:4.5rem;
-  /* min-height: var(--description-min-height); */
+  min-height: var(--description-min-height); 
 }
 
 .read-more-btn {
