@@ -1,7 +1,7 @@
 .admission {
   --admission-primary: #e3473a;
   --admission-title: #000000;
-  --admission-course: #4c4949;
+  --text: #4c4949;
   --admission-divider: #031270;
   --admission-container-width: 75rem;
   --white-clr:#ffffff;
@@ -88,7 +88,7 @@
 }
 
 .admission__course {
-  color: var(--admission-course);
+  color: var(--text);
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.4;
