@@ -12,6 +12,7 @@
 }
 
 .home-about-mutt__content p {
+  color: var(--text);
   font-size: 1.5rem;
   line-height: 1.75;
   text-align: justify;
