@@ -68,17 +68,17 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  /* overflow: hidden;
-  cursor: pointer;  */
+   overflow: hidden;
+  cursor: pointer;  
 }
 
 .cse-event-image {
   width: 100%;
-  /* height: 100%; */
+   height: 100%; 
   display: block;
-   border-radius: 0.25rem; 
+   /* border-radius: 0.25rem;  */
   object-fit: cover;
-  /* object-position: center; */
+  object-position: center; 
 }
 .cse-event-content {
   background: var(--secondary-bg);
