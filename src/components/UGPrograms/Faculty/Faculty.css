@@ -51,9 +51,9 @@
   font-size: 1rem;
   font-weight: var(--fw-regular);
 }
-/* .TechnicalFaculty{
+.TechnicalFaculty{
   margin-top: 3rem;
-} */
+} 
 @media (max-width: 64rem) {
   .department-faculty__grid {
     grid-template-columns: repeat(2, 1fr);
