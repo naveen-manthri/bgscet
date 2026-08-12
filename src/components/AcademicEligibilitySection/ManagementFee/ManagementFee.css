@@ -18,7 +18,7 @@
   margin: 0 ;
   font-size: 1.375rem;
   font-weight: 400;
-  color: var(--academic-paragraph);
+  color: var(--text);
 }
 
 .management-fee__notes ul {
@@ -29,7 +29,7 @@
 .management-fee__notes li {
   font-size: 1.375rem;
   line-height: 1.6;
-  color: var(--academic-paragraph);
+  color: var(--text);
   text-transform: uppercase;
 }
 
