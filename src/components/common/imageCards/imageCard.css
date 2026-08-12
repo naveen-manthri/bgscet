@@ -30,9 +30,9 @@
 
 .cse-events-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* grid-template-columns: repeat(3, minmax(0, var(--card-width))); */
-  /* justify-content: flex-start; */
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(3, minmax(0, var(--card-width))); 
+  justify-content: flex-start; 
   /* align-items: stretch; */
   gap: var(--grid-gap);
   margin-top: 2rem;
