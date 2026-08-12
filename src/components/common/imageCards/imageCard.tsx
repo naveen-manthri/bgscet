@@ -43,15 +43,7 @@ const ImageCard = ({ title, data }: ImageCardProps) => {
         ))}
       </div>
 
-      <Lightbox
-        open={index >= 0}
-        close={() => setIndex(-1)}
-        index={index}
-        slides={slides}
-        plugins={[Counter, Download, Zoom, Fullscreen]}
-        counter={{ container: { style: { top: "0.75rem", left: "0.75rem" } } }}
-        carousel={{ finite: data.length <= 1 }}
-      />
+      <Lightbox open={index >= 0} close={() => setIndex(-1)} index={index} slides={slides} plugins={[Counter, Download, Zoom, Fullscreen]} counter={{ container: { style: { top: "0.75rem", left: "0.75rem" } } }} carousel={{ finite: data.length <= 1 }} />
     </>
   );
 };
