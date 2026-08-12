@@ -31,7 +31,7 @@
 
 .admission-information__card p {
   margin: 0 0 0.75rem;
-  color: var(--academic-paragraph);
+  color: var(--text);
   font-size: 1rem;
   line-height: 1.7;
 }
@@ -85,7 +85,7 @@
   margin: .15rem 0;
   font-size: 1.25rem;
   line-height: 1.45;
-  color: var(--academic-paragraph);
+  color: var(--text);
 }
 
 .admission-information__contact p:first-of-type {

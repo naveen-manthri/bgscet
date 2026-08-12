@@ -15,7 +15,7 @@
 
 .about-librarian__paragraph {
   margin-bottom: 1rem;
-  color: var(--academic-paragraph);
+  color: var(--text);
   font-size: 1.25rem;
   line-height: 1.8;
   text-align: justify;
@@ -35,7 +35,7 @@
 
 .about-librarian__member-item {
   margin-bottom: 0.5rem;
-  color: var(--academic-paragraph);
+  color: var(--text);
   font-size: 1.25rem;
   line-height: 1.8;
 }
