@@ -10,7 +10,7 @@ interface TechnicalFacultyProps {
 }
 
 const TechnicalFaculty = ({ data, title = "Technical Faculty" }: TechnicalFacultyProps) => (
-  <section className="department-faculty">
+  <section className="department-faculty TechnicalFaculty">
     <TechnicalFacultyCards data={data} title={title} />
   </section>
 );
