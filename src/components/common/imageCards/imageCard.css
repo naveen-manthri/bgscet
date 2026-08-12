@@ -33,7 +33,7 @@
   /* grid-template-columns: repeat(3, 1fr); */
   grid-template-columns: repeat(3, minmax(0, var(--card-width))); 
   justify-content: flex-start; 
-  /* align-items: stretch; */
+   align-items: stretch; 
   gap: var(--grid-gap);
   margin-top: 2rem;
   column-gap: 2rem;
@@ -47,8 +47,8 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  /* width: var(--card-width);
-  height: var(--card-height); */
+  width: var(--card-width);
+  height: var(--card-height);
   box-shadow: var(--card-shadow);
   transition: transform 0.3s ease;
 }
