@@ -16,7 +16,7 @@ function DepartmentDetailPage() {
   const department = departments.find((item) => item.slug === slug);
 
   if (ugDepartment) {
-    return <UGDepartment data={ugDepartment} />;
+    return <UGDepartment key={ugDepartment.slug} data={ugDepartment} />;
   }
 
   if (!department) {
