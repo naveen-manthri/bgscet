@@ -35,5 +35,5 @@ export const contactEnquiryData: ContactEnquiryData = {
     "https://docs.google.com/forms/d/e/PASTE_YOUR_FORM_ID_HERE/viewform?embedded=true",
 
   googleMapUrl:
-    "https://www.google.com/maps/embed?pb=PASTE_YOUR_GOOGLE_MAP_EMBED_LINK",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.4881177865345!2d77.541962574855!3d13.004558387313853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d88f3b2cc21%3A0xc80c22b467e470e3!2sBGS%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1786713096396!5m2!1sen!2sin\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"strict-origin-when-cross-origin\">",
 };
