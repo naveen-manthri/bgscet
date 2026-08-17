@@ -1,9 +1,9 @@
 :root {
   /* Colors */
-  --color-primary: #2d3d8f;
+  --color-deep-navy-blue: #031270;
   --color-background: #ffffff;
   --color-heading: #1f1f1f;
-  /* --color-text: #4b4b4b; */
+  /* --text: #4b4b4b; */
 
   /* Typography */
 
@@ -60,7 +60,7 @@
     display: block;
     width: 94%;
     height: 3px;
-    background: #031270;
+    background: var(--color-deep-navy-blue);
     margin: 0.6rem auto 0;
     border-radius: 2px;
 }
