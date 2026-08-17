@@ -4,7 +4,7 @@
   --career-heading-gap: 1rem;
   --career-list-gap: 0.75rem;
   --career-paragraph-size: 1.25rem;
-  --career-paragraph-color: #4b5563;
+  --text: #4c4949;
   --career-line-height: 0.7;
   --career-font-family: "Poppins", sans-serif;
 }
@@ -28,7 +28,7 @@
 
 .bullet-section__item {
   font-size: var(--career-paragraph-size);
-  color: var(--career-paragraph-color);
+  color: var(--text);
   font-family: var(--career-font-family);
   line-height: var(--career-line-height);
   
