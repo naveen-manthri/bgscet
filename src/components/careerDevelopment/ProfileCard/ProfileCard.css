@@ -4,7 +4,7 @@
   --career-heading-gap: 2rem;
   --career-card-gap: 3rem;
   --career-paragraph-size: 1.25rem;
-  --career-paragraph-color: #4b5563;
+  --text: #4c4949;
   --career-line-height: 1.8;
   --career-font-family: "Poppins", sans-serif;
   --career-image-width: 18rem;
@@ -40,7 +40,7 @@
   gap: 1rem;
 }
 .profile-card__content a {
-  color: var(--career-paragraph-color);
+  color: var(--text);
   text-decoration: none;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -52,18 +52,18 @@
 }
 
 .profile-card__qualification {
-  color: var(--career-paragraph-color);
+  color: var(--text);
 }
 .profile-card__content p {
   margin: 0;
   font-size: var(--career-paragraph-size);
-  color: var(--career-paragraph-color);
+  color: var(--text);
   font-family: var(--career-font-family);
   line-height: var(--career-line-height);
 }
 
 .profile-card__content strong {
-  color: var(--career-paragraph-color);
+  color: var(--text);
   font-weight: 600;
 }
 
