@@ -1,5 +1,5 @@
 .table-section {
- --color-paragraph: #4C4949;
+ --text: #4C4949;
  --table-border-color:#7a7a7a;
   display: flex;
   flex-direction: column;
@@ -35,7 +35,7 @@
 }
 
 .table-section__table td {
-  color: var(--color-paragraph);
+  color: var(--text);
   font-weight: 400;
 }
 
