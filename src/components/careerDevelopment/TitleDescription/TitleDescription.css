@@ -5,7 +5,7 @@
   --career-list-gap: 1rem;
   --career-paragraph-gap: 2rem;
   --career-paragraph-size: 1.25rem;
-  --career-paragraph-color: #4b5563;
+  --text: #4c4949;
   --career-line-height: 1.8;
   --career-font-family: "Poppins", sans-serif;
 }
@@ -21,7 +21,7 @@
 .title-bullet-description p,
 .title-description p {
   font-size: var(--career-paragraph-size);
-  color: var(--career-paragraph-color);
+  color: var(--text);
   font-family: var(--career-font-family);
   line-height: var(--career-line-height);
   text-align: justify;
@@ -37,7 +37,7 @@
 
 .title-bullet-description__item {
   font-size: var(--career-paragraph-size);
-  color: var(--career-paragraph-color);
+  color: var(--text);
   font-family: var(--career-font-family);
   line-height: var(--career-line-height);
 }
