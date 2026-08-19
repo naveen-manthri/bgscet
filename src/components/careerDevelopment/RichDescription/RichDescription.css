@@ -4,7 +4,7 @@
   --career-heading-gap: 2rem;
   --career-content-gap: 1.5rem;
   --career-paragraph-size: 1.25rem;
-  --career-paragraph-color: #4b5563;
+  --text: #4c4949;
   --career-line-height: 1.8;
   --career-font-family: "Poppins", sans-serif;
 }
@@ -27,14 +27,14 @@
 .rich-description p {
   margin: 0;
   font-size: var(--career-paragraph-size);
-  color: var(--career-paragraph-color);
+  color: var(--text);
   font-family: var(--career-font-family);
   line-height: var(--career-line-height);
   text-align: justify;
 }
 
 .rich-description strong {
-  color: var(--career-paragraph-color);
+  color: var(--text);
   font-weight: 600;
 }
 
