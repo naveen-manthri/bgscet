@@ -3,7 +3,7 @@
   --career-section-gap: 2rem;
   --career-heading-gap: 2rem;
   --career-paragraph-size: 1.25rem;
-  --career-paragraph-color: #4b5563;
+  --text: #4c4949;
   --career-line-height: 1.8;
   --career-font-family: "Poppins", sans-serif;
 }
@@ -18,7 +18,7 @@
 
 .title-description p {
   font-size: var(--career-paragraph-size);
-  color: var(--career-paragraph-color);
+  color: var(--text);
   line-height: var(--career-line-height);
   font-family: var(--career-font-family);
   text-align: justify;
