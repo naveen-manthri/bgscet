@@ -1,5 +1,5 @@
 :root {
-  --clr-primary: #e44a3a;
+  --clr-primary: #E3473A;
   --clr-title: #000000;
   --underline-clr:#031270;
 
@@ -10,7 +10,7 @@
   --fs-section-title: 2rem;
 
   --heading-underline-width: 5rem;
-  --heading-underline-height: 0.1875rem;
+  --heading-underline-height: 0.1475rem;
 
   --transition: 0.3s ease;
 }
@@ -41,7 +41,7 @@
   right: 0;
   bottom: 0;
 
-  height: 0.1275rem;
+  height: var(--heading-underline-height);
 
   background-color: var(--underline-clr);
   border-radius: 999rem;
