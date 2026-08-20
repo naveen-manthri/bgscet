@@ -1,7 +1,7 @@
 .department-tabs {
   --clr-primary: #E3473A;
   --clr-white: #ffffff;
-  --clr-text: #111111;
+  --text: #111111;
   --clr-border: #d8d8d8;
 
   --ff-primary: "Poppins", sans-serif;
@@ -64,7 +64,7 @@
   border-radius: 0;
 
   background: var(--clr-white);
-  color: var(--clr-text);
+  color: var(--text);
 
   font-family: var(--ff-primary);
   font-size: var(--fs-tab);
