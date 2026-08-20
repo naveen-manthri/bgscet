@@ -20,13 +20,13 @@
 
 .hostel-facility__intro-item,
 .hostel-facility__facility-item {
-  color: var(--text-color);
+  color: var(--text);
   font-size: 1rem;
   line-height: 1.5;
 }
 
 .hostel-facility__description {
-  color: var(--text-color);
+  color: var(--text);
   font-size: 1rem;
   line-height: 1.8;
   text-align: justify;
