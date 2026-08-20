@@ -2,7 +2,7 @@
 
     
   --fs-body: 1.25rem;
-  padding: 3rem 0 0 0;
+  margin: 3rem 0 0 0;
   background: var(--white);
 }
 
@@ -38,14 +38,14 @@
 
 
 .contact-card__name {
-  color: var(--academic-paragraph);
+  color: var(--text);
   font-size: var(--fs-body);
   font-weight: var(--fw-semibold);
 }
 
 .contact-card__designation,
 .contact-card__organization{
-  color: var(--academic-paragraph);
+  color: var(--text);
   font-size: var(--fs-body);
 }
 
@@ -53,7 +53,7 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  color: var(--academic-paragraph);
+  color: var(--text);
   text-decoration: none;
   font-size: var(--fs-body);
   transition: var(--transition);
@@ -98,7 +98,7 @@
 
 .visit-us__address {
   margin: 0 ;
-  color: var(--academic-paragraph);
+  color: var(--text);
   font-size: var(--fs-body);
   font-weight: var(--fw-medium);
   line-height: 1.6;
@@ -108,7 +108,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--academic-paragraph);
+  color: var(--text);
   text-decoration: none;
   font-size: var(--fs-body);
   font-weight: var(--fw-medium);
@@ -135,7 +135,7 @@
 
 @media (max-width: 64rem) {
   .contact-enquiry {
-    padding: 4rem 0;
+    margin: 4rem 0;
   }
 
   .contact-enquiry__description {
