@@ -32,7 +32,7 @@
 }
 
 .committee-table__table td {
-  color: var(--text-color);
+  color: var(--text);
   font-size: 0.95rem;
   line-height: 1.7;
 }
