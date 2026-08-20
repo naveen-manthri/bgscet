@@ -34,7 +34,7 @@
 
 .about-hostel__description p {
   margin: 0;
-  color: var(--text-color);
+  color: var(--text);
   font-size: 1.05rem;
   line-height: 2;
   text-align: justify;
