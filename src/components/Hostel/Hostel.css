@@ -1,15 +1,15 @@
 .hostel {
-    --color-paragraph: #4C4949;
+    --text: #4C4949;
   display: flex;
   flex-direction: column;
   gap: 4rem;
   width: 100%;
-  padding: 0 4rem 4rem;
+  padding: 0 4rem 0 4rem;
   box-sizing: border-box;
 }
 .hostel-page p,
 .hostel-page li {
-  color: var(--color-paragraph);
+  color: var(--text);
   font-size: 1.25rem;
 
 }
