@@ -1,6 +1,6 @@
 :root {
   --primary-color: #f26c13;
-  --text-color: #4c4949;
+  --text: #4c4949;
 
   --container-padding: 4rem;
   --container-marging-top: 3rem;
@@ -30,13 +30,11 @@
   /* margin-bottom: var(--section-gap); */
   display:flex;
   flex-direction: column;
-  margin-bottom: var(--section-margin-bottom);
+  /* margin-bottom: var(--section-margin-bottom); */
 } 
-.iic-section:last-child {
-  margin-bottom: 0;
-}
+
 .iic-section p {
-  color: #4c4949;
+  color: var(--text);
   font-size: 1.25rem;
   text-align: justify;
   line-height: var(--line-height);
@@ -44,7 +42,8 @@
 }
 
 .iic-section ol {
-  color: #4c4949;
+  color: var(--text);
   font-size: 1.25rem;
   line-height: var(--line-height);
+  padding-left: 1rem;
 }
