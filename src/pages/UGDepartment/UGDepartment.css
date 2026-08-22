@@ -1,7 +1,7 @@
 .ug-department {
   --container-width: 80rem;
-  --clr-title: #111111;
-  --clr-text: #555555;
+  --clr-title: #000000;
+  --text: #4c4949;
   --ff-primary: "Poppins", sans-serif;
   --fw-regular: 400;
   --fw-bold: 700;
