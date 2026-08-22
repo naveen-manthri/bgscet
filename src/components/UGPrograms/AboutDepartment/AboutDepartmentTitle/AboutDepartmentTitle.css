@@ -1,6 +1,6 @@
 .about-cse {
   --clr-title: #111111;
-  --clr-text: #555555;
+  --text: #4c4949;
 
   --ff-primary: "Poppins", sans-serif;
 
@@ -23,7 +23,7 @@
 .about-cse__description {
   margin: 0;
 
-  color: var(--clr-text);
+  color: var(--text);
 
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
