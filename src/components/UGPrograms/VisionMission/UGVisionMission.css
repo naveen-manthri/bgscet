@@ -9,7 +9,7 @@
 .vision-mission__text {
   margin-top: 2rem;
 
-  color: var(--clr-text);
+  color: var(--text);
 
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
@@ -27,7 +27,7 @@
 .vision-mission__item {
   /* margin-bottom: 0.875rem; */
 
-  color: var(--clr-text);
+  color: var(--text);
 
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
