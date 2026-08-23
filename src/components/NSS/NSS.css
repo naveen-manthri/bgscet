@@ -1,7 +1,7 @@
 .nss {
 
      --career-paragraph-size: 1.25rem;
-  --career-paragraph-color: #4b5563;
+  /* --text: #4c4949; */
   --another--par-clr: #4c4949;
   padding: 0 4rem;
   margin-top: 3rem;
@@ -20,7 +20,7 @@
 .nss__section p,
 .nss__intro-content p,
 .nss__list p {
-  color:var(--career-paragraph-color);
+  color:var(--text);
   font-size: 1.25rem;
   line-height: 1.8;
   margin: 0;
@@ -54,21 +54,21 @@
 }
 
 .nss__list li {
-  color: var(--career-paragraph-color);
+  color: var(--text);
 }
 
 .nss__list li::marker {
-  color: var(--career-paragraph-color);
+  color: var(--text);
 }
 
 .nss__list p {
   margin: 0;
-  color: var(--career-paragraph-color);
+  color: var(--text);
   font-size: var(--career-paragraph-size);
   line-height: 1.8;
 }
 .nss__section p {
-  color: var(--career-paragraph-color);
+  color: var(--text);
   font-size: var(--career-paragraph-size);
   line-height: 1.8;
   margin: 0;
