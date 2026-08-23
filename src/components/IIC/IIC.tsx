@@ -11,10 +11,7 @@ const IIC = () => {
       <DepartmentSectionHeading title={iicData.pageTitle} />
 
       {iicData.sections.map((section: (typeof iicData.sections)[number]) => (
-        <Section
-          key={section.title}
-          section={section}
-        />
+        <Section  key={section.title}  section={section} />
       ))}
     </main>
   );
