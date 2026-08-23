@@ -4,8 +4,8 @@
   --color-primary: #111111;
   --color-secondary: #d84b3e;
 
-  --color-text: #2f2f2f;
-  --color-text-light: #666666;
+  --text: #4c4949;
+  --text-light: #666666;
 
   --color-background: #ffffff;
 
@@ -62,7 +62,7 @@ body {
   font-size: var(--font-size-body);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-body);
-  color: var(--color-text);
+  color: var(--text);
   background: var(--color-background);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
