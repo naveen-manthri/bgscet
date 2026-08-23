@@ -1,7 +1,7 @@
 :root {
   --page-padding: 4rem;
 
-  --text-color: #4c4949;
+  --text: #4c4949;
 
   --heading-size: 3rem;
   --paragraph-size: 1.25rem;
@@ -24,7 +24,7 @@
 
 .ipr p {
   font-size: var(--paragraph-size);
-  color: var(--text-color);
+  color: var(--text);
   line-height: 1.8;
   text-align: justify;
   margin-bottom: var(--paragraph-margin);
