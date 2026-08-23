@@ -1,6 +1,6 @@
 .department-achievements {
   --primary-color: #1f3a93;
-  --text-color: #222222;
+  --text: #222222;
   --border-color: #d9d9d9;
   --background-color: #ffffff;
 
@@ -27,7 +27,7 @@
 
 .achievement-title {
   margin-bottom: var(--title-margin);
-  color: var(--text-color);
+  color: var(--text);
   font-size: var(--title-font-size);
   font-weight: var(--title-font-weight);
   line-height: var(--title-line-height);
