@@ -18,7 +18,7 @@
 
 .library-rules__item {
   margin-bottom: 0.7rem;
-  color: var(--academic-paragraph);
+  color: var(--text);
   font-size: 1.25rem;
   line-height: 1.8;
 }
