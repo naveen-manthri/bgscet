@@ -35,7 +35,7 @@
 }
 
 .home-academic {
-  padding: 3rem 4rem;
+  padding: 4rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -169,6 +169,7 @@
   line-height: 1.55;
 
   display: -webkit-box;
+  line-clamp: 3;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 
