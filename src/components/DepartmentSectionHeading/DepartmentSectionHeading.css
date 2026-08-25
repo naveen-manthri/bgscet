@@ -7,7 +7,7 @@
 
   --fw-bold: 700;
 
-  --fs-section-title: 2rem;
+  --fs-section-title: 3.75rem;
 
   --heading-underline-width: 5rem;
   --heading-underline-height: 0.1475rem;
@@ -52,7 +52,7 @@
   }
 
   .department-section-heading__title {
-    font-size: 1.75rem;
+    font-size: 3.75rem;
   }
 
   .department-section-heading__underline {
@@ -66,7 +66,7 @@
   }
 
   .department-section-heading__title {
-    font-size: 1.5rem;
+    font-size: 3.75rem;
   }
 
   .department-section-heading__underline {
