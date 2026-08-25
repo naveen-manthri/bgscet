@@ -1,4 +1,5 @@
 import { aboutMutt } from "../../../data/aboutMutt";
+import DepartmentSectionHeading from "../../DepartmentSectionHeading/DepartmentSectionHeading";
 
 import "./AboutMutt.css";
 
@@ -9,14 +10,10 @@ const AboutMutt = () => {
       aria-labelledby="about-mutt-title"
     >
       <div className="about-mutt__container">
-        <header className="about-mutt__header">
-          <h2
-            id="about-mutt-title"
-            className="about-mutt__title"
-          >
-            {aboutMutt.title}
-          </h2>
-        </header>
+        <DepartmentSectionHeading
+          id="about-mutt-title"
+          title={aboutMutt.title}
+        />
 
         <div className="about-mutt__content">
           {aboutMutt.description.map((paragraph, index) => (
