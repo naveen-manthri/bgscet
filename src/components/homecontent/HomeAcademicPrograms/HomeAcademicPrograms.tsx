@@ -1,20 +1,19 @@
 import "./HomeAcademicPrograms.css";
 import { academicPrograms } from "../../../data/academicProgramsData";
 import AdmissionButton from "../../../components/AdmissionButton/AdmissionButton";
+import SectionHeading from "../../common/SectionHeading";
 
 function HomeAcademicPrograms() {
   return (
     <section className="home-academic section-space">
       {/* <div className="container academic-programs-container"> */}
-        <div className="section-heading-academic">
-          <p className="academic-subtitle">Academics</p>
-
-          <h2 className="academic-title">
-            Programs Designed
-            <br />
-            <span className="underline">Like <em>Products.</em></span>
-          </h2>
-        </div>
+        <SectionHeading
+          subtitle="Academics"
+          title="Programs Designed"
+          titleSecondLine="Like Products."
+          underlineFitContent
+          center
+        />
 
         <div className="programs-grid">
           {academicPrograms.map((program) => (
