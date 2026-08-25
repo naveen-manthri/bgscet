@@ -12,9 +12,8 @@
   padding: 3rem var(--advaya-page-padding) 0;
 }
 
-.advaya__title {
-  margin: 3rem 0 1rem;
-  color: var(--btn-primary);
+.advaya .department-section-heading {
+  margin-bottom: 2rem;
 }
 
 .advaya__files {
