@@ -45,7 +45,7 @@
   --home-container-width: min(88%, 68rem);
   --section-padding: clamp(2.2rem, 5vw, 2.5rem);
   --section-title: clamp(1.8rem, 4vw, 2.5rem);
-  --heading-size: var(--section-title);
+  --heading-size: 3.75rem;
   --heading-size-mobile: clamp(1.55rem, 8vw, 1.9rem);
   --card-title: clamp(0.95rem, 1.6vw, 1.25rem);
   --subtitle: clamp(0.78rem, 1.5vw, 1rem);
