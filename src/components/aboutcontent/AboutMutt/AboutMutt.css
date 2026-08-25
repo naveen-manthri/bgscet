@@ -73,7 +73,6 @@
 #about-mutt-title{
   display: flex;
   align-items: center;
-  font-size: var(--font-size-2xl);
   margin-bottom: var(--spacing-8);
 }
 .about-mutt__content {
