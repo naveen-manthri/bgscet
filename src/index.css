@@ -57,12 +57,12 @@
   --button-text: clamp(0.82rem, 1.45vw, 1rem);
   --font-main: "Poppins", sans-serif;
   --button-font: var(--font-main);
-  --academic-heading-underline: #031270;
+  --academic-heading-underline:  #000000;;
 --academic-section-gap: 1rem;
 --academic-content-gap: 1.5rem;
 --academic-card-gap: 2rem;
 --academic-table-border: #cfcfcf;
---academic-heading-black: #111111;
+--academic-heading-black: #000000;
 --academic-heading-red: #d84525;
 --text: #4C4949;
 --color-heading: #272727;
