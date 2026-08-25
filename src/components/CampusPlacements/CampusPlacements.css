@@ -59,6 +59,7 @@
 
 .campus-placements__carousel {
   width: 100%;
+  padding-block: 0.5rem;
   overflow: hidden;
 }
 
@@ -83,6 +84,10 @@
   animation: marquee-right 24s linear infinite;
 }
 
+.campus-placements__track:has(.campus-placements__card:hover) {
+  animation-play-state: paused;
+}
+
 .campus-placements__card {
   flex: 0 0 10rem;
   height: 5.25rem;
@@ -96,12 +101,20 @@
   border-radius: 0.5rem;
   background: #ffffff;
   box-shadow: var(--shadow-soft);
+  transition: transform var(--transition);
 }
 
 .campus-placements__logo {
   width: 7rem;
   height: 3.75rem;
   object-fit: contain;
+  
+}
+
+.campus-placements__card:hover {
+  position: relative;
+  z-index: 1;
+  transform: scale(1.12);
 }
 
 @keyframes marquee-left {
