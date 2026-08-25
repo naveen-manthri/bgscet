@@ -11,7 +11,9 @@ const LetterSections = ({ data }: LetterSectionsProps) => {
     <section className="letter-sections">
       {data.sections.map((section) => (
         <div key={section.heading} className="letter-section">
-          <DepartmentSectionHeading title={section.heading} />
+          <div className="letter-section-title">
+            <DepartmentSectionHeading title={section.heading} />
+          </div>
 
           {section.items ? (
             <ol className="letter-section__list">
