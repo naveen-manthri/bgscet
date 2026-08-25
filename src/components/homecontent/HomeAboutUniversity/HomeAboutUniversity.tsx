@@ -1,6 +1,7 @@
 import { useId } from 'react';
 import { homeAboutUniversity } from '../../../data/homePageData';
 import AdmissionButton from "../../AdmissionButton/AdmissionButton";
+import DepartmentSectionHeading from '../../DepartmentSectionHeading/DepartmentSectionHeading';
 import './HomeAboutUniversity.css';
 
 function HomeAboutUniversity() {
@@ -22,10 +23,7 @@ function HomeAboutUniversity() {
             <div className="home-about-university__badge" aria-label="Admission open by 2026 BGSCET">
               <svg className="home-about-university__badge-ring" viewBox="0 0 120 120" aria-hidden="true">
                 <defs>
-                  <path
-                    id={badgeTextPathId}
-                    d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"
-                  />
+                  <path id={badgeTextPathId}  d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" />
                 </defs>
                 <circle className="home-about-university__badge-fill" cx="60" cy="60" r="58" />
                 <text className="home-about-university__badge-text">
@@ -38,9 +36,10 @@ function HomeAboutUniversity() {
         </div>
 
         <div className="home-about-university__content">
-            <h2 className="home-section-title underline" id="home-about-university-title">
-              {homeAboutUniversity.title}
-            </h2>
+            <DepartmentSectionHeading
+              id="home-about-university-title"
+              title={homeAboutUniversity.title}
+            />
             <p>{homeAboutUniversity.description}</p>
             <AdmissionButton variant="primary" />
         </div>
