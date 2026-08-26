@@ -12,16 +12,21 @@
 .rich-description {
   display: flex;
   flex-direction: column;
-  gap: var(--career-heading-gap);
+  gap: 0;
   padding: 0 ;
   margin-bottom: var(--career-section-gap);
   text-align: justify;
 }
 
+.rich-description > .department-section-heading {
+  margin-bottom: 0;
+}
+
 .rich-description__content {
   display: flex;
   flex-direction: column;
-  gap: var(--career-content-gap);
+  margin-top: var(--career-content-gap);
+  /* gap: var(--career-content-gap); */
 }
 
 .rich-description p {

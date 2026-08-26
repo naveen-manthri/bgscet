@@ -26,9 +26,7 @@
   display: block;
 }
 
-.academic-section-heading__black {
-  color: var(--academic-heading-black);
-}
+
 
 .academic-section-heading__red {
   margin-top: 0.15rem;
@@ -49,7 +47,9 @@
     line-height: 1.25;
   }
 }
-
+.academic-section-heading__black {
+  color: var(--academic-heading-black);
+}
 .academic-section-heading__black,
 .academic-section-heading__red {
   display: block;
