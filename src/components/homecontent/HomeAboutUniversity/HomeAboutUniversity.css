@@ -2,7 +2,7 @@
   display: flex;
   gap: 2rem;
   padding: clamp(3.25rem, 5vw, 4rem);
-  padding-bottom:0;
+  padding-bottom:3REM;
 }
 
 .home-about-university__media {
@@ -75,9 +75,13 @@
 }
 
 .home-about-university__content p {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   line-height: 1.75;
   text-align: justify;
+}
+
+.home-about-university__heading {
+  width: 100%;
 }
 
 .home-section-title {
