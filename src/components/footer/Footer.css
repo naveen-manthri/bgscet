@@ -1,16 +1,17 @@
 .footer {
-  width: 100%;
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
   background: var(--footer-bg);
   color: var(--text-light);
 }
 
 .footer__main {
-  width: 100%;
+  width: calc(100% - 8rem);
   margin: 0 auto;
   display: grid;
   grid-template-columns: minmax(13rem, 1fr) minmax(0, 2.25fr);
   gap: clamp(2rem, 5vw, 4rem);
-  padding: clamp(2rem, 5vw, 3rem) 3rem clamp(2rem, 4vw, 3rem);
+  padding: clamp(2.75rem, 5vw, 3rem) 0REM clamp(2.75rem, 5vw, 3rem) 4REM;
 }
 
 .footer__brand {
