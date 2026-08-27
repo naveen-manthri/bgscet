@@ -12,4 +12,5 @@ export interface DepartmentTabsProps<T extends string = string> {
 export interface DepartmentSectionHeadingProps {
   title: string;
   id?: string;
+  className?: string;
 }

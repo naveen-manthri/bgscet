@@ -33,6 +33,11 @@ export interface InfrastructureFaculty {
   description: string;
 }
 
+export interface DepartmentLabSection {
+  image: string;
+  description: string;
+}
+
 export interface DepartmentVision {
   title: string;
   description: string;
@@ -88,6 +93,9 @@ export interface DepartmentEventsData {
 
 export interface UGDepartmentData {
   slug: string;
+  singlePage?: boolean;
+  labSection?: DepartmentLabSection;
+  labPlacement?: "beforeVision" | "afterVision";
   banner: DepartmentBanner;
   tabs: DepartmentTab[];
   hodMessage: HodMessage;
@@ -97,6 +105,7 @@ export interface UGDepartmentData {
   visionMission: DepartmentVisionMission;
   facultyMembers: FacultyMember[];
   technicalFacultyMembers: FacultyMember[];
+  instructorMembers?: FacultyMember[];
   achievementData: AchievementSectionData;
   eventsData: DepartmentEventsData;
 }
