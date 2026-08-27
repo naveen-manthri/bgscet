@@ -7,10 +7,11 @@ import type { DepartmentVisionMission } from "../../../types/ugprograms";
 
 interface VisionMissionProps {
   data: DepartmentVisionMission;
+  columns?: boolean;
 }
 
-const VisionMission = ({ data }: VisionMissionProps) => (
-  <section className="vision-mission">
+const VisionMission = ({ data, columns = false }: VisionMissionProps) => (
+  <section className={`vision-mission${columns ? " vision-mission--columns" : ""}`}>
     <Vision data={data.vision} />
     <Mission data={data.mission} />
   </section>
