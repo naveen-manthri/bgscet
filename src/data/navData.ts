@@ -1,7 +1,7 @@
 export interface NavItem {
   label: string;
   path: string;
-  children?: { label: string; path: string }[];
+  children?: NavItem[];
 }
 
 export const navItems: NavItem[] = [
@@ -35,6 +35,16 @@ export const navItems: NavItem[] = [
       { label: 'AIML', path: '/ug-programs/aiml' },
       { label: 'AI & DS', path: '/ug-programs/aids' },
       { label: 'CSD', path: '/ug-programs/csd' },
+      {
+        label: 'Applied Sciences',
+        path: '/departments/applied-sciences',
+        children: [
+          { label: 'Mechanical Engineering', path: '/departments/mech' },
+          { label: 'Department of Physics', path: '/departments/physics' },
+          { label: 'Department of Chemistry', path: '/departments/chemistry' },
+          { label: 'Department of Mathematics', path: '/departments/mathematics' },
+        ],
+      },
       // { label: 'Civil', path: '/departments/civil' },
     ],
   },
