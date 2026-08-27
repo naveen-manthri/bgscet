@@ -5,10 +5,12 @@ import { navItems } from '../../data/navData';
 function MainNavbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [openSubmenu, setOpenSubmenu] = useState<string | null>(null);
 
   const closeMenu = () => {
     setIsOpen(false);
     setOpenDropdown(null);
+    setOpenSubmenu(null);
   };
 
   return (
@@ -96,17 +98,34 @@ function MainNavbar() {
                   <ul className={`main-navbar__dropdown${openDropdown === item.label ? ' is-open' : ''}`}>
                     {item.children?.map((child) => {
                       const isPdf = child.path.toLowerCase().endsWith('.pdf');
+                      const hasSubmenu = Boolean(child.children?.length);
 
                       return (
-                        <li key={child.label}>
-                          {isPdf ? (
-                            <a
-                              className="main-navbar__dropdown-link"
-                              href={child.path}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              onClick={closeMenu}
+                        <li
+                          className={`main-navbar__dropdown-item${hasSubmenu ? ' main-navbar__dropdown-item--has-submenu' : ''}`}
+                          key={child.label}
+                          onMouseEnter={() => hasSubmenu && setOpenSubmenu(child.label)}
+                          onMouseLeave={() => hasSubmenu && setOpenSubmenu(null)}
+                        >
+                          {hasSubmenu ? (
+                            <span
+                              className="main-navbar__dropdown-link main-navbar__dropdown-link--parent"
+                              role="button"
+                              tabIndex={0}
+                              aria-haspopup="true"
+                              aria-expanded={openSubmenu === child.label}
+                              onClick={() => setOpenSubmenu((current) => (current === child.label ? null : child.label))}
+                              onKeyDown={(event) => {
+                                if (event.key === 'Enter' || event.key === ' ') {
+                                  event.preventDefault();
+                                  setOpenSubmenu((current) => (current === child.label ? null : child.label));
+                                }
+                              }}
                             >
+                              {child.label}<span aria-hidden="true">›</span>
+                            </span>
+                          ) : isPdf ? (
+                            <a className="main-navbar__dropdown-link" href={child.path} target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
                               {child.label}
                             </a>
                           ) : (
@@ -114,6 +133,17 @@ function MainNavbar() {
                               {child.label}
                             </Link>
                           )}
+                          {hasSubmenu ? (
+                            <ul className={`main-navbar__dropdown main-navbar__dropdown--nested${openSubmenu === child.label ? ' is-open' : ''}`}>
+                              {child.children?.map((subChild) => (
+                                <li key={subChild.label}>
+                                  <Link className="main-navbar__dropdown-link" to={subChild.path} onClick={closeMenu}>
+                                    {subChild.label}
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          ) : null}
                         </li>
                       );
                     })}
