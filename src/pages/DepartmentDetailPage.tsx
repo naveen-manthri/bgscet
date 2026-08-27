@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import PageBanner from '../components/common/PageBanner';
+import AppliedScienceTabs from '../components/AppliedScienceTabs/AppliedScienceTabs';
 import { departments } from '../data/departmentsData';
 import UGDepartment from './UGDepartment/UGDepartment';
 import type { UGDepartmentData } from '../types/ugprograms';
@@ -10,8 +12,35 @@ const ugDepartmentModules = import.meta.glob('../data/UGPrograms/*Department.ts'
 
 const ugDepartments = Object.values(ugDepartmentModules).map(({ default: department }) => department);
 
+const appliedScienceTabs = {
+  mech: [
+    { id: 'hod', label: "HOD Message" },
+    { id: 'vision', label: 'Vision & Mission' },
+    { id: 'faculty', label: 'Faculty' },
+  ],
+  physics: [
+    { id: 'hod', label: "HOD Message" },
+    { id: 'vision', label: 'Vision & Mission' },
+    { id: 'faculty', label: 'Faculty' },
+    { id: 'labs', label: 'Laboratories' },
+  ],
+  chemistry: [
+    { id: 'hod', label: "HOD Message" },
+    { id: 'vision', label: 'Vision & Mission' },
+    { id: 'faculty', label: 'Faculty' },
+    { id: 'labs', label: 'Laboratories' },
+  ],
+  mathematics: [
+    { id: 'hod', label: "HOD Message" },
+    { id: 'vision', label: 'Vision & Mission' },
+    { id: 'faculty', label: 'Faculty' },
+    { id: 'labs', label: 'Laboratories' },
+  ],
+} as const;
+
 function DepartmentDetailPage() {
   const { slug } = useParams();
+  const [activeAppliedScienceTab, setActiveAppliedScienceTab] = useState('hod');
   const ugDepartment = ugDepartments.find((item) => item.slug === slug);
   const department = departments.find((item) => item.slug === slug);
 
@@ -33,6 +62,13 @@ function DepartmentDetailPage() {
 
       <section className="section-space">
         <div className="container">
+          {slug && slug in appliedScienceTabs ? (
+            <AppliedScienceTabs
+              tabs={appliedScienceTabs[slug as keyof typeof appliedScienceTabs]}
+              activeTab={activeAppliedScienceTab}
+              onTabChange={setActiveAppliedScienceTab}
+            />
+          ) : null}
           <div className="row g-4">
             <div className="col-lg-8">
               <div className="content-card h-100">
