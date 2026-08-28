@@ -10,7 +10,7 @@ const ContactEnquiry = () => {
   return (
     <section className="contact-enquiry">
       <div className="contact-enquiry__container">
-        <DepartmentSectionHeading title={data.title} />
+        <DepartmentSectionHeading title={data.title} className="department-section-heading--default"/>
 
         <p className="contact-enquiry__description">
           {data.description}
