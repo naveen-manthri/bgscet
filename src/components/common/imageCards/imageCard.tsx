@@ -26,7 +26,7 @@ const ImageCard = ({ title, data }: ImageCardProps) => {
 
   return (
     <>
-      <DepartmentSectionHeading title={title} />
+      <DepartmentSectionHeading title={title} className="department-section-heading--medium" />
 
       <div className="cse-events-grid">
         {data.map((event, i) => (
