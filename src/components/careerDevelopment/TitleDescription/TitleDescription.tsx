@@ -11,7 +11,7 @@ interface TitleDescriptionProps {
 const TitleDescription = ({ data }: TitleDescriptionProps) => {
   return (
     <section className="title-description">
-      <DepartmentSectionHeading title={data.title} />
+      <DepartmentSectionHeading title={data.title} className="department-section-heading--default" />
 
       <p>{data.description}</p>
     </section>

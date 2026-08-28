@@ -7,6 +7,7 @@
 
 .admission-information__title{
 
+  color: var(--academic-heading-black);
   margin: 0;
   padding: 0;
   font-family: var(--font-main);

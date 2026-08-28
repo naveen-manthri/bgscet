@@ -10,7 +10,7 @@ const CommitteeCards = ({ data }: CommitteeCardsProps) => {
   return (
     <>
       <div className="committee-heading">
-        <DepartmentSectionHeading title="Committees" />
+        <DepartmentSectionHeading title="Committees" className="department-section-heading--default" />
       </div>
       <div className="committee-grid">
         {data.map((committee) => (

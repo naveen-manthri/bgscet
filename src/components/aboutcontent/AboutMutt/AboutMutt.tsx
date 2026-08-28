@@ -12,7 +12,7 @@ const AboutMutt = () => {
       <div className="about-mutt__container">
         <DepartmentSectionHeading
           id="about-mutt-title"
-          title={aboutMutt.title}
+          title={aboutMutt.title} className="department-section-heading--large"
         />
 
         <div className="about-mutt__content">
