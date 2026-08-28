@@ -11,7 +11,7 @@ const ERCICA = () => {
     <section className="ercica">
       <div className="ercica__container">
         <section className="ercica__section">
-          <DepartmentSectionHeading title={ercicaWelcomeData.title} />
+          <DepartmentSectionHeading title={ercicaWelcomeData.title} className="department-section-heading--default"/>
 
           <div className="ercica__content">
             {ercicaWelcomeData.description.map((paragraph, index) => (
