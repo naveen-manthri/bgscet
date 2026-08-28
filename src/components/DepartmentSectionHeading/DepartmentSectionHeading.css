@@ -2,6 +2,7 @@
   --clr-primary: #E3473A;
   --clr-title: #000000;
   --underline-clr: #000000;
+  --heading-margin-bottom:1rem;
 
   --ff-primary: "Poppins", sans-serif;
 
@@ -22,7 +23,7 @@
   position: relative;
   display: inline-block;
 
-  margin: 0;
+  margin-bottom: var(--heading-margin-bottom);
   padding-bottom: 1rem;
 
   color: var(--clr-title);
@@ -73,4 +74,20 @@
     width: 4rem;
     margin-top: 0.5rem;
   }
+}
+
+.department-section-heading--small {
+  --fs-section-title: 1.5rem;
+}
+
+.department-section-heading--default {
+  --fs-section-title: 2.7rem;
+}
+
+.department-section-heading--large {
+  --fs-section-title: 4.75rem;
+}
+
+.department-section-heading--medium .department-section-heading__title {
+  font-size: 2.7rem;
 }
