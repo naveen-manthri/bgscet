@@ -2,7 +2,7 @@
   --admission-primary: #e3473a;
   --admission-title: #000000;
   --text: #4c4949;
-  --admission-divider: #031270;
+  --admission-divider: #000000;
   --admission-container-width: 75rem;
   --white-clr:#ffffff;
 
@@ -31,8 +31,8 @@
 
 .admission__title.academic-section-heading::after {
   width: 100%;
-  height: 0.14rem;
-  margin-top: 1.25rem;
+  height: 0.18rem;
+  margin-top: 0.8rem;
   background: var(--admission-divider);
 }
 
