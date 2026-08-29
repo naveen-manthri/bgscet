@@ -4,7 +4,7 @@
 }
 
 .facilities-sub__description {
-  margin-top: 1.5rem;
+  /* margin-top: 1.5rem; */
   line-height: 1.8;
   font-size: 1.25rem;
   color: var(--text);
