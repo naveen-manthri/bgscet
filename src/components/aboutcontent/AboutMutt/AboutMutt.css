@@ -35,7 +35,7 @@
 .about-mutt {
   width: 100%;
   background: var(--color-background);
-  padding: 4rem;
+  padding: 3rem 4rem;
 }
 
 .about-mutt .department-section-heading {
@@ -73,7 +73,6 @@
 #about-mutt-title{
   display: flex;
   align-items: center;
-  margin-bottom: var(--spacing-8);
 }
 .about-mutt__content {
   display: flex;
@@ -97,7 +96,7 @@
 
 @media (max-width: 768px) {
   .about-mutt {
-    padding: var(--spacing-12) 0;
+    padding: var(--spacing-12) 4rem;
   }
 
   .about-mutt__title {
