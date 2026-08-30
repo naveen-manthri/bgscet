@@ -346,6 +346,10 @@ img {
   border-bottom: 0.0625rem solid #eadbd8;
 }
 
+.main-navbar__dropdown--nested > li:not(:last-child) {
+  border-bottom: 0.0625rem solid #eadbd8;
+}
+
 .main-navbar__dropdown-link--parent {
   display: flex;
   align-items: center;
