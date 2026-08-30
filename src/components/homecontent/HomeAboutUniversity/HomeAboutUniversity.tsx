@@ -39,7 +39,7 @@ function HomeAboutUniversity() {
             <DepartmentSectionHeading
               id="home-about-university-title"
               title={homeAboutUniversity.title}
-              className="home-about-university__heading department-section-heading--large"
+              className="home-about-university__heading"
             />
             <p>{homeAboutUniversity.description}</p>
             
