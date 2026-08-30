@@ -2,12 +2,30 @@
   width: 100%;
 }
 
+.vision-mission--columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2rem, 8vw, 8rem);
+  align-items: start;
+}
+
+.vision-mission--columns .vision-mission__section:not(:last-child) {
+  margin-bottom: 0;
+}
+
+@media (max-width: 48rem) {
+  .vision-mission--columns {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
 .vision-mission__section:not(:last-child) {
   margin-bottom: 3.5rem;
 }
 
 .vision-mission__text {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 
   color: var(--text);
 
@@ -33,4 +51,9 @@
   font-size: var(--fs-body);
   font-weight: var(--fw-regular);
   line-height: 1.8;
+}
+
+.vision-mission--columns .vision-mission__list {
+  padding-left: 1.25rem;
+  list-style: disc;
 }

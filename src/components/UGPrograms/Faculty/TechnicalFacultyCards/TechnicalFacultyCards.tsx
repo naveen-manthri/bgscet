@@ -9,7 +9,7 @@ interface TechnicalFacultyCardsProps {
 
 const TechnicalFacultyCards = ({ data, title }: TechnicalFacultyCardsProps) => (
   <>
-    <DepartmentSectionHeading title={title} />
+    <DepartmentSectionHeading title={title} className="department-section-heading--medium" />
     <div className="department-faculty__grid">
       {data.map((faculty) => (
         <article key={faculty.id} className="department-faculty__card">
