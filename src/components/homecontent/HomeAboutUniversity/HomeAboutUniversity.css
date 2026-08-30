@@ -78,6 +78,7 @@
   font-size: 1.25rem;
   line-height: 1.75;
   text-align: justify;
+  margin-bottom: 1.5rem;
 }
 
 .home-about-university__heading {
@@ -94,7 +95,7 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  gap: 1.5rem;
+  gap: 0rem;
 }
 
 .home-about-university__cta {
