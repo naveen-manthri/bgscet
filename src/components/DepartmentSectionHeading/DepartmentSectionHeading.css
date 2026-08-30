@@ -59,7 +59,7 @@
   .department-section-heading__underline {
     width: 4.5rem;
   }
-}
+} 
 
 @media (max-width: 48rem) {
   .department-section-heading {
@@ -85,7 +85,7 @@
 }
 
 .department-section-heading--large {
-  --fs-section-title: 4.75rem;
+  --fs-section-title: 2.7rem;
 }
 
 .department-section-heading--medium .department-section-heading__title {
