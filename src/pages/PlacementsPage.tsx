@@ -1,5 +1,6 @@
 import PageBanner from '../components/common/PageBanner';
 import PlacementMarquee from '../components/reusable/PlacementMarquee';
+import './PlacementsPage.css';
 
 function PlacementsPage() {
   return (
@@ -12,7 +13,7 @@ function PlacementsPage() {
 
       <PlacementMarquee />
 
-      <section className="section-space">
+      <section className="section-space placements-content">
         <div className="container">
           <div className="row g-4">
             <div className="col-md-6" id="training">

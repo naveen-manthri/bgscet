@@ -20,6 +20,7 @@ const InfrastructureFaculty = ({
 
       <DepartmentSectionHeading
         title={data.title}
+        className="department-section-heading--medium"
       />
 
 
