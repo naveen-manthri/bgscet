@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { navItems } from '../../data/navData';
 
@@ -6,6 +6,41 @@ function MainNavbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [openSubmenu, setOpenSubmenu] = useState<string | null>(null);
+  const [leftDropdownItems, setLeftDropdownItems] = useState<Set<string>>(new Set());
+  const menuRef = useRef<HTMLUListElement>(null);
+
+  useEffect(() => {
+    const menu = menuRef.current;
+
+    if (!menu) {
+      return;
+    }
+
+    const updateDropdownDirection = () => {
+      const items = Array.from(menu.children) as HTMLLIElement[];
+      const rows: HTMLLIElement[][] = [];
+
+      items.forEach((item) => {
+        const row = rows.find((currentRow) => currentRow[0].offsetTop === item.offsetTop);
+
+        if (row) {
+          row.push(item);
+        } else {
+          rows.push([item]);
+        }
+      });
+
+      setLeftDropdownItems(
+        new Set(rows.flatMap((row) => row.slice(-2).map((item) => item.dataset.navLabel ?? ''))),
+      );
+    };
+
+    updateDropdownDirection();
+    const observer = new ResizeObserver(updateDropdownDirection);
+    observer.observe(menu);
+
+    return () => observer.disconnect();
+  }, []);
 
   const closeMenu = () => {
     setIsOpen(false);
@@ -33,12 +68,18 @@ function MainNavbar() {
           <span />
         </button>
 
-        <ul className={`main-navbar__menu${isOpen ? ' is-open' : ''}`} id="main-navbar-menu">
+        <ul ref={menuRef} className={`main-navbar__menu${isOpen ? ' is-open' : ''}`} id="main-navbar-menu">
           {navItems.map((item) => {
             const hasChildren = Boolean(item.children?.length);
 
             return (
-              <li  className="main-navbar__item" key={item.label}  onMouseEnter={() => setOpenDropdown(item.label)} onMouseLeave={() => setOpenDropdown(null)} >
+              <li
+                className={`main-navbar__item${leftDropdownItems.has(item.label) ? ' main-navbar__item--left-dropdown' : ''}`}
+                data-nav-label={item.label}
+                key={item.label}
+                onMouseEnter={() => setOpenDropdown(item.label)}
+                onMouseLeave={() => setOpenDropdown(null)}
+              >
                 {/* <div className="main-navbar__link-row">
                   <NavLink
                     className={({ isActive }) => `main-navbar__link${isActive ? ' is-active' : ''}`}
