@@ -8,7 +8,7 @@ interface AchievementCardsProps {
 
 const AchievementCards = ({ data }: AchievementCardsProps) => (
   <>
-    <DepartmentSectionHeading title={data.title} />
+    <DepartmentSectionHeading title={data.title} className="department-section-heading--medium" />
     <div className="achievement-list">
       {data.achievements.map((achievement, index) => (
         <div className="achievement-card" key={achievement.id}>

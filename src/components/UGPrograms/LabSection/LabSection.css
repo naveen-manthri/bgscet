@@ -19,6 +19,6 @@
 }
 
 @media (max-width: 48rem) {
-  .department-lab-section { margin: 0 -1.25rem; }
-  .department-lab-section__description { padding: 0 1.25rem; }
+  .department-lab-section { margin: 0 -4rem; }
+  .department-lab-section__description { padding: 0 4rem; }
 }

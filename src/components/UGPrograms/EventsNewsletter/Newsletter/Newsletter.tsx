@@ -9,7 +9,7 @@ interface NewsletterProps {
 
 const Newsletter = ({ title, data }: NewsletterProps) => (
   <div className="newsletter-section">
-    <DepartmentSectionHeading title={title} />
+    <DepartmentSectionHeading title={title} className="department-section-heading--medium" />
     <div className="newsletter-grid">
       {data.map((newsletter) => (
         <button key={newsletter.id} type="button" className="newsletter-btn">
