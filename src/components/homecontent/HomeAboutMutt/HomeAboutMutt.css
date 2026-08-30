@@ -1,14 +1,16 @@
 .home-about-mutt {
+  --home-about-mutt-background: #f6f7fa;
   display: flex;
   gap: 5rem;
   padding: clamp(3.25rem, 5vw, 4rem);
-  background-color: #F6F7FA;
+  padding-inline: 4rem;
+  background-color: var(--home-about-mutt-background);
 }
 .home-about-mutt__content {
   display: flex;
   flex-direction: column;
   flex: 1;
-  gap: 1.5rem;
+  gap: 0.5rem;
 }
 
 .home-about-mutt__content p {
@@ -24,6 +26,10 @@
   font-weight: 800;
 }
 .home-about-mutt__image {
+  display: block;
   width: min(100%, 34rem);
   margin: 0 auto;
+  border-radius: 2rem;
+  clip-path: inset(0 round 2rem);
+  background-color: var(--home-about-mutt-background);
 }

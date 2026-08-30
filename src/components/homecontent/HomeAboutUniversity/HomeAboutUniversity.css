@@ -2,6 +2,7 @@
   display: flex;
   gap: 2rem;
   padding: clamp(3.25rem, 5vw, 4rem);
+  padding-inline: 4rem;
   padding-bottom:3REM;
 }
 

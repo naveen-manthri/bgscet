@@ -2,6 +2,7 @@
   display: flex;
   gap: 5rem;
   padding: clamp(3.25rem, 5vw, 4rem);
+  padding-inline: 4rem;
   background-color: #F6F7FA;
 }
 .home-vision-mission__content {
