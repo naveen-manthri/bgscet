@@ -67,6 +67,7 @@ export const navItems: NavItem[] = [
       { label: 'Digital Classroom', path: '/facilities/digital-classroom' },
       { label: 'Seminar Hall', path: '/facilities/seminar-hall' },
       { label: 'Hostel', path: '/facilities/hostel' },
+      { label: 'Physical Education & Sports', path: '/facilities/physical-education-sports' },
     ],
   },
   { label: 'Contact us', path: '/contact' },
