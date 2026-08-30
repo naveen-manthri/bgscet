@@ -16,9 +16,7 @@ const CareerOpportunities = ({
   return (
     <section className="career-opportunities">
 
-      <DepartmentSectionHeading
-        title={data.title}
-      />
+      <DepartmentSectionHeading title={data.title} className="department-section-heading--medium" />
 
 
       <div className="career-opportunities__content">
