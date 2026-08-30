@@ -7,7 +7,7 @@
 }
 
 .contact-enquiry__container {
-  width: calc(100% - 6rem);
+  width: calc(100% - 8rem);
   max-width: none;
   margin: 3rem auto 1rem;
 }
