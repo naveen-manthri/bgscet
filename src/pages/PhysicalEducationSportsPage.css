@@ -1,5 +1,5 @@
 .physical-education {
-  width: calc(100% - 6rem);
+  width: calc(100% - 8rem);
   margin: 0 auto;
   color: #242424;
 }
@@ -7,7 +7,8 @@
 .physical-education__message,
 .physical-education__achievement,
 .physical-education__annual {
-  padding: clamp(2.5rem, 6vw, 5rem) 0;
+  padding: 3rem 0;
+  /* margin: 0 1rem; */
 }
 
 .physical-education__message {
@@ -175,7 +176,7 @@
 .physical-education__sports-image--12 { grid-column: 1 / -1; }
 
 @media (max-width: 48rem) {
-  .physical-education { width: calc(100% - 2.5rem); }
+  .physical-education { width: calc(100% - 8rem); }
   .physical-education__message-grid { grid-template-columns: minmax(6.5rem, 38%) minmax(0, 1fr); gap: 1rem; margin-top: 2rem; }
   .physical-education__people { gap: 0.8rem; }
   .physical-education__people figcaption { margin-top: 0.5rem; padding: 0.45rem 0.25rem; }

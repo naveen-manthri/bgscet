@@ -1,7 +1,7 @@
 .student-material__cta {
   display: flex;
   justify-content: center;
-  margin: 3rem 4rem 0;
+  margin: 3rem 4rem 0 4rem;
 }
 
 .student-material__button {
