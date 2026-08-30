@@ -14,6 +14,22 @@ export interface Department {
   image: string;
 }
 
+const createAppliedScienceDepartment = (slug: string, name: string): Department => ({
+  id: slug,
+  slug,
+  name,
+  shortName: name.replace('Department of ', ''),
+  icon: 'bi-flask',
+  intake: 0,
+  color: '#dc3545',
+  image: 'https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?w=800&q=80',
+  description: `${name} at BGSCET.`,
+  overview: `${name} supports the foundational education and research needs of BGSCET students.`,
+  labs: ['Teaching Laboratory'],
+  facilities: ['Smart classrooms', 'Digital learning resources'],
+  careers: ['Higher education', 'Research', 'Industry careers'],
+});
+
 export const departments: Department[] = [
   {
     id: 'cse',
@@ -225,4 +241,7 @@ export const departments: Department[] = [
       'Government Services (PWD, BBMP)',
     ],
   },
+  createAppliedScienceDepartment('physics', 'Department of Physics'),
+  createAppliedScienceDepartment('chemistry', 'Department of Chemistry'),
+  createAppliedScienceDepartment('mathematics', 'Department of Mathematics'),
 ];

@@ -12,7 +12,7 @@ interface VisionMissionProps {
 
 const VisionMission = ({ data, columns = false }: VisionMissionProps) => (
   <section className={`vision-mission${columns ? " vision-mission--columns" : ""}`}>
-    <Vision data={data.vision} />
+    <Vision data={data.vision} asList={columns} />
     <Mission data={data.mission} />
   </section>
 );

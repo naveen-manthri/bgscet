@@ -8,7 +8,7 @@ interface MissionProps {
 
 const Mission = ({ data }: MissionProps) => (
   <div className="vision-mission__section">
-    <DepartmentSectionHeading title={data.title} />
+    <DepartmentSectionHeading title={data.title} className="department-section-heading--medium" />
     <ul className="vision-mission__list">
       {data.points.map((point) => (
         <li key={point} className="vision-mission__item">{point}</li>
