@@ -12,7 +12,7 @@
   justify-content: space-between;
 }
 
-.admission__title.academic-section-heading h2 {
+.admission__title.academic-section-heading__title {
   color: var(--admission-title);
   font-size: 2.5rem;
   line-height: 1.22;
@@ -20,7 +20,7 @@
 
 .admission__title .academic-section-heading__black,
 .admission__title .academic-section-heading__red {
-  display: inline;
+  display: block;
   white-space: pre-line;
 }
 
@@ -29,10 +29,7 @@
   color: var(--admission-primary);
 }
 
-.admission__title.academic-section-heading::after {
-  width: 100%;
-  height: 0.18rem;
-  margin-top: 0.8rem;
+.admission__title .academic-section-heading__title::after {
   background: var(--admission-divider);
 }
 
@@ -72,7 +69,7 @@
   background: var(--admission-primary);
   color: var(--white-clr);
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1;
 }
 
