@@ -25,7 +25,7 @@ const GrievanceRedressalCell = () => {
 
       <div className="grievance-redressal-cell__button-row">
         <a
-          href="#"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfuXjnNeEcz5q7yYjYU3ZcfA5WQNHI6yEIGhYGq9mHVRkLHzQ/viewform?pli=1"
           className="committee-btn grievance-redressal-cell__button"
           target="_blank"
           rel="noopener noreferrer"
