@@ -98,16 +98,26 @@ export const navItems: NavItem[] = [
     children: [
       // { label: 'DHI Login', path: 'https://auth.dhi-edu.com/auth/realms/bgsgroup/protocol/openid-connect/auth?client_id=bgsgroup_bgscet&redirect_uri=https%3A%2F%2Fbgsgroup.dhi-edu.com%2Fbgsgroup_bgscet%2F%23%2Ffaculty%2Fdashboard&state=0f22a022-5514-4a14-85f5-47968b05fbd4&response_mode=fragment&response_type=code&scope=openid&nonce=4924ddf6-a781-47e2-86ad-5bb91085cbef&code_challenge=r1i5lo-KB5-i10e1h2UUqPkjPtWpiO_H6uYL75GQIrk&code_challenge_method=S256' },
       { label: 'Student Material', path: '/student-material' },
-      
       { label: 'NSS', path: '/student-life/nss' },
       {
-      label: 'DHI Login',
-      path: 'https://auth.dhi-edu.com/auth/realms/bgsgroup/protocol/openid-connect/auth?client_id=bgsgroup_bgscet&redirect_uri=https%3A%2F%2Fbgsgroup.dhi-edu.com%2Fbgsgroup_bgscet%2F%23%2Ffaculty%2Fdashboard&state=0f22a022-5514-4a14-85f5-47968b05fbd4&response_mode=fragment&response_type=code&scope=openid&nonce=4924ddf6-a781-47e2-86ad-5bb91085cbef&code_challenge=r1i5lo-KB5-i10e1h2UUqPkjPtWpiO_H6uYL75GQIrk&code_challenge_method=S256',
+        label: 'Student Club/Cell',
+        path: '/student-club-cell',
+        children: [
+          { label: 'SC-ST Cell', path: '/student-club-cell/sc-st-cell' },
+          { label: 'Grievance Redressal Cell', path: '/student-club-cell/grievance-redressal-cell' },
+          { label: 'Internal Complaints Committee', path: '/student-club-cell/internal-complaints-committee' },
+          { label: 'Anti Ragging Committee', path: '/student-club-cell/anti-ragging-committee' },
+          { label: 'Counselling & Mentoring', path: '/student-club-cell/counselling-mentoring' },
+        ],
       },
       {
-    label: 'Syllabus',
-    path: 'https://vtu.ac.in/b-e-scheme-syllabus/',
-  },
+        label: 'DHI Login',
+        path: 'https://auth.dhi-edu.com/auth/realms/bgsgroup/protocol/openid-connect/auth?client_id=bgsgroup_bgscet&redirect_uri=https%3A%2F%2Fbgsgroup.dhi-edu.com%2Fbgsgroup_bgscet%2F%23%2Ffaculty%2Fdashboard&state=0f22a022-5514-4a14-85f5-47968b05fbd4&response_mode=fragment&response_type=code&scope=openid&nonce=4924ddf6-a781-47e2-86ad-5bb91085cbef&code_challenge=r1i5lo-KB5-i10e1h2UUqPkjPtWpiO_H6uYL75GQIrk&code_challenge_method=S256',
+      },
+      {
+        label: 'Syllabus',
+        path: 'https://vtu.ac.in/b-e-scheme-syllabus/',
+      },
     ],
   },
   {
