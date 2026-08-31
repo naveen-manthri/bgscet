@@ -1,26 +1,34 @@
 .library-rules {
-
-    --fs-body:1.25rem;
-  padding: 5rem 0 0 0;
+  --fs-body: 1.25rem;
+  width: 100%;
+  max-width: 100%;
+  padding: 5rem 0 0;
   background: var(--white);
+  box-sizing: border-box;
 }
 
 .library-rules__container {
   width: 100%;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 0 4rem;
+  padding: 0 clamp(1rem, 3vw, 4rem);
+  box-sizing: border-box;
 }
 
 .library-rules__list {
-  margin:  0 0;
-  padding-left: 1.5rem;
+  margin: 0;
+  padding-left: clamp(1.25rem, 2vw, 1.5rem);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .library-rules__item {
   margin-bottom: 0.7rem;
   color: var(--text);
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 0.8rem + 0.35vw, 1.25rem);
   line-height: 1.8;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .library-rules__item::marker {
@@ -28,15 +36,15 @@
   font-size: 0.8rem;
 }
 
-@media (max-width: 64rem) {
+@media (max-width: 1023px) {
   .library-rules {
-    padding: 4rem 0;
+    padding-top: 4rem;
   }
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 767px) {
   .library-rules {
-    padding: 3rem 0;
+    padding: 3rem 0 0;
   }
 
   .library-rules__container {
@@ -45,10 +53,18 @@
 
   .library-rules__list {
     margin-top: 1.5rem;
+    padding-left: 1.25rem;
   }
 
   .library-rules__item {
     font-size: 0.95rem;
     line-height: 1.7;
+    margin-bottom: 0.85rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .library-rules__item {
+    font-size: 1.05rem;
   }
 }

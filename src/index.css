@@ -142,7 +142,7 @@ img {
 
 .main-header__inner {
   width: min(94%, 95rem);
-  margin: 0 3rem;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;

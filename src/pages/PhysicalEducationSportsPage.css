@@ -1,5 +1,5 @@
 .physical-education {
-  width: calc(100% - 8rem);
+  width: min(100% - 2rem, 100%);
   margin: 0 auto;
   color: #242424;
 }
@@ -81,10 +81,10 @@
 }
 
 .physical-education__achievement > img {
-  width: 100vw;
+  width: 100%;
   max-width: none;
   height: auto;
-  margin-left: calc(50% - 50vw);
+  margin-left: 0;
 }
 
 .physical-education__recognitions {

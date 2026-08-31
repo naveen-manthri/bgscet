@@ -1,48 +1,57 @@
 .infrastructure-faculty {
   --clr-title: #111111;
   --text: #4c4949;
-
   --ff-primary: "Poppins", sans-serif;
-
   --fw-regular: 400;
+  --fs-body: clamp(1rem, 0.8rem + 0.35vw, 1.25rem);
 
-  --fs-body: 1.25rem;
-
-}
-
-.infrastructure-faculty {
   width: 100%;
-  padding: 0rem;
+  max-width: 100%;
+  padding: 0;
   margin-bottom: 0;
+  box-sizing: border-box;
 }
 
-/* .infrastructure-faculty__content {
-  margin-top: 2.5rem;
-} */
+.infrastructure-faculty__content {
+  width: 100%;
+  max-width: 100%;
+}
 
 .infrastructure-faculty__description {
   margin: 0;
-
   color: var(--text);
-
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
   font-weight: var(--fw-regular);
   line-height: 1.9;
-
   text-align: justify;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 1023px) {
   .infrastructure-faculty {
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .infrastructure-faculty {
+    padding-bottom: 2.5rem;
   }
 
   .infrastructure-faculty__content {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   }
 
   .infrastructure-faculty__description {
     text-align: left;
+    line-height: 1.7;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .infrastructure-faculty__description {
+    line-height: 1.8;
   }
 }

@@ -1,5 +1,7 @@
 .vision-mission {
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .vision-mission--columns {
@@ -7,17 +9,21 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(2rem, 8vw, 8rem);
   align-items: start;
+  width: 100%;
+  max-width: 100%;
+}
+
+.vision-mission--columns .vision-mission__section {
+  min-width: 0;
 }
 
 .vision-mission--columns .vision-mission__section:not(:last-child) {
   margin-bottom: 0;
 }
 
-@media (max-width: 48rem) {
-  .vision-mission--columns {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
+.vision-mission__section {
+  width: 100%;
+  max-width: 100%;
 }
 
 .vision-mission__section:not(:last-child) {
@@ -25,35 +31,71 @@
 }
 
 .vision-mission__text {
-  /* margin-top: 2rem; */
-
   color: var(--text);
-
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
   font-weight: var(--fw-regular);
   line-height: 1.8;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .vision-mission__list {
-  /* margin-top: 2rem; */
   padding: 0;
-
   list-style: none;
+  width: 100%;
+  max-width: 100%;
 }
 
 .vision-mission__item {
-  /* margin-bottom: 0.875rem; */
-
   color: var(--text);
-
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
   font-weight: var(--fw-regular);
   line-height: 1.8;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .vision-mission--columns .vision-mission__list {
   padding-left: 1.25rem;
   list-style: disc;
+}
+
+@media (max-width: 1023px) {
+  .vision-mission--columns {
+    gap: 3rem;
+  }
+
+  .vision-mission__section:not(:last-child) {
+    margin-bottom: 2.75rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .vision-mission--columns {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .vision-mission__section:not(:last-child) {
+    margin-bottom: 2.25rem;
+  }
+
+  .vision-mission__text,
+  .vision-mission__item {
+    font-size: clamp(0.95rem, 0.88rem + 0.2vw, 1.1rem);
+    line-height: 1.7;
+  }
+
+  .vision-mission--columns .vision-mission__list {
+    padding-left: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .vision-mission__text,
+  .vision-mission__item {
+    font-size: clamp(1rem, 0.92rem + 0.15vw, 1.15rem);
+  }
 }

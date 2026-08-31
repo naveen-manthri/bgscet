@@ -1,20 +1,87 @@
 :root {
-  --page-padding: 4rem;
-  --margin-top:3rem;
-  --table-gap: 4rem;
+  --page-padding: clamp(1rem, 2vw, 4rem);
+  --margin-top: 3rem;
+  --table-gap: clamp(2rem, 3vw, 4rem);
 }
 
 .patent-page {
+  width: 100%;
+  max-width: 100%;
   padding: 0 var(--page-padding);
   display: flex;
   flex-direction: column;
   gap: var(--table-gap);
   margin-top: var(--margin-top);
+  box-sizing: border-box;
 }
 
-@media (max-width: 48rem) {
+.patent-page .table-section {
+  width: 100%;
+  max-width: 100%;
+}
+
+.patent-page .table-section__wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.patent-page .table-section__table {
+  width: 100%;
+  max-width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.patent-page .table-section__table th,
+.patent-page .table-section__table td {
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  vertical-align: top;
+}
+
+@media (max-width: 1023px) {
+  .patent-page {
+    --page-padding: 1.5rem;
+  }
+
+  .patent-page .table-section__table {
+    table-layout: auto;
+  }
+}
+
+@media (max-width: 767px) {
   :root {
-    --page-padding: 2rem;
-    --table-gap: 3rem;
+    --margin-top: 2rem;
+  }
+
+  .patent-page {
+    padding: 0 1rem;
+    gap: 2.5rem;
+  }
+
+  .patent-page .table-section__wrapper {
+    overflow-x: hidden;
+  }
+
+  .patent-page .table-section__table {
+    table-layout: fixed;
+    min-width: 0;
+  }
+
+  .patent-page .table-section__table th,
+  .patent-page .table-section__table td {
+    padding: 0.55rem 0.5rem;
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .patent-page .table-section__table th,
+  .patent-page .table-section__table td {
+    font-size: 1.05rem;
+    padding: 0.7rem 0.8rem;
   }
 }

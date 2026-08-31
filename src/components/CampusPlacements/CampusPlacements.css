@@ -8,9 +8,9 @@
 }
 
 .campus-placements__inner {
-
-margin: 0 3rem;
-max-width: 90rem;
+  width: min(100% - 2rem, 90rem);
+  margin: 0 auto;
+  max-width: 90rem;
 }
 
 .campus-placements__heading {

@@ -1,12 +1,17 @@
 .student-testimonials {
   width: 100%;
+  max-width: 100%;
   padding: var(--section-padding) 0;
   background: var(--white);
   color: var(--text);
+  box-sizing: border-box;
 }
 
 .student-testimonials__inner {
-  padding: 0 4rem;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 clamp(1rem, 3vw, 4rem);
+  box-sizing: border-box;
 }
 
 .student-testimonials .shared-section-heading {
@@ -28,16 +33,19 @@
 
 .student-testimonials__scroller {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: clamp(1rem, 2.4vw, 1.6rem);
   width: 100%;
+  max-width: 100%;
   padding: 0.1rem 0 0.75rem;
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow: visible;
   cursor: grab;
   scroll-behavior: smooth;
   scrollbar-width: none;
   -ms-overflow-style: none;
   touch-action: pan-x;
+  box-sizing: border-box;
 }
 
 .student-testimonials__scroller::-webkit-scrollbar {
@@ -56,7 +64,8 @@
 }
 
 .student-testimonials__card {
-  flex: 0 0 clamp(13.8rem, 29vw, 20.8rem);
+  flex: 0 1 clamp(13.8rem, 22vw, 20.8rem);
+  min-width: 0;
   min-height: clamp(12.7rem, 27vw, 17rem);
   display: flex;
   flex-direction: column;
@@ -69,6 +78,7 @@
   box-shadow: var(--shadow-soft);
   text-align: center;
   user-select: none;
+  box-sizing: border-box;
 }
 
 .student-testimonials__image {
@@ -104,8 +114,47 @@
   line-height: 1.28;
 }
 
-@media (max-width: 42em) {
+@media (max-width: 1023px) {
+  .student-testimonials__inner {
+    padding: 0 2rem;
+  }
+
+  .student-testimonials__card {
+    flex-basis: clamp(14rem, 30vw, 18rem);
+  }
+}
+
+@media (max-width: 767px) {
+  .student-testimonials .shared-section-heading {
+    margin-bottom: 2rem;
+  }
+
+  .student-testimonials__inner {
+    padding: 0 1rem;
+  }
+
+  .student-testimonials__scroller {
+    gap: 1rem;
+    justify-content: center;
+  }
+
   .student-testimonials__card {
     flex-basis: min(100%, 19rem);
+    width: 100%;
+    min-height: auto;
+  }
+
+  .student-testimonials__quote {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .student-testimonials__card {
+    padding: 1.15rem 0.85rem;
+  }
+
+  .student-testimonials__department {
+    margin-bottom: 0.75rem;
   }
 }

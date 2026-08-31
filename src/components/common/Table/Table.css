@@ -1,18 +1,22 @@
 .table-section {
- --text: #4C4949;
- --table-border-color:#7a7a7a;
+  --text: #4C4949;
+  --table-border-color: #7a7a7a;
   display: flex;
   flex-direction: column;
   gap: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 .table-section__wrapper {
   width: 100%;
+  max-width: 100%;
   overflow-x: auto;
 }
 
 .table-section__table {
   width: 100%;
+  max-width: 100%;
   border-collapse: collapse;
   table-layout: auto;
   background: var(--white-color);
@@ -26,6 +30,8 @@
   line-height: 1.5;
   text-align: left;
   vertical-align: middle;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .table-section__table th {
@@ -45,19 +51,19 @@
   gap: 0.2rem;
 }
 
-@media (max-width: 62rem) {
-  .table-section {
-    gap: 0;
-  }
-
+@media (max-width: 1023px) {
   .table-section__table {
-    min-width: 48rem;
+    min-width: 0;
   }
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 767px) {
+  .table-section__wrapper {
+    overflow-x: auto;
+  }
+
   .table-section__table {
-    min-width: 40rem;
+    min-width: 38rem;
   }
 
   .table-section__table th,
@@ -67,7 +73,7 @@
   }
 }
 
-@media (max-width: 36rem) {
+@media (max-width: 420px) {
   .table-section__table {
     min-width: 34rem;
   }

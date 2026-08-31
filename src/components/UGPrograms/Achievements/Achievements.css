@@ -4,18 +4,19 @@
   --border-color: #d9d9d9;
   --background-color: #ffffff;
 
-  --content-gap: 2rem;
-  --title-margin: 1.5rem;
-  --divider-margin: 2.5rem;
+  --content-gap: clamp(1.25rem, 2vw, 2rem);
+  --title-margin: clamp(1rem, 1.6vw, 1.5rem);
+  --divider-margin: clamp(1.5rem, 2.5vw, 2.5rem);
 
-  --title-font-size: 1.75rem;
+  --title-font-size: clamp(1.25rem, 1rem + 0.7vw, 1.75rem);
   --title-line-height: 1.5;
   --title-font-weight: 700;
 
-  --image-max-width: 62.5rem;
-}
-.department-achievements {
+  --image-max-width: clamp(18rem, 80vw, 62.5rem);
+
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .achievement-list {
@@ -23,6 +24,8 @@
   flex-direction: column;
   gap: var(--content-gap);
   margin-top: var(--content-gap);
+  width: 100%;
+  max-width: 100%;
 }
 
 .achievement-title {
@@ -31,17 +34,20 @@
   font-size: var(--title-font-size);
   font-weight: var(--title-font-weight);
   line-height: var(--title-line-height);
+  word-break: break-word;
 }
 
 .achievement-image-wrapper {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  width: 100%;
+  max-width: 100%;
 }
 
 .achievement-image {
   display: block;
-  width: auto;
+  width: min(100%, var(--image-max-width));
   max-width: 100%;
   max-height: 60vh;
   height: auto;
@@ -52,4 +58,45 @@
   margin-top: var(--divider-margin);
   border: 0;
   border-top: 0.0625rem solid var(--border-color);
+}
+
+@media (max-width: 1023px) {
+  .department-achievements {
+    --image-max-width: min(100%, 52rem);
+  }
+
+  .achievement-image-wrapper {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .department-achievements {
+    --content-gap: 1.25rem;
+    --divider-margin: 1.5rem;
+  }
+
+  .achievement-list {
+    margin-top: 1.25rem;
+  }
+
+  .achievement-title {
+    margin-bottom: 1rem;
+  }
+
+  .achievement-image-wrapper {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .achievement-image {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .achievement-image {
+    width: min(100%, 42rem);
+  }
 }
