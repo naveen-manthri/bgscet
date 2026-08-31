@@ -33,6 +33,8 @@ const IPRPage = lazy(() => import("../pages/iprCellPage"));
 const PatentPage = lazy(() => import("../pages/patentsPage"));
 const NSSPage = lazy(() => import("../pages/NSSPage"));
 const AdvayaPage = lazy(() => import('../pages/AdvayaPage'));
+const SCSTCellPage = lazy(() => import('../pages/SCSTCellPage'));
+const GrievanceRedressalCellPage = lazy(() => import('../pages/GrievanceRedressalCellPage'));
 const NotFoundPage = lazy(() => import('../pages/NotFoundPage'));
 
 function AppRoutes() {
@@ -76,6 +78,8 @@ function AppRoutes() {
           <Route path="research/ipr-cell" element={<IPRPage />} />
           <Route path="research/patents" element={<PatentPage />} />
           <Route path="student-life/nss" element={<NSSPage />} />
+          <Route path="student-club-cell/sc-st-cell" element={<SCSTCellPage />} />
+          <Route path="student-club-cell/grievance-redressal-cell" element={<GrievanceRedressalCellPage />} />
           <Route path="advaya-2-0-2k26" element={<AdvayaPage />} />
           <Route path="404" element={<NotFoundPage />} />
           <Route path="*" element={<Navigate to="/404" replace />} />
