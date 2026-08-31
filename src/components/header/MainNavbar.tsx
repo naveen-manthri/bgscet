@@ -176,13 +176,45 @@ function MainNavbar() {
                           )}
                           {hasSubmenu ? (
                             <ul className={`main-navbar__dropdown main-navbar__dropdown--nested${openSubmenu === child.label ? ' is-open' : ''}`}>
-                              {child.children?.map((subChild) => (
-                                <li key={subChild.label}>
-                                  <Link className="main-navbar__dropdown-link" to={subChild.path} onClick={closeMenu}>
-                                    {subChild.label}
-                                  </Link>
-                                </li>
-                              ))}
+                              {child.children?.map((subChild) => {
+                                const isPdf = subChild.path.toLowerCase().endsWith('.pdf');
+                                const isExternal = /^https?:\/\//.test(subChild.path);
+                                const isPlaceholder = subChild.path === '#';
+
+                                if (isPlaceholder) {
+                                  return (
+                                    <li key={subChild.label}>
+                                      <span className="main-navbar__dropdown-link main-navbar__dropdown-link--disabled" aria-disabled="true" style={{ opacity: 0.7, cursor: 'not-allowed' }}>
+                                        {subChild.label}
+                                      </span>
+                                    </li>
+                                  );
+                                }
+
+                                if (isPdf || isExternal) {
+                                  return (
+                                    <li key={subChild.label}>
+                                      <a
+                                        className="main-navbar__dropdown-link"
+                                        href={subChild.path}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        onClick={closeMenu}
+                                      >
+                                        {subChild.label}
+                                      </a>
+                                    </li>
+                                  );
+                                }
+
+                                return (
+                                  <li key={subChild.label}>
+                                    <Link className="main-navbar__dropdown-link" to={subChild.path} onClick={closeMenu}>
+                                      {subChild.label}
+                                    </Link>
+                                  </li>
+                                );
+                              })}
                             </ul>
                           ) : null}
                         </li>

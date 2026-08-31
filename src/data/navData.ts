@@ -79,8 +79,29 @@ export const navItems: NavItem[] = [
       { label: 'VTU Approval Letters', path: '/quick-links/vtu-approval-letters' },
       { label: 'Committees', path: '/quick-links/committees' },
       { label: 'Careers', path: '/careers' },
-      {label: 'Industry Institute Cell', path:'/pdfs/quicklinks/Industry-Inst-IT-Cell.pdf'},
-      {label:'Institution Innovation Cell', path:'/pdfs/quicklinks/IIC-BGSCET.pdf'},
+      {
+        label: 'BGSCET Clubs',
+        path: '/quick-links/bgscet-clubs',
+        children: [
+          { label: 'Youth Red Cross Club', path: '/pdfs/committees/YRC-Club.pdf' },
+          { label: 'Green Campus', path: '#' },
+          { label: 'Initiatives Club', path: '#' },
+          { label: 'NDLI Club', path: '#' },
+          { label: 'Photography Club', path: '#' },
+          { label: 'Coding Club', path: '#' },
+        ],
+      },
+      {
+        label: 'Professional Bodies',
+        path: '/quick-links/professional-bodies',
+        children: [
+          { label: 'IEEE', path: '#' },
+          { label: 'CSI', path: '#' },
+          { label: 'CII', path: '#' },
+        ],
+      },
+      { label: 'Industry Institute Cell', path: '/pdfs/quicklinks/Industry-Inst-IT-Cell.pdf' },
+      { label: 'Institution Innovation Cell', path: '/pdfs/quicklinks/IIC-BGSCET.pdf' },
     ],
   },
   {
@@ -107,7 +128,8 @@ export const navItems: NavItem[] = [
           { label: 'Grievance Redressal Cell', path: '/student-club-cell/grievance-redressal-cell' },
           { label: 'Internal Complaint Committee', path: '/pdfs/studentclubs/CICC_BGSCET.pdf' },
           { label: 'Anti Ragging Committee', path: '/student-club-cell/anti-ragging-committee' },
-          { label: 'Mentor & Counselling', path: '/pdfs/studentclubs/mentour.pdf' },
+          { label: 'Mentor', path: '/pdfs/studentclubs/mentour.pdf' },
+          { label: 'Counselling', path: '/pdfs/studentclubs/Councelling-appta-salaha.pdf' },
         ],
       },
       {
