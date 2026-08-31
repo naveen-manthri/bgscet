@@ -86,7 +86,7 @@ export const navItems: NavItem[] = [
           { label: 'Youth Red Cross Club', path: '/pdfs/committees/YRC-Club.pdf' },
           { label: 'Green Campus', path: '#' },
           { label: 'Initiatives Club', path: '#' },
-          { label: 'NDLI Club', path: '#' },
+          { label: 'NDLI Club', path: '/quick-links/ndli-club' },
           { label: 'Photography Club', path: '#' },
           { label: 'Coding Club', path: '#' },
         ],
