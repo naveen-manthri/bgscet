@@ -4,12 +4,13 @@
   --career-heading-gap: 2rem;
   --career-list-gap: 1rem;
   --career-paragraph-gap: 2rem;
-  --career-paragraph-size: 1.25rem;
+  --career-paragraph-size: clamp(1rem, 1.15vw, 1.25rem);
   --text: #4c4949;
   --career-line-height: 1.8;
   --career-font-family: "Poppins", sans-serif;
 }
 
+.title-description,
 .title-bullet-description {
   display: flex;
   flex-direction: column;
@@ -20,6 +21,7 @@
 
 .title-bullet-description p,
 .title-description p {
+  margin: 0;
   font-size: var(--career-paragraph-size);
   color: var(--text);
   font-family: var(--career-font-family);
@@ -42,8 +44,47 @@
   line-height: var(--career-line-height);
 }
 
+@media (max-width: 64rem) {
+  .title-description,
+  .title-bullet-description {
+    padding: 0 2rem;
+    gap: 1.5rem;
+  }
+
+  .title-bullet-description p,
+  .title-description p,
+  .title-bullet-description__item {
+    line-height: 1.7;
+  }
+}
+
 @media (max-width: 48rem) {
   :root {
     --career-page-padding: 2rem;
+  }
+
+  .title-description,
+  .title-bullet-description {
+    padding: 0 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .title-bullet-description p,
+  .title-description p,
+  .title-bullet-description__item {
+    text-align: left;
+  }
+}
+
+@media (max-width: 30rem) {
+  .title-bullet-description p,
+  .title-description p,
+  .title-bullet-description__item {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .title-bullet-description__list {
+    padding-left: 1.25rem;
   }
 }

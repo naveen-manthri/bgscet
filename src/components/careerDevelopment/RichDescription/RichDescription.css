@@ -3,7 +3,7 @@
   --career-section-gap: 2rem;
   --career-heading-gap: 2rem;
   --career-content-gap: 1.5rem;
-  --career-paragraph-size: 1.25rem;
+  --career-paragraph-size: clamp(1rem, 1.15vw, 1.25rem);
   --text: #4c4949;
   --career-line-height: 1.8;
   --career-font-family: "Poppins", sans-serif;
@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: column;
   gap: 0;
-  padding: 0 ;
+  padding: 0;
   margin-bottom: var(--career-section-gap);
   text-align: justify;
 }
@@ -26,7 +26,6 @@
   display: flex;
   flex-direction: column;
   margin-top: var(--career-content-gap);
-  /* gap: var(--career-content-gap); */
 }
 
 .rich-description p {
@@ -43,8 +42,33 @@
   font-weight: 600;
 }
 
+@media (max-width: 64rem) {
+  .rich-description {
+    margin-bottom: 1.5rem;
+  }
+
+  .rich-description p {
+    line-height: 1.7;
+  }
+}
+
 @media (max-width: 48rem) {
   :root {
     --career-page-padding: 2rem;
+  }
+
+  .rich-description__content {
+    margin-top: 1rem;
+  }
+
+  .rich-description p {
+    text-align: left;
+  }
+}
+
+@media (max-width: 30rem) {
+  .rich-description p {
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
 }
