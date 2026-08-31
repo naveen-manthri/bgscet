@@ -36,6 +36,13 @@
   gap: var(--gallery-gap);
 }
 
+.ipr-card {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
 .ipr-card img {
   width: 100%;
   display: block;

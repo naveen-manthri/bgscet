@@ -1,7 +1,5 @@
 .contact-enquiry {
-
-    
-  --fs-body: 1.25rem;
+  --fs-body: clamp(1rem, 1.2vw, 1.25rem);
   margin: 3rem 0 0 0;
   background: var(--white);
 }
@@ -14,7 +12,7 @@
 
 .contact-enquiry__description {
   width: 100%;
-  margin: 0rem 0 2rem;
+  margin: 0 0 2rem;
   color: var(--primary);
   font-size: var(--fs-body);
   font-weight: var(--fw-medium);
@@ -23,31 +21,31 @@
 
 .contact-enquiry__contacts {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2rem;
   margin-bottom: 3rem;
 }
 
 .contact-card {
-  padding: 2rem 0;
+  padding: 2rem 1.5rem;
   background: var(--white);
   border: 0.0625rem solid var(--color-border-light);
   border-radius: 1rem;
   transition: var(--transition);
 }
 
-
-
 .contact-card__name {
   color: var(--text);
   font-size: var(--fs-body);
   font-weight: var(--fw-semibold);
+  margin: 0 0 1rem;
 }
 
 .contact-card__designation,
-.contact-card__organization{
+.contact-card__organization {
   color: var(--text);
   font-size: var(--fs-body);
+  margin: 0 0 0.75rem;
 }
 
 .contact-card__link {
@@ -58,12 +56,17 @@
   text-decoration: none;
   font-size: var(--fs-body);
   transition: var(--transition);
+  margin-bottom: 0.75rem;
+  word-break: break-word;
+}
+
+.contact-card__link:last-child {
+  margin-bottom: 0;
 }
 
 .contact-card__link:hover {
   color: var(--divider);
 }
-
 
 .contact-enquiry__form {
   margin-bottom: 5rem;
@@ -90,7 +93,6 @@
 .visit-us__left {
   display: flex;
   flex-direction: column;
-  
 }
 
 .visit-us__left .department-section-heading {
@@ -98,7 +100,7 @@
 }
 
 .visit-us__address {
-  margin: 0 ;
+  margin: 0;
   color: var(--text);
   font-size: var(--fs-body);
   font-weight: var(--fw-medium);
@@ -113,6 +115,7 @@
   text-decoration: none;
   font-size: var(--fs-body);
   font-weight: var(--fw-medium);
+  margin-top: 1rem;
 }
 
 .visit-us__right {
@@ -125,16 +128,15 @@
   border: none;
 }
 
-
 .visit-us__contact:hover {
   color: var(--divider);
 }
 
-
-
-
-
 @media (max-width: 64rem) {
+  .contact-enquiry__container {
+    width: calc(100% - 4rem);
+  }
+
   .contact-enquiry {
     margin: 4rem 0;
   }
@@ -165,21 +167,13 @@
     gap: 2rem;
     margin-top: 2.5rem;
   }
-
-  .visit-us__details {
-    order: 2;
-  }
-
-  .visit-us__map {
-    order: 1;
-  }
-
-  .visit-us__map-frame {
-    height: 24rem;
-  }
 }
 
 @media (max-width: 48rem) {
+  .contact-enquiry__container {
+    width: calc(100% - 2rem);
+  }
+
   .contact-enquiry {
     padding: 3rem 0;
   }
@@ -208,7 +202,8 @@
   .contact-card__organization,
   .contact-card__link,
   .visit-us__address,
-  .visit-us__contact, .contact-card__link .material-symbols-outlined {
+  .visit-us__contact,
+  .contact-card__link .material-symbols-outlined {
     font-size: 0.95rem;
   }
 
@@ -226,11 +221,27 @@
     margin-top: 2rem;
   }
 
-  .visit-us__map {
-    border-radius: 0.75rem;
+  .visit-us__map-frame {
+    height: 20rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .contact-enquiry__container {
+    width: calc(100% - 1rem);
+  }
+
+  .contact-card__link {
+    align-items: flex-start;
+    gap: 0.45rem;
+  }
+
+  .contact-card__link .material-symbols-outlined {
+    font-size: 1.1rem;
+    margin-top: 0.1rem;
   }
 
   .visit-us__map-frame {
-    height: 20rem;
+    height: 18rem;
   }
 }

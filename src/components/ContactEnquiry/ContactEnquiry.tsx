@@ -10,7 +10,7 @@ const ContactEnquiry = () => {
   return (
     <section className="contact-enquiry">
       <div className="contact-enquiry__container">
-        <DepartmentSectionHeading title={data.title} className="department-section-heading--default"/>
+        <DepartmentSectionHeading title={data.title} className="department-section-heading--medium"/>
 
         <p className="contact-enquiry__description">
           {data.description}
@@ -44,7 +44,7 @@ const ContactEnquiry = () => {
 
         <div className="visit-us">
             <div className="visit-us__left">
-                <DepartmentSectionHeading title="Visit Us" /> {data.visit.address.map((line, index) => (  <p key={index} className="visit-us__address">  {line}  </p>  ))} <a href={`tel:${data.visit.contact.replace(/\s/g, "")}`} className="visit-us__contact"> <span className="material-symbols-outlined">call</span>  {data.visit.contact}</a>
+                <DepartmentSectionHeading title="Visit Us" className="department-section-heading--medium" /> {data.visit.address.map((line, index) => (  <p key={index} className="visit-us__address">  {line}  </p>  ))} <a href={`tel:${data.visit.contact.replace(/\s/g, "")}`} className="visit-us__contact"> <span className="material-symbols-outlined">call</span>  {data.visit.contact}</a>
             </div>
 
             <div className="visit-us__right">

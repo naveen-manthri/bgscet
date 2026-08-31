@@ -12,7 +12,7 @@ const PatentTable = () => {
     <div className="patent-page">
       {/* First Table */}
       <section className="table-section">
-        <DepartmentSectionHeading title="List of Patents Granted" />
+        <DepartmentSectionHeading title="List of Patents Granted" className="department-section-heading--medium" />
 
         <div className="table-section__wrapper">
           <table className="table-section__table">
@@ -59,7 +59,7 @@ const PatentTable = () => {
 
       {/* Second Table */}
       <section className="table-section">
-        <DepartmentSectionHeading title="List of Design Patents Granted" />
+        <DepartmentSectionHeading title="List of Design Patents Granted" className="department-section-heading--medium" />
 
         <div className="table-section__wrapper">
           <table className="table-section__table">
