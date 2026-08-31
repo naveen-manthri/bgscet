@@ -104,7 +104,7 @@ export const navItems: NavItem[] = [
               { label: 'CSI Student Branch Membership', path: '/pdfs/CSI/CSI-Student-Branch-Membership-Certificate.pdf' },
             ],
           },
-          { label: 'CII', path: '#' },
+          { label: 'CII', path: '/pdfs/CII/CII-Membership-Certificate.pdf' },
         ],
       },
       { label: 'Industry Institute Cell', path: '/pdfs/quicklinks/Industry-Inst-IT-Cell.pdf' },
