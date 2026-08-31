@@ -17,7 +17,7 @@ import "./NSS.css";
 const NSS = () => {
   return (
     <section className="nss">
-      <DepartmentSectionHeading title={introduction.title} />
+      <DepartmentSectionHeading title={introduction.title} className="department-section-heading--medium"/>
 
       <div className="nss__intro">
         <div className="nss__intro-image">
@@ -30,17 +30,17 @@ const NSS = () => {
       </div>
 
       <div className="nss__section">
-        <DepartmentSectionHeading title={vision.title} />
+        <DepartmentSectionHeading title={vision.title} className="department-section-heading--medium" />
         <p>{vision.description}</p>
       </div>
 
       <div className="nss__section">
-        <DepartmentSectionHeading title={mission.title} />
+        <DepartmentSectionHeading title={mission.title} className="department-section-heading--medium" />
         <p>{mission.description}</p>
       </div>
 
       <div className="nss__section">
-        <DepartmentSectionHeading title={objectives.title} />
+        <DepartmentSectionHeading title={objectives.title} className="department-section-heading--medium" />
         <ul className="nss__list">
           {objectives.points.map((point) => (
             <li key={point}>
@@ -51,37 +51,37 @@ const NSS = () => {
       </div>
 
       <div className="nss__section">
-        <DepartmentSectionHeading title={advisoryCommittee.title} />
+        <DepartmentSectionHeading title={advisoryCommittee.title} className="department-section-heading--medium"/>
         <p>{advisoryCommittee.description}</p>
       </div>
 
       <div className="nss__section">
-        <DepartmentSectionHeading title={frequencyOfMeeting.title} />
+        <DepartmentSectionHeading title={frequencyOfMeeting.title} className="department-section-heading--medium" />
         <p>{frequencyOfMeeting.description}</p>
       </div>
 
       <div className="nss__section">
-        <DepartmentSectionHeading title={limitations.title} />
+        <DepartmentSectionHeading title={limitations.title} className="department-section-heading--medium" />
         <p>{limitations.description}</p>
       </div>
 
       <div className="nss__section">
-        <DepartmentSectionHeading title={motto.title} />
+        <DepartmentSectionHeading title={motto.title} className="department-section-heading--medium" />
         <p>{motto.description}</p>
       </div>
 
       <div className="nss__section">
-        <DepartmentSectionHeading title={symbol.title} />
+        <DepartmentSectionHeading title={symbol.title} className="department-section-heading--medium" />
         <p>{symbol.description}</p>
       </div>
 
       <div className="nss__section">
-        <DepartmentSectionHeading title={nssDay.title} />
+        <DepartmentSectionHeading title={nssDay.title} className="department-section-heading--medium" />
         <p>{nssDay.description}</p>
       </div>
 
       <div className="nss__section">
-        <DepartmentSectionHeading title={nssSong.title} />
+        <DepartmentSectionHeading title={nssSong.title} className="department-section-heading--medium" />
         <p>{nssSong.description}</p>
       </div>
     </section>

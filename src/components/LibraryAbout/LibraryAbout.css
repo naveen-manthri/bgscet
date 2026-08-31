@@ -1,7 +1,7 @@
 .library-about {
 
     --color-red :#e3473a;
-  padding: 5rem 0;
+  padding: 3rem 0;
   background: var(--white);
 }
 
@@ -12,9 +12,9 @@
   font-size: 1.25rem;
 }
 
-.library-about__content {
+/* .library-about__content {
   margin-top: 2rem;
-}
+} */
 
 .library-about__heading {
   margin-bottom: 0.5rem;

@@ -11,7 +11,7 @@ const LibraryAbout = () => {
     <section className="library-about">
       <div className="library-about__container">
 
-        <DepartmentSectionHeading title={data.title} />
+        <DepartmentSectionHeading title={data.title} className="department-section-heading--medium"/>
 
         <div className="library-about__content">
 
