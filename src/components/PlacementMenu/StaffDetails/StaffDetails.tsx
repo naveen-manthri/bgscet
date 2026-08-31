@@ -6,7 +6,7 @@ interface StaffDetailsProps {
 }
 
 function StaffDetails({ data }: StaffDetailsProps) {
-  return <Table title={data.title} table={data.table} />;
+  return <Table title={data.title} table={data.table} className="department-section-heading--medium" />;
 }
 
 export default StaffDetails;
