@@ -11,7 +11,7 @@ const AboutLibrarian = () => {
     <section className="about-librarian">
       <div className="about-librarian__container">
 
-        <DepartmentSectionHeading title={data.title} className="department-section-heading--default"/>
+        <DepartmentSectionHeading title={data.title} className="department-section-heading--medium"/>
 
         <div className="about-librarian__content">
 

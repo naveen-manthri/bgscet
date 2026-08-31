@@ -83,8 +83,8 @@ export const navItems: NavItem[] = [
         label: 'BGSCET Clubs',
         path: '/quick-links/bgscet-clubs',
         children: [
-          { label: 'Youth Red Cross Club', path: '/pdfs/committees/YRC-Club.pdf' },
-          { label: 'Green Campus', path: '#' },
+          { label: 'Youth Red Cross Club', path: '/quick-links/yrc-club' },
+          { label: 'Green Campus', path: '/pdfs/greencampus/Green-Campus-initiative.pdf' },
           { label: 'Initiatives Club', path: '#' },
           { label: 'NDLI Club', path: '/quick-links/ndli-club' },
           { label: 'Photography Club', path: '#' },
@@ -95,8 +95,15 @@ export const navItems: NavItem[] = [
         label: 'Professional Bodies',
         path: '/quick-links/professional-bodies',
         children: [
-          { label: 'IEEE', path: '#' },
-          { label: 'CSI', path: '#' },
+          { label: 'IEEE', path: '/images/IEEE/IEEE.jpeg' },
+          {
+            label: 'CSI',
+            path: '#',
+            children: [
+              { label: 'CSI Institution Membership', path: '/pdfs/CSI/CSI-Institution-Membership-Certificate.pdf' },
+              { label: 'CSI Student Branch Membership', path: '/pdfs/CSI/CSI-Student-Branch-Membership-Certificate.pdf' },
+            ],
+          },
           { label: 'CII', path: '#' },
         ],
       },

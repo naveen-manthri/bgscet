@@ -9,7 +9,7 @@ interface MessTimingsProps {
 const MessTimings = ({ data }: MessTimingsProps) => {
   return (
     <section className="mess-timings hostel-page">
-      <DepartmentSectionHeading title={data.title} />
+      <DepartmentSectionHeading title={data.title} className="department-section-heading--medium" />
 
       <div className="mess-timings__wrapper">
         <table className="mess-timings__table">

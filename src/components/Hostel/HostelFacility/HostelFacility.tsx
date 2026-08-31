@@ -9,7 +9,7 @@ interface HostelFacilityProps {
 const HostelFacility = ({ data }: HostelFacilityProps) => {
   return (
     <section className="hostel-facility hostel-page">
-      <DepartmentSectionHeading title={data.title} />
+      <DepartmentSectionHeading title={data.title} className="department-section-heading--medium" />
 
       <div className="hostel-facility__content">
         <ul className="hostel-facility__intro-list">

@@ -9,7 +9,7 @@ interface BulletSectionProps {
 const BulletSection = ({ data }: BulletSectionProps) => {
   return (
     <section className="bullet-section hostel-page">
-      <DepartmentSectionHeading title={data.title} />
+      <DepartmentSectionHeading title={data.title} className="department-section-heading--medium" />
 
       <ul className="bullet-section__list">
         {data.points.map((point, index) => <li key={index} className="bullet-section__item">{point}</li>)}

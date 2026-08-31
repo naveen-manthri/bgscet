@@ -6,6 +6,7 @@
   padding-inline: 4rem;
   background-color: var(--home-about-mutt-background);
 }
+
 .home-about-mutt__content {
   display: flex;
   flex-direction: column;
@@ -14,6 +15,7 @@
 }
 
 .home-about-mutt__content p {
+  margin: 0;
   color: var(--text);
   font-size: 1.5rem;
   line-height: 1.75;
@@ -25,6 +27,7 @@
   font-size: var(--section-title);
   font-weight: 800;
 }
+
 .home-about-mutt__image {
   display: block;
   width: min(100%, 34rem);
@@ -32,4 +35,50 @@
   border-radius: 2rem;
   clip-path: inset(0 round 2rem);
   background-color: var(--home-about-mutt-background);
+}
+
+@media (max-width: 64rem) {
+  .home-about-mutt {
+    gap: 2.5rem;
+    padding: 3rem 2rem;
+  }
+
+  .home-about-mutt__content p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+  }
+
+  .home-about-mutt__image {
+    width: min(100%, 28rem);
+  }
+}
+
+@media (max-width: 48rem) {
+  .home-about-mutt {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2.5rem 1.25rem;
+  }
+
+  .home-about-mutt__content {
+    order: 1;
+  }
+
+  .home-about-mutt__content p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    text-align: left;
+  }
+
+  .home-about-mutt__image {
+    order: 2;
+    width: 100%;
+    max-width: 30rem;
+    border-radius: 1.25rem;
+    clip-path: inset(0 round 1.25rem);
+  }
+
+  .home-section-title {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
 }

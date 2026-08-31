@@ -5,6 +5,7 @@
   padding-inline: 4rem;
   background-color: #F6F7FA;
 }
+
 .home-vision-mission__content {
   display: flex;
   flex-direction: column;
@@ -13,6 +14,7 @@
 }
 
 .home-vision-mission__content p {
+  margin: 0;
   font-size: 1.5rem;
   line-height: 1.75;
   text-align: justify;
@@ -22,7 +24,52 @@
   font-size: var(--section-title);
   font-weight: 800;
 }
+
 .home-vision-mission__image {
   width: min(100%, 34rem);
   margin: 0 auto;
+}
+
+@media (max-width: 64rem) {
+  .home-vision-mission {
+    gap: 2.5rem;
+    padding: 3rem 2rem;
+  }
+
+  .home-vision-mission__content p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+  }
+
+  .home-vision-mission__image {
+    width: min(100%, 28rem);
+  }
+}
+
+@media (max-width: 48rem) {
+  .home-vision-mission {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2.5rem 1.25rem;
+  }
+
+  .home-vision-mission__content {
+    order: 1;
+  }
+
+  .home-vision-mission__content p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    text-align: left;
+  }
+
+  .home-vision-mission__image {
+    order: 2;
+    width: 100%;
+    max-width: 30rem;
+  }
+
+  .home-section-title {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
 }

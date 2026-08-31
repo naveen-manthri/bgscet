@@ -82,21 +82,34 @@
 .programs-grid {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  gap: 3rem;
+  gap: 1.5rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 0.75rem;
+  scroll-behavior: smooth;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
 }
+
+.programs-grid::-webkit-scrollbar {
+  height: 0.5rem;
+}
+
+.programs-grid::-webkit-scrollbar-thumb {
+  background: rgba(125, 39, 32, 0.45);
+  border-radius: 999rem;
+}
+
 .program-card {
   display: flex;
+  flex: 0 0 min(22.5rem, 80vw);
   flex-direction: column;
-
+  min-width: 18rem;
   background: var(--academic-white);
-
   border: 0.125rem solid #cbcbcb;
-
   border-radius: var(--academic-radius);
-
   overflow: hidden;
-
+  scroll-snap-align: start;
   transition: transform var(--academic-transition);
 }
 
@@ -242,24 +255,16 @@
 
 
 @media (max-width: 87.5rem) {
-
   .home-academic .container {
     max-width: 72rem;
-  }
-
-  .programs-grid {
-    gap: 1.25rem;
   }
 
   .program-image {
     height: 11.5rem;
   }
-
 }
 
-
 @media (max-width: 75rem) {
-
   .home-academic {
     padding: 4.5rem 1.5rem;
   }
@@ -272,12 +277,8 @@
     width: 15rem;
   }
 
-  .programs-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.25rem;
-  }
-
   .program-card {
+    flex-basis: min(22rem, 40vw);
     min-height: 24rem;
   }
 
@@ -292,5 +293,66 @@
   .program-description {
     font-size: 0.9rem;
   }
+}
 
+@media (max-width: 48rem) {
+  .home-academic {
+    padding: 3rem 1.1rem;
+    gap: 2rem;
+  }
+
+  .home-academic .container {
+    gap: 2rem;
+  }
+
+  .academic-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .academic-title {
+    font-size: clamp(1.7rem, 7vw, 2.5rem);
+  }
+
+  .academic-title-divider {
+    width: 12rem;
+  }
+
+  .programs-grid {
+    gap: 1rem;
+  }
+
+  .program-card {
+    flex-basis: min(18rem, 78vw);
+    min-height: auto;
+  }
+
+  .program-content {
+    padding: 1rem;
+  }
+
+  .program-description {
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 30rem) {
+  .home-academic {
+    padding: 2.5rem 0.9rem;
+  }
+
+  .academic-subtitle {
+    font-size: 1rem;
+  }
+
+  .program-card {
+    flex-basis: 86vw;
+  }
+
+  .program-duration {
+    font-size: 0.8rem;
+  }
+
+  .program-read-more {
+    font-size: 0.9rem;
+  }
 }
