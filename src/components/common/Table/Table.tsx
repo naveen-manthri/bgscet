@@ -5,12 +5,13 @@ import "./Table.css";
 interface TableProps {
   title: string;
   table: HostelTable;
+  className?: string;
 }
 
-const Table = ({ title, table }: TableProps) => {
+const Table = ({ title, table, className = "department-section-heading--default" }: TableProps) => {
   return (
     <section className="table-section">
-      <DepartmentSectionHeading title={title} className="department-section-heading--default" />
+      <DepartmentSectionHeading title={title} className={className} />
 
       <div className="table-section__wrapper">
         <table className="table-section__table">

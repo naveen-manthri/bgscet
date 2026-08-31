@@ -13,7 +13,7 @@ export default function AcademicHeading({
 }: AcademicHeadingProps) {
   return (
     <div className={`academic-section-heading ${className}`.trim()}>
-      <h2>
+      <h2 className="academic-section-heading__title">
         <span className="academic-section-heading__black">{blackTitle}</span>
         {redTitle && (
           <span className="academic-section-heading__red">{redTitle}</span>

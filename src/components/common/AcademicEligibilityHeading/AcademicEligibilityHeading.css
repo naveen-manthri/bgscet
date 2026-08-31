@@ -35,52 +35,49 @@
 
 
 .academic-section-heading {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: block;
   margin-bottom: var(--academic-content-gap);
 }
 
-.academic-section-heading h2 {
+.academic-section-heading__title {
+  position: relative;
+  display: inline-block;
   margin: 0;
+  padding-bottom: 0.8rem;
   font-family: var(--font-main);
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 800;
   line-height: 1.25;
 }
 
-.academic-section-heading__black {
-  color: var(--academic-heading-black);
+.academic-section-heading__title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0.18rem;
+  background: var(--academic-heading-underline);
+  border-radius: 999px;
 }
 
 .academic-section-heading__black,
 .academic-section-heading__red {
   display: block;
+  white-space: pre-line;
+}
+
+.academic-section-heading__black {
+  color: var(--academic-heading-black);
 }
 
 .academic-section-heading__red {
-  position: relative;
-  display: inline-block;
   margin-top: 0.15rem;
   color: var(--academic-heading-red);
-}
-
-.academic-section-heading__red::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -0.8rem;
-  width: 100%;
-  height: 0.18rem;
-  background: var(--academic-heading-underline);
 }
 
 @media (max-width: 48rem) {
   .academic-section-heading {
     margin-bottom: 1.5rem;
-  }
-
-  .academic-section-heading__red::after {
-    bottom: -0.55rem;
   }
 }

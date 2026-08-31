@@ -12,7 +12,7 @@ const LetterSections = ({ data }: LetterSectionsProps) => {
       {data.sections.map((section) => (
         <div key={section.heading} className="letter-section">
           <div className="letter-section-title">
-            <DepartmentSectionHeading title={section.heading} />
+            <DepartmentSectionHeading title={section.heading} className="department-section-heading--medium"/>
           </div>
 
           {section.items ? (
