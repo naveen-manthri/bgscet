@@ -1,18 +1,18 @@
 .scstcell-page {
-  padding: 2rem 4.5rem 3rem;
+  padding: 3rem 4rem 3rem;
   background: #ffffff;
 }
 
-.scstcell-page .department-section-heading {
+/* .scstcell-page .department-section-heading {
   margin: 3rem 4rem 2.5rem;
-}
+} */
 
 .scstcell-page__list {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   width: min(100%, 960px);
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .scstcell-page__row {
@@ -23,7 +23,7 @@
 }
 
 .scstcell-page__label {
-  font-size: clamp(1.75rem, 2vw, 2.6rem);
+  font-size: clamp(1.75rem, 2vw, 2.25rem);
   line-height: 1.3;
   font-weight: 700;
   color: #000000;

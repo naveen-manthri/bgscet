@@ -7,11 +7,11 @@ import './SCSTCellPage.css';
 const scStCellItems = [
   {
     label: 'Policy Document',
-    href: '#',
+    href: '/pdfs/sc-st-cell/SC_ST_-OBC-Cell-1.pdf',
   },
   {
     label: 'Link To Complaint Form',
-    href: '#',
+    href: 'https://docs.google.com/forms/d/e/1FAIpQLSfcIWagAKWIhZf9BgsVC_pW2kTx7VQueKmyk9ngVcswO7m_LA/viewform',
   },
 ];
 

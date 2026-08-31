@@ -14,12 +14,12 @@ const GrievanceRedressalCell = () => {
       />
 
       <BulletSection
-        data={grievanceRedressalData.process}
+        data={grievanceRedressalData.objectives}
         className="department-section-heading--medium"
       />
 
       <BulletSection
-        data={grievanceRedressalData.process}
+        data={grievanceRedressalData.procedure}
         className="department-section-heading--medium"
       />
 

@@ -105,9 +105,9 @@ export const navItems: NavItem[] = [
         children: [
           { label: 'SC-ST Cell', path: '/student-club-cell/sc-st-cell' },
           { label: 'Grievance Redressal Cell', path: '/student-club-cell/grievance-redressal-cell' },
-          { label: 'Internal Complaints Committee', path: '/student-club-cell/internal-complaints-committee' },
+          { label: 'Internal Complaint Committee', path: '/pdfs/studentclubs/CICC_BGSCET.pdf' },
           { label: 'Anti Ragging Committee', path: '/student-club-cell/anti-ragging-committee' },
-          { label: 'Counselling & Mentoring', path: '/student-club-cell/counselling-mentoring' },
+          { label: 'Mentor & Counselling', path: '/pdfs/studentclubs/mentour.pdf' },
         ],
       },
       {
