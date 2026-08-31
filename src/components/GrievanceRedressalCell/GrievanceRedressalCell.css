@@ -1,0 +1,67 @@
+.grievance-redressal-cell {
+  padding: 2rem 4.5rem 3rem;
+  background: #ffffff;
+}
+
+.grievance-redressal-cell .title-description {
+  margin: 3rem 4rem 2.5rem;
+}
+
+.grievance-redressal-cell .bullet-section {
+  margin: 0 4rem 2.5rem;
+}
+
+.grievance-redressal-cell .title-description p,
+.grievance-redressal-cell .bullet-section__item {
+  color: #000000;
+  font-size: 1.25rem;
+  line-height: 1.8;
+}
+
+.grievance-redressal-cell__button-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+.grievance-redressal-cell__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(100%, 220px);
+  min-height: 70px;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-white);
+  background: var(--btn-primary);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color .3s ease, transform .2s ease;
+  box-shadow: none;
+}
+
+.grievance-redressal-cell__button:hover {
+  background: var(--btn-primary-hover);
+  color: var(--color-white);
+  transform: translateY(-2px);
+}
+
+.grievance-redressal-cell__button:active {
+  background: var(--btn-secondary);
+}
+
+@media (max-width: 768px) {
+  .grievance-redressal-cell {
+    padding: 1.5rem 1rem 2.5rem;
+  }
+
+  .grievance-redressal-cell__button-row {
+    justify-content: stretch;
+  }
+
+  .grievance-redressal-cell__button {
+    width: 100%;
+  }
+}
