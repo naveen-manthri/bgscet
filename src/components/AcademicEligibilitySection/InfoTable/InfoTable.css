@@ -1,27 +1,37 @@
 .academic-info-table {
-  --color-table-header:#f3f3f3;
+  --color-table-header: #f3f3f3;
   width: 100%;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .academic-info-table table {
   width: 100%;
+  min-width: 480px;
   border-collapse: collapse;
   background: var(--background);
 }
 
+.academic-info-table caption {
+  margin-bottom: 0.75rem;
+  text-align: left;
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  font-weight: 700;
+  color: var(--academic-heading-black);
+}
+
 .academic-info-table th,
 .academic-info-table td {
-  padding: 0.7rem;
+  padding: clamp(0.5rem, 1vw, 0.8rem);
   border: 0.0625rem solid var(--academic-table-border);
-  font-size: 1.25rem;
-  line-height: 1.4;
+  font-size: clamp(0.9rem, 1.5vw, 1.25rem);
+  line-height: 1.5;
   text-align: left;
   vertical-align: middle;
+  word-break: break-word;
 }
 
 .academic-info-table th {
-  padding: 0.7rem;
   font-weight: 700;
   color: var(--academic-heading-black);
   background: var(--color-table-header);
@@ -29,4 +39,25 @@
 
 .academic-info-table td {
   color: var(--text);
+}
+
+@media (max-width: 64rem) {
+  .academic-info-table table {
+    min-width: 420px;
+  }
+}
+
+@media (max-width: 48rem) {
+  .academic-info-table {
+    overflow-x: auto;
+  }
+
+  .academic-info-table table {
+    min-width: 360px;
+  }
+
+  .academic-info-table th,
+  .academic-info-table td {
+    padding: 0.55rem 0.45rem;
+  }
 }

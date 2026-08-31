@@ -6,26 +6,27 @@
 
 .academic-eligibility__wrapper {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 3rem;
+  grid-template-columns: minmax(0, 2fr) minmax(230px, 1fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
   align-items: stretch;
 }
 
 .academic-eligibility__body {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .academic-eligibility__content {
   color: var(--text);
-  font-size: 1.375rem;
+  font-size: clamp(1rem, 1.5vw, 1.375rem);
   line-height: 1.8;
 }
 
 .academic-eligibility__content p {
   margin: 0 0 1.5rem;
   text-align: justify;
-  font-size: 1.375rem;
+  font-size: clamp(1rem, 1.5vw, 1.375rem);
 }
 
 .academic-eligibility__content strong {
@@ -48,7 +49,7 @@
 
 .academic-eligibility__block h3 {
   margin: 0;
-  font-size: 1.9rem;
+  font-size: clamp(1.4rem, 2.2vw, 1.9rem);
   font-weight: 700;
   color: var(--academic-sub-heading-black);
 }
@@ -56,9 +57,9 @@
 .academic-eligibility__documents {
   margin-top: 0;
 }
+
 .academic-eligibility__documents h3 {
   margin: 0rem;
-  /* 4C4949 */
   font-size: 1.3rem;
   font-weight: 700;
   color: var(--academic-heading-black);
@@ -70,16 +71,18 @@
 }
 
 .academic-eligibility__documents li {
-  
   line-height: 1.7;
 }
-.academic-eligibility__documents a{
+
+.academic-eligibility__documents a {
   color: inherit;
 }
+
 .academic-eligibility__images {
   display: grid;
   grid-template-rows: 1fr 2fr;
   min-height: 0;
+  gap: 1rem;
 }
 
 .academic-eligibility__images figure {
@@ -95,19 +98,63 @@
   object-fit: cover;
   box-shadow: var(--shadow-soft);
 }
+
 .academic-eligibility__block p {
   margin-bottom: 0;
 }
+
 .academic-eligibility__block a {
   color: var(--text);
   text-decoration: underline;
-  text-underline-offset: .15rem;
-  
+  text-underline-offset: 0.15rem;
 }
+
 .academic-eligibility__block--comedk {
   margin-bottom: 0;
 }
 
-/* .academic-eligibility__documents-label {
-  font-weight: 700;
-} */
+@media (max-width: 64rem) {
+  .academic-eligibility__wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .academic-eligibility__images {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: none;
+    gap: 1rem;
+  }
+
+  .academic-eligibility__images img {
+    height: 100%;
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 48rem) {
+  .academic-eligibility__content p {
+    margin-bottom: 1rem;
+    text-align: left;
+    line-height: 1.7;
+  }
+
+  .academic-eligibility__list {
+    margin-left: 1.1rem;
+  }
+
+  .academic-eligibility__images {
+    grid-template-columns: 1fr;
+  }
+
+  .academic-eligibility__images img {
+    min-height: 260px;
+  }
+
+  .academic-eligibility__block {
+    margin-bottom: 1.5rem;
+  }
+
+  .academic-eligibility__documents ol {
+    padding-left: 1.15rem;
+  }
+}

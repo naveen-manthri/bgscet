@@ -1,23 +1,23 @@
 .about-librarian {
-  --red-clr:#e3473a;
-  padding: 5rem 0 0 0;
+  --red-clr: #e3473a;
+  padding: clamp(3rem, 5vw, 5rem) 0 0;
   background: var(--white);
 }
 
 .about-librarian__container {
-  width: 100%;
+  width: min(100%, 1200px);
   margin: 0 auto;
-  padding: 0 4rem;
+  padding: 0 clamp(1.25rem, 3vw, 4rem);
 }
 
-/* .about-librarian__content {
-  margin-top: 2rem;
-} */
+.about-librarian__content {
+  margin-top: 1.75rem;
+}
 
 .about-librarian__paragraph {
   margin-bottom: 1rem;
   color: var(--text);
-  font-size: 1.25rem;
+  font-size: clamp(0.95rem, 1.5vw, 1.25rem);
   line-height: 1.8;
   text-align: justify;
 }
@@ -25,19 +25,19 @@
 .about-librarian__member-title {
   margin: 2rem 0 1rem;
   color: var(--title);
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 1.7vw, 1.25rem);
   font-weight: var(--fw-semibold);
 }
 
 .about-librarian__member-list {
   margin: 0;
-  /* padding-left: 1.5rem; */
+  padding-left: 1.25rem;
 }
 
 .about-librarian__member-item {
   margin-bottom: 0.5rem;
   color: var(--text);
-  font-size: 1.25rem;
+  font-size: clamp(0.95rem, 1.5vw, 1.25rem);
   line-height: 1.8;
 }
 
@@ -47,16 +47,17 @@
 }
 
 .about-librarian__staff {
-  display: flex;
-  justify-content: flex-start;
-  gap: 2rem;
-  margin-top: 3rem;
-  margin-left: 2rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: clamp(1.25rem, 2vw, 2rem);
+  margin-top: clamp(2rem, 4vw, 3rem);
+  align-items: stretch;
 }
 
 .about-librarian__card {
-  width: 17rem;
+  width: 100%;
+  max-width: 17rem;
+  justify-self: center;
   overflow: hidden;
   background: var(--white);
 }
@@ -72,7 +73,7 @@
   padding: 1rem 0.8rem;
   background: var(--red-clr);
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .about-librarian__name {
@@ -92,41 +93,39 @@
 
 @media (max-width: 64rem) {
   .about-librarian {
-    padding: 4rem 0;
+    padding-top: 4rem;
   }
 
   .about-librarian__staff {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
+  }
+
+  .about-librarian__card {
+    max-width: 18rem;
   }
 }
 
 @media (max-width: 48rem) {
   .about-librarian {
-    padding: 3rem 0;
+    padding-top: 3rem;
   }
 
   .about-librarian__content {
-    margin-top: 1.5rem;
-  }
-
-  .about-librarian__container {
-    padding: 0 1.25rem;
-  }
-
-  .about-librarian__paragraph,
-  .about-librarian__member-item,
-  .about-librarian__member-title {
-    font-size: 0.95rem;
-    line-height: 1.7;
+    margin-top: 1.25rem;
   }
 
   .about-librarian__staff {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
     gap: 2rem;
   }
 
   .about-librarian__card {
-    width: min(100%, 18rem);
+    max-width: 20rem;
+    width: min(100%, 20rem);
+  }
+
+  .about-librarian__card-content {
+    margin-top: 1rem;
   }
 }

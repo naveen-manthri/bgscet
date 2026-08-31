@@ -1,12 +1,11 @@
 :root {
-  --ercica-page-padding: 4rem;
-  --ercica-section-gap: 3.5rem;
-  --ercica-paragraph-gap: 1.5rem;
-
+  --ercica-page-padding: clamp(1rem, 3vw, 4rem);
+  --ercica-section-gap: clamp(2rem, 4vw, 3.5rem);
+  --ercica-paragraph-gap: clamp(1rem, 1.8vw, 1.5rem);
   --ercica-text-color: #4c4949;
   --ercica-line-height: 1.8;
-  --ercica-font-size: 1.25rem;
-  --ercica-margin-top:3rem;
+  --ercica-font-size: clamp(0.96rem, 1.5vw, 1.25rem);
+  --ercica-margin-top: clamp(1.5rem, 3vw, 3rem);
 }
 
 .ercica {
@@ -23,8 +22,6 @@
 }
 
 .ercica__content {
-  /* margin-top: 2rem; */
-
   display: flex;
   flex-direction: column;
   gap: var(--ercica-paragraph-gap);
@@ -32,9 +29,19 @@
 
 .ercica__content p {
   margin: 0;
-
   font-size: var(--ercica-font-size);
   line-height: var(--ercica-line-height);
   color: var(--ercica-text-color);
   text-align: justify;
+}
+
+@media (max-width: 48rem) {
+  .ercica__content p {
+    text-align: left;
+    line-height: 1.7;
+  }
+
+  .ercica__section:not(:last-child) {
+    margin-bottom: 2rem;
+  }
 }
