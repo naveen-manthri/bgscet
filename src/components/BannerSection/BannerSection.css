@@ -7,8 +7,10 @@
 }
 
 .banner-section {
-  width: 100%;
   position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
 }
 
 .banner-wrapper {
@@ -19,8 +21,12 @@
 }
 
 .banner-image {
+  display: block;
   width: 100%;
-  height: calc(100vh - 6.25rem);
+  height: clamp(18rem, 44vw, 38rem);
+  min-height: 18rem;
+  object-fit: cover;
+  object-position: center;
 }
 
 .banner-overlay {
@@ -37,21 +43,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 2rem;
+  padding: 0 clamp(1rem, 3vw, 2rem);
   color: var(--white);
-  font-size: 4rem;
+  font-size: clamp(1.8rem, 2.5vw + 1rem, 4rem);
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
+  text-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.35);
 }
 
 .banner-whatsapp {
   position: absolute;
-  right: 1.5rem;
-  bottom: 1.5rem;
+  right: clamp(0.75rem, 1.3vw, 1.5rem);
+  bottom: clamp(0.75rem, 1.3vw, 1.5rem);
   z-index: 3;
-  width: 5.5rem;
-  height: 5.5rem;
+  width: clamp(3.25rem, 6vw, 5.5rem);
+  height: clamp(3.25rem, 6vw, 5.5rem);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,87 +77,55 @@
   display: block;
   object-fit: contain;
 }
-/* 
+
 @media (max-width: 64rem) {
-  .banner-wrapper {
-    height: 20rem;
+  .banner-image {
+    height: clamp(16rem, 28vw, 26rem);
   }
 
   .banner-title {
-    font-size: 2.5rem;
-  }
-
-  .banner-whatsapp {
-    width: 3rem;
-    height: 3rem;
-    right: 1.25rem;
-    bottom: 1.25rem;
+    font-size: clamp(1.6rem, 2vw + 1rem, 2.8rem);
   }
 }
 
 @media (max-width: 48rem) {
   .banner-section {
-    padding: 1.5rem 1rem;
+    min-height: auto;
   }
 
-  .banner-wrapper {
-    height: 14rem;
-    border-radius: 0.75rem;
-  }
-
-  .banner-title {
-    padding: 0 1rem;
-    font-size: 1.8rem;
-  }
-
-  .banner-whatsapp {
-    width: 2.6rem;
-    height: 2.6rem;
-    right: 0.8rem;
-    bottom: 0.8rem;
-  }
-}
-
-@media (max-width: 30rem) {
-  .banner-wrapper {
-    height: 12rem;
-  }
-
-  .banner-title {
-    font-size: 1.5rem;
-  }
-
-  .banner-whatsapp {
-    width: 2.3rem;
-    height: 2.3rem;
-    right: 0.6rem;
-    bottom: 0.6rem;
-  }
-} */
-
-
-@media (max-width: 48rem) {
   .banner-image {
-    height: auto;
+    height: clamp(13rem, 45vw, 22rem);
     aspect-ratio: 16 / 9;
-    object-fit: cover;
     object-position: center;
   }
 
   .banner-title {
     padding: 0 1rem;
-    font-size: 1.8rem;
+    font-size: clamp(1.45rem, 3vw + 0.8rem, 2.2rem);
+  }
+
+  .banner-whatsapp {
+    width: 3rem;
+    height: 3rem;
+    right: 0.75rem;
+    bottom: 0.75rem;
   }
 }
 
 @media (max-width: 30rem) {
   .banner-image {
-    height: auto;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
+    height: 12rem;
   }
 
   .banner-title {
-    font-size: 1.5rem;
+    font-size: 1.45rem;
+    line-height: 1.35;
+  }
+
+  .banner-whatsapp {
+    width: 2.6rem;
+    height: 2.6rem;
+    right: 0.6rem;
+    bottom: 0.6rem;
   }
 }
