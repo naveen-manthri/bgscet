@@ -96,7 +96,8 @@ We are confident that our students will emerge as assets not only to the institu
 export const aboutDepartment: AboutDepartment = {
   title: "About ISE",
 
-  description: `The department of ISE is established during the academic year 2022-23 with an intake of 60.`
+  description: `The department of ISE is established during the academic year 2022-23 with an intake of 60.
+  ISE graduates will be able to design, development and implement the software applications for real-world problems by using latest modern IT tools and technologies to meet the industry requirements. There is not much difference between Computer science & Information Science.`
 };
 
 
