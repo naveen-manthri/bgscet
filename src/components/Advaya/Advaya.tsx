@@ -7,7 +7,7 @@ function Advaya() {
     <section className="advaya" aria-labelledby="advaya-title">
       <div className="advaya__container">
         <div id="advaya-title">
-          <DepartmentSectionHeading title="Advaya 2.0-2k26" className='department-section-heading--medium' />
+          <DepartmentSectionHeading title="Advaya 2.0-2k26" />
         </div>
         <ol className="advaya__files">
           {advayaFilesData.map((file) => (

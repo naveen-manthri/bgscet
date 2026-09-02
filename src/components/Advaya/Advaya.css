@@ -9,10 +9,12 @@
 }
 
 .advaya__container {
-  width: min(100%, 75rem);
-  margin: 0 auto;
   padding: 3rem var(--advaya-page-padding) 0;
 }
+
+/* .advaya .department-section-heading {
+  margin-bottom: 2rem;
+} */
 
 .advaya__files {
   margin: 0;
@@ -27,8 +29,6 @@
   color: var(--btn-primary);
   text-decoration: none;
   transition: color 0.3s ease;
-  font-size: clamp(1rem, 1.15vw, 1.25rem);
-  line-height: 1.7;
 }
 
 .advaya__file:hover {
@@ -41,37 +41,9 @@
   outline-offset: 0.18rem;
 }
 
-@media (max-width: 64rem) {
-  .advaya__container {
-    padding: 2.5rem 2rem 0;
-  }
-}
-
 @media (max-width: 48rem) {
   .advaya__container {
-    padding: 2rem 1.25rem 0;
+    padding: 0 1.5rem;
   }
 
-  .advaya__files {
-    padding-left: 1.25rem;
-  }
-
-  .advaya__file {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-}
-
-@media (max-width: 30rem) {
-  .advaya__container {
-    padding: 1.5rem 0.9rem 0;
-  }
-
-  .advaya__files {
-    padding-left: 1rem;
-  }
-
-  .advaya__file {
-    font-size: 0.95rem;
-  }
 }

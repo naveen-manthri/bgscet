@@ -6,7 +6,7 @@ function Icwite2025Page() {
   return (
     <>
       <section className="icwite-2025" aria-labelledby="icwite-2025-title">
-        <DepartmentSectionHeading title="Welcome to ICWITE 2025" className="department-section-heading--medium"/>
+        <DepartmentSectionHeading title="Welcome to ICWITE 2025" className="department-section-heading--default"/>
         <a
           id="icwite-2025-title"
           className="icwite-2025__link"
