@@ -139,6 +139,8 @@ function MainNavbar() {
                   <ul className={`main-navbar__dropdown${openDropdown === item.label ? ' is-open' : ''}`}>
                     {item.children?.map((child) => {
                       const isPdf = child.path.toLowerCase().endsWith('.pdf');
+                      const isImage = /\.(png|jpe?g|webp|svg)$/i.test(child.path);
+                      const isExternal = /^https?:\/\//.test(child.path);
                       const hasSubmenu = Boolean(child.children?.length);
 
                       return (
@@ -165,7 +167,7 @@ function MainNavbar() {
                             >
                               {child.label}<span aria-hidden="true">›</span>
                             </span>
-                          ) : isPdf ? (
+                          ) : isPdf || isImage || isExternal ? (
                             <a className="main-navbar__dropdown-link" href={child.path} target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
                               {child.label}
                             </a>
@@ -178,20 +180,21 @@ function MainNavbar() {
                             <ul className={`main-navbar__dropdown main-navbar__dropdown--nested${openSubmenu === child.label ? ' is-open' : ''}`}>
                               {child.children?.map((subChild) => {
                                 const isPdf = subChild.path.toLowerCase().endsWith('.pdf');
+                                const isImage = /\.(png|jpe?g|webp|svg)$/i.test(subChild.path);
                                 const isExternal = /^https?:\/\//.test(subChild.path);
                                 const isPlaceholder = subChild.path === '#';
 
                                 if (isPlaceholder) {
                                   return (
                                     <li key={subChild.label}>
-                                      <span className="main-navbar__dropdown-link main-navbar__dropdown-link--disabled" aria-disabled="true" style={{ opacity: 0.7, cursor: 'not-allowed' }}>
+                                      <span className="main-navbar__dropdown-link main-navbar__dropdown-link--disabled" aria-disabled="true">
                                         {subChild.label}
                                       </span>
                                     </li>
                                   );
                                 }
 
-                                if (isPdf || isExternal) {
+                                if (isPdf || isImage || isExternal) {
                                   return (
                                     <li key={subChild.label}>
                                       <a

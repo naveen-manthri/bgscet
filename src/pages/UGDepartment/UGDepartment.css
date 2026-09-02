@@ -31,8 +31,8 @@
 }
 
 .ug-department__single-page > .statistics {
-  width: 100vw;
-  margin-inline: calc(50% - 50vw);
+  width: 100%;
+  margin-inline: 0;
 }
 
 @media (max-width: 48rem) {

@@ -83,9 +83,9 @@ export const navItems: NavItem[] = [
         label: 'BGSCET Clubs',
         path: '/quick-links/bgscet-clubs',
         children: [
-          { label: 'Youth Red Cross Club', path: '/pdfs/committees/YRC-Club.pdf' },
-          { label: 'Green Campus', path: '#' },
-          { label: 'Initiatives Club', path: '#' },
+          { label: 'Youth Red Cross Club', path: '/quick-links/yrc-club' },
+          { label: 'Green Campus Initiatives Club', path: '/pdfs/greencampus/Green-Campus-initiative.pdf' },
+          // { label: '', path: '#' },
           { label: 'NDLI Club', path: '/quick-links/ndli-club' },
           { label: 'Photography Club', path: '#' },
           { label: 'Coding Club', path: '#' },
@@ -95,9 +95,16 @@ export const navItems: NavItem[] = [
         label: 'Professional Bodies',
         path: '/quick-links/professional-bodies',
         children: [
-          { label: 'IEEE', path: '#' },
-          { label: 'CSI', path: '#' },
-          { label: 'CII', path: '#' },
+          { label: 'IEEE', path: '/images/IEEE/IEEE.jpeg' },
+          {
+            label: 'CSI',
+            path: '',
+            children: [
+              { label: 'CSI Student Membership', path: '/pdfs/CSI/CSI-Student-Branch-Membership-Certificate.pdf' },
+              { label: 'CSI Institution Member', path: '/pdfs/CSI/CSI-Institution-Membership-Certificate.pdf' },
+            ],
+          },
+          { label: 'CII', path: '/pdfs/CII/CII-Membership-Certificate.pdf' },
         ],
       },
       { label: 'Industry Institute Cell', path: '/pdfs/quicklinks/Industry-Inst-IT-Cell.pdf' },
