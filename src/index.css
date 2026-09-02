@@ -628,6 +628,21 @@ img {
 .main-navbar__link.is-active {
   color: var(--navbar-link-clr);
 }
+
+@media (max-width: 58em) {
+  .main-navbar__brand {
+    color: var(--white);
+  }
+
+  .main-navbar__menu .main-navbar__link,
+  .main-navbar__menu .main-navbar__link:visited,
+  .main-navbar__menu .main-navbar__link:hover,
+  .main-navbar__menu .main-navbar__link:focus,
+  .main-navbar__menu .main-navbar__link.is-active,
+  .main-navbar__menu .main-navbar__dropdown-link {
+    color: var(--primary-deep);
+  }
+}
 @media (max-width: 44em) {
   .top-announcement-bar__inner {
     flex-direction: column;
