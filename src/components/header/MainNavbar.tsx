@@ -6,8 +6,40 @@ function MainNavbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [openSubmenu, setOpenSubmenu] = useState<string | null>(null);
+  const [openNestedSubmenu, setOpenNestedSubmenu] = useState<string | null>(null);
   const [leftDropdownItems, setLeftDropdownItems] = useState<Set<string>>(new Set());
+  const [leftNestedDropdowns, setLeftNestedDropdowns] = useState<Set<string>>(new Set());
   const menuRef = useRef<HTMLUListElement>(null);
+  const nestedDropdownRefs = useRef(new Map<string, HTMLUListElement>());
+
+  const updateNestedDropdownDirection = (key: string) => {
+    const dropdown = nestedDropdownRefs.current.get(key);
+    const parent = dropdown?.parentElement;
+
+    if (!dropdown || !parent || window.matchMedia('(max-width: 58em)').matches) {
+      return;
+    }
+
+    const parentBounds = parent.getBoundingClientRect();
+    const dropdownWidth = dropdown.getBoundingClientRect().width;
+    const rightSpace = window.innerWidth - parentBounds.right;
+    const leftSpace = parentBounds.left;
+    const shouldOpenLeft = rightSpace < dropdownWidth && leftSpace > rightSpace;
+
+    setLeftNestedDropdowns((current) => {
+      if (current.has(key) === shouldOpenLeft) {
+        return current;
+      }
+
+      const next = new Set(current);
+      if (shouldOpenLeft) {
+        next.add(key);
+      } else {
+        next.delete(key);
+      }
+      return next;
+    });
+  };
 
   useEffect(() => {
     const menu = menuRef.current;
@@ -42,10 +74,20 @@ function MainNavbar() {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    const updateNestedDropdownDirections = () => {
+      nestedDropdownRefs.current.forEach((_, key) => updateNestedDropdownDirection(key));
+    };
+
+    window.addEventListener('resize', updateNestedDropdownDirections);
+    return () => window.removeEventListener('resize', updateNestedDropdownDirections);
+  }, []);
+
   const closeMenu = () => {
     setIsOpen(false);
     setOpenDropdown(null);
     setOpenSubmenu(null);
+    setOpenNestedSubmenu(null);
   };
 
   return (
@@ -147,8 +189,19 @@ function MainNavbar() {
                         <li
                           className={`main-navbar__dropdown-item${hasSubmenu ? ' main-navbar__dropdown-item--has-submenu' : ''}`}
                           key={child.label}
-                          onMouseEnter={() => hasSubmenu && setOpenSubmenu(child.label)}
-                          onMouseLeave={() => hasSubmenu && setOpenSubmenu(null)}
+                          onMouseEnter={() => {
+                            if (hasSubmenu) {
+                              setOpenSubmenu(child.label);
+                              setOpenNestedSubmenu(null);
+                              updateNestedDropdownDirection(child.path);
+                            }
+                          }}
+                          onMouseLeave={() => {
+                            if (hasSubmenu) {
+                              setOpenSubmenu(null);
+                              setOpenNestedSubmenu(null);
+                            }
+                          }}
                         >
                           {hasSubmenu ? (
                             <span
@@ -177,12 +230,83 @@ function MainNavbar() {
                             </Link>
                           )}
                           {hasSubmenu ? (
-                            <ul className={`main-navbar__dropdown main-navbar__dropdown--nested${openSubmenu === child.label ? ' is-open' : ''}`}>
+                            <ul
+                              ref={(element) => {
+                                if (element) {
+                                  nestedDropdownRefs.current.set(child.path, element);
+                                } else {
+                                  nestedDropdownRefs.current.delete(child.path);
+                                }
+                              }}
+                              className={`main-navbar__dropdown main-navbar__dropdown--nested${leftNestedDropdowns.has(child.path) ? ' main-navbar__dropdown--left' : ''}${openSubmenu === child.label ? ' is-open' : ''}`}
+                            >
                               {child.children?.map((subChild) => {
                                 const isPdf = subChild.path.toLowerCase().endsWith('.pdf');
                                 const isImage = /\.(png|jpe?g|webp|svg)$/i.test(subChild.path);
                                 const isExternal = /^https?:\/\//.test(subChild.path);
                                 const isPlaceholder = subChild.path === '#';
+                                const hasNestedSubmenu = Boolean(subChild.children?.length);
+
+                                if (hasNestedSubmenu) {
+                                  return (
+                                    <li
+                                      className="main-navbar__dropdown-item main-navbar__dropdown-item--has-submenu"
+                                      key={subChild.label}
+                                      onMouseEnter={() => {
+                                        setOpenNestedSubmenu(subChild.label);
+                                        updateNestedDropdownDirection(subChild.path);
+                                      }}
+                                      onMouseLeave={() => setOpenNestedSubmenu(null)}
+                                    >
+                                      <span
+                                        className="main-navbar__dropdown-link main-navbar__dropdown-link--parent"
+                                        role="button"
+                                        tabIndex={0}
+                                        aria-haspopup="true"
+                                        aria-expanded={openNestedSubmenu === subChild.label}
+                                        onClick={() => setOpenNestedSubmenu((current) => (current === subChild.label ? null : subChild.label))}
+                                        onKeyDown={(event) => {
+                                          if (event.key === 'Enter' || event.key === ' ') {
+                                            event.preventDefault();
+                                            setOpenNestedSubmenu((current) => (current === subChild.label ? null : subChild.label));
+                                          }
+                                        }}
+                                      >
+                                        {subChild.label}<span aria-hidden="true">›</span>
+                                      </span>
+                                      <ul
+                                        ref={(element) => {
+                                          if (element) {
+                                            nestedDropdownRefs.current.set(subChild.path, element);
+                                          } else {
+                                            nestedDropdownRefs.current.delete(subChild.path);
+                                          }
+                                        }}
+                                        className={`main-navbar__dropdown main-navbar__dropdown--nested${leftNestedDropdowns.has(subChild.path) ? ' main-navbar__dropdown--left' : ''}${openNestedSubmenu === subChild.label ? ' is-open' : ''}`}
+                                      >
+                                        {subChild.children?.map((nestedChild) => {
+                                          const nestedIsPdf = nestedChild.path.toLowerCase().endsWith('.pdf');
+                                          const nestedIsImage = /\.(png|jpe?g|webp|svg)$/i.test(nestedChild.path);
+                                          const nestedIsExternal = /^https?:\/\//.test(nestedChild.path);
+
+                                          return (
+                                            <li key={nestedChild.label}>
+                                              {nestedIsPdf || nestedIsImage || nestedIsExternal ? (
+                                                <a className="main-navbar__dropdown-link" href={nestedChild.path} target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
+                                                  {nestedChild.label}
+                                                </a>
+                                              ) : (
+                                                <Link className="main-navbar__dropdown-link" to={nestedChild.path} onClick={closeMenu}>
+                                                  {nestedChild.label}
+                                                </Link>
+                                              )}
+                                            </li>
+                                          );
+                                        })}
+                                      </ul>
+                                    </li>
+                                  );
+                                }
 
                                 if (isPlaceholder) {
                                   return (

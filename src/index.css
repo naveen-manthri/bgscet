@@ -374,6 +374,12 @@ img {
   transform: translateX(0.5rem);
 }
 
+.main-navbar__dropdown--nested.main-navbar__dropdown--left {
+  right: 100%;
+  left: auto;
+  transform: translateX(-0.5rem);
+}
+
 .main-navbar__item--left-dropdown .main-navbar__dropdown--nested {
   right: 100%;
   left: auto;
