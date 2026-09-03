@@ -241,35 +241,35 @@ export const achievementData: AchievementSectionData = {
     {
       id: 1,
       title:
-        "1. Internship: Students of 3rd semester AI&ML department have successfully Completed Internship on “Computer Vision Using Cloud” From 14th-16th December 2023",
+        "Internship: Students of 3rd semester AI&ML department have successfully Completed Internship on “Computer Vision Using Cloud” From 14th-16th December 2023",
       image: internshipImage,
       alt: "AI&ML Students Internship",
     },
     {
       id: 2,
       title:
-        "2. JVTM: Students from department of AI&ML exhibited their extraordinary talent & participated in JVTM Cultural Fest, Feb 2024",
+        "JVTM: Students from department of AI&ML exhibited their extraordinary talent & participated in JVTM Cultural Fest, Feb 2024",
       image: jvtmImage,
       alt: "AI&ML Students at JVTM Cultural Fest",
     },
     {
       id: 3,
       title:
-        "3. Educational Trip: An Educational Trip was Oraginzed on 24th feb2024 for 3rd semester students. It was aimed to empower students to become informed, engaged, and compassionate global citizens.",
+        "Educational Trip: An Educational Trip was Oraginzed on 24th feb2024 for 3rd semester students. It was aimed to empower students to become informed, engaged, and compassionate global citizens.",
       image: educationalTripImage,
       alt: "AI&ML Educational Trip",
     },
     {
       id: 4,
       title:
-        "4. Sports: Students participated in VTU State Level Taekwondo championship in 2022 and won 2nd prize in 2023",
+        "Sports: Students participated in VTU State Level Taekwondo championship in 2022 and won 2nd prize in 2023",
       image: sportsImage,
       alt: "AI&ML Sports Achievement",
     },
     {
       id: 5,
       title:
-        "5. Logo Competition: Students actively came forward to design logo for department of Artificial Intelligence and machine learning",
+        "Logo Competition: Students actively came forward to design logo for department of Artificial Intelligence and machine learning",
       image: logoCompetitionImage,
       alt: "AI&ML Logo Competition",
     },
