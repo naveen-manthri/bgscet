@@ -87,8 +87,8 @@ export const navItems: NavItem[] = [
           { label: 'Green Campus Initiatives Club', path: '/pdfs/greencampus/Green-Campus-initiative.pdf' },
           // { label: '', path: '#' },
           { label: 'NDLI Club', path: '/quick-links/ndli-club' },
-          { label: 'Photography Club', path: '#' },
-          { label: 'Coding Club', path: '#' },
+          { label: 'Photography Club', path: '' },
+          { label: 'Coding Club', path: '' },
         ],
       },
       {
