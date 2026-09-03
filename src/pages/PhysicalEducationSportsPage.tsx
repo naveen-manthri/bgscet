@@ -7,7 +7,7 @@ import banner from '../assets/images/physicalEdu/physicalEdu-banner.png';
 import hod from '../assets/images/physicalEdu/pe-hod.png';
 import instructor from '../assets/images/physicalEdu/Mr-Tharun-Kumar.png';
 import winners from '../assets/images/physicalEdu/winner-group.png';
-import tugOfWar from '../assets/images/physicalEdu/Tug-of-War.png';
+import tugOfWar from '../assets/images/physicalEdu/Tug-of-War1.png';
 import chessAward from '../assets/images/physicalEdu/leelajai-chess.png';
 import goldMedal from '../assets/images/physicalEdu/jnanasagar-gold-medal.png';
 import medalAwards from '../assets/images/physicalEdu/leelajai-rishank-medals.png';
@@ -66,7 +66,7 @@ function PhysicalEducationSportsPage() {
             </aside>
             <div className="physical-education__message-content">
               <p>I am very glad to lead the Department of Physical Education and Sports at BGSCET. Our department aims at providing the overall development of students by identifying their talents, facilitating sports infrastructure, and providing professional training and guidance to excel in their respective events and competitions. Student participation in sports activities improves mental health, leadership qualities, team management, self-confidence, and discipline. We encourage students to take part in national and international level tournaments. The management of BGSCET provides playground facilities, kit allowances, and special incentives for players.</p>
-              <p></p>
+              
               <img className="physical-education__tug-of-war" src={tugOfWar} alt="Students competing in a tug of war" />
             </div>
           </div>

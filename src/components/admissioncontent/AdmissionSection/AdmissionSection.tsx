@@ -14,11 +14,7 @@ const AdmissionSection = () => {
   return (
     <section className="admission">
       <div>
-          <AcademicHeading
-            className="admission__title"
-            blackTitle={"Admission For Management Quota\nSeats Is Underway "}
-            redTitle={"For First Year\nB.E. Courses : 2026-27"}
-          />
+          <AcademicHeading className="admission__title" blackTitle={"Admission For Management Quota\nSeats Is Underway "} redTitle={"For First Year\nB.E. Courses : 2026-27"} underlineLastLine />
           <div>
               <p className="admission__heading">
                 Four Years Bachelor of Engineering (B.E.) Courses:

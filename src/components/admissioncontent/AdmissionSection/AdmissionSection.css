@@ -29,6 +29,24 @@
   color: var(--admission-primary);
 }
 
+.admission__title .academic-section-heading__red::after {
+  display: none;
+}
+
+.admission__title .academic-section-heading__red-line {
+  position: relative;
+}
+
+.admission__title .academic-section-heading__red-line:last-child::after {
+  position: absolute;
+  right: 0;
+  bottom: -0.8rem;
+  left: 0;
+  height: 0.18rem;
+  background: var(--admission-divider);
+  content: "";
+}
+
 .admission__title.academic-section-heading::after {
   width: 100%;
   height: 0.18rem;

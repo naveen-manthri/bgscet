@@ -1,13 +1,13 @@
-import DepartmentSectionHeading from '../components/DepartmentSectionHeading/DepartmentSectionHeading';
 import VisitCampus from '../components/VisitCampus/VisitCampus';
+import YRCClub from '../components/YRCClub/YRCClub';
 import '../components/committeeCards/committeeCards.css';
 
 const YRCClubPage = () => {
   return (
     <>
-      <main style={{ padding: '3rem 4rem 0', marginBottom: '2rem' }}>
-        <DepartmentSectionHeading title="Youth Red Cross Club" className="department-section-heading--medium" />
+      <YRCClub />
 
+      <main style={{ padding: '3rem 4rem 0', marginBottom: '2rem' }}>
         <div className="committee-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', padding: '0' }}>
           <a
             href="/pdfs/committees/YRC-Club.pdf"
