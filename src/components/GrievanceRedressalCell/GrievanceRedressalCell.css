@@ -2,6 +2,7 @@
   --color-white: #ffffff;
   background: #ffffff;
   padding: clamp(1.25rem, 3vw, 4rem) 0 clamp(2rem, 4vw, 4rem);
+  padding-bottom: 0;
 }
 
 .grievance-redressal-cell .title-description {
@@ -49,7 +50,7 @@
 .grievance-redressal-cell__button:hover {
   background: var(--btn-primary-hover);
   color: var(--color-white);
-  transform: translateY(-2px);
+  /* transform: translateY(-2px); */
 }
 
 .grievance-redressal-cell__button:active {
