@@ -154,3 +154,12 @@
     font-size: 1.5rem;
   }
 }
+
+@media (min-width: 48.01rem) and (max-width: 64rem) {
+  .banner-image {
+    width: 100%;
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+  }
+}
