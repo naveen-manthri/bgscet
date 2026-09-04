@@ -38,7 +38,7 @@ const chemistryDepartment: UGDepartmentData = {
     { id: 2, image: sangeethaImage, name: "Dr. Sangeetha", designation: "Assistant Professor" },
   ],
   instructorMembers: [
-    { id: 1, image: shivaKumar, name: "Chemistry Laboratory Instructor", designation: "Instructor" },
+    { id: 1, image: shivaKumar, name: "Shivakumar K S", designation: "Instructor" },
   ],
   technicalFacultyMembers: [],
   achievementData: { title: "Achievements", achievements: [] },
