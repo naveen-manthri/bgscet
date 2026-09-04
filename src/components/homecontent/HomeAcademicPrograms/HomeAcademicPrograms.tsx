@@ -7,23 +7,12 @@ function HomeAcademicPrograms() {
   return (
     <section className="home-academic section-space">
       {/* <div className="container academic-programs-container"> */}
-        <SectionHeading
-          subtitle="Academics"
-          title="Programs Designed"
-          titleSecondLine="Like Products."
-          underlineFitContent
-          center
-        />
+        <SectionHeading subtitle="Academics" title="Programs Designed" titleSecondLine="Like Products." underlineFitContent center />
 
         <div className="programs-grid">
           {academicPrograms.map((program) => (
             <article className="program-card" key={program.id}>
-              <img
-                src={program.image}
-                alt={program.title}
-                className="program-image"
-                loading="lazy"
-              />
+              <img src={program.image} alt={program.title} className="program-image" loading="lazy"  />
 
               <div className="program-content">
                 <h3 className="program-title">
@@ -38,12 +27,7 @@ function HomeAcademicPrograms() {
                   {program.description}
                 </p>
 
-                <a
-                  href={`/${program.slug}`}
-                  className="program-read-more"
-                >
-                  {program.readMore}
-                </a>
+                <a  href={`/${program.slug}`} className="program-read-more"> {program.readMore} </a>
               </div>
             </article>
           ))}

@@ -97,14 +97,7 @@ function MainNavbar() {
           BGSCET
         </Link>
 
-        <button
-          className="main-navbar__toggle"
-          type="button"
-          aria-controls="main-navbar-menu"
-          aria-expanded={isOpen}
-          aria-label="Toggle navigation"
-          onClick={() => setIsOpen((current) => !current)}
-        >
+        <button  className="main-navbar__toggle"  type="button"  aria-controls="main-navbar-menu" aria-expanded={isOpen}  aria-label="Toggle navigation" onClick={() => setIsOpen((current) => !current)} >
           <span />
           <span />
           <span />
@@ -115,13 +108,7 @@ function MainNavbar() {
             const hasChildren = Boolean(item.children?.length);
 
             return (
-              <li
-                className={`main-navbar__item${leftDropdownItems.has(item.label) ? ' main-navbar__item--left-dropdown' : ''}`}
-                data-nav-label={item.label}
-                key={item.label}
-                onMouseEnter={() => setOpenDropdown(item.label)}
-                onMouseLeave={() => setOpenDropdown(null)}
-              >
+              <li  className={`main-navbar__item${leftDropdownItems.has(item.label) ? ' main-navbar__item--left-dropdown' : ''}`} data-nav-label={item.label}   key={item.label}  onMouseEnter={() => setOpenDropdown(item.label)} onMouseLeave={() => setOpenDropdown(null)} >
                 {/* <div className="main-navbar__link-row">
                   <NavLink
                     className={({ isActive }) => `main-navbar__link${isActive ? ' is-active' : ''}`}
@@ -146,33 +133,11 @@ function MainNavbar() {
 
                 <div className="main-navbar__link-row">
                   {hasChildren ? (
-                    <span
-                      className="main-navbar__link main-navbar__link--parent"
-                      role="button"
-                      tabIndex={0}
-                      aria-haspopup="true"
-                      aria-expanded={openDropdown === item.label}
-                      onClick={(event) => {
-                        event.preventDefault();
-                        setOpenDropdown((current) => (current === item.label ? null : item.label));
-                      }}
-                      onKeyDown={(event) => {
+                    <span  className="main-navbar__link main-navbar__link--parent" role="button"  tabIndex={0} aria-haspopup="true"  aria-expanded={openDropdown === item.label} onClick={(event) => { event.preventDefault(); setOpenDropdown((current) => (current === item.label ? null : item.label)); }}  onKeyDown={(event) => {
                         if (event.key === 'Enter' || event.key === ' ') {
-                          event.preventDefault();
-                          setOpenDropdown((current) => (current === item.label ? null : item.label));
-                        }
-                      }}
-                    >
+                          event.preventDefault();  setOpenDropdown((current) => (current === item.label ? null : item.label)); }  }}  >
                       {item.label}
-                    </span>
-                  ) : (
-                    <NavLink
-                      className={({ isActive }) => `main-navbar__link${isActive ? ' is-active' : ''}`}
-                      to={item.path}
-                      onClick={closeMenu}
-                    >
-                      {item.label}
-                    </NavLink>
+                    </span>  ) : (  <NavLink  className={({ isActive }) => `main-navbar__link${isActive ? ' is-active' : ''}`} to={item.path}  onClick={closeMenu}> {item.label}</NavLink>
                   )}
                 </div>
 
@@ -258,25 +223,14 @@ function MainNavbar() {
                                       }}
                                       onMouseLeave={() => setOpenNestedSubmenu(null)}
                                     >
-                                      <span
-                                        className="main-navbar__dropdown-link main-navbar__dropdown-link--parent"
-                                        role="button"
-                                        tabIndex={0}
-                                        aria-haspopup="true"
-                                        aria-expanded={openNestedSubmenu === subChild.label}
-                                        onClick={() => setOpenNestedSubmenu((current) => (current === subChild.label ? null : subChild.label))}
-                                        onKeyDown={(event) => {
+                                      <span  className="main-navbar__dropdown-link main-navbar__dropdown-link--parent"
+                                        role="button"  tabIndex={0}  aria-haspopup="true"  aria-expanded={openNestedSubmenu === subChild.label} onClick={() => setOpenNestedSubmenu((current) => (current === subChild.label ? null : subChild.label))} onKeyDown={(event) => {
                                           if (event.key === 'Enter' || event.key === ' ') {
                                             event.preventDefault();
                                             setOpenNestedSubmenu((current) => (current === subChild.label ? null : subChild.label));
-                                          }
-                                        }}
-                                      >
-                                        {subChild.label}<span aria-hidden="true">›</span>
+                                          } }} > {subChild.label}<span aria-hidden="true">›</span>
                                       </span>
-                                      <ul
-                                        ref={(element) => {
-                                          if (element) {
+                                      <ul ref={(element) => { if (element) {
                                             nestedDropdownRefs.current.set(subChild.path, element);
                                           } else {
                                             nestedDropdownRefs.current.delete(subChild.path);

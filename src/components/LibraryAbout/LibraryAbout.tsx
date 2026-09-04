@@ -38,11 +38,8 @@ const LibraryAbout = () => {
 
         </div>
 
-        <img
-          src={data.image}
-          alt={data.title}
-          className="library-about__image"
-        />
+        
+        <img src={data.image} alt={data.title} className="library-about__image" />
 
       </div>
     </section>

@@ -32,6 +32,7 @@
   --color-deep-navy-blue: #031270;
   --badge-bg: #7B0053;
   --navbar-link-clr: #ffffff;
+  --drop-down-item-separator: #eadbd8;
   --home-about-mutt__content-font-size: clamp(1.28rem, 1.5vw, 1rem);
   --whatsapp: #24d366;
   --control-bg: rgba(0, 0, 0, 0.42);
@@ -348,11 +349,11 @@ img {
 }
 
 .main-navbar__dropdown-item:not(:last-child) {
-  border-bottom: 0.0625rem solid #eadbd8;
+  border-bottom: 0.0625rem solid var(--drop-down-item-separator);
 }
 
 .main-navbar__dropdown--nested > li:not(:last-child) {
-  border-bottom: 0.0625rem solid #eadbd8;
+  border-bottom: 0.0625rem solid var(--drop-down-item-separator);
 }
 
 .main-navbar__dropdown-link--parent {
@@ -560,18 +561,24 @@ img {
     display: none;
     align-items: stretch;
     justify-content: flex-start;
-    flex-wrap: wrap;
-    column-gap: 3rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
     row-gap: 1.25rem;
     padding: 0.6rem;
     border: 0.08rem solid var(--border);
     border-radius: var(--radius);
     background: var(--surface);
     box-shadow: var(--shadow);
+    max-height: calc(100dvh - 6.25rem);
+    overflow-y: auto;
   }
 
   .main-navbar__menu.is-open {
     display: flex;
+  }
+
+  .main-navbar__menu > .main-navbar__item:not(:last-child) {
+    border-bottom: 0.0625rem solid var(--drop-down-item-separator);
   }
 
   .main-navbar__link-row {
@@ -583,7 +590,7 @@ img {
     padding: 0.75rem 0.05rem;
     font-weight: 500;
     color: var(--primary-deep);
-    font-size: clamp(1.75rem, 1.2vw, 0.95rem);
+    font-size: 1rem;
   }
 
   .main-navbar__dropdown {

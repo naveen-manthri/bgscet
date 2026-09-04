@@ -27,14 +27,7 @@ function SCSTCellPage() {
           {scStCellItems.map((item) => (
             <div className="scstcell-page__row" key={item.label}>
               <span className="scstcell-page__label">{item.label}</span>
-              <a
-                href={item.href}
-                className="committee-btn scstcell-page__button"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Click Here
-              </a>
+              <a href={item.href} className="committee-btn scstcell-page__button" target="_blank" rel="noopener noreferrer">Click Here</a>
             </div>
           ))}
         </div>

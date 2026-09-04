@@ -26,12 +26,8 @@ const IPRCell = () => {
       <div className="ipr-gallery">
         {iprData.images.map((item, imageIndex) => (
           <div className="ipr-card" key={item.id}>
-            <button
-              type="button"
-              className="ipr-image-button"
-              onClick={() => setIndex(imageIndex)}
-              aria-label={`Open image: ${item.alt}`}
-            >
+            <button type="button"  className="ipr-image-button" onClick={() => setIndex(imageIndex)} aria-label={`Open image: ${item.alt}`}>
+
               <img src={item.image} alt={item.alt} />
             </button>
           </div>

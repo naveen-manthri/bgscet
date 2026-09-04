@@ -28,17 +28,7 @@ const AboutHostel = ({ data }: AboutHostelProps) => {
 
           <div className="about-hostel__dots">
             {data.images.map((image, index) => (
-              <button
-                key={image.id}
-                type="button"
-                aria-label={`Go to image ${index + 1}`}
-                className={`about-hostel__dot ${
-                  activeIndex === index
-                    ? "about-hostel__dot--active"
-                    : ""
-                }`}
-                onClick={() => handleDotClick(index)}
-              />
+              <button key={image.id} type="button" aria-label={`Go to image ${index + 1}`} className={`about-hostel__dot ${ activeIndex === index ? "about-hostel__dot--active" : "" }`} onClick={() => handleDotClick(index)}  />
             ))}
           </div>
         </div>

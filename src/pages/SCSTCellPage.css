@@ -1,5 +1,5 @@
 .scstcell-page {
-  padding: 3rem 4rem 3rem;
+  padding: 3rem 4rem 0 4rem;
   background: #ffffff;
 }
 
@@ -51,7 +51,7 @@
 .scstcell-page__button:hover {
   background: var(--btn-primary-hover);
   color: var(--color-white);
-  transform: translateY(-2px);
+  /* transform: translateY(-2px); */
 }
 
 .scstcell-page__button:active {
