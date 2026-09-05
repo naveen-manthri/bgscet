@@ -16,7 +16,7 @@
   width: 100%;
   margin: 0rem 0 2rem;
   color: var(--primary);
-  font-size: var(--fs-body);
+  font-size: var(--font-size);
   font-weight: var(--fw-medium);
   line-height: 1.8;
 }
@@ -40,14 +40,14 @@
 
 .contact-card__name {
   color: var(--text);
-  font-size: var(--fs-body);
+  font-size: var(--font-size);
   font-weight: var(--fw-semibold);
 }
 
 .contact-card__designation,
 .contact-card__organization{
   color: var(--text);
-  font-size: var(--fs-body);
+  font-size: var(--font-size);
 }
 
 .contact-card__link {
@@ -56,7 +56,7 @@
   gap: 0.75rem;
   color: var(--text);
   text-decoration: none;
-  font-size: var(--fs-body);
+  font-size: var(--font-size);
   transition: var(--transition);
 }
 
@@ -66,7 +66,7 @@
 
 
 .contact-enquiry__form {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   overflow: hidden;
   border: 0.0625rem solid var(--color-border-light);
   border-radius: 1rem;
@@ -100,9 +100,9 @@
 .visit-us__address {
   margin: 0 ;
   color: var(--text);
-  font-size: var(--fs-body);
+  font-size: var(--font-size);
   font-weight: var(--fw-medium);
-  line-height: 1.6;
+  line-height: var(--line-height);
 }
 
 .visit-us__contact {
@@ -111,7 +111,7 @@
   gap: 0.5rem;
   color: var(--text);
   text-decoration: none;
-  font-size: var(--fs-body);
+  font-size: var(--font-size);
   font-weight: var(--fw-medium);
 }
 

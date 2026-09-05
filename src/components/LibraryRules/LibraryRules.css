@@ -20,7 +20,7 @@
   margin-bottom: 0.7rem;
   color: var(--text);
   font-size: var(--font-size);
-  line-height: 1.8;
+  line-height: var(--line-height);
 }
 
 .library-rules__item::marker {

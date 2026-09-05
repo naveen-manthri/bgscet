@@ -30,7 +30,7 @@
   color: var(--text);
 
   font-family: var(--ff-primary);
-  font-size: var(--fs-body);
+  font-size: var(--font-size);
   font-weight: var(--fw-regular);
   line-height: 1.8;
 }
@@ -48,7 +48,7 @@
   color: var(--text);
 
   font-family: var(--ff-primary);
-  font-size: var(--fs-body);
+  font-size: var(--font-size);
   font-weight: var(--fw-regular);
   line-height: 1.8;
 }

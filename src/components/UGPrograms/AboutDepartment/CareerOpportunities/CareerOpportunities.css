@@ -29,7 +29,7 @@
   color: var(--text);
 
   font-family: var(--ff-primary);
-  font-size: var(--fs-body);
+  font-size: var(--font-size);
   line-height: 1.8;
 
   text-align: justify;
