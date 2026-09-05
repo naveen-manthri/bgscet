@@ -9,7 +9,7 @@ interface CommitteeTableProps {
 const CommitteeTable = ({ data }: CommitteeTableProps) => {
   return (
     <section className="committee-table">
-      <DepartmentSectionHeading title={data.title} />
+      <DepartmentSectionHeading title={data.title} className="department-section-heading--medium"/>
 
       <div className="committee-table__wrapper">
         <table className="committee-table__table">

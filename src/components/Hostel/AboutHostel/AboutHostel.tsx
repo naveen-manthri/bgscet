@@ -18,7 +18,7 @@ const AboutHostel = ({ data }: AboutHostelProps) => {
 
   return (
     <section className="about-hostel hostel-page">
-      <DepartmentSectionHeading title={data.title} className="department-section-heading--default" />
+      <DepartmentSectionHeading title={data.title} className="department-section-heading--medium" />
 
       <div className="about-hostel__content">
         <div className="about-hostel__carousel">

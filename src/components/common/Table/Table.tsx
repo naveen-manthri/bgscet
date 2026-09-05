@@ -10,7 +10,7 @@ interface TableProps {
 const Table = ({ title, table }: TableProps) => {
   return (
     <section className="table-section">
-      <DepartmentSectionHeading title={title} className="department-section-heading--default" />
+      <DepartmentSectionHeading title={title} className="department-section-heading--medium" />
 
       <div className="table-section__wrapper">
         <table className="table-section__table">

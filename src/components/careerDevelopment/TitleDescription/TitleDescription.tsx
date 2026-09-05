@@ -12,7 +12,7 @@ interface TitleDescriptionProps {
 
 const TitleDescription = ({
   data,
-  className = "department-section-heading--default",
+  className = "department-section-heading--medium",
   sectionClassName = "",
 }: TitleDescriptionProps) => {
   return (

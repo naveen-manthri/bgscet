@@ -87,6 +87,11 @@
 /*padding*/
 --primary-padding: 0 4rem;
 
+/* TITLES SIZES */
+--primary-title-size-medium: 2.5rem;
+--primary-title-size-large: 2.7rem;
+  
+
 }
 
 * {

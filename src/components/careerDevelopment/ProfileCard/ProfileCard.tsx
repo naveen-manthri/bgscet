@@ -9,7 +9,7 @@ interface ProfileCardProps {
 const ProfileCard = ({ data }: ProfileCardProps) => {
   return (
     <section className="profile-card">
-      <DepartmentSectionHeading title={data.title} />
+      <DepartmentSectionHeading title={data.title} className="department-section-heading--medium"/>
 
       <div className="profile-card__container">
         <div className="profile-card__image-wrapper">

@@ -15,12 +15,10 @@ const GrievanceRedressalCell = () => {
 
       <BulletSection
         data={grievanceRedressalData.objectives}
-        className="department-section-heading--medium"
       />
 
       <BulletSection
         data={grievanceRedressalData.procedure}
-        className="department-section-heading--medium"
       />
 
       <div className="grievance-redressal-cell__button-row">

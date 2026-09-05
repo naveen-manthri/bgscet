@@ -4,13 +4,12 @@ import "./BulletSection.css";
 
 interface BulletSectionProps {
   data: BulletSectionType;
-  className?: string;
 }
 
-const BulletSection = ({ data, className = "" }: BulletSectionProps) => {
+const BulletSection = ({ data }: BulletSectionProps) => {
   return (
     <section className="bullet-section">
-      <DepartmentSectionHeading title={data.title} className={className} />
+      <DepartmentSectionHeading title={data.title} className="department-section-heading--medium" />
 
       <ul className="bullet-section__list">
         {data.points.map((point, index) => (
