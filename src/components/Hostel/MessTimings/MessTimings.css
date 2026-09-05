@@ -34,7 +34,7 @@
 .mess-timings__table td {
   color: var(--text);
   font-size: 0.95rem;
-  line-height: 1.7;
+  line-height: var(--line-height);
 }
 
 .mess-timings__table tbody tr:nth-child(even) {

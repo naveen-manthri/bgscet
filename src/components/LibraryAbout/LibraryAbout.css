@@ -98,7 +98,7 @@
   .library-about__item,
   .library-about__conclusion {
     font-size: 0.95rem;
-    line-height: 1.7;
+    line-height: var(--line-height);
   }
 
   .library-about__image {

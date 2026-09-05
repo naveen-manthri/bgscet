@@ -39,7 +39,7 @@
 }
 
 .academic-eligibility__list li {
-  line-height: 1.8;
+  line-height: var(--line-height);
 }
 
 .academic-eligibility__block {
@@ -71,7 +71,7 @@
 
 .academic-eligibility__documents li {
   
-  line-height: 1.7;
+  line-height: var(--line-height);
 }
 .academic-eligibility__documents a{
   color: inherit;

@@ -105,6 +105,6 @@
 
   .about-hostel__description p {
     font-size: 0.9rem;
-    line-height: 1.7;
+    line-height: var(--line-height);
   }
 }

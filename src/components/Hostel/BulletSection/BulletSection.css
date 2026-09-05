@@ -29,7 +29,7 @@
 
   .bullet-section__item {
     font-size: 0.95rem;
-    line-height: 1.7;
+    line-height: var(--line-height);
   }
 }
 

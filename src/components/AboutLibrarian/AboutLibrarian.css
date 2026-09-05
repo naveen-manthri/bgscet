@@ -18,7 +18,7 @@
   margin-bottom: 1rem;
   color: var(--text);
   font-size: var(--font-size);
-  line-height: 1.8;
+  line-height: var(--line-height);
   text-align: justify;
 }
 
@@ -38,7 +38,7 @@
   margin-bottom: 0.5rem;
   color: var(--text);
   font-size: var(--font-size);
-  line-height: 1.8;
+  line-height: var(--line-height);
 }
 
 .about-librarian__member-item::marker {
@@ -117,7 +117,7 @@
   .about-librarian__member-item,
   .about-librarian__member-title {
     font-size: 0.95rem;
-    line-height: 1.7;
+    line-height: var(--line-height);
   }
 
   .about-librarian__staff {

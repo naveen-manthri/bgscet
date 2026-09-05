@@ -34,7 +34,7 @@
 .committee-table__table td {
   color: var(--text);
   font-size: 0.95rem;
-  line-height: 1.7;
+  line-height: var(--line-height);
 }
 
 .committee-table__table tbody tr:nth-child(even) {

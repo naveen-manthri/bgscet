@@ -209,7 +209,7 @@ background: none;
   .eligibility-list li,
   .exam-list li {
     font-size: 0.95rem;
-    line-height: 1.7;
+    line-height: var(--line-height);
     text-align: left;
   }
 

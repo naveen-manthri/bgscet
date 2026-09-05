@@ -51,7 +51,7 @@
   .hostel-facility__facility-item,
   .hostel-facility__description {
     font-size: 0.95rem;
-    line-height: 1.7;
+    line-height: var(--line-height);
   }
 }
 

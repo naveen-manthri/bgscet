@@ -4,7 +4,7 @@
   --ercica-paragraph-gap: 1.5rem;
 
   --ercica-text-color: #4c4949;
-  --ercica-line-height: 1.7;
+  --ercica-line-height: var(--line-height);
   
   --ercica-margin-top:3rem;
 }
@@ -34,7 +34,7 @@
   margin: 0;
 
   font-size: var(--font-size);
-  line-height: var(--ercica-line-height);
+  line-height: var(--line-height);
   color: var(--ercica-text-color);
   text-align: justify;
 }

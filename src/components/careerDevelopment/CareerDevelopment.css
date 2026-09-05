@@ -7,7 +7,7 @@
 .career-development p {
   color: var(--text);
   font-size: var(--font-size);
-  line-height: 1.7;
+  line-height: var(--line-height);
 }
 
 @media (max-width: 64rem) {
