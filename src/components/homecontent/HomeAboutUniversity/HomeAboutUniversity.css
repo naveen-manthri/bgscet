@@ -76,7 +76,7 @@
 }
 
 .home-about-university__content p {
-  font-size: 1.25rem;
+  font-size: var(--font-size);
   line-height: 1.75;
   text-align: justify;
   margin-bottom: 1.5rem;

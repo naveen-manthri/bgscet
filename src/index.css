@@ -53,6 +53,8 @@
   --subtitle: clamp(0.78rem, 1.5vw, 1rem);
   --body: clamp(0.76rem, 1.35vw, 0.95rem);
   --body-size: var(--body);
+  --para-descrptn-font-size-desktop: 1.25rem;
+  --font-size: var(--para-descrptn-font-size-desktop);
   --body-size-mobile: clamp(0.82rem, 3.6vw, 0.95rem);
   --text-sm: clamp(0.72rem, 1.2vw, 0.86rem);
   --footer-text: clamp(0.74rem, 1.25vw, 0.875rem);

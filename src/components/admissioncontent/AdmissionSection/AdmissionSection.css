@@ -107,7 +107,7 @@
 
 .admission__course {
   color: var(--text);
-  font-size: 1.25rem;
+  font-size: var(--font-size);
   font-weight: 600;
   line-height: 1.4;
 }

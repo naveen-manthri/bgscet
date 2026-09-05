@@ -37,7 +37,7 @@
 .guru-card__paragraph {
   margin: 0 0 var(--spacing-5);
   color: var(--text);
-  font-size: 1.25rem;
+  font-size: var(--font-size);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-relaxed);
   text-align: justify;

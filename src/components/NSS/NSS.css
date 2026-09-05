@@ -21,7 +21,7 @@
 .nss__intro-content p,
 .nss__list p {
   color:var(--text);
-  font-size: 1.25rem;
+  font-size: var(--font-size);
   line-height: 1.8;
   margin: 0;
   text-align: justify;

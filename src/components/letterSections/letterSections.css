@@ -30,20 +30,20 @@
 
 /* .letter-section .letter-section__group-title {
   margin-bottom: 0.75rem;
-  font-size: 1.25rem;
+  font-size: var(--font-size);
   color: var(--btn-primary, #cc2a09) !important;
 } */
 
 .letter-section__list li {
   margin-bottom: 0.75rem;
-  font-size: 1.25rem;
+  font-size: var(--font-size);
 }
 
 .letter-section__link {
   color: var(--btn-primary, #cc2a09);
   text-decoration: none;
   transition: color 0.3s ease;
-  font-size: 1.25rem;
+  font-size: var(--font-size);
 }
 
 .letter-section__link:hover {

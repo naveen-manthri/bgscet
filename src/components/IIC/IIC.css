@@ -35,7 +35,7 @@
 
 .iic-section p {
   color: var(--text);
-  font-size: 1.25rem;
+  font-size: var(--font-size);
   text-align: justify;
   line-height: var(--line-height);
   margin-bottom: var(--paragraph-gap);
@@ -43,7 +43,7 @@
 
 .iic-section ol {
   color: var(--text);
-  font-size: 1.25rem;
+  font-size: var(--font-size);
   line-height: var(--line-height);
   padding-left: 1rem;
 }

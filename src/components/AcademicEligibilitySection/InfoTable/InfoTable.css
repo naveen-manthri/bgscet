@@ -14,7 +14,7 @@
 .academic-info-table td {
   padding: 0.7rem;
   border: 0.0625rem solid var(--academic-table-border);
-  font-size: 1.25rem;
+  font-size: var(--font-size);
   line-height: 1.4;
   text-align: left;
   vertical-align: middle;

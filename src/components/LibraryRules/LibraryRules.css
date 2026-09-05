@@ -19,7 +19,7 @@
 .library-rules__item {
   margin-bottom: 0.7rem;
   color: var(--text);
-  font-size: 1.25rem;
+  font-size: var(--font-size);
   line-height: 1.8;
 }
 

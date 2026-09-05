@@ -10,7 +10,7 @@
 .hostel-page p,
 .hostel-page li {
   color: var(--text);
-  font-size: 1.25rem;
+  font-size: var(--font-size);
 
 }
 

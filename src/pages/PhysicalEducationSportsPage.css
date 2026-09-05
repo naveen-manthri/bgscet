@@ -61,7 +61,7 @@
   min-height: 0;
   overflow: hidden;
   color: #4c4949;
-  font-size: 1.25rem;
+  font-size: var(--font-size);
   line-height: 1.9;
 }
 
@@ -117,8 +117,8 @@
 }
 
 .physical-education__recognitions img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
-.physical-education__recognitions h2 { margin: 0.85rem 0 0.45rem; font-size: 1.25rem; font-weight: 700; color: var(--text); }
-.physical-education__recognitions p { margin: 0; font-size: 1.25rem; line-height: 1.55; color: var(--text); }
+.physical-education__recognitions h2 { margin: 0.85rem 0 0.45rem; font-size: var(--font-size); font-weight: 700; color: var(--text); }
+.physical-education__recognitions p { margin: 0; font-size: var(--font-size); line-height: 1.55; color: var(--text); }
 
 .physical-education__recognitions article:nth-child(3) {
   display: grid;
@@ -192,6 +192,6 @@
   .physical-education__message-content { gap: 0.75rem; font-size: clamp(0.62rem, 2.4vw, 0.9rem); line-height: 1.55; }
   .physical-education__message-content p { text-align: left; }
   .physical-education__recognitions article { padding-inline: 0.75rem; }
-  .physical-education__recognitions p { font-size: 1.25rem; }
+  .physical-education__recognitions p { font-size: var(--font-size); }
   .physical-education__recognitions article:nth-child(3) { column-gap: 1rem; padding: 1.5rem 0; }
 }

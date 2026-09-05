@@ -84,7 +84,7 @@
 
 .admission-information__contact p {
   margin: .15rem 0;
-  font-size: 1.25rem;
+  font-size: var(--font-size);
   line-height: 1.45;
   color: var(--text);
 }
