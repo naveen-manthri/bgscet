@@ -19,7 +19,7 @@
 .title-description p {
   font-size: var(--career-paragraph-size);
   color: var(--text);
-  line-height: var(--career-line-height);
+  line-height: var(--line-height);
   font-family: var(--career-font-family);
   text-align: justify;
 }

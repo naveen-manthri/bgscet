@@ -30,7 +30,7 @@
   font-size: var(--career-paragraph-size);
   color: var(--text);
   font-family: var(--career-font-family);
-  line-height: var(--career-line-height);
+  line-height: var(--line-height);
   
   
 }

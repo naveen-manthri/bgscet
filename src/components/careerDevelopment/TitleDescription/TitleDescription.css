@@ -23,7 +23,7 @@
   font-size: var(--career-paragraph-size);
   color: var(--text);
   font-family: var(--career-font-family);
-  line-height: var(--career-line-height);
+  line-height: var(--line-height);
   text-align: justify;
 }
 
@@ -39,7 +39,7 @@
   font-size: var(--career-paragraph-size);
   color: var(--text);
   font-family: var(--career-font-family);
-  line-height: var(--career-line-height);
+  line-height: var(--line-height);
 }
 
 @media (max-width: 48rem) {

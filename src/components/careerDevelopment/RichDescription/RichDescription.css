@@ -19,7 +19,7 @@
 }
 
 .rich-description > .department-section-heading {
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 
 .rich-description__content {
@@ -34,7 +34,7 @@
   font-size: var(--career-paragraph-size);
   color: var(--text);
   font-family: var(--career-font-family);
-  line-height: var(--career-line-height);
+  line-height: var(--line-height);
   text-align: justify;
 }
 
