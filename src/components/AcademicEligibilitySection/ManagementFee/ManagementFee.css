@@ -1,6 +1,5 @@
 .management-fee {
-  display: flex;
-  flex-direction: column;
+  
   gap: var(--academic-content-gap);
 }
 
@@ -8,11 +7,7 @@
   width: 100%;
 }
 
-.management-fee__notes {
-  display: flex;
-  flex-direction: column;
-  
-}
+
 
 .management-fee__notes h3 {
   margin: 0 ;

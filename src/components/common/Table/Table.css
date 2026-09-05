@@ -1,8 +1,7 @@
 .table-section {
  --text: #4C4949;
  --table-border-color:#7a7a7a;
-  display: flex;
-  flex-direction: column;
+  
   gap: 0;
 }
 
@@ -40,8 +39,7 @@
 }
 
 .table-section__cell {
-  display: flex;
-  flex-direction: column;
+  
   gap: 0.2rem;
 }
 

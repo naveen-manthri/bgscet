@@ -1,6 +1,5 @@
 .admission-information {
-  display: flex;
-  flex-direction: column;
+  
   gap: var(--academic-section-gap);
 }
 

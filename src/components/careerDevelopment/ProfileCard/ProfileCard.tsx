@@ -16,7 +16,7 @@ const ProfileCard = ({ data }: ProfileCardProps) => {
           <img src={data.image} alt={data.alt} className="profile-card__image" />
         </div>
 
-        <div className="profile-card__content">
+        <div className="profile-card__content flex flex-direction-column">
           <p><strong>Name:</strong> {data.name}</p>
           <p><strong>Designation:</strong> {data.designation}</p>
           <p><strong>College:</strong> {data.college}</p>

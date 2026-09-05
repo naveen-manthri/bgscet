@@ -16,10 +16,10 @@ function Footer() {
               <h2 className="footer__heading" id={`footer-column-${column.id}`}>
                 {column.title}
               </h2>
-              <ul className="footer__list">
+              <ul className="flex flex-direction-column footer__list">
                 {column.links.map((link) => (
                   <li className="footer__item" key={link}>
-                    <a className="footer__link" href="/">
+                    <a className="inline-flex-center footer__link" href="/">
                       {link}
                     </a>
                   </li>
@@ -30,7 +30,7 @@ function Footer() {
         </nav>
       </div>
 
-      <div className="footer__bottom">
+      <div className="flex flex-align-center flex-justify-between footer__bottom">
         <p className="footer__copyright">© www.bgscet.ac.in All rights reserved</p>
         <p className="footer__credit">Designed By Curator Design</p>
       </div>

@@ -8,12 +8,12 @@ interface RichDescriptionProps {
 
 const RichDescription = ({ data }: RichDescriptionProps) => {
   return (
-    <section className="rich-description">
+    <section className="flex flex-direction-column rich-description">
       <DepartmentSectionHeading title={data.title} className="department-section-heading--medium"/>
 
       <p>{data.intro}</p>
 
-      <div className="rich-description__content">
+      <div className="flex flex-direction-column rich-description__content">
         {data.items.map((item, index) => (
           <p key={index}>
             <strong>{item.heading}: </strong>

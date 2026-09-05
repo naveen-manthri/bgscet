@@ -9,10 +9,11 @@ const AboutMutt = () => {
       className="about-mutt"
       aria-labelledby="about-mutt-title"
     >
-      <div className="about-mutt__container">
+      <div className="flex flex-direction-column about-mutt__container">
         <DepartmentSectionHeading
           id="about-mutt-title"
-          title={aboutMutt.title} className="department-section-heading--large flex flex-center"
+          title={aboutMutt.title}
+          className="department-section-heading--large flex flex-center"
         />
 
         <div className="flex flex-direction-column about-mutt__content">

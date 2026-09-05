@@ -50,8 +50,6 @@
 }
 
 .footer__list {
-  display: flex;
-  flex-direction: column;
   gap: 0.42rem;
   margin: 0;
   padding: 0;
@@ -59,7 +57,6 @@
 }
 
 .footer__link {
-  display: inline-flex;
   color: var(--text-light);
   font-size: var(--footer-text);
   font-weight: 300;
@@ -80,9 +77,6 @@
 }
 
 .footer__bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   gap: 1rem;
   width: 100%;
   padding: 1rem max(4%, calc((100% - 72rem) / 2));

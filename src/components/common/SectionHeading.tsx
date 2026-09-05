@@ -79,6 +79,7 @@ function SectionHeading({
   return (
     <div
       className={[
+        "flex flex-direction-column",
         "shared-section-heading",
         center
           ? "shared-section-heading--center"
@@ -102,13 +103,14 @@ function SectionHeading({
 
       <div
         className={[
+          "inline-flex-center flex-direction-column",
           "section-title-wrapper",
           underlineFitContent ? "section-title-wrapper--fit" : "",
         ]
           .filter(Boolean)
           .join(" ")}
       >
-        <h2 className="section-title">
+        <h2 className="inline-flex-center flex-direction-column section-title">
           {title}
 
           {titleSecondLine && (

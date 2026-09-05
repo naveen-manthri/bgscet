@@ -11,7 +11,7 @@ const GuruSection: FC = () => {
       className="guru-section"
       aria-labelledby="guru-section-title"
     >
-      <div className="guru-section__list">
+      <div className="guru-section__list flex flex-direction-column">
         {gurus.map((guru) => (
           <GuruCard
             key={guru.id}

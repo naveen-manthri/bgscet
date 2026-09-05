@@ -25,12 +25,12 @@ const ContactEnquiry = () => {
 
                     <p className="contact-card__organization">  {contact.organization}  </p>
 
-                    <a href={`tel:${contact.phone.replace(/\s/g, "")}`} className="contact-card__link" >
+                    <a href={`tel:${contact.phone.replace(/\s/g, "")}`} className="flex flex-align-center contact-card__link" >
                         <span className="material-symbols-outlined">  call  </span>  {contact.phone}
                     </a>
 
                     {contact.email && (
-                        <a href={`mailto:${contact.email}`} className="contact-card__link" >
+                        <a href={`mailto:${contact.email}`} className="flex flex-align-center contact-card__link" >
                         <span className="material-symbols-outlined">  mail </span>  {contact.email}
                         </a>
                     )}
@@ -43,8 +43,8 @@ const ContactEnquiry = () => {
         </div>
 
         <div className="visit-us">
-            <div className="visit-us__left">
-                <DepartmentSectionHeading title="Visit Us" /> {data.visit.address.map((line, index) => (  <p key={index} className="visit-us__address">  {line}  </p>  ))} <a href={`tel:${data.visit.contact.replace(/\s/g, "")}`} className="visit-us__contact"> <span className="material-symbols-outlined">call</span>  {data.visit.contact}</a>
+            <div className="flex flex-direction-column visit-us__left">
+              <DepartmentSectionHeading title="Visit Us" /> {data.visit.address.map((line, index) => (  <p key={index} className="visit-us__address">  {line}  </p>  ))} <a href={`tel:${data.visit.contact.replace(/\s/g, "")}`} className="inline-flex-center visit-us__contact"> <span className="material-symbols-outlined">call</span>  {data.visit.contact}</a>
             </div>
 
             <div className="visit-us__right">

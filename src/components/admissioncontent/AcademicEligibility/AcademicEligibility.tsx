@@ -10,7 +10,7 @@ function AcademicEligibility() {
 
         <div className="eligibility-header">
 
-          <h2 className="eligibility-title">
+          <h2 className="eligibility-title flex flex-direction-column">
 
             <span className="title-main">
               Academic Eligibility For Admissions To Four Years Under Graduate

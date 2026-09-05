@@ -8,12 +8,12 @@ interface CareerHeroProps {
 
 const CareerHero = ({ data }: CareerHeroProps) => {
   return (
-    <section className="career-hero">
+    <section className="career-hero flex flex-direction-column">
       <div className="career-hero__image">
         <img src={data.image} alt={data.imageAlt} />
       </div>
 
-      <div className="career-hero__content">
+      <div className="career-hero__content flex flex-direction-column">
        
 
         {data.description.map((text, index) => (

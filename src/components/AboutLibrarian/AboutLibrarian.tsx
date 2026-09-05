@@ -35,7 +35,7 @@ const AboutLibrarian = () => {
 
         </div>
 
-        <div className="about-librarian__staff">
+        <div className="flex flex-start about-librarian__staff">
 
           {data.staff.map((staff) => (
             <article key={staff.id} className="about-librarian__card">

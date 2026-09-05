@@ -10,16 +10,14 @@
 }
 
 .bullet-section {
-  display: flex;
-  flex-direction: column;
+ 
   /* gap: var(--career-heading-gap); */
   padding:  0;
   margin-top: var(--primary-margin-top);
 }
 
 .bullet-section__list {
-  display: flex;
-  flex-direction: column;
+ 
   gap: var(--career-list-gap);
   /* margin-top: -1.8rem; */
   padding-left: 2rem;

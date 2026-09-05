@@ -7,7 +7,7 @@ import { admissionInformationData } from "../../../data/academic";
 
 export default function AdmissionInformation() {
   return (
-    <section className="admission-information">
+    <section className="admission-information flex flex-direction-column">
       <h2 className="admission-information__title">
         {admissionInformationData.title}
       </h2>

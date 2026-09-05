@@ -47,8 +47,6 @@
 }
 
 .about-librarian__staff {
-  display: flex;
-  justify-content: flex-start;
   gap: 2rem;
   margin-top: var(--primary-margin-top);
   margin-left: 2rem;

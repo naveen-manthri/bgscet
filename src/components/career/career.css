@@ -4,8 +4,6 @@
   padding: var(--primary-padding);
   margin-top: var(--primary-margin-top);
 
-  display: flex;
-  flex-direction: column;
   gap: 2rem;
 }
 
@@ -17,8 +15,7 @@
 }
 
 .career-hero__content {
-  display: flex;
-  flex-direction: column;
+  
   gap: 1.5rem;
 }
 

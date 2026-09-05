@@ -67,10 +67,6 @@
     margin: 0.6rem auto 0;
     border-radius: 2px;
 }
-#about-mutt-title{
-  display: flex;
-  align-items: center;
-}
 .about-mutt__content {
   gap: var(--spacing-8);
 }

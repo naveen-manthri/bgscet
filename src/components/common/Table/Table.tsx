@@ -9,7 +9,7 @@ interface TableProps {
 
 const Table = ({ title, table }: TableProps) => {
   return (
-    <section className="table-section">
+    <section className="table-section flex flex-direction-column">
       <DepartmentSectionHeading title={title} className="department-section-heading--medium" />
 
       <div className="table-section__wrapper">
@@ -25,7 +25,7 @@ const Table = ({ title, table }: TableProps) => {
               <tr key={rowIndex}>
                 {table.columns.map((column) => (
                   <td key={column.key}>
-                    {row[column.key]?.split("\n").map((value, valueIndex) => <span key={valueIndex} className="table-section__cell">{value}</span>)}
+                    {row[column.key]?.split("\n").map((value, valueIndex) => <span key={valueIndex} className=" flex flex-direction-column table-section__cell ">{value}</span>)}
                   </td>
                 ))}
               </tr>
