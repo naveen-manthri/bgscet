@@ -9,7 +9,7 @@ function CampusPlacements() {
     <section className="campus-placements" aria-labelledby="campus-placements-title" >
       <div className="campus-placements__inner">
 
-        <div className="campus-placements__heading">
+        <div className="campus-placements__heading flex flex-center">
           <h2 className="campus-placements__title"  id="campus-placements-title" >
             Where Our Graduates Go.
           </h2>
@@ -44,7 +44,7 @@ function CampusPlacements() {
           <div className="campus-placements__track campus-placements__track--right">
             {secondRow.map((company, index) => (
               <article
-                className="campus-placements__card"
+                className="campus-placements__card flex flex-center"
                 key={`right-${company.id}-${index}`}
               >
                 <img

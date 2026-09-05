@@ -78,17 +78,14 @@
 
 
 .campus-life-button-wrapper {
-  display: flex;
-  justify-content: center;
+  
   width: 100%;
   margin-top: var(--campus-button-margin-top);
   margin-bottom: var(--campus-button-margin-top);
 }
 
 .campus-life-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  
 
   padding: var(--campus-button-padding-y)
     var(--campus-button-padding-x);

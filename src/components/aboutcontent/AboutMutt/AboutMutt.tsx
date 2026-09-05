@@ -12,10 +12,10 @@ const AboutMutt = () => {
       <div className="about-mutt__container">
         <DepartmentSectionHeading
           id="about-mutt-title"
-          title={aboutMutt.title} className="department-section-heading--large"
+          title={aboutMutt.title} className="department-section-heading--large flex flex-center"
         />
 
-        <div className="about-mutt__content">
+        <div className="flex flex-direction-column about-mutt__content">
           {aboutMutt.description.map((paragraph, index) => (
             <p
               key={index}

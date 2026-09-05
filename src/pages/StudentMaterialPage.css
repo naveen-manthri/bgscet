@@ -1,14 +1,11 @@
 .student-material__cta {
-  display: flex;
-  justify-content: center;
+  
   padding: var(--primary-padding);
   margin-top: var(--primary-margin-top);
 }
 
 .student-material__button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  
   min-height: 3.25rem;
   padding: 0.75rem 1.5rem;
   border-radius: var(--btn-radius);

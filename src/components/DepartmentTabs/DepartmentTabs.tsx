@@ -9,7 +9,7 @@ const DepartmentTabs = <T extends string,>({
 }: DepartmentTabsProps<T>) => {
   return (
     <nav
-      className="department-tabs"
+      className="department-tabs flex flex-align-center"
       aria-label="Department Navigation"
       role="tablist"
     >
@@ -18,7 +18,7 @@ const DepartmentTabs = <T extends string,>({
           key={tab.id}
           type="button"
           role="tab"
-          className={`department-tabs__button ${
+          className={`department-tabs__button flex flex-center ${
             activeTab === tab.id ? "department-tabs__button--active" : ""
           }`}
           onClick={() => onTabChange(tab.id)}

@@ -45,8 +45,6 @@
   border: 0.0625rem solid var(--border-color);
   border-radius: var(--card-radius);
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
   width: var(--card-width);
   height: var(--card-height);
   box-shadow: var(--card-shadow);
@@ -64,9 +62,6 @@
   border: 0;
   margin: 0;
   text-align: inherit;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   box-sizing: border-box;
    overflow: hidden;
   cursor: pointer;  
@@ -83,11 +78,7 @@
 .cse-event-content {
   background: var(--secondary-bg);
   padding: 1rem;
-  display: flex;
-  flex-direction: column;
   flex: 1;
-  align-items: center;
-  justify-content:space-between;
   gap: var(--content-gap);
 }
 

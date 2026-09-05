@@ -79,13 +79,13 @@ const EnquiryForm: React.FC<EnquiryFormProps> = ({
 
   return (
     <div
-      className="enquiry-form"
+      className="enquiry-form flex flex-center"
       role="dialog"
       aria-modal="true"
       onClick={handleOverlayClick}
     >
       <div
-        className="enquiry-form__container"
+        className="enquiry-form__container flex flex-column"
         ref={modalRef}
       >
         {/* Close Button */}
@@ -110,7 +110,7 @@ const EnquiryForm: React.FC<EnquiryFormProps> = ({
         {/* Form */}
 
         <form
-          className="enquiry-form__form"
+          className="enquiry-form__form flex flex-column"
           onSubmit={handleEnquirySubmit}
         >
           <input
@@ -164,7 +164,7 @@ const EnquiryForm: React.FC<EnquiryFormProps> = ({
 
           {/* Terms */}
 
-          <label className="enquiry-form__terms">
+          <label className="enquiry-form__terms flex flex-align-start">
             <input
               type="checkbox"
               checked={acceptedTerms}
@@ -182,8 +182,8 @@ const EnquiryForm: React.FC<EnquiryFormProps> = ({
 
           {/* Bottom Section */}
 
-          <div className="enquiry-form__bottom">
-            <div className="enquiry-form__captcha">
+          <div className="enquiry-form__bottom flex flex-align-center flex-justify-between">
+            <div className="enquiry-form__captcha flex flex-align-center">
               <input type="checkbox" />
 
               <span>I'm not a robot</span>

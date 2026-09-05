@@ -72,9 +72,6 @@
   border: 0;
   border-radius: var(--radius-small);
   background: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
 }
 

@@ -15,7 +15,7 @@ const AdmissionButton = ({
   return (
     <button
       type="button"
-      className={`admission-button admission-button--${variant}`}
+      className={`flex inline-flex-center admission-button admission-button--${variant}`}
       onClick={variant !== "outline" ? openEnquiry : undefined}
     >
       {admissionButtonData[variant].text}

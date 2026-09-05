@@ -80,10 +80,8 @@
 .admission__number {
   position: relative;
   z-index: 1;
-  display: flex;
+  
   flex: 0 0 1.2rem;
-  align-items: center;
-  justify-content: center;
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;

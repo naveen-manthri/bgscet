@@ -21,17 +21,11 @@
 }
 
 .grievance-redressal-cell__button-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: clamp(1.5rem, 2vw, 2rem);
   padding: 0 clamp(1rem, 3vw, 4rem);
 }
 
 .grievance-redressal-cell__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: min(100%, 220px);
   min-height: 62px;
   padding: 1rem;

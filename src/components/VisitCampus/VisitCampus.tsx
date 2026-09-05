@@ -6,7 +6,7 @@ function VisitCampus() {
   const { label, title, description } = visitCampusData;
 
   return (
-    <section className="visit-campus"  aria-labelledby="visit-campus-title">
+    <section className="visit-campus flex flex-justify-center"  aria-labelledby="visit-campus-title">
       <div className="visit-campus__container">
         <p className="visit-campus__label">
           {label}

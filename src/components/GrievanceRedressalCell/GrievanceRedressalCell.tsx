@@ -21,10 +21,10 @@ const GrievanceRedressalCell = () => {
         data={grievanceRedressalData.procedure}
       />
 
-      <div className="grievance-redressal-cell__button-row">
+      <div className="grievance-redressal-cell__button-row flex flex-center">
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSfuXjnNeEcz5q7yYjYU3ZcfA5WQNHI6yEIGhYGq9mHVRkLHzQ/viewform?pli=1"
-          className="committee-btn grievance-redressal-cell__button"
+          className="committee-btn grievance-redressal-cell__button flex flex-center"
           target="_blank"
           rel="noopener noreferrer"
         >

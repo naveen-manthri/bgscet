@@ -14,7 +14,7 @@ const CommitteeCards = ({ data }: CommitteeCardsProps) => {
       </div>
       <div className="committee-grid">
         {data.map((committee) => (
-          <a key={committee.title} href={committee.pdf} target="_blank" rel="noopener noreferrer" className="committee-btn">{committee.title}</a>
+          <a key={committee.title} href={committee.pdf} target="_blank" rel="noopener noreferrer" className="committee-btn flex flex-center">{committee.title}</a>
 
         ))}
       </div>

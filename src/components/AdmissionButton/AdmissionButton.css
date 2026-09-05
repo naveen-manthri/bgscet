@@ -25,10 +25,6 @@
   width: var(--btn-width);
   height: var(--btn-height);
 
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-
   border: 0.06rem solid var(--btn-text);
   border-radius: var(--btn-radius);
 

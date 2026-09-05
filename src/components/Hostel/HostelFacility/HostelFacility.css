@@ -1,7 +1,6 @@
 .hostel-facility {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
 }
 
 .hostel-facility__content {
@@ -33,10 +32,6 @@
 }
 
 @media (max-width: 48rem) {
-  .hostel-facility {
-    gap: 1.5rem;
-  }
-
   .hostel-facility__content {
     gap: 1.25rem;
   }

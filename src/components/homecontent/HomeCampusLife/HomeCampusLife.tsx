@@ -22,8 +22,8 @@ function HomeCampusLife() {
           ))}
         </div>
 
-        <div className="campus-life-button-wrapper">
-          <a  href={campusLifeGalleryLink} className="campus-life-button" >  View Full Gallery </a>
+        <div className="campus-life-button-wrapper flex flex-center">
+          <a  href={campusLifeGalleryLink} className="campus-life-button flex inline-flex-center" >  View Full Gallery </a>
         </div>
       {/* </div> */}
     </section>

@@ -30,12 +30,12 @@ const ImageCard = ({ title, data }: ImageCardProps) => {
 
       <div className="cse-events-grid">
         {data.map((event, i) => (
-          <div className="cse-event-card" key={event.id}>
-            <button type="button" className="cse-event-image-wrapper" onClick={() => setIndex(i)} aria-label={`Open image: ${event.title}`}>
+          <div className="cse-event-card flex flex-column" key={event.id}>
+            <button type="button" className="cse-event-image-wrapper flex flex-center" onClick={() => setIndex(i)} aria-label={`Open image: ${event.title}`}>
               <img src={event.image} alt={event.alt} className="cse-event-image" />
             </button>
 
-            <div className="cse-event-content">
+            <div className="cse-event-content flex flex-column flex-align-center flex-justify-between">
               <p className="cse-event-description">&quot;{event.title}&quot;</p>
               <button type="button" className="read-more-btn" onClick={() => setIndex(i)}>Read More</button>
             </div>

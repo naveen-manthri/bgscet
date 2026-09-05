@@ -10,12 +10,8 @@ function BannerSection({
 }: BannerSectionProps) {
   return (
     <section className="banner-section">
-        <img
-          src={image}
-          alt={title}
-          className="banner-image"
-        />
-        <h2 className="banner-title">{title}</h2>
+        <img src={image} alt={title} className="banner-image" />
+        <h2 className="banner-title flex flex-center" >{title}</h2>
     </section>
   );
 }

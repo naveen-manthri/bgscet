@@ -29,7 +29,7 @@ function AboutUniversity() {
             {aboutUniversity.title}
           </h1>
           <p className="about-description">{aboutUniversity.description}</p>
-          <Link className="admission-button" to="/admissions">
+          <Link className="admission-button inline-flex-center" to="/admissions">
             {aboutUniversity.buttonText}
           </Link>
         </div>

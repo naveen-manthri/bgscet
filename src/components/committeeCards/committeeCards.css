@@ -12,10 +12,6 @@
 }
 
 .committee-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   min-height: 70px;
   padding: 1rem;
 

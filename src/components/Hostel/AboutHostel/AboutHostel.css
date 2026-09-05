@@ -41,8 +41,7 @@
 }
 
 .about-hostel__dots {
-  display: flex;
-  justify-content: center;
+  
   gap: 0.6rem;
   margin-top: 1rem;
 }

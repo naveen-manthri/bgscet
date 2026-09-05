@@ -19,7 +19,7 @@ function HomeAcademicPrograms() {
                   {program.title}
                 </h3>
 
-                <span className="program-duration">
+                <span className="program-duration flex inline-flex-center">
                   {program.duration}
                 </span>
 
@@ -33,7 +33,7 @@ function HomeAcademicPrograms() {
           ))}
         </div>
 
-        <div className="admission-btn-wrapper">
+        <div className="admission-btn-wrapper flex flex-center">
           <AdmissionButton variant="primary" />
         </div>
       {/* </div> */}

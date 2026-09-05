@@ -26,7 +26,7 @@ const AdmissionSection = () => {
                     key={course}
                     className="admission__item"
                   >
-                    <span className="admission__number">
+                    <span className="admission__number flex flex-center">
                       {index + 1}
                     </span>
 

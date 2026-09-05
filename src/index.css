@@ -143,6 +143,46 @@ img {
   margin: 0 auto;
 }
 
+
+/*Reusable Flexbox Classes*/
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+.flex-justify-center {
+  justify-content: center;
+}
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+.flex-direction-column {
+  flex-direction: column;
+}
+.inline-flex-center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-align-start {
+  align-items: flex-start;
+}
+.flex-justify-content {
+  justify-content: center;
+}
+.flex-justify-between {
+  justify-content: space-between;
+}
+
 .top-announcement-bar {
   background: var(--secondary-deep);
   color: var(--white);

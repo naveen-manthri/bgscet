@@ -32,9 +32,7 @@
 }
 
 .scstcell-page__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
   min-height: 70px;
   width: 100%;
   padding: 1rem;
