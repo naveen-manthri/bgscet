@@ -14,7 +14,7 @@
   flex-direction: column;
   gap: var(--career-heading-gap);
   padding:  0;
-  margin: var(--career-section-gap) 0;
+  margin-top: var(--primary-margin-top);
 }
 
 .bullet-section__list {
@@ -27,7 +27,7 @@
 }
 
 .bullet-section__item {
-  font-size: var(--career-paragraph-size);
+  font-size: var(--font-size);;
   color: var(--text);
   font-family: var(--career-font-family);
   line-height: var(--line-height);

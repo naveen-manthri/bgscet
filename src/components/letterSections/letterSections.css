@@ -2,7 +2,8 @@
   --btn-primary: #cc2a09;
   --btn-primary-hover: #b82508;
 
-  padding: 3rem 4rem 0;
+  padding: 0 4rem 0;
+  margin-top: var(--primary-margin-top);
   gap: 2rem;
   display: flex;
   flex-direction: column;
@@ -11,7 +12,7 @@
   margin-bottom: 2rem;
 }
 /* .letter-section {
-   margin-top: 3rem; 
+   margin-top: var(--primary-margin-top); 
   margin-bottom: 2rem;
 }  */
 

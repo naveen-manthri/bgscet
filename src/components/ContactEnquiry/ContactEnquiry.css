@@ -2,7 +2,7 @@
 
     
   --fs-body: 1.25rem;
-  margin: 3rem 0 0 0;
+  margin-top: var(--primary-margin-top);
   background: var(--white);
 }
 

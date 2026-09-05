@@ -14,14 +14,14 @@
   --campus-image-height-large: 31rem;
   --campus-image-height-small: 15rem;
 
-  --campus-grid-margin-top: 3rem;
+  --campus-grid-margin-top: var(--primary-margin-top);
   --campus-button-margin-top: 2.5rem;
 }
 
 .home-campus-life {
   width: 100%;
   margin-top: 4rem;
-  padding: 0 4rem;
+  padding: var(--primary-padding);
 }
 
 .home-campus-life .container {
@@ -35,7 +35,7 @@
   grid-template-columns: 1fr 1fr 1.6fr;
   grid-template-rows: 18rem 24rem;
   gap: 1rem;
-  margin-top: 3rem;
+  margin-top: var(--primary-margin-top);
 }
 
 .campus-life-card {

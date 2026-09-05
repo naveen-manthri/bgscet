@@ -6,19 +6,13 @@ function VisitCampus() {
   const { label, title, description } = visitCampusData;
 
   return (
-    <section
-      className="visit-campus"
-      aria-labelledby="visit-campus-title"
-    >
+    <section className="visit-campus"  aria-labelledby="visit-campus-title">
       <div className="visit-campus__container">
         <p className="visit-campus__label">
           {label}
         </p>
 
-        <h2
-          className="visit-campus__title"
-          id="visit-campus-title"
-        >
+        <h2  className="visit-campus__title" id="visit-campus-title"  >
           {title.split("\n").map((line, index) => (
             <span key={index}>
               {line}
@@ -36,10 +30,7 @@ function VisitCampus() {
           ))}
         </p>
 
-        <div
-          className="visit-campus__actions"
-          aria-label="Admission actions"
-        >
+        <div className="visit-campus__actions" aria-label="Admission actions" >
           <AdmissionButton variant="secondary" />
           <AdmissionButton variant="outline" />
         </div>

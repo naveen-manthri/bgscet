@@ -35,7 +35,8 @@
 }
 
 .home-academic {
-  padding: 4rem;
+  margin-top: var(--primary-margin-top);
+  padding: var(--primary-padding);
   display: flex;
   flex-direction: column;
   gap: 3rem;

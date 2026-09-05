@@ -1,5 +1,6 @@
 .icwite-2025 {
-  margin: 3rem 4rem 0rem 4rem;
+  margin-top: var(--primary-margin-top);
+  padding: var(--primary-padding);
 }
 
 .icwite-2025__link {

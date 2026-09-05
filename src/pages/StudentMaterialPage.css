@@ -1,7 +1,8 @@
 .student-material__cta {
   display: flex;
   justify-content: center;
-  margin: 3rem 4rem 0 4rem;
+  padding: var(--primary-padding);
+  margin-top: var(--primary-margin-top);
 }
 
 .student-material__button {

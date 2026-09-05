@@ -35,7 +35,7 @@
   justify-content: flex-start; 
    align-items: stretch; 
   gap: var(--grid-gap);
-  margin-top: 2rem;
+  margin-top: var(--primary-margin-top);
   column-gap: 2rem;
   row-gap: 3rem;
 }

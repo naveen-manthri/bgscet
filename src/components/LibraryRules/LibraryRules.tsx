@@ -11,7 +11,7 @@ const LibraryRules = () => {
     <section className="library-rules">
       <div className="library-rules__container">
 
-        <DepartmentSectionHeading title={data.title} />
+        <DepartmentSectionHeading title={data.title} className="department-section-heading--medium" />
 
         <ul className="library-rules__list">
           {data.rules.map((rule, index) => (

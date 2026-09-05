@@ -1,6 +1,6 @@
 :root {
   --page-padding: 4rem;
-  --margin-top:3rem;
+  --margin-top: var(--primary-margin-top);
   --table-gap: 4rem;
 }
 

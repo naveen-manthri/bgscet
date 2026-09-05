@@ -1,4 +1,4 @@
-import { companyLogos } from "../../data/landingData";
+import { companyLogos } from "../../../data/landingData";
 import "./CampusPlacements.css";
 
 function CampusPlacements() {

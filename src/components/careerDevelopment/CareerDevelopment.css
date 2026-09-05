@@ -1,7 +1,7 @@
 .career-development {
   width: 100%;
-  padding: 0 4rem;
-  margin-top: 3rem;
+  padding: var(--primary-padding);
+  margin-top: var(--primary-margin-top);
   box-sizing: border-box;
 }
 .career-development p {

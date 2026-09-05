@@ -15,7 +15,7 @@
 }
 
 .ug-department__tab-content {
-  padding: 0 4rem;
+  padding: var(--primary-padding);
 }
 
 .ug-department__single-page > [id] {
@@ -23,7 +23,7 @@
 }
 
 .ug-department__single-page #department-vision {
-  margin-top: 3rem;
+  margin-top: var(--primary-margin-top);
 }
 
 .ug-department__single-page > [id] + * {

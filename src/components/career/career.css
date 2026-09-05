@@ -1,8 +1,8 @@
 .career-hero {
    --radius-md: 0.75rem;
    --paragraph-clr:#4c4949;
-  padding: 0 4rem;
-  margin-top:3rem;
+  padding: var(--primary-padding);
+  margin-top: var(--primary-margin-top);
 
   display: flex;
   flex-direction: column;

@@ -13,11 +13,11 @@
   flex-direction: column;
   gap: var(--career-heading-gap);
   padding: 0 var(--career-page-padding);
-  margin-bottom: var(--career-section-gap);
+  margin-top: var(--primary-margin-top);
 }
 
 .title-description p {
-  font-size: var(--career-paragraph-size);
+  font-size: var(--font-size);;
   color: var(--text);
   line-height: var(--line-height);
   font-family: var(--career-font-family);

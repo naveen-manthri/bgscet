@@ -52,7 +52,7 @@
   font-weight: var(--fw-regular);
 }
 .TechnicalFaculty{
-  margin-top: 3rem;
+  margin-top: var(--primary-margin-top);
 } 
 @media (max-width: 64rem) {
   .department-faculty__grid {

@@ -3,12 +3,12 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
-  padding: 0 4rem;
+  padding: var(--primary-padding);
 }
 
 .committee-heading {
-  padding: 0 4rem;
-  margin-top:3rem;
+  padding: var(--primary-padding);
+  margin-top: var(--primary-margin-top);
 }
 
 .committee-btn {

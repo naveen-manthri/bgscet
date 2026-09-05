@@ -6,7 +6,7 @@ import HomeAboutMutt from '../components/homecontent/HomeAboutMutt/HomeAboutMutt
 import HomeVisionMission from '../components/homecontent/HomeVisionMission/HomeVisionMission';
 import HomeAcademicPrograms from '../components/homecontent/HomeAcademicPrograms/HomeAcademicPrograms';
 import HomeCampusLife from '../components/homecontent/HomeCampusLife/HomeCampusLife';
-import CampusPlacements from '../components/CampusPlacements/CampusPlacements';
+import CampusPlacements from '../components/homecontent/CampusPlacements/CampusPlacements';
 import StudentTestimonials from '../components/StudentTestimonials/StudentTestimonials';
 import VisitCampus from '../components/VisitCampus/VisitCampus';
 import Statistics from '../components/Statistics/Statistics';

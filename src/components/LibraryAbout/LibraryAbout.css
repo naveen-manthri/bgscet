@@ -1,14 +1,15 @@
 .library-about {
 
     --color-red :#e3473a;
-  padding: 5rem 0;
+  margin-top: var(--primary-margin-top);
+  margin-bottom: var(--primary-margin-bottom);
   background: var(--white);
 }
 
 .library-about__container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 4rem;
+  padding: var(--primary-padding);
   font-size: var(--font-size);
 }
 

@@ -7,11 +7,16 @@ import "./TitleDescription.css";
 interface TitleDescriptionProps {
   data: TitleDescriptionSection;
   className?: string;
+  sectionClassName?: string;
 }
 
-const TitleDescription = ({ data, className = "department-section-heading--default" }: TitleDescriptionProps) => {
+const TitleDescription = ({
+  data,
+  className = "department-section-heading--default",
+  sectionClassName = "",
+}: TitleDescriptionProps) => {
   return (
-    <section className="title-description">
+    <section className={`title-description ${sectionClassName}`.trim()}>
       <DepartmentSectionHeading title={data.title} className={className} />
 
       <p>{data.description}</p>

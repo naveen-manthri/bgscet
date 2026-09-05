@@ -4,7 +4,7 @@
   overflow: hidden;
   color: var(--white);
   background: linear-gradient(to bottom, #E3473A, #7D2720);
-  margin-top: 1rem;
+  margin-top: var(--primary-margin-top);
 }
 
 .campus-placements__inner {

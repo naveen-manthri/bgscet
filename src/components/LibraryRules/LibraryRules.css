@@ -1,18 +1,18 @@
 .library-rules {
 
     --fs-body:1.25rem;
-  padding: 5rem 0 0 0;
+  margin-top: var(--primary-margin-top);
   background: var(--white);
 }
 
 .library-rules__container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 4rem;
+  padding: var(--primary-padding);
 }
 
 .library-rules__list {
-  margin: 2rem 0 0;
+  /* margin: 2rem 0 0; */
   padding-left: 1.5rem;
 }
 

@@ -1,6 +1,7 @@
 .facilities-sub {
   --text: #4c4949;
-  padding:  4rem 4rem 0 4rem;
+  padding:   0 4rem;
+  margin-top: var(--primary-margin-top);
 }
 
 .facilities-sub__description {

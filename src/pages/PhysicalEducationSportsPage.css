@@ -1,17 +1,18 @@
 .physical-education {
-  width: calc(100% - 8rem);
-  margin: 0 auto;
+  width: 100%;
+  margin: var(--primary-margin-top) 0 0;
+  padding: var(--primary-padding);
   color: #242424;
 }
 
-.physical-education__message,
+
 .physical-education__annual {
-  padding: 3rem 0;
+  margin-top: var(--primary-margin-top);
   /* margin: 0 1rem; */
 }
 
 .physical-education__message {
-  padding-bottom: 2rem;
+  padding-bottom: 0rem;
 }
 
 .physical-education__message-grid {
@@ -40,7 +41,7 @@
   object-fit: cover;
 }
 
-.physical-education__instructor { margin-top: 3rem; }
+.physical-education__instructor { margin-top: var(--primary-margin-top); }
 
 .physical-education__people figcaption {
   display: grid;
@@ -93,12 +94,13 @@
   max-width: none;
   height: auto;
   margin-left: -4rem;
+  display: block;
 }
 
 .physical-education__recognitions {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin-top: 2.5rem;
+  margin-top: var(--primary-margin-top);
   border-bottom: 1px solid #cfcfcf;
   font-family: "Poppins", sans-serif;
 }

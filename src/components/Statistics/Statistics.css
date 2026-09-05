@@ -86,7 +86,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: var(--grid-gap);
-  margin-top: 3rem;
+  margin-top: var(--primary-margin-top);
 }
 
 .statistics-card {

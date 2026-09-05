@@ -1,5 +1,6 @@
 .scstcell-page {
-  padding: 3rem 4rem 0 4rem;
+  padding: var(--primary-padding);
+  margin-top: var(--primary-margin-top);
   background: #ffffff;
 }
 

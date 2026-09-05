@@ -79,7 +79,13 @@
 --para-list-line-height: 1.7;
 --line-height: var(--para-list-line-height);
 
+/*Margins*/
+--primary-margin-top: 3rem;
+--primary-margin-bottom: 3rem;
+--primary-margin: 3rem 0;
 
+/*padding*/
+--primary-padding: 0 4rem;
 
 }
 
@@ -118,6 +124,10 @@ img {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
+}
+
+.home-page-sections > section {
+  margin: var(--primary-margin-top) 0 0;
 }
 
 .container {

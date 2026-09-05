@@ -17,7 +17,7 @@
 
 .ipr {
   padding: 0 var(--page-padding);
-  margin: var(--section-margin) auto 0;
+  margin-top: var(--primary-margin-top);
 }
 
 
