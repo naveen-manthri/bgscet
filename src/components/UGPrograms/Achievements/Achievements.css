@@ -19,8 +19,7 @@
 }
 
 .achievement-list {
-  display: flex;
-  flex-direction: column;
+  
   gap: var(--content-gap);
   margin-top: var(--content-gap);
 }
@@ -31,12 +30,6 @@
   font-size: var(--title-font-size);
   font-weight: var(--title-font-weight);
   line-height: var(--title-line-height);
-}
-
-.achievement-image-wrapper {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
 
 .achievement-image {

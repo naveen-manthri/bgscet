@@ -4,16 +4,11 @@
 }
 
 .home-news-announcements .container {
-  display: flex;
-  flex-direction: column;
   gap: 3rem;
 }
 
 
 .section-heading-news {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 1rem;
 }
 

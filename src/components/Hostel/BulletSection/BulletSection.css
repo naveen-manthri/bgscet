@@ -1,12 +1,10 @@
-.bullet-section {
-  display: flex;
-  flex-direction: column;
-  /* gap: 2rem; */
-}
+/* .bullet-section {
+  
+ 
+} */
 
 .bullet-section__list {
-  display: flex;
-  flex-direction: column;
+  
   gap: 0.4rem;
   padding-left: 1.5rem;
 }

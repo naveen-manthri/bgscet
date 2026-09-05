@@ -5,16 +5,8 @@
   --another--par-clr: #4c4949;
   padding: var(--primary-padding);
   margin-top: var(--primary-margin-top);
-  display: flex;
-  flex-direction: column;
+  
   gap: 3rem;
-}
-
-.nss__section {
-
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
 }
 
 .nss__section p,

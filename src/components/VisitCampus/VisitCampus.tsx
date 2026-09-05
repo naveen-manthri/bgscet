@@ -7,7 +7,7 @@ function VisitCampus() {
 
   return (
     <section className="visit-campus flex flex-justify-center"  aria-labelledby="visit-campus-title">
-      <div className="visit-campus__container">
+      <div className="visit-campus__container flex flex-direction-column flex-align-start">
         <p className="visit-campus__label">
           {label}
         </p>
@@ -30,7 +30,7 @@ function VisitCampus() {
           ))}
         </p>
 
-        <div className="visit-campus__actions" aria-label="Admission actions" >
+        <div className="flex flex-align-center visit-campus__actions" aria-label="Admission actions" >
           <AdmissionButton variant="secondary" />
           <AdmissionButton variant="outline" />
         </div>

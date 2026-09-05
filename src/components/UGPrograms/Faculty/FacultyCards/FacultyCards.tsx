@@ -12,7 +12,7 @@ const FacultyCards = ({ data, title }: FacultyCardsProps) => (
     <DepartmentSectionHeading title={title} className="department-section-heading--medium" />
     <div className="department-faculty__grid">
       {data.map((faculty) => (
-        <article key={faculty.id} className="department-faculty__card">
+        <article key={faculty.id} className="department-faculty__card flex flex-direction-column">
           <img src={faculty.image} alt={faculty.name} className="department-faculty__image" />
           <div className="department-faculty__info">
             <h3 className="department-faculty__name">{faculty.name}</h3>

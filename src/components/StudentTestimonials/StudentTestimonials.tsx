@@ -54,7 +54,7 @@ function StudentTestimonials() {
         />
 
         <div
-          className={`student-testimonials__scroller${
+          className={`flex student-testimonials__scroller${
             isDragging ? ' is-dragging' : ''
           }`}
           ref={scrollerRef}
@@ -69,7 +69,7 @@ function StudentTestimonials() {
         >
           {testimonials.map((testimonial) => (
             <article
-              className="student-testimonials__card"
+              className="flex flex-direction-column flex-align-center flex-start student-testimonials__card"
               key={testimonial.id}
               role="listitem"
             >

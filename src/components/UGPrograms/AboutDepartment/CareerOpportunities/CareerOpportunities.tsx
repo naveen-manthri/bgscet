@@ -26,7 +26,7 @@ const CareerOpportunities = ({
         </p>
 
 
-        <div className="career-opportunities__body">
+        <div className="flex flex-align-start flex-justify-between career-opportunities__body">
 
           <ul className="career-opportunities__list">
             {data.opportunities.map((item) => (

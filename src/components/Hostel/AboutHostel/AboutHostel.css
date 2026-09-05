@@ -1,6 +1,5 @@
 .about-hostel {
-  display: flex;
-  flex-direction: column;
+  
   gap: 0rem;
   margin-top: var(--primary-margin-top);
 }
@@ -26,9 +25,6 @@
 }
 
 .about-hostel__description {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   gap: 2rem;
 }
 

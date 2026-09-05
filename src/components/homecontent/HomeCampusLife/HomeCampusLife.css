@@ -24,12 +24,6 @@
   padding: var(--primary-padding);
 }
 
-.home-campus-life .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .campus-life-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1.6fr;

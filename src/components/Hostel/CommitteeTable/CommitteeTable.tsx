@@ -8,7 +8,7 @@ interface CommitteeTableProps {
 
 const CommitteeTable = ({ data }: CommitteeTableProps) => {
   return (
-    <section className="committee-table">
+    <section className="committee-table flex flex-direction-column">
       <DepartmentSectionHeading title={data.title} className="department-section-heading--medium"/>
 
       <div className="committee-table__wrapper">

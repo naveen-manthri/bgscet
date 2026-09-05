@@ -12,7 +12,7 @@ const courses: string[] = [
 
 const AdmissionSection = () => {
   return (
-    <section className="admission">
+    <section className="flex flex-justify-between admission">
       <div>
           <AcademicHeading className="admission__title" blackTitle={"Admission For Management Quota\nSeats Is Underway "} redTitle={"For First Year\nB.E. Courses : 2026-27"} underlineLastLine />
           <div>
@@ -20,11 +20,11 @@ const AdmissionSection = () => {
                 Four Years Bachelor of Engineering (B.E.) Courses:
               </p>
 
-              <ul className="admission__list">
+              <ul className="flex flex-direction-column admission__list">
                 {courses.map((course, index) => (
                   <li
                     key={course}
-                    className="admission__item"
+                    className="flex flex-align-start admission__item"
                   >
                     <span className="admission__number flex flex-center">
                       {index + 1}

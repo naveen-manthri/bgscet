@@ -10,7 +10,7 @@ import {
 function HomeCampusLife() {
   return (
     <section className="home-campus-life section-space">
-      {/* <div className="container"> */}
+      <div className="flex flex-direction-column flex-align-center container">
         <SectionHeading subtitle="Campus Life" title="A Campus That" titleSecondLine="Lives After Dark." underlineFitContent center />
 
         <div className="campus-life-grid">
@@ -25,7 +25,7 @@ function HomeCampusLife() {
         <div className="campus-life-button-wrapper flex flex-center">
           <a  href={campusLifeGalleryLink} className="campus-life-button flex inline-flex-center" >  View Full Gallery </a>
         </div>
-      {/* </div> */}
+      </div>
     </section>
   );
 }

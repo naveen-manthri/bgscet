@@ -9,7 +9,7 @@ import {
 
 const PatentTable = () => {
   return (
-    <div className="patent-page">
+    <div className="patent-page flex flex-direction-column">
       {/* First Table */}
       <section className="table-section">
         <DepartmentSectionHeading title="List of Patents Granted" className="department-section-heading--medium" />

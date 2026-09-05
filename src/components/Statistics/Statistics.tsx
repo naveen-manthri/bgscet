@@ -84,7 +84,7 @@ const Statistics = () => {
   return (
     <section ref={sectionRef} className="statistics">
       <div className="statistics-container">
-        <div className="statistics-header">
+        <div className="flex flex-direction-column flex-align-center statistics-header">
           <p className="statistics-unit">UNIT OF</p>
 
           <h2 className="statistics-title">

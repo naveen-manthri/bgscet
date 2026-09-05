@@ -17,7 +17,7 @@ const AboutHostel = ({ data }: AboutHostelProps) => {
   }, []);
 
   return (
-    <section className="about-hostel hostel-page">
+    <section className="about-hostel flex flex-direction-column hostel-page">
       <DepartmentSectionHeading title={data.title} className="department-section-heading--medium" />
 
       <div className="about-hostel__content">
@@ -33,7 +33,7 @@ const AboutHostel = ({ data }: AboutHostelProps) => {
           </div>
         </div>
 
-        <div className="about-hostel__description">
+        <div className="flex flex-direction-column flex-start about-hostel__description">
           {data.description.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}

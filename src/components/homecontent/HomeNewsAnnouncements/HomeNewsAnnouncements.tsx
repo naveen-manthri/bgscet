@@ -4,9 +4,9 @@ import { newsAnnouncements } from '../../../data/newsAnnouncementsData';
 function HomeNewsAnnouncements() {
   return (
     <section className="home-news-announcements section-space">
-      <div className="container">
+      <div className="flex flex-direction-column container">
 
-        <div className="section-heading-news">
+        <div className="flex flex-direction-column flex-align-center section-heading-news">
           <h2>News & Events / Announcements</h2>
         </div>
 

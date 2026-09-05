@@ -9,11 +9,11 @@ interface AchievementCardsProps {
 const AchievementCards = ({ data }: AchievementCardsProps) => (
   <>
     <DepartmentSectionHeading title={data.title} className="department-section-heading--medium" />
-    <div className="achievement-list">
+    <div className="achievement-list flex flex-direction-column">
       {data.achievements.map((achievement, index) => (
         <div className="achievement-card" key={achievement.id}>
           <h3 className="achievement-title">{index + 1}. {achievement.title}</h3>
-          <div className="achievement-image-wrapper">
+          <div className="flex flex-start flex-align-start achievement-image-wrapper">
             <img src={achievement.image} alt={achievement.alt} className="achievement-image" />
           </div>
           {index !== data.achievements.length - 1 && <hr className="achievement-divider" />}

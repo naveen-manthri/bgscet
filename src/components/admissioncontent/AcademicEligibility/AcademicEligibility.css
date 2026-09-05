@@ -48,9 +48,6 @@
 }
 
 .subtitle-wrapper {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
   width: fit-content;
 }
 
@@ -71,9 +68,6 @@
 }
 
 .eligibility-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   gap: 3rem;
 }
 
@@ -83,9 +77,6 @@
 
 .eligibility-images {
   flex: 0 0 32%;
-
-  display: flex;
-  flex-direction: column;
   gap: 1.25rem;
 
   height: 38rem;

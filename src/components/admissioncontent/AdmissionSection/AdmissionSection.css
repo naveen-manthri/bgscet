@@ -8,8 +8,6 @@
 
   background: #ffffff;
   padding: 4rem;
-  display: flex;
-  justify-content: space-between;
 }
 
 .admission__title.academic-section-heading h2 {
@@ -63,8 +61,6 @@
 }
 
 .admission__list {
-  display: flex;
-  flex-direction: column;
   gap: 1.1rem;
   margin: 0;
   padding: 0;
@@ -72,8 +68,6 @@
 }
 
 .admission__item {
-  display: flex;
-  align-items: flex-start;
   gap: 1rem;
 }
 

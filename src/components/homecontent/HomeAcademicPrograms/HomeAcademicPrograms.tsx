@@ -5,16 +5,16 @@ import SectionHeading from "../../common/SectionHeading";
 
 function HomeAcademicPrograms() {
   return (
-    <section className="home-academic section-space">
-      {/* <div className="container academic-programs-container"> */}
+    <section className="flex flex-direction-column home-academic section-space">
+      <div className="flex flex-direction-column container academic-programs-container">
         <SectionHeading subtitle="Academics" title="Programs Designed" titleSecondLine="Like Products." underlineFitContent center />
 
-        <div className="programs-grid">
+        <div className="flex flex-justify-between programs-grid">
           {academicPrograms.map((program) => (
-            <article className="program-card" key={program.id}>
+            <article className="flex flex-direction-column program-card" key={program.id}>
               <img src={program.image} alt={program.title} className="program-image" loading="lazy"  />
 
-              <div className="program-content">
+              <div className="flex flex-direction-column flex-align-start flex-justify-between program-content">
                 <h3 className="program-title">
                   {program.title}
                 </h3>
@@ -36,7 +36,7 @@ function HomeAcademicPrograms() {
         <div className="admission-btn-wrapper flex flex-center">
           <AdmissionButton variant="primary" />
         </div>
-      {/* </div> */}
+      </div>
     </section>
   );
 }

@@ -26,12 +26,12 @@
   margin-bottom: 2rem;
 }
 
- .iic-section {
-  /* margin-bottom: var(--section-gap); */
+ /* .iic-section {
+  margin-bottom: var(--section-gap); 
   display:flex;
   flex-direction: column;
-  /* margin-bottom: var(--section-margin-bottom); */
-} 
+  margin-bottom: var(--section-margin-bottom); 
+}  */
 
 .iic-section p {
   color: var(--text);

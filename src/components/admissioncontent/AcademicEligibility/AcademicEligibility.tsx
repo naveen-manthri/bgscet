@@ -16,7 +16,7 @@ function AcademicEligibility() {
               Academic Eligibility For Admissions To Four Years Under Graduate
             </span>
 
-            <div className="subtitle-wrapper">
+            <div className="inline-flex-center flex-direction-column flex-align-start subtitle-wrapper">
               <span className="title-sub">
                 Programs Through KEA/COMED-K/Management:
               </span>
@@ -28,7 +28,7 @@ function AcademicEligibility() {
 
         </div>
 
-        <div className="eligibility-wrapper">
+        <div className="flex flex-justify-between flex-align-start eligibility-wrapper">
 
           <div className="eligibility-content">
 
@@ -72,7 +72,7 @@ function AcademicEligibility() {
 
           </div>
 
-          <div className="eligibility-images">
+          <div className="flex flex-direction-column eligibility-images">
 
             <div className="image-card image-small">
               <img

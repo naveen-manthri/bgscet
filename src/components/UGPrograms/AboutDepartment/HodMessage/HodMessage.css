@@ -26,9 +26,6 @@
 }
 
 .hod-message__content {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
   gap: 3.5rem;
 /* 
   margin-top: 2.5rem; */
@@ -36,10 +33,6 @@
 
 .hod-message__profile {
   flex: 0 0 21rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .hod-message__image {

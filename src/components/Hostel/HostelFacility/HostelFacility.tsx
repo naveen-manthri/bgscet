@@ -8,17 +8,17 @@ interface HostelFacilityProps {
 
 const HostelFacility = ({ data }: HostelFacilityProps) => {
   return (
-    <section className="hostel-facility hostel-page">
+    <section className="flex flex-direction-column hostel-facility hostel-page">
       <DepartmentSectionHeading title={data.title} className="department-section-heading--medium"/>
 
-      <div className="hostel-facility__content">
-        <ul className="hostel-facility__intro-list">
+      <div className="flex flex-direction-column hostel-facility__content">
+        <ul className="flex flex-direction-column hostel-facility__intro-list">
           {data.introductoryPoints.map((point, index) => <li key={index} className="hostel-facility__intro-item">{point}</li>)}
         </ul>
 
         <p className="hostel-facility__description">{data.description}</p>
 
-        <ul className="hostel-facility__facility-list">
+        <ul className="flex flex-direction-column hostel-facility__facility-list">
           {data.facilityPoints.map((point, index) => <li key={index} className="hostel-facility__facility-item">{point}</li>)}
         </ul>
       </div>

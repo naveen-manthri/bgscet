@@ -7,7 +7,7 @@ import "./Hostel.css";
 
 const Hostel = () => {
   return (
-    <main className="hostel">
+    <main className="hostel flex flex-direction-column">
       <AboutHostel data={hostelData.aboutHostel} />
 
       <Table title={hostelData.hostelCommittee.title} table={hostelData.hostelCommittee.table} />

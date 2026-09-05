@@ -19,9 +19,9 @@ const HodMessage = ({
       <DepartmentSectionHeading title={data.title} className="department-section-heading--medium" />
 
 
-      <div className="hod-message__content">
+      <div className="flex flex-align-start flex-justify-between hod-message__content">
 
-        <aside className="hod-message__profile">
+        <aside className="flex flex-direction-column flex-align-center hod-message__profile">
 
           <img
             src={data.image}

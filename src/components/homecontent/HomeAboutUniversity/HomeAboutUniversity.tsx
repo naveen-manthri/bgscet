@@ -8,8 +8,8 @@ function HomeAboutUniversity() {
   const badgeTextPathId = useId();
 
   return (
-    <section className="home-about-university" aria-labelledby="home-about-university-title">
-        <div className="home-about-university__media">
+    <section className="flex home-about-university" aria-labelledby="home-about-university-title">
+      <div className="flex home-about-university__media">
             <img className="home-about-university__image--front" src={homeAboutUniversity.imageOne} alt="BGSCET ceremony" />
             <img className="home-about-university__image--back" src={homeAboutUniversity.imageTwo} alt="BGSCET campus building" />
             <div className="home-about-university__badge" aria-label="Admission open by 2026 BGSCET">
@@ -27,7 +27,7 @@ function HomeAboutUniversity() {
             </div>
         </div>
 
-        <div className="home-about-university__content">
+        <div className="flex flex-direction-column home-about-university__content">
             <DepartmentSectionHeading
               id="home-about-university-title"
               title={homeAboutUniversity.title}

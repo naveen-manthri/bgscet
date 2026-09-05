@@ -41,13 +41,6 @@
 
 
 
-.about-mutt__header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: var(--spacing-12);
-}
-
 .about-mutt__title {
   position: relative;
   display: inline-block;

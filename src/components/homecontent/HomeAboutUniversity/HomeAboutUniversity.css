@@ -1,5 +1,4 @@
 .home-about-university {
-  display: flex;
   gap: 2rem;
   padding:0 clamp(3.25rem, 5vw, 4rem);
   padding-inline: 4rem;
@@ -8,7 +7,6 @@
 }
 
 .home-about-university__media {
-  display: flex;
   gap: 1.5rem;
   flex: 1;
   margin-top: var(--primary-margin-top);
@@ -94,8 +92,6 @@
 }
 
 .home-about-university__content {
-  display: flex;
-  flex-direction: column;
   flex: 1;
   gap: 0rem;
 }

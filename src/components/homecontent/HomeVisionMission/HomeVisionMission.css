@@ -6,8 +6,7 @@
   background-color: #F6F7FA;
 }
 .home-vision-mission__content {
-  display: flex;
-  flex-direction: column;
+  
   flex: 1;
   gap: 1.5rem;
 }
