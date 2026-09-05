@@ -4,6 +4,7 @@
   padding:0 clamp(3.25rem, 5vw, 4rem);
   padding-inline: 4rem;
   margin-top: var(--primary-margin-top);
+  margin-bottom: var(--primary-margin-bottom);
 }
 
 .home-about-university__media {
