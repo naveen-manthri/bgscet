@@ -27,6 +27,7 @@
   --button-border: rgba(255, 255, 255, 0.65);
   --visit-campus-btn: #ffffff;
   --focus: #ffd9d1;
+  --Red-Orange-color: #e3473a;
   --logo-blue: #2367a2;
   --about-title-underline: #031270;
   --color-deep-navy-blue: #031270;
@@ -61,7 +62,8 @@
   --button-text: clamp(0.82rem, 1.45vw, 1rem);
   --font-main: "Poppins", sans-serif;
   --button-font: var(--font-main);
-  --academic-heading-underline:  #000000;;
+  --academic-heading-underline:  #000000;
+  --dividing-line-color: #cfcfcf;
 --academic-section-gap: 1rem;
 --academic-content-gap: 1.5rem;
 --academic-card-gap: 2rem;
@@ -83,6 +85,7 @@
 --primary-margin-top: 3rem;
 --primary-margin-bottom: 3rem;
 --primary-margin: 3rem 0;
+--margin-left-right:4rem;
 
 /*padding*/
 --primary-padding: 0 4rem;

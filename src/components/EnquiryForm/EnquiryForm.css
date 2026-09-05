@@ -7,7 +7,7 @@
   --clr-button-active: #203c75;
   --clr-white: #ffffff;
   --clr-black: #000000;
-  --clr-border: #cfcfcf;
+  --clr-border: var(--dividing-line-color);;
   --clr-placeholder: #5c5c5c;
   --clr-terms: #081228cc;
   --clr-overlay: rgba(0, 0, 0, 0.55);

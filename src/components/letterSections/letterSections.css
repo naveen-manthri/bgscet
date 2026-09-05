@@ -8,9 +8,6 @@
   display: flex;
   flex-direction: column;
 }
-.letter-section-title{
-  margin-bottom: 2rem;
-}
 /* .letter-section {
    margin-top: var(--primary-margin-top); 
   margin-bottom: 2rem;

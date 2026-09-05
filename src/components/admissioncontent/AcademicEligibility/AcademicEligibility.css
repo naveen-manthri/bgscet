@@ -3,7 +3,7 @@
   --primary-hover: #b42308;
 
   --title: #000000;
-  --subtitle: #e3473a;
+  --subtitle: var(--Red-Orange-color);;
   --text: #4c4949;
   --underline: #031270;
   --white: #ffffff;

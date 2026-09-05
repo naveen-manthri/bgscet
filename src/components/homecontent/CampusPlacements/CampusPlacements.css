@@ -9,7 +9,7 @@
 
 .campus-placements__inner {
 
-margin: 0 3rem;
+margin:0 var(--margin-left-right);
 max-width: 90rem;
 }
 

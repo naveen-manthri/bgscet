@@ -1,6 +1,6 @@
 .library-about {
 
-    --color-red :#e3473a;
+    --color-red :var(--Red-Orange-color);;
   margin-top: var(--primary-margin-top);
   margin-bottom: var(--primary-margin-bottom);
   background: var(--white);
@@ -13,13 +13,13 @@
   font-size: var(--font-size);
 }
 
-.library-about__content {
+/* .library-about__content {
   margin-top: 2rem;
-}
+} */
 
 .library-about__heading {
   margin-bottom: 0.5rem;
-  color: #e3473a;
+  color: var(--Red-Orange-color);;
   font-size: var(--fs-heading);
   font-weight: var(--fw-semibold);
 }

@@ -1,5 +1,5 @@
 .admission {
-  --admission-primary: #e3473a;
+  --admission-primary: var(--Red-Orange-color);;
   --admission-title: #000000;
   --text: #4c4949;
   --admission-divider: #000000;

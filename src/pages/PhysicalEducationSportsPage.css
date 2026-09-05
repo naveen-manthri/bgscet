@@ -101,7 +101,7 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   margin-top: var(--primary-margin-top);
-  border-bottom: 1px solid #cfcfcf;
+  border-bottom: 1px solid var(--dividing-line-color);;
   font-family: "Poppins", sans-serif;
 }
 
@@ -111,11 +111,11 @@
 }
 
 .physical-education__recognitions article:nth-child(-n + 2) {
-  border-bottom: 1px solid #cfcfcf;
+  border-bottom: 1px solid var(--dividing-line-color);;
 }
 
 .physical-education__recognitions article:nth-child(2) {
-  border-left: 1px solid #cfcfcf;
+  border-left: 1px solid var(--dividing-line-color);;
 }
 
 .physical-education__recognitions img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }

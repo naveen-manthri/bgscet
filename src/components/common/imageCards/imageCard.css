@@ -1,5 +1,5 @@
 .department-cse-events {
-  --primary-color: #e3473a;
+  --primary-color: var(--Red-Orange-color);;
   --secondary-bg: #f6e7e7;
   --text: #000000;
   --white-color: #ffffff;
@@ -35,7 +35,7 @@
   justify-content: flex-start; 
    align-items: stretch; 
   gap: var(--grid-gap);
-  margin-top: var(--primary-margin-top);
+  /* margin-top: var(--primary-margin-top); */
   column-gap: 2rem;
   row-gap: 3rem;
 }

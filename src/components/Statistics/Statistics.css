@@ -1,6 +1,6 @@
 .statistics {
   --clr-gradient-start: #7d2720;
-  --clr-gradient-end: #e3473a;
+  --clr-gradient-end: var(--Red-Orange-color);;
   --clr-white: #ffffff;
   --clr-card-border: #ebebeb;
   --clr-description: #dedede;
@@ -17,8 +17,8 @@
 
   --grid-gap: 1rem;
 
-  --card-padding-y: 1.25rem;
-  --card-padding-x: 1rem;
+  --primary-padding-y: 1.25rem;
+  --primary-padding-x: 1rem;
 
   --card-border-width: 0.0625rem;
   --card-radius: 0.125rem;
@@ -37,6 +37,7 @@
 
 .statistics {
   width: 100%;
+  margin-top: var(--primary-margin-top);
   padding: var(--section-padding-y) var(--section-padding-x);
   background: linear-gradient(
     93.82deg,
@@ -90,7 +91,7 @@
 }
 
 .statistics-card {
-  padding: var(--card-padding-y) var(--card-padding-x);
+  padding: var(--primary-padding-y) var(--primary-padding-x);
   border: var(--card-border-width) solid var(--clr-card-border);
   border-radius: var(--card-radius);
   background: transparent;

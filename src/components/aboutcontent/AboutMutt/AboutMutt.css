@@ -35,7 +35,8 @@
 .about-mutt {
   width: 100%;
   background: var(--color-background);
-  padding: 3rem 4rem;
+  padding: var(--primary-padding);
+  margin-top: var(--primary-margin-top);
 }
 
 .about-mutt .department-section-heading {

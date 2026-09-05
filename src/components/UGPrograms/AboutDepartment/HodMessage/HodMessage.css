@@ -22,7 +22,7 @@
 
 .hod-message {
   width: 100%;
-  padding-bottom: 4rem;
+  /* padding-bottom: 4rem; */
 }
 
 .hod-message__content {
@@ -30,8 +30,8 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 3.5rem;
-
-  margin-top: 2.5rem;
+/* 
+  margin-top: 2.5rem; */
 }
 
 .hod-message__profile {

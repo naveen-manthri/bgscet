@@ -1,5 +1,5 @@
 :root {
-  --clr-primary: #E3473A;
+  --clr-primary: var(--Red-Orange-color);;
   --clr-title: #000000;
   --underline-clr: #000000;
   --heading-margin-bottom:1rem;

@@ -1,5 +1,5 @@
 .department-cse-events {
-  --primary-color: #e3473a;
+  --primary-color: var(--Red-Orange-color);;
   --secondary-bg: #f6e7e7;
   --text: #000000;
   --white-color: #ffffff;
