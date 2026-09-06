@@ -24,7 +24,13 @@
   padding: var(--primary-padding);
 }
 
+.home-campus-life .container {
+  width: 100%;
+  max-width: none;
+}
+
 .campus-life-grid {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1.6fr;
   grid-template-rows: 18rem 24rem;

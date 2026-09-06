@@ -54,6 +54,9 @@
 }
 
 .about-librarian__card {
+  /* display: flex;
+  flex-direction: column; */
+  gap: 2rem;
   width: 17rem;
   overflow: hidden;
   background: var(--white);
@@ -70,7 +73,6 @@
   padding: 1rem 0.8rem;
   background: var(--red-clr);
   text-align: center;
-  margin-top: 2rem;
 }
 
 .about-librarian__name {

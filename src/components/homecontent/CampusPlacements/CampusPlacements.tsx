@@ -9,7 +9,7 @@ function CampusPlacements() {
     <section className="campus-placements" aria-labelledby="campus-placements-title" >
       <div className="campus-placements__inner">
 
-        <div className="campus-placements__heading flex flex-center">
+        <div className="campus-placements__heading flex flex-center flex-direction-column">
           <h2 className="campus-placements__title"  id="campus-placements-title" >
             Where Our Graduates Go.
           </h2>

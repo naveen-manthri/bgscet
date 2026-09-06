@@ -8,8 +8,6 @@
 
   --fw-bold: 700;
 
-  --fs-section-title: 2rem;
-
   --heading-underline-width: 5rem;
   --heading-underline-height: 0.1475rem;
 
@@ -29,7 +27,7 @@
   color: var(--clr-title);
 
   font-family: var(--ff-primary);
-  font-size: var(--fs-section-title);
+  font-size: var(--primary-title-size-default);
   font-weight: var(--fw-bold);
   line-height: 1.2;
 }
@@ -53,7 +51,7 @@
   }
 
   .department-section-heading__title {
-    font-size: 3.75rem;
+    font-size: var(--primary-title-size-default);
   }
 
   .department-section-heading__underline {
@@ -67,7 +65,12 @@
   }
 
   .department-section-heading__title {
-    font-size: 3.75rem;
+    font-size: var(--primary-title-size-default);
+  }
+
+  .department-section-heading + p {
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
 
   .department-section-heading__underline {
@@ -76,16 +79,12 @@
   }
 }
 
-.department-section-heading--small {
-  --fs-section-title: 1.5rem;
+.department-section-heading--small .department-section-heading__title {
+  font-size: 1.5rem;
 }
 
-.department-section-heading--default {
-  --fs-section-title: 2.7rem;
-}
-
-.department-section-heading--large {
-  font-size: var(--primary-title-size-large);
+.department-section-heading--default .department-section-heading__title {
+  font-size: var(--primary-title-size-default);
 }
 
 .department-section-heading--medium .department-section-heading__title {
@@ -94,4 +93,18 @@
 
 .department-section-heading--large .department-section-heading__title {
   font-size: var(--primary-title-size-large);
+}
+
+@media (max-width: 48rem) {
+  .department-section-heading--default .department-section-heading__title {
+    font-size: 1.6rem;
+  }
+
+  .department-section-heading--medium .department-section-heading__title {
+    font-size: 1.8rem;
+  }
+
+  .department-section-heading--large .department-section-heading__title {
+    font-size: 2.1rem;
+  }
 }

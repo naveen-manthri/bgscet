@@ -38,7 +38,7 @@ const AboutLibrarian = () => {
         <div className="flex flex-start about-librarian__staff">
 
           {data.staff.map((staff) => (
-            <article key={staff.id} className="about-librarian__card">
+            <article key={staff.id} className="about-librarian__card flex flex-direction-column">
               <img  src={staff.image} alt={staff.name} className="about-librarian__image"/>
 
               <div className="about-librarian__card-content">
