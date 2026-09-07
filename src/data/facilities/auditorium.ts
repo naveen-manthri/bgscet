@@ -4,7 +4,7 @@ export const auditoriumData: TitleDescription = {
   title: "Auditorium",
   description:
     [ 
-        "The BGSCET college’s state-of-the-art auditorium is a testament to the college’s commitment to providing the best possible learning environment for its students. With a seating capacity of 1000, It is a spacious and well-designed venue that is perfect for a variety of events.",
+        "The BGSCET college’s state-of-the-art auditorium is a testament to the college’s commitment to providing the best possible learning environment for its students. With a seating capacity of 1000, It is a spacious and well-designed venue that is perfect for a variety of events.", 
 
        "One of the standout features of the auditorium is its energy-efficient lighting system. Not only does this lighting system help to reduce the college’s carbon footprint, but it also provides a beautiful ambiance that adds to the overall experience of any event hosted in the auditorium.",
 

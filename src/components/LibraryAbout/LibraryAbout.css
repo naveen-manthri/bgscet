@@ -28,7 +28,7 @@
   margin-bottom: 1rem;
   color: var(--text);
   font-size: var(--font-size);
-  line-height: 1.8;
+  line-height: var(--line-height);;
 }
 
 .library-about__list {
@@ -57,7 +57,7 @@
   margin-top: 1rem;
   color: var(--text);
   font-size: var(--font-size);
-  line-height: 1.8;
+  line-height: var(--line-height);;
 }
 
 .library-about__image {

@@ -32,7 +32,7 @@
   font-family: var(--ff-primary);
   font-size: var(--font-size);
   font-weight: var(--fw-regular);
-  line-height: 1.8;
+  line-height: var(--line-height);;
 }
 
 .vision-mission__list {
@@ -50,7 +50,7 @@
   font-family: var(--ff-primary);
   font-size: var(--font-size);
   font-weight: var(--fw-regular);
-  line-height: 1.8;
+  line-height: var(--line-height);;
 }
 
 .vision-mission--columns .vision-mission__list {

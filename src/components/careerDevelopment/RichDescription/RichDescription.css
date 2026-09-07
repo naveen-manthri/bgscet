@@ -5,7 +5,7 @@
   --career-content-gap: 1.5rem;
   --career-paragraph-size: 1.25rem;
   --text: #4c4949;
-  --career-line-height: 1.8;
+  --career-line-height: var(--line-height);;
   --career-font-family: "Poppins", sans-serif;
 }
 

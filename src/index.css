@@ -77,9 +77,13 @@
 --academic-table-border: #7a7a7a;
 --academic-sub-heading-black: #4C4949;
 --academic-heading-red: #d84525;
-/* paragraph and list items height */
---para-list-line-height: 1.7;
---line-height: var(--para-list-line-height);
+
+/*Home Page Vision and Mission Colors */
+--home-vision-mission-bg: #F6F7FA;
+
+/* Guru Section Colors */
+--guru-section-bg:  #EEEEEE;
+--guru-title:#7D2720;
 
 /*Margins*/
 --primary-margin-top: 3rem;
@@ -93,7 +97,11 @@
 /* TITLES SIZES */
 --primary-title-size-medium: 2.5rem;
 --primary-title-size-large: 2.7rem;
-  
+
+/* paragraph and list items height */
+
+--line-height: 1.7;
+
 
 }
 
@@ -112,6 +120,11 @@ body {
   background: var(--background);
   color: var(--text);
   font-family: var(--font-main);
+}
+
+p,
+li {
+  line-height: 1.7;
 }
 
 button,

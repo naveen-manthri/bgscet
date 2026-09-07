@@ -18,7 +18,7 @@
 .hostel-facility__description {
   color: var(--text);
   font-size: 1rem;
-  line-height: 1.8;
+  line-height: var(--line-height);;
   text-align: justify;
 }
 

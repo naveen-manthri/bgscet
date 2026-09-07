@@ -14,7 +14,7 @@
 .nss__list p {
   color:var(--text);
   font-size: var(--font-size);
-  line-height: 1.8;
+  line-height: var(--line-height);;
   margin: 0;
   text-align: justify;
 }
@@ -57,11 +57,11 @@
   margin: 0;
   color: var(--text);
   font-size: var(--font-size);;
-  line-height: 1.8;
+  line-height: var(--line-height);;
 }
 .nss__section p {
   color: var(--text);
   font-size: var(--font-size);;
-  line-height: 1.8;
+  line-height: var(--line-height);;
   margin: 0;
 }

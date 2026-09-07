@@ -12,7 +12,7 @@
   --section-gap: 3rem;
   --paragraph-gap: 1rem;
 
-  --line-height: 1.8;
+  --line-height: var(--line-height);;
 }
 .iic-container {
   padding: var(--primary-padding);

@@ -108,7 +108,7 @@
 
 .eligibility-list li {
   font-size: 1rem;
-  line-height: 1.85;
+  line-height: var(--line-height);5;
   text-align: justify;
 }
 
@@ -124,7 +124,7 @@
 
 .exam-list li {
   margin-bottom: 0.2rem;
-  line-height: 1.8;
+  line-height: var(--line-height);;
   font-size: 1rem;
 }
 

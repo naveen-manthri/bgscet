@@ -25,7 +25,7 @@
 .ipr p {
   font-size: var(--paragraph-size);
   color: var(--text);
-  line-height: 1.8;
+  line-height: var(--line-height);;
   text-align: justify;
   margin-bottom: var(--paragraph-margin);
 }

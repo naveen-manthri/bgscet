@@ -22,9 +22,10 @@
 
 
 .career-hero__content p {
+  /* margin: 0 0 1.5rem; */
   font-size: var(--font-size);
   color: var(--text);
-  line-height: 1.8;
+  line-height: var(--line-height);
   text-align: justify;
 }
 
