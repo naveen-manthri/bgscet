@@ -23,7 +23,8 @@
 }
 
 .advaya__files li {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.35rem;
+  font-size: var(--font-size);
 }
 
 .advaya__file {

@@ -3,8 +3,38 @@
   padding: 0rem 4rem ;
 }
 
+.placement-menu-page__contact {
+  padding: var(--primary-padding);
+  margin-top: var(--primary-margin-top);
+}
+
+.placement-menu-page__contact-line,
+.placement-menu-page__contact-link {
+  margin: 0;
+  font-size: var(--font-size);
+  color: var(--text);
+  font-family: var(--career-font-family);
+  line-height: var(--line-height);
+}
+
+.placement-menu-page__contact-label {
+  font-weight: 600;
+}
+.placement-menu-page__contact-line strong {
+  font-weight: 600;
+}
+.placement-menu-page__contact-link {
+  text-decoration: none;
+}
+.placement-menu-page__contact-link:hover {
+  text-decoration: underline;
+}
 @media (max-width: 48rem) {
   .placement-menu-page {
     padding: 2rem 4rem 3rem;
+  }
+
+  .placement-menu-page__contact {
+    padding: 0 4rem 3rem;
   }
 }

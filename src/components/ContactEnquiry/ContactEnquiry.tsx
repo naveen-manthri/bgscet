@@ -44,7 +44,7 @@ const ContactEnquiry = () => {
 
         <div className="visit-us">
             <div className="flex flex-direction-column visit-us__left">
-              <DepartmentSectionHeading title="Visit Us" /> {data.visit.address.map((line, index) => (  <p key={index} className="visit-us__address">  {line}  </p>  ))} <a href={`tel:${data.visit.contact.replace(/\s/g, "")}`} className="inline-flex-center visit-us__contact"> <span className="material-symbols-outlined">call</span>  {data.visit.contact}</a>
+              <DepartmentSectionHeading title="Visit Us" className="department-section-heading--medium"/> {data.visit.address.map((line, index) => (  <p key={index} className="visit-us__address">  {line}  </p>  ))} <a href={`tel:${data.visit.contact.replace(/\s/g, "")}`} className=" visit-us__contact"> <span className="material-symbols-outlined">call</span>  {data.visit.contact}</a>
             </div>
 
             <div className="visit-us__right">

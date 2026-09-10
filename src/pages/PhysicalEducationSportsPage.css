@@ -61,7 +61,7 @@
   gap: 1.25rem;
   min-height: 0;
   overflow: hidden;
-  color: #4c4949;
+  color: var(--text);
   font-size: var(--font-size);
   line-height: 1.9;
 }
@@ -77,7 +77,7 @@
 }
 
 .physical-education__message-content .physical-education__tug-of-war {
-  height: 92.1%;
+  height: 98%;
   min-height: 0;
   overflow: hidden;
 }
@@ -88,7 +88,9 @@
   object-fit: cover;
    object-position: center ;
 }
-
+.physical-education__achievement{
+  margin-top: var(--primary-margin-top);
+}
 .physical-education__achievement > img {
   width: calc(100% + 8rem);
   max-width: none;
@@ -100,13 +102,14 @@
 .physical-education__recognitions {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 0;
   margin-top: var(--primary-margin-top);
   border-bottom: 1px solid var(--dividing-line-color);;
   font-family: "Poppins", sans-serif;
 }
 
 .physical-education__recognitions article {
-  padding: 0 clamp(1.25rem, 3vw, 2.5rem) 2.5rem;
+  padding: 0 3rem 2.5rem 0;
   text-align: center;
 }
 
@@ -116,6 +119,8 @@
 
 .physical-education__recognitions article:nth-child(2) {
   border-left: 1px solid var(--dividing-line-color);;
+  padding:0 0rem 2.5rem 3rem;
+  text-align: center;
 }
 
 .physical-education__recognitions img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
