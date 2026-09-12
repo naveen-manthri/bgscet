@@ -1,6 +1,7 @@
 import "./AboutLibrarian.css";
 
 import DepartmentSectionHeading from "../DepartmentSectionHeading/DepartmentSectionHeading";
+import BulletSection from "../common/BulletSection/BulletSection";
 
 import { aboutLibrarianData } from "../../data/aboutLibrarianData";
 
@@ -21,17 +22,8 @@ const AboutLibrarian = () => {
             </p>
           ))}
 
-          <h3 className="about-librarian__member-title">
-            {data.membersTitle}
-          </h3>
-
-          <ul className="about-librarian__member-list">
-            {data.members.map((member) => (
-              <li key={member.id} className="about-librarian__member-item">
-                {member.text}
-              </li>
-            ))}
-          </ul>
+          <p className="about-librarian__member-title">{data.membersTitle}</p>
+          <BulletSection data={{ title: "", points: data.members.map((member) => member.text), }}  />
 
         </div>
 

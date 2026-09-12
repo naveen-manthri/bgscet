@@ -1,7 +1,7 @@
 :root {
   --campus-gap: 1rem;
 
-  --campus-card-radius: 0.5rem;
+  --campus-card-radius: var(--list-item-gap);
 
   --campus-button-bg: #031270;
   --campus-button-text: #ffffff;
@@ -40,7 +40,7 @@
 
 .campus-life-card {
   overflow: hidden;
-  border-radius: 0.5rem;
+  border-radius: var(--list-item-gap);
 }
 
 .campus-life-card img {

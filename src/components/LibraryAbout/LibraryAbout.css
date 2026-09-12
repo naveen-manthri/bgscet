@@ -18,7 +18,7 @@
 } */
 
 .library-about__heading {
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--list-item-gap);
   color: var(--Red-Orange-color);;
   font-size: var(--fs-heading);
   font-weight: var(--fw-semibold);
@@ -37,7 +37,7 @@
 }
 
 .library-about__item {
-  margin-bottom: 0.9rem;
+  margin-bottom: var(--list-item-gap);
   color: var(--text);
   font-size: var(--font-size);
   line-height: var(--line-height);

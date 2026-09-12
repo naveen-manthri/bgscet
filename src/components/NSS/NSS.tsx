@@ -1,4 +1,5 @@
 import DepartmentSectionHeading from "../DepartmentSectionHeading/DepartmentSectionHeading";
+import BulletSection from "../common/BulletSection/BulletSection";
 import {
   introduction,
   advisoryCommittee,
@@ -39,16 +40,7 @@ const NSS = () => {
         <p>{mission.description}</p>
       </div>
 
-      <div className="flex flex-direction-column nss__section">
-        <DepartmentSectionHeading title={objectives.title} className="department-section-heading--medium" />
-        <ul className="flex flex-direction-column nss__list">
-          {objectives.points.map((point) => (
-            <li key={point}>
-              <p>{point}</p>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <BulletSection data={objectives} />
 
       <div className="flex flex-direction-column nss__section">
         <DepartmentSectionHeading title={advisoryCommittee.title} className="department-section-heading--medium" />

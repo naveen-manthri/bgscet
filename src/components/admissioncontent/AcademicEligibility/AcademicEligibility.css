@@ -10,7 +10,7 @@
 
   --container-width: 83rem;
 
-  --radius: 0.5rem;
+  --radius: var(--list-item-gap);
 
   --transition: all 0.3s ease;
 }
@@ -31,7 +31,7 @@
 .academic-eligibility .container {
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: 0 0.5rem;
+  padding: 0 var(--list-item-gap);
 }
 
 .eligibility-header {

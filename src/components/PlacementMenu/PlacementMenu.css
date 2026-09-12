@@ -1,0 +1,10 @@
+.placement-menu-page {
+  margin-top: var(--primary-margin-top);
+  padding: 0rem 4rem;
+}
+
+@media (max-width: 48rem) {
+  .placement-menu-page {
+    padding: 2rem 4rem 3rem;
+  }
+}

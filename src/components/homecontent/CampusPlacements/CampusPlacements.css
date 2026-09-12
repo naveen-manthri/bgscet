@@ -58,7 +58,7 @@ max-width: none;
 
 .campus-placements__carousel {
   width: 100%;
-  padding-block: 0.5rem;
+  padding-block: var(--list-item-gap);
   overflow: hidden;
 }
 
@@ -94,7 +94,7 @@ max-width: none;
 
   padding: 0.75rem 1rem;
 
-  border-radius: 0.5rem;
+  border-radius: var(--list-item-gap);
   background: #ffffff;
   box-shadow: var(--shadow-soft);
   transition: transform var(--transition);

@@ -55,7 +55,7 @@
   font-size: 10px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  word-spacing: 0.5rem;
+  word-spacing: var(--list-item-gap);
 }
 
 @keyframes home-about-university-badge-spin {

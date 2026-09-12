@@ -41,7 +41,7 @@
   text-decoration: none;
 
   border: none;
-  border-radius: 0.5rem;
+  border-radius: var(--list-item-gap);
 
   font-size: 1rem;
   font-weight: 600;

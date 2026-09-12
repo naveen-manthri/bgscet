@@ -75,7 +75,7 @@
 
   .department-section-heading__underline {
     width: 4rem;
-    margin-top: 0.5rem;
+    margin-top: var(--list-item-gap);
   }
 }
 

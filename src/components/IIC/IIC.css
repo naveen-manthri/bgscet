@@ -10,7 +10,7 @@
   --paragraph-size: 1.25rem;
 
   --section-gap: 3rem;
-  --paragraph-gap: 1rem;
+  --para-desc-gap: 1.5rem;
 
   --line-height: var(--line-height);;
 }
@@ -38,7 +38,7 @@
   font-size: var(--font-size);
   text-align: justify;
   line-height: var(--line-height);
-  margin-bottom: var(--paragraph-gap);
+  margin-bottom: var(--para-desc-gap);
 }
 
 .iic-section ol {
@@ -46,4 +46,7 @@
   font-size: var(--font-size);
   line-height: var(--line-height);
   padding-left: 1rem;
+}
+.iic-section ol li{
+  margin-bottom: var(--list-item-gap);
 }

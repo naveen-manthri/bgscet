@@ -1,7 +1,6 @@
 import "./LibraryRules.css";
 
-import DepartmentSectionHeading from "../DepartmentSectionHeading/DepartmentSectionHeading";
-
+import BulletSection from "../common/BulletSection/BulletSection";
 import { libraryRulesData } from "../../data/libraryRulesData";
 
 const LibraryRules = () => {
@@ -10,17 +9,12 @@ const LibraryRules = () => {
   return (
     <section className="library-rules">
       <div className="library-rules__container">
-
-        <DepartmentSectionHeading title={data.title} className="department-section-heading--medium" />
-
-        <ul className="library-rules__list">
-          {data.rules.map((rule, index) => (
-            <li key={index} className="library-rules__item">
-              {rule}
-            </li>
-          ))}
-        </ul>
-
+        <BulletSection
+          data={{
+            title: data.title,
+            points: data.rules,
+          }}
+        />
       </div>
     </section>
   );

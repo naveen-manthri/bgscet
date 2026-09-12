@@ -98,7 +98,7 @@
 }
 
 .visit-us__contact {
-  gap: 0.5rem;
+  gap: var(--list-item-gap);
   color: var(--text);
   text-decoration: none;
   font-size: var(--font-size);

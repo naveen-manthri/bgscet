@@ -2,7 +2,7 @@ import "../committeeCards/committeeCards.css";
 import "./GrievanceRedressalCell.css";
 
 import TitleDescription from "../careerDevelopment/TitleDescription/TitleDescription";
-import BulletSection from "../careerDevelopment/BulletSection/BulletSection";
+import BulletSection from "../common/BulletSection/BulletSection";
 import { grievanceRedressalData } from "../../data/grievanceRedressalData";
 
 const GrievanceRedressalCell = () => {

@@ -1,11 +1,7 @@
-.placement-menu-page {
-  margin-top: var(--primary-margin-top);
-  padding: 0rem 4rem ;
-}
-
+.staff-details,
 .placement-menu-page__contact {
-  padding: var(--primary-padding);
   margin-top: var(--primary-margin-top);
+  padding: var(--primary-padding);
 }
 
 .placement-menu-page__contact-line,
@@ -30,11 +26,7 @@
   text-decoration: underline;
 }
 @media (max-width: 48rem) {
-  .placement-menu-page {
-    padding: 2rem 4rem 3rem;
-  }
-
   .placement-menu-page__contact {
-    padding: 0 4rem 3rem;
+    padding: var(--primary-padding);
   }
 }

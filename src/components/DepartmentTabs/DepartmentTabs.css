@@ -92,7 +92,7 @@
 
 @media (max-width: 48rem) {
   .department-tabs {
-    gap: 0.5rem;
+    gap: var(--list-item-gap);
     margin-bottom: 2rem;
   }
 

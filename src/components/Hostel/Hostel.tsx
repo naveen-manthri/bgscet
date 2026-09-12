@@ -1,7 +1,7 @@
 import Table from "../common/Table/Table";
+import BulletSection from "../common/BulletSection/BulletSection";
 import { hostelData } from "../../data/hostelData";
 import AboutHostel from "./AboutHostel/AboutHostel";
-import BulletSection from "./BulletSection/BulletSection";
 import HostelFacility from "./HostelFacility/HostelFacility";
 import "./Hostel.css";
 

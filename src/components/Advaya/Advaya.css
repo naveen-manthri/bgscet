@@ -23,13 +23,14 @@
 }
 
 .advaya__files li {
-  margin-bottom: 0.35rem;
+  
   font-size: var(--font-size);
 }
 
 .advaya__file {
   color: var(--btn-primary);
   text-decoration: none;
+  margin-bottom: var(--list-item-gap);
   transition: color 0.3s ease;
 }
 

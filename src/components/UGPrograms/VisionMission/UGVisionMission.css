@@ -43,7 +43,7 @@
 }
 
 .vision-mission__item {
-  /* margin-bottom: 0.875rem; */
+  margin-bottom: var(--list-item-gap);
 
   color: var(--text);
 

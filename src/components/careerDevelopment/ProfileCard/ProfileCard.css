@@ -8,7 +8,7 @@
   --career-line-height: var(--line-height);;
   --career-font-family: "Poppins", sans-serif;
   --career-image-width: 18rem;
-  --career-image-radius: 0.5rem;
+  --career-image-radius: var(--list-item-gap);
 }
 
 .profile-card {

@@ -20,7 +20,7 @@
   --line-height-normal: 1.8;
 
   /* Spacing */
-  --spacing-2: 0.5rem;
+  --spacing-2: var(--list-item-gap);
   --spacing-4: 1rem;
   --spacing-6: 1.5rem;
   --spacing-8: 2rem;

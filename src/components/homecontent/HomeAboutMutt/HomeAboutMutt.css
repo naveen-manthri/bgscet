@@ -9,7 +9,7 @@
 .home-about-mutt__content {
   
   flex: 1;
-  gap: 0.5rem;
+  gap: var(--list-item-gap);
 }
 
 .home-about-mutt__content p {
@@ -31,4 +31,22 @@
   border-radius: 2rem;
   clip-path: inset(0 round 2rem);
   background-color: var(--home-about-mutt-background);
+}
+
+@media (min-width: 1024px) {
+  .home-about-mutt {
+    max-width: 1400px;
+    margin-inline: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home-about-mutt__content {
+    max-width: 48rem;
+  }
+
+  .home-about-mutt__image {
+    flex-shrink: 0;
+    width: min(100%, 30rem);
+  }
 }

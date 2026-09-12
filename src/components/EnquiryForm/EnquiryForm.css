@@ -24,7 +24,7 @@
   --fs-terms: 0.875rem;
   --fs-button: 1.125rem;
 
-  --radius-sm: 0.5rem;
+  --radius-sm: var(--list-item-gap);
   --radius-md: 0.75rem;
   --radius-lg: 1.25rem;
   --radius-round: 50%;
@@ -36,7 +36,7 @@
   --modal-width: 31rem;
   --modal-height: 40rem;
 
-  --space-xs: 0.5rem;
+  --space-xs: var(--list-item-gap);
   --space-sm: 1rem;
   --space-md: 1.5rem;
   --space-lg: 2rem;
@@ -115,7 +115,7 @@
 .enquiry-form__textarea {
   width: 100%;
   border: 0.0625rem solid var(--clr-border);
-  border-radius: 0.5rem;
+  border-radius: var(--list-item-gap);
   padding: 0.75rem 1rem;
   font-family: var(--ff-primary);
   font-size: 0.9rem;
@@ -140,7 +140,7 @@
 }
 
 .enquiry-form__terms {
-  gap: 0.5rem;
+  gap: var(--list-item-gap);
   color: var(--clr-terms);
   font-size: 0.75rem;
   line-height: 1.35;
@@ -158,9 +158,9 @@
 }
 
 .enquiry-form__captcha {
-  gap: 0.5rem;
+  gap: var(--list-item-gap);
   border: 0.0625rem solid var(--clr-border);
-  border-radius: 0.5rem;
+  border-radius: var(--list-item-gap);
   padding: 0.75rem;
   flex: 1;
   min-height: 3.3rem;
@@ -188,7 +188,7 @@
   font-size: 1rem;
   font-weight: var(--fw-semibold);
   padding: 0.85rem 1.8rem;
-  border-radius: 0.5rem;
+  border-radius: var(--list-item-gap);
   cursor: pointer;
   transition: var(--transition);
   white-space: nowrap;

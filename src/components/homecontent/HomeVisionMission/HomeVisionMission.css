@@ -25,3 +25,21 @@
   width: min(100%, 34rem);
   margin: 0 auto;
 }
+
+@media (min-width: 1024px) {
+  .home-vision-mission {
+    max-width: 1400px;
+    margin-inline: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home-vision-mission__content {
+    max-width: 48rem;
+  }
+
+  .home-vision-mission__image {
+    flex-shrink: 0;
+    width: min(100%, 30rem);
+  }
+}

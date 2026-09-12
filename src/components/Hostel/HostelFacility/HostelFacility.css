@@ -11,8 +11,8 @@
 .hostel-facility__intro-item,
 .hostel-facility__facility-item {
   color: var(--text);
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
 }
 
 .hostel-facility__description {

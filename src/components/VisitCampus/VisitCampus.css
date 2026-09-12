@@ -42,7 +42,8 @@
 }
 
 .visit-campus {
-  width: 100%;
+  width: min(92%, var(--container-width));
+  margin-inline: auto;
   margin-top: var(--primary-margin-top);
   padding: 0 0 3rem;
   
@@ -96,6 +97,7 @@
 
 @media (max-width: 64rem) {
   .visit-campus {
+    width: 100%;
     padding: 4rem 1.5rem;
   }
 

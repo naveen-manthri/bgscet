@@ -12,12 +12,7 @@ function Advaya() {
         <ol className="advaya__files">
           {advayaFilesData.map((file) => (
             <li key={file.title}>
-              <a
-                className="advaya__file"
-                href={file.pdf}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a className="advaya__file"  href={file.pdf} target="_blank" rel="noopener noreferrer" >
                 {file.title.replaceAll('_', ' ')}
               </a>
             </li>

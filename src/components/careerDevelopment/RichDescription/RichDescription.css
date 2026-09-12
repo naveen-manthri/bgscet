@@ -22,9 +22,8 @@
 }
 
 .rich-description__content {
-  
   margin-top: var(--career-content-gap);
-  /* gap: var(--career-content-gap); */
+  gap: var(--career-content-gap);
 }
 
 .rich-description p {

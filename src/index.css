@@ -101,7 +101,10 @@
 /* paragraph and list items height */
 
 --line-height: 1.7;
+--para-desc-gap: 1.5rem;
 
+/* LIST ITEMS GAP */
+--list-item-gap: 0.5rem;
 
 }
 
@@ -124,7 +127,7 @@ body {
 
 p,
 li {
-  line-height: 1.7;
+  line-height: var(--line-height);
 }
 
 button,

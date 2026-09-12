@@ -3,7 +3,7 @@ import "./CareerDevelopment.css";
 import { careerDevelopmentData } from "../../data/careerDevelopment";
 
 import TitleDescription from "./TitleDescription/TitleDescription";
-import BulletSection from "./BulletSection/BulletSection";
+import BulletSection from "../common/BulletSection/BulletSection";
 import RichDescription from "./RichDescription/RichDescription";
 import ProfileCard from "./ProfileCard/ProfileCard";
 
