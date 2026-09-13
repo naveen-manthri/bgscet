@@ -53,6 +53,13 @@
 @media (max-width: 768px) {
   .title-description {
     width: 100%;
+    margin-top: var(--mobile-margin-top);
+    padding: 0;
+    gap: 0;
+  }
+
+  .training-placement-cell {
+    margin-top: 0;
   }
 
   .title-description p {

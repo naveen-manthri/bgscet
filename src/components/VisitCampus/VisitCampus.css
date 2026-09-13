@@ -157,29 +157,30 @@
   }
 
   .visit-campus__label {
-    font-size: 1rem;
+    font-size: var(--mobile-font-size);
     line-height: 1.4;
   }
 
   .visit-campus__title {
     max-width: 100%;
-    font-size: 2.8rem;
-    line-height: 1.28;
+    font-size: var(--heading-size-mobile);
+    line-height: 1.2;
     overflow-wrap: anywhere;
   }
 
   .visit-campus__description {
     max-width: 100%;
-    font-size: 1rem;
-    line-height: var(--mobile-line-height);
+    font-size: var(--mobile-description-font-size);
+    line-height: var(--mobile-description-line-height);
+    overflow-wrap: anywhere;
   }
 
   .visit-campus__actions {
-    gap: 1.25rem;
+    gap: var(--mobile-version-para-desc-gap);
   }
 
   .visit-campus .admission-button {
     height: 4rem;
-    font-size: 1.1rem;
+    font-size: var(--button-text);
   }
 }

@@ -27,6 +27,7 @@
 }
 @media (max-width: 48rem) {
   .placement-menu-page__contact {
-    padding: var(--primary-padding);
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
   }
 }

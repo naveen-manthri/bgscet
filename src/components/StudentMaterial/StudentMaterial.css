@@ -34,8 +34,8 @@
 
 @media (max-width: 768px) {
   .student-material__cta {
-    padding-inline: 1.25rem;
-    margin: 1.5rem 0;
+    padding: var(--mobile-padding);
+    margin-top: var(--mobile-margin-top);
   }
 
   .student-material__button {

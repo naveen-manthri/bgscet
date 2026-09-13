@@ -60,32 +60,34 @@
 
 @media (max-width: 48rem) {
   .grievance-redressal-cell {
-    padding-top: 1.5rem;
+    box-sizing: border-box;
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
   }
 
   .grievance-redressal-cell .title-description,
   .grievance-redressal-cell .bullet-section {
-    margin-inline: 1rem;
-    margin-bottom: 1.5rem;
+    margin-inline: 0;
+    /* margin-bottom: 1.5rem; */
+  }
+
+  .grievance-redressal-cell .bullet-section__list {
+    margin-top: 0.75rem;
+    padding-left: 1.25rem;
   }
 
   .grievance-redressal-cell__button-row {
-    padding: 0 1rem;
+    margin-top: 1rem;
+    padding: 0;
     justify-content: stretch;
   }
 
   .grievance-redressal-cell__button {
     width: 100%;
     min-height: 54px;
+    font-size: var(--mobile-font-size);
   }
-}
 
-@media (max-width: 768px) {
-  .grievance-redressal-cell{
-    box-sizing: border-box;
-    margin-top: var(--mobile-margin-top);
-    padding: var(--mobile-padding);
-  }
   .grievance-redressal-cell .title-description p,
   .grievance-redressal-cell .bullet-section__item {
     font-size: var(--mobile-font-size);
@@ -95,14 +97,6 @@
 
   .grievance-redressal-cell .bullet-section {
     margin-bottom: 1rem;
-  }
-
-  .grievance-redressal-cell__button-row {
-    margin-top: 1rem;
-  }
-
-  .grievance-redressal-cell__button {
-    min-height: 3.25rem;
-    font-size: var(--mobile-font-size);
+    padding: 0;
   }
 }

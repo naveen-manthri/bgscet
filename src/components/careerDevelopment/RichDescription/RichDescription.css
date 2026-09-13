@@ -47,9 +47,14 @@
 }
 
 @media (max-width: 768px) {
+  .rich-description {
+    margin-top: var(--mobile-margin-top);
+    padding: 0;
+  }
+
   .rich-description__content {
-    margin-top: 1rem;
-    gap: 1rem;
+    margin-top: 0;
+    gap: 0;
   }
 
   .rich-description p {

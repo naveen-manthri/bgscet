@@ -61,7 +61,8 @@
 
 @media (max-width: 48rem) {
   .department-faculty__grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
   }
 }
 
@@ -69,5 +70,17 @@
   .department-faculty {
     margin-top: var(--mobile-margin-top);
     padding: var(--mobile-padding);
+  }
+
+  .department-faculty__name {
+    font-size: var(--mobile-font-size);
+    line-height: var(--mobile-line-height);
+    overflow-wrap: anywhere;
+  }
+
+  .department-faculty__designation {
+    font-size: var(--text-sm);
+    line-height: 1.4;
+    overflow-wrap: anywhere;
   }
 }

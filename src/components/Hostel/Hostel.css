@@ -23,13 +23,23 @@
 @media (max-width: 48rem) {
   .hostel {
     gap: 2.5rem;
-    padding: 0 2rem 2rem;
+    padding: 0;
+  }
+
+  .hostel > .about-hostel,
+  .hostel > .table-section,
+  .hostel > .bullet-section,
+  .hostel > .hostel-facility {
+    padding: var(--mobile-padding);
+  }
+
+  .hostel .hostel-facility__content {
+    padding: 0;
   }
 }
 
 @media (max-width: 36rem) {
   .hostel {
     gap: 2rem;
-    padding: 0 1rem 2rem;
   }
 }

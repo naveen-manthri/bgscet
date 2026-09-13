@@ -49,13 +49,16 @@
 }
 
 @media (max-width: 768px) {
-  .bullet-section__list {
-    margin: 0;
-    padding-left: 1.25rem;
-    gap: 0.65rem;
-    box-sizing: border-box;
+  .bullet-section {
     margin-top: var(--mobile-margin-top);
     padding: var(--mobile-padding);
+  }
+
+  .bullet-section__list {
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    box-sizing: border-box;
   }
 
   .bullet-section__description,
@@ -66,6 +69,6 @@
   }
 
   .bullet-section__description {
-    margin: 0 0 1rem;
+    margin: 0;
   }
 }

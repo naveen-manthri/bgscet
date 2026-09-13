@@ -52,4 +52,32 @@
     margin-top: var(--mobile-margin-top);
     padding: var(--mobile-padding);
   }
+
+  .achievement-list {
+    gap: 1.25rem;
+    margin-top: var(--mobile-version-para-desc-gap);
+  }
+
+  .achievement-title {
+    margin: 0 0 0.75rem;
+    font-size: var(--mobile-font-size);
+    line-height: var(--mobile-line-height);
+    overflow-wrap: anywhere;
+  }
+
+  .achievement-image-wrapper {
+    width: 100%;
+  }
+
+  .achievement-image {
+    width: 100%;
+    max-width: 100%;
+    max-height: none;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .achievement-divider {
+    margin: 1.25rem 0 0;
+  }
 }

@@ -83,8 +83,18 @@
   }
 
   .nss__intro-image img {
-    width: min(100%, 16rem);
+    width: min(100%, 12rem);
     margin: 0 auto;
+  }
+
+  .nss__intro,
+  .nss__section,
+  .nss .bullet-section {
+    margin-top: var(--mobile-margin-top);
+  }
+
+  .nss .bullet-section__list {
+    margin-top: 1rem;
   }
 
   .nss__section p,

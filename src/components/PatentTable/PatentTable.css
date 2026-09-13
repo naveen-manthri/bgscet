@@ -16,13 +16,13 @@
     box-sizing: border-box;
     margin-top: var(--mobile-margin-top);
     padding: var(--mobile-padding);
-    gap: 0;
+    gap: 2rem;
     width: 100%;
     max-width: 100%;
   }
 
-  :root {
-    --page-padding: 2rem;
-    --table-gap: 3rem;
+  .patent-page .table-section {
+    margin-top: 0;
+    padding: 0;
   }
 }

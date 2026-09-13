@@ -20,8 +20,12 @@
   }
 }
 
-.vision-mission__section:not(:last-child) {
-  margin-bottom: 3.5rem;
+.vision-mission:not(.vision-mission--columns) .vision-mission__section:first-child {
+  margin-bottom: 0;
+}
+
+.vision-mission:not(.vision-mission--columns) .vision-mission__section + .vision-mission__section {
+  margin-top: 1.5rem;
 }
 
 .vision-mission__text {

@@ -37,7 +37,7 @@
 
 @media (max-width: 48rem) {
   .ug-department {
-    padding: 3rem 0 4rem;
+    padding: 0rem 0 0;
   }
 
   .ug-department__tab-content {

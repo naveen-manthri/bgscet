@@ -35,11 +35,11 @@
 
 @media (max-width: 48rem) {
   .infrastructure-faculty {
-    padding-bottom: 3rem;
+    padding-bottom: 0rem;
   }
 
   .infrastructure-faculty__content {
-    margin-top: 2rem;
+    margin-top: 0rem;
   }
 
   .infrastructure-faculty__description {

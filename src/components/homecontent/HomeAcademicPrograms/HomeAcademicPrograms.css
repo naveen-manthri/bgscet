@@ -291,6 +291,10 @@
     padding: var(--mobile-padding);
   }
 
+  .home-academic .container {
+    gap: 0;
+  }
+
   .academic-title {
     max-width: 100%;
     font-size: 2rem;

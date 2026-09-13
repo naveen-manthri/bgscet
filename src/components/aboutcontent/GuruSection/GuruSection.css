@@ -97,7 +97,7 @@
 
 @media (max-width: 48rem) {
   .guru-section {
-    padding: var(--spacing-10) 4rem;
+    padding: 0 4rem;
   }
 
   .guru-section__container {
@@ -129,7 +129,33 @@
 
 @media (max-width: 768px) {
   .guru-section {
-    margin-top: var(--mobile-margin-top);
+    margin-top: 0;
     padding: var(--mobile-padding);
+  }
+
+  .guru-section__container {
+    width: 100%;
+  }
+
+  .guru-section__header {
+    margin-bottom: var(--mobile-version-para-desc-gap);
+  }
+
+  .guru-section__title {
+    font-size: clamp(1.5rem, 7vw, 2rem);
+    line-height: var(--line-height-tight);
+    overflow-wrap: anywhere;
+  }
+
+  .guru-section__list {
+    gap: 2rem;
+  }
+
+  .guru-section__list .guru-card {
+    margin-bottom: 0;
+  }
+
+  .guru-section__list .guru-card:last-child {
+    padding-bottom: 1.5rem;
   }
 }

@@ -159,6 +159,11 @@ max-width: none;
 }
 
 @media (max-width: 48rem) {
+  .campus-placements{
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+    padding-top: 2rem;
+  }
   .campus-placements__heading {
     margin-bottom: 2rem;
   }
@@ -197,6 +202,7 @@ max-width: none;
   .campus-placements {
     margin-top: var(--mobile-margin-top);
     padding: var(--mobile-padding);
+    padding-top: 2rem;
   }
 
   .campus-placements__inner {

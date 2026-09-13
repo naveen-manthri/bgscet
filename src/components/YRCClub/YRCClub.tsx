@@ -1,5 +1,6 @@
 import ImageCard from '../common/imageCards/imageCard';
 import type { DepartmentEvent } from '../../types/ugprograms';
+import './YRCClub.css';
 
 import healthCheckupImage from '../../assets/images/yrclub/HEALTH-CHECKUP.jpg';
 import rotaryBloodImage from '../../assets/images/yrclub/Rotary-Blood.jpeg';
@@ -42,7 +43,7 @@ const yrcEvents: DepartmentEvent[] = [
 
 const YRCClub = () => {
   return (
-    <main className="department-cse-events" style={{ padding: '3rem 4rem 0', marginBottom: '2rem' }}>
+    <main className="department-cse-events yrc-club">
       <ImageCard title="Youth Red Cross Club" data={yrcEvents} />
     </main>
   );

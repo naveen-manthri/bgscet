@@ -128,7 +128,10 @@
   }
 
   .guru-card__title {
-    font-size: var(--heading-size-mobile);
+    font-size: clamp(1.35rem, 6vw, 1.75rem);
+    line-height: 1.25;
+    letter-spacing: 0;
+    overflow-wrap: anywhere;
   }
 
   .guru-card__body {

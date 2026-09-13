@@ -18,8 +18,13 @@
   padding: 0 var(--ercica-page-padding);
 }
 
-.ercica__section:not(:last-child) {
-  margin-bottom: var(--ercica-section-gap);
+.ercica__section:first-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.ercica__section + .ercica__section {
+  margin-top: var(--ercica-paragraph-gap);
 }
 
 .ercica__content {

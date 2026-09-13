@@ -95,4 +95,40 @@
     margin-top: var(--mobile-margin-top);
     padding: var(--mobile-padding);
   }
+
+  .department-cse-events .cse-events-grid,
+  .department-cse-events .newsletter-grid {
+    grid-template-columns: 1fr;
+    gap: var(--mobile-version-para-desc-gap);
+  }
+
+  .department-cse-events .newsletter-grid {
+    margin-top: 0;
+  }
+
+  .department-cse-events .cse-event-card {
+    width: 100%;
+    max-width: none;
+  }
+
+  .department-cse-events .cse-event-image-wrapper {
+    height: 13rem;
+  }
+
+  .department-cse-events .cse-event-description {
+    font-size: var(--mobile-font-size);
+    line-height: var(--mobile-line-height);
+    overflow-wrap: anywhere;
+  }
+
+  .department-cse-events .newsletter-section {
+    margin-top: var(--mobile-margin-top);
+  }
+
+  .department-cse-events .newsletter-btn {
+    padding: 0.75rem 1rem;
+    font-size: var(--mobile-font-size);
+    line-height: var(--mobile-line-height);
+    overflow-wrap: anywhere;
+  }
 }

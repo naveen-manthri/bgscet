@@ -9,4 +9,9 @@
     margin-top: var(--mobile-margin-top);
     padding: var(--mobile-padding);
   }
+
+  .placement-menu-page .department-cse-events {
+    margin-top: 0;
+    padding: 0;
+  }
 }

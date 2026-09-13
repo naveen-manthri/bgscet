@@ -83,8 +83,13 @@
 }
 
 @media (max-width: 768px) {
+  .profile-card {
+    margin-top: var(--mobile-margin-top);
+    padding: 0;
+  }
+
   .profile-card__container {
-    gap: 1rem;
+    gap: 0;
   }
 
   .profile-card__image {
@@ -92,7 +97,7 @@
   }
 
   .profile-card__content {
-    gap: 0.6rem;
+    gap: 0;
   }
 
   .profile-card__content p {

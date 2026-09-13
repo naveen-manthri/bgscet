@@ -111,12 +111,14 @@
 
 @media (max-width: 768px) {
   .department-tabs {
+    margin-top: var(--mobile-margin-top);
+    margin-left: 1.2rem;
     overflow-x: auto;
   }
 
   .department-tabs__button {
     min-height: 2.5rem;
-    padding: 0.45rem 0.7rem;
-    font-size: 0.75rem;
+    padding: 0.55rem 0.75rem;
+    font-size: var(--button-text);
   }
 }

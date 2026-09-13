@@ -18,6 +18,7 @@
 
 @media (max-width: 48rem) {
   .career-development {
-    padding: 0 1rem;
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
   }
 }

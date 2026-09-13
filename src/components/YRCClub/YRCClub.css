@@ -1,0 +1,12 @@
+.yrc-club {
+  padding: 3rem 4rem 0;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 48rem) {
+  .department-cse-events.yrc-club {
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+    margin-bottom: 1.5rem;
+  }
+}

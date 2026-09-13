@@ -109,7 +109,7 @@ padding:0.8rem;
 
 @media (max-width: 48rem) {
   .hod-message {
-    padding-bottom: 3rem;
+    padding-bottom: 0;
   }
 
   .hod-message__content {
@@ -137,5 +137,22 @@ padding:0.8rem;
   .hod-message {
     margin-top: var(--mobile-margin-top);
     padding: var(--mobile-padding);
+  }
+
+  .hod-message__content {
+    gap: var(--mobile-version-para-desc-gap);
+  }
+
+  .hod-message__designation {
+    margin: 0.25rem 0;
+    font-size: var(--mobile-font-size);
+    line-height: var(--mobile-line-height);
+    overflow-wrap: anywhere;
+  }
+
+  .hod-message__description p {
+    font-size: var(--mobile-description-font-size);
+    line-height: var(--mobile-description-line-height);
+    overflow-wrap: anywhere;
   }
 }
