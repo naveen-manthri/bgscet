@@ -93,10 +93,6 @@
   object-fit: cover;
 }
 
-.image-small {
-  flex: 1;
-}
-
 .image-large {
   flex: 2;
 }

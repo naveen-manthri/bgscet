@@ -78,7 +78,7 @@
 .cse-event-content {
   background: var(--secondary-bg);
   padding: 1rem;
-  flex: 1;
+  
   gap: var(--content-gap);
 }
 

@@ -5,7 +5,7 @@ function HomeVisionMission() {
   return (
     <section className="home-vision-mission" aria-labelledby="home-vision-mission">
           <img className="home-vision-mission__image" src={homeVisionMission.image} alt="Sri Adichunchanagiri Mutt event" />
-          <div className="home-vision-mission__content flex flex-direction-column">
+          <div className="home-vision-mission__content flex flex-direction-column flex-one">
             <h2 className="home-section-title" id="home-vision-mission-title">
               {homeVisionMission.title}
             </h2>

@@ -25,7 +25,7 @@ export default function AdmissionInformation() {
         </article>
       ))}
       </div>
-      <div className="unique-features">
+      <div className="unique-features ">
         <img src={featureLeft}  alt="Unique Feature Left"  className="unique-features__left-image"  />
         <img src={featureRight} alt="Unique Feature Right"  className="unique-features__right-image"  />
       </div>

@@ -39,7 +39,7 @@ export default function AcademicEligibility() {
 
           </article>
 
-          <aside className="academic-eligibility__images">
+          <aside className="academic-eligibility__images display-block">
             <figure>
               <img src={academicTop} alt="" />
             </figure>

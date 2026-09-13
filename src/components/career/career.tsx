@@ -20,7 +20,7 @@ const CareerHero = ({ data }: CareerHeroProps) => {
           <p key={index}>{text}</p>
         ))}
 
-        <a href={data.button.link} className="career-hero__button flex inline-flex-center">
+        <a href={data.button.link} className="career-hero__button flex inline-flex-center flex-start-align-self">
           {data.button.text}
         </a>
       </div>

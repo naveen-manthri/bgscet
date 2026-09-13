@@ -51,7 +51,7 @@ const HodMessage = ({
         </aside>
 
 
-        <div className="hod-message__description">
+        <div className="hod-message__description flex-one">
           <p>
             {data.description}
           </p>

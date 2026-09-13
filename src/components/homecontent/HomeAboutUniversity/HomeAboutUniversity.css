@@ -8,7 +8,7 @@
 
 .home-about-university__media {
   gap: 1.5rem;
-  flex: 1;
+  
   margin-top: var(--primary-margin-top);
   position: relative;
 }
@@ -92,7 +92,7 @@
 }
 
 .home-about-university__content {
-  flex: 1;
+  
   gap: 0rem;
 }
 

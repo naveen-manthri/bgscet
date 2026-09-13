@@ -18,7 +18,7 @@ const DepartmentTabs = <T extends string,>({
           key={tab.id}
           type="button"
           role="tab"
-          className={`department-tabs__button flex flex-center ${
+          className={`department-tabs__button flex flex-center flex-one ${
             activeTab === tab.id ? "department-tabs__button--active" : ""
           }`}
           onClick={() => onTabChange(tab.id)}

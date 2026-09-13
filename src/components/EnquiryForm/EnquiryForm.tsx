@@ -110,7 +110,7 @@ const EnquiryForm: React.FC<EnquiryFormProps> = ({
         {/* Form */}
 
         <form
-          className="enquiry-form__form flex flex-column"
+          className="enquiry-form__form flex flex-column flex-one"
           onSubmit={handleEnquirySubmit}
         >
           <input
@@ -183,7 +183,7 @@ const EnquiryForm: React.FC<EnquiryFormProps> = ({
           {/* Bottom Section */}
 
           <div className="enquiry-form__bottom flex flex-align-center flex-justify-between">
-            <div className="enquiry-form__captcha flex flex-align-center">
+            <div className="enquiry-form__captcha flex flex-align-center flex-one">
               <input type="checkbox" />
 
               <span>I'm not a robot</span>

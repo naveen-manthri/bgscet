@@ -35,7 +35,7 @@ const ImageCard = ({ title, data }: ImageCardProps) => {
               <img src={event.image} alt={event.alt} className="cse-event-image" />
             </button>
 
-            <div className="cse-event-content flex flex-column flex-align-center flex-justify-between">
+            <div className="cse-event-content flex flex-column flex-align-center flex-justify-between flex-one">
               <p className="cse-event-description">&quot;{event.title}&quot;</p>
               <button type="button" className="read-more-btn" onClick={() => setIndex(i)}>Read More</button>
             </div>

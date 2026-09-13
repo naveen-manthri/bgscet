@@ -24,10 +24,6 @@
   order: 1;
 }
 
-.guru-card__content {
-  flex: 1;
-}
-
 .guru-card__paragraph {
   margin: 0 0 var(--spacing-5);
   color: var(--text);
@@ -49,7 +45,7 @@
   width: 100%;
   max-width: 22rem;
   height: auto;
-  display: block;
+  
   object-fit: cover;
   border-radius: var(--radius-lg);
   /* box-shadow: var(--shadow-md); */

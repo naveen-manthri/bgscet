@@ -24,7 +24,7 @@ function AboutUniversity() {
           </div>
         </div>
 
-        <div className="about-copy">
+        <div className="about-copy flex-one">
           <h1 id="about-university-title" className="about-title about-title-accent">
             {aboutUniversity.title}
           </h1>

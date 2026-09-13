@@ -74,7 +74,7 @@ function AcademicEligibility() {
 
           <div className="flex flex-direction-column eligibility-images">
 
-            <div className="image-card image-small">
+            <div className="image-card image-small flex-one">
               <img
                 src={topImage}
                 alt="Academic Eligibility"

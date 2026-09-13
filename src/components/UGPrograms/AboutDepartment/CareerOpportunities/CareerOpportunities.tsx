@@ -40,7 +40,7 @@ const CareerOpportunities = ({
           </ul>
 
 
-          <div className="career-opportunities__image-wrapper">
+          <div className="career-opportunities__image-wrapper flex-one">
             <img
               src={data.image}
               alt={data.title}

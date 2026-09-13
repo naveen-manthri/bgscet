@@ -6,8 +6,6 @@
   background-color: var(--home-vision-mission-bg);
 }
 .home-vision-mission__content {
-  
-  flex: 1;
   gap: 1.5rem;
 }
 
