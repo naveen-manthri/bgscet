@@ -105,3 +105,46 @@
     flex-basis: min(100%, 19rem);
   }
 }
+
+@media (max-width: 768px) {
+  .student-testimonials__inner {
+    padding-inline: 1rem;
+  }
+
+  .student-testimonials .section-title {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .student-testimonials__scroller {
+    gap: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .student-testimonials__card {
+    flex: 0 0 min(17.8rem, calc(100vw - 3rem));
+    min-height: 21rem;
+    padding: 2.7rem 1rem 1.5rem;
+  }
+
+  .student-testimonials__image {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .student-testimonials__name {
+    font-size: 1.5rem;
+  }
+
+  .student-testimonials__department {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .student-testimonials__quote {
+    max-width: 17rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}

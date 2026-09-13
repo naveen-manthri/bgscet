@@ -106,6 +106,11 @@
 /* LIST ITEMS GAP */
 --list-item-gap: 0.5rem;
 
+/* mobile version*/
+--mobile-font-size: 1rem;
+--mobile-line-height: 1.5;
+--mobile-version-para-desc-gap: 1rem;
+
 }
 
 * {
@@ -301,6 +306,10 @@ img {
   font-size: 1rem;
   font-weight: 800;
   text-decoration: none;
+}
+
+.main-navbar__mobile-codes {
+  display: none;
 }
 
 .main-navbar__toggle {
@@ -626,6 +635,30 @@ img {
   border-bottom: 0.12rem solid currentColor;
 }
 
+/*Mobile version p,a,span,ol,ul tags */
+
+@media (max-width: 58em) {
+  :root {
+    --font-size: var(--mobile-font-size);
+    --section-title: clamp(1.75rem, 7vw, 2rem);
+    --line-height: var(--mobile-line-height);
+    --para-desc-gap: var(--mobile-version-para-desc-gap);
+  }
+
+  p,
+  a,
+  li,
+  ul,
+  ol {
+    font-size: var(--mobile-font-size);
+    line-height: var(--line-height);
+  }
+
+  p {
+    margin-bottom: var(--para-desc-gap);
+  }
+}
+
 @media (max-width: 58em) {
   .main-navbar__inner {
     justify-content: center;
@@ -753,3 +786,75 @@ img {
     display: none;
   }
 }
+
+@media (max-width: 768px) {
+  .top-announcement-bar__inner {
+    min-height: 3rem;
+    padding: 0.7rem 1rem;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .top-announcement-bar__codes {
+    display: none;
+  }
+
+  .main-header {
+    display: none;
+  }
+
+  .main-navbar {
+    height: auto;
+    background: var(--surface);
+    box-shadow: none;
+  }
+
+  .main-navbar__inner {
+    width: 100%;
+    min-height: 4rem;
+    padding: 0.65rem 1.25rem;
+    justify-content: space-between;
+  }
+
+  .main-navbar__brand {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0;
+    color: var(--primary-deep);
+    font-size: 0.9rem;
+    font-weight: 800;
+    line-height: 0.95;
+    text-align: left;
+  }
+
+  .main-navbar__toggle {
+    display: inline-flex;
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  .main-navbar__toggle span {
+    width: 2rem;
+    height: 0.1rem;
+    background: var(--text);
+  }
+
+  .main-navbar__mobile-codes {
+    display: block;
+    padding: 0.55rem 1rem;
+    background: var(--primary-deep);
+    color: var(--white);
+    font-size: 0.72rem;
+    font-weight: 500;
+    line-height: 1.25;
+    text-align: center;
+  }
+}
+

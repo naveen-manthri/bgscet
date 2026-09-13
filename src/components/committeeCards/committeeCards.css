@@ -37,3 +37,23 @@
 .committee-btn:active {
   background: var(--btn-secondary);
 }
+
+@media (max-width: 768px) {
+  .committee-heading {
+    padding-inline: 1.25rem;
+  }
+
+  .committee-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-inline: 1.25rem;
+  }
+
+  .committee-btn {
+    min-height: 3.25rem;
+    padding: 0.75rem 1rem;
+    font-size: var(--mobile-font-size);
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+  }
+}

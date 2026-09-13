@@ -284,3 +284,57 @@
   }
 
 }
+
+@media (max-width: 768px) {
+  .academic-title {
+    max-width: 100%;
+    font-size: 2rem;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+  }
+
+  .academic-title-divider {
+    width: min(12rem, 75%);
+  }
+
+  .programs-grid {
+    flex-direction: column;
+    gap: 1.25rem;
+    overflow-x: visible;
+  }
+
+  .program-card {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .program-image {
+    height: auto;
+    aspect-ratio: 1.45;
+    object-fit: cover;
+  }
+
+  .program-content {
+    gap: 0.6rem;
+    padding: 0.85rem;
+  }
+
+  .program-title {
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+
+  .program-duration {
+    padding: 0.35rem 0.7rem;
+    font-size: 0.75rem;
+  }
+
+  .program-description {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .program-read-more {
+    font-size: 0.85rem;
+  }
+}

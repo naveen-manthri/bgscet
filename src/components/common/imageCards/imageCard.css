@@ -149,3 +149,43 @@
     justify-self: center;
   }
 }
+
+@media (max-width: 768px) {
+  .department-cse-events {
+    --card-width: min(100%, 22rem);
+    --card-height: auto;
+    --image-area-height: 13rem;
+    --content-gap: 0.75rem;
+  }
+
+  .cse-events-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  .cse-event-card {
+    width: min(100%, var(--card-width));
+    height: auto;
+  }
+
+  .cse-event-image-wrapper {
+    height: var(--image-area-height);
+    padding: 0.75rem;
+  }
+
+  .cse-event-content {
+    min-height: 10rem;
+    padding: 0.85rem;
+  }
+
+  .cse-event-description {
+    min-height: 3.5rem;
+    font-size: var(--mobile-font-size);
+    line-height: 1.5;
+  }
+
+  .read-more-btn {
+    height: 2.25rem;
+    font-size: 0.875rem;
+  }
+}

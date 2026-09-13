@@ -81,3 +81,27 @@
     width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  .profile-card__container {
+    gap: 1rem;
+  }
+
+  .profile-card__image {
+    width: min(100%, 15rem);
+  }
+
+  .profile-card__content {
+    gap: 0.6rem;
+  }
+
+  .profile-card__content p {
+    font-size: var(--mobile-font-size);
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+
+  .profile-card__content a {
+    overflow-wrap: anywhere;
+  }
+}

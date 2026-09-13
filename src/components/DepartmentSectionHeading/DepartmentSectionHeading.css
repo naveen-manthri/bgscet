@@ -108,3 +108,26 @@
     font-size: 2.1rem;
   }
 }
+
+@media (max-width: 768px) {
+  .department-section-heading__title {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .department-section-heading--small .department-section-heading__title {
+    font-size: 1.25rem;
+  }
+
+  .department-section-heading--default .department-section-heading__title {
+    font-size: 1.6rem;
+  }
+
+  .department-section-heading--medium .department-section-heading__title {
+    font-size: 1.8rem;
+  }
+
+  .department-section-heading--large .department-section-heading__title {
+    font-size: 2rem;
+  }
+}

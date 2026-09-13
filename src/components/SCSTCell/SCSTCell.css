@@ -71,6 +71,14 @@
   }
 
   .scstcell-page__label {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+    line-height: 1.35;
+  }
+
+  .scstcell-page__button {
+    min-height: 3.25rem;
+    padding: 0.75rem 1rem;
+    font-size: var(--mobile-font-size);
+    line-height: 1.4;
   }
 }

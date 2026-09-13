@@ -1,16 +1,20 @@
 import DepartmentSectionHeading from "../../DepartmentSectionHeading/DepartmentSectionHeading";
-import type { HostelTable } from "../../../types/hostel";
+import type { ReactNode } from "react";
+import type { HostelTable, HostelTableColumn, HostelTableRow } from "../../../types/hostel";
 import "./Table.css";
 
 interface TableProps {
   title: string;
+  description?: string;
   table: HostelTable;
+  renderCell?: (value: string | undefined, column: HostelTableColumn, row: HostelTableRow) => ReactNode;
 }
 
-const Table = ({ title, table }: TableProps) => {
+const Table = ({ title, description, table, renderCell }: TableProps) => {
   return (
     <section className="table-section flex flex-direction-column">
       <DepartmentSectionHeading title={title} className="department-section-heading--medium" />
+      {description && <p className="table-section__description">{description}</p>}
 
       <div className="table-section__wrapper">
         <table className="table-section__table">
@@ -25,7 +29,9 @@ const Table = ({ title, table }: TableProps) => {
               <tr key={rowIndex}>
                 {table.columns.map((column) => (
                   <td key={column.key}>
-                    {row[column.key]?.split("\n").map((value, valueIndex) => <span key={valueIndex} className=" flex flex-direction-column table-section__cell ">{value}</span>)}
+                    {renderCell
+                      ? renderCell(row[column.key], column, row)
+                      : row[column.key]?.split("\n").map((value, valueIndex) => <span key={valueIndex} className=" flex flex-direction-column table-section__cell ">{value}</span>)}
                   </td>
                 ))}
               </tr>

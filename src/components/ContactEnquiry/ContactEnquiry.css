@@ -224,3 +224,66 @@
     height: 20rem;
   }
 }
+
+@media (max-width: 768px) {
+  .contact-enquiry__container {
+    width: calc(100% - 2.5rem);
+    margin-top: 2rem;
+  }
+
+  .contact-enquiry__description,
+
+  .contact-card__organization,
+  .contact-card__link,
+  .visit-us__address,
+  .visit-us__contact {
+    font-size: var(--mobile-font-size);
+    line-height: var(--mobile-line-height);
+  }
+  .contact-card__designation{
+    line-height:1;
+  }
+
+  .contact-enquiry__contacts {
+    gap: 1rem;
+  }
+
+  .contact-card {
+    padding: 1rem;
+  }
+
+  .contact-card__name {
+    margin: 0 0 0.25rem;
+    font-size: 1.1rem;
+  }
+
+  .contact-card__designation,
+  .contact-card__organization {
+    margin: 0;
+    line-height: 1.35;
+  }
+
+  .contact-card__link {
+    margin-top: 0;
+    align-items: flex-start;
+    overflow-wrap: anywhere;
+    line-height: 1.35;
+  }
+
+  .contact-card__link + .contact-card__link {
+    margin-top: 0;
+  }
+
+  .contact-enquiry__form-frame {
+    height: 52rem;
+  }
+
+  .visit-us {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .visit-us__map-frame {
+    height: 18rem;
+  }
+}

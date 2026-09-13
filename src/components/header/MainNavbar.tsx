@@ -94,7 +94,8 @@ function MainNavbar() {
     <nav className="main-navbar" aria-label="Primary navigation">
       <div className="main-navbar__inner">
         <Link className="main-navbar__brand" to="/" onClick={closeMenu}>
-          BGSCET
+          <span>BGSCET</span>
+          <span>Engineering</span>
         </Link>
 
         <button  className="main-navbar__toggle"  type="button"  aria-controls="main-navbar-menu" aria-expanded={isOpen}  aria-label="Toggle navigation" onClick={() => setIsOpen((current) => !current)} >
@@ -308,6 +309,7 @@ function MainNavbar() {
           })}
         </ul>
       </div>
+      <div className="main-navbar__mobile-codes">K-CET Code - E-286, COMEDK Code: E-207.</div>
     </nav>
   );
 }

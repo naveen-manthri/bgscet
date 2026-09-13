@@ -107,3 +107,32 @@
     border-radius: 0.75rem;
   }
 }
+
+@media (max-width: 768px) {
+  .library-about__heading {
+    font-size: 1.25rem;
+    line-height: 1.35;
+  }
+
+  .library-about__introduction,
+  .library-about__item,
+  .library-about__conclusion {
+    font-size: var(--mobile-font-size);
+    line-height: 1.6;
+  }
+
+  .library-about__list {
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+
+  .library-about__item {
+    margin-bottom: 0.5rem;
+  }
+
+  .library-about__image {
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: 0.75rem;
+  }
+}

@@ -31,3 +31,19 @@
     margin: 2rem;
   }
 }
+
+@media (max-width: 768px) {
+  .student-material__cta {
+    padding-inline: 1.25rem;
+    margin: 1.5rem 0;
+  }
+
+  .student-material__button {
+    width: min(100%, 20rem);
+    min-height: 3rem;
+    padding: 0.7rem 1rem;
+    font-size: var(--mobile-font-size);
+    line-height: 1.4;
+    text-align: center;
+  }
+}

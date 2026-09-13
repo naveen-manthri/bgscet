@@ -1,0 +1,154 @@
+.jcet {
+  width: 100%;
+  margin-top: var(--primary-margin-top);
+  padding: 0 4rem;
+}
+
+.jcet__banner {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.jcet__descriptions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--para-desc-gap);
+  margin-top: 1.5rem;
+}
+
+.jcet__descriptions p {
+  margin: 0;
+  color: var(--text);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  text-align: justify;
+}
+
+.jcet .bullet-section {
+  margin-top: 2rem;
+}
+
+
+
+
+.jcet__information {
+  margin-top: 2rem;
+}
+
+.jcet__information-title {
+  margin: 0 0 0.75rem;
+  color: var(--Red-Orange-color);
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.jcet__information-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.jcet__information-list p {
+  margin: 0;
+  color: var(--text);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+}
+
+.jcet__information-list strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.jcet__section {
+  margin-top: 2rem;
+}
+
+.jcet__section-content {
+  margin: 0;
+  color: var(--text);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  text-align: justify;
+}
+
+.jcet__publisher-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.jcet__publisher-details p {
+  margin: 0;
+}
+
+.jcet__aims-and-scope strong {
+  font-weight: 600;
+}
+
+.jcet__article-submission-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.jcet__call-for-papers {
+  margin-top: 2rem;
+}
+
+.jcet__editorial-board-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.jcet__bibliographic-details {
+  margin-top: 2rem;
+}
+
+.jcet__editorial-board-member h3 {
+  margin: 0 0 0.75rem;
+  color: #000000;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+}
+
+.jcet__editorial-board-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.jcet__editorial-board-details p {
+  margin: 0;
+  color: var(--text);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  text-align: justify;
+}
+
+.jcet__paper-pdf-link {
+  display: inline-flex;
+  color: var(--text);
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.jcet__paper-pdf-link:hover {
+  color: var(--Red-Orange-color);
+}
+
+@media (max-width: 48rem) {
+  .jcet {
+    padding: 0 2rem;
+  }
+
+  .jcet__descriptions p,
+  .jcet__information-list p,
+  .jcet__section-content,
+  .jcet__editorial-board-member h3,
+  .jcet__editorial-board-details p {
+    font-size: var(--body-size-mobile);
+  }
+}

@@ -50,3 +50,28 @@
     width: min(100%, 30rem);
   }
 }
+
+@media (max-width: 768px) {
+  .home-about-mutt {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .home-about-mutt__content {
+    order: 1;
+  }
+
+  .home-about-mutt__content p {
+    font-size: var(--mobile-font-size);
+    line-height: 1.6;
+  }
+
+  .home-about-mutt__image {
+    order: 2;
+    width: 100%;
+    max-width: none;
+    border-radius: 1rem;
+    clip-path: inset(0 round 1rem);
+  }
+}

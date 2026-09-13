@@ -5,6 +5,7 @@ export interface TitleDescriptionSection {
 
 export interface BulletSection {
   title: string;
+  description?: string;
   points: string[];
 }
 

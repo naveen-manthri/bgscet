@@ -45,3 +45,16 @@
     --career-page-padding: 2rem;
   }
 }
+
+@media (max-width: 768px) {
+  .rich-description__content {
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  .rich-description p {
+    font-size: var(--mobile-font-size);
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+}

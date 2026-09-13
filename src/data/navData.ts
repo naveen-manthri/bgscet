@@ -117,7 +117,7 @@ export const navItems: NavItem[] = [
     children: [
       { label: 'ICWITE 2025', path: '/icwite-2025' },
       { label: 'ERCICA-2024', path: '/conference-2024' },
-      // {label: 'Careers', path:'/careers'},
+       {label: 'Journal - JCET', path:'/journal-jcet'},
     ],
   },
   {

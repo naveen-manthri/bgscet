@@ -196,3 +196,38 @@ max-width: none;
     height: 3rem;
   }
 }
+
+@media (max-width: 768px) {
+  .campus-placements__title {
+    max-width: 100%;
+    font-size: 1.9rem;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+  }
+
+  .campus-placements__description {
+    max-width: 100%;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .campus-placements__track {
+    gap: 0.75rem;
+  }
+
+  .campus-placements__track--left,
+  .campus-placements__track--right {
+    animation-duration: 16s;
+  }
+
+  .campus-placements__card {
+    flex-basis: 7.5rem;
+    height: 4.25rem;
+    padding: 0.5rem 0.7rem;
+  }
+
+  .campus-placements__logo {
+    width: 5.25rem;
+    height: 2.75rem;
+  }
+}

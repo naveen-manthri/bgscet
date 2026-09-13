@@ -138,3 +138,28 @@
     width: min(100%, 18rem);
   }
 }
+
+@media (max-width: 768px) {
+  .about-librarian__paragraph,
+  .about-librarian__member-item,
+  .about-librarian__member-title {
+    font-size: var(--mobile-font-size);
+    line-height: var(--mobile-line-height);
+  }
+
+  .about-librarian__staff {
+    margin-left: 0;
+    gap: 1rem;
+  }
+
+  .about-librarian__card {
+    gap: 0;
+    width: min(100%, 18rem);
+  }
+
+  .about-librarian__designation,
+  .about-librarian__qualification {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+}

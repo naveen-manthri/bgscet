@@ -24,6 +24,15 @@
   
 }
 
+.bullet-section__description {
+  margin: 0 0 1rem;
+  color: var(--text);
+  font-family: var(--career-font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  text-align: justify;
+}
+
 .bullet-section__item {
   font-size: var(--font-size);;
   color: var(--text);
@@ -36,5 +45,24 @@
 @media (max-width: 48rem) {
   :root {
     --career-page-padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .bullet-section__list {
+    margin: 0;
+    padding-left: 1.25rem;
+    gap: 0.65rem;
+  }
+
+  .bullet-section__description,
+  .bullet-section__item {
+    font-size: inherit;
+    line-height: var(--line-height);
+    overflow-wrap: anywhere;
+  }
+
+  .bullet-section__description {
+    margin: 0 0 1rem;
   }
 }

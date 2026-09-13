@@ -94,10 +94,29 @@
   .department-tabs {
     gap: var(--list-item-gap);
     margin-bottom: 2rem;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: none;
+    scroll-snap-type: x proximity;
   }
 
   .department-tabs__button {
+    flex: 0 0 auto;
+    min-width: max-content;
     padding: 0.625rem 1rem;
     font-size: 0.8125rem;
+    scroll-snap-align: start;
+  }
+}
+
+@media (max-width: 768px) {
+  .department-tabs {
+    overflow-x: auto;
+  }
+
+  .department-tabs__button {
+    min-height: 2.5rem;
+    padding: 0.45rem 0.7rem;
+    font-size: 0.75rem;
   }
 }

@@ -43,3 +43,26 @@
     width: min(100%, 30rem);
   }
 }
+
+@media (max-width: 768px) {
+  .home-vision-mission {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .home-vision-mission__content {
+    order: 1;
+  }
+
+  .home-vision-mission__content p {
+    font-size: var(--mobile-font-size);
+    line-height: 1.6;
+  }
+
+  .home-vision-mission__image {
+    order: 2;
+    width: 100%;
+    max-width: none;
+  }
+}

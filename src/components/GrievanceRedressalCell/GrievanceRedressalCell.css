@@ -79,3 +79,25 @@
     min-height: 54px;
   }
 }
+
+@media (max-width: 768px) {
+  .grievance-redressal-cell .title-description p,
+  .grievance-redressal-cell .bullet-section__item {
+    font-size: var(--mobile-font-size);
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+
+  .grievance-redressal-cell .bullet-section {
+    margin-bottom: 1rem;
+  }
+
+  .grievance-redressal-cell__button-row {
+    margin-top: 1rem;
+  }
+
+  .grievance-redressal-cell__button {
+    min-height: 3.25rem;
+    font-size: var(--mobile-font-size);
+  }
+}

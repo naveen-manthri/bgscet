@@ -264,3 +264,43 @@
     font-size: 1.4rem;
   }
 }
+
+@media (max-width: 768px) {
+  .enquiry-form {
+    padding: 0.75rem;
+  }
+
+  .enquiry-form__container {
+    width: 100%;
+    max-width: 24rem;
+    max-height: calc(100vh - 1.5rem);
+    padding: 1rem;
+  }
+
+  .enquiry-form__form {
+    gap: 0.65rem;
+  }
+
+  .enquiry-form__input,
+  .enquiry-form__textarea {
+    padding: 0.65rem 0.8rem;
+    font-size: var(--mobile-font-size);
+    line-height: 1.4;
+  }
+
+  .enquiry-form__terms {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  .enquiry-form__captcha {
+    min-height: 3rem;
+    padding: 0.65rem;
+  }
+
+  .enquiry-form__submit {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+  }
+}

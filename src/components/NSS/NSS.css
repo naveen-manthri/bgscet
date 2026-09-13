@@ -65,3 +65,38 @@
   line-height: var(--line-height);;
   margin: 0;
 }
+
+@media (max-width: 768px) {
+  .nss {
+    gap: 1.5rem;
+  }
+
+  .nss__intro {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .nss__intro-image {
+    flex: none;
+    width: 100%;
+  }
+
+  .nss__intro-image img {
+    width: min(100%, 16rem);
+    margin: 0 auto;
+  }
+
+  .nss__section p,
+  .nss__intro-content p,
+  .nss__list p {
+    font-size: var(--mobile-font-size);
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+
+  .nss__list {
+    gap: 0.5rem;
+    padding-left: 1.25rem;
+  }
+}

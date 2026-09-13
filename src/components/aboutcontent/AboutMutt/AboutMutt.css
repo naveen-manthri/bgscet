@@ -78,7 +78,7 @@
   font-weight: var(--font-weight-bold);
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .about-mutt {
     padding: var(--spacing-12) 4rem;
   }
@@ -98,4 +98,4 @@
   .about-mutt__divider {
     width: 5rem;
   }
-}
+} */

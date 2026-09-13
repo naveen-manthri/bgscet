@@ -11,6 +11,8 @@ const BulletSection = ({ data }: BulletSectionProps) => {
     <section className="flex flex-direction-column bullet-section">
       <DepartmentSectionHeading title={data.title} className="department-section-heading--medium" />
 
+      {data.description && <p className="bullet-section__description">{data.description}</p>}
+
       <ul className="flex flex-direction-column bullet-section__list">
         {data.points.map((point, index) => (
           <li key={index} className="bullet-section__item">

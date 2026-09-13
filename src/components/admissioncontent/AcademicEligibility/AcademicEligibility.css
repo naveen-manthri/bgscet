@@ -107,7 +107,7 @@
 }
 
 .eligibility-list li {
-  font-size: 1rem;
+  font-size: var(--font-size);
   line-height: var(--line-height);5;
   text-align: justify;
 }
@@ -125,10 +125,13 @@
 .exam-list li {
   margin-bottom: 0.2rem;
   line-height: var(--line-height);;
-  font-size: 1rem;
+  font-size: var(--font-size);
 }
 
 .exam-list span {
+  display: inline-block;
+  margin-top: 0.35rem;
+  font-size: inherit;
   font-weight: 500;
 }
 

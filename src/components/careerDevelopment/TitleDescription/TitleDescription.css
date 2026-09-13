@@ -49,3 +49,16 @@
     --career-page-padding: 2rem;
   }
 }
+
+@media (max-width: 768px) {
+  .title-description {
+    width: 100%;
+  }
+
+  .title-description p {
+    margin: 0;
+    font-size: var(--mobile-font-size);
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+}

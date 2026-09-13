@@ -136,3 +136,35 @@
     bottom: 3%;
   }
 }
+
+@media (max-width: 768px) {
+  .home-about-university {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .home-about-university__media {
+    display: none;
+  }
+
+  .home-about-university__content {
+    width: 100%;
+    max-width: none;
+  }
+
+  .home-about-university .department-section-heading__title {
+    max-width: none;
+    font-size: clamp(1.4rem, 7vw, 2rem);
+    white-space: nowrap;
+  }
+
+  .home-about-university__content p {
+    font-size: var(--mobile-font-size);
+    line-height: 1.6;
+  }
+
+  .home-about-university__content .admission-button {
+    width: 100%;
+  }
+}

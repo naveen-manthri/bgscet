@@ -47,3 +47,41 @@
   color: var(--btn-primary-hover, #b82508);
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  .letter-sections {
+    padding-inline: 1.25rem;
+    gap: 1.5rem;
+  }
+
+  .letter-section__list {
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+
+  .letter-section__list li {
+    margin-bottom: 0.6rem;
+    font-size: var(--mobile-font-size);
+    line-height: var(--mobile-line-height);
+  }
+
+  .letter-section__list li:last-child {
+    margin-bottom: 0;
+  }
+
+  .letter-section__link {
+    display: inline;
+    font-size: var(--mobile-font-size);
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+
+  .letter-section__group + .letter-section__group {
+    margin-top: 1rem;
+  }
+
+  .letter-section__group-title {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+}

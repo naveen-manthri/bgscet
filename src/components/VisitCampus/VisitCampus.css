@@ -148,3 +148,37 @@
     line-height: 1.6;
   }
 }
+
+@media (max-width: 768px) {
+  .visit-campus__container {
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+  }
+
+  .visit-campus__label {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .visit-campus__title {
+    max-width: 100%;
+    font-size: 2.8rem;
+    line-height: 1.28;
+    overflow-wrap: anywhere;
+  }
+
+  .visit-campus__description {
+    max-width: 100%;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .visit-campus__actions {
+    gap: 1.25rem;
+  }
+
+  .visit-campus .admission-button {
+    height: 4rem;
+    font-size: 1.1rem;
+  }
+}
