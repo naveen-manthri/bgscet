@@ -114,6 +114,7 @@
     max-width: 100%;
     overflow-wrap: anywhere;
   }
+  .department-section-heading__title { padding-bottom: 0.75rem; }
 
   .department-section-heading--small .department-section-heading__title {
     font-size: 1.25rem;
