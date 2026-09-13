@@ -46,3 +46,10 @@
   border: 0;
   border-top: 0.0625rem solid var(--border-color);
 }
+
+@media (max-width: 768px) {
+  .department-achievements {
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+  }
+}

@@ -159,10 +159,6 @@ max-width: none;
 }
 
 @media (max-width: 48rem) {
-  .campus-placements {
-    padding: 4rem 0 3rem;
-  }
-
   .campus-placements__heading {
     margin-bottom: 2rem;
   }
@@ -174,7 +170,7 @@ max-width: none;
   .campus-placements__description {
     max-width: 90%;
     font-size: 0.95rem;
-    line-height: 1.6;
+    line-height: var(--mobile-line-height);
   }
 
   .campus-placements__track {
@@ -198,9 +194,18 @@ max-width: none;
 }
 
 @media (max-width: 768px) {
+  .campus-placements {
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+  }
+
+  .campus-placements__inner {
+    margin-inline: 0;
+  }
+
   .campus-placements__title {
     max-width: 100%;
-    font-size: 1.9rem;
+    font-size: var(--campus-placements-title-size);
     line-height: 1.2;
     overflow-wrap: anywhere;
   }
@@ -208,7 +213,7 @@ max-width: none;
   .campus-placements__description {
     max-width: 100%;
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: var(--mobile-line-height);
   }
 
   .campus-placements__track {

@@ -1,4 +1,6 @@
 .mess-timings {
+  --mobile-margin-top: 1.5rem;
+  --mobile-padding: 0 1.25rem;
   gap: 2rem;
 }
 
@@ -45,6 +47,9 @@
 
 @media (max-width: 48rem) {
   .mess-timings {
+    box-sizing: border-box;
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
     gap: 1.5rem;
   }
 

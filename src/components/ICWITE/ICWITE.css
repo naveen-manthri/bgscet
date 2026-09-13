@@ -18,3 +18,11 @@
   outline: 0.18rem solid var(--focus);
   outline-offset: 0.18rem;
 }
+
+@media (max-width: 48rem) {
+  .icwite-2025 {
+    box-sizing: border-box;
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+  }
+}

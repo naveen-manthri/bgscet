@@ -53,6 +53,13 @@
   line-height: var(--line-height);;
 }
 
+@media (max-width: 768px) {
+  .vision-mission {
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+  }
+}
+
 .vision-mission--columns .vision-mission__list {
   padding-left: 1.25rem;
   list-style: disc;

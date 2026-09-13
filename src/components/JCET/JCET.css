@@ -141,7 +141,16 @@
 
 @media (max-width: 48rem) {
   .jcet {
-    padding: 0 2rem;
+    box-sizing: border-box;
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+  }
+
+  .jcet__bibliographic-details {
+    box-sizing: border-box;
+    padding: var(--mobile-padding);
+    width: 100%;
+    max-width: 100%;
   }
 
   .jcet__descriptions p,
@@ -149,6 +158,7 @@
   .jcet__section-content,
   .jcet__editorial-board-member h3,
   .jcet__editorial-board-details p {
-    font-size: var(--body-size-mobile);
+    font-size: var(--mobile-font-size);
+    line-height: var(--mobile-line-height);
   }
 }

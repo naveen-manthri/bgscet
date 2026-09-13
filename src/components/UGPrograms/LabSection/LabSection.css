@@ -22,3 +22,14 @@
   .department-lab-section { margin: 0 -4rem; }
   .department-lab-section__description { padding: var(--primary-padding); }
 }
+
+@media (max-width: 768px) {
+  .department-lab-section {
+    margin: var(--mobile-margin-top) 0 0;
+    padding: var(--mobile-padding);
+  }
+
+  .department-lab-section__description {
+    padding: var(--mobile-padding);
+  }
+}

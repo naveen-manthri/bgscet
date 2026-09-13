@@ -50,3 +50,11 @@
 .iic-section ol li{
   margin-bottom: var(--list-item-gap);
 }
+
+@media (max-width: 48rem) {
+  .iic-container {
+    box-sizing: border-box;
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+  }
+}

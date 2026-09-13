@@ -81,10 +81,15 @@
 }
 
 @media (max-width: 768px) {
+  .grievance-redressal-cell{
+    box-sizing: border-box;
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+  }
   .grievance-redressal-cell .title-description p,
   .grievance-redressal-cell .bullet-section__item {
     font-size: var(--mobile-font-size);
-    line-height: 1.6;
+    line-height: var(--mobile-line-height);
     overflow-wrap: anywhere;
   }
 

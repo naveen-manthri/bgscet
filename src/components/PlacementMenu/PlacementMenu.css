@@ -5,6 +5,8 @@
 
 @media (max-width: 48rem) {
   .placement-menu-page {
-    padding: 2rem 4rem 3rem;
+    box-sizing: border-box;
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
   }
 }

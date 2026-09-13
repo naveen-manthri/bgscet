@@ -152,7 +152,10 @@
 
 @media (max-width: 768px) {
   .department-cse-events {
-    --card-width: min(100%, 22rem);
+    box-sizing: border-box;
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+    --card-width: 100%;
     --card-height: auto;
     --image-area-height: 13rem;
     --content-gap: 0.75rem;

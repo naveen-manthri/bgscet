@@ -142,6 +142,8 @@
     flex-direction: column;
     align-items: stretch;
     gap: 1rem;
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
   }
 
   .home-about-university__media {
@@ -161,7 +163,7 @@
 
   .home-about-university__content p {
     font-size: var(--mobile-font-size);
-    line-height: 1.6;
+    line-height: var(--mobile-line-height);
   }
 
   .home-about-university__content .admission-button {

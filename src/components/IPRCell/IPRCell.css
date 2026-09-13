@@ -62,6 +62,24 @@
   }
 }
 
+@media (max-width: 768px) {
+  .ipr {
+    box-sizing: border-box;
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+  }
+
+  .ipr p {
+    font-size: var(--mobile-font-size);
+    line-height: var(--mobile-line-height);
+  }
+
+  .ipr-gallery {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
 /* @media (max-width: 768px) {
   :root {
     --page-padding: 2rem;

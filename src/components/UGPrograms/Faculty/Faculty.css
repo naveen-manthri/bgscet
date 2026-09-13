@@ -64,3 +64,10 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 768px) {
+  .department-faculty {
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+  }
+}

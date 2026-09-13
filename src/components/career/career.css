@@ -75,6 +75,9 @@
 @media (max-width: 768px) {
   .career-hero {
     gap: 1rem;
+    box-sizing: border-box;
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
   }
 
   .career-hero__image img {
@@ -89,7 +92,7 @@
 
   .career-hero__content p {
     font-size: var(--mobile-font-size);
-    line-height: 1.6;
+    line-height: var(--mobile-line-height);
   }
 
   .career-hero__button {

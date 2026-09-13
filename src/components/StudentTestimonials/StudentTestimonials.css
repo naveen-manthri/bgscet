@@ -107,8 +107,12 @@
 }
 
 @media (max-width: 768px) {
+  .student-testimonials {
+    margin-top: var(--mobile-margin-top);
+  }
+
   .student-testimonials__inner {
-    padding-inline: 1rem;
+    padding: var(--mobile-padding);
   }
 
   .student-testimonials .section-title {

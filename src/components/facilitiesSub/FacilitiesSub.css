@@ -11,3 +11,15 @@
   color: var(--text);
   text-align: justify;
 }
+
+@media (max-width: 768px) {
+  .facilities-sub {
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+  }
+
+  .facilities-sub__description {
+    font-size: var(--mobile-font-size);
+    line-height: var(--mobile-line-height);
+  }
+}

@@ -65,7 +65,10 @@
 
 @media (max-width: 768px) {
   .nss {
-    gap: 1.5rem;
+    box-sizing: border-box;
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+    gap: 0;
   }
 
   .nss__intro {
@@ -88,7 +91,7 @@
   .nss__intro-content p,
   .nss__list p {
     font-size: var(--mobile-font-size);
-    line-height: 1.6;
+    line-height: var(--mobile-line-height);
     overflow-wrap: anywhere;
   }
 

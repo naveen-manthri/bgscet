@@ -226,8 +226,14 @@
 }
 
 @media (max-width: 768px) {
+  .contact-enquiry {
+    box-sizing: border-box;
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+  }
+
   .contact-enquiry__container {
-    width: calc(100% - 2.5rem);
+    width: 100%;
     margin-top: 2rem;
   }
 

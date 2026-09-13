@@ -99,3 +99,10 @@
     width: 5rem;
   }
 } */
+
+@media (max-width: 768px) {
+  .about-mutt {
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+  }
+}

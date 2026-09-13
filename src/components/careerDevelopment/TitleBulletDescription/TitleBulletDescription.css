@@ -38,7 +38,7 @@
   .title-bullet-description > p,
   .title-bullet-description__item {
     font-size: var(--mobile-font-size);
-    line-height: 1.6;
+    line-height: var(--mobile-line-height);
   }
 
   .title-bullet-description > p {

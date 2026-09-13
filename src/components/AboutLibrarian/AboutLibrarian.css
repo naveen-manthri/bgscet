@@ -140,6 +140,15 @@
 }
 
 @media (max-width: 768px) {
+  .about-librarian {
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+  }
+
+  .about-librarian__container {
+    padding: 0;
+  }
+
   .about-librarian__paragraph,
   .about-librarian__member-item,
   .about-librarian__member-title {

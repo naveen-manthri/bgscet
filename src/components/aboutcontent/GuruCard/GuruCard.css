@@ -122,6 +122,15 @@
 }
 
 @media (max-width: 768px) {
+  .guru-card {
+    margin-top: 0;
+    padding-top: var(--mobile-margin-top);
+  }
+
+  .guru-card__title {
+    font-size: var(--heading-size-mobile);
+  }
+
   .guru-card__body {
     flex-direction: column;
     gap: 1rem;
@@ -137,9 +146,17 @@
     width: 100%;
   }
 
+  .guru-card__figure {
+    order: 1;
+  }
+
+  .guru-card__content {
+    order: 2;
+  }
+
   .guru-card__paragraph {
     font-size: var(--mobile-font-size);
-    line-height: 1.6;
+    line-height: var(--mobile-line-height);
   }
 
   .guru-card__image,

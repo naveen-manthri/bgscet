@@ -58,7 +58,7 @@
   .title-description p {
     margin: 0;
     font-size: var(--mobile-font-size);
-    line-height: 1.6;
+    line-height: var(--mobile-line-height);
     overflow-wrap: anywhere;
   }
 }

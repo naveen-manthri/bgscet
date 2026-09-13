@@ -41,12 +41,17 @@
 @media (max-width: 768px) {
   .committee-heading {
     padding-inline: 1.25rem;
+    box-sizing: border-box;
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
   }
 
   .committee-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
     padding-inline: 1.25rem;
+    box-sizing: border-box;
+    padding: var(--mobile-padding);
   }
 
   .committee-btn {

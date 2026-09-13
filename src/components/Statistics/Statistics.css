@@ -36,7 +36,8 @@
 }
 
 .statistics {
-  width: 100%;
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
   margin-top: var(--primary-margin-top);
   padding: var(--section-padding-y) var(--section-padding-x);
   background: linear-gradient(
@@ -150,6 +151,10 @@
 }
 
 @media (max-width: 768px) {
+  .statistics {
+    margin-top: var(--mobile-margin-top);
+  }
+
   .statistics-title {
     max-width: 100%;
     font-size: 2rem;
@@ -176,6 +181,6 @@
 
   .statistics-label {
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: var(--mobile-line-height);
   }
 }

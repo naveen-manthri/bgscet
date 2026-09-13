@@ -1,5 +1,7 @@
 .committee-table {
-  
+  --mobile-margin-top: 1.5rem;
+  --mobile-padding: 0 1.25rem;
+  --mobile-font-size: 1rem;
   gap: 2rem;
 }
 
@@ -59,6 +61,12 @@
 }
 
 @media (max-width: 48rem) {
+  .committee-table {
+    box-sizing: border-box;
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+  }
+
   .committee-table__table {
     min-width: 48rem;
   }
@@ -69,11 +77,11 @@
   }
 
   .committee-table__table th {
-    font-size: 0.95rem;
+    font-size: var(--mobile-font-size);
   }
 
   .committee-table__table td {
-    font-size: 0.9rem;
+    font-size: var(--mobile-font-size);
   }
 }
 

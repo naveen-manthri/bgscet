@@ -82,3 +82,10 @@
     width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  .career-opportunities {
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+  }
+}

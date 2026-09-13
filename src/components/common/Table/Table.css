@@ -86,9 +86,14 @@
 }
 
 @media (max-width: 768px) {
+  .table-section {
+    box-sizing: border-box;
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+  }
   .table-section__description {
     font-size: var(--mobile-font-size);
-    line-height: 1.6;
+    line-height: var(--mobile-line-height);
   }
 
   .table-section__wrapper {

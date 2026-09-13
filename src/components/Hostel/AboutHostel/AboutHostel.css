@@ -1,5 +1,6 @@
 .about-hostel {
-  
+  --mobile-margin-top: 1.5rem;
+  --mobile-padding: 0 1.25rem;
   gap: 0rem;
   margin-top: var(--primary-margin-top);
 }
@@ -67,11 +68,17 @@
 
   .about-hostel__description p {
     font-size: 1rem;
-    line-height: var(--line-height);;
+    line-height: var(--line-height);
   }
 }
 
 @media (max-width: 48rem) {
+  .about-hostel {
+    box-sizing: border-box;
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+  }
+
   .about-hostel__content {
     grid-template-columns: 1fr;
   }

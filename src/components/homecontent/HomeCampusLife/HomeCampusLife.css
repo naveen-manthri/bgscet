@@ -137,6 +137,11 @@
 }
 
 @media (max-width: 768px) {
+  .home-campus-life {
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+  }
+
   .home-campus-life .section-title,
   .home-campus-life .section-title-wrapper {
     max-width: 100%;

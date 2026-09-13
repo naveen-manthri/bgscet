@@ -286,6 +286,11 @@
 }
 
 @media (max-width: 768px) {
+  .home-academic {
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+  }
+
   .academic-title {
     max-width: 100%;
     font-size: 2rem;
@@ -331,7 +336,7 @@
 
   .program-description {
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: var(--mobile-line-height);
   }
 
   .program-read-more {

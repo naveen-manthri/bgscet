@@ -47,6 +47,8 @@
     flex-direction: column;
     align-items: stretch;
     gap: 1rem;
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
   }
 
   .home-vision-mission__content {
@@ -55,7 +57,7 @@
 
   .home-vision-mission__content p {
     font-size: var(--mobile-font-size);
-    line-height: 1.6;
+    line-height: var(--mobile-line-height);
   }
 
   .home-vision-mission__image {

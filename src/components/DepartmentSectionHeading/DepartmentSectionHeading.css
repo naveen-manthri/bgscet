@@ -70,7 +70,7 @@
 
   .department-section-heading + p {
     font-size: 0.95rem;
-    line-height: 1.6;
+    line-height: var(--mobile-line-height);
   }
 
   .department-section-heading__underline {

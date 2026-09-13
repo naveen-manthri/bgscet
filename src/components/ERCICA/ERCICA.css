@@ -36,3 +36,15 @@
   color: var(--ercica-text-color);
   text-align: justify;
 }
+
+@media (max-width: 48rem) {
+  .ercica {
+    box-sizing: border-box;
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+  }
+
+  .ercica__container {
+    padding: 0;
+  }
+}
