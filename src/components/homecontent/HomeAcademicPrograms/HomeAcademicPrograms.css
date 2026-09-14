@@ -292,12 +292,12 @@
   }
 
   .home-academic .container {
-    gap: 0;
+    row-gap: 0;
   }
 
   .academic-title {
     max-width: 100%;
-    font-size: 2rem;
+    font-size: var(--mobile-academic-title-size);
     line-height: 1.2;
     overflow-wrap: anywhere;
   }
@@ -308,7 +308,7 @@
 
   .programs-grid {
     flex-direction: column;
-    gap: 1.25rem;
+    gap: var(--mobile-academic-card-gap);
     overflow-x: visible;
   }
 
@@ -324,8 +324,8 @@
   }
 
   .program-content {
-    gap: 0.6rem;
-    padding: 0.85rem;
+    gap: var(--mobile-academic-content-gap);
+    padding: var(--mobile-academic-content-padding);
   }
 
   .program-title {
@@ -334,8 +334,8 @@
   }
 
   .program-duration {
-    padding: 0.35rem 0.7rem;
-    font-size: 0.75rem;
+    padding: var(--mobile-academic-duration-padding);
+    font-size: var(--mobile-academic-duration-font-size);
   }
 
   .program-description {

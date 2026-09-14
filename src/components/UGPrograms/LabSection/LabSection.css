@@ -29,6 +29,11 @@
     padding: 0;
   }
 
+  .department-lab-section__image {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .department-lab-section__description {
     padding: var(--mobile-padding);
   }

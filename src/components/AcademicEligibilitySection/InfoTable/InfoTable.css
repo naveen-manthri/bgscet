@@ -12,16 +12,16 @@
 
 .academic-info-table th,
 .academic-info-table td {
-  padding: 0.7rem;
+  padding: var(--list-item-gap);
   border: 0.0625rem solid var(--academic-table-border);
   font-size: var(--font-size);
-  line-height: 1.4;
+  line-height: var(--line-height);
   text-align: left;
   vertical-align: middle;
 }
 
 .academic-info-table th {
-  padding: 0.7rem;
+  padding: var(--list-item-gap);
   font-weight: 700;
   color: var(--academic-heading-black);
   background: var(--color-table-header);

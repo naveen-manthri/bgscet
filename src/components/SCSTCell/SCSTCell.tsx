@@ -1,5 +1,6 @@
 import BannerSection from "../BannerSection/BannerSection";
 import DepartmentSectionHeading from "../DepartmentSectionHeading/DepartmentSectionHeading";
+import Advertisement from "../Advertisement/Advertisement";
 import banner from "../../assets/images/banner/sc-st-cell-banner.png";
 import { scStCellData } from "../../data/SCSTCell";
 import "./SCSTCell.css";
@@ -8,6 +9,7 @@ function SCSTCell() {
   return (
     <>
       <BannerSection image={banner} title="SC ST Cell" />
+      <Advertisement />
 
       <main className="scstcell-page">
         <DepartmentSectionHeading

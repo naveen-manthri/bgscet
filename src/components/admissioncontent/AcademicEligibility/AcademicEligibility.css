@@ -19,7 +19,8 @@
 }
 .academic-eligibility {
   background: var(--white);
-  padding: 5rem 0;
+  margin-top: var(--primary-margin-top);
+  padding: 0;
 }
 .eligibility-content {
   flex: 0 0 72%;
@@ -31,11 +32,11 @@
 .academic-eligibility .container {
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: 0 var(--list-item-gap);
+  padding: var(--primary-padding);
 }
 
 .eligibility-header {
-  margin-bottom: 2.5rem;
+  margin-bottom: var(--para-desc-gap);
 }
 
 
@@ -68,7 +69,7 @@
 }
 
 .eligibility-wrapper {
-  gap: 3rem;
+  gap: var(--para-desc-gap);
 }
 
 .eligibility-content {
@@ -77,7 +78,7 @@
 
 .eligibility-images {
   flex: 0 0 32%;
-  gap: 1.25rem;
+  gap: var(--list-item-gap);
 
   height: 38rem;
 }
@@ -100,11 +101,12 @@
 .eligibility-list {
   padding-left: 1.5rem;
   color: var(--text);
+  font-size: var(--font-size);
 }
 
 .eligibility-list li {
-  font-size: var(--font-size);
-  line-height: var(--line-height);5;
+  font-size: 1.25rem;
+  line-height: var(--line-height);
   text-align: justify;
 }
 
@@ -113,14 +115,14 @@
 }
 
 .exam-list {
-  margin-bottom: 2.5rem;
+  margin-bottom: var(--para-desc-gap);
   padding-left: 3.17rem;
   color: var(--text);
 }
 
 .exam-list li {
-  margin-bottom: 0.2rem;
-  line-height: var(--line-height);;
+  margin-bottom: var(--list-item-gap);
+  line-height: var(--line-height);
   font-size: var(--font-size);
 }
 
@@ -155,8 +157,12 @@ background: none;
     flex: 1;
   }
 
+  .eligibility-content {
+    order: 1;
+  }
+
   .eligibility-images {
-    order: -1;
+    order: 2;
     height: auto;
   }
 
@@ -181,7 +187,9 @@ background: none;
 
 @media (max-width: 48rem) {
   .academic-eligibility {
-    padding: 3.5rem 0;
+    box-sizing: border-box;
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
   }
 
   .academic-eligibility .container {

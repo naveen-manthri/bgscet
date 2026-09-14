@@ -45,6 +45,10 @@
 }
 
 @media (max-width: 48rem) {
+  .advaya {
+    margin-top: var(--mobile-margin-top);
+  }
+
   .advaya__container {
     box-sizing: border-box;
     padding: var(--mobile-padding);

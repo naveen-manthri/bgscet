@@ -115,6 +115,16 @@
 --mobile-padding:0 1.25rem;
 --mobile-description-font-size: 0.95rem;
 --mobile-description-line-height: 1.6;
+--mobile-card-padding: 0.75rem;
+--mobile-card-gap: 0.75rem;
+--mobile-section-gap: 1rem;
+--mobile-academic-heading-size: 1.7rem;
+--mobile-academic-title-size: 2rem;
+--mobile-academic-card-gap: 1.25rem;
+--mobile-academic-content-gap: 0.6rem;
+--mobile-academic-content-padding: 0.85rem;
+--mobile-academic-duration-padding: 0.35rem 0.7rem;
+--mobile-academic-duration-font-size: 0.75rem;
 
 }
 

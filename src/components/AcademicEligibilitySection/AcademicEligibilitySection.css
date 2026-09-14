@@ -1,7 +1,15 @@
 .academic-eligibility-section {
   width: 100%;
-  padding: 4rem;
-  
-  gap: 5rem;
+  padding: var(--primary-padding);
+  margin-top: var(--primary-margin-top);
+  gap: var(--para-desc-gap);
   padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .academic-eligibility-section {
+    box-sizing: border-box;
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+  }
 }

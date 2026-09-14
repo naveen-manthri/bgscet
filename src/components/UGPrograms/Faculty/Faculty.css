@@ -72,6 +72,14 @@
     padding: var(--mobile-padding);
   }
 
+  .department-faculty__grid {
+    margin-top: 0;
+  }
+
+  .department-faculty__image {
+    padding-bottom: 1rem;
+  }
+
   .department-faculty__name {
     font-size: var(--mobile-font-size);
     line-height: var(--mobile-line-height);

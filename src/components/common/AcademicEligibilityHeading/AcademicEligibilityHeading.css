@@ -46,6 +46,12 @@
     line-height: 1.25;
   }
 }
+
+@media (max-width: 768px) {
+  .academic-section-heading h2 {
+    font-size: var(--mobile-academic-heading-size);
+  }
+}
 .academic-section-heading__black {
   color: var(--academic-heading-black);
 }

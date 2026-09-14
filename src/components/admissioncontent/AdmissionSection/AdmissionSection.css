@@ -121,7 +121,14 @@
 
 @media (max-width: 48rem) {
   .admission {
-    padding: 2.5rem 4rem 0;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+  }
+
+  .admission > div {
+    width: 100%;
   }
 
   .admission__container {
@@ -138,8 +145,10 @@
   }
 
   .admission__image {
+    width: 100%;
     max-width: 26rem;
     height: auto;
+    margin-top: var(--mobile-margin-top);
     aspect-ratio: 1 / 0.96;
   }
 }

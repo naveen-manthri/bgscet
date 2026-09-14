@@ -58,6 +58,7 @@
 
   .letter-section__list {
     margin: 0;
+    margin-top: 0;
     padding-left: 1.25rem;
   }
 
@@ -66,7 +67,12 @@
   }
 
   .letter-section__list li {
-    margin-bottom: 0.6rem;
+    min-width: 0;
+    margin-bottom: var(--mobile-card-gap);
+    padding: var(--mobile-card-padding);
+    border: 0.0625rem solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface-muted);
     font-size: var(--mobile-font-size);
     line-height: var(--mobile-line-height);
   }
@@ -76,10 +82,11 @@
   }
 
   .letter-section__link {
-    display: inline;
+    display: block;
     font-size: var(--mobile-font-size);
     line-height: var(--mobile-line-height);
     overflow-wrap: anywhere;
+    word-break: break-word;
   }
 
   .letter-section__group + .letter-section__group {
@@ -87,6 +94,7 @@
   }
 
   .letter-section__group-title {
+    margin: 0;
     font-size: 1.1rem;
     line-height: 1.4;
   }

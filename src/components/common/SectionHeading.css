@@ -93,6 +93,7 @@
 @media (max-width: 48rem) {
   .shared-section-heading {
     --heading-size: var(--heading-size-mobile);
+    margin-bottom: var(--mobile-section-gap);
   }
 
   .section-title {
