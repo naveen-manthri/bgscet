@@ -119,9 +119,8 @@ padding:0.8rem;
   }
 
   .hod-message__profile {
-    flex-basis: auto;
     width: 100%;
-    max-width: 22rem;
+    flex-basis: auto;
   }
 
   .hod-message__description {
@@ -143,16 +142,41 @@ padding:0.8rem;
     gap: var(--mobile-version-para-desc-gap);
   }
 
+  .hod-message__profile {
+    width: 100%;
+    max-width: 20rem;
+    flex-basis: auto;
+  }
+
+  .hod-message__details {
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+
+  .hod-message__name {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    line-height: 1.3;
+    overflow-wrap: anywhere;
+  }
+
   .hod-message__designation {
     margin: 0.25rem 0;
     font-size: var(--mobile-font-size);
     line-height: var(--mobile-line-height);
-    overflow-wrap: anywhere;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .hod-message__description {
+    width: 100%;
   }
 
   .hod-message__description p {
     font-size: var(--mobile-description-font-size);
-    line-height: var(--mobile-description-line-height);
-    overflow-wrap: anywhere;
+    line-height: 1.7;
+    text-align: left;
+    overflow-wrap: normal;
+    word-break: normal;
   }
 }

@@ -28,7 +28,7 @@
   .hostel-facility__content {
     box-sizing: border-box;
     gap: 0;
-    margin-top: var(--mobile-margin-top);
+    margin-top: 0;
     padding: var(--mobile-padding);
   }
 

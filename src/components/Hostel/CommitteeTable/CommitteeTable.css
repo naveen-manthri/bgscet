@@ -63,6 +63,7 @@
 @media (max-width: 48rem) {
   .committee-table {
     box-sizing: border-box;
+    gap: 0;
     margin-top: var(--mobile-margin-top);
     padding: var(--mobile-padding);
   }

@@ -59,7 +59,7 @@
   }
 
   .training-placement-cell {
-    margin-top: 0;
+    margin-top: var(--mobile-margin-top);
   }
 
   .title-description p {

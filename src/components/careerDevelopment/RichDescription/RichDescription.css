@@ -23,7 +23,11 @@
 
 .rich-description__content {
   margin-top: var(--career-content-gap);
-  gap: var(--career-content-gap);
+  gap: 0;
+}
+
+.rich-description__content > p + p {
+  margin-top: var(--career-content-gap);
 }
 
 .rich-description p {
@@ -55,6 +59,10 @@
   .rich-description__content {
     margin-top: 0;
     gap: 0;
+  }
+
+  .rich-description__content > p + p {
+    margin-top: 0;
   }
 
   .rich-description p {

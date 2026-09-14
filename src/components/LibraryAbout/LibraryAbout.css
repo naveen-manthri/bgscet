@@ -119,9 +119,14 @@
     padding: 0;
   }
 
+  .library-about__content {
+    margin-top: 0;
+  }
+
   .library-about__heading {
-    font-size: 1.25rem;
-    line-height: 1.35;
+    font-size: clamp(1.05rem, 4.5vw, 1.2rem);
+    line-height: 1.3;
+    overflow-wrap: anywhere;
   }
 
   .library-about__introduction,

@@ -89,7 +89,7 @@
   }
 
   .profile-card__container {
-    gap: 0;
+    gap: 1rem;
   }
 
   .profile-card__image {

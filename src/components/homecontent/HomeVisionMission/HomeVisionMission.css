@@ -42,13 +42,22 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 1023px) {
+  .home-vision-mission__image {
+    flex-shrink: 0;
+    width: min(42vw, 28rem);
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+}
+
 @media (max-width: 768px) {
   .home-vision-mission {
     flex-direction: column;
     align-items: stretch;
     gap: 1rem;
     margin-top: var(--mobile-margin-top);
-    padding: var(--mobile-padding);
+    padding: 2rem 1.25rem;
   }
 
   .home-vision-mission__content {
