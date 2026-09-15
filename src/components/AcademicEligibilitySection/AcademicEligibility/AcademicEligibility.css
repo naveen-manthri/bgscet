@@ -90,6 +90,15 @@
 .academic-eligibility__block p {
   margin-bottom: 0;
 }
+
+.academic-eligibility__documents-label {
+  display: block;
+  margin-top: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(0.9rem, 1.5vw, 1.25rem);
+  font-weight: 700;
+  line-height: 1.4;
+}
+
 .academic-eligibility__block a {
   color: var(--text);
   text-decoration: underline;
@@ -101,6 +110,9 @@
 }
 
 @media (max-width: 768px) {
+  .academic-eligibility{
+    gap: 0;
+  }
   .academic-eligibility__wrapper {
     grid-template-columns: 1fr;
   }
@@ -131,6 +143,3 @@
   }
 }
 
-/* .academic-eligibility__documents-label {
-  font-weight: 700;
-} */

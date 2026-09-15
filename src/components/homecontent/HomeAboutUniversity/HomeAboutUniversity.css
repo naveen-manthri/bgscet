@@ -143,6 +143,7 @@
     align-items: stretch;
     gap: 1rem;
     margin-top: var(--mobile-margin-top);
+    margin-bottom: 0;
     padding: var(--mobile-padding);
   }
 

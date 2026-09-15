@@ -62,6 +62,7 @@
 
   .home-vision-mission__content {
     order: 1;
+    gap: 1rem;
   }
 
   .home-vision-mission__content p {

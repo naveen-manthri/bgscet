@@ -1,5 +1,5 @@
 .management-fee {
-  gap: calc(var(--list-item-gap) * 2);
+  gap: 0;
 }
 
 .management-fee__table {
@@ -9,7 +9,7 @@
 
 
 .management-fee__notes h3 {
-  margin: 0 ;
+  margin: calc(var(--list-item-gap) * 2) 0 0;
   font-size: var(--font-size);
   font-weight: 400;
   color: var(--text);
@@ -29,4 +29,10 @@
 
 .management-fee__notes li:last-child {
   margin-bottom: 0;
+}
+
+@media (max-width: 48rem) {
+  .management-fee__notes ul {
+    padding-left: 1.25rem;
+  }
 }

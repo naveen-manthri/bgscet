@@ -63,7 +63,7 @@ const UGDepartment = ({ data }: UGDepartmentProps) => {
       <BannerSection {...data.banner} />
       <Advertisement />
 
-      <main className="ug-department">
+      <main className={`ug-department${data.slug === "cse" ? " ug-department--cse" : ""}`}>
         <DepartmentTabs
           tabs={data.tabs}
           activeTab={activeTab}

@@ -14,38 +14,22 @@ const GuruCard: FC<GuruCardProps> = ({
   reverse = false,
 }) => {
   return (
-    <article
-      className={`flex flex-direction-column guru-card ${
-        reverse ? "guru-card--reverse" : ""
-      }`}
-    >
+    <article className={`flex flex-direction-column guru-card ${  reverse ? "guru-card--reverse" : "" }`}>
       <h2 className="guru-card__title">
         {guru.name}
       </h2>
 
-      <div
-        className={`flex flex-justify-between guru-card__body ${
-          reverse ? "guru-card__body--reverse" : ""
-        }`}
-      >
+      <div className={`flex flex-justify-between guru-card__body ${  reverse ? "guru-card__body--reverse" : ""  }`} >
         <div className="flex flex-direction-column flex-one guru-card__content">
           {guru.description.map((paragraph, index) => (
-            <p
-              key={`${guru.id}-${index}`}
-              className="guru-card__paragraph"
-            >
+            <p key={`${guru.id}-${index}`} className="guru-card__paragraph" >
               {paragraph}
             </p>
           ))}
         </div>
 
         <figure className="flex flex-direction-column guru-card__figure">
-          <img
-            className="guru-card__image display-block"
-            src={guru.image}
-            alt={guru.alt}
-            loading="lazy"
-          />
+          <img className="guru-card__image display-block" src={guru.image} alt={guru.alt} loading="lazy" />
 
           <figcaption className="guru-card__caption">
             {guru.name}

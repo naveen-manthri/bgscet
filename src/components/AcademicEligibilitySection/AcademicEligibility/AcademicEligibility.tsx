@@ -11,10 +11,7 @@ import { academicData } from "../../../data/academic";
 export default function AcademicEligibility() {
   return (
     <section className="flex flex-direction-column academic-eligibility">
-      <AcademicHeading
-        blackTitle={academicData.title.black}
-        redTitle={academicData.title.red}
-      />
+      <AcademicHeading blackTitle={academicData.title.black}  redTitle={academicData.title.red}/>
 
       <div className="flex flex-direction-column academic-eligibility__body">
         <div className="academic-eligibility__wrapper">

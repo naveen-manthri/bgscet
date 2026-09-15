@@ -66,6 +66,10 @@
   .vision-mission:not(.vision-mission--columns) .vision-mission__section + .vision-mission__section {
     margin-top: 0;
   }
+
+  .ug-department--cse .vision-mission:not(.vision-mission--columns) .vision-mission__section + .vision-mission__section {
+    margin-top: 1.5rem;
+  }
 }
 
 .vision-mission--columns .vision-mission__list {

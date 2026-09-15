@@ -1,9 +1,9 @@
 import { useRef, useState } from 'react';
 import type { PointerEvent } from 'react';
 
-import { testimonials } from '../../data/landingData';
+import { testimonials } from '../../../data/landingData';
 
-import SectionHeading from '../common/SectionHeading';
+import SectionHeading from '../../common/SectionHeading';
 
 import './StudentTestimonials.css';
 

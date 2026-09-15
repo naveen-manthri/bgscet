@@ -43,6 +43,10 @@
   .ug-department__tab-content {
     padding: 0;
   }
+
+  .ug-department__single-page #department-vision {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 768px) {

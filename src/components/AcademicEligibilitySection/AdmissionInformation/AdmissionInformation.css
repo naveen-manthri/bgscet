@@ -1,6 +1,5 @@
 .admission-information {
-  
-  gap: var(--academic-section-gap);
+  gap: 0;
 }
 
 
@@ -63,7 +62,7 @@
   box-shadow: var(--shadow-soft);
 }
 .admission-information__contacts {
-  margin: 0rem 0 0;
+  margin: 1rem 0 0;
 }
 
 .admission-information__contact {
@@ -112,5 +111,17 @@
 
   .admission-information__contact p {
     margin: 0;
+  }
+
+  .unique-features {
+    margin-top: var(--mobile-margin-top);
+    flex-direction: column;
+    gap: 0.7rem;
+    padding-top: 0;
+  }
+
+  .unique-features__left-image,
+  .unique-features__right-image {
+    width: 100%;
   }
 }
