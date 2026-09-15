@@ -23,11 +23,8 @@ const HodMessage = ({
 
         <aside className="flex flex-direction-column flex-align-center hod-message__profile">
 
-          <img
-            src={data.image}
-            alt={data.name}
-            className="hod-message__image"
-          />
+          <img src={data.image} alt={data.name} className="hod-message__image" />
+
 
 
           <div className="hod-message__details">
@@ -38,12 +35,8 @@ const HodMessage = ({
 
 
             {data.designation.map((item) => (
-              <p
-                key={item}
-                className="hod-message__designation"
-              >
-                {item}
-              </p>
+             <p key={item} className="hod-message__designation">{item}</p>
+
             ))}
 
           </div>

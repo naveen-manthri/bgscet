@@ -87,17 +87,12 @@ const JCET = () => {
         </div>
       </section>
 
-      <TitleDescription
-        data={jcetData.callForPapers}
-        sectionClassName="jcet__call-for-papers"
-      />
+      <TitleDescription data={jcetData.callForPapers} sectionClassName="jcet__call-for-papers" />
+
 
       <section className="jcet__section jcet__editorial-board" aria-labelledby="jcet-editorial-board-title">
-        <DepartmentSectionHeading
-          title="Editorial Board"
-          id="jcet-editorial-board-title"
-          className="department-section-heading--medium"
-        />
+        <DepartmentSectionHeading title="Editorial Board" id="jcet-editorial-board-title" className="department-section-heading--medium" />
+
         <div className="jcet__editorial-board-list">
           {jcetData.editorialBoard.map((member) => (
             <article className="jcet__editorial-board-member" key={member.name}>
@@ -111,23 +106,7 @@ const JCET = () => {
       </section>
 
       <div className="jcet__bibliographic-details">
-        <Table
-          title={jcetData.bibliographicDetails.title}
-          description={jcetData.bibliographicDetails.description}
-          table={jcetData.bibliographicDetails.table}
-          renderCell={(value, column) => column.key === "paperPdf" ? (
-            <a
-              className="jcet__paper-pdf-link"
-              href={value}
-              target="_blank"
-              rel="noreferrer"
-              aria-label="View paper PDF"
-              title="View paper PDF"
-            >
-              <FiFileText aria-hidden="true" />
-            </a>
-          ) : value}
-        />
+        <Table title={jcetData.bibliographicDetails.title} description={jcetData.bibliographicDetails.description} table={jcetData.bibliographicDetails.table} renderCell={(value, column) => column.key === "paperPdf" ? ( <a className="jcet__paper-pdf-link" href={value} target="_blank" rel="noreferrer" aria-label="View paper PDF" title="View paper PDF"><FiFileText aria-hidden="true" /></a>  ) : value} />
       </div>
     </main>
   );

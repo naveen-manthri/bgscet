@@ -153,6 +153,10 @@
     max-width: 100%;
   }
 
+  .jcet__bibliographic-details .table-section {
+    padding: 0;
+  }
+
   .jcet__descriptions p,
   .jcet__information-list p,
   .jcet__section-content,

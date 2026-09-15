@@ -144,25 +144,26 @@ padding:0.8rem;
 
   .hod-message__profile {
     width: 100%;
-    max-width: 20rem;
+    max-width: none;
     flex-basis: auto;
+    align-items: flex-start;
   }
 
   .hod-message__details {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     padding: 1rem;
   }
 
   .hod-message__name {
     margin-bottom: 0.5rem;
-    font-size: 1.25rem;
+    font-size: var(--mobile-hod-name-font-size);
     line-height: 1.3;
     overflow-wrap: anywhere;
   }
 
   .hod-message__designation {
     margin: 0.25rem 0;
-    font-size: var(--mobile-font-size);
+    font-size: var(--mobile-hod-designation-font-size);
     line-height: var(--mobile-line-height);
     overflow-wrap: normal;
     word-break: normal;

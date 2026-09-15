@@ -14,10 +14,7 @@ import Statistics from '../components/Statistics/Statistics';
 function HomePage() {
   return (
     <div>
-    <BannerSection
-        image={homeBanner}
-        title=""
-        />
+    <BannerSection image={homeBanner} title="" />
         <Advertisement />
 
         <HomeAboutUniversity />

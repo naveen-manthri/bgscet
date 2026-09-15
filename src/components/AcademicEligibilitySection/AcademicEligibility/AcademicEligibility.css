@@ -110,9 +110,16 @@
     grid-template-rows: auto;
     gap: var(--list-item-gap);
   }
+  .academic-eligibility__list{
+    padding-left: 1.25rem;
+  }
 
   .academic-eligibility__images img {
     height: auto;
+  }
+  .academic-eligibility__documents{
+    padding-left: 1.25rem;
+    margin-top: 0.5rem;
   }
 
   .academic-eligibility__block {

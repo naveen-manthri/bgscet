@@ -124,7 +124,7 @@
 @media (max-width: 768px) {
   .guru-card {
     margin-top: 0;
-    padding-top: var(--mobile-margin-top);
+    padding: var(--mobile-margin-top) 0 0;
   }
 
   .guru-card__title {
@@ -166,5 +166,9 @@
   .guru-card__caption {
     width: 100%;
     max-width: none;
+  }
+
+  .guru-card__caption {
+    display: none;
   }
 }
