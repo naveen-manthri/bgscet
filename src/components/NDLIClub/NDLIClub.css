@@ -45,7 +45,7 @@
 
   .ndli-club__grid {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap:var(--committee-buttons-gap);
   }
 
   .ndli-club__button {

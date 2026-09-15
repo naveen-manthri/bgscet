@@ -37,7 +37,7 @@
 
   .hostel-facility__intro-list,
   .hostel-facility__facility-list {
-    gap: 0.8rem;
+    gap: 0rem;
     padding-left: 1.25rem;
   }
 
@@ -46,6 +46,9 @@
   .hostel-facility__description {
     font-size: 0.95rem;
     line-height: var(--line-height);
+  }
+  .hostel-facility__description{
+    margin-top: 1rem;
   }
 }
 

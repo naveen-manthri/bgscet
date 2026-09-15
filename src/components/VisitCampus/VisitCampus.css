@@ -109,8 +109,14 @@
     gap: 1rem;
   }
 }
-
+@media (max-width: 768px) {
+    .visit-campus {
+        margin-top: 3rem;
+        padding: var(--mobile-padding);
+    }
+}
 @media (max-width: 48rem) {
+  
   .visit-campus__container {
     padding: 2.5rem 2rem;
   }
@@ -147,7 +153,7 @@
 
 @media (max-width: 768px) {
   .visit-campus {
-    margin-top: var(--mobile-margin-top);
+    margin-top: var(--visit-campus-mobile-margin-top);
     padding: var(--mobile-padding);
   }
 

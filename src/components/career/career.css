@@ -15,8 +15,6 @@
 }
 
 .career-hero__content {
-  
-  gap: 1.5rem;
 }
 
 
@@ -87,7 +85,6 @@
   }
 
   .career-hero__content {
-    gap: 1rem;
   }
 
   .career-hero__content p {

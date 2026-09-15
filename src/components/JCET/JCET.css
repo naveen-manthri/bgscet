@@ -108,7 +108,7 @@
 }
 
 .jcet__editorial-board-member h3 {
-  margin: 0 0 0.75rem;
+  margin: 0 0rem;
   color: #000000;
   font-size: var(--font-size);
   line-height: var(--line-height);
@@ -165,4 +165,5 @@
     font-size: var(--mobile-font-size);
     line-height: var(--mobile-line-height);
   }
+  
 }

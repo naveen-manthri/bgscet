@@ -48,10 +48,11 @@
 
   .committee-grid {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: var(--committee-buttons-gap);
     padding-inline: 1.25rem;
     box-sizing: border-box;
     padding: var(--mobile-padding);
+    
   }
 
   .committee-btn {

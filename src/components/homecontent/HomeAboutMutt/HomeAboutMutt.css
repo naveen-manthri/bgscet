@@ -35,8 +35,6 @@
 
 @media (min-width: 1024px) {
   .home-about-mutt {
-    max-width: 1400px;
-    margin-inline: auto;
     align-items: center;
     justify-content: center;
   }
