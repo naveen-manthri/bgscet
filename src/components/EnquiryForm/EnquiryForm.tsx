@@ -33,6 +33,55 @@ const EnquiryForm: React.FC<EnquiryFormProps> = ({
     };
   }, [isOpen, onClose]);
 
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const navbar = document.querySelector<HTMLElement>(".main-navbar");
+    const root = document.documentElement;
+    const updateNavbarHeight = () => {
+      const navbarHeight = navbar?.getBoundingClientRect().height ?? 0;
+      const reducedHeight = Math.max(navbarHeight * 0.5, 0);
+
+      root.style.setProperty(
+        "--enquiry-navbar-height",
+        `${reducedHeight}px`,
+      );
+    };
+
+    updateNavbarHeight();
+    let observer: ResizeObserver | undefined;
+
+    if (navbar) {
+      observer = new ResizeObserver(updateNavbarHeight);
+      observer.observe(navbar);
+    }
+    window.addEventListener("resize", updateNavbarHeight);
+    window.visualViewport?.addEventListener("resize", updateNavbarHeight);
+
+    return () => {
+      observer?.disconnect();
+      window.removeEventListener("resize", updateNavbarHeight);
+      window.visualViewport?.removeEventListener("resize", updateNavbarHeight);
+      root.style.removeProperty("--enquiry-navbar-height");
+    };
+  }, [isOpen]);
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const { body, documentElement } = document;
+    const previousBodyOverflow = body.style.overflow;
+    const previousRootOverflow = documentElement.style.overflow;
+
+    body.style.overflow = "hidden";
+    documentElement.style.overflow = "hidden";
+
+    return () => {
+      body.style.overflow = previousBodyOverflow;
+      documentElement.style.overflow = previousRootOverflow;
+    };
+  }, [isOpen]);
+
   const handleOverlayClick = (
     event: React.MouseEvent<HTMLDivElement>
   ) => {
@@ -82,6 +131,7 @@ const EnquiryForm: React.FC<EnquiryFormProps> = ({
       className="enquiry-form flex flex-center"
       role="dialog"
       aria-modal="true"
+      aria-labelledby="enquiry-form-title"
       onClick={handleOverlayClick}
     >
       <div
@@ -101,7 +151,7 @@ const EnquiryForm: React.FC<EnquiryFormProps> = ({
 
         {/* Heading */}
 
-        <h2 className="enquiry-form__title">
+        <h2 className="enquiry-form__title" id="enquiry-form-title">
           Enquiry Form
         </h2>
 

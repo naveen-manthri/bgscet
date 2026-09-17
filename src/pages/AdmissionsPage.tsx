@@ -4,7 +4,7 @@ import Advertisement from '../components/Advertisement/Advertisement';
 import BannerSection from '../components/BannerSection/BannerSection';
 import Statistics from '../components/Statistics/Statistics';
 import VisitCampus from '../components/VisitCampus/VisitCampus';
-import AcademicEligibilitySection from '../components/AcademicEligibilitySection/AcademicEligibilitySection';
+import AcademicEligibilitySection from '../components/admissioncontent/AcademicEligibilitySection/AcademicEligibilitySection';
 import AdmissionBanner from '../assets/images/banner/admission-banner.png';
 
 

@@ -1,8 +1,8 @@
 import "./AdmissionInformation.css";
-import featureLeft from  "../../../assets/images/admission/unique-features-1.png";
-import featureRight from "../../../assets/images/admission/unique-features-2.png";
+import featureLeft from "../../../../assets/images/admission/unique-features-1.png";
+import featureRight from "../../../../assets/images/admission/unique-features-2.png";
 
-import { admissionInformationData } from "../../../data/academic";
+import { admissionInformationData } from "../../../../data/academic";
 
 
 export default function AdmissionInformation() {

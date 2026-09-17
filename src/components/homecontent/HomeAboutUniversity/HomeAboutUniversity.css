@@ -33,7 +33,7 @@
   width: clamp(5.4rem, 11vw, 7.7rem);
   height: clamp(5.4rem, 11vw, 7.7rem);
   border-radius: 50%;
-  box-shadow: 0 14px 30px rgba(91, 23, 20, 0.26);
+  /* box-shadow: 0 14px 30px rgba(91, 23, 20, 0.26); */
 }
 
 .home-about-university__badge-ring {

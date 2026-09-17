@@ -1,7 +1,7 @@
 import "./LibraryRules.css";
 
-import BulletSection from "../common/BulletSection/BulletSection";
-import { libraryRulesData } from "../../data/libraryRulesData";
+import BulletSection from "../../common/BulletSection/BulletSection";
+import { libraryRulesData } from "../../../data/libraryRulesData";
 
 const LibraryRules = () => {
   const data = libraryRulesData;

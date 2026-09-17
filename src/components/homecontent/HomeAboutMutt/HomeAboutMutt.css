@@ -13,9 +13,10 @@
 }
 
 .home-about-mutt__content p {
+  margin: 0;
   color: var(--text);
-  font-size: 1.5rem;
-  line-height: 1.75;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
   text-align: justify;
 }
 
@@ -28,24 +29,30 @@
   display: block;
   width: min(100%, 34rem);
   margin: 0 auto;
-  border-radius: 2rem;
+  border-radius: var(--home-mutt-vm-image-border);
   clip-path: inset(0 round 2rem);
   background-color: var(--home-about-mutt-background);
 }
 
 @media (min-width: 1024px) {
   .home-about-mutt {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(22rem, 30rem);
     align-items: center;
     justify-content: center;
+    gap: clamp(2rem, 4vw, 5rem);
   }
 
   .home-about-mutt__content {
+    min-width: 0;
     max-width: 48rem;
   }
 
   .home-about-mutt__image {
-    flex-shrink: 0;
-    width: min(100%, 30rem);
+    width: 100%;
+    margin: 0;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
   }
 }
 

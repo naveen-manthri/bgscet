@@ -35,7 +35,7 @@ const NSS = () => {
         <p>{vision.description}</p>
       </div>
 
-      <div className="flex flex-direction-column nss__section">
+      <div className="flex flex-direction-column nss__section nss__section--mission">
         <DepartmentSectionHeading title={mission.title} className="department-section-heading--medium" />
         <p>{mission.description}</p>
       </div>

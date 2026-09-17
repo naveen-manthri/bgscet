@@ -63,6 +63,11 @@
   margin: 0;
 }
 
+/* The parent uses a 3rem gap; Mission sits directly above Objectives. */
+.nss__section--mission {
+  margin-bottom: -3rem;
+}
+
 @media (max-width: 768px) {
   .nss {
     box-sizing: border-box;
@@ -91,6 +96,10 @@
   .nss__section,
   .nss .bullet-section {
     margin-top: var(--mobile-margin-top);
+  }
+
+  .nss__section--mission {
+    margin-bottom: 0;
   }
 
   .nss .bullet-section__list {

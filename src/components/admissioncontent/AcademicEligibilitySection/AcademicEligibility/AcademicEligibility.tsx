@@ -1,12 +1,11 @@
 import "./AcademicEligibility.css";
 
-import AcademicHeading from "../../common/AcademicEligibilityHeading/AcademicEligibilityHeading";
 
+import AcademicHeading from "../../../common/AcademicEligibilityHeading/AcademicEligibilityHeading"
+import academicTop from "../../../../assets/images/admission/admission-image-2.jpg";
+import studentsGroup from "../../../../assets/images/admission/admission-image-3.jpg";
 
-import academicTop from "../../../assets/images/admission/admission-image-2.jpg";
- import studentsGroup from "../../../assets/images/admission/admission-image-3.jpg";
-
-import { academicData } from "../../../data/academic";
+import { academicData } from "../../../../data/academic";
 
 export default function AcademicEligibility() {
   return (

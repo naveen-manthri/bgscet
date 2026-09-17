@@ -40,7 +40,7 @@
 }
 
 .academic-eligibility__block h3 {
-  margin: 0;
+  margin-top: 1rem;
   font-size: var(--font-size);
   font-weight: 700;
   color: var(--academic-sub-heading-black);
@@ -60,11 +60,13 @@
 .academic-eligibility__documents ol {
   margin: 0;
   padding-left: var(--list-item-gap);
+  padding-left: 1.25rem;
 }
 
 .academic-eligibility__documents li {
   
   line-height: var(--line-height);
+  
 }
 .academic-eligibility__documents a{
   color: inherit;

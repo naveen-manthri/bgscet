@@ -1,9 +1,9 @@
 import "./ManagementFee.css";
 
-import AcademicHeading from "../../common/AcademicEligibilityHeading/AcademicEligibilityHeading";
+import AcademicHeading from "../../../common/AcademicEligibilityHeading/AcademicEligibilityHeading";
 import InfoTable from "../InfoTable/InfoTable";
 
-import { managementFeeData } from "../../../data/academic";
+import { managementFeeData } from "../../../../data/academic";
 
 export default function ManagementFee() {
   return (

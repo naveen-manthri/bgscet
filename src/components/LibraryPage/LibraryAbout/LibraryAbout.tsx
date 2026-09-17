@@ -1,8 +1,8 @@
 import "./LibraryAbout.css";
 
-import DepartmentSectionHeading from "../DepartmentSectionHeading/DepartmentSectionHeading";
+import DepartmentSectionHeading from "../../DepartmentSectionHeading/DepartmentSectionHeading";
 
-import { libraryAboutData } from "../../data/libraryAboutData";
+import { libraryAboutData } from "../../../data/libraryAboutData";
 
 const LibraryAbout = () => {
   const data = libraryAboutData;

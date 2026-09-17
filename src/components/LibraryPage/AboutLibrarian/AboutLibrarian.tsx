@@ -1,9 +1,9 @@
 import "./AboutLibrarian.css";
 
-import DepartmentSectionHeading from "../DepartmentSectionHeading/DepartmentSectionHeading";
-import BulletSection from "../common/BulletSection/BulletSection";
+import DepartmentSectionHeading from "../../DepartmentSectionHeading/DepartmentSectionHeading";
+import BulletSection from "../../common/BulletSection/BulletSection";
 
-import { aboutLibrarianData } from "../../data/aboutLibrarianData";
+import { aboutLibrarianData } from "../../../data/aboutLibrarianData";
 
 const AboutLibrarian = () => {
   const data = aboutLibrarianData;

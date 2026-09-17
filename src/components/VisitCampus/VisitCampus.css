@@ -44,7 +44,7 @@
 .visit-campus {
   width: min(92%, var(--container-width));
   margin-inline: auto;
-  margin-top: var(--primary-margin-top);
+  margin-top: var(--visit-campus-margin-top);
   padding: 0 0 3rem;
   
 }

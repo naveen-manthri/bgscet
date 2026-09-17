@@ -12,8 +12,8 @@ const courses: string[] = [
 
 const AdmissionSection = () => {
   return (
-    <section className="flex flex-justify-between admission">
-      <div>
+    <section className="admission">
+      <div className="admission__content">
           <AcademicHeading className="admission__title" blackTitle={"Admission For Management Quota\nSeats Is Underway "} redTitle={"For First Year\nB.E. Courses : 2026-27"} underlineLastLine />
           <div>
               <p className="admission__heading">
@@ -22,10 +22,7 @@ const AdmissionSection = () => {
 
               <ul className="flex flex-direction-column admission__list">
                 {courses.map((course, index) => (
-                  <li
-                    key={course}
-                    className="flex flex-align-start admission__item"
-                  >
+                  <li key={course}  className="flex flex-align-start admission__item" >
                     <span className="admission__number flex flex-center">
                       {index + 1}
                     </span>
@@ -38,11 +35,7 @@ const AdmissionSection = () => {
               </ul>
           </div>
       </div>
-      <img
-        src={admissionImage}
-        alt="Admission counselling session"
-        className="admission__image"
-      />
+      <img src={admissionImage}  alt="Admission counselling session" className="admission__image"/>
     </section>
   );
 };
