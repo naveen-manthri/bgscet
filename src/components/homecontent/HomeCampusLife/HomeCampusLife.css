@@ -166,21 +166,21 @@
   }
 
   .campus-life-card-1,
-  .campus-life-card-4 {
+  .campus-life-card-2 {
     grid-column: 1 / -1;
   }
 
-  .campus-life-card-2 {
+  .campus-life-card-3 {
     grid-column: 1;
     grid-row: 2;
   }
 
-  .campus-life-card-3 {
+  .campus-life-card-4 {
     grid-column: 2;
     grid-row: 2;
   }
 
-  .campus-life-card-4 {
+  .campus-life-card-2 {
     grid-row: 3;
   }
 }

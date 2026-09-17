@@ -6,13 +6,16 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: clamp(3.25rem, 5vw, 4rem);
-  height: clamp(3.25rem, 5vw, 4rem);
+  width: clamp(3.5rem, 5vw, 4.25rem);
+  height: clamp(3.5rem, 5vw, 4.25rem);
   aspect-ratio: 1;
   border-radius: 50%;
-  background: whitesmoke;
-  color: var(--whatsapp, #25d366);
+  background: var(--whatsapp, #25d366);
+  border: 0.25rem solid #ffffff;
+  box-sizing: border-box;
+  color: #ffffff;
   text-decoration: none;
+  overflow: hidden;
   transition:
     transform 180ms ease,
     bottom 220ms ease,
@@ -34,9 +37,10 @@
 }
 
 .whatsapp-float__icon {
-  width: clamp(1.75rem, 3vw, 2.5rem);
-  height: clamp(1.75rem, 3vw, 2.5rem);
+  width: 62%;
+  height: 62%;
   display: block;
+  color: #ffffff;
 }
 
 @media (max-width: 48rem) {

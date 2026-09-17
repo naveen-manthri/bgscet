@@ -1,15 +1,11 @@
 .grievance-redressal-cell {
   --color-white: #ffffff;
   background: #ffffff;
-  padding: clamp(1.25rem, 3vw, 4rem) 0 clamp(2rem, 4vw, 4rem);
-  padding-bottom: 0;
+  padding: 0 4rem;
+  margin-top: 3rem;
 }
 
-.grievance-redressal-cell .title-description {
-  margin: 0 clamp(1rem, 3vw, 4rem) 2rem;
-}
-
-.grievance-redressal-cell .bullet-section {
+/* .grievance-redressal-cell .title-description {
   margin: 0 clamp(1rem, 3vw, 4rem) 2rem;
 }
 
@@ -19,7 +15,7 @@
   font-size: clamp(0.95rem, 1.5vw, 1.25rem);
   line-height: var(--line-height);
 }
-
+*/
 .grievance-redressal-cell__button-row {
   margin-top: clamp(1.5rem, 2vw, 2rem);
   padding: 0 clamp(1rem, 3vw, 4rem);
