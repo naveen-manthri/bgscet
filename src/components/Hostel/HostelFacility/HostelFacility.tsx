@@ -4,11 +4,12 @@ import "./HostelFacility.css";
 
 interface HostelFacilityProps {
   data: HostelFacilitySection;
+  className?: string;
 }
 
-const HostelFacility = ({ data }: HostelFacilityProps) => {
+const HostelFacility = ({ data, className }: HostelFacilityProps) => {
   return (
-    <section className="flex flex-direction-column hostel-facility hostel-page">
+    <section className={`flex flex-direction-column hostel-facility hostel-page ${className ?? ""}`.trim()}>
       <DepartmentSectionHeading title={data.title} className="department-section-heading--medium"/>
 
       <div className="flex flex-direction-column hostel-facility__content">

@@ -1,11 +1,16 @@
 .hostel {
     --text: #4C4949;
   
-  gap: 4rem;
+  gap: 0rem;
   width: 100%;
   padding: 0 4rem 0 4rem;
   box-sizing: border-box;
 }
+
+.hostel__table--spaced {
+  margin-top: var(--primary-margin-top);
+}
+
 .hostel-page p,
 .hostel-page li {
   color: var(--text);
@@ -15,8 +20,8 @@
 
 @media (max-width: 62rem) {
   .hostel {
-    gap: 3rem;
-    padding: 0 3rem 3rem;
+    gap: 0rem;
+    padding: 0 3rem 0rem;
   }
 }
 

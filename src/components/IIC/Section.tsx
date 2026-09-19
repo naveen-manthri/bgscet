@@ -1,5 +1,6 @@
 import type { IICSection } from "../../types/iic";
 import DepartmentSectionHeading from "../DepartmentSectionHeading/DepartmentSectionHeading";
+import NumberedList from "../common/NumberedList/NumberedList";
 
 interface Props {
   section: IICSection;
@@ -21,13 +22,7 @@ const Section = ({ section }: Props) => {
           );
         }
 
-        return (
-          <ol key={index}>
-            {content.data.map((item, i) => (
-              <li key={i}>{item}</li>
-            ))}
-          </ol>
-        );
+        return <NumberedList key={index} data={{ items: content.data }} />;
       })}
     </section>
   );

@@ -7,9 +7,13 @@ interface BulletSectionProps {
 }
 
 const BulletSection = ({ data }: BulletSectionProps) => {
+  const hasTitle = Boolean(data.title?.trim());
+
   return (
     <section className="flex flex-direction-column bullet-section">
-      <DepartmentSectionHeading title={data.title} className="department-section-heading--medium" />
+      {hasTitle && (
+        <DepartmentSectionHeading title={data.title} className="department-section-heading--medium" />
+      )}
 
       {data.description && <p className="bullet-section__description">{data.description}</p>}
 

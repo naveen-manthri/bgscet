@@ -1,7 +1,7 @@
 .admission-information {
   gap: 0;
+  margin-top: var(--primary-margin-top);
 }
-
 
 .admission-information__title{
 

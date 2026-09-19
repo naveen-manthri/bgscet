@@ -10,15 +10,21 @@ const Hostel = () => {
     <main className="hostel flex flex-direction-column">
       <AboutHostel data={hostelData.aboutHostel} />
 
-      <Table title={hostelData.hostelCommittee.title} table={hostelData.hostelCommittee.table} />
+      <Table
+        title={hostelData.hostelCommittee.title}
+        table={hostelData.hostelCommittee.table}
+        className="hostel__table--spaced"
+      />
 
-      <Table title={hostelData.messTimings.title} table={hostelData.messTimings.table} />
+      <Table title={hostelData.messTimings.title}
+        table={hostelData.messTimings.table}
+        className="hostel__table--spaced" />
 
       <BulletSection data={hostelData.hostelCommitteeResponsibilities} />
 
       <BulletSection data={hostelData.hostelSOP} />
 
-      <HostelFacility data={hostelData.hostelFacility} />
+      <HostelFacility data={hostelData.hostelFacility} className="hostel__table--spaced" />
     </main>
   );
 };

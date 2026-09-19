@@ -1,7 +1,8 @@
 import "./AcademicEligibility.css";
 
-
-import AcademicHeading from "../../../common/AcademicEligibilityHeading/AcademicEligibilityHeading"
+import AcademicHeading from "../../../common/AcademicEligibilityHeading/AcademicEligibilityHeading";
+import BulletSection from "../../../common/BulletSection/BulletSection";
+import NumberedList from "../../../common/NumberedList/NumberedList";
 import academicTop from "../../../../assets/images/admission/admission-image-2.jpg";
 import studentsGroup from "../../../../assets/images/admission/admission-image-3.jpg";
 
@@ -27,11 +28,7 @@ export default function AcademicEligibility() {
 
           <p>{academicData.eligibility.note}</p>
 
-          <ul className="academic-eligibility__list">
-            {academicData.entranceExaminations.map((exam) => (
-              <li key={exam}>{exam}</li>
-            ))}
-          </ul>
+          <BulletSection data={{ title: "", points: academicData.entranceExaminations }} />
 
           </article>
 
@@ -81,21 +78,7 @@ export default function AcademicEligibility() {
           </section>
 
           <section className="academic-eligibility__documents">
-            {/* <h3>Documents Required</h3> */}
-
-            <ol>
-              {academicData.documents.map((document) => (
-                <li key={typeof document === "string" ? document : document.label}>
-                  {typeof document === "string" ? (
-                    document
-                  ) : document.href ? (
-                    <a href={document.href}>{document.label}</a>
-                  ) : (
-                    document.label
-                  )}
-                </li>
-              ))}
-            </ol>
+            <NumberedList data={{ items: academicData.documents }} />
           </section>
         </article>
       </div>

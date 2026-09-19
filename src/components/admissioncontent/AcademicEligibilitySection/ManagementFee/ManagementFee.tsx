@@ -1,6 +1,7 @@
 import "./ManagementFee.css";
 
 import AcademicHeading from "../../../common/AcademicEligibilityHeading/AcademicEligibilityHeading";
+import BulletSection from "../../../common/BulletSection/BulletSection";
 import InfoTable from "../InfoTable/InfoTable";
 
 import { managementFeeData } from "../../../../data/academic";
@@ -14,18 +15,13 @@ export default function ManagementFee() {
       />
 
       <InfoTable
-  columns={managementFeeData.table.columns}
-  rows={managementFeeData.table.rows}
-/>
+        columns={managementFeeData.table.columns}
+        rows={managementFeeData.table.rows}
+      />
 
-      <div className="management-fee__notes flex flex-direction-column">
+      <div className="management-fee__notes">
         <h3>Note:</h3>
-
-        <ul>
-          {managementFeeData.notes.map((note) => (
-            <li key={note}>{note}</li>
-          ))}
-        </ul>
+        <BulletSection data={{ title: "", points: managementFeeData.notes }} />
       </div>
     </section>
   );

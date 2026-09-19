@@ -172,7 +172,7 @@
   }
 
   .about-librarian__card {
-    gap: 0;
+    gap: 1rem;
     width: 100%;
   }
 

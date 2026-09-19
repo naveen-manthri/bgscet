@@ -16,7 +16,7 @@
 }
 
 .ipr {
-  padding: 0 var(--page-padding);
+  padding: var(--primary-padding);
   margin-top: var(--primary-margin-top);
 }
 
@@ -27,13 +27,14 @@
   color: var(--text);
   line-height: var(--line-height);;
   text-align: justify;
-  margin-bottom: var(--paragraph-margin);
+  /* margin-bottom: var(--paragraph-margin); */
 }
 
 .ipr-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--gallery-gap);
+  margin-top: var(--primary-margin-top);
 }
 
 .ipr-card img {

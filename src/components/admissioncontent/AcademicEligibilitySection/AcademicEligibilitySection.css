@@ -2,7 +2,7 @@
   width: 100%;
   padding: var(--primary-padding);
   margin-top: var(--primary-margin-top);
-  gap: var(--para-desc-gap);
+  /* gap: var(--para-desc-gap); */
   padding-bottom: 0;
 }
 

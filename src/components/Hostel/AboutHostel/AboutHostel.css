@@ -53,9 +53,9 @@
   transition: var(--transition);
 }
 
-.about-hostel__dot--active {
+/* .about-hostel__dot--active {
   background: var(--primary-color);
-}
+} */
 
 @media (max-width: 62rem) {
   .about-hostel__content {

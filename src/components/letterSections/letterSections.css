@@ -24,11 +24,11 @@
   margin-top: 1.5rem;
 }
 
-/* .letter-section .letter-section__group-title {
-  margin-bottom: 0.75rem;
+.letter-section .letter-section__group-title {
+  /* margin-bottom: 0.75rem; */
   font-size: var(--font-size);
-  color: var(--btn-primary, #cc2a09) !important;
-} */
+   color: #000000 !important; 
+} 
 
 .letter-section__list li {
   

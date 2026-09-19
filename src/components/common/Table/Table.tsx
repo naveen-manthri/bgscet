@@ -7,12 +7,13 @@ interface TableProps {
   title: string;
   description?: string;
   table: HostelTable;
+  className?: string;
   renderCell?: (value: string | undefined, column: HostelTableColumn, row: HostelTableRow) => ReactNode;
 }
 
-const Table = ({ title, description, table, renderCell }: TableProps) => {
+const Table = ({ title, description, table, className, renderCell }: TableProps) => {
   return (
-    <section className="table-section flex flex-direction-column">
+    <section className={`table-section flex flex-direction-column ${className ?? ""}`.trim()}>
       <DepartmentSectionHeading title={title} className="department-section-heading--medium" />
       {description && <p className="table-section__description">{description}</p>}
 
