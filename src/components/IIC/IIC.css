@@ -23,9 +23,12 @@
 .iic-container h1 {
   color: var(--primary-color);
   font-size: var(--heading-1);
+  margin-top: var(--primary-margin-top);
   margin-bottom: 2rem;
 }
-
+.iic-section > .department-section-heading {
+  margin-top: var(--primary-margin-top);
+}
  /* .iic-section {
   margin-bottom: var(--section-gap); 
   display:flex;
@@ -38,7 +41,11 @@
   font-size: var(--font-size);
   text-align: justify;
   line-height: var(--line-height);
-  margin-bottom: var(--para-desc-gap);
+  margin: 0;
+}
+
+.iic-section p + p {
+  margin-top: var(--para-desc-gap);
 }
 
 .iic-section ol {

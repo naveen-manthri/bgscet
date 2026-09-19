@@ -1,12 +1,13 @@
 .home-vision-mission {
   display: flex;
   gap: 5rem;
-  padding: clamp(3.25rem, 5vw, 4rem);
+  padding: clamp(3rem, 4vw, 3.5rem);
   padding-inline: 4rem;
   background-color: var(--home-vision-mission-bg);
 }
 .home-vision-mission__content {
-  gap: 1.5rem;
+  flex: 1;
+  gap: 1.25rem;
 }
 
 .home-vision-mission__content p {
@@ -22,39 +23,43 @@
   font-weight: 800;
 }
 .home-vision-mission__image {
-  width: min(100%, 34rem);
+  display: block;
+  width: 480px;
+  height: 360px;
+  max-width: 100%;
   margin: 0 auto;
+  object-fit: cover;
   border-radius: var(--home-mutt-vm-image-border);
 }
 
 @media (min-width: 1024px) {
   .home-vision-mission {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(22rem, 30rem);
+    grid-template-columns: minmax(0, 30rem) minmax(0, 1fr);
     align-items: center;
-    justify-content: center;
-    gap: clamp(2rem, 4vw, 5rem);
+    gap: 5rem;
   }
 
   .home-vision-mission__content {
     min-width: 0;
     max-width: 48rem;
+    flex: 1;
   }
 
   .home-vision-mission__image {
-    width: 100%;
+    width: 480px;
+    height: 360px;
+    max-width: 100%;
     margin: 0;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1023px) {
   .home-vision-mission__image {
     flex-shrink: 0;
-    width: min(42vw, 28rem);
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
+    width: 480px;
+    height: 360px;
+    max-width: 100%;
   }
 }
 

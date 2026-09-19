@@ -103,10 +103,11 @@
 /* paragraph and list items height */
 
 --line-height: 1.7;
---para-desc-gap: 1.5rem;
+--para-desc-gap: 1rem;
 
 /* LIST ITEMS GAP */
 --list-item-gap: 0.5rem;
+ --bullet-list-gap: 0.75rem;
 
 /*  images border*/
 --home-mutt-vm-image-border:2rem;

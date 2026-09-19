@@ -27,7 +27,7 @@
 }
 
 .rich-description__content > p + p {
-  margin-top: var(--career-content-gap);
+  margin-top: var(--para-desc-gap);
 }
 
 .rich-description p {

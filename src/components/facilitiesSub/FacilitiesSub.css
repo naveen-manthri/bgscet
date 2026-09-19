@@ -5,11 +5,15 @@
 }
 
 .facilities-sub__description {
-  margin: 0 0 1.5rem;
-  line-height: var(--line-height);;
+  margin: 0;
+  line-height: var(--line-height);
   font-size: var(--font-size);
   color: var(--text);
   text-align: justify;
+}
+
+.facilities-sub__description + .facilities-sub__description {
+  margin-top: var(--para-desc-gap);
 }
 
 @media (max-width: 768px) {

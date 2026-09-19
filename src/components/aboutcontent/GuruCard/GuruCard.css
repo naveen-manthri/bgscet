@@ -25,16 +25,16 @@
 }
 
 .guru-card__paragraph {
-  margin: 0 0 var(--spacing-5);
+  margin: 0;
   color: var(--text);
   font-size: var(--font-size);
   font-weight: var(--font-weight-regular);
-  line-height: var(--line-height-relaxed);
+  line-height: var(--line-height);
   text-align: justify;
 }
 
-.guru-card__paragraph:last-child {
-  margin-bottom: 0;
+.guru-card__paragraph + .guru-card__paragraph {
+  margin-top: var(--para-desc-gap);
 }
 
 .guru-card__figure {
