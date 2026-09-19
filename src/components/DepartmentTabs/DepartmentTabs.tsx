@@ -8,22 +8,9 @@ const DepartmentTabs = <T extends string,>({
   onTabChange,
 }: DepartmentTabsProps<T>) => {
   return (
-    <nav
-      className="department-tabs flex flex-align-center"
-      aria-label="Department Navigation"
-      role="tablist"
-    >
+    <nav className="department-tabs flex flex-align-center" aria-label="Department Navigation" role="tablist">
       {tabs.map((tab) => (
-        <button
-          key={tab.id}
-          type="button"
-          role="tab"
-          className={`department-tabs__button flex flex-center flex-one ${
-            activeTab === tab.id ? "department-tabs__button--active" : ""
-          }`}
-          onClick={() => onTabChange(tab.id)}
-          aria-selected={activeTab === tab.id}
-        >
+        <button key={tab.id} type="button" role="tab" className={`department-tabs__button flex flex-center flex-one ${ activeTab === tab.id ? "department-tabs__button--active" : "" }`} onClick={() => onTabChange(tab.id)} aria-selected={activeTab === tab.id}>
           {tab.label}
         </button>
       ))}
