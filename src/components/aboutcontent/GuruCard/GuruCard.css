@@ -54,7 +54,7 @@
 .guru-card__caption {
   width: 100%;
   max-width: 22rem;
-  margin-top: 0.8rem;
+  margin-top: 0rem;
   padding: 0.9rem 1rem;
 
   background: var(--guru-image-desc);

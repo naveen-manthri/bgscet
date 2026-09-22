@@ -2,13 +2,10 @@
   box-sizing: border-box;
   width: 100%;
   max-width: 100%;
-  margin-top: var(--mobile-margin-top);
-  padding: var(--mobile-padding);
 }
 
 @media (max-width: 48rem) {
-  .placement-menu-page .staff-details,
-  .placement-menu-page .staff-details .table-section {
+  .placement-menu-page .staff-details {
     margin-top: 0;
     padding: 0;
   }

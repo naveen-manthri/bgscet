@@ -52,7 +52,7 @@
 }
 .guru-section {
   width: 100%;
-  padding: 4rem;
+  padding: 3rem 4rem;
   background-color: var(--guru-section-bg);
 }
 
@@ -77,7 +77,7 @@
 
 .guru-section__list {
   
-  gap: var(--spacing-10);
+  gap: var(--spacing-12);
 }
 
 @media (max-width: 64rem) {
