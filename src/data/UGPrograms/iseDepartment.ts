@@ -335,10 +335,12 @@ export const iseEventsData: DepartmentEventsData = {
     {
       id: 1,
       title: "ISE Newsletter Vol 1",
+      link: "https://drive.google.com/file/d/1eRN92ZrVo7kTztU9TpHiDwCYu8M-MdSd/view",
     },
     {
       id: 2,
       title: "ISE Newsletter Vol 2",
+      link: "https://drive.google.com/file/d/1FxwnHAl_nLHboVmIVxHWeTCVW5Tt3MUf/view",
     },
   ],
 };

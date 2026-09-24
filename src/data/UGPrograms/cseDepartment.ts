@@ -486,10 +486,12 @@ export const cseEventsData: DepartmentEventsData = {
     {
       id: 1,
       title: "CSE Newsletter Vol 1",
+      link: "https://drive.google.com/file/d/13f-NZc6evP6dL7nVOAmRk-T7LZfaFLY-/view?pli=1",
     },
     {
       id: 2,
       title: "CSE Newsletter Vol 2",
+      link: "https://drive.google.com/file/d/1s7btNpBJKJq13EpI-6fDgucI_ycSTXBN/view",
     },
   ],
 };

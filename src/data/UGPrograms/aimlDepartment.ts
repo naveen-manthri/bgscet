@@ -368,10 +368,12 @@ export const aimlEventsData: DepartmentEventsData = {
     {
       id: 1,
       title: "AIML Newsletter Vol 1",
+      link: "https://drive.google.com/file/d/1OzW4t4En2oG6sN0473siMPCzbLix5FOD/view",
     },
     {
       id: 2,
       title: "AIML Newsletter Vol 2",
+      link: "https://drive.google.com/file/d/1Y_hTFc-OEAzeYGQv2D_vOpy9FAu2AVlo/view",
     },
   ],
 };

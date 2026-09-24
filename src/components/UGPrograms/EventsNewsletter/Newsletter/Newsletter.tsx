@@ -11,11 +11,22 @@ const Newsletter = ({ title, data }: NewsletterProps) => (
   <div className="newsletter-section">
     <DepartmentSectionHeading title={title} className="department-section-heading--medium" />
     <div className="newsletter-grid">
-      {data.map((newsletter) => (
-        <button key={newsletter.id} type="button" className="newsletter-btn">
-          {newsletter.title}
-        </button>
-      ))}
+      {data.map((newsletter) =>
+        newsletter.link ? (
+          <a key={newsletter.id}
+            href={newsletter.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="newsletter-btn"
+          >
+            {newsletter.title}
+          </a>
+        ) : (
+          <button key={newsletter.id} type="button" className="newsletter-btn">
+            {newsletter.title}
+          </button>
+        ),
+      )}
     </div>
   </div>
 );

@@ -8,7 +8,7 @@ import sanjitha from "../../assets/images/csddepartment/sanjitha.jpeg";
 import nagarajKalligud from "../../assets/images/csddepartment/Nagaraj_kalligud.jpg";
 import drChandrakalaHL from "../../assets/images/csddepartment/Dr. Chandrakala-H-L.jpeg";
 import hod from "../../assets/images/csddepartment/Dr.-Madhu-Patil.jpg";
-import aishwaryaS from "../../assets/images/csddepartment/Trisha-s.png";
+import aishwaryaS from "../../assets/images/csddepartment/Aishwarya.S.jpeg";
 import kavya from "../../assets/images/csddepartment/KavyaR.png";
 import chethanKumar from "../../assets/images/csddepartment/ChethanKumar_CSD.jpeg";
 import event1Image from "../../assets/images/csddepartment/CSD-EVENTS/CSD-EVENTS-1.jpeg";
@@ -331,10 +331,12 @@ export const csdEventsData: DepartmentEventsData = {
     {
       id: 1,
       title: "CSD Newsletter Vol 1",
+      link: "https://drive.google.com/file/d/14WjPArgSUQY-D_TBVfDTG8zulbOFsK-o/view",
     },
     {
       id: 2,
       title: "CSD Newsletter Vol 2",
+      link: "https://drive.google.com/file/d/1Rz7mg0lUcicyF3pVlgxg6-orBC5qivRN/view",
     },
   ],
 };

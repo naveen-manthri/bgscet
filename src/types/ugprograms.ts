@@ -82,6 +82,7 @@ export interface DepartmentEvent {
 export interface DepartmentNewsletter {
   id: number;
   title: string;
+  link?: string;
 }
 
 export interface DepartmentEventsData {

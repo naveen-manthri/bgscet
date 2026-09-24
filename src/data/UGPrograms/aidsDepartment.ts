@@ -450,10 +450,12 @@ export const aidsEventsData: DepartmentEventsData = {
     {
       id: 1,
       title: "AI & DS Newsletter Vol 1",
+      link: "https://drive.google.com/file/d/1soo0ZcVL1vypRf9R4JsWkq8UvXybYVRf/view",
     },
     {
       id: 2,
       title: "AI & DS Newsletter Vol 2",
+      link: "https://drive.google.com/file/d/1zBye_Rsvm2OFNlQHYdTA1B1PbZ4mv3yv/view",
     },
   ],
 };
