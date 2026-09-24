@@ -20,6 +20,10 @@ const SeminarHallPage = lazy(() => import('../pages/facilities/SeminarHallPage')
 const HostelPage = lazy(() => import('../pages/HostelPage'));
 const PhysicalEducationSportsPage = lazy(() => import('../pages/PhysicalEducationSportsPage'));
 const GalleryPage = lazy(() => import('../pages/GalleryPage'));
+const FeaturesPage = lazy(() => import('../pages/FeaturesPage'));
+const ScopeOfCollegePage = lazy(() => import('../pages/ScopeOfCollegePage'));
+const LinkagesPage = lazy(() => import('../pages/LinkagesPage'));
+const GoverningCouncilPage = lazy(() => import('../pages/GoverningCouncilPage'));
 const ContactPage = lazy(() => import('../pages/ContactPage'));
 const AicteApprovalLettersPage = lazy(() => import('../pages/AicteApprovalLettersPage'));
 const VtuApprovalLettersPage = lazy(() => import('../pages/VtuApprovalLettersPage'));
@@ -67,6 +71,10 @@ function AppRoutes() {
           <Route path="facilities/seminar-hall" element={<SeminarHallPage />} />
           <Route path="facilities/hostel" element={<HostelPage />} />
           <Route path="facilities/physical-education-sports" element={<PhysicalEducationSportsPage />} />
+          <Route path="features" element={<FeaturesPage />} />
+          <Route path="scope-of-the-college" element={<ScopeOfCollegePage />} />
+          <Route path="linkages" element={<LinkagesPage />} />
+          <Route path="governing-council" element={<GoverningCouncilPage />} />
           <Route path="gallery" element={<GalleryPage />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="quick-links/aicte-approval-letters" element={<AicteApprovalLettersPage />} />

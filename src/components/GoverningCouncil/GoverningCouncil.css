@@ -1,0 +1,26 @@
+.governing-council-page {
+  width: 100%;
+  margin-top: var(--primary-margin-top);
+  padding:  var(--primary-padding);
+}
+
+.governing-council-page__image-wrap {
+  width: 100%;
+  overflow: hidden;
+  background: transparent;
+}
+
+.governing-council-page__image-wrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0;
+}
+
+@media (max-width: 58em) {
+  .governing-council-page {
+    margin-top: var(--primary-margin-top);
+    padding: 0 var(--primary-padding);
+  }
+}

@@ -9,12 +9,26 @@ export const navItems: NavItem[] = [
   {
     label: 'About',
     path: '/about',
-    // children: [
-    //   { label: 'Vision & Mission', path: '/about#vision' },
-    //   { label: 'Chairman Message', path: '/about#chairman' },
-    //   { label: 'Principal Message', path: '/about#principal' },
-    //   { label: 'Governing Body', path: '/about#governing' },
-    // ],
+    children: [
+      { label: 'About Mutt', path: '/about' },
+      // { label: 'About Trust', path: '/about' },
+      {
+        label: 'About BGS CET',
+        path: '/about',
+        children: [
+          { label: 'Realizing Student Dreams', path: 'https://bgscet.ac.in/wp-content/uploads/2025/02/BGSCET-Initiatives-Realizing-Student-Dreams-9-5-2023-v2.pdf' },
+          { label: 'Features', path: '/features' },
+          { label: 'Scope of The College', path: '/scope-of-the-college' },
+          { label: 'Linkages', path: '/linkages' },
+          { label: 'College Video Tour', path: 'https://youtu.be/btLH_frGDnQ?si=LO_q39FCg7Dpau66' },
+          
+        ],
+      },
+      { label: 'Governing Council', path: '/governing-council' },
+
+      { label: 'Director', path: '/about' },
+      { label: 'Principal', path: '/about' },
+    ],
   },
   {
     label: 'Admissions',

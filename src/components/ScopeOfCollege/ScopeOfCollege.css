@@ -1,0 +1,70 @@
+.scope-of-college {
+  width: min(92%, 72rem);
+  margin: var(--primary-margin-top);
+  /* padding:var(--primary-padding); */
+}
+
+.scope-of-college .bullet-section {
+  margin-top: 0;
+}
+
+.scope-of-college .bullet-section__list {
+  gap: 0.9rem;
+  padding-left: 1.8rem;
+}
+
+.scope-of-college .bullet-section__item {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  line-height: 1.8;
+  color: var(--text);
+}
+
+.scope-of-college__text {
+  width: min(100%, 72rem);
+  margin: 1rem 0 0;
+  color: var(--text);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  text-align: justify;
+}
+
+/* .scope-of-college__text strong {
+  color: var(--primary-deep);
+  font-weight: 700;
+} */
+
+.scope-of-college__text--heading {
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+.scope-of-college__details {
+  margin-top: 1rem;
+}
+
+.scope-of-college__details .title-description {
+  margin-top: 1.5rem;
+}
+
+.scope-of-college__details .title-description p {
+  margin: 0.75rem 0 0;
+  color: var(--text);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+}
+
+@media (max-width: 58em) {
+  .scope-of-college {
+    width: min(90%, 42rem);
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .scope-of-college .bullet-section__list {
+    padding-left: 1.25rem;
+  }
+
+  .scope-of-college__text {
+    text-align: left;
+  }
+}

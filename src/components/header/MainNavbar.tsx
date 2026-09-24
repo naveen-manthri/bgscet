@@ -134,11 +134,29 @@ function MainNavbar() {
 
                 <div className="main-navbar__link-row">
                   {hasChildren ? (
-                    <span  className="main-navbar__link main-navbar__link--parent" role="button"  tabIndex={0} aria-haspopup="true"  aria-expanded={openDropdown === item.label} onClick={(event) => { event.preventDefault(); setOpenDropdown((current) => (current === item.label ? null : item.label)); }}  onKeyDown={(event) => {
+                    <span
+                      className="main-navbar__link main-navbar__link--parent"
+                      role="button"
+                      tabIndex={0}
+                      aria-haspopup="true"
+                      aria-expanded={openDropdown === item.label}
+                      onClick={(event) => {
+                        event.preventDefault();
+                        setOpenDropdown((current) => (current === item.label ? null : item.label));
+                      }}
+                      onKeyDown={(event) => {
                         if (event.key === 'Enter' || event.key === ' ') {
-                          event.preventDefault();  setOpenDropdown((current) => (current === item.label ? null : item.label)); }  }}  >
+                          event.preventDefault();
+                          setOpenDropdown((current) => (current === item.label ? null : item.label));
+                        }
+                      }}
+                    >
                       {item.label}
-                    </span>  ) : (  <NavLink  className={({ isActive }) => `main-navbar__link${isActive ? ' is-active' : ''}`} to={item.path}  onClick={closeMenu}> {item.label}</NavLink>
+                    </span>
+                  ) : (
+                    <NavLink className={({ isActive }) => `main-navbar__link${isActive ? ' is-active' : ''}`} to={item.path} onClick={closeMenu}>
+                      {item.label}
+                    </NavLink>
                   )}
                 </div>
 

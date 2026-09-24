@@ -14,12 +14,21 @@ function HomeCampusLife() {
         <SectionHeading subtitle="Campus Life" title="A Campus That" titleSecondLine="Lives After Dark." underlineFitContent center />
 
         <div className="campus-life-grid">
-          {campusLife.map((item, index) => (
-            <article  key={item.id} className={`campus-life-card campus-life-card-${index + 1}`}>
-              
-              <img src={item.image} alt={item.alt} loading="lazy" />
-            </article>
-          ))}
+          {campusLife.map((item, index) => {
+            if (index === 0) {
+              return (
+                <div key={item.id} className="campus-life-card campus-life-card-1">
+                  <iframe src="https://www.youtube.com/embed/fKuqEGjjWc0?rel=0"  title="BGSCET campus life video" allowFullScreen style={{ width: '100%', height: '100%', border: 0, display: 'block' }} />
+                </div>
+              );
+            }
+
+            return (
+              <article key={item.id} className={`campus-life-card campus-life-card-${index + 1}`}>
+                <img src={item.image} alt={item.alt} loading="lazy" />
+              </article>
+            );
+          })}
         </div>
 
         <div className="campus-life-button-wrapper flex flex-center">

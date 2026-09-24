@@ -1,0 +1,38 @@
+.linkages {
+  padding: var(--primary-padding);
+  margin-top: var(--primary-margin-top);
+}
+
+.linkages__content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.linkages__text,
+.linkages__intro {
+  margin: 0 0 1rem;
+  color: var(--text);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  text-align: justify;
+}
+
+.linkages__text {
+  margin-top: 1rem;
+}
+
+.linkages__numbered-block,
+.linkages__title {
+  margin-top: var(--primary-margin-top);
+}
+
+.linkages__title-description,
+.linkages__institution-table {
+  margin-top: var(--primary-margin-top);
+}
+
+@media (max-width: 58em) {
+  .linkages {
+    padding: 1.5rem 1.5rem 3rem;
+  }
+}
