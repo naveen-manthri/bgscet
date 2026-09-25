@@ -1,5 +1,3 @@
-import type { TitleDescriptionSection } from './careerDevelopment';
-
 import type { BulletSection, TitleDescriptionSection } from './careerDevelopment';
 
 export interface LinkagesData {
