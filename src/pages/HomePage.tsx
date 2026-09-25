@@ -1,5 +1,5 @@
 import BannerSection from '../components/BannerSection/BannerSection';
-import homeBanner from '../assets/images/home/home-banner.png';
+import homeBanner from '../assets/images/home/home-page-banner.png';
 import Advertisement from '../components/Advertisement/Advertisement';
 import HomeAboutUniversity from '../components/homecontent/HomeAboutUniversity/HomeAboutUniversity';
 import HomeAboutMutt from '../components/homecontent/HomeAboutMutt/HomeAboutMutt';
@@ -14,7 +14,7 @@ import Statistics from '../components/Statistics/Statistics';
 function HomePage() {
   return (
     <div>
-    <BannerSection image={homeBanner} title="" />
+    <BannerSection image={homeBanner} title="" homeHero />
         <Advertisement />
 
         <HomeAboutUniversity />

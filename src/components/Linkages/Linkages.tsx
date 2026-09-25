@@ -25,7 +25,7 @@ function Linkages() {
   return (
     <section className="linkages" aria-label="Linkages section">
       <div className="linkages__content">
-        <DepartmentSectionHeading title={linkagesData.title} className="department-section-heading--medium" />
+        {/* <DepartmentSectionHeading title={linkagesData.title} className="department-section-heading--medium" /> */}
 
         {linkagesData.paragraphs.map((paragraph, index) => (
           <p key={`${paragraph.slice(0, 20)}-${index}`} className="linkages__text">

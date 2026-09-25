@@ -55,16 +55,49 @@
 
 @media (max-width: 58em) {
   .scope-of-college {
-    width: min(90%, 42rem);
-    margin-top: 1.5rem;
-    margin-bottom: 3rem;
+    width: 100%;
+    margin: var(--mobile-margin-top) 0 0;
+    padding: var(--mobile-padding);
+  }
+
+  .scope-of-college > * {
+    margin-top: var(--mobile-margin-top);
+  }
+
+  .scope-of-college > :first-child {
+    margin-top: 0;
   }
 
   .scope-of-college .bullet-section__list {
+    gap: var(--mobile-version-para-desc-gap);
     padding-left: 1.25rem;
   }
 
+  .scope-of-college .bullet-section__item {
+    font-size: var(--mobile-font-size);
+    line-height: var(--mobile-line-height);
+  }
+
   .scope-of-college__text {
+    width: 100%;
     text-align: left;
+    font-size: var(--mobile-description-font-size);
+    line-height: var(--mobile-description-line-height);
+  }
+
+  .scope-of-college__details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--mobile-version-para-desc-gap);
+  }
+
+  .scope-of-college__details .title-description {
+    margin-top: 0;
+  }
+
+  .scope-of-college__details .title-description p {
+    margin-top: var(--mobile-version-para-desc-gap);
+    font-size: var(--mobile-description-font-size);
+    line-height: var(--mobile-description-line-height);
   }
 }

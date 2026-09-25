@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
-  --academic-heading-clr: #000000;
+  --academic-heading-clr: var(--color-obsidian);
   --academic-title-clr: #040404;
   --academic-card-border: #cbcbcb;
   --program-content-bg: #f4f4f4;
@@ -57,7 +57,7 @@
   margin: 0;
   font-size: var(--academic-subtitle-size);
   font-weight: 400;
-  color: #000000;
+  color: var(--color-obsidian);
 }
 
 .academic-title {
@@ -75,7 +75,7 @@
 .academic-title-divider {
   width: 17rem;
   margin-top: 0.9rem;
-  border-bottom: 0.25rem solid #000000;
+  border-bottom: 0.25rem solid var(--color-obsidian);
 }
 .programs-grid {
   display: flex;
@@ -126,7 +126,7 @@
 .program-title {
   margin: 0;
 
-  color: #000000;
+  color: var(--color-obsidian);
 
   font-family: "Poppins", sans-serif;
   font-size: var(--academic-card-title-size);
@@ -145,7 +145,7 @@
   border: 0.1rem solid var(--program-duration-border);
   border-radius: 0.6rem;
 
-  color: #000000;
+  color: var(--color-obsidian);
   font-family: "Poppins", sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
@@ -156,7 +156,7 @@
 .program-description {
   margin: 0;
 
-  color: #000000;
+  color: var(--color-obsidian);
 
   font-family: "Poppins", sans-serif;
   font-size: var(--academic-body-size);
@@ -203,7 +203,7 @@
 }
 
 .program-image {
-  object-position: center;
+  object-position: ce;
 }
 
 .home-academic .container {
@@ -226,6 +226,27 @@
   margin-top: 2rem;
 
 
+}
+
+@media (min-width: 48.01rem) {
+  .program-card {
+    height: 32rem;
+  }
+
+  .program-image {
+    flex: 0 0 60%;
+    height: auto;
+  }
+
+  .program-content {
+    flex: 0 0 40%;
+  }
+}
+
+@media (min-width: 87.51rem) {
+  .program-image {
+    height: 14rem;
+  }
 }
 
 @media (max-width: 87.5rem) {

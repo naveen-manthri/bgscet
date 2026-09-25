@@ -1,7 +1,7 @@
 :root {
   --clr-primary: var(--Red-Orange-color);;
-  --clr-title: #000000;
-  --underline-clr: #000000;
+  --clr-title: var(--color-obsidian);
+  --underline-clr: var(--color-obsidian);
   --heading-margin-bottom:1rem;
 
   --ff-primary: "Poppins", sans-serif;
@@ -69,7 +69,7 @@
   }
 
   .department-section-heading + p {
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: var(--mobile-line-height);
   }
 

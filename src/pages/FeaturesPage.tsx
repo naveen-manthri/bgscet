@@ -4,6 +4,7 @@ import FeaturesBanner from '../assets/images/features/Features-of-bgscet-banner.
 import FeatureImageOne from '../assets/images/features/unique-features-1.png';
 import FeatureImageTwo from '../assets/images/features/unique-fautures-2.png';
 import VisitCampus from "../components/VisitCampus/VisitCampus";
+import './FeaturesPage.css';
 
 function FeaturesPage() {
   return (

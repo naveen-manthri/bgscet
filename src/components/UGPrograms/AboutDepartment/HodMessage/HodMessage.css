@@ -2,7 +2,7 @@
   --clr-primary: #e44a3a;
   --clr-title: #111111;
   --text: #4c4949;
-  --clr-black: #000000;
+  --clr-black: var(--color-obsidian);
   --clr-white: #ffffff;
   --clr-border: #d9d9d9;
 

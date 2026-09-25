@@ -1,8 +1,8 @@
 .admission {
   --admission-primary: var(--Red-Orange-color);;
-  --admission-title: #000000;
+  --admission-title: var(--color-obsidian);
   --text: #4c4949;
-  --admission-divider: #000000;
+  --admission-divider: var(--color-obsidian);
   --admission-container-width: 75rem;
   --white-clr:#ffffff;
 

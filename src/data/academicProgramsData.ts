@@ -1,8 +1,8 @@
 // src/data/academicProgramsData.ts
 
-import mechanicalEngineering from "../assets/images/academic/mechanical-engineering.jpg";
-import electronicsEngineering from "../assets/images/academic/electronics-engineering.jpg";
-import computerScienceEngineering from "../assets/images/academic/computer-science.jpg";
+import artificialIntelligence from "../assets/images/academic/artificial-intelligence.jpg";
+import InformationScience from "../assets/images/academic/informationScience.png";
+import computerScienceEngineering from "../assets/images/academic/computerScience.png";
 
 export interface AcademicProgram {
   id: number;
@@ -22,7 +22,7 @@ export const academicPrograms: AcademicProgram[] = [
     description:
       "It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page",
     readMore: "Read More",
-    image: mechanicalEngineering,
+    image: computerScienceEngineering,
     slug: "computer-science",
   },
   {
@@ -32,7 +32,7 @@ export const academicPrograms: AcademicProgram[] = [
     description:
       "It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page",
     readMore: "Read More",
-    image: electronicsEngineering,
+    image: InformationScience,
     slug: "information-science",
   },
   {
@@ -42,7 +42,7 @@ export const academicPrograms: AcademicProgram[] = [
     description:
       "It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page",
     readMore: "Read More",
-    image: computerScienceEngineering,
+    image: artificialIntelligence,
     slug: "aiml-department",
   },
 ];

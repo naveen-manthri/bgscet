@@ -15,7 +15,7 @@
 }
 
 .student-testimonials .section-subtitle {
-  color: #000000;
+  color: var(--color-obsidian);
 }
 
 .student-testimonials .section-title,
@@ -24,7 +24,7 @@
 }
 
 .student-testimonials .section-heading-line {
-  background: #000000;
+  background: var(--color-obsidian);
 }
 
 .student-testimonials__scroller {

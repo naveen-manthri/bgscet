@@ -3,10 +3,10 @@
   margin-top: var(--primary-margin-top);
 }
 
-.linkages__content {
+/* .linkages__content {
   max-width: 1200px;
   margin: 0 auto;
-}
+} */
 
 .linkages__text,
 .linkages__intro {
@@ -17,8 +17,12 @@
   text-align: justify;
 }
 
-.linkages__text {
+.linkages__text:last-child {
   margin-top: 1rem;
+}
+
+.linkages__industry {
+  margin-top: var(--primary-margin-top);
 }
 
 .linkages__numbered-block,
@@ -33,6 +37,71 @@
 
 @media (max-width: 58em) {
   .linkages {
-    padding: 1.5rem 1.5rem 3rem;
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+  }
+
+  .linkages__content {
+    width: 100%;
+  }
+
+  .linkages__content > * {
+    margin-top: var(--mobile-margin-top);
+  }
+
+  .linkages__content > :first-child {
+    margin-top: 0;
+  }
+
+  .linkages__text,
+  .linkages__intro,
+  .linkages__title-description p,
+  .linkages__industry li,
+  .linkages__numbered-block li,
+  .linkages__institution-table th,
+  .linkages__institution-table td {
+    margin-bottom: 0;
+    font-size: var(--mobile-font-size);
+    line-height: var(--mobile-line-height);
+    text-align: left;
+  }
+
+  .linkages__content > .linkages__text {
+    margin-top: var(--mobile-version-para-desc-gap);
+  }
+
+  .linkages__industry,
+  .linkages__numbered-block {
+    display: flex;
+    flex-direction: column;
+    gap: var(--mobile-version-para-desc-gap);
+  }
+
+  .linkages__industry > *,
+  .linkages__numbered-block > * {
+    margin-top: 0;
+  }
+
+  .linkages__industry > :first-child,
+  .linkages__numbered-block > :first-child {
+    margin-bottom: 0;
+  }
+
+  .linkages__title-description,
+  .linkages__institution-table {
+    margin-top: var(--mobile-margin-top);
+    max-width: 100%;
+  }
+
+  .linkages__institution-table {
+    width: calc(100% + 2.5rem);
+    margin-right: -1.25rem;
+    margin-left: -1.25rem;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .linkages__institution-table + .linkages__text {
+    margin-top: var(--mobile-version-para-desc-gap);
   }
 }

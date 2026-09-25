@@ -1,0 +1,25 @@
+@media (max-width: 768px) {
+  .features-page > * {
+    margin-top: var(--mobile-margin-top);
+  }
+
+  .features-page > :first-child {
+    margin-top: 0;
+  }
+
+  .features-page__gallery {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: var(--mobile-version-para-desc-gap);
+    padding: var(--mobile-padding);
+  }
+
+  .features-page__image-wrap {
+    width: 100%;
+  }
+
+  .features-page__image-wrap img {
+    width: 100%;
+    height: auto;
+  }
+}

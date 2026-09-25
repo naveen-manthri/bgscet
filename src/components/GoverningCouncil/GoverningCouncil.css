@@ -20,7 +20,7 @@
 
 @media (max-width: 58em) {
   .governing-council-page {
-    margin-top: var(--primary-margin-top);
-    padding: 0 var(--primary-padding);
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
   }
 }

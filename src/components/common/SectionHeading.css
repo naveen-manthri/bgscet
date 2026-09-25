@@ -1,6 +1,6 @@
 .shared-section-heading {
   --heading-underline-height: 0.1475rem;
-  --heading-black-color:#000000;
+  --heading-black-color:var(--color-obsidian);
     
   gap: 0.75rem;
   width: 100%;

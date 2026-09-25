@@ -1,7 +1,7 @@
 import type { LinkagesData } from '../types/linkages';
 
 export const linkagesData: LinkagesData = {
-  title: 'Linkages',
+  title: '',
   paragraphs: [
     'The Institute strives to bring industry and global perspective for all its programmes and activities. The Institute encourages significant overseas exposure for its students. The institute proposes to have external linkages with industry, community as well as other technical institutes of excellence in the region to promote primary research, value addition to the industry and society at large.',
     'The student participation along with the faculty will inculcate the ability to implement theories into practice as well as simulate the wholesome growth of students. These projects will expose the students to the real world of industry and corporates so that the learning becomes focused and they become more industry savvy.',

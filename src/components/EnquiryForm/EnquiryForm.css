@@ -6,7 +6,7 @@
   --clr-button-hover: #294b93;
   --clr-button-active: #203c75;
   --clr-white: #ffffff;
-  --clr-black: #000000;
+  --clr-black: var(--color-obsidian);
   --clr-border: var(--dividing-line-color);;
   --clr-placeholder: #5c5c5c;
   --clr-terms: #081228cc;
