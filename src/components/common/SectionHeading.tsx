@@ -77,50 +77,19 @@ function SectionHeading({
   underlineFitContent = false,
 }: SectionHeadingProps) {
   return (
-    <div
-      className={[
-        "flex flex-direction-column",
-        "shared-section-heading",
-        center
-          ? "shared-section-heading--center"
-          : "shared-section-heading--left",
-        light ? "shared-section-heading--light" : "",
-      ]
-        .filter(Boolean)
-        .join(" ")}
-    >
-      {eyebrow && (
+    <div className={[ "flex flex-direction-column", "shared-section-heading", center  ? "shared-section-heading--center": "shared-section-heading--left", light ? "shared-section-heading--light" : "", ] .filter(Boolean) .join(" ")} > {eyebrow && (
         <span className="section-eyebrow">
           {eyebrow}
-        </span>
-      )}
+        </span> )}
 
-      {subtitle && (
-        <p className="section-subtitle">
-          {subtitle}
-        </p>
-      )}
+      {subtitle && ( <p className="section-subtitle"> {subtitle} </p>  )}
 
-      <div
-        className={[
-          "inline-flex-center flex-direction-column",
-          "section-title-wrapper",
-          underlineFitContent ? "section-title-wrapper--fit" : "",
-        ]
-          .filter(Boolean)
-          .join(" ")}
-      >
+      <div className={[ "inline-flex-center flex-direction-column", "section-title-wrapper", underlineFitContent ? "section-title-wrapper--fit" : "", ] .filter(Boolean).join(" ")}>
         <h2 className="inline-flex-center flex-direction-column section-title">
-          {title}
-
-          {titleSecondLine && (
+          {title} {titleSecondLine && (
             <span className="section-title-second-line">
               {titleSecondLine}
-            </span>
-          )}
-        </h2>
-
-        {underline && (
+            </span> )}</h2> {underline && (
           <span className="section-heading-line"></span>
         )}
       </div>

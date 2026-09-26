@@ -3,7 +3,7 @@
   
   gap: 0rem;
   width: 100%;
-  padding: 0 4rem 0 4rem;
+  padding: var(--primary-padding);
   box-sizing: border-box;
 }
 

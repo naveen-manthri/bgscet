@@ -73,6 +73,6 @@
 }
 
 .vision-mission--columns .vision-mission__list {
-  padding-left: 1.25rem;
+  padding-left: var(--mobile-list-padding-left);
   list-style: disc;
 }

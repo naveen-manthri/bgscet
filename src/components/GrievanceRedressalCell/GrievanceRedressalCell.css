@@ -1,7 +1,7 @@
 .grievance-redressal-cell {
   --color-white: #ffffff;
   background: #ffffff;
-  padding: 0 4rem;
+  padding: var(--primary-padding);
   margin-top: 3rem;
 }
 
@@ -69,7 +69,7 @@
 
   .grievance-redressal-cell .bullet-section__list {
     margin-top: 0.75rem;
-    padding-left: 1.25rem;
+    padding-left: var(--mobile-list-padding-left);
   }
 
   .grievance-redressal-cell__button-row {

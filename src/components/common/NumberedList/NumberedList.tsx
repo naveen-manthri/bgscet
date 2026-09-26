@@ -20,14 +20,7 @@ const NumberedList = ({ data, className = "" }: NumberedListProps) => {
           return (
             <li key={key} className="numbered-list__item">
               {typeof item === "string" ? (
-                item
-              ) : item.href ? (
-                <a href={item.href} className="numbered-list__link">
-                  {item.label}
-                </a>
-              ) : (
-                item.label
-              )}
+                item ) : item.href ? ( <a href={item.href} className="numbered-list__link"> {item.label}</a> ) : ( item.label )}
             </li>
           );
         })}

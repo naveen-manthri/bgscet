@@ -97,7 +97,7 @@
 
 @media (max-width: 48rem) {
   .guru-section {
-    padding: 0 4rem;
+    padding: var(--primary-padding);
   }
 
   .guru-section__container {
@@ -138,7 +138,7 @@
   }
 
   .guru-section__header {
-    margin-bottom: var(--mobile-version-para-desc-gap);
+    margin-bottom: var(--mobile-para-desc-gap);
   }
 
   .guru-section__title {

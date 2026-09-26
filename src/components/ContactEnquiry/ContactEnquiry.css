@@ -178,8 +178,8 @@
 
   .contact-enquiry__description {
     margin: 1rem auto 2rem;
-    font-size: 0.95rem;
-    line-height: var(--line-height);
+    font-size: var(--mobile-font-size);
+    line-height: var(--mobile-line-height);
   }
 
   .contact-enquiry__contacts {

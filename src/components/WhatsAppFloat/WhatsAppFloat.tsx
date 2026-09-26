@@ -25,13 +25,7 @@ const WhatsAppFloat = () => {
   }, []);
 
   return (
-    <a
-      href={whatsappLink}
-      target="_blank"
-      rel="noreferrer"
-      aria-label="Chat with BGSCET on WhatsApp"
-      className={`whatsapp-float ${isAnchoredToBanner ? 'whatsapp-float--anchored' : ''}`}
-    >
+    <a href={whatsappLink} target="_blank" rel="noreferrer" aria-label="Chat with BGSCET on WhatsApp" className={`whatsapp-float ${isAnchoredToBanner ? 'whatsapp-float--anchored' : ''}`} >
       <FaWhatsapp aria-hidden="true" className="whatsapp-float__icon" />
     </a>
   );

@@ -44,6 +44,9 @@
 
 @media (max-width: 48rem) {
   .management-fee__notes ul {
-    padding-left: 1.25rem;
+    padding-left: var(--mobile-list-padding-left);
+  }
+  .management-fee__notes ul, .management-fee__notes .bullet-section__list {
+    padding-left: var(--mobile-list-padding-left);
   }
 }

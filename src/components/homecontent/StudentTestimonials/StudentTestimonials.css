@@ -7,7 +7,7 @@
 }
 
 .student-testimonials__inner {
-  padding: 0 4rem;
+  padding: var(--primary-padding);
 }
 
 .student-testimonials .shared-section-heading {

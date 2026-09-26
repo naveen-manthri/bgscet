@@ -55,7 +55,7 @@
 
   .achievement-list {
     gap: 1.25rem;
-    margin-top: var(--mobile-version-para-desc-gap);
+    margin-top: var(--mobile-para-desc-gap);
   }
 
   .achievement-title {

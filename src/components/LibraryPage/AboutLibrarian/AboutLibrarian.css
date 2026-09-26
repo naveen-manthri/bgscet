@@ -90,7 +90,7 @@
 .about-librarian__name {
   margin-bottom: 0.35rem;
   color: var(--white);
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: var(--fw-semibold);
   text-transform: uppercase;
 }
@@ -128,8 +128,8 @@
   .about-librarian__paragraph,
   .about-librarian__member-item,
   .about-librarian__member-title {
-    font-size: 0.95rem;
-    line-height: var(--line-height);
+    font-size: var(--mobile-font-size);
+    line-height: var(--mobile-line-height);
   }
 
   .about-librarian__staff {

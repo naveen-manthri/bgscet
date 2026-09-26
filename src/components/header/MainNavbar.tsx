@@ -134,23 +134,15 @@ function MainNavbar() {
 
                 <div className="main-navbar__link-row">
                   {hasChildren ? (
-                    <span
-                      className="main-navbar__link main-navbar__link--parent"
-                      role="button"
-                      tabIndex={0}
-                      aria-haspopup="true"
-                      aria-expanded={openDropdown === item.label}
-                      onClick={(event) => {
-                        event.preventDefault();
+                    <span className="main-navbar__link main-navbar__link--parent"
+                      role="button"  tabIndex={0}   aria-haspopup="true" aria-expanded={openDropdown === item.label} onClick={(event) => { event.preventDefault();
                         setOpenDropdown((current) => (current === item.label ? null : item.label));
-                      }}
-                      onKeyDown={(event) => {
+                      }} onKeyDown={(event) => {
                         if (event.key === 'Enter' || event.key === ' ') {
                           event.preventDefault();
                           setOpenDropdown((current) => (current === item.label ? null : item.label));
                         }
-                      }}
-                    >
+                      }}  >
                       {item.label}
                     </span>
                   ) : (
@@ -170,38 +162,22 @@ function MainNavbar() {
                       const hasSubmenu = Boolean(child.children?.length);
 
                       return (
-                        <li
-                          className={`main-navbar__dropdown-item${hasSubmenu ? ' main-navbar__dropdown-item--has-submenu' : ''}`}
-                          key={child.label}
-                          onMouseEnter={() => {
-                            if (hasSubmenu) {
-                              setOpenSubmenu(child.label);
+                        <li className={`main-navbar__dropdown-item${hasSubmenu ? ' main-navbar__dropdown-item--has-submenu' : ''}`}
+                          key={child.label} onMouseEnter={() => {
+                            if (hasSubmenu) {  setOpenSubmenu(child.label);
                               setOpenNestedSubmenu(null);
-                              updateNestedDropdownDirection(child.path);
-                            }
-                          }}
-                          onMouseLeave={() => {
-                            if (hasSubmenu) {
+                              updateNestedDropdownDirection(child.path);  } }}  onMouseLeave={() => { if (hasSubmenu) {
                               setOpenSubmenu(null);
                               setOpenNestedSubmenu(null);
                             }
                           }}
                         >
                           {hasSubmenu ? (
-                            <span
-                              className="main-navbar__dropdown-link main-navbar__dropdown-link--parent"
-                              role="button"
-                              tabIndex={0}
-                              aria-haspopup="true"
-                              aria-expanded={openSubmenu === child.label}
-                              onClick={() => setOpenSubmenu((current) => (current === child.label ? null : child.label))}
-                              onKeyDown={(event) => {
-                                if (event.key === 'Enter' || event.key === ' ') {
+                            <span className="main-navbar__dropdown-link main-navbar__dropdown-link--parent" role="button"tabIndex={0} aria-haspopup="true"
+                              aria-expanded={openSubmenu === child.label} onClick={() => setOpenSubmenu((current) => (current === child.label ? null : child.label))} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') {
                                   event.preventDefault();
                                   setOpenSubmenu((current) => (current === child.label ? null : child.label));
-                                }
-                              }}
-                            >
+                                } }} >
                               {child.label}<span aria-hidden="true">›</span>
                             </span>
                           ) : isPdf || isImage || isExternal ? (
@@ -214,16 +190,10 @@ function MainNavbar() {
                             </Link>
                           )}
                           {hasSubmenu ? (
-                            <ul
-                              ref={(element) => {
-                                if (element) {
-                                  nestedDropdownRefs.current.set(child.path, element);
-                                } else {
+                            <ul ref={(element) => {   if (element) {   nestedDropdownRefs.current.set(child.path, element); } else {
                                   nestedDropdownRefs.current.delete(child.path);
-                                }
-                              }}
-                              className={`main-navbar__dropdown main-navbar__dropdown--nested${leftNestedDropdowns.has(child.path) ? ' main-navbar__dropdown--left' : ''}${openSubmenu === child.label ? ' is-open' : ''}`}
-                            >
+                                }  }}
+                              className={`main-navbar__dropdown main-navbar__dropdown--nested${leftNestedDropdowns.has(child.path) ? ' main-navbar__dropdown--left' : ''}${openSubmenu === child.label ? ' is-open' : ''}`} >
                               {child.children?.map((subChild) => {
                                 const isPdf = subChild.path.toLowerCase().endsWith('.pdf');
                                 const isImage = /\.(png|jpe?g|webp|svg)$/i.test(subChild.path);
@@ -233,15 +203,10 @@ function MainNavbar() {
 
                                 if (hasNestedSubmenu) {
                                   return (
-                                    <li
-                                      className="main-navbar__dropdown-item main-navbar__dropdown-item--has-submenu"
-                                      key={subChild.label}
-                                      onMouseEnter={() => {
+                                    <li  className="main-navbar__dropdown-item main-navbar__dropdown-item--has-submenu"   key={subChild.label} onMouseEnter={() => {
                                         setOpenNestedSubmenu(subChild.label);
                                         updateNestedDropdownDirection(subChild.path);
-                                      }}
-                                      onMouseLeave={() => setOpenNestedSubmenu(null)}
-                                    >
+                                      }} onMouseLeave={() => setOpenNestedSubmenu(null)} >
                                       <span  className="main-navbar__dropdown-link main-navbar__dropdown-link--parent"
                                         role="button"  tabIndex={0}  aria-haspopup="true"  aria-expanded={openNestedSubmenu === subChild.label} onClick={() => setOpenNestedSubmenu((current) => (current === subChild.label ? null : subChild.label))} onKeyDown={(event) => {
                                           if (event.key === 'Enter' || event.key === ' ') {
@@ -294,13 +259,7 @@ function MainNavbar() {
                                 if (isPdf || isImage || isExternal) {
                                   return (
                                     <li key={subChild.label}>
-                                      <a
-                                        className="main-navbar__dropdown-link"
-                                        href={subChild.path}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        onClick={closeMenu}
-                                      >
+                                      <a  className="main-navbar__dropdown-link"  href={subChild.path} target="_blank" rel="noopener noreferrer" onClick={closeMenu} >
                                         {subChild.label}
                                       </a>
                                     </li>

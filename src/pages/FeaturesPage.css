@@ -10,7 +10,7 @@
   .features-page__gallery {
     width: 100%;
     grid-template-columns: 1fr;
-    gap: var(--mobile-version-para-desc-gap);
+    gap: var(--mobile-para-desc-gap);
     padding: var(--mobile-padding);
   }
 

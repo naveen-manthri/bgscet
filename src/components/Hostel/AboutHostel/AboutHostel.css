@@ -92,7 +92,7 @@
   }
 
   .about-hostel__description p {
-    font-size: 0.95rem;
+    font-size: var(--mobile-font-size);
   }
 }
 

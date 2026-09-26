@@ -34,7 +34,7 @@
 
 .committee-table__table td {
   color: var(--text);
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: var(--line-height);
 }
 

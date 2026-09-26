@@ -13,11 +13,7 @@ const AdmissionButton = ({
   const { openEnquiry } = useEnquiry();
 
   return (
-    <button
-      type="button"
-      className={`flex inline-flex-center admission-button admission-button--${variant}`}
-      onClick={variant !== "outline" ? openEnquiry : undefined}
-    >
+    <button  type="button" className={`flex inline-flex-center admission-button admission-button--${variant}`}  onClick={variant !== "outline" ? openEnquiry : undefined} >
       {admissionButtonData[variant].text}
     </button>
   );

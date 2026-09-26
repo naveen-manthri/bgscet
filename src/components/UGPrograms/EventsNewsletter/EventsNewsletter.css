@@ -86,7 +86,7 @@
 
   .cse-event-description {
     min-height: auto;
-    font-size: 0.95rem;
+    font-size: var(--mobile-font-size);
   }
 
   .read-more-btn {
@@ -103,7 +103,7 @@
   .department-cse-events .cse-events-grid,
   .department-cse-events .newsletter-grid {
     grid-template-columns: 1fr;
-    gap: var(--mobile-version-para-desc-gap);
+    gap: var(--mobile-para-desc-gap);
   }
 
   .department-cse-events .newsletter-grid {

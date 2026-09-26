@@ -139,7 +139,7 @@ padding:0.8rem;
   }
 
   .hod-message__content {
-    gap: var(--mobile-version-para-desc-gap);
+    gap: var(--mobile-para-desc-gap);
   }
 
   .hod-message__profile {

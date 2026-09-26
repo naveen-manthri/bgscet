@@ -116,6 +116,6 @@
 
   .nss__list {
     gap: 0.5rem;
-    padding-left: 1.25rem;
+    padding-left: var(--mobile-list-padding-left);
   }
 }

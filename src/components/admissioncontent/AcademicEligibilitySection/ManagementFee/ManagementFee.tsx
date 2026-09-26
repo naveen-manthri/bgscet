@@ -9,15 +9,9 @@ import { managementFeeData } from "../../../../data/academic";
 export default function ManagementFee() {
   return (
     <section className="management-fee flex flex-direction-column">
-      <AcademicHeading
-        blackTitle={managementFeeData.title.black}
-        redTitle={managementFeeData.title.red}
-      />
+      <AcademicHeading blackTitle={managementFeeData.title.black} redTitle={managementFeeData.title.red} />
 
-      <InfoTable
-        columns={managementFeeData.table.columns}
-        rows={managementFeeData.table.rows}
-      />
+      <InfoTable columns={managementFeeData.table.columns} rows={managementFeeData.table.rows}/>
 
       <div className="management-fee__notes">
         <h3>Note:</h3>

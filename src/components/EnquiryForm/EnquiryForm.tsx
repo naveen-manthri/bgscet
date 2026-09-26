@@ -134,18 +134,10 @@ const EnquiryForm: React.FC<EnquiryFormProps> = ({
       aria-labelledby="enquiry-form-title"
       onClick={handleOverlayClick}
     >
-      <div
-        className="enquiry-form__container flex flex-column"
-        ref={modalRef}
-      >
+      <div  className="enquiry-form__container flex flex-column" ref={modalRef} >
         {/* Close Button */}
 
-        <button
-          type="button"
-          className="enquiry-form__close"
-          onClick={onClose}
-          aria-label="Close enquiry form"
-        >
+        <button type="button" className="enquiry-form__close" onClick={onClose} aria-label="Close enquiry form">
           ×
         </button>
 
@@ -159,70 +151,22 @@ const EnquiryForm: React.FC<EnquiryFormProps> = ({
 
         {/* Form */}
 
-        <form
-          className="enquiry-form__form flex flex-column flex-one"
-          onSubmit={handleEnquirySubmit}
-        >
-          <input
-            className="enquiry-form__input"
-            type="text"
-            name="name"
-            placeholder="Name"
-            value={formData.name}
-            onChange={handleInputChange}
-            required
-          />
+        <form className="enquiry-form__form flex flex-column flex-one" onSubmit={handleEnquirySubmit} >
+          
+          <input className="enquiry-form__input" type="text" name="name" placeholder="Name" value={formData.name} onChange={handleInputChange} required />
 
-          <input
-            className="enquiry-form__input"
-            type="tel"
-            name="mobile"
-            placeholder="Mobile Number"
-            value={formData.mobile}
-            onChange={handleInputChange}
-            required
-          />
+          <input className="enquiry-form__input" type="tel" name="mobile"  placeholder="Mobile Number" value={formData.mobile} onChange={handleInputChange} required />
 
-          <input
-            className="enquiry-form__input"
-            type="email"
-            name="email"
-            placeholder="Email ID"
-            value={formData.email}
-            onChange={handleInputChange}
-            required
-          />
+          <input className="enquiry-form__input" type="email" name="email" placeholder="Email ID" value={formData.email} onChange={handleInputChange} required />
 
-          <input
-            className="enquiry-form__input"
-            type="text"
-            name="course"
-            placeholder="Course"
-            value={formData.course}
-            onChange={handleInputChange}
-            required
-          />
+          <input className="enquiry-form__input" type="text" name="course" placeholder="Course" value={formData.course} onChange={handleInputChange} required />
 
-          <textarea
-            className="enquiry-form__textarea"
-            name="notes"
-            placeholder="Notes"
-            rows={5}
-            value={formData.notes}
-            onChange={handleInputChange}
-          />
+          <textarea className="enquiry-form__textarea" name="notes" placeholder="Notes" rows={5} value={formData.notes} onChange={handleInputChange} />
 
           {/* Terms */}
 
           <label className="enquiry-form__terms flex flex-align-start">
-            <input
-              type="checkbox"
-              checked={acceptedTerms}
-              onChange={(event) =>
-                setAcceptedTerms(event.target.checked)
-              }
-              required
-            />
+            <input type="checkbox" checked={acceptedTerms} onChange={(event) => setAcceptedTerms(event.target.checked)} required />
 
             <span>
               By clicking submit you are agreeing to our
@@ -239,10 +183,7 @@ const EnquiryForm: React.FC<EnquiryFormProps> = ({
               <span>I'm not a robot</span>
             </div>
 
-            <button
-              type="submit"
-              className="enquiry-form__submit"
-            >
+            <button type="submit"  className="enquiry-form__submit" >
               Submit
             </button>
           </div>

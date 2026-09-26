@@ -54,7 +54,7 @@
   }
 
   .numbered-list__list {
-    padding-left: 1.25rem;
+    padding-left: var(--mobile-list-padding-left);
     gap: var(--list-item-gap);
   }
 }

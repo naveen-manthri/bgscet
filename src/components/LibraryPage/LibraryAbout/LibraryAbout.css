@@ -98,8 +98,8 @@
   .library-about__introduction,
   .library-about__item,
   .library-about__conclusion {
-    font-size: 0.95rem;
-    line-height: var(--line-height);
+    font-size: var(--mobile-font-size);
+    line-height: var(--mobile-line-height);
   }
 
   .library-about__image {
@@ -138,7 +138,7 @@
 
   .library-about__list {
     margin: 0;
-    padding-left: 1.25rem;
+    padding-left: var(--mobile-list-padding-left);
   }
 
   .library-about__item {

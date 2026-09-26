@@ -182,7 +182,7 @@
   }
 
   .visit-campus__actions {
-    gap: var(--mobile-version-para-desc-gap);
+    gap: var(--mobile-para-desc-gap);
   }
 
   .visit-campus .admission-button {

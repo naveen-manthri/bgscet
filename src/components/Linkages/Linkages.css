@@ -67,14 +67,14 @@
   }
 
   .linkages__content > .linkages__text {
-    margin-top: var(--mobile-version-para-desc-gap);
+    margin-top: var(--mobile-para-desc-gap);
   }
 
   .linkages__industry,
   .linkages__numbered-block {
     display: flex;
     flex-direction: column;
-    gap: var(--mobile-version-para-desc-gap);
+    gap: var(--mobile-para-desc-gap);
   }
 
   .linkages__industry > *,
@@ -102,6 +102,6 @@
   }
 
   .linkages__institution-table + .linkages__text {
-    margin-top: var(--mobile-version-para-desc-gap);
+    margin-top: var(--mobile-para-desc-gap);
   }
 }

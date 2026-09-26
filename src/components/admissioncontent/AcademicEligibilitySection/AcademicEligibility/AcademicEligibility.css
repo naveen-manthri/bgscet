@@ -125,14 +125,14 @@
     gap: var(--list-item-gap);
   }
   .academic-eligibility__list{
-    padding-left: 1.25rem;
+    padding-left: var(--mobile-list-padding-left);
   }
 
   .academic-eligibility__images img {
     height: auto;
   }
   .academic-eligibility__documents{
-    padding-left: 1.25rem;
+    /* padding-left: var(--mobile-list-padding-left); */
     margin-top: 0.5rem;
   }
 

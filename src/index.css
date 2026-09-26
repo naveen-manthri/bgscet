@@ -117,12 +117,15 @@
 /* mobile version*/
 --mobile-font-size: 1rem;
 --mobile-line-height: 1.5;
---mobile-version-para-desc-gap: 1rem;
---mobile-margin-top:1.5rem;
---visit-campus-mobile-margin-top: 2.5rem;
+--mobile-para-desc-gap: 1rem;
+--mobile-margin-top:1.7rem;
+--visit-campus-mobile-margin-top: 3rem;
 --mobile-padding:0 1.25rem;
 --mobile-description-font-size: 0.95rem;
 --mobile-description-line-height: 1.6;
+--mobile-list-padding-left: 1.25rem;
+
+
 --committee-buttons-gap:0.5rem;
 
 --mobile-card-padding: 0.75rem;
@@ -137,6 +140,7 @@
 --mobile-academic-duration-font-size: 0.75rem;
 --mobile-hod-name-font-size: 1rem;
 --mobile-hod-designation-font-size: 0.8rem;
+
 
 }
 
@@ -738,7 +742,7 @@ grid-template-columns: 1fr;  gap: 1.5rem;
     --font-size: var(--mobile-font-size);
     --section-title: clamp(1.75rem, 7vw, 2rem);
     --line-height: var(--mobile-line-height);
-    --para-desc-gap: var(--mobile-version-para-desc-gap);
+    --para-desc-gap: var(--mobile-para-desc-gap);
   }
 
   p,

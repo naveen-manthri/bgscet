@@ -38,14 +38,14 @@
   .hostel-facility__intro-list,
   .hostel-facility__facility-list {
     gap: 0rem;
-    padding-left: 1.25rem;
+    padding-left: var(--mobile-list-padding-left);
   }
 
   .hostel-facility__intro-item,
   .hostel-facility__facility-item,
   .hostel-facility__description {
-    font-size: 0.95rem;
-    line-height: var(--line-height);
+    font-size: var(--mobile-font-size);
+    line-height: var(--mobile-line-height);
   }
   .hostel-facility__description{
     margin-top: 1rem;

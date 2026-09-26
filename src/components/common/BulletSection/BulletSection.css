@@ -57,7 +57,7 @@
 
   .bullet-section__list {
     margin: 0;
-    padding-left: 1.25rem;
+    padding-left: var(--mobile-list-padding-left);
     gap: var(--bullet-list-gap);
     box-sizing: border-box;
   }

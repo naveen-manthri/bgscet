@@ -14,10 +14,7 @@ const CareerDevelopment = () => {
 
       <BulletSection data={careerDevelopmentData.facilities} />
 
-      <TitleDescription
-        data={careerDevelopmentData.trainingPlacement}
-        sectionClassName="training-placement-cell"
-      />
+      <TitleDescription data={careerDevelopmentData.trainingPlacement}  sectionClassName="training-placement-cell" />
 
       <BulletSection data={careerDevelopmentData.aimsObjectives} />
 

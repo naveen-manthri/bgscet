@@ -42,18 +42,8 @@ function Footer() {
 
       <div className="footer__social" aria-label="Social media links">
         {socialLinks.map((socialLink) => (
-          <a
-            className={`footer__social-link footer__social-link--${socialLink.name.toLowerCase()}`}
-            href={socialLink.href}
-            key={socialLink.name}
-            target={socialLink.href.startsWith('mailto:') ? undefined : '_blank'}
-            rel={socialLink.href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
-            aria-label={`Visit our ${socialLink.name} page`}
-          >
-            <socialLink.icon
-              className="footer__social-icon"
-              aria-hidden="true"
-            />
+          <a className={`footer__social-link footer__social-link--${socialLink.name.toLowerCase()}`} href={socialLink.href} key={socialLink.name} target={socialLink.href.startsWith('mailto:') ? undefined : '_blank'} rel={socialLink.href.startsWith('mailto:') ? undefined : 'noopener noreferrer'} aria-label={`Visit our ${socialLink.name} page`}>
+            <socialLink.icon className="footer__social-icon" aria-hidden="true" />
           </a>
         ))}
       </div>

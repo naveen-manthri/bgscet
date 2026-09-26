@@ -69,7 +69,7 @@
   .table-section__table th,
   .table-section__table td {
     padding: 0.7rem 0.85rem;
-    font-size: 0.95rem;
+    font-size: var(--mobile-font-size);
   }
 }
 

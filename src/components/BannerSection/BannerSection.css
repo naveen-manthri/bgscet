@@ -217,7 +217,7 @@
   .home-hero__description {
     max-width: 21rem;
     margin-top: 1rem;
-    font-size: 0.95rem;
+    font-size: var(--mobile-font-size);
     line-height: 1.35;
   }
 }

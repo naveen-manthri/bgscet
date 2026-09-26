@@ -48,8 +48,8 @@
   }
 
   .library-rules__item {
-    font-size: 0.95rem;
-    line-height: var(--line-height);
+    font-size: var(--mobile-font-size);
+    line-height: var(--mobile-line-height);
   }
 }
 

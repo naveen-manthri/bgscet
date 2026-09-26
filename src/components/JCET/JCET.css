@@ -1,7 +1,7 @@
 .jcet {
   width: 100%;
   margin-top: var(--primary-margin-top);
-  padding: 0 4rem;
+  padding: var(--primary-padding);
 }
 
 .jcet__banner {
