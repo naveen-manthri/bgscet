@@ -23,7 +23,7 @@ const institutionDetailsTable = {
 
 function Linkages() {
   return (
-    <section className="linkages" aria-label="Linkages section mobile-margin-top mobile-padding">
+    <section className="linkages mobile-margin-top mobile-padding" aria-label="Linkages section ">
       <div className="linkages__content">
         {/* <DepartmentSectionHeading title={linkagesData.title} className="department-section-heading--medium" /> */}
 

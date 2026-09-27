@@ -145,10 +145,10 @@
 }
 
 @media (max-width: 768px) {
-  .mobile-margin-top {
+  :root .mobile-margin-top {
     margin-top: var(--mobile-margin-top);
   }
-  .mobile-padding{
+  :root .mobile-padding {
     padding: var(--mobile-padding);
   }
 }
