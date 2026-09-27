@@ -34,14 +34,7 @@ const IPRCell = () => {
         ))}
       </div>
 
-      <Lightbox
-        open={index >= 0}
-        close={() => setIndex(-1)}
-        index={index}
-        slides={slides}
-        plugins={[Counter, Download, Zoom, Fullscreen]}
-        carousel={{ finite: iprData.images.length <= 1 }}
-      />
+      <Lightbox open={index >= 0} close={() => setIndex(-1)}  index={index} slides={slides}  plugins={[Counter, Download, Zoom, Fullscreen]} carousel={{ finite: iprData.images.length <= 1 }} />
     </section>
   );
 };

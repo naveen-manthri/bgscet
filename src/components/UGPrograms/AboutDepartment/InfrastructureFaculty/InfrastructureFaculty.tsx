@@ -18,10 +18,7 @@ const InfrastructureFaculty = ({
   return (
     <section className="infrastructure-faculty">
 
-      <DepartmentSectionHeading
-        title={data.title}
-        className="department-section-heading--medium"
-      />
+      <DepartmentSectionHeading title={data.title} className="department-section-heading--medium"  />
 
 
       <div className="infrastructure-faculty__content">

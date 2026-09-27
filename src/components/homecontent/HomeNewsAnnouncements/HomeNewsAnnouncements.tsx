@@ -13,19 +13,8 @@ function HomeNewsAnnouncements() {
         <div className="news-grid">
 
           {newsAnnouncements.map((news, index) => (
-            <article
-              key={news.id}
-              className={`news-card ${
-                index === newsAnnouncements.length - 1
-                  ? 'news-card-large'
-                  : 'news-card-small'
-              }`}
-            >
-              <img
-                src={news.image}
-                alt={news.alt}
-                loading="lazy"
-              />
+            <article  key={news.id}  className={`news-card ${  index === newsAnnouncements.length - 1  ? 'news-card-large' : 'news-card-small' }`} >
+              <img src={news.image} alt={news.alt} loading="lazy" />
             </article>
           ))}
 

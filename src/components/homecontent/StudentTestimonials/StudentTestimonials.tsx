@@ -39,46 +39,16 @@ function StudentTestimonials() {
   };
 
   return (
-    <section
-      className="student-testimonials"
-      aria-labelledby="student-testimonials-title"
-    >
+    <section className="student-testimonials"  aria-labelledby="student-testimonials-title" >
       <div className="student-testimonials__inner">
 
-        <SectionHeading
-          subtitle="Student Voices"
-          title="Four Years"
-          titleSecondLine="That Changed Everything."
-          underlineFitContent
-          center
-        />
+        <SectionHeading subtitle="Student Voices" title="Four Years" titleSecondLine="That Changed Everything." underlineFitContent center />
 
-        <div
-          className={`flex student-testimonials__scroller${
-            isDragging ? ' is-dragging' : ''
-          }`}
-          ref={scrollerRef}
-          role="list"
-          tabIndex={0}
-          aria-label="Student testimonials"
-          onPointerDown={handlePointerDown}
-          onPointerMove={handlePointerMove}
-          onPointerUp={handlePointerEnd}
-          onPointerCancel={handlePointerEnd}
-          onPointerLeave={() => setIsDragging(false)}
-        >
+        <div className={`flex student-testimonials__scroller${  isDragging ? ' is-dragging' : ''  }`} ref={scrollerRef}  role="list" tabIndex={0} aria-label="Student testimonials" onPointerDown={handlePointerDown} onPointerMove={handlePointerMove} onPointerUp={handlePointerEnd} onPointerCancel={handlePointerEnd} onPointerLeave={() => setIsDragging(false)} >
           {testimonials.map((testimonial) => (
-            <article
-              className="flex flex-direction-column flex-align-center flex-start student-testimonials__card"
-              key={testimonial.id}
-              role="listitem"
-            >
-              <img
-                className="student-testimonials__image"
-                src={testimonial.image}
-                alt={`${testimonial.name}, ${testimonial.department}`}
-                draggable="false"
-              />
+            <article className="flex flex-direction-column flex-align-center flex-start student-testimonials__card" key={testimonial.id} role="listitem"  >
+              
+              <img className="student-testimonials__image" src={testimonial.image} alt={`${testimonial.name}, ${testimonial.department}`} draggable="false" />
 
               <h3 className="student-testimonials__name">
                 {testimonial.name}

@@ -14,14 +14,8 @@ function NDLIClub() {
 
       <div className="ndli-club__grid">
         {ndliItems.map((item) => (
-          <a
-            key={item.label}
-            href={item.href}
-            className="ndli-club__button"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={item.label}
-          >
+          
+          <a key={item.label} href={item.href} className="ndli-club__button" target="_blank" rel="noopener noreferrer" aria-label={item.label}>
             {item.label}
           </a>
         ))}

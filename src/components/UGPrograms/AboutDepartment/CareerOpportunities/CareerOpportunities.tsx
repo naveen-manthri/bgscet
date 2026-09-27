@@ -30,10 +30,7 @@ const CareerOpportunities = ({
 
           <ul className="career-opportunities__list">
             {data.opportunities.map((item) => (
-              <li
-                key={item}
-                className="career-opportunities__item"
-              >
+              <li key={item} className="career-opportunities__item" >
                 {item}
               </li>
             ))}
@@ -41,11 +38,7 @@ const CareerOpportunities = ({
 
 
           <div className="career-opportunities__image-wrapper flex-one">
-            <img
-              src={data.image}
-              alt={data.title}
-              className="career-opportunities__image"
-            />
+            <img src={data.image}  alt={data.title} className="career-opportunities__image"/>
           </div>
 
         </div>

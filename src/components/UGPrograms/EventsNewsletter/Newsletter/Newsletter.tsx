@@ -13,12 +13,7 @@ const Newsletter = ({ title, data }: NewsletterProps) => (
     <div className="newsletter-grid">
       {data.map((newsletter) =>
         newsletter.link ? (
-          <a key={newsletter.id}
-            href={newsletter.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="newsletter-btn"
-          >
+          <a key={newsletter.id} href={newsletter.link}   target="_blank"  rel="noopener noreferrer"  className="newsletter-btn" >
             {newsletter.title}
           </a>
         ) : (

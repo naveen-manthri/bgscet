@@ -16,33 +16,21 @@ const JCET = () => {
       <BulletSection data={jcetData.whatSetsJCETApart} />
 
       <section className="jcet__information" aria-labelledby="jcet-information-title">
-        <DepartmentSectionHeading
-          title="Journal Information"
-          id="jcet-information-title"
-          className="department-section-heading--medium"
-        />
+        <DepartmentSectionHeading title="Journal Information" id="jcet-information-title" className="department-section-heading--medium" />
         <div className="jcet__information-list">
           {jcetData.journalInformation.map((item) => <p key={item.label}><strong>{item.label}:</strong> {item.value}</p>)}
         </div>
       </section>
 
       <section className="jcet__section" aria-labelledby="jcet-publisher-details-title">
-        <DepartmentSectionHeading
-          title="Publisher details"
-          id="jcet-publisher-details-title"
-          className="department-section-heading--medium"
-        />
+        <DepartmentSectionHeading title="Publisher details" id="jcet-publisher-details-title" className="department-section-heading--medium" />
         <div className="jcet__section-content jcet__publisher-details">
           {jcetData.publisherDetails.map((detail) => <p key={detail}>{detail}</p>)}
         </div>
       </section>
 
       <section className="jcet__section" aria-labelledby="jcet-aims-and-scope-title">
-        <DepartmentSectionHeading
-          title="Aims and scope"
-          id="jcet-aims-and-scope-title"
-          className="department-section-heading--medium"
-        />
+        <DepartmentSectionHeading title="Aims and scope" id="jcet-aims-and-scope-title" className="department-section-heading--medium" />
         <p className="jcet__section-content jcet__aims-and-scope">
           <strong>Scope and Objectives:</strong> {jcetData.aimsAndScope}
         </p>
@@ -51,37 +39,21 @@ const JCET = () => {
       <BulletSection data={jcetData.subjectCoverage} />
 
       <section className="jcet__section jcet__article-submission" aria-labelledby="jcet-article-submission-title">
-        <DepartmentSectionHeading
-          title="Article Submission system"
-          id="jcet-article-submission-title"
-          className="department-section-heading--medium"
-        />
+        <DepartmentSectionHeading title="Article Submission system" id="jcet-article-submission-title" className="department-section-heading--medium" />
 
         <div className="jcet__article-submission-content">
           <section aria-labelledby="jcet-author-guidelines-title">
-            <DepartmentSectionHeading
-              title="Author guidelines and peer review process"
-              id="jcet-author-guidelines-title"
-              className="department-section-heading--medium"
-            />
+           <DepartmentSectionHeading title="Author guidelines and peer review process" id="jcet-author-guidelines-title" className="department-section-heading--medium" />
             <p className="jcet__section-content">{jcetData.articleSubmission.authorGuidelines}</p>
           </section>
 
           <section aria-labelledby="jcet-contents-title">
-            <DepartmentSectionHeading
-              title="Contents"
-              id="jcet-contents-title"
-              className="department-section-heading--medium"
-            />
+            <DepartmentSectionHeading title="Contents"  id="jcet-contents-title" className="department-section-heading--medium"  />
             <p className="jcet__section-content">{jcetData.articleSubmission.contents}</p>
           </section>
 
           <section aria-labelledby="jcet-subscription-modes-title">
-            <DepartmentSectionHeading
-              title="Subscription modes"
-              id="jcet-subscription-modes-title"
-              className="department-section-heading--medium"
-            />
+            <DepartmentSectionHeading title="Subscription modes" id="jcet-subscription-modes-title" className="department-section-heading--medium" />
             <p className="jcet__section-content">{jcetData.articleSubmission.subscriptionModes}</p>
           </section>
         </div>

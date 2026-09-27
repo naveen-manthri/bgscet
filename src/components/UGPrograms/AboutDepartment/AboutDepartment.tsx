@@ -31,23 +31,15 @@ const AboutDepartment = ({
   return (
     <section className="about-department">
 
-      <HodMessage
-        data={hodMessage}
-      />
+      <HodMessage data={hodMessage}/>
 
       <Statistics />
 
-      <AboutDepartmentTitle
-        data={aboutDepartment}
-      />
+      <AboutDepartmentTitle data={aboutDepartment}/>
 
-      <CareerOpportunities
-        data={careerOpportunities}
-      />
+      <CareerOpportunities data={careerOpportunities}  />
 
-      <InfrastructureFaculty
-        data={infrastructureFaculty}
-      />
+      <InfrastructureFaculty data={infrastructureFaculty} />
 
     </section>
   );

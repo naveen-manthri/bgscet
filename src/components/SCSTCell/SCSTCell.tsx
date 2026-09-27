@@ -12,15 +12,9 @@ function SCSTCell() {
       <Advertisement />
 
       <main className="scstcell-page">
-        <DepartmentSectionHeading
-          title="SC ST Cell"
-          className="department-section-heading--medium"
-        />
+        <DepartmentSectionHeading title="SC ST Cell"   className="department-section-heading--medium" />
 
-        <div
-          className="scstcell-page__list flex flex-direction-column"
-          aria-label="SC ST Cell actions"
-        >
+        <div  className="scstcell-page__list flex flex-direction-column"  aria-label="SC ST Cell actions"  >
           {scStCellData.map((item) => (
             <div className="scstcell-page__row" key={item.label}>
               <span className="scstcell-page__label">{item.label}</span>

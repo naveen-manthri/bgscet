@@ -20,21 +20,11 @@ function CampusPlacements() {
           </p>
         </div>
 
-        <div
-          className="campus-placements__carousel"
-          aria-label="Placement company logos"
-        >
+        <div className="campus-placements__carousel"  aria-label="Placement company logos" >
           <div className="campus-placements__track campus-placements__track--left">
             {firstRow.map((company, index) => (
-              <article
-                className="campus-placements__card"
-                key={`left-${company.id}-${index}`}
-              >
-                <img
-                  className="campus-placements__logo"
-                  src={company.image}
-                  alt="Company logo"
-                />
+              <article className="campus-placements__card"  key={`left-${company.id}-${index}`} >
+                <img className="campus-placements__logo" src={company.image} alt="Company logo"  />
               </article>
             ))}
           </div>
@@ -43,15 +33,8 @@ function CampusPlacements() {
         <div className="campus-placements__carousel campus-placements__carousel--bottom">
           <div className="campus-placements__track campus-placements__track--right">
             {secondRow.map((company, index) => (
-              <article
-                className="campus-placements__card flex flex-center"
-                key={`right-${company.id}-${index}`}
-              >
-                <img
-                  className="campus-placements__logo"
-                  src={company.image}
-                  alt="Company logo"
-                />
+              <article className="campus-placements__card flex flex-center"   key={`right-${company.id}-${index}`} >
+                <img className="campus-placements__logo" src={company.image} alt="Company logo" />
               </article>
             ))}
           </div>

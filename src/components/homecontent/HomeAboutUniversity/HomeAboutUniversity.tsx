@@ -28,11 +28,7 @@ function HomeAboutUniversity() {
         </div>
 
         <div className="flex flex-direction-column flex-one home-about-university__content">
-            <DepartmentSectionHeading
-              id="home-about-university-title"
-              title={homeAboutUniversity.title}
-              className="department-section-heading--large"
-            />
+            <DepartmentSectionHeading id="home-about-university-title" title={homeAboutUniversity.title}  className="department-section-heading--large" />
             <p>{homeAboutUniversity.description}</p>
             
             <AdmissionButton variant="primary" />
