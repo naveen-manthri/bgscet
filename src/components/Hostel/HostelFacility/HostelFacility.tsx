@@ -9,10 +9,10 @@ interface HostelFacilityProps {
 
 const HostelFacility = ({ data, className }: HostelFacilityProps) => {
   return (
-    <section className={`flex flex-direction-column hostel-facility hostel-page ${className ?? ""}`.trim()}>
+    <section className={`hostel-facility flex flex-direction-column hostel-page mobile-margin-top ${className ?? ""}`.trim()}>
       <DepartmentSectionHeading title={data.title} className="department-section-heading--medium"/>
 
-      <div className="flex flex-direction-column hostel-facility__content">
+      <div className="hostel-facility__content flex flex-direction-column  mobile-padding">
         <ul className="flex flex-direction-column hostel-facility__intro-list">
           {data.introductoryPoints.map((point, index) => <li key={index} className="hostel-facility__intro-item">{point}</li>)}
         </ul>

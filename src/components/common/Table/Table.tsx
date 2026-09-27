@@ -13,7 +13,7 @@ interface TableProps {
 
 const Table = ({ title, description, table, className, renderCell }: TableProps) => {
   return (
-    <section className={`table-section flex flex-direction-column ${className ?? ""}`.trim()}>
+    <section className={`table-section flex flex-direction-column mobile-margin-top mobile-padding ${className ?? ""}`.trim()}>
       <DepartmentSectionHeading title={title} className="department-section-heading--medium" />
       {description && <p className="table-section__description">{description}</p>}
 

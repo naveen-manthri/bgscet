@@ -14,7 +14,7 @@ const HodMessage = ({
   data,
 }: HodMessageProps) => {
   return (
-    <section className="hod-message">
+    <section className="hod-message mobile-margin-top mobile-padding">
 
       <DepartmentSectionHeading title={data.title} className="department-section-heading--medium" />
 

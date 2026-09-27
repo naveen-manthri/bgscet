@@ -11,7 +11,7 @@ function SCSTCell() {
       <BannerSection image={banner} title="SC ST Cell" />
       <Advertisement />
 
-      <main className="scstcell-page">
+      <main className="scstcell-page mobile-margin-top mobile-padding">
         <DepartmentSectionHeading title="SC ST Cell"   className="department-section-heading--medium" />
 
         <div  className="scstcell-page__list flex flex-direction-column"  aria-label="SC ST Cell actions"  >

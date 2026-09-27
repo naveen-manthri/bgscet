@@ -16,12 +16,7 @@
   }
 }
 
-@media (max-width: 48rem) {
-  .career-development {
-    margin-top: var(--mobile-margin-top);
-    padding: var(--mobile-padding);
-  }
-}
+
 
 @media (max-width: 768px) {
   .career-development .bullet-section {

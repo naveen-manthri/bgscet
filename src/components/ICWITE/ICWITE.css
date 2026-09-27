@@ -22,7 +22,5 @@
 @media (max-width: 48rem) {
   .icwite-2025 {
     box-sizing: border-box;
-    margin-top: var(--mobile-margin-top);
-    padding: var(--mobile-padding);
   }
 }

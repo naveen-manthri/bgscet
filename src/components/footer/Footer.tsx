@@ -13,7 +13,7 @@ const socialLinks = [
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer mobile-margin-top ">
       <div className="footer__main">
         <section className="footer__brand" aria-label="College information">
           <img className="footer__logo" src={footerInfo.logo} alt="BGS College of Engineering and Technology logo" />

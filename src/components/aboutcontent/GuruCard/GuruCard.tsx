@@ -14,7 +14,7 @@ const GuruCard: FC<GuruCardProps> = ({
   reverse = false,
 }) => {
   return (
-    <article className={`flex flex-direction-column guru-card ${  reverse ? "guru-card--reverse" : "" }`}>
+    <article className={`guru-card flex flex-direction-column mobile-margin-top guru-card ${  reverse ? "guru-card--reverse" : "" }`}>
       <h2 className="guru-card__title">
         {guru.name}
       </h2>

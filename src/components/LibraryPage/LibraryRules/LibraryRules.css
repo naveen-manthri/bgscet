@@ -54,10 +54,7 @@
 }
 
 @media (max-width: 768px) {
-  .library-rules {
-    margin-top: var(--mobile-margin-top);
-    padding: var(--mobile-padding);
-  }
+  
 
   .library-rules__container {
     padding: 0;

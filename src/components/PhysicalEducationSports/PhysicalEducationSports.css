@@ -219,8 +219,7 @@
 @media (max-width: 768px) {
   .physical-education {
     box-sizing: border-box;
-    margin-top: var(--mobile-margin-top);
-    padding: var(--mobile-padding);
+    
   }
 
   .physical-education__message-grid {

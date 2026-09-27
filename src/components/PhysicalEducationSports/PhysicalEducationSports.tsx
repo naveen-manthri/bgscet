@@ -14,7 +14,7 @@ function PhysicalEducationSports() {
   } = physicalEducationData;
 
   return (
-    <main className="physical-education">
+    <main className="physical-education mobile-margin-top mobile-padding">
       <section className="physical-education__message" aria-labelledby="physical-education-message-title">
         <DepartmentSectionHeading id="physical-education-message-title" title="HOD's Message" className="department-section-heading--medium" />
         <div className="physical-education__message-grid">

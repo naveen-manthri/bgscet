@@ -7,7 +7,7 @@ import { grievanceRedressalData } from "../../data/grievanceRedressalData";
 
 const GrievanceRedressalCell = () => {
   return (
-    <main className="grievance-redressal-cell">
+    <main className="grievance-redressal-cell mobile-margin-top mobile-padding">
       <TitleDescription  data={grievanceRedressalData.overview} className="department-section-heading--medium"  />
 
       <BulletSection data={grievanceRedressalData.objectives} />

@@ -57,8 +57,6 @@
 @media (max-width: 48rem) {
   .grievance-redressal-cell {
     box-sizing: border-box;
-    margin-top: var(--mobile-margin-top);
-    padding: var(--mobile-padding);
   }
 
   .grievance-redressal-cell .title-description,

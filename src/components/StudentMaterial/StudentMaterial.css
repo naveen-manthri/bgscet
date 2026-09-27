@@ -33,10 +33,7 @@
 }
 
 @media (max-width: 768px) {
-  .student-material__cta {
-    padding: var(--mobile-padding);
-    margin-top: var(--mobile-margin-top);
-  }
+  
 
   .student-material__button {
     width: min(100%, 20rem);

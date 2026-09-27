@@ -8,7 +8,7 @@ interface TitleBulletDescriptionProps {
 
 const TitleBulletDescription = ({ data }: TitleBulletDescriptionProps) => {
   return (
-    <section className="flex flex-direction-column title-bullet-description">
+    <section className="title-bullet-description flex flex-direction-column  mobile-margin-top  ">
       <DepartmentSectionHeading title={data.title} className="department-section-heading--medium"/>
 
       <p>{data.description}</p>

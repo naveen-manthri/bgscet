@@ -10,7 +10,7 @@ const BulletSection = ({ data }: BulletSectionProps) => {
   const hasTitle = Boolean(data.title?.trim());
 
   return (
-    <section className="flex flex-direction-column bullet-section">
+    <section className=" bullet-sectionflex flex-direction-column mobile-margin-top">
       {hasTitle && (
         <DepartmentSectionHeading title={data.title} className="department-section-heading--medium" />
       )}

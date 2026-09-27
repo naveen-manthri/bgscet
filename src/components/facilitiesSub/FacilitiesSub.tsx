@@ -8,7 +8,7 @@ interface FacilitiesSubProps {
 
 const FacilitiesSub = ({ data }: FacilitiesSubProps) => {
   return (
-    <section className="facilities-sub">
+    <section className="facilities-sub mobile-margin-top mobile-padding">
       <DepartmentSectionHeading title={data.title} className="department-section-heading--medium" />
 
       {data.description.map((paragraph, index) => (

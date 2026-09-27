@@ -142,8 +142,6 @@
 @media (max-width: 48rem) {
   .jcet {
     box-sizing: border-box;
-    margin-top: var(--mobile-margin-top);
-    padding: var(--mobile-padding);
   }
 
   .jcet__bibliographic-details {

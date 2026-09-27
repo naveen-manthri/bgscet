@@ -9,7 +9,7 @@ interface AchievementsProps {
 }
 
 const Achievements = ({ data }: AchievementsProps) => (
-  <section className="department-achievements">
+  <section className="department-achievements mobile-margin-top mobile-padding">
     <AchievementCards data={data} />
   </section>
 );

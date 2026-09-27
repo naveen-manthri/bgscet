@@ -8,7 +8,7 @@ interface ProfileCardProps {
 
 const ProfileCard = ({ data }: ProfileCardProps) => {
   return (
-    <section className="profile-card">
+    <section className="profile-card mobile-margin-top ">
       <DepartmentSectionHeading title={data.title} className="department-section-heading--medium"/>
 
       <div className="profile-card__container">

@@ -17,7 +17,7 @@ import "./NSS.css";
 
 const NSS = () => {
   return (
-    <section className="flex flex-direction-column nss">
+    <section className="nss flex flex-direction-column mobile-margin-top mobile-padding">
       <DepartmentSectionHeading title={introduction.title} className="department-section-heading--medium" />
 
       <div className="flex flex-align-center nss__intro">

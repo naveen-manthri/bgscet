@@ -8,7 +8,7 @@ function StudentMaterial() {
     <>
       <LetterSections data={studentMaterialData} />
 
-      <div className="student-material__cta flex flex-justify-center">
+      <div className="student-material__cta flex flex-justify-center  mobile-margin-top mobile-padding">
         <a className="student-material__button flex flex-center" href="https://vtu.ac.in/en/study-material/">
           VTU Study Materials
         </a>

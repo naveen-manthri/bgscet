@@ -12,7 +12,7 @@ const courses: string[] = [
 
 const AdmissionSection = () => {
   return (
-    <section className="admission">
+    <section className="admission mobile-margin-top mobile-padding">
       <div className="admission__content">
           <AcademicHeading className="admission__title" blackTitle={"Admission For Management Quota\nSeats Is Underway "} redTitle={"For First Year\nB.E. Courses : 2026-27"} underlineLastLine />
           <div>

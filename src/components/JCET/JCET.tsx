@@ -8,7 +8,7 @@ import "./JCET.css";
 
 const JCET = () => {
   return (
-    <main className="jcet">
+    <main className="jcet mobile-margin-top mobile-padding">
       <div className="jcet__descriptions">
         {jcetData.descriptions.map((description) => <p key={description}>{description}</p>)}
       </div>

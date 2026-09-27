@@ -6,7 +6,7 @@ function CampusPlacements() {
   const secondRow = [...companyLogos, ...companyLogos];
 
   return (
-    <section className="campus-placements" aria-labelledby="campus-placements-title" >
+    <section className="campus-placements  mobile-margin-top mobile-padding" aria-labelledby="campus-placements-title" >
       <div className="campus-placements__inner">
 
         <div className="campus-placements__heading flex flex-center flex-direction-column">

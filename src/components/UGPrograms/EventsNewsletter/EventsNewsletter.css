@@ -95,10 +95,7 @@
 }
 
 @media (max-width: 768px) {
-  .department-cse-events {
-    margin-top: var(--mobile-margin-top);
-    padding: var(--mobile-padding);
-  }
+  
 
   .department-cse-events .cse-events-grid,
   .department-cse-events .newsletter-grid {

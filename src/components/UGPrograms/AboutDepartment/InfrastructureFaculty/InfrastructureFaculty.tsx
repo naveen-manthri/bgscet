@@ -16,7 +16,7 @@ const InfrastructureFaculty = ({
   data,
 }: InfrastructureFacultyProps) => {
   return (
-    <section className="infrastructure-faculty">
+    <section className="infrastructure-faculty mobile-margin-top mobile-padding">
 
       <DepartmentSectionHeading title={data.title} className="department-section-heading--medium"  />
 

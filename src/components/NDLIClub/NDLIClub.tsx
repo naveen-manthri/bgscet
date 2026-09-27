@@ -9,7 +9,7 @@ const ndliItems = [
 
 function NDLIClub() {
   return (
-    <main className="ndli-club">
+    <main className="ndli-club mobile-margin-top mobile-padding">
       <DepartmentSectionHeading title="NDLI Club" className="department-section-heading--medium" />
 
       <div className="ndli-club__grid">

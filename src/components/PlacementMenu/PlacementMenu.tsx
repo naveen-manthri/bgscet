@@ -9,7 +9,7 @@ function PlacementMenu({ type }: PlacementMenuPageProps) {
 
   return (
     <>
-      <main className="placement-menu-page">
+      <main className="placement-menu-page mobile-margin-top mobile-padding">
         <section className="department-cse-events">
           <ImageCard title={title} data={data} />
         </section>

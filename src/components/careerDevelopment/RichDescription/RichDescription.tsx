@@ -8,7 +8,7 @@ interface RichDescriptionProps {
 
 const RichDescription = ({ data }: RichDescriptionProps) => {
   return (
-    <section className="flex flex-direction-column rich-description">
+    <section className=" rich-description flex flex-direction-column mobile-margin-top ">
       <DepartmentSectionHeading title={data.title} className="department-section-heading--medium"/>
 
       <p>{data.intro}</p>

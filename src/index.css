@@ -144,6 +144,15 @@
 
 }
 
+@media (max-width: 768px) {
+  .mobile-margin-top {
+    margin-top: var(--mobile-margin-top);
+  }
+  .mobile-padding{
+    padding: var(--mobile-padding);
+  }
+}
+
 * {
   box-sizing: border-box;
 }

@@ -42,8 +42,6 @@
   .committee-heading {
     padding-inline: 1.25rem;
     box-sizing: border-box;
-    margin-top: var(--mobile-margin-top);
-    padding: var(--mobile-padding);
   }
 
   .committee-grid {

@@ -9,7 +9,7 @@ const AboutLibrarian = () => {
   const data = aboutLibrarianData;
 
   return (
-    <section className="about-librarian">
+    <section className="about-librarian mobile-margin-top mobile-padding">
       <div className="about-librarian__container">
 
         <DepartmentSectionHeading title={data.title} className="department-section-heading--medium"/>

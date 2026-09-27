@@ -9,7 +9,7 @@ import {
 
 function HomeCampusLife() {
   return (
-    <section className="home-campus-life section-space">
+    <section className="home-campus-life mobile-margin-top mobile-padding section-space">
       <div className="flex flex-direction-column flex-align-center container">
         <SectionHeading subtitle="Campus Life" title="A Campus That" titleSecondLine="Lives After Dark." underlineFitContent center />
 

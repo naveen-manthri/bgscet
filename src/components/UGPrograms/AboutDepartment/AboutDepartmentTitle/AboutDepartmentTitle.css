@@ -47,9 +47,3 @@
   }
 }
 
-@media (max-width: 768px) {
-  .about-cse {
-    margin-top: var(--mobile-margin-top);
-    padding: var(--mobile-padding);
-  }
-}

@@ -8,7 +8,7 @@ const LibraryAbout = () => {
   const data = libraryAboutData;
 
   return (
-    <section className="library-about">
+    <section className="library-about mobile-margin-top mobile-padding">
       <div className="library-about__container">
 
         <DepartmentSectionHeading title={data.title} className="department-section-heading--medium" />

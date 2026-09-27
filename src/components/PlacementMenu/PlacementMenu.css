@@ -6,8 +6,7 @@
 @media (max-width: 48rem) {
   .placement-menu-page {
     box-sizing: border-box;
-    margin-top: var(--mobile-margin-top);
-    padding: var(--mobile-padding);
+    
   }
 
   .placement-menu-page .department-cse-events {

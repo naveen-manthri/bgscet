@@ -16,7 +16,7 @@ const TitleDescription = ({
   sectionClassName = "",
 }: TitleDescriptionProps) => {
   return (
-    <section className={`title-description ${sectionClassName}`.trim()}>
+    <section className={`title-description  mobile-margin-top ${sectionClassName}`.trim()}>
       <DepartmentSectionHeading title={data.title} className={className} />
 
       <p>{data.description}</p>

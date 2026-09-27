@@ -110,9 +110,7 @@
 
 @media (max-width: 768px) {
   .library-about {
-    margin-top: var(--mobile-margin-top);
     margin-bottom: 0;
-    padding: var(--mobile-padding);
   }
 
   .library-about__container {

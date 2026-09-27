@@ -84,7 +84,6 @@
 
 @media (max-width: 768px) {
   .profile-card {
-    margin-top: var(--mobile-margin-top);
     padding: 0;
   }
 

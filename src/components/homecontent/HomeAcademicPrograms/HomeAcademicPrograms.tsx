@@ -5,7 +5,7 @@ import SectionHeading from "../../common/SectionHeading";
 
 function HomeAcademicPrograms() {
   return (
-    <section className="flex flex-direction-column home-academic section-space">
+    <section className=" home-academic flex flex-direction-column mobile-margin-top mobile-padding section-space">
       <div className="flex flex-direction-column container academic-programs-container">
         <SectionHeading subtitle="Academics" title="Programs Designed" titleSecondLine="Like Products." underlineFitContent center />
 

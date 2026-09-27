@@ -36,10 +36,7 @@
 }
 
 @media (max-width: 58em) {
-  .linkages {
-    margin-top: var(--mobile-margin-top);
-    padding: var(--mobile-padding);
-  }
+  
 
   .linkages__content {
     width: 100%;

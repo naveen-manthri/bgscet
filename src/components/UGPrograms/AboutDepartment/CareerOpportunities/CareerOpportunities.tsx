@@ -14,7 +14,7 @@ const CareerOpportunities = ({
   data,
 }: CareerOpportunitiesProps) => {
   return (
-    <section className="career-opportunities">
+    <section className="career-opportunities mobile-margin-top mobile-padding">
 
       <DepartmentSectionHeading title={data.title} className="department-section-heading--medium" />
 

@@ -8,7 +8,7 @@ import {
 
 const ERCICA = () => {
   return (
-    <section className="ercica">
+    <section className="ercica mobile-margin-top mobile-padding">
       <div className="ercica__container">
         <section className="ercica__section">
           <DepartmentSectionHeading title={ercicaWelcomeData.title} className="department-section-heading--medium"/>

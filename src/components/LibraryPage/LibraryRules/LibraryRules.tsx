@@ -7,7 +7,7 @@ const LibraryRules = () => {
   const data = libraryRulesData;
 
   return (
-    <section className="library-rules">
+    <section className="library-rules mobile-margin-top mobile-padding">
       <div className="library-rules__container">
         <BulletSection data={{ title: data.title, points: data.rules, }} />
       </div>

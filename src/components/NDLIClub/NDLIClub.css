@@ -38,10 +38,7 @@
 }
 
 @media (max-width: 768px) {
-  .ndli-club {
-    margin-top: var(--mobile-margin-top);
-    padding: var(--mobile-padding);
-  }
+  
 
   .ndli-club__grid {
     grid-template-columns: 1fr;

@@ -71,8 +71,6 @@
 @media (max-width: 768px) {
   .nss {
     box-sizing: border-box;
-    margin-top: var(--mobile-margin-top);
-    padding: var(--mobile-padding);
     gap: 0;
   }
 

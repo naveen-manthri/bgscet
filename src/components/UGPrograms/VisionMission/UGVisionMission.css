@@ -58,10 +58,7 @@
 }
 
 @media (max-width: 768px) {
-  .vision-mission {
-    margin-top: var(--mobile-margin-top);
-    padding: var(--mobile-padding);
-  }
+  
 
   .vision-mission:not(.vision-mission--columns) .vision-mission__section + .vision-mission__section {
     margin-top: 0;

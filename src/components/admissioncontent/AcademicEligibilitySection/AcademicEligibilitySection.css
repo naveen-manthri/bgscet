@@ -9,7 +9,5 @@
 @media (max-width: 768px) {
   .academic-eligibility-section {
     box-sizing: border-box;
-    margin-top: var(--mobile-margin-top);
-    padding: var(--mobile-padding);
   }
 }

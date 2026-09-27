@@ -67,10 +67,7 @@
 }
 
 @media (max-width: 768px) {
-  .department-faculty {
-    margin-top: var(--mobile-margin-top);
-    padding: var(--mobile-padding);
-  }
+ 
 
   .department-faculty__grid {
     margin-top: 0;

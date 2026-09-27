@@ -17,7 +17,7 @@ const AboutHostel = ({ data }: AboutHostelProps) => {
   }, []);
 
   return (
-    <section className="about-hostel flex flex-direction-column hostel-page">
+    <section className="about-hostel flex flex-direction-column hostel-page mobile-margin-top mobile-padding">
       <DepartmentSectionHeading title={data.title} className="department-section-heading--medium" />
 
       <div className="about-hostel__content">

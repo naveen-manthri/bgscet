@@ -178,9 +178,7 @@
 }
 
 @media (max-width: 768px) {
-  .footer {
-    margin-top: var(--mobile-margin-top);
-  }
+  
 
   .footer__main {
     width: 100%;

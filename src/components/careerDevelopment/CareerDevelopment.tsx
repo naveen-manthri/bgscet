@@ -9,7 +9,7 @@ import ProfileCard from "./ProfileCard/ProfileCard";
 
 const CareerDevelopment = () => {
   return (
-    <main className="career-development">
+    <main className="career-development mobile-margin-top mobile-padding">
       <TitleDescription data={careerDevelopmentData.about} />
 
       <BulletSection data={careerDevelopmentData.facilities} />

@@ -43,7 +43,7 @@ const yrcEvents: DepartmentEvent[] = [
 
 const YRCClub = () => {
   return (
-    <main className="department-cse-events yrc-club">
+    <main className="department-cse-events yrc-club mobile-margin-top mobile-padding">
       <ImageCard title="Youth Red Cross Club" data={yrcEvents} />
     </main>
   );

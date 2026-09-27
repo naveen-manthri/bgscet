@@ -8,7 +8,7 @@ function HomeAboutUniversity() {
   const badgeTextPathId = useId();
 
   return (
-    <section className="flex home-about-university" aria-labelledby="home-about-university-title">
+    <section className=" home-about-university flex mobile-margin-top mobile-padding" aria-labelledby="home-about-university-title">
       <div className="flex flex-one home-about-university__media">
             <img className="home-about-university__image--front" src={homeAboutUniversity.imageOne} alt="BGSCET ceremony" />
             <img className="home-about-university__image--back" src={homeAboutUniversity.imageTwo} alt="BGSCET campus building" />

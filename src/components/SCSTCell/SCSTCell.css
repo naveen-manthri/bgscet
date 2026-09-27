@@ -59,8 +59,7 @@
 @media (max-width: 768px) {
   .scstcell-page {
     box-sizing: border-box;
-    margin-top: var(--mobile-margin-top);
-    padding: var(--mobile-padding);
+   
   }
 
   .scstcell-page__list {

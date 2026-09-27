@@ -9,7 +9,7 @@ interface CommitteeCardsProps {
 const CommitteeCards = ({ data }: CommitteeCardsProps) => {
   return (
     <>
-      <div className="committee-heading">
+      <div className="committee-heading mobile-margin-top mobile-padding">
         <DepartmentSectionHeading title="Committees" className="department-section-heading--medium" />
       </div>
       <div className="committee-grid">

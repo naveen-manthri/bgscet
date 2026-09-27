@@ -75,8 +75,6 @@
 @media (max-width: 48rem) {
   .about-hostel {
     box-sizing: border-box;
-    margin-top: var(--mobile-margin-top);
-    padding: var(--mobile-padding);
   }
 
   .about-hostel__content {

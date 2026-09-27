@@ -7,7 +7,7 @@ import Section from "./Section";
 
 const IIC = () => {
   return (
-    <main className="iic-container">
+    <main className="iic-container mobile-margin-top mobile-padding">
       <DepartmentSectionHeading title={iicData.pageTitle} className="department-section-heading--medium" />
 
       {iicData.sections.map((section: (typeof iicData.sections)[number]) => (

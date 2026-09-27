@@ -39,8 +39,8 @@ function StudentTestimonials() {
   };
 
   return (
-    <section className="student-testimonials"  aria-labelledby="student-testimonials-title" >
-      <div className="student-testimonials__inner">
+    <section className="student-testimonials mobile-margin-top"  aria-labelledby="student-testimonials-title" >
+      <div className="student-testimonials__inner  mobile-padding">
 
         <SectionHeading subtitle="Student Voices" title="Four Years" titleSecondLine="That Changed Everything." underlineFitContent center />
 

@@ -307,10 +307,7 @@
 }
 
 @media (max-width: 768px) {
-  .home-academic {
-    margin-top: var(--mobile-margin-top);
-    padding: var(--mobile-padding);
-  }
+  
 
   .home-academic .container {
     row-gap: 0;

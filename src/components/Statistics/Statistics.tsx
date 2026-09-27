@@ -82,7 +82,7 @@ const Statistics = () => {
   }, [hasEnteredViewport]);
 
   return (
-    <section ref={sectionRef} className="statistics">
+    <section ref={sectionRef} className="statistics mobile-margin-top ">
       <div className="statistics-container">
         <div className="flex flex-direction-column flex-align-center statistics-header">
           <p className="statistics-unit">UNIT OF</p>

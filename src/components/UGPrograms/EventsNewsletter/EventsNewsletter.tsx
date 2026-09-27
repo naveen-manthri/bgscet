@@ -10,7 +10,7 @@ interface EventsNewsletterProps {
 }
 
 const EventsNewsletter = ({ data }: EventsNewsletterProps) => (
-  <section className="department-cse-events">
+  <section className="department-cse-events mobile-margin-top mobile-padding">
     <Events title={data.title} data={data.events} />
     <Newsletter title={data.newsletterTitle} data={data.newsletters} />
   </section>

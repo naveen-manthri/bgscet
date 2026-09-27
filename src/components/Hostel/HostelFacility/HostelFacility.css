@@ -25,14 +25,11 @@
 }
 
 @media (max-width: 48rem) {
-  .hostel-facility {
-    margin-top: var(--mobile-margin-top);
-  }
+  
   .hostel-facility__content {
     box-sizing: border-box;
     gap: 0;
     margin-top: 0;
-    padding: var(--mobile-padding);
   }
 
   .hostel-facility__intro-list,

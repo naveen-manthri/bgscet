@@ -157,9 +157,7 @@
 }
 
 @media (max-width: 768px) {
-  .statistics {
-    margin-top: var(--mobile-margin-top);
-  }
+  
 
   .statistics-title {
     max-width: 100%;

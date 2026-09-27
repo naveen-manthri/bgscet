@@ -133,10 +133,7 @@ padding:0.8rem;
 }
 
 @media (max-width: 768px) {
-  .hod-message {
-    margin-top: var(--mobile-margin-top);
-    padding: var(--mobile-padding);
-  }
+  
 
   .hod-message__content {
     gap: var(--mobile-para-desc-gap);

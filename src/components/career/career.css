@@ -77,8 +77,6 @@
   .career-hero {
     gap: 1rem;
     box-sizing: border-box;
-    margin-top: var(--mobile-margin-top);
-    padding: var(--mobile-padding);
   }
 
   .career-hero__image img {

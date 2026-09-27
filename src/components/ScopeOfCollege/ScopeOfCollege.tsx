@@ -10,7 +10,7 @@ const scopeOfCollegeData = {
 
 function ScopeOfCollege() {
   return (
-    <div className="scope-of-college">
+    <div className="scope-of-college mobile-margin-top mobile-padding">
       <BulletSection data={scopeOfCollegeData} />
 
       <p className="scope-of-college__text">

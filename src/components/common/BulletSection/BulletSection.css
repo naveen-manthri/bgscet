@@ -51,7 +51,6 @@
 
 @media (max-width: 768px) {
   .bullet-section {
-    margin-top: var(--mobile-margin-top);
     padding: 0;
   }
 

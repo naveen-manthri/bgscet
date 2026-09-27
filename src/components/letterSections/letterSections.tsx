@@ -8,7 +8,7 @@ interface LetterSectionsProps {
 
 const LetterSections = ({ data }: LetterSectionsProps) => {
   return (
-    <section className="letter-sections flex flex-direction-column">
+    <section className="letter-sections flex flex-direction-column mobile-margin-top mobile-padding">
       {data.sections.map((section) => (
         <div key={section.heading} className="letter-section">
           <div className="letter-section-title">

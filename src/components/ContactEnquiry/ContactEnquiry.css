@@ -230,9 +230,7 @@
 @media (max-width: 768px) {
   .contact-enquiry {
     box-sizing: border-box;
-    margin-top: var(--mobile-margin-top);
     margin-bottom: 0;
-    padding: var(--mobile-padding);
   }
 
   .contact-enquiry__container {

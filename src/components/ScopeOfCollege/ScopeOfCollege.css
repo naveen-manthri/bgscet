@@ -59,8 +59,7 @@
 @media (max-width: 58em) {
   .scope-of-college {
     width: 100%;
-    margin-top: var(--mobile-margin-top);
-    padding: var(--mobile-padding);
+    
   }
 
   .scope-of-college > * {

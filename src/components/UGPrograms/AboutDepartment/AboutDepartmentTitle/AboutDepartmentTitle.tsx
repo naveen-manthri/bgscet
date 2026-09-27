@@ -14,7 +14,7 @@ const AboutDepartment = ({
   data,
 }: AboutDepartmentProps) => {
   return (
-    <section className="about-cse">
+    <section className="about-cse mobile-margin-top mobile-padding">
 
       <DepartmentSectionHeading title={data.title} className="department-section-heading--medium" />
 

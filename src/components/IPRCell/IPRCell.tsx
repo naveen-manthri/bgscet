@@ -18,7 +18,7 @@ const IPRCell = () => {
   );
 
   return (
-    <section className="ipr-section ipr">
+    <section className="ipr-section ipr mobile-margin-top mobile-padding">
       <DepartmentSectionHeading title={iprData.title} className="department-section-heading--medium" />
 
       <p>{iprData.description}</p>

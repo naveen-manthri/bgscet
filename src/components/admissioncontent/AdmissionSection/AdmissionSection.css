@@ -136,8 +136,6 @@
     grid-template-columns: 1fr;
     gap: 0;
     box-sizing: border-box;
-    margin-top: var(--mobile-margin-top);
-    padding: var(--mobile-padding);
   }
 
   .admission__content {

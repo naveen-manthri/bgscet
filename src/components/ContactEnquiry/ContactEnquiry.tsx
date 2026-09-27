@@ -8,7 +8,7 @@ const ContactEnquiry = () => {
   const data = contactEnquiryData;
 
   return (
-    <section className="contact-enquiry">
+    <section className="contact-enquiry mobile-margin-top mobile-padding">
       <div className="contact-enquiry__container">
         <DepartmentSectionHeading title={data.title} className="department-section-heading--medium"/>
 
