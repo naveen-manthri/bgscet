@@ -2,6 +2,7 @@ import "./HomeAcademicPrograms.css";
 import { academicPrograms } from "../../../data/academicProgramsData";
 import AdmissionButton from "../../../components/AdmissionButton/AdmissionButton";
 import SectionHeading from "../../common/SectionHeading";
+import { Link } from "react-router-dom";
 
 function HomeAcademicPrograms() {
   return (
@@ -27,7 +28,7 @@ function HomeAcademicPrograms() {
                   {program.description}
                 </p>
 
-                <a  href={`/${program.slug}`} className="program-read-more"> {program.readMore} </a>
+                <Link to={program.route} className="program-read-more"> {program.readMore} </Link>
               </div>
             </article>
           ))}

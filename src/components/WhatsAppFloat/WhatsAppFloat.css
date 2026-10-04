@@ -16,24 +16,17 @@
   color: #ffffff;
   text-decoration: none;
   overflow: hidden;
-  transition:
-    transform 180ms ease,
-    bottom 220ms ease,
-    opacity 180ms ease;
+  transition: opacity 180ms ease;
 }
 
 .whatsapp-float:hover,
 .whatsapp-float:focus-visible {
-  transform: translateY(-0.15rem) scale(1.04);
+  opacity: 0.9;
 }
 
 .whatsapp-float:focus-visible {
   outline: 0.18rem solid var(--focus, #ffd9d1);
   outline-offset: 0.18rem;
-}
-
-.whatsapp-float--anchored {
-  bottom: clamp(5.5rem, 14vw, 8.5rem);
 }
 
 .whatsapp-float__icon {
@@ -51,9 +44,6 @@
     bottom: 1rem;
   }
 
-  .whatsapp-float--anchored {
-    bottom: clamp(4.5rem, 18vw, 7rem);
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -2,6 +2,7 @@ import { useId } from 'react';
 import { homeAboutUniversity } from '../../../data/homePageData';
 import AdmissionButton from "../../AdmissionButton/AdmissionButton";
 import DepartmentSectionHeading from '../../DepartmentSectionHeading/DepartmentSectionHeading';
+import starImage from '../../../assets/images/bgscet-logos/star.png';
 import './HomeAboutUniversity.css';
 
 function HomeAboutUniversity() {
@@ -24,6 +25,7 @@ function HomeAboutUniversity() {
                   </textPath>
                 </text>
               </svg>
+              <img className="home-about-university__badge-star" src={starImage} alt="" aria-hidden="true" />
             </div>
         </div>
 

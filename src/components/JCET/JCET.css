@@ -93,6 +93,10 @@
   gap: 2rem;
 }
 
+.jcet #jcet-article-submission-title::after {
+  display: none;
+}
+
 .jcet__call-for-papers {
   margin-top: 2rem;
 }

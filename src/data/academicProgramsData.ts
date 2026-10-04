@@ -13,7 +13,7 @@ export interface AcademicProgram {
   description: string;
   readMore: string;
   image: string;
-  slug: string;
+  route: string;
 }
 
 export const academicPrograms: AcademicProgram[] = [
@@ -25,7 +25,7 @@ export const academicPrograms: AcademicProgram[] = [
       "It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page",
     readMore: "Read More",
     image: computerScienceEngineering,
-    slug: "computer-science",
+    route: "/ug-programs/cse",
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ export const academicPrograms: AcademicProgram[] = [
       "It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page",
     readMore: "Read More",
     image: InformationScience,
-    slug: "information-science",
+    route: "/ug-programs/ise",
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ export const academicPrograms: AcademicProgram[] = [
       "It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page",
     readMore: "Read More",
     image: artificialIntelligence,
-    slug: "aiml-department",
+    route: "/ug-programs/aiml",
   },
   {
     id: 4,
@@ -55,7 +55,7 @@ export const academicPrograms: AcademicProgram[] = [
       "It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page",
     readMore: "Read More",
     image: csdDepartmentImage,
-    slug: "csd-department",
+    route: "/ug-programs/csd",
   },
   {
     id: 5,
@@ -65,7 +65,7 @@ export const academicPrograms: AcademicProgram[] = [
       "It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page",
     readMore: "Read More",
     image: appliedScienceImage,
-    slug: "applied-science",
+    route: "/ug-programs/mech",
   },
   
 ];

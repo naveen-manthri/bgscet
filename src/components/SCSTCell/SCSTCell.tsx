@@ -8,7 +8,7 @@ import "./SCSTCell.css";
 function SCSTCell() {
   return (
     <>
-      <BannerSection image={banner} title="SC ST Cell" />
+      <BannerSection image={banner} title="" />
       <Advertisement />
 
       <main className="scstcell-page mobile-margin-top mobile-padding">

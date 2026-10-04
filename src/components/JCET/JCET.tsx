@@ -43,17 +43,17 @@ const JCET = () => {
 
         <div className="jcet__article-submission-content">
           <section aria-labelledby="jcet-author-guidelines-title">
-           <DepartmentSectionHeading title="Author guidelines and peer review process" id="jcet-author-guidelines-title" className="department-section-heading--medium" />
+           <DepartmentSectionHeading title="Author guidelines and peer review process" id="jcet-author-guidelines-title" className="department-section-heading--default" />
             <p className="jcet__section-content">{jcetData.articleSubmission.authorGuidelines}</p>
           </section>
 
           <section aria-labelledby="jcet-contents-title">
-            <DepartmentSectionHeading title="Contents"  id="jcet-contents-title" className="department-section-heading--medium"  />
+            <DepartmentSectionHeading title="Contents"  id="jcet-contents-title" className="department-section-heading--default"  />
             <p className="jcet__section-content">{jcetData.articleSubmission.contents}</p>
           </section>
 
           <section aria-labelledby="jcet-subscription-modes-title">
-            <DepartmentSectionHeading title="Subscription modes" id="jcet-subscription-modes-title" className="department-section-heading--medium" />
+            <DepartmentSectionHeading title="Subscription modes" id="jcet-subscription-modes-title" className="department-section-heading--default" />
             <p className="jcet__section-content">{jcetData.articleSubmission.subscriptionModes}</p>
           </section>
         </div>

@@ -44,6 +44,17 @@
   animation: home-about-university-badge-spin 18s linear infinite;
 }
 
+.home-about-university__badge-star {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25%;
+  height: 25%;
+  object-fit: contain;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
 .home-about-university__badge-fill {
   fill: #7b0053;
 }
@@ -101,12 +112,7 @@
 .home-about-university .department-section-heading__title {
   color: #7d2720;
   font-family: "Playfair Display", serif;
-}
-
-@media (min-width: 769px) {
-  .home-about-university .department-section-heading__title {
-    font-weight: 800;
-  }
+  font-weight: 800;
 }
 
 .home-about-university__cta {

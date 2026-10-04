@@ -26,8 +26,17 @@
   margin-top: var(--primary-margin-top);
   margin-bottom: 2rem;
 }
+.iic-container > .department-section-heading .department-section-heading__title::after {
+  display: none;
+}
+.iic-container > .department-section-heading {
+  margin-top: 0;
+}
 .iic-section > .department-section-heading {
   margin-top: var(--primary-margin-top);
+}
+.iic-container > .iic-section:first-of-type > .department-section-heading {
+  margin-top: 0;
 }
  /* .iic-section {
   margin-bottom: var(--section-gap); 

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { navItems } from '../../data/navData';
+import headerLogo from '../../assets/images/bgscet-logos/bgscet_logo-1.png';
 
 function MainNavbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -94,8 +95,11 @@ function MainNavbar() {
     <nav className="main-navbar" aria-label="Primary navigation">
       <div className="main-navbar__inner">
         <Link className="main-navbar__brand" to="/" onClick={closeMenu}>
-          <span>BGSCET</span>
-          <span>Engineering</span>
+          <img className="main-header__logo" src={headerLogo} alt="" aria-hidden="true" />
+          <span className="main-navbar__brand-name">
+            <span>BGSCET</span>
+            <span>Engineering</span>
+          </span>
         </Link>
 
         <button  className="main-navbar__toggle"  type="button"  aria-controls="main-navbar-menu" aria-expanded={isOpen}  aria-label="Toggle navigation" onClick={() => setIsOpen((current) => !current)} >
