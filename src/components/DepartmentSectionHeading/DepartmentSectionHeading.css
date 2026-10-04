@@ -24,7 +24,7 @@
   margin-bottom: 0;
   padding-bottom: 1rem;
 
-  color: var(--clr-title);
+  color: var(--title-color);
 
   font-family: var(--ff-primary);
   font-size: var(--primary-title-size-default);
@@ -42,7 +42,7 @@
 
   height: var(--heading-underline-height);
 
-  background-color: var(--underline-clr);
+  background-color: var(--tile-underline-color);
   border-radius: 999rem;
 }
 @media (max-width: 64rem) {

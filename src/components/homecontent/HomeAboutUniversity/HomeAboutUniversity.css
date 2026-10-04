@@ -110,7 +110,7 @@
 }
 
 .home-about-university .department-section-heading__title {
-  color: #7d2720;
+  color: var(--primary-deep);
   font-family: "Playfair Display", serif;
   font-weight: 800;
 }

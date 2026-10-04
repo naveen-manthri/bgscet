@@ -7,7 +7,7 @@
   --program-content-bg: #f4f4f4;
   --program-duration-bg: #f1f1f1;
   --program-duration-border: #e5e5e5;
-  --academic-readmore: #7d2720;
+  --academic-readmore: var(--primary-deep);
   --academic-white: #ffffff;
 
   --academic-section-width: 78rem;
@@ -225,7 +225,7 @@
 }
 
 .program-card:hover .program-read-more {
-  color: #7d2720;
+  color: var(--primary-deep);
 }
 .admission-btn-wrapper {
   width: 100%;

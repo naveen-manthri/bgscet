@@ -1,5 +1,5 @@
 .statistics {
-  --clr-gradient-start: #7d2720;
+  --clr-gradient-start: var(--primary-deep);
   --clr-gradient-end: var(--Red-Orange-color);;
   --clr-white: #ffffff;
   --clr-card-border: #ebebeb;

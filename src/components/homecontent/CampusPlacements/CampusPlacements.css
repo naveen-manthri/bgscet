@@ -3,7 +3,7 @@
   padding:  2.2rem 0;
   overflow: hidden;
   color: var(--white);
-  background: linear-gradient(to bottom, #E3473A, #7D2720);
+  background: linear-gradient(to bottom, #E3473A, var(--primary-deep));
   margin-top: var(--primary-margin-top);
 }
 
