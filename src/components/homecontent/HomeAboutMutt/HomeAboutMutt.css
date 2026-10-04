@@ -21,7 +21,7 @@
 }
 
 .home-section-title {
-  color: var(--color-heading);
+  color: var(--title-color);
   font-size: var(--section-title);
   font-weight: 800;
 }

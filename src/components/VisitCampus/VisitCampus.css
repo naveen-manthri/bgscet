@@ -2,7 +2,7 @@
 
 .visit-campus {
   --clr-primary: var(--Red-Orange-color);;
-  --clr-secondary: #7d2720;
+  --clr-secondary: var(--primary-deep);
   --clr-white: #ffffff;
 
   --gradient-bg: linear-gradient(

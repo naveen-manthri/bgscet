@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
-  --clr-primary: #7d2720;
+  --clr-primary: var(--primary-deep);
   --clr-button: #3359a7;
   --clr-button-hover: #294b93;
   --clr-button-active: #203c75;
