@@ -1,7 +1,7 @@
 import careerImage from "../../assets/images/csedepartment/career-opportunities.jpg";
 
 
-import csdBannerImage from "../../assets/images/academic/academic-01.jpg";
+import csdBannerImage from "../../assets/images/csddepartment/csd-banner.png";
 import trishaS from "../../assets/images/csddepartment/Trisha-s.png";
 import sowjanyaK from "../../assets/images/csddepartment/Sowjanya-K.png";
 import sanjitha from "../../assets/images/csddepartment/sanjitha.jpeg";

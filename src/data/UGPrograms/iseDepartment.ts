@@ -1,7 +1,7 @@
 import careerImage from "../../assets/images/csedepartment/career-opportunities.jpg";
 
 
-import iseBannerImage from "../../assets/images/academic/academic-01.jpg";
+import iseBannerImage from "../../assets/images/isedepartment/ise-banner.png";
 import sushmitaNS from "../../assets/images/isedepartment/SUSHMITA-N-S.png";
 import maheshwariPatil from "../../assets/images/isedepartment/Maheshwari_Patil.jpg";
 import poojithaK from "../../assets/images/isedepartment/Poojitha_K.jpg";

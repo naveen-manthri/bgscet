@@ -9,7 +9,7 @@ function HomeAcademicPrograms() {
       <div className="flex flex-direction-column container academic-programs-container">
         <SectionHeading subtitle="Academics" title="Programs Designed" titleSecondLine="Like Products." underlineFitContent center />
 
-        <div className="flex flex-justify-between programs-grid">
+        <div className="programs-grid flex flex-justify-between ">
           {academicPrograms.map((program) => (
             <article className="flex flex-direction-column program-card" key={program.id}>
               <img src={program.image} alt={program.title} className="program-image" loading="lazy"  />

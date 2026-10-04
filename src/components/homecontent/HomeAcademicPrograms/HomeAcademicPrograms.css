@@ -41,10 +41,11 @@
 }
 
 .home-academic .container {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: none;
   margin-inline: auto;
-  gap: 3.25rem;
 }
 .section-heading-academic {
   display: flex;
@@ -80,13 +81,22 @@
 .programs-grid {
   display: flex;
   width: 100%;
-  gap: 3rem;
+  gap: 1.5rem;
   justify-content: flex-start;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   scroll-behavior: smooth;
   scroll-snap-type: x proximity;
-  scrollbar-width: thin;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  margin-top: var(--primary-margin-top);
+  margin-bottom: 1.5rem;
+}
+
+.programs-grid::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
 }
 .program-card {
   flex: 0 0 calc((100% - 6rem) / 3);
@@ -206,12 +216,8 @@
   object-position: ce;
 }
 
-.home-academic .container {
-  row-gap: 3.25rem;
-}
-
 .section-heading-academic {
-  margin-bottom: 0.25rem;
+  margin-bottom: 1.5rem;
 }
 
 .program-card:hover {
@@ -223,9 +229,7 @@
 }
 .admission-btn-wrapper {
   width: 100%;
-  margin-top: 2rem;
-
-
+  margin-top: 0;
 }
 
 @media (min-width: 48.01rem) {

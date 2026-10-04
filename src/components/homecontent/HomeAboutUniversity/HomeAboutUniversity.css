@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&display=swap");
+
 .home-about-university {
   gap: 2rem;
-  padding:0 clamp(3.25rem, 5vw, 4rem);
+  padding: 0 clamp(3.25rem, 5vw, 4rem) 0;
   padding-inline: 4rem;
   margin-top: var(--primary-margin-top);
   margin-bottom: 0;
@@ -8,9 +10,9 @@
 
 .home-about-university__media {
   gap: 1.5rem;
-  
   margin-top: var(--primary-margin-top);
   position: relative;
+  margin-bottom: 0;
 }
 
 .home-about-university__image--front {
@@ -94,6 +96,11 @@
 .home-about-university__content {
   gap: 0;
   margin-bottom: 0;
+}
+
+.home-about-university .department-section-heading__title {
+  color: #7d2720;
+  font-family: "Playfair Display", serif;
 }
 
 .home-about-university__cta {

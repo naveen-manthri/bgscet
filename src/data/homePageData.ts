@@ -1,9 +1,9 @@
-import aboutMuttImage from '../assets/images/about-mutt.jpg';
-import aboutCampusImage from '../assets/images/about-university-campus.jpg';
-import aboutCeremonyImage from '../assets/images/about-university-ceremony.jpg';
+import aboutMuttImage from '../assets/images/home/about-mutt.jpg';
+import aboutCampusImage from '../assets/images/home/about-university-campus.jpg';
+import aboutCeremonyImage from '../assets/images/home/about-university-ceremony.jpg';
 import heroImage from '../assets/images/carousel/Group 4.jpg';
-import logoImage from '../assets/images/bgscet_logo-1.png';
-import visionMissionImage from '../assets/images/vision-mission.jpg';
+import logoImage from '../assets/images/bgscet-logos/bgscet_logo-1.png';
+import visionMissionImage from '../assets/images/home/vision-mission.jpg';
 
 export type HomeHeroSlide = {
   id: number;
@@ -30,7 +30,7 @@ export const homeHeroSlides: HomeHeroSlide[] = [
 ];
 
 export const homeAboutUniversity = {
-  title: 'About University',
+  title: 'Programs Offered',
   imageOne: aboutCeremonyImage,
   imageTwo: aboutCampusImage,
   badgeImage: logoImage,

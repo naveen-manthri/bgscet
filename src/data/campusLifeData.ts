@@ -1,7 +1,7 @@
 // src/data/campusLifeData.ts
 
 import campusLifeOne from "../assets/images/campus-life/campus-life-01.jpg";
-import campusLifeTwo from "../assets/images/campus-life/campus-life-02.jpg";
+import campusLifeTwo from "../assets/images/campus-life/campus-life-02.png";
 import campusLifeThree from "../assets/images/campus-life/campus-life-03.jpg";
 import campusLifeFour from "../assets/images/campus-life/campus-life-04.jpg";
 

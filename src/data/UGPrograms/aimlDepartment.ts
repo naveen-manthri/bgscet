@@ -1,5 +1,5 @@
 import careerImage from "../../assets/images/csedepartment/career-opportunities.jpg";
-import aimlBannerImage from "../../assets/images/academic/artificial-intelligence.jpg";
+import aimlBannerImage from "../../assets/images/aimldepartment/aiml-banner.png";
 import laxmi from "../../assets/images/aimldepartment/Laxmi.jpg";
 import nishitaNMurthy from "../../assets/images/aimldepartment/Nishita N Murthy.png";
 import pratyakshaS from "../../assets/images/aimldepartment/Pratyaksha S.jpeg";

@@ -1,6 +1,6 @@
 import careerImage from "../../assets/images/csedepartment/career-opportunities.jpg";
 
-import aidsBannerImage from "../../assets/images/academic/artificial-intelligence.jpg";
+import aidsBannerImage from "../../assets/images/aidsdepartment/aids-banner.png";
 import ashwiniR from "../../assets/images/aidsdepartment/ASHWINI-R.jpeg";
 import drChandiniAG from "../../assets/images/aidsdepartment/Dr. Chandini-A-G.jpeg";
 import manjunathaEC from "../../assets/images/aidsdepartment/MANJUNATHA-E-C.jpeg";

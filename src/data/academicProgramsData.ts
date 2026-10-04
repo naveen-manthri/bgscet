@@ -1,8 +1,10 @@
 // src/data/academicProgramsData.ts
 
-import artificialIntelligence from "../assets/images/academic/artificial-intelligence.jpg";
+import artificialIntelligence from "../assets/images/academic/artificial-intelligence.png";
 import InformationScience from "../assets/images/academic/informationScience.png";
 import computerScienceEngineering from "../assets/images/academic/computerScience.png";
+import csdDepartmentImage from "../assets/images/academic/CSDdepartment.png";
+import appliedScienceImage from "../assets/images/academic/appliedScience.png";
 
 export interface AcademicProgram {
   id: number;
@@ -45,4 +47,25 @@ export const academicPrograms: AcademicProgram[] = [
     image: artificialIntelligence,
     slug: "aiml-department",
   },
+  {
+    id: 4,
+    title: "CSD Department",
+    duration: "Duration- 4 Years",
+    description:
+      "It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page",
+    readMore: "Read More",
+    image: csdDepartmentImage,
+    slug: "csd-department",
+  },
+  {
+    id: 5,
+    title: "Applied Science",
+    duration: "Duration- 4 Years",
+    description:
+      "It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page",
+    readMore: "Read More",
+    image: appliedScienceImage,
+    slug: "applied-science",
+  },
+  
 ];

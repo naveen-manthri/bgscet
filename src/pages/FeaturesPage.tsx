@@ -9,7 +9,7 @@ import './FeaturesPage.css';
 function FeaturesPage() {
   return (
     <div className="features-page">
-      <BannerSection image={FeaturesBanner} title="" />
+      <BannerSection image={FeaturesBanner} title="Features" />
       <Advertisement />
       
 
