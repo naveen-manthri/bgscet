@@ -1,12 +1,19 @@
 import DepartmentSectionHeading from '../components/DepartmentSectionHeading/DepartmentSectionHeading';
+import BannerSection from '../components/BannerSection/BannerSection';
+import Advertisement from '../components/Advertisement/Advertisement';
+import PlacementPosterGallery from '../components/reusable/PlacementPosterGallery';
 import StaffDetails from '../components/PlacementMenu/StaffDetails/StaffDetails';
 import VisitCampus from '../components/VisitCampus/VisitCampus';
 import { staffDetailsData } from '../data/placementMenu/staffDetails';
+import toppersBanner from '../assets/images/home/toppers.png';
 import './PlacementMenuPage.css';
 
 function StaffDetailsPage() {
   return (
     <>
+      <BannerSection image={toppersBanner} title="Staff Details" fullImage />
+      <Advertisement />
+      <PlacementPosterGallery />
       <main className="placement-menu-page">
         <StaffDetails data={staffDetailsData} />
       </main>

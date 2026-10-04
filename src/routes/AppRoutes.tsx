@@ -19,7 +19,7 @@ const DigitalClassroomPage = lazy(() => import('../pages/facilities/DigitalClass
 const SeminarHallPage = lazy(() => import('../pages/facilities/SeminarHallPage'));
 const HostelPage = lazy(() => import('../pages/HostelPage'));
 const PhysicalEducationSportsPage = lazy(() => import('../pages/PhysicalEducationSportsPage'));
-const GalleryPage = lazy(() => import('../pages/GalleryPage'));
+const GalleryPage = lazy(() => import('../pages/GalleryPage/GalleryPage'));
 const FeaturesPage = lazy(() => import('../pages/FeaturesPage'));
 const ScopeOfCollegePage = lazy(() => import('../pages/ScopeOfCollegePage'));
 const LinkagesPage = lazy(() => import('../pages/LinkagesPage'));

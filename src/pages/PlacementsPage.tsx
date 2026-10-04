@@ -1,15 +1,16 @@
-import PageBanner from '../components/common/PageBanner';
+import BannerSection from '../components/BannerSection/BannerSection';
 import PlacementMarquee from '../components/reusable/PlacementMarquee';
+import PlacementPosterGallery from '../components/reusable/PlacementPosterGallery';
+import Advertisement from '../components/Advertisement/Advertisement';
+import toppersBanner from '../assets/images/home/toppers.png';
 import './PlacementsPage.css';
 
 function PlacementsPage() {
   return (
     <>
-      <PageBanner
-        title="Placements"
-        subtitle="Transforming Talent into Successful Careers"
-        backgroundImage="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1600&q=80"
-      />
+      <BannerSection image={toppersBanner} title="Placements" fullImage />
+      <Advertisement />
+      <PlacementPosterGallery />
 
       <PlacementMarquee />
 

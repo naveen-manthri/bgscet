@@ -93,6 +93,7 @@ export const navItems: NavItem[] = [
       { label: 'VTU Approval Letters', path: '/quick-links/vtu-approval-letters' },
       { label: 'Committees', path: '/quick-links/committees' },
       { label: 'Careers', path: '/careers' },
+      {label: 'Gallery', path: '/gallery'},
       {
         label: 'BGSCET Clubs',
         path: '/quick-links/bgscet-clubs',

@@ -1,5 +1,6 @@
 import BannerSection from '../components/BannerSection/BannerSection';
 import homeBanner from '../assets/images/home/home-page-banner.png';
+import toppersBanner from '../assets/images/home/toppers.png';
 import Advertisement from '../components/Advertisement/Advertisement';
 import HomeAboutUniversity from '../components/homecontent/HomeAboutUniversity/HomeAboutUniversity';
 import HomeAboutMutt from '../components/homecontent/HomeAboutMutt/HomeAboutMutt';
@@ -14,7 +15,15 @@ import Statistics from '../components/Statistics/Statistics';
 function HomePage() {
   return (
     <div>
-    <BannerSection image={homeBanner} title="" homeHero />
+    <BannerSection
+      image={homeBanner}
+      title=""
+      homeHero
+      homeHeroSlides={[
+        { image: homeBanner, alt: 'Building Engineers. Shaping the Future.' },
+        { image: toppersBanner, alt: 'Congratulations to the toppers' },
+      ]}
+    />
         <Advertisement />
 
         <HomeAboutUniversity />
