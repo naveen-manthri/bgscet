@@ -19,11 +19,14 @@ function HomePastEvents() {
                 index === 0 ? 'past-event-large' : 'past-event-small'
               }`}
             >
+              <div className="image-hover-container">
               <img
                 src={event.image}
                 alt={event.alt}
+                className="image-hover-scale"
                 loading="lazy"
               />
+              </div>
             </article>
           ))}
 

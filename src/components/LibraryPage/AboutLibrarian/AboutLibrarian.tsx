@@ -31,7 +31,7 @@ const AboutLibrarian = () => {
 
           {data.staff.map((staff) => (
             <article key={staff.id} className="about-librarian__card flex flex-direction-column">
-              <img  src={staff.image} alt={staff.name} className="about-librarian__image"/>
+              <div className="image-hover-container"><img  src={staff.image} alt={staff.name} className="about-librarian__image image-hover-scale"/></div>
 
               <div className="about-librarian__card-content">
                 <h3 className="about-librarian__name">

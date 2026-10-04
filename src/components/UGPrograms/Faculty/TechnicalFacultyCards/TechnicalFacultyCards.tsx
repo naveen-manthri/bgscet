@@ -13,7 +13,7 @@ const TechnicalFacultyCards = ({ data, title }: TechnicalFacultyCardsProps) => (
     <div className="department-faculty__grid">
       {data.map((faculty) => (
         <article key={faculty.id} className="department-faculty__card">
-          <img src={faculty.image} alt={faculty.name} className="department-faculty__image" />
+          <div className="image-hover-container"><img src={faculty.image} alt={faculty.name} className="department-faculty__image image-hover-scale" /></div>
           <div className="department-faculty__info">
             <h3 className="department-faculty__name">{faculty.name}</h3>
             <p className="department-faculty__designation">{faculty.designation}</p>

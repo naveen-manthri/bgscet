@@ -69,6 +69,10 @@
   object-fit: cover;
 }
 
+.past-event-card > .image-hover-container {
+  height: 100%;
+}
+
 .past-event-large {
   grid-row: span 2;
 }

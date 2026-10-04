@@ -190,6 +190,21 @@ img {
   max-width: 100%;
 }
 
+.image-hover-scale {
+  transition: transform 500ms ease;
+}
+
+.image-hover-container {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border-radius: inherit;
+}
+
+.image-hover-scale:hover {
+  transform: scale(1.05);
+}
+
 .site-shell {
   width: 100%;
   min-height: 100vh;

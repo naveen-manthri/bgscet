@@ -50,6 +50,10 @@
   object-fit: cover;
 }
 
+.campus-life-card > .image-hover-container {
+  height: 100%;
+}
+
 .campus-life-card-1 {
   grid-column: 1 / 3;
   grid-row: 1;

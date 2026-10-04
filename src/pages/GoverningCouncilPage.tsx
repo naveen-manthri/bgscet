@@ -13,8 +13,8 @@ function GoverningCouncilPage() {
       <Advertisement />
 
       <section className="governing-council-page" aria-label="Governing council section">
-        <div className="governing-council-page__image-wrap">
-          <img src={GoverningCouncilImage} alt="Governing Council" />
+        <div className="governing-council-page__image-wrap image-hover-container">
+          <img src={GoverningCouncilImage} alt="Governing Council" className="image-hover-scale" />
         </div>
       </section>
         <VisitCampus />

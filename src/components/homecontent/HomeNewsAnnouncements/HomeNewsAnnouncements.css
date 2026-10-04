@@ -64,6 +64,10 @@
   object-fit: cover;
 }
 
+.news-card > .image-hover-container {
+  height: 100%;
+}
+
 .news-card-large {
   grid-column: 2;
   grid-row: span 2;

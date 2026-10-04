@@ -10,7 +10,9 @@ function HomeAboutMutt() {
         </h2>
         <p>{homeAboutMutt.description}</p>
       </div>
-      <img className="home-about-mutt__image" src={homeAboutMutt.image} alt="Sri Adichunchanagiri Mutt event" />
+      <div className="image-hover-container home-about-mutt__image-container">
+        <img className="home-about-mutt__image image-hover-scale" src={homeAboutMutt.image} alt="Sri Adichunchanagiri Mutt event" />
+      </div>
     </section>
   );
 }

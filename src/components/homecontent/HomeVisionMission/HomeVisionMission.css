@@ -31,6 +31,9 @@
   object-fit: cover;
   border-radius: var(--home-mutt-vm-image-border);
 }
+.home-vision-mission__image-container {
+  border-radius: var(--home-mutt-vm-image-border);
+}
 
 @media (min-width: 1024px) {
   .home-vision-mission {

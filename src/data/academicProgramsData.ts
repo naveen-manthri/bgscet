@@ -4,7 +4,6 @@ import artificialIntelligence from "../assets/images/academic/artificial-intelli
 import InformationScience from "../assets/images/academic/informationScience.png";
 import computerScienceEngineering from "../assets/images/academic/computerScience.png";
 import csdDepartmentImage from "../assets/images/academic/CSDdepartment.png";
-import appliedScienceImage from "../assets/images/academic/appliedScience.png";
 
 export interface AcademicProgram {
   id: number;
@@ -57,15 +56,6 @@ export const academicPrograms: AcademicProgram[] = [
     image: csdDepartmentImage,
     route: "/ug-programs/csd",
   },
-  {
-    id: 5,
-    title: "Applied Science",
-    duration: "Duration- 4 Years",
-    description:
-      "It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page",
-    readMore: "Read More",
-    image: appliedScienceImage,
-    route: "/ug-programs/mech",
-  },
+ 
   
 ];

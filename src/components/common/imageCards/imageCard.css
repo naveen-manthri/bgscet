@@ -67,6 +67,10 @@
   cursor: pointer;  
 }
 
+.cse-event-image-wrapper > .image-hover-container {
+  height: 100%;
+}
+
 .cse-event-image {
   width: 100%;
    height: 100%; 

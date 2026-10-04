@@ -25,7 +25,7 @@ function HomeCampusLife() {
 
             return (
               <article key={item.id} className={`campus-life-card campus-life-card-${index + 1}`}>
-                <img src={item.image} alt={item.alt} loading="lazy" />
+                <div className="image-hover-container"><img src={item.image} alt={item.alt} className="image-hover-scale" loading="lazy" /></div>
               </article>
             );
           })}

@@ -44,7 +44,7 @@ function GalleryGrid({ preview = false }: GalleryGridProps) {
           {filteredItems.map((item) => (
             <div className="col-6 col-md-4 col-lg-3" key={item.id}>
               <div className="gallery-card">
-                <img src={item.image} alt={item.title} className="img-fluid" loading="lazy" />
+                <div className="image-hover-container"><img src={item.image} alt={item.title} className="img-fluid image-hover-scale" loading="lazy" /></div>
                 <div className="gallery-overlay">
                   <h6 className="mb-1">{item.title}</h6>
                   <span>{item.category}</span>

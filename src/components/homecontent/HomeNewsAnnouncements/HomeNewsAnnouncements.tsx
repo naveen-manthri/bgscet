@@ -14,7 +14,7 @@ function HomeNewsAnnouncements() {
 
           {newsAnnouncements.map((news, index) => (
             <article  key={news.id}  className={`news-card ${  index === newsAnnouncements.length - 1  ? 'news-card-large' : 'news-card-small' }`} >
-              <img src={news.image} alt={news.alt} loading="lazy" />
+              <div className="image-hover-container"><img src={news.image} alt={news.alt} className="image-hover-scale" loading="lazy" /></div>
             </article>
           ))}
 

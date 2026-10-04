@@ -32,7 +32,7 @@ const ImageCard = ({ title, data }: ImageCardProps) => {
         {data.map((event, i) => (
           <div className="cse-event-card flex flex-column" key={event.id}>
             <button type="button" className="cse-event-image-wrapper flex flex-center" onClick={() => setIndex(i)} aria-label={`Open image: ${event.title}`}>
-              <img src={event.image} alt={event.alt} className="cse-event-image" />
+              <span className="image-hover-container"><img src={event.image} alt={event.alt} className="cse-event-image image-hover-scale" /></span>
             </button>
 
             <div className="cse-event-content flex flex-column flex-align-center flex-justify-between flex-one">
