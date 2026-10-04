@@ -103,6 +103,12 @@
   font-family: "Playfair Display", serif;
 }
 
+@media (min-width: 769px) {
+  .home-about-university .department-section-heading__title {
+    font-weight: 800;
+  }
+}
+
 .home-about-university__cta {
   display: inline-flex;
 }
