@@ -113,7 +113,18 @@ function MainNavbar() {
             const hasChildren = Boolean(item.children?.length);
 
             return (
-              <li  className={`main-navbar__item${leftDropdownItems.has(item.label) ? ' main-navbar__item--left-dropdown' : ''}`} data-nav-label={item.label}   key={item.label}  onMouseEnter={() => setOpenDropdown(item.label)} onMouseLeave={() => setOpenDropdown(null)} >
+              <li className={`main-navbar__item${leftDropdownItems.has(item.label) ? ' main-navbar__item--left-dropdown' : ''}`} data-nav-label={item.label} key={item.label}
+                onMouseEnter={() => {
+                  if (!window.matchMedia('(max-width: 58em)').matches) {
+                    setOpenDropdown(item.label);
+                  }
+                }}
+                onMouseLeave={() => {
+                  if (!window.matchMedia('(max-width: 58em)').matches) {
+                    setOpenDropdown(null);
+                  }
+                }}
+              >
                 {/* <div className="main-navbar__link-row">
                   <NavLink
                     className={({ isActive }) => `main-navbar__link${isActive ? ' is-active' : ''}`}
@@ -167,10 +178,16 @@ function MainNavbar() {
 
                       return (
                         <li className={`main-navbar__dropdown-item${hasSubmenu ? ' main-navbar__dropdown-item--has-submenu' : ''}`}
-                          key={child.label} onMouseEnter={() => {
-                            if (hasSubmenu) {  setOpenSubmenu(child.label);
+                          key={child.label}
+                          onMouseEnter={() => {
+                            if (hasSubmenu && !window.matchMedia('(max-width: 58em)').matches) {
+                              setOpenSubmenu(child.label);
                               setOpenNestedSubmenu(null);
-                              updateNestedDropdownDirection(child.path);  } }}  onMouseLeave={() => { if (hasSubmenu) {
+                              updateNestedDropdownDirection(child.path);
+                            }
+                          }}
+                          onMouseLeave={() => {
+                            if (hasSubmenu && !window.matchMedia('(max-width: 58em)').matches) {
                               setOpenSubmenu(null);
                               setOpenNestedSubmenu(null);
                             }
@@ -207,10 +224,19 @@ function MainNavbar() {
 
                                 if (hasNestedSubmenu) {
                                   return (
-                                    <li  className="main-navbar__dropdown-item main-navbar__dropdown-item--has-submenu"   key={subChild.label} onMouseEnter={() => {
-                                        setOpenNestedSubmenu(subChild.label);
-                                        updateNestedDropdownDirection(subChild.path);
-                                      }} onMouseLeave={() => setOpenNestedSubmenu(null)} >
+                                    <li className="main-navbar__dropdown-item main-navbar__dropdown-item--has-submenu" key={subChild.label}
+                                      onMouseEnter={() => {
+                                        if (!window.matchMedia('(max-width: 58em)').matches) {
+                                          setOpenNestedSubmenu(subChild.label);
+                                          updateNestedDropdownDirection(subChild.path);
+                                        }
+                                      }}
+                                      onMouseLeave={() => {
+                                        if (!window.matchMedia('(max-width: 58em)').matches) {
+                                          setOpenNestedSubmenu(null);
+                                        }
+                                      }}
+                                    >
                                       <span  className="main-navbar__dropdown-link main-navbar__dropdown-link--parent"
                                         role="button"  tabIndex={0}  aria-haspopup="true"  aria-expanded={openNestedSubmenu === subChild.label} onClick={() => setOpenNestedSubmenu((current) => (current === subChild.label ? null : subChild.label))} onKeyDown={(event) => {
                                           if (event.key === 'Enter' || event.key === ' ') {

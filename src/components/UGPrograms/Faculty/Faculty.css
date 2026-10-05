@@ -53,6 +53,18 @@
 .TechnicalFaculty{
   margin-top: var(--primary-margin-top);
 } 
+
+@media (min-width: 48.001rem) {
+  .department-faculty__card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .department-faculty__info {
+    flex: 1;
+  }
+}
+
 @media (max-width: 64rem) {
   .department-faculty__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -67,7 +79,10 @@
 }
 
 @media (max-width: 768px) {
- 
+  .department-faculty {
+    padding: var(--mobile-padding);
+    margin-top: var(--mobile-margin-top);
+  }
 
   .department-faculty__grid {
     margin-top: 0;
