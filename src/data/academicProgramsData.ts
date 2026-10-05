@@ -19,7 +19,7 @@ export const academicPrograms: AcademicProgram[] = [
   {
     id: 1,
     title: "Computer Science",
-    duration: "Duration- 4 Years",
+    duration: "Duration - 4 Years",
     description:
       "It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page",
     readMore: "Read More",
@@ -29,7 +29,7 @@ export const academicPrograms: AcademicProgram[] = [
   {
     id: 2,
     title: "Information Science",
-    duration: "Duration- 4 Years",
+    duration: "Duration - 4 Years",
     description:
       "It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page",
     readMore: "Read More",
@@ -39,7 +39,7 @@ export const academicPrograms: AcademicProgram[] = [
   {
     id: 3,
     title: "AIML Department",
-    duration: "Duration- 4 Years",
+    duration: "Duration - 4 Years",
     description:
       "It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page",
     readMore: "Read More",
@@ -49,7 +49,7 @@ export const academicPrograms: AcademicProgram[] = [
   {
     id: 4,
     title: "CSD Department",
-    duration: "Duration- 4 Years",
+    duration: "Duration - 4 Years",
     description:
       "It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page",
     readMore: "Read More",

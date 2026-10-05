@@ -204,7 +204,7 @@
 .physical-education__sports-image--12 { grid-column: 1 / -1; }
 
 @media (max-width: 48rem) {
-  .physical-education__message-grid { grid-template-columns: minmax(6.5rem, 38%) minmax(0, 1fr); gap: 1rem; margin-top: 2rem; }
+  .physical-education__message-grid { grid-template-columns: minmax(6.5rem, 38%) minmax(0, 1fr); gap: 1rem; margin-top: 0rem; }
   .physical-education__people { gap: 0.8rem; }
   .physical-education__people figcaption { margin-top: var(--list-item-gap); padding: 0.45rem 0.25rem; }
   .physical-education__people strong { font-size: clamp(0.7rem, 3vw, 1rem); }
@@ -257,15 +257,24 @@
     font-size: var(--mobile-font-size);
     line-height: var(--mobile-line-height);
   }
+  .physical-education__annual, .physical-education__achievement, .physical-education__recognitions{
+    margin-top: var(--mobile-margin-top);
+    padding: 0;
+  }
+      .physical-education__sports-gallery{
+        margin-top: 1.05rem;
+      }
 
   .physical-education__message-content p {
     text-align: left;
   }
 
   .physical-education__message-content .physical-education__tug-of-war {
+    display: block;
     width: 100%;
     height: auto;
-    max-height: 18rem;
+    max-height: none;
+    object-fit: contain;
   }
 
   .physical-education__achievement > img {

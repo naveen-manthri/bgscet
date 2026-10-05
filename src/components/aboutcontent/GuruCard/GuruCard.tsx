@@ -29,7 +29,9 @@ const GuruCard: FC<GuruCardProps> = ({
         </div>
 
         <figure className="flex flex-direction-column guru-card__figure">
-          <img className="guru-card__image display-block" src={guru.image} alt={guru.alt} loading="lazy" />
+          <div className="guru-card__image-container image-hover-container">
+            <img className="guru-card__image display-block image-hover-scale" src={guru.image} alt={guru.alt} loading="lazy" />
+          </div>
 
           <figcaption className="guru-card__caption">
             {guru.name}

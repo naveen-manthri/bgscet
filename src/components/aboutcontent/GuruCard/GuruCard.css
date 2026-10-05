@@ -41,6 +41,11 @@
   gap: 1rem;
 }
 
+.guru-card__image-container {
+  width: 100%;
+  border-radius: var(--guru-image-radius);
+}
+
 .guru-card__image {
   width: 100%;
   max-width: 22rem;

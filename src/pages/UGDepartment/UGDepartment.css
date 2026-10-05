@@ -30,11 +30,6 @@
   margin-top: 2rem;
 }
 
-.ug-department__single-page > .statistics {
-    width: 100vw;
-  margin-inline: calc(50% - 50vw);
-}
-
 @media (max-width: 48rem) {
   .ug-department {
     padding: 0rem 0 0;

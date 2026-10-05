@@ -25,6 +25,7 @@
 
 @media (max-width: 768px) {
   .department-lab-section {
+    margin: 0;
     
     padding: 0;
   }

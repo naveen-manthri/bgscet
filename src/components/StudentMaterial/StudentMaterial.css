@@ -36,9 +36,9 @@
   
 
   .student-material__button {
-    width: min(100%, 20rem);
+    width: min(100%, 18rem);
     min-height: 3rem;
-    padding: 0.7rem 1rem;
+    /* padding: 0.7rem 1rem; */
     font-size: var(--mobile-font-size);
     line-height: 1.4;
     text-align: center;

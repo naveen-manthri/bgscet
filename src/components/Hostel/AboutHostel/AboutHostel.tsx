@@ -22,7 +22,8 @@ const AboutHostel = ({ data }: AboutHostelProps) => {
 
       <div className="about-hostel__content">
         <div className="about-hostel__carousel">
-          <img  src={data.images[activeIndex].src}  alt={data.images[activeIndex].alt}  className="about-hostel__image"  />
+          <div className="image-hover-container"></div>
+          <img  src={data.images[activeIndex].src}  alt={data.images[activeIndex].alt}  className="about-hostel__image image-hover-scale"  />
 
           
 

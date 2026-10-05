@@ -12,27 +12,26 @@ const Principal = () => {
 
       <div className="principal__top">
         <div className="principal__content">
-          <h3 className="principal__name">{name}</h3>
+          <figure className="principal__image-container image-hover-container">
+            <img className="principal__image image-hover-scale" src={image} alt={imageAlt} />
+            <figcaption className="guru-card__caption">{name}</figcaption>
+          </figure>
           <div className="principal__description">
             {topParagraphs.map((paragraph, index) => (
-              <p className="principal__paragraph" key={index}>
+              <p className="director__paragraph" key={index}>
+                {paragraph}
+              </p>
+            ))}
+          </div>
+
+          <div className="principal__bottom">
+            {remainingParagraphs.map((paragraph, index) => (
+              <p className="director__paragraph" key={index}>
                 {paragraph}
               </p>
             ))}
           </div>
         </div>
-
-        <div className="principal__image-container">
-          <img className="principal__image" src={image} alt={imageAlt} />
-        </div>
-      </div>
-
-      <div className="principal__bottom">
-        {remainingParagraphs.map((paragraph, index) => (
-          <p className="principal__paragraph" key={index}>
-            {paragraph}
-          </p>
-        ))}
       </div>
     </section>
   );

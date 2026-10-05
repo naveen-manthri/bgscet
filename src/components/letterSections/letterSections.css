@@ -52,6 +52,15 @@
   .letter-sections {
     box-sizing: border-box;
     gap: 0;
+    margin-top: 0;
+  }
+
+  :root .letter-sections.mobile-margin-top {
+    margin-top: 0;
+  }
+
+  .letter-section-title {
+    margin-top: var(--mobile-margin-top);
   }
 
   .letter-section__list {
@@ -59,10 +68,6 @@
     margin-top: 0;
     padding-inline-start: 1.5rem;
     list-style-position: outside;
-  }
-
-  .letter-section:last-child .letter-section-title {
-    margin-top: var(--mobile-margin-top);
   }
 
   .letter-section__list li {

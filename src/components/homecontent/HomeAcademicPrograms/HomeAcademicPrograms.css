@@ -5,7 +5,8 @@
   --academic-title-clr: #040404;
   --academic-card-border: #cbcbcb;
   --program-content-bg: #f4f4f4;
-  --program-duration-bg: #f1f1f1;
+  --program-duration-old-bg: #f1f1f1;
+  --program-duration-bg: #C03C31;
   --program-duration-border: #e5e5e5;
   --academic-readmore: var(--primary-deep);
   --academic-white: #ffffff;
@@ -155,7 +156,7 @@
   border: 0.1rem solid var(--program-duration-border);
   border-radius: 0.6rem;
 
-  color: var(--color-obsidian);
+  color: var(--white);
   font-family: "Poppins", sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
@@ -332,6 +333,7 @@
     flex-direction: column;
     gap: var(--mobile-academic-card-gap);
     overflow-x: visible;
+    margin-top:0;
   }
 
   .program-card {
