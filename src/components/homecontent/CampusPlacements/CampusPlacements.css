@@ -210,10 +210,14 @@ max-width: none;
 
   .campus-placements__title {
     max-width: none;
-    font-size: var(--campus-placements-title-size);
+    font-size: var(--mobile--campus-placements-title-size);
     line-height: 1.2;
     white-space: nowrap;
     overflow-wrap: normal;
+  }
+
+  .campus-placements__title::after {
+    margin-top: 0.75rem;
   }
 
   .campus-placements__description {

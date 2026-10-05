@@ -12,7 +12,7 @@ function PlacementMenu({ type }: PlacementMenuPageProps) {
 
   return (
     <>
-      <BannerSection image={toppersBanner} title={title} fullImage />
+      <BannerSection image={toppersBanner} title="" fullImage />
       <Advertisement />
       <main className="placement-menu-page mobile-margin-top mobile-padding">
         <section className="department-cse-events">

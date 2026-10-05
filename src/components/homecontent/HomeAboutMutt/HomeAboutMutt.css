@@ -86,16 +86,24 @@
   }
 
   .home-about-mutt__content {
+    display: contents;
+  }
+
+  .home-about-mutt__content h2 {
     order: 1;
   }
 
   .home-about-mutt__content p {
+    order: 3;
     font-size: var(--mobile-font-size);
     line-height: var(--mobile-line-height);
   }
 
-  .home-about-mutt__image {
+  .home-about-mutt__image-container {
     order: 2;
+  }
+
+  .home-about-mutt__image {
     width: 100%;
     max-width: none;
     border-radius: 1rem;

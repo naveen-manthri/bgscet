@@ -11,7 +11,7 @@
   display: grid;
   grid-template-columns: minmax(13rem, 1fr) minmax(0, 2.25fr);
   gap: clamp(2rem, 5vw, 4rem);
-  padding: clamp(2.75rem, 5vw, 3rem) 0REM clamp(2.75rem, 5vw, 3rem) 4REM;
+  padding: clamp(2.75rem, 5vw, 3rem) 0REM 0 4REM;
 }
 
 .footer__brand {
@@ -85,13 +85,12 @@
 
 .footer__social {
   display: flex;
+  width: calc(100% - 8rem);
+  margin: clamp(2rem, 5vw, 4rem) auto 0;
   justify-content: flex-end;
   align-items: center;
   gap: 0.9rem;
-  grid-column: 2;
-  align-self: end;
-  margin-top: auto;
-  padding-bottom: 0.25rem;
+  padding: 0 0 3.25rem;
   background: transparent;
 }
 
@@ -188,12 +187,11 @@
 
 @media (max-width: 768px) {
   .footer__social {
-    display: flex;
     justify-content: center;
     gap: 1.25rem;
-    grid-column: auto;
     margin-top: 0;
     padding: 1.25rem 1rem;
+    width: 100%;
     background: var(--white);
   }
 
@@ -201,7 +199,7 @@
     width: 100%;
     grid-template-columns: 1fr;
     gap: 2.5rem;
-    padding: 2.5rem 1.4rem;
+    padding: 2.5rem 1.4rem 0;
   }
 
   .footer__logo {
@@ -219,7 +217,8 @@
 
   .footer__nav {
     grid-template-columns: 1fr;
-    gap: 2.25rem;
+    gap: 2rem;
+    padding-bottom: 1.5rem;
   }
 
   .footer__heading {
@@ -243,14 +242,6 @@
     gap: 0.35rem;
     padding: 1rem 1.25rem;
     text-align: center;
-  }
-
-  .footer__social {
-    display: flex;
-    justify-content: center;
-    gap: 1.25rem;
-    padding: 1.25rem 1rem;
-    background: var(--white);
   }
 
   .footer__copyright,

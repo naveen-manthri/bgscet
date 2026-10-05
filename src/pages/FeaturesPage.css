@@ -7,6 +7,10 @@
     margin-top: 0;
   }
 
+  .features-page > .advertisement {
+    margin-top: 0;
+  }
+
   .features-page__gallery {
     width: 100%;
     grid-template-columns: 1fr;

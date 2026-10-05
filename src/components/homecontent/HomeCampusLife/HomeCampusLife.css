@@ -141,7 +141,10 @@
 }
 
 @media (max-width: 768px) {
-  
+  .campus-life-button-wrapper {
+    margin-top: var(--mobile-margin-top);
+    margin-bottom: var(--mobile-margin-top);
+  }
 
   .home-campus-life .section-title,
   .home-campus-life .section-title-wrapper {

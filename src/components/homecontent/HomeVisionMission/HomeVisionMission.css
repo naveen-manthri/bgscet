@@ -77,17 +77,25 @@
   }
 
   .home-vision-mission__content {
-    order: 1;
+    display: contents;
     gap: 1rem;
   }
 
+  .home-vision-mission__content h2 {
+    order: 1;
+  }
+
   .home-vision-mission__content p {
+    order: 3;
     font-size: var(--mobile-font-size);
     line-height: var(--mobile-line-height);
   }
 
-  .home-vision-mission__image {
+  .home-vision-mission__image-container {
     order: 2;
+  }
+
+  .home-vision-mission__image {
     width: 100%;
     max-width: none;
   }

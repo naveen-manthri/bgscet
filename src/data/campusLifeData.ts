@@ -34,4 +34,4 @@ export const campusLife: CampusLife[] = [
   },
 ];
 
-export const campusLifeGalleryLink = "#";
+export const campusLifeGalleryLink = "/gallery";

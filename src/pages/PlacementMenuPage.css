@@ -26,6 +26,11 @@
   text-decoration: underline;
 }
 @media (max-width: 48rem) {
+  .placement-menu-page .staff-details {
+    margin-top: 0;
+    padding: 0;
+  }
+
   .placement-menu-page__contact {
     margin-top: var(--mobile-margin-top);
     padding: var(--mobile-padding);

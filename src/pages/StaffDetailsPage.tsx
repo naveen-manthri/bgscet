@@ -11,7 +11,7 @@ import './PlacementMenuPage.css';
 function StaffDetailsPage() {
   return (
     <>
-      <BannerSection image={toppersBanner} title="Staff Details" fullImage />
+      <BannerSection image={toppersBanner} title="" fullImage />
       <Advertisement />
       <PlacementPosterGallery />
       <main className="placement-menu-page">

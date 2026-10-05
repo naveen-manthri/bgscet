@@ -92,6 +92,7 @@
 
   .linkages__institution-table {
     width: calc(100% + 2.5rem);
+    max-width: none;
     margin-right: -1.25rem;
     margin-left: -1.25rem;
     margin-bottom: 0;
