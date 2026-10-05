@@ -26,8 +26,8 @@ export const navItems: NavItem[] = [
       },
       { label: 'Governing Council', path: '/governing-council' },
 
-      { label: 'Director', path: '/about' },
-      { label: 'Principal', path: '/about' },
+      { label: 'Director', path: '/director' },
+      { label: 'Principal', path: '/principal' },
     ],
   },
   {

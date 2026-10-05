@@ -63,10 +63,6 @@
   background: var(--btn-secondary-hover);
 }
 
-.admission-button:active {
-  transform: scale(0.98);
-}
-
 .admission-button:focus-visible {
   outline: 0.125rem solid var(--btn-text);
   outline-offset: 0.2rem;

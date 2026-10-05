@@ -2,7 +2,7 @@
   --clr-primary: var(--Red-Orange-color);;
   --clr-title: var(--color-obsidian);
   --underline-clr: var(--color-obsidian);
-  --heading-margin-bottom:1rem;
+  --heading-margin-bottom: clamp(0.45rem, 1.2vw, 1rem);
 
   --ff-primary: "Poppins", sans-serif;
 
@@ -22,7 +22,7 @@
   display: inline-block;
 
   margin-bottom: 0;
-  padding-bottom: 1rem;
+  padding-bottom: clamp(0.45rem, 1.2vw, 1rem);
 
   color: var(--title-color);
 
@@ -46,10 +46,6 @@
   border-radius: 999rem;
 }
 @media (max-width: 64rem) {
-  .department-section-heading {
-    margin-bottom: 1rem;
-  }
-
   .department-section-heading__title {
     font-size: var(--primary-title-size-default);
   }
@@ -60,10 +56,6 @@
 } 
 
 @media (max-width: 48rem) {
-  .department-section-heading {
-    margin-bottom: 1rem;
-  }
-
   .department-section-heading__title {
     font-size: var(--primary-title-size-default);
   }
@@ -73,10 +65,6 @@
     line-height: var(--mobile-line-height);
   }
 
-  .department-section-heading__underline {
-    width: 4rem;
-    margin-top: var(--list-item-gap);
-  }
 }
 
 .department-section-heading--small .department-section-heading__title {
@@ -110,11 +98,15 @@
 }
 
 @media (max-width: 768px) {
+  .department-section-heading {
+    margin-bottom: clamp(0.4rem, 1.4vw, 0.65rem);
+  }
+
   .department-section-heading__title {
     max-width: 100%;
     overflow-wrap: anywhere;
+    padding-bottom: clamp(0.35rem, 1vw, 0.55rem);
   }
-  .department-section-heading__title { padding-bottom: 0.75rem; }
 
   .department-section-heading--small .department-section-heading__title {
     font-size: 1.05rem;

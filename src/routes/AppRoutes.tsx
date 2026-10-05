@@ -24,6 +24,8 @@ const FeaturesPage = lazy(() => import('../pages/FeaturesPage'));
 const ScopeOfCollegePage = lazy(() => import('../pages/ScopeOfCollegePage'));
 const LinkagesPage = lazy(() => import('../pages/LinkagesPage'));
 const GoverningCouncilPage = lazy(() => import('../pages/GoverningCouncilPage'));
+const DirectorPage = lazy(() => import('../pages/DirectorPage'));
+const PrincipalPage = lazy(() => import('../pages/principalPage'));
 const ContactPage = lazy(() => import('../pages/ContactPage'));
 const AicteApprovalLettersPage = lazy(() => import('../pages/AicteApprovalLettersPage'));
 const VtuApprovalLettersPage = lazy(() => import('../pages/VtuApprovalLettersPage'));
@@ -75,6 +77,8 @@ function AppRoutes() {
           <Route path="scope-of-the-college" element={<ScopeOfCollegePage />} />
           <Route path="linkages" element={<LinkagesPage />} />
           <Route path="governing-council" element={<GoverningCouncilPage />} />
+          <Route path="director" element={<DirectorPage />} />
+          <Route path="principal" element={<PrincipalPage />} />
           <Route path="gallery" element={<GalleryPage />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="quick-links/aicte-approval-letters" element={<AicteApprovalLettersPage />} />

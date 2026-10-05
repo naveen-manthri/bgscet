@@ -218,33 +218,6 @@ img {
   img:hover {
     transform: scale(1.03);
   }
-
-  a:hover,
-  button:hover {
-    animation: subtle-cta-zoom 700ms ease-in-out;
-  }
-
-  .main-navbar a:hover,
-  .main-navbar button:hover {
-    animation: none;
-    scale: 1;
-  }
-
-  .department-tabs__button:hover {
-    animation: none;
-    scale: 1;
-  }
-}
-
-@keyframes subtle-cta-zoom {
-  0%,
-  100% {
-    scale: 1;
-  }
-
-  50% {
-    scale: 1.035;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -387,7 +360,30 @@ img {
   height: clamp(8.8rem, 12vw, 15rem);
   margin-left: clamp(0.25rem, 1vw, 0.75rem);
   margin-right: clamp(0.25rem, 1vw, 0.75rem);
+}
+
+.main-header__logo,
+.main-header__emblem {
+  transition: none !important;
+  animation: none !important;
+}
+
+.main-header__logo:hover,
+.main-header__emblem:hover {
+  transform: none !important;
+  scale: none !important;
+  animation: none !important;
+  transition: none !important;
   object-fit: contain;
+}
+
+@media (hover: hover) {
+  .main-header img.main-header__emblem:hover {
+    transform: none !important;
+    scale: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
 }
 .main-header__copy {
   text-align: center;
