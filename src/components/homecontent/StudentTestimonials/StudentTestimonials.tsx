@@ -42,7 +42,7 @@ function StudentTestimonials() {
     <section className="student-testimonials mobile-margin-top"  aria-labelledby="student-testimonials-title" >
       <div className="student-testimonials__inner  mobile-padding">
 
-        <SectionHeading subtitle="Student Voices" title="Four Years" titleSecondLine="That Changed Everything." underlineFitContent center />
+        <SectionHeading subtitle="Student Voices" title="Four Years that" titleSecondLine="Changed Everything." underlineFitContent center />
 
         <div className={`flex student-testimonials__scroller${  isDragging ? ' is-dragging' : ''  }`} ref={scrollerRef}  role="list" tabIndex={0} aria-label="Student testimonials" onPointerDown={handlePointerDown} onPointerMove={handlePointerMove} onPointerUp={handlePointerEnd} onPointerCancel={handlePointerEnd} onPointerLeave={() => setIsDragging(false)} >
           {testimonials.map((testimonial) => (

@@ -49,6 +49,7 @@
   --home-container-width: min(88%, 68rem);
   --section-padding: clamp(2.2rem, 5vw, 2.5rem);
   --section-title: clamp(1.8rem, 4vw, 2.5rem);
+  --gallery-title-size: 2.5rem;
   --heading-size: 3.75rem;
   --heading-size-mobile: clamp(1.55rem, 8vw, 1.9rem);
   --card-title: clamp(0.95rem, 1.6vw, 1.25rem);
@@ -150,6 +151,10 @@
 }
 
 @media (max-width: 768px) {
+  :root {
+    --gallery-title-size: 1.8rem;
+  }
+
   :root .mobile-margin-top {
     margin-top: var(--mobile-margin-top);
   }
@@ -192,10 +197,11 @@ button {
 img {
   display: block;
   max-width: 100%;
+  transition: transform 600ms ease;
 }
 
 .image-hover-scale {
-  transition: transform 500ms ease;
+  transition: transform 600ms ease;
 }
 
 .image-hover-container {
@@ -205,8 +211,35 @@ img {
   border-radius: inherit;
 }
 
-.image-hover-scale:hover {
-  transform: scale(1.05);
+@media (hover: hover) {
+  img:hover {
+    transform: scale(1.03);
+  }
+
+  a:hover,
+  button:hover {
+    animation: subtle-cta-zoom 700ms ease-in-out;
+  }
+}
+
+@keyframes subtle-cta-zoom {
+  0%,
+  100% {
+    scale: 1;
+  }
+
+  50% {
+    scale: 1.035;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  img,
+  a,
+  button {
+    transition: none;
+    animation: none;
+  }
 }
 
 .site-shell {
@@ -1002,4 +1035,3 @@ grid-template-columns: 1fr;  gap: 1.5rem;
     text-align: center;
   }
 }
-

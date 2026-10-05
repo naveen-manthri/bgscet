@@ -73,6 +73,15 @@
     margin-top: 0;
   }
 
+  .department-faculty__card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .department-faculty__info {
+    flex: 1;
+  }
+
   .department-faculty__image {
     padding-bottom: 1rem;
   }

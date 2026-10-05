@@ -116,7 +116,13 @@
 
   .student-testimonials .section-title {
     max-width: 100%;
+    font-size: 30.4px;
     overflow-wrap: anywhere;
+  }
+
+  .student-testimonials .section-title-second-line {
+    font-size: 30.4px;
+    white-space: nowrap;
   }
 
   .student-testimonials__scroller {

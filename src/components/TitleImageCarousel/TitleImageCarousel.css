@@ -13,7 +13,7 @@
   border-bottom: 1px solid var(--title-image-carousel-accent);
   color: var(--title-image-carousel-accent);
   font-family: var(--font-main, inherit);
-  font-size: clamp(2rem, 5vw, 3.75rem);
+  font-size: var(--gallery-title-size);
   font-weight: 700;
   line-height: 1.15;
   text-align: center;
@@ -95,7 +95,7 @@
   }
 
   .title-image-carousel__controls {
-    margin-top: 1.25rem;
+    margin-top: 1rem;
   }
 }
 

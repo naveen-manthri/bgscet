@@ -60,7 +60,7 @@
   padding: 0 0.5rem 0.65rem;
   border-bottom: 1px solid var(--gallery-accent);
   color: var(--gallery-accent);
-  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-size: var(--gallery-title-size);
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
@@ -142,6 +142,20 @@
 }
 
 @media (max-width: 48rem) {
+  .gallery-page__sections {
+    gap: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+  }
+
+  .gallery-page__section-title,
+  .gallery-page .title-image-carousel__title {
+    margin-bottom: 1rem;
+  }
+
+  .gallery-page__carousel-section--title {
+    margin-top: var(--mobile-margin-top);
+  }
+
   .gallery-page__video-heading {
     min-height: 5rem;
     padding: 1rem;
