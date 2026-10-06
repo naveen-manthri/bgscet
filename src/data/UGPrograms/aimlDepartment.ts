@@ -1,9 +1,9 @@
 import careerImage from "../../assets/images/csedepartment/career-opportunities.jpg";
 import aimlBannerImage from "../../assets/images/aimldepartment/aiml-banner.png";
 import laxmi from "../../assets/images/aimldepartment/Laxmi.jpg";
-import nishitaNMurthy from "../../assets/images/aimldepartment/Nishita N Murthy.png";
+// import nishitaNMurthy from "../../assets/images/aimldepartment/Nishita N Murthy.png";
 import pratyakshaS from "../../assets/images/aimldepartment/Pratyaksha S.jpeg";
-import drMadhuraGangaiah from "../../assets/images/aimldepartment/Dr.-Madhura-Gangaiah.jpg";
+// import drMadhuraGangaiah from "../../assets/images/aimldepartment/Dr.-Madhura-Gangaiah.jpg";
 import drManjulaL from "../../assets/images/aimldepartment/Dr. Manjula L.jpeg";
 import msVandanaSSardar from "../../assets/images/aimldepartment/Ms.-Vandana-S-Sardar.jpg";
 import hod from "../../assets/images/aimldepartment/Dr.JalajaG.jpg";
@@ -173,26 +173,16 @@ export const facultyMembers: FacultyMember[] = [
   name: "Dr. Manjula L",
   designation: "Associate Professor",
 },
+
 {
   id: 4,
-  image: drMadhuraGangaiah,
-  name: "Dr. Madhura Gangaiah",
-  designation: "Professor",
-},
-{
-  id: 5,
   image: pratyakshaS,
   name: "Pratyaksha S",
   designation: "Assistant Professor",
 },
+
 {
-  id: 6,
-  image: nishitaNMurthy,
-  name: "Nishita N Murthy",
-  designation: "Assistant Professor",
-},
-{
-  id: 7,
+  id: 5,
   image: laxmi,
   name: "Laxmi",
   designation: "Assistant Professor",

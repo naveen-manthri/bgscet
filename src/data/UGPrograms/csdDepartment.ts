@@ -3,7 +3,7 @@ import careerImage from "../../assets/images/csedepartment/career-opportunities.
 
 import csdBannerImage from "../../assets/images/csddepartment/csd-banner.png";
 import trishaS from "../../assets/images/csddepartment/Trisha-s.png";
-import sowjanyaK from "../../assets/images/csddepartment/Sowjanya-K.png";
+// import sowjanyaK from "../../assets/images/csddepartment/Sowjanya-K.png";
 import sanjitha from "../../assets/images/csddepartment/sanjitha.jpeg";
 import nagarajKalligud from "../../assets/images/csddepartment/Nagaraj_kalligud.jpg";
 import drChandrakalaHL from "../../assets/images/csddepartment/Dr. Chandrakala-H-L.jpeg";
@@ -164,20 +164,20 @@ export const facultyMembers: FacultyMember[] = [
   name: "Mrs Sanjitha S",
   designation: "Associate Professor",
 },
+// {
+//   id: 5,
+//   image: sowjanyaK,
+//   name: "Sowjanya K",
+//   designation: "Assistant Professor",
+// },
 {
   id: 5,
-  image: sowjanyaK,
-  name: "Sowjanya K",
-  designation: "Assistant Professor",
-},
-{
-  id: 6,
   image: aishwaryaS,
   name: "Aishwarya.S",
   designation: "Assistant Professor",
 },
 {
-  id: 7,
+  id: 6,
   image: trishaS,
   name: "Trisha S",
   designation: "Assistant Professor",

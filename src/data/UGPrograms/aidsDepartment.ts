@@ -7,6 +7,7 @@ import manjunathaEC from "../../assets/images/aidsdepartment/MANJUNATHA-E-C.jpeg
 import sushmaM from "../../assets/images/aidsdepartment/SUSHMA-M.jpeg";
 import sindhuG from "../../assets/images/aidsdepartment/SINDHU-G.jpeg";
 import mrsMamatha from "../../assets/images/aidsdepartment/Mrs-Mamatha.jpeg";
+import padma from "../../assets/images/aidsdepartment/padmaKarekere.jpeg";
 import hod from "../../assets/images/aidsdepartment/Parvathi.jpeg";
 import event1Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-1.jpeg";
 import event2Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-2.jpeg";
@@ -216,6 +217,12 @@ export const facultyMembers: FacultyMember[] = [
   id: 7,
   image: ashwiniR,
   name: "ASHWINI R",
+  designation: "Assistant Professor",
+},
+{
+  id: 8,
+  image: padma,
+  name: "Padma Karekere Ramakrishna",
   designation: "Assistant Professor",
 },
 ];

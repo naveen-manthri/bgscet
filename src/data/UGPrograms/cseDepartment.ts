@@ -3,16 +3,21 @@ import careerImage from "../../assets/images/csedepartment/career-opportunities.
 
 
 import cseBannerImage from "../../assets/images/banner/department-banner-cse.png";
+import DrKiran from "../../assets/images/csedepartment/Dr-Kiran-principal.jpeg";
 import sumanthCGowda from "../../assets/images/csedepartment/sumanth-c-gowda.jpeg";
-import manasaCK from "../../assets/images/csedepartment/Manasa-CK.jpeg";
+// import manasaCK from "../../assets/images/csedepartment/Manasa-CK.jpeg";
 import mrSatishG from "../../assets/images/csedepartment/Mr-Satish-g.jpeg";
 import drVaniV from "../../assets/images/csedepartment/dr-vani-v.jpeg";
 import mrChethanHV from "../../assets/images/csedepartment/Mr.-Chethan-H-V.jpg";
 import mrsVedha from "../../assets/images/csedepartment/Mrs.vedha.jpg";
-import pricipal from "../../assets/images/csedepartment/pricipal.jpg";
-import jayashree from "../../assets/images/csedepartment/jayashree.jpeg";
-import rohiniC from "../../assets/images/csedepartment/rohini-c.jpeg";
+import DRraviKumar from "../../assets/images/csedepartment/pricipal.jpg";
+// import jayashree from "../../assets/images/csedepartment/jayashree.jpeg";
+// import rohiniC from "../../assets/images/csedepartment/rohini-c.jpeg";
 import mrsAshaSN from "../../assets/images/csedepartment/Mrs.-Asha-S-N.jpg";
+import likhithaShree from "../../assets/images/csedepartment/likhithaShree.jpeg";
+import ashwiniS from "../../assets/images/csedepartment/ashwiniS.png";
+import ashwiniThilak from "../../assets/images/csedepartment/ashwiniS-thilak.png";
+import gowriShree from "../../assets/images/csedepartment/gowrishree.png";
 import volleyballTour from "../../assets/images/achievement/cse-achievements/Volleyball-tour-.jpg";
 import jvtmImage from "../../assets/images/achievement/cse-achievements/JVTM-image-.jpeg";
 import rohiniInternship from "../../assets/images/achievement/cse-achievements/Rohini-internship.jpeg";
@@ -44,11 +49,13 @@ import event19Image from "../../assets/images/csedepartment/CSE-EVENTS/CSE-EVENT
 import event20Image from "../../assets/images/csedepartment/CSE-EVENTS/CSE-EVENT-20.jpeg";
 
 import sahana from "../../assets/images/csedepartment/cseTechFaculty/sahana-CSE.jpeg";
-import pooja from "../../assets/images/csedepartment/cseTechFaculty/Pooja-CSE.jpg";
-import soumya from "../../assets/images/csedepartment/cseTechFaculty/soumya-CSE.jpeg";
+// import pooja from "../../assets/images/csedepartment/cseTechFaculty/Pooja-CSE.jpg";
+// import soumya from "../../assets/images/csedepartment/cseTechFaculty/soumya-CSE.jpeg";
 import vinayak from "../../assets/images/csedepartment/cseTechFaculty/Vinayak.jpeg";
 import bhoomika from "../../assets/images/csedepartment/cseTechFaculty/Bhoomika.jpg";
 import supriya from "../../assets/images/csedepartment/cseTechFaculty/SUPRIYA.jpeg";
+import ankitha from "../../assets/images/csedepartment/cseTechFaculty/ankithaMoreB.png";
+import mamatha from "../../assets/images/csedepartment/cseTechFaculty/mamatha.png";
 
 
 
@@ -171,73 +178,97 @@ export const visionMission: DepartmentVisionMission = {
 export const facultyMembers: FacultyMember[] = [
   {
     id: 1,
-    image: pricipal,
+    image: DrKiran,
+    name: "Dr. Kiran P",
+    designation: "Principal and Professor",
+  },
+  {
+    id: 2,
+    image: DRraviKumar,
     name: "Dr. Ravikumar GK",
-    designation: "Principal",
+    designation: "Professor",
   },
 
   {
-    id: 2,
+    id: 3,
     image: hodImage,
     name: "Dr. Manjula G",
     designation: "Professor and HOD",
   },
   {
-    id: 3,
+    id: 4,
     image: mrsVedha,
     name: "Mrs.Vedha.C",
     designation: "Assistant Professor",
   },
 
   {
-    id: 4,
+    id: 5,
     image: mrChethanHV,
     name: "Mr.Chethan H V",
     designation: "Associate Professor",
   },
   {
-    id: 5,
+    id: 6,
     image: drVaniV,
     name: "Dr Vani V",
     designation: "Associate Professor",
   },
 
   {
-    id: 6,
+    id: 7,
     image: mrSatishG,
     name: "Mr. SATHISHA G",
     designation: "Assistant Professor",
   },
   {
-    id: 7,
+    id: 8,
     image: mrsAshaSN,
     name: "Mrs. Asha S N",
     designation: "Assistant Professor",
   },
 
-  {
-    id: 8,
-    image: rohiniC,
-    name: "Rohini C",
-    designation: "Assistant Professor",
-  },
-  {
-    id: 9,
-    image: manasaCK,
-    name: "Manasa C.K",
-    designation: "Assistant Professor",
-  },
+  // {
+  //   id: 8,
+  //   image: rohiniC,
+  //   name: "Rohini C",
+  //   designation: "Assistant Professor",
+  // },
+  // {
+  //   id: 9,
+  //   image: manasaCK,
+  //   name: "Manasa C.K",
+  //   designation: "Assistant Professor",
+  // },
 
   {
-    id: 10,
+    id: 9,
     image: sumanthCGowda,
     name: "Sumanth C Gowda",
     designation: "Assistant Professor",
   },
   {
+    id: 10,
+    image: likhithaShree,
+    name: "Likhithashree M K",
+    designation: "Assistant Professor",
+  },
+  {
     id: 11,
-    image: jayashree,
-    name: "Jayashree",
+    image: ashwiniS,
+    name: "Ashwini S",
+    designation: "Assistant Professor",
+  },
+  {
+    id: 12,
+    image: ashwiniThilak,
+    name: "Ashwini S Thilak",
+    designation: "Assistant Professor",
+  },
+  {
+    id: 13,
+    image: gowriShree,
+    name: "Gowrishree D",
     designation: "Assistant Professor",
   },
 ];
@@ -250,34 +281,46 @@ export const technicalFacultyMembers: FacultyMember[] = [
     name: "Sahana S Gatti",
     designation: "Programmer",
   },
+  // {
+  //   id: 2,
+  //   image: pooja,
+  //   name: "Pooja S N",
+  //   designation: "Lab Instructor",
+  // },
+  // {
+  //   id: 3,
+  //   image: soumya,
+  //   name: "Soumya",
+  //   designation: "Programmer",
+  // },
   {
     id: 2,
-    image: pooja,
-    name: "Pooja S N",
-    designation: "Lab Instructor",
-  },
-  {
-    id: 3,
-    image: soumya,
-    name: "Soumya",
-    designation: "Programmer",
-  },
-  {
-    id: 4,
     image: vinayak,
     name: "Vinayak P H",
     designation: "System Administrator",
   },
   {
-    id: 5,
+    id: 3,
     image: bhoomika,
     name: "Bhoomika",
     designation: "-",
   },
   {
-    id: 6,
+    id: 4,
     image: supriya,
     name: "SUPRIYA M S",
+    designation: "Programmer",
+  },
+  {
+    id: 5,
+    image: ankitha,
+    name: "Ankitha More B",
+    designation: "Programmer",
+  },
+  {
+    id: 6,
+    image: mamatha,
+    name: "L Mamatha",
     designation: "Programmer",
   },
 ];
