@@ -5,7 +5,7 @@
 
 .director__top {
   display: block;
-  margin-top: clamp(1.5rem, 2.5vw, 2rem);
+  margin-top: 0;
 }
 
 .director__content {
@@ -92,12 +92,12 @@
   }
   .director__image-wrapper{margin-top: 0;}
   .guru-card__caption{
-    margin-top:0.7rem;
+    margin-top:0.5rem;
   }
 
   .director__bottom {
     order: 2;
-    margin-top: var(--para-desc-gap);
+    margin-top: 0;
   }
 
   .director__paragraph {

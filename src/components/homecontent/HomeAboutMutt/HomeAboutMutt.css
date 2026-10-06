@@ -142,3 +142,10 @@
     border-radius: 1rem;
   }
 }
+
+@media (min-width: 769px) and (max-device-width: 768px) {
+  .home-about-mutt {
+    padding: clamp(3.25rem, 5vw, 4rem);
+    padding-inline: 4rem;
+  }
+}

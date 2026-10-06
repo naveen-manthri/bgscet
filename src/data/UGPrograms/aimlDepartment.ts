@@ -7,6 +7,10 @@ import pratyakshaS from "../../assets/images/aimldepartment/Pratyaksha S.jpeg";
 import drManjulaL from "../../assets/images/aimldepartment/Dr. Manjula L.jpeg";
 import msVandanaSSardar from "../../assets/images/aimldepartment/Ms.-Vandana-S-Sardar.jpg";
 import hod from "../../assets/images/aimldepartment/Dr.JalajaG.jpg";
+import hemadarshi from "../../assets/images/aimldepartment/hemadarshini.jpeg";
+import lakshmi from "../../assets/images/aimldepartment/lakshmiG.jpeg";
+import narendra from "../../assets/images/aimldepartment/narendraKumar.png";
+import ravikiran from "../../assets/images/aimldepartment/Dr-Ravikiran-H-K.jpeg";
 import event1Image from "../../assets/images/aimldepartment/AIML-EVENTS/AIML-EVENT-1.jpeg";
 import event2Image from "../../assets/images/aimldepartment/AIML-EVENTS/AIML-EVENT-2.jpg";
 import event3Image from "../../assets/images/aimldepartment/AIML-EVENTS/AIML-EVENT-3.jpg";
@@ -186,6 +190,30 @@ export const facultyMembers: FacultyMember[] = [
   image: laxmi,
   name: "Laxmi",
   designation: "Assistant Professor",
+},
+{
+  id : 6,
+  image :hemadarshi ,
+  name : "Hemadarshini M P",
+  designation : "Assistant Professor",
+},
+{
+  id : 7,
+  image :narendra ,
+  name : "Assistant Professor",
+  designation : "Professor",
+},
+{
+  id : 8,
+  image :lakshmi ,
+  name : "Lakshmi. G",
+  designation : "Professor",
+},
+{
+  id : 9,
+  image :ravikiran ,
+  name : "Dr.Ravikiran H K",
+  designation : "Professor",
 },
 ];
 

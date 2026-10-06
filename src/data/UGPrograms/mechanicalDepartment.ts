@@ -53,8 +53,9 @@ const mechanicalDepartment: UGDepartmentData = {
     },
   },
   facultyMembers: [
-    { id: 1, image: channaImage, name: "Dr. Channa Keshava Naik N", designation: "Assistant Professor" },
-    { id: 2, image: tejasImage, name: "Tejas K S", designation: "Assistant Professor" },
+    { id: 1, image: hodImage, name: "Dr. Nithin H S", designation: "Associate Professor & Head" },
+    { id: 2, image: channaImage, name: "Dr. Channa Keshava Naik N", designation: "Assistant Professor" },
+    { id: 3, image: tejasImage, name: "Tejas K S", designation: "Assistant Professor" },
   ],
   technicalFacultyMembers: [],
   achievementData: { title: "Achievements", achievements: [] },

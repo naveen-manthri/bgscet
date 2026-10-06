@@ -3,6 +3,8 @@ import careerImage from "../../assets/images/csedepartment/career-opportunities.
 
 import csdBannerImage from "../../assets/images/csddepartment/csd-banner.png";
 import trishaS from "../../assets/images/csddepartment/Trisha-s.png";
+import sushma from "../../assets/images/csddepartment/sushmaR.png";
+import apoorva from "../../assets/images/csddepartment/apoorva.jpeg";
 // import sowjanyaK from "../../assets/images/csddepartment/Sowjanya-K.png";
 import sanjitha from "../../assets/images/csddepartment/sanjitha.jpeg";
 import nagarajKalligud from "../../assets/images/csddepartment/Nagaraj_kalligud.jpg";
@@ -181,6 +183,18 @@ export const facultyMembers: FacultyMember[] = [
   image: trishaS,
   name: "Trisha S",
   designation: "Assistant Professor",
+},
+{
+  id : 7,
+  image : sushma,
+  name: "Sushma R",
+  designation : "Assistant Professor",
+},
+{
+  id : 8,
+  image : apoorva,
+  name: "Apoorva I S",
+  designation : "Assistant Professor",
 },
 ];
 

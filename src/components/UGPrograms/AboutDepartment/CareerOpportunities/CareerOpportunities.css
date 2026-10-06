@@ -69,9 +69,15 @@
 }
 
 @media (max-width: 48rem) {
+  .career-opportunities__description {
+    margin-bottom: 1rem;
+  }
+
   .career-opportunities__body {
     flex-direction: column;
+    gap: var(--mobile-margin-top)
   }
+  
 
   .career-opportunities__list {
     flex: unset;
@@ -82,4 +88,3 @@
     width: 100%;
   }
 }
-
