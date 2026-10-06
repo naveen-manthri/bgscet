@@ -2,6 +2,11 @@
   --gallery-accent: #cd4326;
 }
 
+.gallery-page .physical-education__annual {
+  padding: var(--primary-padding);
+  margin-top: var(--primary-margin-top);
+}
+
 .gallery-page__video {
   display: block;
   width: 100%;
@@ -159,6 +164,13 @@
 
   .gallery-page__mosaic {
     gap: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-page .physical-education__annual {
+    padding: var(--mobile-padding);
+    margin-top: var(--mobile-margin-top);
   }
 }
 

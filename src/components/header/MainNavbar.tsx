@@ -214,7 +214,7 @@ function MainNavbar() {
                             <ul ref={(element) => {   if (element) {   nestedDropdownRefs.current.set(child.path, element); } else {
                                   nestedDropdownRefs.current.delete(child.path);
                                 }  }}
-                              className={`main-navbar__dropdown main-navbar__dropdown--nested${leftNestedDropdowns.has(child.path) ? ' main-navbar__dropdown--left' : ''}${openSubmenu === child.label ? ' is-open' : ''}`} >
+                              className={`main-navbar__dropdown main-navbar__dropdown--nested${child.label === 'Professional Bodies' ? ' main-navbar__dropdown--professional-bodies' : ''}${leftNestedDropdowns.has(child.path) ? ' main-navbar__dropdown--left' : ''}${openSubmenu === child.label ? ' is-open' : ''}`} >
                               {child.children?.map((subChild) => {
                                 const isPdf = subChild.path.toLowerCase().endsWith('.pdf');
                                 const isImage = /\.(png|jpe?g|webp|svg)$/i.test(subChild.path);

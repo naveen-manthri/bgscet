@@ -167,14 +167,34 @@
   text-align: center;
 }
 
-.physical-education__annual h2 { display: grid; margin: 0; color: #040404; font-size: clamp(2.5rem, 6vw, 5rem); font-weight: 800; line-height: 1; }
-.physical-education__annual em { font-style: italic; }
+.physical-education__annual h2 { display: grid; margin: 0; color: var(--primary-deep); font-size: clamp(2.5rem, 6vw, 5rem); font-weight: 800; line-height: 1; }
+.physical-education__annual h2 span,
+.physical-education__annual h2 em { color: var(--primary-deep); }
+.physical-education__annual em {
+  position: relative;
+  justify-self: center;
+  width: max-content;
+  max-width: 100%;
+  padding-bottom: 1rem;
+  font-style: italic;
+}
+.physical-education__annual em::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--heading-underline-height);
+  background-color: var(--tile-underline-color);
+  border-radius: 999rem;
+  margin-top: 1rem;
+}
 
 .physical-education__sports-gallery {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 0.45rem;
-  margin-top: clamp(2.5rem, 5vw, 4.5rem);
+  margin-top: clamp(1.7rem, 3vw, 3rem);
 }
 
 .physical-education__sports-image {
@@ -309,6 +329,10 @@
 
   .physical-education__annual h2 {
     font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  .physical-education__annual em {
+    padding-bottom: clamp(0.5rem, 2vw, 1rem);
   }
 
   .physical-education__sports-gallery {

@@ -2,7 +2,7 @@
   --admission-primary: var(--Red-Orange-color);;
   --admission-title: var(--color-obsidian);
   --text: #4c4949;
-  --admission-divider: var(--color-obsidian);
+  --admission-divider: var(--tile-underline-color);
   --admission-container-width: 75rem;
   --white-clr:#ffffff;
 
@@ -20,7 +20,7 @@
 }
 
 .admission__title.academic-section-heading h2 {
-  color: var(--admission-title);
+  color: var(--primary-deep);
   font-size: 2.5rem;
   line-height: 1.22;
 }
@@ -33,7 +33,7 @@
 
 .admission__title .academic-section-heading__red {
   margin: 0;
-  color: var(--admission-primary);
+  color: var(--primary-deep);
 }
 
 .admission__title .academic-section-heading__red::after {
@@ -63,7 +63,7 @@
 
 .admission__heading {
   margin: 2rem 0 1rem;
-  color: var(--admission-title);
+  color: var(--primary-deep);
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.4;

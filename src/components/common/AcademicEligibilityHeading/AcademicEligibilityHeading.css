@@ -19,7 +19,7 @@
   }
 }
 .academic-section-heading__black {
-  color: var(--academic-heading-black);
+  color: var(--primary-deep);
 }
 .academic-section-heading__black,
 .academic-section-heading__red {
@@ -30,7 +30,7 @@
   position: relative;
   display: inline-block;
   margin-top: 0.15rem;
-  color: var(--academic-heading-red);
+  color: var(--primary-deep);
 
   &::after {
     content: "";
@@ -39,6 +39,6 @@
     bottom: -0.8rem;
     width: 100%;
     height: 0.18rem;
-    background: var(--academic-heading-underline);
+    background: var(--tile-underline-color);
   }
 }

@@ -1,5 +1,4 @@
 import "./BannerSection.css";
-import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import LatestNews from "../LatestNews/LatestNews";
 
@@ -63,9 +62,9 @@ function BannerSection({
                     </p>
                   </div>
                   <nav className="home-hero__actions" aria-label="Homepage banner actions">
-                    <Link className="home-hero__action home-hero__action--apply" to="/admissions">
+                    <a className="home-hero__action home-hero__action--apply" href="https://docs.google.com/forms/d/13meA-3MxbPAW-cDO2Z4xKnQmR49Q6h4pQwFgd6rgu0E/closedform">
                       Apply Now
-                    </Link>
+                    </a>
                     <button className="home-hero__action home-hero__action--news" type="button" onClick={() => setIsLatestNewsOpen(true)}>
                       Latest News
                     </button>

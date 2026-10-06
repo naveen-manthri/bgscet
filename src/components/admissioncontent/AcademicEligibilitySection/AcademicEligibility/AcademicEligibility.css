@@ -103,6 +103,7 @@
 .academic-eligibility__block a {
   color: var(--text);
   text-decoration: underline;
+  text-decoration-color: var(--tile-underline-color);
   text-underline-offset: var(--list-item-gap);
   
 }
@@ -143,4 +144,3 @@
     margin-top: var(--mobile-margin-top);
   }
 }
-

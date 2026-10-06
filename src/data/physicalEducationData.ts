@@ -34,7 +34,7 @@ export const physicalEducationData: PhysicalEducationData = {
     },
     {
       image: instructor,
-      name: 'Mr. Tharun Kumar Yadav C.',
+      name: 'Mr. Tharun Kumar',
       role: 'PT Instructor',
       alt: 'Mr. Tharun Kumar Yadav C., PT Instructor',
       className: 'physical-education__instructor',

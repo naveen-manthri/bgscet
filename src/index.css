@@ -617,10 +617,8 @@ img {
   transform: translateX(-0.5rem);
 }
 
-.main-navbar__item--left-dropdown .main-navbar__dropdown--nested {
-  right: 100%;
-  left: auto;
-  transform: translateX(-0.5rem);
+.main-navbar__dropdown--professional-bodies {
+  width: 9rem;
 }
 
 .main-navbar__dropdown-item:hover > .main-navbar__dropdown--nested,

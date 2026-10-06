@@ -133,7 +133,7 @@
   }
 
   .guru-card__title {
-    font-size: clamp(1.35rem, 6vw, 1.75rem);
+    font-size: clamp(0.85rem, 2vw, 1.25rem);
     line-height: 1.25;
     letter-spacing: 0;
     overflow-wrap: anywhere;

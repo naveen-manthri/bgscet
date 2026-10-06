@@ -3,7 +3,7 @@
   margin-top: var(--primary-margin-top);
   margin-bottom: 0;
   background: var(--white);
-  color: var(--text);
+  color: var(--primary-deep);
 }
 
 .student-testimonials__inner {
@@ -18,14 +18,11 @@
   color: var(--color-obsidian);
 }
 
-.student-testimonials .section-title,
-.student-testimonials .section-title-second-line {
-  color: #040404;
-}
 
-.student-testimonials .section-heading-line {
+
+/* .student-testimonials .section-heading-line {
   background: var(--color-obsidian);
-}
+} */
 
 .student-testimonials__scroller {
   gap: clamp(1rem, 2.4vw, 1.6rem);

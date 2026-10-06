@@ -102,6 +102,10 @@
   line-height: 1.5;
 }
 
+.about-librarian__qualification {
+  margin-bottom: 0.2rem;
+}
+
 @media (max-width: 64rem) {
   .about-librarian {
     padding: 4rem 0;

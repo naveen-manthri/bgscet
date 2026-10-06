@@ -2,6 +2,7 @@ import BannerSection from "../../components/BannerSection/BannerSection";
 import TitleImageCarousel from "../../components/TitleImageCarousel/TitleImageCarousel";
 import Advertisement from '../../components/Advertisement/Advertisement';
 import VisitCampus from '../../components/VisitCampus/VisitCampus'
+import AnnualSportsDay from '../../components/PhysicalEducationSports/AnnualSportsDay';
 
 import {
   galleryCollegePhotos,
@@ -87,6 +88,8 @@ function GalleryPage() {
           </div>
         </section>
       </div>
+      
+      <AnnualSportsDay />
       <VisitCampus />
     </div>
   );

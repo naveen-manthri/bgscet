@@ -12,6 +12,16 @@ const socialLinks = [
 ];
 
 function Footer() {
+  const renderSocialLinks = (className: string) => (
+    <div className={className} aria-label="Social media links">
+      {socialLinks.map((socialLink) => (
+        <a className={`footer__social-link footer__social-link--${socialLink.name.toLowerCase()}`} href={socialLink.href} key={socialLink.name} target={socialLink.href.startsWith('mailto:') ? undefined : '_blank'} rel={socialLink.href.startsWith('mailto:') ? undefined : 'noopener noreferrer'} aria-label={`Visit our ${socialLink.name} page`}>
+          <socialLink.icon className="footer__social-icon" aria-hidden="true" />
+        </a>
+      ))}
+    </div>
+  );
+
   return (
     <footer className="footer mobile-margin-top ">
       <div className="footer__main">
@@ -21,7 +31,7 @@ function Footer() {
         </section>
 
         <nav className="footer__nav" aria-label="Footer navigation">
-          {footerColumns.map((column) => (
+          {footerColumns.map((column, index) => (
             <section className="footer__column" key={column.id} aria-labelledby={`footer-column-${column.id}`}>
               <h2 className="footer__heading" id={`footer-column-${column.id}`}>
                 {column.title}
@@ -35,18 +45,13 @@ function Footer() {
                   </li>
                 ))}
               </ul>
+              {index === footerColumns.length - 1 && renderSocialLinks("footer__social footer__social--desktop")}
             </section>
           ))}
         </nav>
       </div>
 
-      <div className="footer__social" aria-label="Social media links">
-        {socialLinks.map((socialLink) => (
-          <a className={`footer__social-link footer__social-link--${socialLink.name.toLowerCase()}`} href={socialLink.href} key={socialLink.name} target={socialLink.href.startsWith('mailto:') ? undefined : '_blank'} rel={socialLink.href.startsWith('mailto:') ? undefined : 'noopener noreferrer'} aria-label={`Visit our ${socialLink.name} page`}>
-            <socialLink.icon className="footer__social-icon" aria-hidden="true" />
-          </a>
-        ))}
-      </div>
+      {renderSocialLinks("footer__social footer__social--mobile")}
 
       <div className=" footer__bottom flex flex-align-center flex-justify-between">
         <p className="footer__copyright">© www.bgscet.ac.in All rights reserved</p>
