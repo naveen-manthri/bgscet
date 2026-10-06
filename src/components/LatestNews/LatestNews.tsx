@@ -1,8 +1,22 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import ImageCard from "../common/imageCards/imageCard";
 import { latestNewsSections } from "../../data/latestNewsData";
-import type { LatestNewsProps } from "../../types/latestNews";
+import type { LatestNewsItem, LatestNewsProps } from "../../types/latestNews";
 import "./LatestNews.css";
+
+const latestNewsImageItems = latestNewsSections
+  .flatMap((section) => section.items)
+  .filter((item): item is LatestNewsItem & { href: string; image: true } => (
+    Boolean(item.image && item.href)
+  ));
+
+const latestNewsImages = latestNewsImageItems.map((item, index) => ({
+  id: index,
+  title: item.text,
+  image: item.href,
+  alt: item.text,
+}));
 
 function LatestNews({ isOpen, onClose }: LatestNewsProps) {
   useEffect(() => {
@@ -31,14 +45,25 @@ function LatestNews({ isOpen, onClose }: LatestNewsProps) {
             <section className="latest-news__section" key={section.title}>
               <h3>{section.title}</h3>
               <ul>{section.items.map((item) => (
-                <li key={item.text}>
-                  {item.href && item.internal ? (
-                    <Link to={item.href} onClick={onClose}>{item.text}</Link>
-                  ) : item.href ? (
-                    <a href={item.href} target="_blank" rel="noreferrer">{item.text}</a>
-                  ) : (
-                    <span>{item.text}</span>
+                <li className={item.image ? "latest-news__item--image" : undefined} key={item.text}>
+                  {item.image && item.href && (
+                    <ImageCard
+                      title=""
+                      data={latestNewsImages.filter((image) => image.image === item.href)}
+                      lightboxData={latestNewsImages}
+                      showHeading={false}
+                      showDetails={false}
+                      className="latest-news__image-trigger"
+                      triggerLabel={item.text}
+                    />
                   )}
+                  {!item.image && item.href && item.internal ? (
+                    <Link to={item.href} onClick={onClose}>{item.text}</Link>
+                  ) : !item.image && item.href ? (
+                    <a href={item.href} target="_blank" rel="noreferrer">{item.text}</a>
+                  ) : !item.image ? (
+                    <span>{item.text}</span>
+                  ) : null}
                 </li>
               ))}</ul>
             </section>

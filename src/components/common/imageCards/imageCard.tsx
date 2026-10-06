@@ -15,35 +15,72 @@ import type { DepartmentEvent } from "../../../types/ugprograms";
 interface ImageCardProps {
   title: string;
   data: DepartmentEvent[];
+  lightboxData?: DepartmentEvent[];
+  showHeading?: boolean;
+  showDetails?: boolean;
+  className?: string;
+  triggerLabel?: string;
 }
 
-const ImageCard = ({ title, data }: ImageCardProps) => {
+const ImageCard = ({
+  title,
+  data,
+  lightboxData = data,
+  showHeading = true,
+  showDetails = true,
+  className = "",
+  triggerLabel,
+}: ImageCardProps) => {
   const [index, setIndex] = useState(-1);
   const slides = useMemo(
-    () => data.map((event) => ({ src: event.image, alt: event.alt, title: event.title })),
-    [data]
+    () => lightboxData.map((event) => ({
+      src: event.image,
+      alt: event.alt,
+      ...(showDetails ? { title: event.title } : {}),
+    })),
+    [lightboxData, showDetails]
   );
 
   return (
     <>
-      <DepartmentSectionHeading title={title} className="department-section-heading--medium" />
+      {triggerLabel ? (
+        <button
+          type="button"
+          className={className}
+          onClick={() => {
+            const imageIndex = lightboxData.findIndex((image) => image.image === data[0]?.image);
+            setIndex(imageIndex >= 0 ? imageIndex : 0);
+          }}
+        >
+          {triggerLabel}
+        </button>
+      ) : (
+        <>
+          {showHeading && <DepartmentSectionHeading title={title} className="department-section-heading--medium" />}
 
-      <div className="cse-events-grid">
-        {data.map((event, i) => (
-          <div className="cse-event-card flex flex-column" key={event.id}>
-            <button type="button" className="cse-event-image-wrapper flex flex-center" onClick={() => setIndex(i)} aria-label={`Open image: ${event.title}`}>
-              <span className="image-hover-container"><img src={event.image} alt={event.alt} className="cse-event-image image-hover-scale" /></span>
-            </button>
+          <div className={`cse-events-grid ${className}`.trim()}>
+            {data.map((event, i) => (
+              <div className="cse-event-card flex flex-column" key={event.id}>
+                <button type="button" className="cse-event-image-wrapper flex flex-center" onClick={() => {
+                  const imageIndex = lightboxData.findIndex((image) => image.id === event.id);
+                  setIndex(imageIndex >= 0 ? imageIndex : i);
+                }} aria-label={`Open image: ${event.title}`}>
+                  <span className="image-hover-container"><img src={event.image} alt={event.alt} className="cse-event-image image-hover-scale" /></span>
+                </button>
 
-            <div className="cse-event-content flex flex-column flex-align-center flex-justify-between flex-one">
-              <p className="cse-event-description">&quot;{event.title}&quot;</p>
-              <button type="button" className="read-more-btn" onClick={() => setIndex(i)}>Read More</button>
-            </div>
+                {showDetails && (
+                  <div className="cse-event-content flex flex-column flex-align-center flex-justify-between flex-one">
+                    <p className="cse-event-description">&quot;{event.title}&quot;</p>
+                    <button type="button" className="read-more-btn" onClick={() => setIndex(i)}>Read More</button>
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </>
+      )}
 
-      <Lightbox open={index >= 0} close={() => setIndex(-1)} index={index} slides={slides} plugins={[Counter, Download, Zoom, Fullscreen]} counter={{ container: { style: { top: "0.75rem", left: "0.75rem" } } }} carousel={{ finite: data.length <= 1 }} />
+      <Lightbox open={index >= 0} close={() => setIndex(-1)} index={index} slides={slides} plugins={[Counter, Download, Zoom, Fullscreen]} counter={{ container: { style: { top: "0.75rem", left: "0.75rem" } } }} carousel={{ finite: lightboxData.length <= 1 }} />
     </>
   );
 };
