@@ -1,5 +1,9 @@
 .gallery-page {
   --gallery-accent: #cd4326;
+  --heading-underline-width: 100%;
+  --heading-underline-height: 0.1475rem;
+  --heading-underline-padding-bottom: clamp(0.45rem, 1.2vw, 1rem);
+  --heading-underline-margin-bottom: clamp(0.45rem, 1.2vw, 1rem);
 }
 
 .gallery-page .physical-education__annual {
@@ -59,16 +63,37 @@
 }
 .gallery-page__carousel-section--title{margin-top: var(--primary-margin-top);}
 .gallery-page__section-title {
+  position: relative;
   width: fit-content;
   max-width: 100%;
-  margin: 0 auto 1.75rem;
-  padding: 0 0.5rem 0.65rem;
-  border-bottom: 1px solid var(--gallery-accent);
+  margin: 0 auto var(--heading-underline-margin-bottom);
+  padding: 0 0.5rem var(--heading-underline-padding-bottom);
   color: var(--gallery-accent);
   font-size: var(--gallery-title-size);
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
+}
+
+.gallery-page__section-title::after,
+.gallery-page .title-image-carousel__title::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: var(--heading-underline-width);
+  height: var(--heading-underline-height);
+  border: 0;
+  border-radius: 999rem;
+  background-color: var(--gallery-accent);
+  content: "";
+}
+
+.gallery-page .title-image-carousel__title {
+  position: relative;
+  margin-bottom: var(--heading-underline-margin-bottom);
+  padding-bottom: var(--heading-underline-padding-bottom);
+  border-bottom: 0;
 }
 
 .gallery-page__mosaic {
@@ -150,7 +175,12 @@
 
   .gallery-page__section-title,
   .gallery-page .title-image-carousel__title {
-    margin-bottom: 1rem;
+    margin-bottom: var(--heading-underline-margin-bottom);
+  }
+
+  .gallery-page {
+    --heading-underline-padding-bottom: clamp(0.35rem, 1vw, 0.55rem);
+    --heading-underline-margin-bottom: clamp(0.4rem, 1.4vw, 0.65rem);
   }
 
   .gallery-page__carousel-section--title {

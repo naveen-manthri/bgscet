@@ -1,0 +1,63 @@
+.staff-details-page__content {
+  padding: var(--primary-padding);
+}
+
+.staff-details-page__content .staff-details-page__table {
+  margin-top: var(--primary-margin-top);
+  padding: 0;
+}
+
+.staff-details-page__contact {
+  margin-top: var(--primary-margin-top);
+}
+
+.staff-details-page__contact-lines {
+  display: flex;
+  flex-direction: column;
+  gap: var(--para-desc-gap);
+}
+
+.staff-details-page__contact-line {
+  margin: 0;
+  color: var(--text);
+  font-family: var(--career-font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+}
+
+.staff-details-page__contact-line strong {
+  font-weight: 600;
+}
+
+.staff-details-page__contact-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.staff-details-page__contact-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .staff-details-page__content {
+    padding: var(--mobile-padding);
+  }
+
+  .staff-details-page__content .staff-details-page__table {
+    margin-top: var(--mobile-margin-top);
+    padding: 0;
+  }
+
+  .staff-details-page__contact {
+    margin-top: var(--mobile-margin-top);
+  }
+
+  .staff-details-page__contact-lines {
+    gap: 0.5rem;
+  }
+
+  .staff-details-page__contact-line {
+    font-size: var(--mobile-font-size);
+    line-height: var(--mobile-description-line-height);
+  }
+}

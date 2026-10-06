@@ -1,9 +1,13 @@
-
+.academic-section-heading {
+  --heading-underline-width: 100%;
+  --heading-underline-height: 0.1475rem;
+  --heading-underline-padding-bottom: clamp(0.45rem, 1.2vw, 1rem);
+  --heading-underline-margin-bottom: clamp(0.45rem, 1.2vw, 1rem);
+}
 
 .academic-section-heading {
-  
   align-items: flex-start;
-  margin-bottom: var(--academic-content-gap);
+  margin-bottom: var(--heading-underline-margin-bottom);
   h2 {
     margin: 0;
     font-family: var(--font-main);
@@ -30,15 +34,23 @@
   position: relative;
   display: inline-block;
   margin-top: 0.15rem;
+  padding-bottom: var(--heading-underline-padding-bottom);
   color: var(--primary-deep);
 
   &::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -0.8rem;
-    width: 100%;
-    height: 0.18rem;
+    bottom: 0;
+    width: var(--heading-underline-width);
+    height: var(--heading-underline-height);
     background: var(--tile-underline-color);
+  }
+}
+
+@media (max-width: 768px) {
+  .academic-section-heading {
+    --heading-underline-padding-bottom: clamp(0.35rem, 1vw, 0.55rem);
+    --heading-underline-margin-bottom: clamp(0.4rem, 1.4vw, 0.65rem);
   }
 }

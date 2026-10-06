@@ -109,11 +109,7 @@
   margin-bottom: 0;
 }
 
-.home-about-university .department-section-heading__title {
-  color: var(--primary-deep);
-  font-family: "Playfair Display", serif;
-  font-weight: 800;
-}
+
 
 .home-about-university__cta {
   display: inline-flex;

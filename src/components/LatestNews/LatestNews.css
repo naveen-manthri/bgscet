@@ -21,7 +21,7 @@
 .latest-news__section a { color: var(--primary-deep,#7d2720); font-weight: 600; text-decoration: underline; text-underline-offset: .15em; }
 @keyframes latest-news-enter { from { opacity: 0; transform: translateY(.5rem) scale(.985); } to { opacity: 1; transform: translateY(0) scale(1); } }
 @media (max-width: 38rem) {
-  .latest-news__overlay { padding: .75rem; } .latest-news__dialog { max-height: 92vh; border-radius: .85rem; }
+  .latest-news__overlay { padding: 1.1rem .75rem; } .latest-news__dialog { max-height: calc(100dvh - 2.2rem); border-radius: .85rem; }
   .latest-news__header { padding: 1.5rem 1.2rem 1.1rem; } .latest-news__close { top: .75rem; right: .75rem; width: 2.2rem; height: 2.2rem; }
   .latest-news__content { grid-template-columns: 1fr; gap: 1.2rem; padding: 1.2rem; }
 }

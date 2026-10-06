@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { latestNewsSections } from "../../data/latestNewsData";
 import type { LatestNewsProps } from "../../types/latestNews";
 import "./LatestNews.css";
@@ -30,7 +31,15 @@ function LatestNews({ isOpen, onClose }: LatestNewsProps) {
             <section className="latest-news__section" key={section.title}>
               <h3>{section.title}</h3>
               <ul>{section.items.map((item) => (
-                <li key={item.text}>{item.href ? <a href={item.href} target="_blank" rel="noreferrer">{item.text}</a> : <span>{item.text}</span>}</li>
+                <li key={item.text}>
+                  {item.href && item.internal ? (
+                    <Link to={item.href} onClick={onClose}>{item.text}</Link>
+                  ) : item.href ? (
+                    <a href={item.href} target="_blank" rel="noreferrer">{item.text}</a>
+                  ) : (
+                    <span>{item.text}</span>
+                  )}
+                </li>
               ))}</ul>
             </section>
           ))}
