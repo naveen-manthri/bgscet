@@ -109,6 +109,18 @@ function MainNavbar() {
         </button>
 
         <ul ref={menuRef} className={`main-navbar__menu${isOpen ? ' is-open' : ''}`} id="main-navbar-menu">
+          <li className="main-navbar__menu-header">
+            <Link className="main-navbar__brand" to="/" onClick={closeMenu}>
+              <img className="main-header__logo" src={headerLogo} alt="" aria-hidden="true" />
+              <span className="main-navbar__brand-name">
+                <span>BGSCET</span>
+                <span>Engineering</span>
+              </span>
+            </Link>
+            <button className="main-navbar__close" type="button" aria-label="Close navigation" onClick={closeMenu}>
+              ×
+            </button>
+          </li>
           {navItems.map((item) => {
             const hasChildren = Boolean(item.children?.length);
 
