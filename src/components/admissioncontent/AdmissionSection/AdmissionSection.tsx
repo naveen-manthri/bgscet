@@ -14,30 +14,31 @@ const AdmissionSection = () => {
   return (
     <section className="admission mobile-margin-top mobile-padding">
       <div className="admission__content">
-          <AcademicHeading className="admission__title" blackTitle={"Admission For Management Quota\nSeats Is Underway "} redTitle={"For First Year\nB.E. Courses : 2026-27"} underlineLastLine />
-          <div>
-              <p className="admission__heading">
-                Four Years Bachelor of Engineering (B.E.) Courses:
-              </p>
+        <AcademicHeading
+          className="admission__title"
+          blackTitle={"Admission For Management Quota\nSeats Is Underway "}
+          redTitle={"For First Year\nB.E. Courses : 2026-27"}
+        />
+        <div>
+          <p className="admission__heading">
+            Four Years Bachelor of Engineering (B.E.) Courses:
+          </p>
 
-              <ul className="flex flex-direction-column admission__list">
-                {courses.map((course, index) => (
-                  <li key={course}  className="flex flex-align-start admission__item" >
-                    <span className="admission__number flex flex-center">
-                      {index + 1}
-                    </span>
+          <ul className="flex flex-direction-column admission__list">
+            {courses.map((course, index) => (
+              <li key={course} className="flex flex-align-start admission__item">
+                <span className="admission__number flex flex-center">{index + 1}</span>
 
-                    <span className="admission__course">
-                      {course}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-          </div>
+                <span className="admission__course">{course}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-      <img src={admissionImage}  alt="Admission counselling session" className="admission__image"/>
+      <img src={admissionImage} alt="Admission counselling session" className="admission__image" />
     </section>
   );
 };
 
 export default AdmissionSection;
+                  
