@@ -68,7 +68,7 @@
 
 .admission__heading {
   margin: 2rem 0 1rem;
-  color: var(--primary-deep);
+  color: #000000;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.4;
@@ -157,7 +157,7 @@
 
   .admission__heading {
     margin-bottom: 0;
-    margin-top: 0rem;
+    margin-top: clamp(0.75rem, 2vw, 1.5rem);
   }
   .admission__list{
     margin-top:1rem;
