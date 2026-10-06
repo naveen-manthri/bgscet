@@ -22,10 +22,9 @@ const AboutHostel = ({ data }: AboutHostelProps) => {
 
       <div className="about-hostel__content">
         <div className="about-hostel__carousel">
-          <div className="image-hover-container"></div>
-          <img  src={data.images[activeIndex].src}  alt={data.images[activeIndex].alt}  className="about-hostel__image image-hover-scale"  />
-
-          
+          <div className="image-hover-container about-hostel__image-wrap">
+            <img src={data.images[activeIndex].src} alt={data.images[activeIndex].alt} className="about-hostel__image image-hover-scale" />
+          </div>
 
           <div className="about-hostel__dots flex flex-center">
             {data.images.map((image, index) => (

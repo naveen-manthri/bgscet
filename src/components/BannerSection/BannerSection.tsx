@@ -52,23 +52,25 @@ function BannerSection({
             </div>
             {activeSlideIndex === 0 && (
               <>
-                <div className="home-hero__content">
-                  <h1 className="home-hero__title">
-                    <span className="home-hero__title-line home-hero__title-line--orange">Building Engineers.</span>
-                    <span className="home-hero__title-line home-hero__title-line--deep">Shaping the Future.</span>
-                  </h1>
-                  <p className="home-hero__description">
-                    Empowering future engineers with industry focused education, innovation, and hands-on learning.
-                  </p>
+                <div className="home-hero__text-wrap">
+                  <div className="home-hero__content">
+                    <h1 className="home-hero__title">
+                      <span className="home-hero__title-line home-hero__title-line--orange">Building Engineers.</span>
+                      <span className="home-hero__title-line home-hero__title-line--deep">Shaping the Future.</span>
+                    </h1>
+                    <p className="home-hero__description">
+                      Empowering future engineers with industry focused education, innovation, and hands-on learning.
+                    </p>
+                  </div>
+                  <nav className="home-hero__actions" aria-label="Homepage banner actions">
+                    <Link className="home-hero__action home-hero__action--apply" to="/admissions">
+                      Apply Now
+                    </Link>
+                    <button className="home-hero__action home-hero__action--news" type="button" onClick={() => setIsLatestNewsOpen(true)}>
+                      Latest News
+                    </button>
+                  </nav>
                 </div>
-                <nav className="home-hero__actions" aria-label="Homepage banner actions">
-                  <Link className="home-hero__action home-hero__action--apply" to="/admissions">
-                    Apply Now
-                  </Link>
-                  <button className="home-hero__action home-hero__action--news" type="button" onClick={() => setIsLatestNewsOpen(true)}>
-                    Latest News
-                  </button>
-                </nav>
               </>
             )}
             <LatestNews isOpen={isLatestNewsOpen} onClose={() => setIsLatestNewsOpen(false)} />

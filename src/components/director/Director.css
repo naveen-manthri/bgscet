@@ -52,6 +52,7 @@
   width: 100%;
   height: auto;
   object-fit: contain;
+  border-radius: var(--guru-image-radius);
 }
 
 .director__bottom {
@@ -87,7 +88,11 @@
   .director__image-wrapper .guru-card__caption {
     width: 100%;
     max-width: none;
-    margin-top: 0;
+    
+  }
+  .director__image-wrapper{margin-top: 0;}
+  .guru-card__caption{
+    margin-top:0.7rem;
   }
 
   .director__bottom {

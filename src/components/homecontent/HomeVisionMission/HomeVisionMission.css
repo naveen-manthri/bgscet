@@ -1,53 +1,74 @@
 .home-vision-mission {
   display: flex;
-  gap: 5rem;
-  padding: clamp(3rem, 4vw, 3.5rem);
-  padding-inline: 4rem;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+  margin-bottom: var(--mobile-margin-top);
+  padding: 2rem 1.25rem;
   background-color: var(--home-vision-mission-bg);
 }
+
 .home-vision-mission__content {
   flex: 1;
-  gap: 1.25rem;
+  gap: 1rem;
+  display: contents;
 }
 
 .home-vision-mission__content p {
   margin: 0;
   color: var(--text);
-  font-size: var(--font-size);
-  line-height: var(--line-height);
+  font-size: var(--mobile-font-size);
+  line-height: var(--mobile-line-height);
   text-align: justify;
+  order: 3;
 }
 
 .home-section-title {
   font-size: var(--section-title);
   font-weight: 800;
   color: var(--title-color);
+  order: 1;
+  margin: 0;
 }
+
 .home-vision-mission__image {
   display: block;
-  width: 480px;
-  height: 360px;
-  max-width: 100%;
+  width: 100%;
+  max-width: none;
+  height: auto;
   margin: 0 auto;
   object-fit: cover;
   border-radius: var(--home-mutt-vm-image-border);
 }
+
 .home-vision-mission__image-container {
   border-radius: var(--home-mutt-vm-image-border);
+  order: 2;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-device-width: 1024px) {
   .home-vision-mission {
     display: grid;
     grid-template-columns: minmax(0, 30rem) minmax(0, 1fr);
     align-items: center;
     gap: 8rem;
+    padding: clamp(3rem, 4vw, 3.5rem);
+    padding-inline: 4rem;
+    margin-bottom: 0;
   }
 
   .home-vision-mission__content {
     min-width: 0;
     max-width: 48rem;
     flex: 1;
+    display: block;
+    order: initial;
+  }
+
+  .home-vision-mission__content p {
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    order: initial;
   }
 
   .home-vision-mission__image {
@@ -56,9 +77,17 @@
     max-width: 100%;
     margin: 0;
   }
+
+  .home-vision-mission__image-container {
+    order: initial;
+  }
+
+  .home-section-title {
+    order: initial;
+  }
 }
 
-@media (min-width: 769px) and (max-width: 1023px) {
+@media (min-width: 769px) and (max-width: 1023px) and (min-device-width: 769px) and (max-device-width: 1023px) {
   .home-vision-mission__image {
     flex-shrink: 0;
     width: 480px;
@@ -67,7 +96,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px), (max-device-width: 768px) {
   .home-vision-mission {
     flex-direction: column;
     align-items: stretch;

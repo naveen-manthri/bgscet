@@ -214,8 +214,15 @@ img {
   transition: transform 600ms ease;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .image-hover-container:hover .image-hover-scale {
+    transform: scale(1.04);
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  .image-hover-container:active .image-hover-scale,
+  .image-hover-container:focus-within .image-hover-scale {
     transform: scale(1.04);
   }
 }
