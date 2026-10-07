@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, type ReactNode } from "react";
 import './imageCard.css';
 
 import Lightbox from "yet-another-react-lightbox";
@@ -20,6 +20,7 @@ interface ImageCardProps {
   showDetails?: boolean;
   className?: string;
   triggerLabel?: string;
+  renderContent?: (openImage: (image: DepartmentEvent) => void) => ReactNode;
 }
 
 const ImageCard = ({
@@ -30,6 +31,7 @@ const ImageCard = ({
   showDetails = true,
   className = "",
   triggerLabel,
+  renderContent,
 }: ImageCardProps) => {
   const [index, setIndex] = useState(-1);
   const slides = useMemo(
@@ -40,6 +42,10 @@ const ImageCard = ({
     })),
     [lightboxData, showDetails]
   );
+  const openImage = (image: DepartmentEvent) => {
+    const imageIndex = lightboxData.findIndex((slide) => slide.id === image.id);
+    setIndex(imageIndex >= 0 ? imageIndex : 0);
+  };
 
   return (
     <>
@@ -58,25 +64,27 @@ const ImageCard = ({
         <>
           {showHeading && <DepartmentSectionHeading title={title} className="department-section-heading--medium" />}
 
-          <div className={`cse-events-grid ${className}`.trim()}>
-            {data.map((event, i) => (
-              <div className="cse-event-card flex flex-column" key={event.id}>
-                <button type="button" className="cse-event-image-wrapper flex flex-center" onClick={() => {
-                  const imageIndex = lightboxData.findIndex((image) => image.id === event.id);
-                  setIndex(imageIndex >= 0 ? imageIndex : i);
-                }} aria-label={`Open image: ${event.title}`}>
-                  <span className="image-hover-container"><img src={event.image} alt={event.alt} className="cse-event-image image-hover-scale" /></span>
-                </button>
+          {renderContent ? renderContent(openImage) : (
+            <div className={`cse-events-grid ${className}`.trim()}>
+              {data.map((event, i) => (
+                <div className="cse-event-card flex flex-column" key={event.id}>
+                  <button type="button" className="cse-event-image-wrapper flex flex-center" onClick={() => {
+                    const imageIndex = lightboxData.findIndex((image) => image.id === event.id);
+                    setIndex(imageIndex >= 0 ? imageIndex : i);
+                  }} aria-label={`Open image: ${event.title}`}>
+                    <span className="image-hover-container"><img src={event.image} alt={event.alt} className="cse-event-image image-hover-scale" /></span>
+                  </button>
 
-                {showDetails && (
-                  <div className="cse-event-content flex flex-column flex-align-center flex-justify-between flex-one">
-                    <p className="cse-event-description">&quot;{event.title}&quot;</p>
-                    <button type="button" className="read-more-btn" onClick={() => setIndex(i)}>Read More</button>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
+                  {showDetails && (
+                    <div className="cse-event-content flex flex-column flex-align-center flex-justify-between flex-one">
+                      <p className="cse-event-description">&quot;{event.title}&quot;</p>
+                      <button type="button" className="read-more-btn" onClick={() => setIndex(i)}>Read More</button>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
         </>
       )}
 

@@ -60,8 +60,17 @@
     gap: 0;
   }
 
+  .rich-description > p,
+  .rich-description__content > p {
+    margin: 0 0 var(--mobile-para-desc-gap);
+  }
+
   .rich-description__content > p + p {
     margin-top: 0;
+  }
+
+  .rich-description__content > p:last-child {
+    margin-bottom: 0;
   }
 
   .rich-description p {

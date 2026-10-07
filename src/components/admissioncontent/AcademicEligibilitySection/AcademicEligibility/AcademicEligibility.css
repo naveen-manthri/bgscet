@@ -103,7 +103,7 @@
 .academic-eligibility__block a {
   color: var(--text);
   text-decoration: underline;
-  text-decoration-color: var(--tile-underline-color);
+  text-decoration-color: var(--text);
   text-underline-offset: var(--list-item-gap);
   
 }

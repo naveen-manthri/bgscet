@@ -100,9 +100,14 @@
   }
 
   .profile-card__content p {
+    margin: 0 0 var(--list-item-gap);
     font-size: var(--mobile-font-size);
     line-height: var(--mobile-line-height);
     overflow-wrap: anywhere;
+  }
+
+  .profile-card__content p:last-child {
+    margin-bottom: 0;
   }
 
   .profile-card__content a {
