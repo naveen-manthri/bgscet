@@ -26,7 +26,7 @@ export const jcetData: JCETData = {
     "Mahalakshmipuram, Bengaluru, Karnataka 560086",
     "Contact: 9964897207",
     "Email: jcet@bgscet.ac.in",
-    "www.bgscet.ac.in/jcet",
+    "Website: www.bgscet.ac.in/jcet",
   ],
   aimsAndScope:
     "The Journal of Computer Science and Emerging Technologies (JCET) aims to publish high-quality research articles that present novel and innovative contributions to the field of computer science and emerging technologies. Besides, we promote exploration and analysis of emerging technologies that have the potential to impact the field of computer science. This may include articles on blockchain, Internet of Things (IoT), augmented reality, virtual reality, and other innovative technologies. The JCET would publish invited review and research articles. However, some comprehensive review articles of high scientific standards submitted to the JCET may also be considered depending upon the contemporary relevance of the content, extent and comprehensiveness of the studies reviewed.",

@@ -51,6 +51,6 @@
     top: 7.5rem;
     z-index: 1000;
     margin-top: 2rem;
-    background: var(--background);
+    background: transparent;
   }
 }

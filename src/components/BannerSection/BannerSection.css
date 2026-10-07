@@ -356,12 +356,15 @@
   }
 
   .home-hero__title {
-    font-size: clamp(1.25rem, 5.8vw, 2.5rem);
+    width: max-content;
+    max-width: 100%;
+    font-size: calc(clamp(1.25rem, 5.8vw, 2.5rem) - 2px);
     line-height: 1;
   }
 
   .home-hero__description {
-    max-width: 27rem;
+    width: min(var(--home-hero-title-width, 100%), 100%);
+    max-width: 100%;
     margin-top: 0.5rem;
     font-size: 0.45rem;
     line-height: 1.25;
@@ -402,13 +405,12 @@
   }
 
   .home-hero__title {
-    font-size: clamp(1.2rem, 5.7vw, 1.65rem);
+    font-size: calc(clamp(1.2rem, 5.7vw, 1.65rem) - 2px);
   }
 
   .home-hero__description {
-    max-width: 17rem;
     margin-top: 0.4rem;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 
 }

@@ -1,5 +1,5 @@
 import "./BannerSection.css";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import LatestNews from "../LatestNews/LatestNews";
 
 interface BannerSlide {
@@ -27,6 +27,8 @@ function BannerSection({
     : [{ image, alt: title }];
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
   const [isLatestNewsOpen, setIsLatestNewsOpen] = useState(false);
+  const homeHeroTitleRef = useRef<HTMLHeadingElement>(null);
+  const homeHeroDescriptionRef = useRef<HTMLParagraphElement>(null);
 
   useEffect(() => {
     if (!homeHero || slides.length < 2) {
@@ -39,6 +41,31 @@ function BannerSection({
 
     return () => window.clearInterval(intervalId);
   }, [homeHero, slides.length]);
+
+  useEffect(() => {
+    const titleElement = homeHeroTitleRef.current;
+    const descriptionElement = homeHeroDescriptionRef.current;
+
+    if (!homeHero || activeSlideIndex !== 0 || !titleElement || !descriptionElement) {
+      return;
+    }
+
+    const updateDescriptionWidth = () => {
+      descriptionElement.style.setProperty(
+        "--home-hero-title-width",
+        `${titleElement.getBoundingClientRect().width}px`,
+      );
+    };
+
+    updateDescriptionWidth();
+    const resizeObserver = new ResizeObserver(updateDescriptionWidth);
+    resizeObserver.observe(titleElement);
+
+    return () => {
+      resizeObserver.disconnect();
+      descriptionElement.style.removeProperty("--home-hero-title-width");
+    };
+  }, [activeSlideIndex, homeHero]);
 
   return (
     <section className={`banner-section${fullImage ? " banner-section--full-image" : ""}`}>
@@ -53,11 +80,11 @@ function BannerSection({
               <>
                 <div className="home-hero__text-wrap">
                   <div className="home-hero__content">
-                    <h1 className="home-hero__title">
+                    <h1 className="home-hero__title" ref={homeHeroTitleRef}>
                       <span className="home-hero__title-line home-hero__title-line--orange">Building Engineers.</span>
                       <span className="home-hero__title-line home-hero__title-line--deep">Shaping the Future.</span>
                     </h1>
-                    <p className="home-hero__description">
+                    <p className="home-hero__description" ref={homeHeroDescriptionRef}>
                       Empowering future engineers with industry focused education, innovation, and hands-on learning.
                     </p>
                   </div>
