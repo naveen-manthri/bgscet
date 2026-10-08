@@ -75,12 +75,17 @@ padding:0.8rem;
   line-height: 1.6;
 }
 
-.hod-message__designation:last-child {
-  margin-top: 1rem;
-  text-decoration: underline;;
-  font-weight: var(--fw-medium);
+.hod-message__designation--link {
+  display: inline-block;
+  width: fit-content;
+  margin: 0 auto;
+  text-decoration: underline;
+}
 
-  cursor: pointer;
+.hod-message__designation:last-child,
+.hod-message__designation--link:last-child {
+  margin-top: 0.75rem;
+  font-weight: var(--fw-medium);
 }
 
 
@@ -147,7 +152,7 @@ padding:0.8rem;
   }
 
   .hod-message__details {
-    margin-top: 0.5rem;
+    margin-top: 0.75rem;
     padding: 1rem;
   }
 

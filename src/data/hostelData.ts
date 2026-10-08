@@ -36,7 +36,7 @@ export const hostelData: HostelData = {
       rows: [
         {
           slNo: "1",
-          member: "Dr. Ravikumar GK",
+          member: "Dr. Kiran P",
           designation: "Principal",
           department: "-",
           inCharge: "-",

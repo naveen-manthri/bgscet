@@ -34,10 +34,21 @@ const HodMessage = ({
             </h3>
 
 
-            {data.designation.map((item) => (
-             <p key={item} className="hod-message__designation">{item}</p>
+            {data.designation.map((item, index) => {
+              const isLastItem = index === data.designation.length - 1;
 
-            ))}
+              if (isLastItem && item.toLowerCase().includes("watch on")) {
+                return (
+                  <a  key={item}  href="https://www.youtube.com/" target="_blank" rel="noreferrer" className="hod-message__designation hod-message__designation--link">
+                    {item}
+                  </a>
+                );
+              }
+
+              return (
+                <p key={item} className="hod-message__designation">{item}</p>
+              );
+            })}
 
           </div>
 

@@ -4,7 +4,8 @@
   --underline-clr: var(--color-obsidian);
   --heading-underline-width: 100%;
   --heading-underline-height: 0.1475rem;
-  --heading-underline-padding-bottom: clamp(0.45rem, 1.2vw, 1rem);
+    --heading-underline-padding-bottom: clamp(0.45rem, 1vw, 0.85rem);
+
   --heading-underline-margin-bottom: clamp(0.45rem, 1.2vw, 1rem);
 
   --ff-primary: "Poppins", sans-serif;

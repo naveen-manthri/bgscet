@@ -48,6 +48,11 @@ import event18Image from "../../assets/images/csedepartment/CSE-EVENTS/CSE-EVENT
 import event19Image from "../../assets/images/csedepartment/CSE-EVENTS/CSE-EVENT-19.jpeg";
 import event20Image from "../../assets/images/csedepartment/CSE-EVENTS/CSE-EVENT-20.jpeg";
 
+import quatum from "../../assets/images/csedepartment/CSE-EVENTS/quantumComputing.jpeg";
+import gttc from "../../assets/images/csedepartment/CSE-EVENTS/gttc.jpeg";
+import latex from "../../assets/images/csedepartment/CSE-EVENTS/latex.jpeg";
+import aiNative from "../../assets/images/csedepartment/CSE-EVENTS/aiNative-software.jpeg";
+
 import sahana from "../../assets/images/csedepartment/cseTechFaculty/sahana-CSE.jpeg";
 // import pooja from "../../assets/images/csedepartment/cseTechFaculty/Pooja-CSE.jpg";
 // import soumya from "../../assets/images/csedepartment/cseTechFaculty/soumya-CSE.jpeg";
@@ -186,7 +191,7 @@ export const facultyMembers: FacultyMember[] = [
     id: 2,
     image: DRraviKumar,
     name: "Dr. Ravikumar GK",
-    designation: "Professor",
+    designation: "President",
   },
 
   {
@@ -206,7 +211,7 @@ export const facultyMembers: FacultyMember[] = [
     id: 5,
     image: mrChethanHV,
     name: "Mr.Chethan H V",
-    designation: "Associate Professor",
+    designation: "Assistant Professor",
   },
   {
     id: 6,
@@ -395,130 +400,151 @@ export const cseEventsData: DepartmentEventsData = {
   events: [
     {
       id: 1,
-      title:
-        "BGS Invited Lecture Series Talk on Intellectual Property Rights (IPR)",
+      title: "QUANTUM COMPUTING FOR ENGINEERS: FROM BITS TO QBITS",
+      image: quatum,
+      alt: "QUANTUM COMPUTING FOR ENGINEERS: FROM BITS TO QBITS",
+    },
+    {
+      id: 2,
+      title: "GTTC Industrial Visit as part of IDT – Odd Sem 2026-27",
+      image: gttc,
+      alt: "GTTC Industrial Visit as part of IDT – Odd Sem 2026-27",
+    },
+    {
+      id: 3,
+      title: "LaTeX for Academic Writing: From Manuscript to Publication",
+      image: latex,
+      alt: "LaTeX for Academic Writing: From Manuscript to Publication",
+    },
+    {
+      id: 4,
+      title: "THREE DAYS SKILL DEVELOPMENT PROGRAM - Prompt to Product: AI Native Software Development",
+      image: aiNative,
+      alt: "THREE DAYS SKILL DEVELOPMENT PROGRAM - Prompt to Product: AI Native Software Development",
+    },
+    {
+      id: 5,
+      title: "BGS Invited Lecture Series Talk on Intellectual Property Rights (IPR)",
       image: event1Image,
       alt: "BGS Invited Lecture Series Talk on Intellectual Property Rights (IPR)",
     },
     {
-      id: 2,
+      id: 6,
       title:
         "Three Days Skill Development Program on Generative AI: Hands-On Learning from Concepts to Applications",
       image: event2Image,
-      alt: "Three Days Skill Development Program on Generative AI",
+      alt: "Three Days Skill Development Program on Generative AI: Hands-On Learning from Concepts to Applications",
     },
     {
-      id: 3,
+      id: 7,
       title:
         "Technical Talk on Beyond the Datacenter: How TinyML is Decarbonizing Intelligence",
       image: event3Image,
       alt: "Technical Talk on Beyond the Datacenter: How TinyML is Decarbonizing Intelligence",
     },
     {
-      id: 4,
+      id: 8,
       title:
         "Three Days Student Skill Enhancement Program on DevOps: Hands-on Learning from Concepts to Applications",
       image: event4Image,
-      alt: "Three Days Student Skill Enhancement Program on DevOps",
+      alt: "Three Days Student Skill Enhancement Program on DevOps: Hands-on Learning from Concepts to Applications",
     },
     {
-      id: 5,
+      id: 9,
       title:
         "Progressive Training Program for B.E – 3rd Semester Students",
       image: event5Image,
       alt: "Progressive Training Program for B.E – 3rd Semester Students",
     },
     {
-      id: 6,
+      id: 10,
       title:
         "Faculty Development Programme on AICTE Activity Points Tracking System (VTU App)",
       image: event6Image,
-      alt: "Faculty Development Programme on AICTE Activity Points Tracking System",
+      alt: "Faculty Development Programme on AICTE Activity Points Tracking System (VTU App)",
     },
     {
-      id: 7,
+      id: 11,
       title:
         "Three Days Student Skill Enhancement Program on Mastering MERN Stack: From Development to Deployment",
       image: event7Image,
-      alt: "Three Days Student Skill Enhancement Program on Mastering MERN Stack",
+      alt: "Three Days Student Skill Enhancement Program on Mastering MERN Stack: From Development to Deployment",
     },
     {
-      id: 8,
+      id: 12,
       title: "FDP NLP Report",
       image: event8Image,
       alt: "FDP NLP Report",
     },
     {
-      id: 9,
+      id: 13,
       title: "FDP NLP Report",
       image: event9Image,
       alt: "FDP NLP Report",
     },
     {
-      id: 10,
+      id: 14,
       title: "Parallel Computing Report",
       image: event10Image,
       alt: "Parallel Computing Report",
     },
     {
-      id: 11,
-      title: "Tiny_ML",
+      id: 15,
+      title: "Tiny ML",
       image: event11Image,
       alt: "Tiny ML",
     },
     {
-      id: 12,
+      id: 16,
       title: "HACKSHASTRA – 2K25",
       image: event12Image,
       alt: "HACKSHASTRA – 2K25",
     },
     {
-      id: 13,
-      title:
-        "Technical Talk on The evolving landscape of Processor Architecture",
+      id: 17,
+      title: "Technical Talk on The Evolving Landscape of Processor Architecture",
       image: event13Image,
-      alt: "Technical Talk on The evolving landscape of Processor Architecture",
+      alt: "Technical Talk on The Evolving Landscape of Processor Architecture",
     },
     {
-      id: 14,
+      id: 18,
       title: "Intellectual Property Rights (IPR)",
       image: event14Image,
       alt: "Intellectual Property Rights (IPR)",
     },
     {
-      id: 15,
+      id: 19,
       title: "Accelerating Discovery with Parallel Processing",
       image: event15Image,
       alt: "Accelerating Discovery with Parallel Processing",
     },
     {
-      id: 16,
+      id: 20,
       title: "Infosys Springboard Student Enablement Program",
       image: event16Image,
       alt: "Infosys Springboard Student Enablement Program",
     },
     {
-      id: 17,
-      title: "Accelerate Growth with Devops Efficiency",
+      id: 21,
+      title: "Accelerate Growth with DevOps Efficiency",
       image: event17Image,
-      alt: "Accelerate Growth with Devops Efficiency",
+      alt: "Accelerate Growth with DevOps Efficiency",
     },
     {
-      id: 18,
-      title:
-        "Generative AI: Hands on Learning from concepts to Applications",
+      id: 22,
+      title: "Generative AI: Hands on Learning from Concepts to Applications",
       image: event18Image,
-      alt: "Generative AI: Hands on Learning from concepts to Applications",
+      alt: "Generative AI: Hands on Learning from Concepts to Applications",
     },
     {
-      id: 19,
+      id: 23,
       title:
         "Unleashing the Power of R: A Journey into Data Science and Statistical Computing",
       image: event19Image,
       alt: "Unleashing the Power of R: A Journey into Data Science and Statistical Computing",
     },
     {
-      id: 20,
+      id: 24,
       title: "International Women’s Equality Day",
       image: event20Image,
       alt: "International Women’s Equality Day",

@@ -25,13 +25,13 @@ export const staffDetailsPageData: StaffDetailsPageData = {
         },
         {
           name: "Prof. Sumanth C Gowda",
-          designation: "Asso. Professor & TPO",
-          department: "CS&E",
+          designation: "Asst. Professor & TPO",
+          department: "CSE",
         },
         {
           name: "Prof. Anoop N Prasad",
           designation: "Asst. Professor & TPO",
-          department: "IS & E",
+          department: "ISE",
         },
         {
           name: "Prof. Vandana S Sardar",

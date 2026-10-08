@@ -28,6 +28,12 @@ import event16Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-
 import event17Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-17.jpeg";
 import event18Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-18.jpeg";
 import event19Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-19.jpeg";
+import cProgramming from "../../assets/images/aidsdepartment/AI-DS-EVENTS/cProgramming.jpeg";
+import statisticalML from "../../assets/images/aidsdepartment/AI-DS-EVENTS/statisticalML.jpeg";
+import deepLearning from "../../assets/images/aidsdepartment/AI-DS-EVENTS/deepLearning.jpeg";
+import placementPrep from "../../assets/images/aidsdepartment/AI-DS-EVENTS/placement-prep.jpeg";
+import levarage from "../../assets/images/aidsdepartment/AI-DS-EVENTS/levragingAitools.jpeg";
+import gttc from "../../assets/images/aidsdepartment/AI-DS-EVENTS/gttc-2026-27.jpeg";
 import mathExaminationImage from "../../assets/images/aidsdepartment/AI-DS-ACHIEVEMENTS/Math-examination-1.png";
 import missKhushiImage from "../../assets/images/aidsdepartment/AI-DS-ACHIEVEMENTS/Miss-Khushi.png";
 import debateKarnatakaImage from "../../assets/images/aidsdepartment/AI-DS-ACHIEVEMENTS/Debate-Competition-2nd.png";
@@ -337,116 +343,152 @@ export const aidsEventsData: DepartmentEventsData = {
   events: [
     {
       id: 1,
+      title: "PLACEMENT PREP: INSIGHTS FROM SENIORS",
+      image: placementPrep,
+      alt: "PLACEMENT PREP: INSIGHTS FROM SENIORS",
+    },
+    {
+      id: 2,
+      title: "GTTC Industrial Visit for I Year AI&DS Students as a part of IDT - ODD Semester 2026-27",
+      image: gttc,
+      alt: "GTTC Industrial Visit for I Year AI&DS Students as a part of IDT - ODD Semester 2026-27",
+    },
+    {
+      id: 3,
+      title: "Leveraging AI Tools to Build Websites",
+      image: levarage,
+      alt: "Leveraging AI Tools to Build Websites",
+    },
+    {
+      id: 4,
+      title: "C Programming Practical Projects Demonstrating C in Action",
+      image: cProgramming,
+      alt: "C Programming Practical Projects Demonstrating C in Action",
+    },
+    {
+      id: 5,
+      title: "Statistical Machine Learning: An Applied Hands-On Approach",
+      image: statisticalML,
+      alt: "Statistical Machine Learning: An Applied Hands-On Approach",
+    },
+    {
+      id: 6,
+      title: "Deep Learning: From Concepts to Practical Applications",
+      image: deepLearning,
+      alt: "Deep Learning: From Concepts to Practical Applications",
+    },
+    {
+      id: 7,
       title: "AI Techniques and Implementation Using Python",
       image: event1Image,
       alt: "AI Techniques and Implementation Using Python",
     },
     {
-      id: 2,
+      id: 8,
       title:
         "Emerging AI Technologies: From Machine Learning to Generative AI",
       image: event2Image,
       alt: "Emerging AI Technologies: From Machine Learning to Generative AI",
     },
     {
-      id: 3,
+      id: 9,
       title: "Bizotic AIDS",
       image: event3Image,
       alt: "Bizotic AIDS",
     },
     {
-      id: 4,
+      id: 10,
       title: "Karnataka Kalarava",
       image: event4Image,
       alt: "Karnataka Kalarava",
     },
     {
-      id: 5,
+      id: 11,
       title: "Java Workshop",
       image: event5Image,
       alt: "Java Workshop",
     },
     {
-      id: 6,
+      id: 12,
       title: "AIGNITE 2025",
       image: event6Image,
       alt: "AIGNITE 2025",
     },
     {
-      id: 7,
+      id: 13,
       title: "Awareness To Online Coding Platforms",
       image: event7Image,
       alt: "Awareness To Online Coding Platforms",
     },
     {
-      id: 8,
+      id: 14,
       title: "Digital Wizard Quiz",
       image: event8Image,
       alt: "Digital Wizard Quiz",
     },
     {
-      id: 9,
+      id: 15,
       title: "Bridge Core and Emerging Disciplines",
       image: event9Image,
       alt: "Bridge Core and Emerging Disciplines",
     },
     {
-      id: 10,
+      id: 16,
       title: "GATE JAM 2026 Outreach Program by IISc Bangalore",
       image: event10Image,
       alt: "GATE JAM 2026 Outreach Program by IISc Bangalore",
     },
     {
-      id: 11,
+      id: 17,
       title: "FDP Program – 25",
       image: event11Image,
       alt: "FDP Program – 25",
     },
     {
-      id: 12,
+      id: 18,
       title: "Big Data Tools and Technologies",
       image: event12Image,
       alt: "Big Data Tools and Technologies",
     },
     {
-      id: 13,
+      id: 19,
       title: "MERN Stack Workshop",
       image: event13Image,
       alt: "MERN Stack Workshop",
     },
     {
-      id: 14,
+      id: 20,
       title: "Accelerate Growth with DevOps Efficiency",
       image: event14Image,
       alt: "Accelerate Growth with DevOps Efficiency",
     },
     {
-      id: 15,
+      id: 21,
       title:
         "Generative AI: Hands on Learning from Concepts to Applications",
       image: event15Image,
       alt: "Generative AI: Hands on Learning from Concepts to Applications",
     },
     {
-      id: 16,
+      id: 22,
       title: "Orientation Program for 3rd and 5th Sem",
       image: event16Image,
       alt: "Orientation Program for 3rd and 5th Sem",
     },
     {
-      id: 17,
+      id: 23,
       title: "Code Sprint",
       image: event17Image,
       alt: "Code Sprint",
     },
     {
-      id: 18,
+      id: 24,
       title: "Tech Kruthi",
       image: event18Image,
       alt: "Tech Kruthi",
     },
     {
-      id: 19,
+      id: 25,
       title: "Kannada Rajyothsava",
       image: event19Image,
       alt: "Kannada Rajyothsava",

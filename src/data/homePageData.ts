@@ -35,7 +35,7 @@ export const homeAboutUniversity = {
   imageTwo: aboutCampusImage,
   badgeImage: logoImage,
   description:
-    'BGS College of Engineering and Technology (BGSCET) is a newly established engineering institution offering five industry-driven UG programs - CS, IS, AI & ML, AI & DS, and Design. The college is managed by BGSKH Education Trust (R.), a unit of Sri Adichunchanagiri Shikshana Trust (SAST) under the guidance of Sri Adichunchanagiri Mahasamsthana Mutt. Located at Mahalakshmipuram, West of Chord Road, Bengaluru, BGSCET sits in a well-connected prime area with strong access to aspiring students. With a clear vision to become a leading centre of learning, the institute focuses on quality education, modern infrastructure, and highly qualified faculty to meet evolving national and global needs.',
+    'BGS College of Engineering and Technology (BGSCET) is a newly established engineering institution offering five industry-driven UG programs - CSE, ISE, AI & ML, AI & DS, and CSD. The college is managed by BGSKH Education Trust (R.), a unit of Sri Adichunchanagiri Shikshana Trust (SAST) under the guidance of Sri Adichunchanagiri Mahasamsthana Mutt. Located at Mahalakshmipuram, West of Chord Road, Bengaluru, BGSCET sits in a well-connected prime area with strong access to aspiring students. With a clear vision to become a leading centre of learning, the institute focuses on quality education, modern infrastructure, and highly qualified faculty to meet evolving national and global needs.',
 };
 
 export const homeAboutMutt = {

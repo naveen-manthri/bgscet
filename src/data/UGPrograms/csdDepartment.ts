@@ -18,6 +18,11 @@ import event2Image from "../../assets/images/csddepartment/CSD-EVENTS/CSD-EVENTS
 import event3Image from "../../assets/images/csddepartment/CSD-EVENTS/CSD-EVENTS-3.jpeg";
 import event4Image from "../../assets/images/csddepartment/CSD-EVENTS/CSD-EVENTS-4.jpeg";
 import event5Image from "../../assets/images/csddepartment/CSD-EVENTS/CSD-EVENTS-5.jpeg";
+import internalIdeathonImage from "../../assets/images/csddepartment/CSD-EVENTS/internalIdeathon.jpeg";
+import gttcImage from "../../assets/images/csddepartment/CSD-EVENTS/gttc.jpeg";
+import networkTrafficImage from "../../assets/images/csddepartment/CSD-EVENTS/networkTraffic.jpeg";
+import deepLearningImage from "../../assets/images/csddepartment/CSD-EVENTS/deepLearning.jpeg";
+import rpaAiImage from "../../assets/images/csddepartment/CSD-EVENTS/rpa-ai.jpeg";
 
 import nityashreeImage from "../../assets/images/csddepartment/CSD-ACHIEVEMENTS/Nityashree-1.jpeg";
 import toppers3SemImage from "../../assets/images/csddepartment/CSD-ACHIEVEMENTS/3-sem-toppers-2023-batch.jpeg";
@@ -146,7 +151,7 @@ export const facultyMembers: FacultyMember[] = [
   id: 1,
   image: hod,
   name: "Dr.Madhu Patil",
-  designation: "Assistant Professor",
+  designation: "Professor and HOD",
 },
 {
   id: 2,
@@ -158,13 +163,13 @@ export const facultyMembers: FacultyMember[] = [
   id: 3,
   image: nagarajKalligud,
   name: "Nagaraj .B. Kalligudd",
-  designation: "Associate Professor",
+  designation: "Assistant Professor",
 },
 {
   id: 4,
   image: sanjitha,
   name: "Mrs Sanjitha S",
-  designation: "Associate Professor",
+  designation: "Assistant Professor",
 },
 // {
 //   id: 5,
@@ -309,31 +314,61 @@ export const csdEventsData: DepartmentEventsData = {
   events: [
     {
       id: 1,
+      title: "INTERNAL IDEATHON",
+      image: internalIdeathonImage,
+      alt: "INTERNAL IDEATHON",
+    },
+    {
+      id: 2,
+      title: "GTTC Industrial Visit as a part of IDT - ODD Semester 2026-27",
+      image: gttcImage,
+      alt: "GTTC Industrial Visit as a part of IDT - ODD Semester 2026-27",
+    },
+    {
+      id: 3,
+      title: "Exploring Network Traffic: A Hands-On Wireshark & Traceroute Session",
+      image: networkTrafficImage,
+      alt: "Exploring Network Traffic: A Hands-On Wireshark & Traceroute Session",
+    },
+    {
+      id: 4,
+      title: "Build Your First Deep Learning Model: From Data to Prediction",
+      image: deepLearningImage,
+      alt: "Build Your First Deep Learning Model: From Data to Prediction",
+    },
+    {
+      id: 5,
+      title: "Microsoft RPA Automation & AI Agents",
+      image: rpaAiImage,
+      alt: "Microsoft RPA Automation & AI Agents",
+    },
+    {
+      id: 6,
       title: "VIDYUT HACKATHON",
       image: event1Image,
       alt: "VIDYUT HACKATHON",
     },
     {
-      id: 2,
+      id: 7,
       title: "Linux Unleashed – Practical Session",
       image: event2Image,
       alt: "Linux Unleashed – Practical Session",
     },
     {
-      id: 3,
+      id: 8,
       title:
         "Unleashing the Power of R: A Journey into Data Science and Statistical Computing",
       image: event3Image,
       alt: "Unleashing the Power of R",
     },
     {
-      id: 4,
+      id: 9,
       title: "Accelerate Growth with DevOps Efficiency",
       image: event4Image,
       alt: "Accelerate Growth with DevOps Efficiency",
     },
     {
-      id: 5,
+      id: 10,
       title:
         "Generative AI: Hands-on Learning from Concepts to Applications",
       image: event5Image,

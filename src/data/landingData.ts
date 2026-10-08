@@ -121,5 +121,5 @@ export const footerColumns: FooterColumn[] = [
 export const footerInfo = {
   logo: collegeLogo,
   description:
-    'New Engineering College with market-demanding employable emerging CS, IS, AIML, AIDS, Design UG courses in Engineering and Technology. Established by BGS Education Trust, a unit of Sri Adichunchanagiri Shikshana Trust(SAST) under the ambit of Sri Adichunchanagiri Mahasamsthana Mutt, a well-known philanthropic organization in Karnataka.',
+    'New Engineering College with market-demanding employable emerging CS, IS, AIML, AIDS, CSD UG courses in Engineering and Technology. Established by BGS Education Trust, a unit of Sri Adichunchanagiri Shikshana Trust(SAST) under the ambit of Sri Adichunchanagiri Mahasamsthana Mutt, a well-known philanthropic organization in Karnataka.',
 };

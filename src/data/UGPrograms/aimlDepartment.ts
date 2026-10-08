@@ -30,6 +30,11 @@ import educationalTripImage from "../../assets/images/aimldepartment/AI-ML-ACHIE
 import sportsImage from "../../assets/images/aimldepartment/AI-ML-ACHIEVEMENTS/Sports-1.png";
 import logoCompetitionImage from "../../assets/images/aimldepartment/AI-ML-ACHIEVEMENTS/Logo-Competition-1.png";
 
+import lotEsp from "../../assets/images/aimldepartment/AIML-EVENTS/lot-eSP32.jpeg";
+import flutter from "../../assets/images/aimldepartment/AIML-EVENTS/flutter.jpeg";
+import pySpark from "../../assets/images/aimldepartment/AIML-EVENTS/pyspark.jpeg";
+
+
 import monica from "../../assets/images/aimldepartment/AIML-TECHFACULTY/Monica.png";
 import akshata from "../../assets/images/aimldepartment/AIML-TECHFACULTY/Akshata.jpg";
 import ranjitha from "../../assets/images/aimldepartment/AIML-TECHFACULTY/ranjitha_sbgscet.png";
@@ -200,7 +205,7 @@ export const facultyMembers: FacultyMember[] = [
 {
   id : 7,
   image :narendra ,
-  name : "Assistant Professor",
+  name : "Dr.NARENDRA KUMAR",
   designation : "Professor",
 },
 {
@@ -228,7 +233,7 @@ export const technicalFacultyMembers: FacultyMember[] = [
   {
     id: 2,
     image: harshitha,
-    name: "Harshitha",
+    name: "Ms Harshitha",
     designation: "Programmer",
   },
   {
@@ -302,79 +307,100 @@ export const aimlEventsData: DepartmentEventsData = {
   events: [
     {
       id: 1,
+      title:
+        "2 Days Design Thinking in Action: Prototyping Smart IoT Systems Using ESP32",
+      image: lotEsp,
+      alt: "2 Days Design Thinking in Action: Prototyping Smart IoT Systems Using ESP32",
+    },
+    {
+      id: 2,
+      title:
+        "3 Days Technical Hands on Session: Flutter",
+      image: flutter,
+      alt: "3 Days Technical Hands on Session: Flutter",
+    },
+    {
+      id: 3,
+      title:
+        "Industry-Oriented Data Engineering using PySpark",
+      image: pySpark,
+      alt: "Industry-Oriented Data Engineering using PySpark",
+    },
+    {
+      id: 4,
       title: "Future Forge: Generative AI",
       image: event1Image,
       alt: "Future Forge: Generative AI",
     },
     {
-      id: 2,
+      id: 5,
       title: "IPR",
       image: event2Image,
       alt: "IPR",
     },
     {
-      id: 3,
+      id: 6,
       title: "NAL",
       image: event3Image,
       alt: "NAL",
     },
     {
-      id: 4,
+      id: 7,
       title: "Pep Talk",
       image: event4Image,
       alt: "Pep Talk",
     },
     {
-      id: 5,
+      id: 8,
       title: "Chakaranova",
       image: event5Image,
       alt: "Chakaranova",
     },
     {
-      id: 6,
+      id: 9,
       title: "Deep Learning",
       image: event6Image,
       alt: "Deep Learning",
     },
     {
-      id: 7,
+      id: 10,
       title: "Hackathon",
       image: event7Image,
       alt: "Hackathon",
     },
     {
-      id: 8,
+      id: 11,
       title: "Higher Studies",
       image: event8Image,
       alt: "Higher Studies",
     },
     {
-      id: 9,
+      id: 12,
       title: "Present & Future Programs of CSIR-NAL",
       image: event9Image,
       alt: "Present & Future Programs of CSIR-NAL",
     },
     {
-      id: 10,
+      id: 13,
       title: "Fine-Tuning LLaMA3 using evol-instruct",
       image: event10Image,
       alt: "Fine-Tuning LLaMA3 using evol-instruct",
     },
     {
-      id: 11,
+      id: 14,
       title: "Activity Under Coding Club ‘Project Kick Start'",
       image: event11Image,
       alt: "Activity Under Coding Club Project Kick Start",
     },
     {
-      id: 12,
+      id: 15,
       title:
         "Generative AI: Hands on Learning from Concepts to Applications",
       image: event12Image,
       alt: "Generative AI: Hands on Learning from Concepts to Applications",
     },
     {
-      id: 13,
+      id: 16,
       title:
         "Generative AI: Hands on Learning from Concepts to Applications",
       image: event13Image,

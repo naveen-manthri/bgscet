@@ -8,6 +8,7 @@ import poojithaK from "../../assets/images/isedepartment/Poojitha_K.jpg";
 import jyothiR from "../../assets/images/isedepartment/jyothi-r.jpg";
 import mrsHemalathaKN from "../../assets/images/isedepartment/Mrs.HemalathaKN.jpg";
 import anoopNPrasad from "../../assets/images/isedepartment/AnoopNPrasad-.jpg";
+import sheshan from "../../assets/images/isedepartment/sheshan.jpeg";
 import hod from "../../assets/images/isedepartment/chaitra_hod.jpeg";
 import event1Image from "../../assets/images/isedepartment/EVENTS/ise-1.jpg";
 import event2Image from "../../assets/images/isedepartment/EVENTS/ise-2.jpeg";
@@ -23,9 +24,12 @@ import topper2022_4semImage from "../../assets/images/isedepartment/ISE-Achievem
 import goldMedalImage from "../../assets/images/isedepartment/ISE-Achievements/ISE-Gold-medal.png";
 import danceImage from "../../assets/images/isedepartment/ISE-Achievements/ISE-dep-2nd-Prize-Dance-1.png";
 import volleyballImage from "../../assets/images/isedepartment/ISE-Achievements/ISE-VTU-Volleyball-Tournament-1.png";
-import Navya from "../../assets/images/isedepartment/iseTechFaculty/Navya.jpeg";
+import sindhu from "../../assets/images/isedepartment/iseTechFaculty/Navya.jpeg";
 import Arpitha from "../../assets/images/isedepartment/iseTechFaculty/Arpitha.jpeg";
 import Saahithi from "../../assets/images/isedepartment/iseTechFaculty/saahithi-ISE-.jpeg";
+import gttc from "../../assets/images/isedepartment/EVENTS/gttc.jpeg";
+import aiGithub from "../../assets/images/isedepartment/EVENTS/aiGithub.jpeg";
+import bigData from "../../assets/images/isedepartment/EVENTS/bigData.jpeg";
 
 import type {
   DepartmentTab,
@@ -199,6 +203,12 @@ export const facultyMembers: FacultyMember[] = [
   name: "SUSHMITA N S",
   designation: "Assistant Professor",
 },
+{
+  id:8,
+  image: sheshan,
+  name: "Sheshan S Maniyur",
+  designation: "Assistant Professor",
+},
 ];
 
 
@@ -212,8 +222,8 @@ export const technicalFacultyMembers: FacultyMember[] = [
 
   {
     id: 2,
-    image: Navya,
-    name: "Ms Navya",
+    image: sindhu,
+    name: "Ms Sindhu",
     designation: "Programmer",
   },
   {
@@ -289,42 +299,60 @@ export const iseEventsData: DepartmentEventsData = {
   events: [
     {
       id: 1,
+      title: "GTTC Industrial Visit as part of IDT – ODD Sem (2026 – 2027)",
+      image: gttc,
+      alt: "GTTC Industrial Visit as part of IDT – ODD Sem (2026 – 2027)",
+    },
+    {
+      id: 2,
+      title: "AI IN GITHUB AND GITHUB ACTION",
+      image: aiGithub,
+      alt: "AI IN GITHUB AND GITHUB ACTION",
+    },
+    {
+      id: 3,
+      title: "Big Data Tools and Technologies",
+      image: bigData,
+      alt: "Big Data Tools and Technologies",
+    },
+    {
+      id: 4,
       title: "ZeroOne init_to_win_IT CHAPTER – 1",
       image: event1Image,
       alt: "ZeroOne init_to_win_IT CHAPTER – 1",
     },
     {
-      id: 2,
+      id: 5,
       title: "Generative AI: Hands-On Learning from Concepts to Applications",
       image: event2Image,
       alt: "Generative AI: Hands-On Learning from Concepts to Applications",
     },
     {
-      id: 3,
+      id: 6,
       title: "Big Data Tools and Technologies",
       image: event3Image,
       alt: "Big Data Tools and Technologies",
     },
     {
-      id: 4,
+      id: 7,
       title: "Infosys Springboard Student Enablement Program",
       image: event4Image,
       alt: "Infosys Springboard Student Enablement Program",
     },
     {
-      id: 5,
+      id: 8,
       title: "Unleashing the Power of R: A Journey into Data Science and Statistical Computing",
       image: event5Image,
       alt: "Unleashing the Power of R: A Journey into Data Science and Statistical Computing",
     },
     {
-      id: 6,
+      id: 9,
       title: "Master Conversational AI: Building Intelligent Chatbot Applications",
       image: event6Image,
       alt: "Master Conversational AI: Building Intelligent Chatbot Applications",
     },
     {
-      id: 7,
+      id: 10,
       title: "Accelerate Growth with DevOps Efficiency",
       image: event7Image,
       alt: "Accelerate Growth with DevOps Efficiency",

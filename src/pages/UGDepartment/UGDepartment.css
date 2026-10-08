@@ -33,6 +33,7 @@
 @media (max-width: 48rem) {
   .ug-department {
     padding: 0rem 0 0;
+    margin-top:var(--mobile-margin-top);
   }
 
   .ug-department__tab-content {
