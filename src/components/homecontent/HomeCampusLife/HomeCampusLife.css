@@ -35,7 +35,7 @@
   grid-template-columns: 1fr 1fr 1.6fr;
   grid-template-rows: 18rem 24rem;
   gap: 1rem;
-  margin-top: var(--primary-margin-top);
+  margin-top: 1rem;
 }
 
 .campus-life-card {

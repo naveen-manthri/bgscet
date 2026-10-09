@@ -91,7 +91,7 @@
   scroll-snap-type: x proximity;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  margin-top: var(--primary-margin-top);
+  margin-top: 1rem;
   margin-bottom: 1.5rem;
 }
 
@@ -293,7 +293,7 @@
   }
 
   .home-academic .container {
-    gap: 3rem;
+    gap: 0rem;
   }
 
   .academic-title-divider {
