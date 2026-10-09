@@ -190,3 +190,9 @@
     font-size: var(--button-text);
   }
 }
+
+@media (min-width: 601px) and (max-width: 64rem) {
+  .visit-campus {
+    margin-top: 0;
+  }
+}

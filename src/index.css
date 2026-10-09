@@ -56,7 +56,7 @@
   --subtitle: clamp(0.78rem, 1.5vw, 1rem);
   --body: clamp(0.76rem, 1.35vw, 0.95rem);
   --body-size: var(--body);
-  --para-descrptn-font-size-desktop: 1.25rem;
+  --para-descrptn-font-size-desktop: clamp(1rem, 1.6vw, 1.25rem);
   --font-size: var(--para-descrptn-font-size-desktop);
   --body-size-mobile: clamp(0.82rem, 3.6vw, 0.95rem);
   --text-sm: clamp(0.72rem, 1.2vw, 0.86rem);
@@ -100,11 +100,11 @@
 --guru-title:#7D2720;
 
 /*Margins*/
---primary-margin-top: 3rem;
---primary-margin-bottom: 3rem;
---primary-margin: 3rem 0;
---margin-left-right:4rem;
---visit-campus-margin-top:5rem;
+--primary-margin-top: clamp(2rem, 4vw, 3rem);
+--primary-margin-bottom: clamp(2rem, 4vw, 3rem);
+--primary-margin: clamp(2rem, 4vw, 3rem) 0;
+--margin-left-right: clamp(1.25rem, 4vw, 4rem);
+--visit-campus-margin-top: clamp(3rem, 6vw, 5rem);
 
 /*padding*/
 --primary-padding: 0 4rem;
@@ -420,6 +420,14 @@ img {
   font-size: clamp(2rem, 2.5vw, 2rem);
   font-weight: 800;
   line-height: 1.5;
+}
+
+@media (min-width: 37.5em) and (max-width: 58em) {
+  .main-header__title {
+    font-size: clamp(1.35rem, 3.2vw, 2rem);
+    line-height: 1.2;
+    text-wrap: balance;
+  }
 }
 
 /* NAVBAR STARTS HERE */
@@ -1113,7 +1121,7 @@ grid-template-columns: 1fr;  gap: 1.5rem;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .top-announcement-bar__inner {
     min-height: 3rem;
     padding: 0.7rem 1rem;
@@ -1197,6 +1205,67 @@ grid-template-columns: 1fr;  gap: 1.5rem;
     font-weight: 500;
     line-height: 1.25;
     text-align: center;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 58em) {
+  .main-navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1200;
+    width: 100%;
+    height: auto;
+    background: var(--surface);
+    box-shadow: none;
+  }
+
+  .main-navbar__inner {
+    width: 100%;
+    min-height: 4rem;
+    padding: 0.65rem 1.25rem;
+    justify-content: space-between;
+    border-bottom: 0.08rem solid var(--border);
+  }
+
+  .main-navbar__brand {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    color: var(--primary-deep);
+    font-size: 0.9rem;
+    font-weight: 800;
+    line-height: 0.95;
+    text-align: left;
+  }
+
+  .main-navbar__brand .main-header__logo {
+    width: 3.75rem;
+    height: 3.75rem;
+    flex: 0 0 auto;
+  }
+
+  .main-navbar__brand-name {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-navbar__toggle {
+    display: inline-flex;
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  .main-navbar__toggle span {
+    width: 2rem;
+    height: 0.1rem;
+    background: var(--text);
   }
 }
 
