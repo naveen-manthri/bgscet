@@ -7,7 +7,8 @@
   --program-content-bg: #f4f4f4;
   --program-duration-old-bg: #f1f1f1;
   --program-duration-bg: #C03C31;
-  --program-duration-border: #e5e5e5;
+  /* --program-duration-border: #e5e5e5; */
+  --program-duration-text: #B89552;
   --academic-readmore: var(--primary-deep);
   --academic-white: #ffffff;
 
@@ -239,12 +240,22 @@
   }
 
   .program-image {
-    flex: 0 0 60%;
+    flex: 0 0 55%;
     height: auto;
   }
 
   .program-content {
-    flex: 0 0 40%;
+    flex: 0 0 45%;
+  }
+}
+
+@media (min-width: 48.01rem) and (max-width: 64rem) {
+  .program-image {
+    flex-basis: 50%;
+  }
+
+  .program-content {
+    flex-basis: 50%;
   }
 }
 

@@ -23,6 +23,9 @@
 }
 
 .department-faculty__info {
+  --faculty-name-size: min(2rem, 6.5cqi);
+
+  container-type: inline-size;
   padding: 0.75rem;
 
   text-align: center;
@@ -36,9 +39,11 @@
   color: var(--clr-title);
 
   font-family: var(--ff-primary);
-  font-size: 2rem;
+  font-size: var(--faculty-name-size);
   font-weight: var(--fw-bold);
   line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .department-faculty__designation {
@@ -47,8 +52,9 @@
   color: var(--clr-title);
 
   font-family: var(--ff-primary);
-  font-size: 1rem;
+  font-size: calc(var(--faculty-name-size) * 0.75);
   font-weight: var(--fw-regular);
+  text-align: center;
 }
 .TechnicalFaculty{
   margin-top: var(--primary-margin-top);
@@ -98,19 +104,26 @@
   }
 
   .department-faculty__image {
-    padding-bottom: 1rem;
+    padding-bottom: 0.75rem;
   }
 
   .department-faculty__name {
-    font-size: var(--mobile-font-size);
     line-height: var(--mobile-line-height);
-    overflow-wrap: anywhere;
   }
 
   .department-faculty__designation {
     margin-bottom: 0;
-    font-size: var(--text-sm);
     line-height: 1.4;
     overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 30rem) {
+  .department-faculty__info {
+    --faculty-name-size: min(1rem, 7.2cqi);
+  }
+
+  .department-faculty__name {
+    letter-spacing: -0.3px;
   }
 }
