@@ -68,7 +68,7 @@
 .about-librarian__card {
   /* display: flex;
   flex-direction: column; */
-  gap: 2rem;
+  gap: 1.5rem;
   width: 17rem;
   overflow: hidden;
   background: var(--white);
@@ -82,6 +82,9 @@
 }
 
 .about-librarian__card-content {
+  --faculty-name-size: min(1rem, 7.2cqi);
+
+  container-type: inline-size;
   padding: 1rem 0.8rem;
   background: var(--red-clr);
   text-align: center;
@@ -90,7 +93,7 @@
 .about-librarian__name {
   margin-bottom: 0.35rem;
   color: var(--white);
-  font-size: 1rem;
+  font-size: var(--faculty-name-size);
   font-weight: var(--fw-semibold);
   text-transform: uppercase;
 }
@@ -98,8 +101,12 @@
 .about-librarian__designation,
 .about-librarian__qualification {
   color: var(--white);
-  font-size: 0.8rem;
+  font-size: calc(var(--faculty-name-size) * 0.75);
   line-height: 1.5;
+}
+
+.about-librarian__designation {
+  margin-bottom: clamp(0.2rem, 2cqi, 1rem);
 }
 
 .about-librarian__qualification {
@@ -173,7 +180,7 @@
   }
 
   .about-librarian__card {
-    gap: 1rem;
+    gap: 0.75rem;
     width: 100%;
   }
 
@@ -185,14 +192,12 @@
 
   .about-librarian__name {
     margin-bottom: 0.25rem;
-    font-size: 0.7rem;
     line-height: 1.25;
     overflow-wrap: anywhere;
   }
 
   .about-librarian__designation,
   .about-librarian__qualification {
-    font-size: 0.68rem;
     line-height: 1.35;
     overflow-wrap: anywhere;
   }
