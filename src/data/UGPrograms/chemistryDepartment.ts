@@ -18,7 +18,7 @@ const chemistryDepartment: UGDepartmentData = {
   hodMessage: {
     title: "HOD’s Message",
     image: hodImage,
-    name: "Dr. Shivakumar",
+    name: "Dr. Vinay Kumar",
     designation: ["Professor and Head of the Department"],
     description: "Dr Vinay Kumar B, HOD, Department of Chemistry having the teaching experience of 13 years. He obtained his Ph.D. degree from Kuvempu University in the year 2012. His main research area includes bioinorganic chemistry, nanomaterials and catalysis in organic transformations. He currently supervising 3 research students and 1 Ph.D. awarded under his guidance. He has published 28 research articles in reputed national and international journals. He presented several research papers in national and international conferences.",
   },
@@ -34,7 +34,7 @@ const chemistryDepartment: UGDepartmentData = {
     mission: { title: "Mission", points: ["Delivering students with an opportunity to gain a deeper understanding of sensors, memory storage devices, and display systems.", "Providing eco-friendly solutions addressing to environmental management of e-waste." ,"Imparting analytical thinking to solve societal problems related to chemical substances in multidisciplinary areas."] },
   },
   facultyMembers: [
-    { id: 1, image: hodImage, name: "Dr. Shivakumar", designation: "Professor & HOD" },
+    { id: 1, image: hodImage, name: "Dr. Vinay Kumar", designation: "Associate Professor & HOD" },
     { id: 2, image: sangeethaImage, name: "Dr. Sangeetha", designation: "Assistant Professor" },
   ],
   instructorMembers: [

@@ -21,9 +21,10 @@ const CareerOpportunities = ({
 
       <div className="career-opportunities__content">
 
-        <p className="career-opportunities__description">
-          {data.description}
-        </p>
+        <p
+          className="career-opportunities__description"
+          dangerouslySetInnerHTML={{ __html: data.description }}
+        />
 
 
         <div className="flex flex-align-start flex-justify-between career-opportunities__body">

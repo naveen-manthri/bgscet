@@ -1,7 +1,9 @@
 import bannerImage from "../../assets/images/Physicsdepartment/phy-banner.png";
 import labImage from "../../assets/images/Physicsdepartment/phy-lab.png";
 import hodImage from "../../assets/images/Physicsdepartment/Dr-Ambika.png";
-import neetaImage from "../../assets/images/Physicsdepartment/Dr-Neeta-Shukla.png";
+// import neetaImage from "../../assets/images/Physicsdepartment/Dr-Neeta-Shukla.png";
+import vinodKumar from "../../assets/images/Physicsdepartment/Dr-Vinod.jpeg";
+
 import type { UGDepartmentData } from "../../types/ugprograms";
 
 const physicsDepartment: UGDepartmentData = {
@@ -34,7 +36,7 @@ const physicsDepartment: UGDepartmentData = {
   },
   facultyMembers: [
     { id: 1, image: hodImage, name: "Dr. Ambika A V", designation: "Assistant Professor & HOD" },
-    { id: 2, image: neetaImage, name: "Dr Neeta Shukla", designation: "Assistant Professor" },
+    { id: 2, image: vinodKumar, name: "Dr. Vinod Kumar S", designation: "Assistant Professor" },
   ],
   technicalFacultyMembers: [],
   achievementData: { title: "Achievements", achievements: [] },

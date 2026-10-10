@@ -49,7 +49,7 @@ export const homeVisionMission = {
   title: 'Vision & Mission',
   image: visionMissionImage,
   description:
-    'BGS College of Engineering and Technology (BGSCET) is a newly established engineering institution offering five industry-driven UG programs - CSE, ISE, AI & ML, AI & DS, and CSD. The college is managed by BGSKH Education Trust (R.), a unit of Sri Adichunchanagiri Shikshana Trust (SAST) under the guidance of Sri Adichunchanagiri Mahasamsthana Mutt.',
+    'Creating Competent IT Professionals With Core Values For The Real World.\nProviding Students with a Sound Knowledge in IT Fundamentals.\nExposing Students to Emerging Frontiers in various domains of IT enabling Continuous Learning.\nPromoting Excellence in Teaching, Training, Research and Consultancy.\nDeveloping Entrepreneurial acumen to venture into Innovative areas of IT.\nImparting value based Professional Education with a sense of Social Responsibility.',
 };
 
 export const whatsappLink = 'https://wa.me/919964897207';

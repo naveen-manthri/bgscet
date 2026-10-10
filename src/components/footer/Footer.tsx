@@ -38,9 +38,9 @@ function Footer() {
               </h2>
               <ul className="flex flex-direction-column footer__list">
                 {column.links.map((link) => (
-                  <li className="footer__item" key={link}>
-                    <a className="inline-flex-center footer__link" href="/">
-                      {link}
+                  <li className="footer__item" key={link.label}>
+                    <a className="inline-flex-center footer__link" href={link.href} target="_blank" rel="noopener noreferrer">
+                      {link.label}
                     </a>
                   </li>
                 ))}

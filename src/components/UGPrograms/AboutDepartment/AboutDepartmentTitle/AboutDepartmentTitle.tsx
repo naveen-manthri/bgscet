@@ -19,9 +19,10 @@ const AboutDepartment = ({
       <DepartmentSectionHeading title={data.title} className="department-section-heading--medium" />
 
       <div className="about-cse__content">
-        <p className="about-cse__description">
-          {data.description}
-        </p>
+        <p
+          className="about-cse__description"
+          dangerouslySetInnerHTML={{ __html: data.description }}
+        />
       </div>
 
     </section>

@@ -22,10 +22,15 @@ export type Testimonial = {
   quote: string;
 };
 
+export type FooterLink = {
+  label: string;
+  href: string;
+};
+
 export type FooterColumn = {
   id: number;
   title: string;
-  links: string[];
+  links: FooterLink[];
 };
 
 export const companyLogos: CompanyLogo[] = [
@@ -87,34 +92,38 @@ export const footerColumns: FooterColumn[] = [
     id: 1,
     title: 'Schools',
     links: [
-      'BGS National Public School',
-      'BGS Residential School',
-      'International Public School',
-      'BGS English School',
-      'BGS School',
-      'Gnana Vikasa Polytechnic',
-      'BGSWS',
+      { label: 'BGS National Public School', href: 'https://bgscet.ac.in/' },
+      { label: 'BGS Residential School', href: 'https://bgscet.ac.in/publications/' },
+      { label: 'International Public School', href: 'https://bgscet.ac.in/faculty/' },
+      { label: 'BGS English School', href: 'https://bgscet.ac.in/' },
+      { label: 'BGS School', href: 'https://bgscet.ac.in/labs/' },
+      { label: 'Gnana Vikasa Polytechnic', href: 'https://bgscet.ac.in/labs/' },
+      { label: 'BGSWS', href: 'https://bgscet.ac.in/' },
     ],
   },
   {
     id: 2,
     title: 'Colleges',
     links: [
-      'Adichunchanagiri University',
-      'SAC Institutions',
-      'PU Colleges',
-      'SJCIT',
-      'SJBIT',
-      'BGSIT',
-      'Medical Science',
-      'Nursing Science',
-      'Allied Health Science',
+      { label: 'Adichunchanagiri University', href: 'https://bgscet.ac.in/about/' },
+      { label: 'SAC Institutions', href: 'https://bgscet.ac.in/publications/' },
+      // { label: 'PU Colleges', href: 'https://bgscet.ac.in/' },
+      { label: 'SJCIT', href: 'https://bgscet.ac.in/faculty/' },
+      { label: 'SJBIT', href: 'https://bgscet.ac.in/' },
+      { label: 'BGSIT', href: 'https://bgscet.ac.in/labs/' },
+      { label: 'Medical Science', href: 'https://bgscet.ac.in/labs/' },
+      { label: 'Nursing Science', href: 'https://bgscet.ac.in/labs/' },
+      { label: 'Allied Health Science', href: 'https://bgscet.ac.in/labs/' },
     ],
   },
   {
     id: 3,
     title: 'PU Colleges',
-    links: ['BGS Mahalakshmipuram', 'BGS Nagaruru', 'SAC Institutions'],
+    links: [
+      { label: 'BGS Mahalakshmipuram', href: 'https://ise.sjcit.ac.in/' },
+      { label: 'BGS Nagaruru', href: 'https://ce.sjcit.ac.in/' },
+      { label: 'SAC Institutions', href: 'https://ae.sjcit.ac.in/' },
+    ],
   },
 ];
 

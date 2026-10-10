@@ -119,11 +119,12 @@ export const aboutDepartment: AboutDepartment = {
   title: "About AI & DS",
 
   description: `The department of Artificial Intelligence and Data Science (AI&DS) is established during the academic year 2022-23 with an intake of 60.
+The course integrates the principles of Computer Science with Data Science and provides students with a strong foundation in machine learning, deep learning, statistics, visualization, predictive analytics, and intuitive design thinking. The department aims to create professionals who can build data-driven solutions, interpret complex information, and apply intelligent systems across various domains.
 
-Artificial Intelligence is a human-like intelligence provided to machines where machines act and think as humanly & solve problems faster than humans. Speech recognition, translation tools, etc., are the building areas of AI.
-Artificial Intelligence is the implementation of a predictive model to forecast future events and trends, Automation of the process & uses machine learning techniques
-Data Science is a subset of Artificial Intelligence. Data science is a collection of data to analyze and make a decision. It uses scientific methods, processes, algorithms, and insights from many structural and unstructured data.
-Data Science is a detailed process that mainly involves pre-processing analysis, visualization, and prediction with a high degree of scientific processing & extensive tools will be used to process the data uses the technique of data analysis and data analytics.`
+<strong>Artificial Intelligence</strong> is a human-like intelligence provided to machines where machines act and think as humanly & solve problems faster than humans. Speech recognition, translation tools, etc., are the building areas of AI.
+<strong>Artificial Intelligence</strong> is the implementation of a predictive model to forecast future events and trends, Automation of the process & uses machine learning techniques.
+<strong>Data Science</strong> is a subset of Artificial Intelligence. Data science is a collection of data to analyze and make a decision. It uses scientific methods, processes, algorithms, and insights from many structural and unstructured data.
+<strong>Data Science</strong> is a detailed process that mainly involves pre-processing analysis, visualization, and prediction with a high degree of scientific processing & extensive tools will be used to process the data uses the technique of data analysis and data analytics.`
 };
 
 
@@ -131,7 +132,7 @@ export const careerOpportunities: CareerOpportunities = {
   title: "Career Opportunities",
 
   description:
-    `AI&DS are amongst the hottest fields of the 21st century that will impact all segments of daily life by 2025, from transport and logistics to healthcare and customer service. Immense employment opportunities available for AI&DS engineers & have significantly increased worldwide in the past couple of years, with demand easily outstripping supply in the field of`,
+    `AI&DS are amongst the hottest fields of the 21st century that will impact all segments of daily life by 2025, from transport and logistics to healthcare and customer service. Immense employment opportunities available for AI&DS engineers & have significantly increased worldwide in the past couple of years, with demand easily outstripping supply in the field of.`,
   image: careerImage,
 
   opportunities: [

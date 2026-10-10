@@ -203,14 +203,14 @@ export const facultyMembers: FacultyMember[] = [
   {
     id: 4,
     image: mrsVedha,
-    name: "Mrs.Vedha.C",
+    name: "Prof. Vedha.C",
     designation: "Assistant Professor",
   },
 
   {
     id: 5,
     image: mrChethanHV,
-    name: "Mr.Chethan H V",
+    name: "Prof. Chethan H V",
     designation: "Assistant Professor",
   },
   {
@@ -223,13 +223,13 @@ export const facultyMembers: FacultyMember[] = [
   {
     id: 7,
     image: mrSatishG,
-    name: "Mr. SATHISHA G",
-    designation: "Assistant Professor",
+    name: "Dr. SATHISHA G",
+    designation: "Associate Professor",
   },
   {
     id: 8,
     image: mrsAshaSN,
-    name: "Mrs. Asha S N",
+    name: "Prof. Asha S N",
     designation: "Assistant Professor",
   },
 

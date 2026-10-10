@@ -9,15 +9,16 @@ export const contactEnquiryData: ContactEnquiryData = {
   contacts: [
     {
       id: 1,
-      name: "Mr. Hanumesh G. K",
+      name: "Mr. Sagar NS",
       designation: "Office Superintendent,",
-      organization: "BGSCET ",
-      phone: "+91 9844846820",
+      organization: "BGSCET",
+      phone: "+91 9141133697",
+      email: "registrar@bgscet.ac.in",
     },
     {
       id: 2,
-      name: "Dr. Ravikumar GK",
-      designation: "Principal, ",
+      name: "Dr Kiran P",
+      designation: "Principal,",
       organization: "BGSCET",
       phone: "+91 9964897207",
       email: "principal@bgscet.ac.in",

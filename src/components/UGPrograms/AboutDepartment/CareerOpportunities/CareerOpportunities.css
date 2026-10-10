@@ -31,9 +31,14 @@
 
   font-family: var(--ff-primary);
   font-size: var(--font-size);
-  line-height: var(--line-height);;
+  line-height: var(--line-height);
+  white-space: pre-line;
 
   text-align: justify;
+}
+
+.career-opportunities__description strong {
+  font-weight: 600;
 }
 
 .career-opportunities__body {

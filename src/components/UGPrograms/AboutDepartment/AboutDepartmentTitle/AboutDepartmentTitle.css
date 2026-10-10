@@ -30,7 +30,12 @@
   font-weight: var(--fw-regular);
   line-height: 1.9;
 
+  white-space: pre-line;
   text-align: justify;
+}
+
+.about-cse__description strong {
+  font-weight: 600;
 }
 
 @media (max-width: 48rem) {

@@ -20,6 +20,7 @@
   font-size: var(--mobile-font-size);
   line-height: var(--mobile-line-height);
   text-align: justify;
+  white-space: pre-line;
   order: 3;
 }
 
@@ -68,8 +69,9 @@
   .home-vision-mission__content p {
     font-size: var(--font-size);
     line-height: var(--line-height);
-    order: initial;
-  }
+      white-space: pre-line;
+      order: initial;
+    }
 
   .home-vision-mission__image {
     width: 480px;
@@ -118,6 +120,7 @@
     order: 3;
     font-size: var(--mobile-font-size);
     line-height: var(--mobile-line-height);
+    white-space: pre-line;
   }
 
   .home-vision-mission__image-container {
