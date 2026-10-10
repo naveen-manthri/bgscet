@@ -17,7 +17,8 @@
 } */
 
 .letter-section__list {
-  padding-left: 1.5rem;
+    padding-left: var(--list-padding-left);
+
 }
 
 .letter-section__group + .letter-section__group {

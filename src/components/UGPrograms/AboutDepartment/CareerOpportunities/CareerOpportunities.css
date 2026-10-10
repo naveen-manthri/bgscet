@@ -49,7 +49,8 @@
   flex: 0 0 32%;
 
   margin: 0;
-  padding-left: 1.5rem;
+    padding-left: var(--list-padding-left);
+
 }
 
 .career-opportunities__item {

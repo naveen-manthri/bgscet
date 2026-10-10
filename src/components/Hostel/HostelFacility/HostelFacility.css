@@ -7,7 +7,8 @@
 .hostel-facility__intro-list,
 .hostel-facility__facility-list {
   gap: 1rem;
-  padding-left: 1.5rem;
+    padding-left: var(--list-padding-left);
+
 }
 
 .hostel-facility__intro-item,
@@ -53,6 +54,7 @@
   .hostel-facility__intro-list,
   .hostel-facility__facility-list {
     padding-left: 1rem;
+    gap: var(--bullet-list-gap);
   }
 
   .hostel-facility__intro-item,

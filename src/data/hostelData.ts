@@ -52,9 +52,9 @@ export const hostelData: HostelData = {
         },
         {
           slNo: "3",
-          member: "Mr. Chethan H V",
+          member: "Prof. Chethan H V",
           designation: "Assistant Professor",
-          department: "CS&E",
+          department: "CSE",
           inCharge: "Boys Hostel Warden",
           contact: "7795788309\nchethan.cse@bgscet.ac.in",
         },

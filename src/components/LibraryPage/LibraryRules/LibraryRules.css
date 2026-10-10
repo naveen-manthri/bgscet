@@ -13,7 +13,8 @@
 
 .library-rules__list {
   /* margin: 2rem 0 0; */
-  padding-left: 1.5rem;
+    padding-left: var(--list-padding-left);
+
 }
 
 .library-rules__item {

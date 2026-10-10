@@ -20,7 +20,7 @@
  
   gap: var(--bullet-list-gap);
   /* margin-top: -1.8rem; */
-  padding-left: 2rem;
+  padding-left: var(--list-padding-left);
   
 }
 

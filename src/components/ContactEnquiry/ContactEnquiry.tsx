@@ -26,12 +26,12 @@ const ContactEnquiry = () => {
                     <p className="contact-card__organization">  {contact.organization}  </p>
 
                     <a href={`tel:${contact.phone.replace(/\s/g, "")}`} className="flex flex-align-center contact-card__link" >
-                        <span className="material-symbols-outlined">  call  </span>  {contact.phone}
+                        <span className="material-symbols-outlined">  Call:  </span>  <span className="contact-card__value">{contact.phone}</span>
                     </a>
 
                     {contact.email && (
                         <a href={`mailto:${contact.email}`} className="flex flex-align-center contact-card__link" >
-                        <span className="material-symbols-outlined">  mail </span>  {contact.email}
+                        <span className="material-symbols-outlined">  Mail: </span>  <span className="contact-card__value">{contact.email}</span>
                         </a>
                     )}
                 </div>
@@ -44,7 +44,21 @@ const ContactEnquiry = () => {
 
         <div className="visit-us">
             <div className="flex flex-direction-column visit-us__left">
-              <DepartmentSectionHeading title="Visit Us" className="department-section-heading--medium"/> {data.visit.address.map((line, index) => (  <p key={index} className="visit-us__address">  {line}  </p>  ))} <a href={`tel:${data.visit.contact.replace(/\s/g, "")}`} className=" visit-us__contact"> <span className="material-symbols-outlined">call</span>  {data.visit.contact}</a>
+              <DepartmentSectionHeading title="Visit Us" className="department-section-heading--medium"/> {data.visit.address.map((line, index) => (  <p key={index} className="visit-us__address">  {line}  </p>  ))}
+              <div className="visit-us__contact">
+                <span className="material-symbols-outlined">Call</span>
+                <span className="visit-us__contact-numbers">
+                  {data.visit.contact.split("/").map((phone, index) => {
+                    const number = phone.trim();
+                    return (
+                      <span key={number}>
+                        {index > 0 && " / "}
+                        <a href={`tel:${number.replace(/\s/g, "")}`}>{number}</a>
+                      </span>
+                    );
+                  })}
+                </span>
+              </div>
             </div>
 
             <div className="visit-us__right">
