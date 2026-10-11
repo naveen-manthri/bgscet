@@ -59,7 +59,7 @@ export const staffDetailsPageData: StaffDetailsPageData = {
     { id: "contact-college", text: "BGS Collegeof Engineering & Technology" },
     { id: "contact-address-line-1", text: "Mahalakshmipuram, Bengaluru," },
     { id: "contact-address-line-2", text: "Karnataka 560086. INDIA" },
-    { id: "contact-mobile", label: "Mobile No", value: "9945773984" },
+    { id: "contact-mobile", label: "Mobile No",href:"9945773984", linkText: "9945773984" },
     {
       id: "contact-email",
       label: "Email id",

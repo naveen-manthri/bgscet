@@ -1,0 +1,235 @@
+.home-content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.home-content-section--about-mutt {
+  --home-content-section-background: #f6f7fa;
+  margin-top: 0;
+  padding: 2rem 1.25rem 1rem;
+  background-color: var(--home-content-section-background);
+}
+
+.home-content-section--vision-mission {
+  margin-bottom: var(--mobile-margin-top);
+  padding: 2rem 1.25rem;
+  background-color: var(--home-vision-mission-bg);
+}
+
+.home-content-section__content {
+  flex: 1;
+  gap: var(--list-item-gap);
+  display: contents;
+}
+
+.home-content-section--vision-mission .home-content-section__content {
+  gap: 1rem;
+}
+
+.home-content-section__content p {
+  margin: 0;
+  color: var(--text);
+  font-size: var(--mobile-font-size);
+  line-height: var(--mobile-line-height);
+  text-align: justify;
+  order: 3;
+}
+
+.home-content-section--vision-mission .home-content-section__content p {
+  white-space: pre-line;
+}
+
+.home-section-title {
+  color: var(--title-color);
+  font-size: var(--section-title);
+  font-weight: 800;
+  order: 1;
+  margin: 0;
+}
+
+.home-content-section__image {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.home-content-section--about-mutt .home-content-section__image {
+  border-radius: 1rem;
+  clip-path: inset(0 round 1rem);
+  background-color: var(--home-content-section-background);
+}
+
+.home-content-section--vision-mission .home-content-section__image {
+  border-radius: var(--home-mutt-vm-image-border);
+}
+
+.home-content-section__image-container {
+  order: 2;
+}
+
+.home-content-section--about-mutt .home-content-section__image-container {
+  border-radius: 1rem;
+}
+
+.home-content-section--vision-mission .home-content-section__image-container {
+  border-radius: var(--home-mutt-vm-image-border);
+}
+
+@media (min-width: 1024px) {
+  .home-content-section {
+    display: grid;
+    align-items: center;
+  }
+
+  .home-content-section--text-first {
+    grid-template-columns: minmax(0, 1fr) minmax(22rem, 30rem);
+  }
+
+  .home-content-section--image-first {
+    grid-template-columns: minmax(0, 30rem) minmax(0, 1fr);
+    gap: 8rem;
+  }
+
+  .home-content-section--about-mutt {
+    justify-content: center;
+    gap: clamp(2rem, 4vw, 5rem);
+    padding: clamp(3.25rem, 5vw, 4rem);
+    padding-inline: 4rem;
+  }
+
+  .home-content-section--vision-mission {
+    gap: 8rem;
+    padding: clamp(3rem, 4vw, 3.5rem);
+    padding-inline: 4rem;
+    margin-bottom: 0;
+  }
+
+  .home-content-section__content {
+    display: block;
+    min-width: 0;
+    max-width: 48rem;
+    order: initial;
+  }
+
+  .home-content-section__content p {
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    order: initial;
+  }
+
+  .home-content-section__image {
+    width: 100%;
+    margin: 0;
+  }
+
+  .home-content-section--about-mutt .home-content-section__image {
+    aspect-ratio: 4 / 3;
+    border-radius: var(--home-mutt-vm-image-border);
+    clip-path: inset(0 round 2rem);
+  }
+
+  .home-content-section--vision-mission .home-content-section__image {
+    width: 480px;
+    height: 360px;
+    max-width: 100%;
+  }
+
+  .home-content-section__image-container {
+    width: 100%;
+    order: initial;
+  }
+
+  .home-content-section--about-mutt .home-content-section__image-container {
+    border-radius: var(--home-mutt-vm-image-border);
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1023px) {
+  .home-content-section {
+    display: grid;
+    align-items: center;
+    gap: clamp(1.5rem, 3vw, 2rem);
+  }
+
+  .home-content-section--text-first {
+    grid-template-columns: minmax(0, 1fr) minmax(0, min(42vw, 28rem));
+  }
+
+  .home-content-section--image-first {
+    grid-template-columns: minmax(0, min(42vw, 28rem)) minmax(0, 1fr);
+  }
+
+  .home-content-section__content {
+    display: block;
+    min-width: 0;
+    order: initial;
+  }
+
+  .home-content-section__image-container {
+    order: initial;
+  }
+
+  .home-content-section__image {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 4 / 3;
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-content-section--about-mutt {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    margin-top: 0;
+    padding: 2rem 1.25rem 1rem;
+  }
+
+  .home-content-section--vision-mission {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    margin-bottom: var(--mobile-margin-top);
+    padding: 2rem 1.25rem;
+  }
+
+  .home-content-section__content {
+    display: contents;
+  }
+
+  .home-content-section__content h2 {
+    order: 1;
+  }
+
+  .home-content-section__content p {
+    order: 3;
+    font-size: var(--mobile-font-size);
+    line-height: var(--mobile-line-height);
+  }
+
+  .home-content-section__image-container {
+    order: 2;
+  }
+
+  .home-content-section__image {
+    width: 100%;
+    max-width: none;
+  }
+
+  .home-content-section--about-mutt .home-content-section__image {
+    border-radius: 1rem;
+    clip-path: inset(0 round 1rem);
+  }
+
+  .home-content-section--about-mutt .home-content-section__image-container {
+    border-radius: 1rem;
+  }
+}

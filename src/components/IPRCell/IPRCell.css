@@ -58,12 +58,6 @@
   outline-offset: 0.25rem;
 }
 
-@media (max-width: 992px) {
-  .ipr-gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 @media (max-width: 768px) {
   .ipr {
     box-sizing: border-box;
@@ -75,8 +69,13 @@
   }
 
   .ipr-gallery {
-    grid-template-columns: 1fr;
     gap: 1rem;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .ipr-gallery {
+    grid-template-columns: 1fr;
   }
 }
 

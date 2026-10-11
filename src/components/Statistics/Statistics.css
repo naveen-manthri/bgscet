@@ -36,8 +36,8 @@
 }
 
 .statistics {
-  width: 100vw;
-  margin-inline: calc(50% - 50vw);
+  width: 100%;
+  margin-inline: 0;
   margin-top: var(--primary-margin-top);
   padding: var(--section-padding-y) var(--section-padding-x);
   background: linear-gradient(

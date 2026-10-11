@@ -171,7 +171,7 @@ export const facultyMembers: FacultyMember[] = [
 {
   id: 4,
   image: sanjitha,
-  name: "Mrs Sanjitha S",
+  name: "Prof. Sanjitha S",
   designation: "Assistant Professor",
 },
 // {

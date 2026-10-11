@@ -154,3 +154,17 @@
     line-height: 1.5;
   }
 }
+
+@media (max-width: 37.5rem) {
+  .student-testimonials .section-title,
+  .student-testimonials .section-title-second-line {
+    font-size: clamp(1rem, calc(9.5vw - 0.3rem), 30.4px);
+    white-space: nowrap;
+  }
+
+  .student-testimonials .section-title-second-line {
+    box-sizing: border-box;
+    max-width: calc(100vw - 2.5rem);
+    padding-inline: 0.25rem;
+  }
+}

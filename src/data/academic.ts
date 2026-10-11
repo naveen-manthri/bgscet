@@ -153,7 +153,7 @@ export const admissionInformationData: AdmissionInformationSection = {
 
   contacts: [
     {
-      name: "1. Dr. Ravi Kumar G.K",
+      name: "1. Dr Kiran P",
       designation: "Principal, BGSCET",
       email: "E-Mail ID: principal@bgscet.ac.in",
       phone: "Phone: 9964897207",
@@ -169,7 +169,7 @@ export const admissionInformationData: AdmissionInformationSection = {
       name: "3. Mr. Hanumesh G. K",
       designation: "Office Superintendent, BGSCET",
       email: "",
-      phone: "Mobile Number- +91 9844846820",
+      phone: "Phone: +91 9844846820",
     },
   ],
 };

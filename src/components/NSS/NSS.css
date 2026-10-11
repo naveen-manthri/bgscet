@@ -117,3 +117,26 @@
     padding-left: var(--mobile-list-padding-left);
   }
 }
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .nss__intro {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .nss__intro-image {
+    flex: 0 0 14rem;
+    width: auto;
+  }
+
+  .nss__intro-image img {
+    width: 70%;
+    margin: 0;
+  }
+
+  .nss__intro-content p {
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+  }
+}

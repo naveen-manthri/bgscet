@@ -1,7 +1,7 @@
 import directorImage from "../../assets/images/director-principal/Director-image.jpg";
-import type { DirectorData } from "./types";
+import type { LeadershipMessageData } from "../reusable/LeadershipMessage";
 
-export const directorData: DirectorData = {
+export const directorData: LeadershipMessageData = {
   name: "Dr G.T Raju",
   topParagraphs: [
     "Bengaluru being the “Silicon Valley of India” or “IT Capital / Education Hub of India” due to its role as the nation’s leading Information Technology (IT) exporter, needs competent IT Professionals. A large number of information technology companies located in the city contributed 38% of India’s ₹1,442 billion IT exports and hosts nearly 40% of India’s start-ups. Infosys, Wipro, Mindtree, Mphasis, Flipkart, Myntra and other Indian technological organizations are headquartered in Bangalore. Top companies amongst the Fortune 500 have set up their Global Capability Center (GCC) in Bangalore. Government of Karnataka has an IT policy (2020-2025) aimed further cementing the position of Bangalore and thereby Karnataka as the IT hub of India.",

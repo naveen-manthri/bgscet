@@ -1,6 +1,6 @@
 .about-department > .statistics {
-  width: 100vw;
-  margin-inline: calc(50% - 50vw);
+  width: calc(100% + 8rem);
+  margin-inline: -4rem;
 }
 
 @media (max-width: 768px) {

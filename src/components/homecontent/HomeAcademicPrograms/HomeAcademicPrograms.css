@@ -382,3 +382,20 @@
     font-size: 0.85rem;
   }
 }
+
+@media (min-width: 37.5rem) and (max-width: 64rem) {
+  .programs-grid {
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x proximity;
+    margin-top: 1rem;
+  }
+
+  .program-card {
+    flex: 0 0 clamp(17rem, 40vw, 22.5rem);
+    width: auto;
+    min-width: 0;
+    scroll-snap-align: start;
+  }
+}

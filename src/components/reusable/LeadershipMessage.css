@@ -1,18 +1,19 @@
-.director {
+.leadership-message {
   margin-top: var(--primary-margin-top);
   padding: var(--primary-padding);
 }
 
-.director__top {
+.leadership-message__top {
   display: block;
   margin-top: 0;
 }
 
-.director__content {
+.leadership-message__content,
+.leadership-message__description {
   min-width: 0;
 }
 
-.director__paragraph {
+.leadership-message__paragraph {
   margin: var(--para-desc-gap) 0 0;
   color: var(--text);
   font-size: var(--font-size);
@@ -20,20 +21,14 @@
   text-align: justify;
 }
 
-@media (min-width: 769px) {
-  .director__description > p.director__paragraph:first-of-type {
-    margin-top: 0;
-  }
-}
-
-.director__image-wrapper {
+.leadership-message__image-wrapper {
   float: right;
-  margin: 0 0 var(--para-desc-gap) clamp(1.5rem, 3vw, 2.5rem);
   min-width: 0;
   width: 40%;
+  margin: 0 0 var(--para-desc-gap) clamp(1.5rem, 3vw, 2.5rem);
 }
 
-.director__image-wrapper .guru-card__caption {
+.leadership-message__image-wrapper .guru-card__caption {
   width: 100%;
   max-width: none;
   margin-top: 1rem;
@@ -47,7 +42,7 @@
   border-radius: var(--radius-md);
 }
 
-.director__image {
+.leadership-message__image {
   display: block;
   width: 100%;
   height: auto;
@@ -55,60 +50,70 @@
   border-radius: var(--guru-image-radius);
 }
 
-.director__bottom {
+.leadership-message__bottom {
   width: 100%;
   margin-top: var(--para-desc-gap);
 }
 
+@media (min-width: 769px) {
+  .leadership-message__description > .leadership-message__paragraph:first-of-type {
+    margin-top: 0;
+  }
+}
+
 @media (max-width: 768px) {
-  .director {
+  .leadership-message {
     margin-top: var(--mobile-margin-top);
     padding: var(--mobile-padding);
   }
 
-  .director__top {
+  .leadership-message__top {
     display: block;
   }
 
-  .director__content {
+  .leadership-message__content {
     display: flex;
     flex-direction: column;
   }
 
-  .director__description {
+  .leadership-message__description {
     order: 1;
   }
 
-  .director__image-wrapper {
+  .leadership-message__image-wrapper {
     float: none;
     width: 100%;
     margin: 0;
   }
 
-  .director__image-wrapper .guru-card__caption {
+  .leadership-message__image-wrapper .guru-card__caption {
     width: 100%;
     max-width: none;
-    
-  }
-  .director__image-wrapper{margin-top: 0;}
-  .guru-card__caption{
-    margin-top:0.75rem;
   }
 
-  .director__bottom {
+  .leadership-message__image-wrapper {
+    margin-top: 0;
+  }
+
+  .leadership-message__bottom {
     order: 2;
     margin-top: 0;
   }
 
-  .director__paragraph {
+  .leadership-message__paragraph {
     font-size: var(--mobile-font-size);
     color: var(--text);
     line-height: var(--line-height);
   }
 
-  .director__image {
+  .leadership-message--director .leadership-message__image {
     max-width: 100%;
     margin: 0 auto;
+    margin-top: 0;
+  }
+
+  .leadership-message--principal .leadership-message__image {
+    max-width: 100%;
     margin-top: 0;
   }
 }

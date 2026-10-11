@@ -426,3 +426,32 @@
     height: 24rem;
   }
 }
+
+@media (min-width: 37.5rem) and (max-width: 64rem) {
+  .home-hero__text-wrap {
+    top: calc(50% - 1.5rem);
+    left: 4%;
+    width: min(48rem, 54%);
+    margin-top: 0;
+    transform: translateY(-50%);
+  }
+
+  .home-hero__title {
+    width: 100%;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.1;
+  }
+
+  .home-hero__description {
+    width: 100%;
+    max-width: 40rem;
+    margin-top: clamp(0.75rem, 1.8vw, 1.25rem);
+    font-size: clamp(0.85rem, 1.6vw, 1.15rem);
+  }
+
+  .home-hero__actions {
+    width: min(25rem, 100%);
+    height: clamp(2.4rem, 5vw, 3.2rem);
+    margin-top: clamp(0.9rem, 1.8vw, 1.4rem);
+  }
+}

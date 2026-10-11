@@ -55,3 +55,16 @@
     background: transparent;
   }
 }
+
+
+.ug-department__single-page > .statistics {
+  width: calc(100% + 8rem);
+  margin-inline: -4rem;
+}
+
+@media (max-width: 48rem) {
+  .ug-department__single-page > .statistics {
+    width: 100%;
+    margin-inline: 0;
+  }
+}
