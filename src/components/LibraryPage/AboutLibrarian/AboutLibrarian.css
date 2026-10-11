@@ -68,7 +68,7 @@
 .about-librarian__card {
   /* display: flex;
   flex-direction: column; */
-  gap: 1.5rem;
+  gap: 2rem;
   width: 17rem;
   overflow: hidden;
   background: var(--white);
@@ -82,9 +82,6 @@
 }
 
 .about-librarian__card-content {
-  --faculty-name-size: min(1rem, 7.2cqi);
-
-  container-type: inline-size;
   padding: 1rem 0.8rem;
   background: var(--red-clr);
   text-align: center;
@@ -93,7 +90,7 @@
 .about-librarian__name {
   margin-bottom: 0.35rem;
   color: var(--white);
-  font-size: var(--faculty-name-size);
+  font-size: 0.95rem;
   font-weight: var(--fw-semibold);
   text-transform: uppercase;
 }
@@ -101,16 +98,8 @@
 .about-librarian__designation,
 .about-librarian__qualification {
   color: var(--white);
-  font-size: calc(var(--faculty-name-size) * 0.75);
+  font-size: 0.8rem;
   line-height: 1.5;
-}
-
-.about-librarian__designation {
-  margin-bottom: clamp(0.2rem, 2cqi, 1rem);
-}
-
-.about-librarian__qualification {
-  margin-bottom: 0.2rem;
 }
 
 @media (max-width: 64rem) {
@@ -139,14 +128,14 @@
   .about-librarian__paragraph,
   .about-librarian__member-item,
   .about-librarian__member-title {
-    font-size: var(--mobile-font-size);
-    line-height: var(--mobile-line-height);
+    font-size: 0.95rem;
+    line-height: var(--line-height);
   }
 
   .about-librarian__staff {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    align-items: stretch;
+    align-items: start;
     gap: 0.75rem;
   }
 
@@ -156,7 +145,10 @@
 }
 
 @media (max-width: 768px) {
-  
+  .about-librarian {
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+  }
 
   .about-librarian__container {
     padding: 0;
@@ -180,24 +172,25 @@
   }
 
   .about-librarian__card {
-    gap: 0.75rem;
+    gap: 1rem;
     width: 100%;
   }
 
   .about-librarian__card-content {
-    flex: 1;
     min-width: 0;
     padding: 0.65rem 0.35rem;
   }
 
   .about-librarian__name {
     margin-bottom: 0.25rem;
+    font-size: 0.7rem;
     line-height: 1.25;
     overflow-wrap: anywhere;
   }
 
   .about-librarian__designation,
   .about-librarian__qualification {
+    font-size: 0.68rem;
     line-height: 1.35;
     overflow-wrap: anywhere;
   }

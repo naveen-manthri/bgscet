@@ -94,3 +94,21 @@
     width: 100%;
   }
 }
+
+@media (min-width: 601px) and (max-width: 48rem) {
+  .career-opportunities__body {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .career-opportunities__list {
+    flex: 0 0 32%;
+    width: auto;
+  }
+
+  .career-opportunities__image-wrapper {
+    width: auto;
+    min-width: 0;
+  }
+}

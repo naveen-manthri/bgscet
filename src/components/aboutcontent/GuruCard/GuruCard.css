@@ -39,6 +39,7 @@
 
 .guru-card__figure {
   gap: 1rem;
+  margin: 0;
 }
 
 .guru-card__image-container {
@@ -101,7 +102,43 @@
 }
 
 
-@media (max-width: 48rem) {
+@media (min-width: 37.5625rem) and (max-width: 64rem) {
+  .guru-card__title {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    line-height: 1.25;
+    margin-bottom: 0;
+  }
+
+  .guru-card__body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: clamp(1.5rem, 4vw, 3rem);
+  }
+
+  .guru-card__content {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .guru-card__figure {
+    flex: 0 0 clamp(14rem, 34%, 22rem);
+    width: clamp(14rem, 34%, 22rem);
+    align-self: flex-start;
+  }
+
+  .guru-card__image,
+  .guru-card__caption {
+    width: 100%;
+    max-width: none;
+  }
+
+  .guru-card__paragraph {
+    font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+  }
+}
+
+@media (max-width: 37.5rem) {
   .guru-card {
     padding: 0 0.75rem;
     margin-bottom: var(--spacing-12);
@@ -126,7 +163,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .guru-card {
     padding:  0 0;
 

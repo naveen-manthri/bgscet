@@ -4,6 +4,7 @@
   padding: var(--primary-padding);
   background: var(--white);
   box-sizing: border-box;
+  z-index: 1111;
 }
 
 .contact-enquiry__container {

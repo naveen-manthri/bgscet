@@ -156,6 +156,11 @@
     gap: clamp(1.5rem, 3vw, 2rem);
   }
 
+  .home-content-section--about-mutt,
+  .home-content-section--vision-mission {
+    padding-inline: clamp(1.5rem, 4vw, 3rem);
+  }
+
   .home-content-section--text-first {
     grid-template-columns: minmax(0, 1fr) minmax(0, min(42vw, 28rem));
   }

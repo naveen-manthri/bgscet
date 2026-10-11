@@ -16,17 +16,10 @@ function StaffDetailsPage() {
       <PlacementPosterGallery />
 
       <main className="staff-details-page__content">
-        <Table
-          title={staff.title}
-          table={staff.table}
-          className="staff-details-page__table"
-        />
+        <Table title={staff.title} table={staff.table} className="staff-details-page__table" />
 
         <section className="staff-details-page__contact">
-          <DepartmentSectionHeading
-            title={contactTitle}
-            className="department-section-heading--medium"
-          />
+          <DepartmentSectionHeading title={contactTitle} className="department-section-heading--medium" />
           <div className="staff-details-page__contact-lines">
             {contactLines.map((line) => (
               <p className="staff-details-page__contact-line" key={line.id}>
@@ -36,12 +29,7 @@ function StaffDetailsPage() {
                   <>
                     <strong>{line.label}</strong> :{" "}
                     {line.href ? (
-                      <a
-                        href={line.href}
-                        className="staff-details-page__contact-link"
-                        target={line.external ? "_blank" : undefined}
-                        rel={line.external ? "noreferrer" : undefined}
-                      >
+                      <a  href={line.href} className="staff-details-page__contact-link" target={line.external ? "_blank" : undefined} rel={line.external ? "noreferrer" : undefined} >
                         {line.linkText}
                       </a>
                     ) : (

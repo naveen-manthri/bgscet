@@ -50,14 +50,7 @@ const ImageCard = ({
   return (
     <>
       {triggerLabel ? (
-        <button
-          type="button"
-          className={className}
-          onClick={() => {
-            const imageIndex = lightboxData.findIndex((image) => image.image === data[0]?.image);
-            setIndex(imageIndex >= 0 ? imageIndex : 0);
-          }}
-        >
+        <button type="button" className={className} onClick={() => { const imageIndex = lightboxData.findIndex((image) => image.image === data[0]?.image);  setIndex(imageIndex >= 0 ? imageIndex : 0);  }} >
           {triggerLabel}
         </button>
       ) : (
