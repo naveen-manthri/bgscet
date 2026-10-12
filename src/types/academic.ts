@@ -1,3 +1,5 @@
+import type { NumberedListItem } from "./numberedList";
+
 export interface AcademicTitle {
   black: string;
   red: string;
@@ -17,11 +19,6 @@ export interface ExaminationItem {
   content: AcademicContent[];
 }
 
-export interface DocumentItem {
-  label: string;
-  href?: string;
-}
-
 export interface AcademicSection {
   title: AcademicTitle;
 
@@ -38,7 +35,7 @@ export interface AcademicSection {
     comedk: ExaminationItem;
   };
 
-  documents: Array<string | DocumentItem>;
+  documents: NumberedListItem[];
 }
 
 export interface ManagementFeeSection {
