@@ -42,7 +42,7 @@
   margin-bottom: 0;
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 600px) {
   .management-fee__notes ul {
     padding-left: var(--mobile-list-padding-left);
   }

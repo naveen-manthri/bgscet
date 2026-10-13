@@ -103,7 +103,7 @@
   box-shadow: var(--shadow-soft);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .admission-information__title {
     font-size: var(--mobile-academic-heading-size);
     line-height: 1.25;

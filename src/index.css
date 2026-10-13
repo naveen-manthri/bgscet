@@ -1135,6 +1135,11 @@ grid-template-columns: 1fr;  gap: 1.5rem;
     display: none;
   }
 
+  .top-announcement-bar__inner > span:first-child {
+    min-width: 0;
+    white-space: normal;
+  }
+
   .main-header {
     display: none;
   }

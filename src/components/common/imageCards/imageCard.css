@@ -135,6 +135,7 @@
     --image-area-height: clamp(9rem, 15vw, 12.5rem);
     --description-font: clamp(0.8rem, 1.25vw, 1rem);
     --description-min-height: 4rem;
+    --content-gap: 0.75rem;
     --button-font: clamp(0.75rem, 1.1vw, 0.95rem);
     --button-width: clamp(6rem, 8vw, 7.5rem);
     --button-height: clamp(2rem, 3vw, 2.5rem);
@@ -149,12 +150,21 @@
 
   .cse-event-card {
     width: 100%;
+    height: auto;
     max-width: none;
     justify-self: center;
   }
 
   .cse-event-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
     padding: 0.875rem;
+  }
+
+  .cse-event-content .read-more-btn {
+    margin-top: auto;
   }
 }
 

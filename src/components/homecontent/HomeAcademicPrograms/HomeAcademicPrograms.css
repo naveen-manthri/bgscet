@@ -398,4 +398,9 @@
     min-width: 0;
     scroll-snap-align: start;
   }
+
+  .home-academic .admission-button--primary {
+    width: 16rem;
+    height: 4rem;
+  }
 }

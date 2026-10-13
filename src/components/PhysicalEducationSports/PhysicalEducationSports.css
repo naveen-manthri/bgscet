@@ -253,11 +253,17 @@
     gap: 0.75rem;
   }
 
+  .physical-education__people figure {
+    display: flex;
+    flex-direction: column;
+  }
+
   .physical-education__instructor {
     margin-top: 0;
   }
 
   .physical-education__people figcaption {
+    flex: 1;
     margin-top: 0.5rem;
     padding: 0.5rem 0.25rem;
   }
@@ -325,6 +331,10 @@
   .physical-education__recognitions p {
     font-size: var(--mobile-font-size);
     line-height: var(--mobile-line-height);
+  }
+
+  .physical-education__recognitions article:last-child h2 {
+    margin: 0.85rem 0 0.45rem;
   }
 
   .physical-education__annual h2 {
