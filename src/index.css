@@ -552,7 +552,8 @@ img {
   top: 100%;
   left: 0;
   z-index: 20;
-  width: 15rem;
+  box-sizing: border-box;
+  width: 12rem;
   max-width: calc(100vw - 10rem);
   padding: 0.5rem 0;
   border: 0.08rem solid var(--border);
@@ -574,11 +575,6 @@ img {
   transform: translateY(0);
 }
 
-.main-navbar__item--left-dropdown > .main-navbar__dropdown {
-  right: 0;
-  left: auto;
-}
-
 .main-navbar__dropdown-link {
   display: block;
   padding: 0.7rem 1rem;
@@ -587,8 +583,10 @@ img {
   transition: background var(--transition), color var(--transition);
 }
 
-.main-navbar__dropdown--about > .main-navbar__dropdown-item > .main-navbar__dropdown-link {
-  font-size: 0.85rem;
+@media (min-width: 58.01em) {
+  .main-navbar__dropdown-link {
+    font-size: 0.85rem;
+  }
 }
 
 .main-navbar__dropdown-link:hover {
@@ -627,14 +625,8 @@ img {
   transform: translateX(0.5rem);
 }
 
-.main-navbar__dropdown--nested.main-navbar__dropdown--left {
-  right: 100%;
-  left: auto;
-  transform: translateX(-0.5rem);
-}
-
 .main-navbar__dropdown--professional-bodies {
-  width: 9rem;
+  width: 5rem;
 }
 
 .main-navbar__dropdown-item:hover > .main-navbar__dropdown--nested,

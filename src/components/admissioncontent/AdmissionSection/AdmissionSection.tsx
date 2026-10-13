@@ -49,8 +49,8 @@ const AdmissionSection = () => {
         </div>
       </div>
 
-      <div className="admission__image-wrapper">
-        <img src={admissionImage} alt="Admission counselling session" className="admission__image" />
+      <div className="admission__image-wrapper image-hover-container">
+        <img src={admissionImage} alt="Admission counselling session" className="admission__image image-hover-scale" />
       </div>
     </section>
   );

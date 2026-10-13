@@ -196,3 +196,55 @@
     margin-top: var(--primary-margin-top);
   }
 }
+
+@media (min-width: 37.5rem) and (max-width: 64rem) {
+  .visit-campus {
+    width: min(92%, var(--container-width));
+    margin-top: var(--visit-campus-margin-top);
+    /* padding: 0 0rem; */
+    
+  }
+
+  .visit-campus__container {
+    padding: var(--primary-padding);
+    border-radius: var(--card-radius);
+  }
+
+  .visit-campus__label {
+    font-size: var(--fs-label);
+  }
+
+  .visit-campus__title {
+    max-width: var(--content-width);
+    font-size: var(--fs-title);
+    line-height: var(--line-title);
+    overflow-wrap: normal;
+  }
+
+  .visit-campus__description {
+    max-width: var(--content-width);
+    font-size: var(--fs-description);
+    line-height: var(--line-description);
+    overflow-wrap: normal;
+  }
+
+  .visit-campus__actions {
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .visit-campus__actions > * {
+    width: auto;
+  }
+
+  .visit-campus .admission-button {
+    width: var(--btn-width);
+    max-width: none;
+    height: var(--btn-height);
+    padding: revert;
+    font-size: var(--btn-font-size);
+    line-height: 1.5;
+  }
+}

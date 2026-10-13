@@ -27,7 +27,7 @@
 .management-fee__notes ul,
 .management-fee__notes .bullet-section__list {
   margin: 0;
-  padding-left: var(--list-item-gap);
+  /* padding-left: var(--list-item-gap); */
 }
 
 .management-fee__notes li,

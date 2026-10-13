@@ -8,10 +8,60 @@ function MainNavbar() {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [openSubmenu, setOpenSubmenu] = useState<string | null>(null);
   const [openNestedSubmenu, setOpenNestedSubmenu] = useState<string | null>(null);
-  const [leftDropdownItems, setLeftDropdownItems] = useState<Set<string>>(new Set());
-  const [leftNestedDropdowns, setLeftNestedDropdowns] = useState<Set<string>>(new Set());
+  const [rootDropdownMaxWidths, setRootDropdownMaxWidths] = useState(new Map<string, number>());
+  const [nestedDropdownMaxWidths, setNestedDropdownMaxWidths] = useState(new Map<string, number>());
   const menuRef = useRef<HTMLUListElement>(null);
+  const rootDropdownRefs = useRef(new Map<string, HTMLUListElement>());
   const nestedDropdownRefs = useRef(new Map<string, HTMLUListElement>());
+
+  const getDropdownClickState = (current: string | null, label: string) => {
+    if (!window.matchMedia('(max-width: 58em)').matches) {
+      return label;
+    }
+
+    return current === label ? null : label;
+  };
+
+  const updateRootDropdownWidth = (key: string) => {
+    const dropdown = rootDropdownRefs.current.get(key);
+    const parent = dropdown?.parentElement;
+
+    if (!dropdown || !parent) {
+      return;
+    }
+
+    if (window.matchMedia('(max-width: 58em)').matches) {
+      setRootDropdownMaxWidths((current) => {
+        if (!current.has(key)) {
+          return current;
+        }
+        const next = new Map(current);
+        next.delete(key);
+        return next;
+      });
+      return;
+    }
+
+    const availableWidth = Math.max(
+      0,
+      document.documentElement.clientWidth - parent.getBoundingClientRect().left - 8,
+    );
+    const dropdownWidth = dropdown.getBoundingClientRect().width;
+    const maxWidth = availableWidth < dropdownWidth ? availableWidth : undefined;
+
+    setRootDropdownMaxWidths((current) => {
+      if (current.get(key) === maxWidth) {
+        return current;
+      }
+      const next = new Map(current);
+      if (maxWidth === undefined) {
+        next.delete(key);
+      } else {
+        next.set(key, maxWidth);
+      }
+      return next;
+    });
+  };
 
   const updateNestedDropdownDirection = (key: string) => {
     const dropdown = nestedDropdownRefs.current.get(key);
@@ -22,61 +72,34 @@ function MainNavbar() {
     }
 
     const parentBounds = parent.getBoundingClientRect();
+    const viewportWidth = document.documentElement.clientWidth;
+    const viewportPadding = 8;
+    const gap = parseFloat(getComputedStyle(dropdown).fontSize) * 0.5;
+    const previousMaxWidth = dropdown.style.maxWidth;
+    dropdown.style.maxWidth = '';
     const dropdownWidth = dropdown.getBoundingClientRect().width;
-    const rightSpace = window.innerWidth - parentBounds.right;
-    const leftSpace = parentBounds.left;
-    const shouldOpenLeft = rightSpace < dropdownWidth && leftSpace > rightSpace;
+    dropdown.style.maxWidth = previousMaxWidth;
+    const availableWidth = Math.max(0, viewportWidth - parentBounds.right - gap - viewportPadding);
+    const maxWidth = availableWidth < dropdownWidth ? availableWidth : undefined;
 
-    setLeftNestedDropdowns((current) => {
-      if (current.has(key) === shouldOpenLeft) {
+    setNestedDropdownMaxWidths((current) => {
+      if (current.get(key) === maxWidth) {
         return current;
       }
 
-      const next = new Set(current);
-      if (shouldOpenLeft) {
-        next.add(key);
+      const nextPositions = new Map(current);
+      if (maxWidth === undefined) {
+        nextPositions.delete(key);
       } else {
-        next.delete(key);
+        nextPositions.set(key, maxWidth);
       }
-      return next;
+      return nextPositions;
     });
   };
 
   useEffect(() => {
-    const menu = menuRef.current;
-
-    if (!menu) {
-      return;
-    }
-
-    const updateDropdownDirection = () => {
-      const items = Array.from(menu.children) as HTMLLIElement[];
-      const rows: HTMLLIElement[][] = [];
-
-      items.forEach((item) => {
-        const row = rows.find((currentRow) => currentRow[0].offsetTop === item.offsetTop);
-
-        if (row) {
-          row.push(item);
-        } else {
-          rows.push([item]);
-        }
-      });
-
-      setLeftDropdownItems(
-        new Set(rows.flatMap((row) => row.slice(-2).map((item) => item.dataset.navLabel ?? ''))),
-      );
-    };
-
-    updateDropdownDirection();
-    const observer = new ResizeObserver(updateDropdownDirection);
-    observer.observe(menu);
-
-    return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
     const updateNestedDropdownDirections = () => {
+      rootDropdownRefs.current.forEach((_, key) => updateRootDropdownWidth(key));
       nestedDropdownRefs.current.forEach((_, key) => updateNestedDropdownDirection(key));
     };
 
@@ -125,10 +148,11 @@ function MainNavbar() {
             const hasChildren = Boolean(item.children?.length);
 
             return (
-              <li className={`main-navbar__item${leftDropdownItems.has(item.label) ? ' main-navbar__item--left-dropdown' : ''}`} data-nav-label={item.label} key={item.label}
+              <li className="main-navbar__item" data-nav-label={item.label} key={item.label}
                 onMouseEnter={() => {
                   if (!window.matchMedia('(max-width: 58em)').matches) {
                     setOpenDropdown(item.label);
+                    updateRootDropdownWidth(item.label);
                   }
                 }}
                 onMouseLeave={() => {
@@ -163,11 +187,11 @@ function MainNavbar() {
                   {hasChildren ? (
                     <span className="main-navbar__link main-navbar__link--parent"
                       role="button"  tabIndex={0}   aria-haspopup="true" aria-expanded={openDropdown === item.label} onClick={(event) => { event.preventDefault();
-                        setOpenDropdown((current) => (current === item.label ? null : item.label));
+                        setOpenDropdown((current) => getDropdownClickState(current, item.label));
                       }} onKeyDown={(event) => {
                         if (event.key === 'Enter' || event.key === ' ') {
                           event.preventDefault();
-                          setOpenDropdown((current) => (current === item.label ? null : item.label));
+                          setOpenDropdown((current) => getDropdownClickState(current, item.label));
                         }
                       }}  >
                       {item.label}
@@ -181,12 +205,23 @@ function MainNavbar() {
 
 
                 {hasChildren ? (
-                  <ul className={`main-navbar__dropdown${openDropdown === item.label ? ' is-open' : ''}`}>
+                  <ul
+                    ref={(element) => {
+                      if (element) {
+                        rootDropdownRefs.current.set(item.label, element);
+                      } else {
+                        rootDropdownRefs.current.delete(item.label);
+                      }
+                    }}
+                    className={`main-navbar__dropdown${openDropdown === item.label ? ' is-open' : ''}`}
+                    style={rootDropdownMaxWidths.has(item.label) ? { maxWidth: `${rootDropdownMaxWidths.get(item.label)}px` } : undefined}
+                  >
                     {item.children?.map((child) => {
                       const isPdf = child.path.toLowerCase().endsWith('.pdf');
                       const isImage = /\.(png|jpe?g|webp|svg)$/i.test(child.path);
                       const isExternal = /^https?:\/\//.test(child.path);
                       const hasSubmenu = Boolean(child.children?.length);
+                      const nestedMaxWidth = nestedDropdownMaxWidths.get(child.path);
 
                       return (
                         <li className={`main-navbar__dropdown-item${hasSubmenu ? ' main-navbar__dropdown-item--has-submenu' : ''}`}
@@ -207,9 +242,9 @@ function MainNavbar() {
                         >
                           {hasSubmenu ? (
                             <span className="main-navbar__dropdown-link main-navbar__dropdown-link--parent" role="button"tabIndex={0} aria-haspopup="true"
-                              aria-expanded={openSubmenu === child.label} onClick={() => setOpenSubmenu((current) => (current === child.label ? null : child.label))} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') {
+                              aria-expanded={openSubmenu === child.label} onClick={() => setOpenSubmenu((current) => getDropdownClickState(current, child.label))} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') {
                                   event.preventDefault();
-                                  setOpenSubmenu((current) => (current === child.label ? null : child.label));
+                                  setOpenSubmenu((current) => getDropdownClickState(current, child.label));
                                 } }} >
                               {child.label}<span aria-hidden="true">›</span>
                             </span>
@@ -226,13 +261,15 @@ function MainNavbar() {
                             <ul ref={(element) => {   if (element) {   nestedDropdownRefs.current.set(child.path, element); } else {
                                   nestedDropdownRefs.current.delete(child.path);
                                 }  }}
-                              className={`main-navbar__dropdown main-navbar__dropdown--nested${child.label === 'Professional Bodies' ? ' main-navbar__dropdown--professional-bodies' : ''}${leftNestedDropdowns.has(child.path) ? ' main-navbar__dropdown--left' : ''}${openSubmenu === child.label ? ' is-open' : ''}`} >
+                              className={`main-navbar__dropdown main-navbar__dropdown--nested${child.label === 'Professional Bodies' ? ' main-navbar__dropdown--professional-bodies' : ''}${openSubmenu === child.label ? ' is-open' : ''}`}
+                              style={nestedMaxWidth !== undefined ? { maxWidth: `${nestedMaxWidth}px` } : undefined}>
                               {child.children?.map((subChild) => {
                                 const isPdf = subChild.path.toLowerCase().endsWith('.pdf');
                                 const isImage = /\.(png|jpe?g|webp|svg)$/i.test(subChild.path);
                                 const isExternal = /^https?:\/\//.test(subChild.path);
                                 const isPlaceholder = subChild.path === '#';
                                 const hasNestedSubmenu = Boolean(subChild.children?.length);
+                                const nestedMaxWidth = nestedDropdownMaxWidths.get(subChild.path);
 
                                 if (hasNestedSubmenu) {
                                   return (
@@ -250,10 +287,10 @@ function MainNavbar() {
                                       }}
                                     >
                                       <span  className="main-navbar__dropdown-link main-navbar__dropdown-link--parent"
-                                        role="button"  tabIndex={0}  aria-haspopup="true"  aria-expanded={openNestedSubmenu === subChild.label} onClick={() => setOpenNestedSubmenu((current) => (current === subChild.label ? null : subChild.label))} onKeyDown={(event) => {
+                                        role="button"  tabIndex={0}  aria-haspopup="true"  aria-expanded={openNestedSubmenu === subChild.label} onClick={() => setOpenNestedSubmenu((current) => getDropdownClickState(current, subChild.label))} onKeyDown={(event) => {
                                           if (event.key === 'Enter' || event.key === ' ') {
                                             event.preventDefault();
-                                            setOpenNestedSubmenu((current) => (current === subChild.label ? null : subChild.label));
+                                            setOpenNestedSubmenu((current) => getDropdownClickState(current, subChild.label));
                                           } }} > {subChild.label}<span aria-hidden="true">›</span>
                                       </span>
                                       <ul ref={(element) => { if (element) {
@@ -262,7 +299,8 @@ function MainNavbar() {
                                             nestedDropdownRefs.current.delete(subChild.path);
                                           }
                                         }}
-                                        className={`main-navbar__dropdown main-navbar__dropdown--nested${leftNestedDropdowns.has(subChild.path) ? ' main-navbar__dropdown--left' : ''}${openNestedSubmenu === subChild.label ? ' is-open' : ''}`}
+                                        className={`main-navbar__dropdown main-navbar__dropdown--nested${openNestedSubmenu === subChild.label ? ' is-open' : ''}`}
+                                        style={nestedMaxWidth !== undefined ? { maxWidth: `${nestedMaxWidth}px` } : undefined}
                                       >
                                         {subChild.children?.map((nestedChild) => {
                                           const nestedIsPdf = nestedChild.path.toLowerCase().endsWith('.pdf');
