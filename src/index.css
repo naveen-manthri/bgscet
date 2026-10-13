@@ -84,7 +84,7 @@
 
 --color-heading: #272727;
 --guru-image-desc: #D9D9D9;
---font-size-base: 1rem;
+--font-size-base: clamp(0.9rem, 1vw, 1rem);
  --font-weight-semibold: 600;
  --radius-md: var(--list-item-gap);
 
@@ -107,55 +107,55 @@
 --visit-campus-margin-top: clamp(3rem, 6vw, 5rem);
 
 /*padding*/
---primary-padding: 0 4rem;
+--primary-padding: 0 clamp(1.25rem, 4vw, 4rem);
 
 /* TITLES SIZES */
---primary-title-size-default: 2.2rem;
---primary-title-size-medium: 2.5rem;
---primary-title-size-large: 2.7rem;
---campus-placements-title-size: 1.75rem;
+--primary-title-size-default: clamp(1.6rem, 2.2vw, 2.2rem);
+--primary-title-size-medium: clamp(1.8rem, 2.5vw, 2.5rem);
+--primary-title-size-large: clamp(2rem, 2.7vw, 2.7rem);
+--campus-placements-title-size: clamp(1.4rem, 1.75vw, 1.75rem);
 
 /* paragraph and list items height */
 
 --line-height: 1.7;
---para-desc-gap: 1rem;
+--para-desc-gap: clamp(0.75rem, 1vw, 1rem);
 
 /* LIST ITEMS GAP */
---list-item-gap: 0.5rem;
- --bullet-list-gap: 0.75rem;
- --list-padding-left: 1.5rem;
+--list-item-gap: clamp(0.4rem, 0.7vw, 0.5rem);
+ --bullet-list-gap: clamp(0.6rem, 1vw, 0.75rem);
+ --list-padding-left: clamp(1rem, 1.5vw, 1.5rem);
 
 /*  images border*/
---home-mutt-vm-image-border:2rem;
+--home-mutt-vm-image-border: clamp(1rem, 2vw, 2rem);
 --guru-image-radius: 0.75rem;
 
 /* mobile version*/
---mobile-font-size: 1rem;
+--mobile-font-size: clamp(0.85rem, 2vw, 1rem);
 --mobile-line-height: 1.5;
---mobile-para-desc-gap: 1rem;
---mobile-margin-top:1.7rem;
---visit-campus-mobile-margin-top: 3rem;
---mobile-padding:0 1.25rem;
---mobile-description-font-size: 0.95rem;
+--mobile-para-desc-gap: clamp(0.75rem, 2vw, 1rem);
+--mobile-margin-top: clamp(1.25rem, 3.4vw, 1.8rem);
+--visit-campus-mobile-margin-top: clamp(2rem, 5vw, 3rem);
+--mobile-padding: 0 clamp(0.85rem, 4vw, 1.25rem);
+--mobile-description-font-size: clamp(0.82rem, 1.9vw, 0.95rem);
 --mobile-description-line-height: 1.6;
---mobile-list-padding-left: 1.25rem;
---mobile--campus-placements-title-size: 1.6rem;
+--mobile-list-padding-left: clamp(1rem, 3.5vw, 1.25rem);
+--mobile--campus-placements-title-size: clamp(1.4rem, 3.2vw, 1.6rem);
 
 
---committee-buttons-gap:0.5rem;
+--committee-buttons-gap: clamp(0.35rem, 1vw, 0.5rem);
 
---mobile-card-padding: 0.75rem;
---mobile-card-gap: 0.75rem;
---mobile-section-gap: 1rem;
---mobile-academic-heading-size: 1.7rem;
---mobile-academic-title-size: 2rem;
---mobile-academic-card-gap: 1.25rem;
---mobile-academic-content-gap: 0.6rem;
---mobile-academic-content-padding: 0.85rem;
---mobile-academic-duration-padding: 0.35rem 0.7rem;
---mobile-academic-duration-font-size: 0.75rem;
---mobile-hod-name-font-size: 1rem;
---mobile-hod-designation-font-size: 0.8rem;
+--mobile-card-padding: clamp(0.6rem, 2vw, 0.75rem);
+--mobile-card-gap: clamp(0.6rem, 2vw, 0.75rem);
+--mobile-section-gap: clamp(0.75rem, 2.5vw, 1rem);
+--mobile-academic-heading-size: clamp(1.4rem, 4.5vw, 1.7rem);
+--mobile-academic-title-size: clamp(1.6rem, 5.2vw, 2rem);
+--mobile-academic-card-gap: clamp(1rem, 3.3vw, 1.25rem);
+--mobile-academic-content-gap: clamp(0.5rem, 1.6vw, 0.6rem);
+--mobile-academic-content-padding: clamp(0.7rem, 2.3vw, 0.85rem);
+--mobile-academic-duration-padding: clamp(0.3rem, 1vw, 0.35rem) clamp(0.6rem, 1.9vw, 0.7rem);
+--mobile-academic-duration-font-size: clamp(0.7rem, 1.9vw, 0.75rem);
+--mobile-hod-name-font-size: clamp(0.9rem, 2.5vw, 1rem);
+--mobile-hod-designation-font-size: clamp(0.75rem, 2vw, 0.8rem);
 
 
 }
@@ -552,7 +552,7 @@ img {
   top: 100%;
   left: 0;
   z-index: 20;
-  width: 18rem;
+  width: 15rem;
   max-width: calc(100vw - 10rem);
   padding: 0.5rem 0;
   border: 0.08rem solid var(--border);
@@ -585,6 +585,10 @@ img {
   white-space: normal;
   color: var(--primary-deep);
   transition: background var(--transition), color var(--transition);
+}
+
+.main-navbar__dropdown--about > .main-navbar__dropdown-item > .main-navbar__dropdown-link {
+  font-size: 0.85rem;
 }
 
 .main-navbar__dropdown-link:hover {

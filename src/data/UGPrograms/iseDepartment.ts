@@ -26,10 +26,11 @@ import danceImage from "../../assets/images/isedepartment/ISE-Achievements/ISE-d
 import volleyballImage from "../../assets/images/isedepartment/ISE-Achievements/ISE-VTU-Volleyball-Tournament-1.png";
 import sindhu from "../../assets/images/isedepartment/iseTechFaculty/Navya.jpeg";
 import Arpitha from "../../assets/images/isedepartment/iseTechFaculty/Arpitha.jpeg";
-import Saahithi from "../../assets/images/isedepartment/iseTechFaculty/saahithi-ISE-.jpeg";
 import gttc from "../../assets/images/isedepartment/EVENTS/gttc.jpeg";
 import aiGithub from "../../assets/images/isedepartment/EVENTS/aiGithub.jpeg";
 import bigData from "../../assets/images/isedepartment/EVENTS/bigData.jpeg";
+import mamatha from "../../assets/images/csedepartment/cseTechFaculty/mamatha.png";
+
 
 import type {
   DepartmentTab,
@@ -213,25 +214,26 @@ export const facultyMembers: FacultyMember[] = [
 
 
 export const technicalFacultyMembers: FacultyMember[] = [
-  {
-    id: 1,
-    image: Saahithi,
-    name: "Ms Saahithi",
-    designation: "Programmer",
-  },
+  
 
   {
-    id: 2,
+    id: 1,
     image: sindhu,
     name: "Ms Sindhu",
     designation: "Programmer",
   },
   {
-    id:3,
+    id:2,
     image:Arpitha,
     name: "Arpitha N D",
     designation: "Lab Instructor",
-  }
+  },
+  {
+    id: 3,
+    image: mamatha,
+    name: "L Mamatha",
+    designation: "Programmer",
+  },
 ];
 
 

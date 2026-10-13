@@ -6,7 +6,7 @@ import trishaS from "../../assets/images/csddepartment/Trisha-s.png";
 import sushma from "../../assets/images/csddepartment/sushmaR.png";
 import apoorva from "../../assets/images/csddepartment/apoorva.jpeg";
 // import sowjanyaK from "../../assets/images/csddepartment/Sowjanya-K.png";
-import sanjitha from "../../assets/images/csddepartment/sanjitha.jpeg";
+// import sanjitha from "../../assets/images/csddepartment/sanjitha.jpeg";
 import nagarajKalligud from "../../assets/images/csddepartment/Nagaraj_kalligud.jpg";
 import drChandrakalaHL from "../../assets/images/csddepartment/Dr. Chandrakala-H-L.jpeg";
 import hod from "../../assets/images/csddepartment/Dr.-Madhu-Patil.jpg";
@@ -168,12 +168,12 @@ export const facultyMembers: FacultyMember[] = [
   name: "Nagaraj .B. Kalligudd",
   designation: "Assistant Professor",
 },
-{
-  id: 4,
-  image: sanjitha,
-  name: "Prof. Sanjitha S",
-  designation: "Assistant Professor",
-},
+// {
+//   id: 4,
+//   image: sanjitha,
+//   name: "Prof. Sanjitha S",
+//   designation: "Assistant Professor",
+// },
 // {
 //   id: 5,
 //   image: sowjanyaK,
@@ -181,25 +181,25 @@ export const facultyMembers: FacultyMember[] = [
 //   designation: "Assistant Professor",
 // },
 {
-  id: 5,
+  id: 4,
   image: aishwaryaS,
   name: "Aishwarya.S",
   designation: "Assistant Professor",
 },
 {
-  id: 6,
+  id: 5,
   image: trishaS,
   name: "Trisha S",
   designation: "Assistant Professor",
 },
 {
-  id : 7,
+  id : 6,
   image : sushma,
   name: "Sushma R",
   designation : "Assistant Professor",
 },
 {
-  id : 8,
+  id : 7,
   image : apoorva,
   name: "Apoorva I S",
   designation : "Assistant Professor",

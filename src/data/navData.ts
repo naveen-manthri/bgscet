@@ -13,7 +13,7 @@ export const navItems: NavItem[] = [
       { label: 'About Mutt', path: '/about' },
       // { label: 'About Trust', path: '/about' },
       {
-        label: 'About BGS CET',
+        label: 'About BGSCET',
         path: '/about',
         children: [
           { label: 'Realizing Student Dreams', path: 'https://bgscet.ac.in/wp-content/uploads/2025/02/BGSCET-Initiatives-Realizing-Student-Dreams-9-5-2023-v2.pdf' },

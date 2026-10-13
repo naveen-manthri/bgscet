@@ -26,11 +26,11 @@ export const studentMaterialData: LetterPageData = {
           title: "MAKEUP EXAM DEC 2023",
           pdf: "/pdfs/pyqs/MAKEUPEXAMDEC2023_compressed.pdf",
         },
-        {
-          title: "Chemistry Cycle DEC JAN 2024",
-          // Temporary until the correct PDF is added
-          pdf: "/pdfs/pyqs/MAKEUPEXAMDEC2023_compressed.pdf",
-        },
+        // {
+        //   title: "Chemistry Cycle DEC JAN 2024",
+        //   // Temporary until the correct PDF is added
+        //   pdf: "/pdfs/pyqs/MAKEUPEXAMDEC2023_compressed.pdf",
+        // },
         {
           title: "Physics Cycle DEC JAN 2024",
           pdf: "/pdfs/pyqs/PhysicsCycleDECJAN2024_compressed_compressed.pdf",
@@ -133,7 +133,7 @@ export const studentMaterialData: LetterPageData = {
           title: "1st & 2nd Semester:",
           items: [
             {
-              title: "1st & 2nd Semester Study Materials",
+              title: "Mathematics Sem-1",
               pdf: "https://drive.google.com/drive/folders/10iqYVokCbLo0MvfqOPBmIFY4AR3OOHbd",
             },
           ],
@@ -143,8 +143,12 @@ export const studentMaterialData: LetterPageData = {
           title: "Notes:",
           items: [
             {
-              title: "Notes",
-              pdf: "/pdfs/pyqs/3_SEMESTER_LECTURE_NOTES.pdf",
+              title: "3 Semester Lecture Notes",
+              pdf: "/pdfs/notes/3_SEMESTER_LECTURE_NOTES.pdf",
+            },
+            {
+              title: "Mathematics Sem-3 notes",
+              pdf: "/pdfs/notes/mathematics-Sem-3.pdf",
             },
           ],
         },

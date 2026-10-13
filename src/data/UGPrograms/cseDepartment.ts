@@ -5,6 +5,8 @@ import careerImage from "../../assets/images/csedepartment/career-opportunities.
 import cseBannerImage from "../../assets/images/banner/department-banner-cse.png";
 import DrKiran from "../../assets/images/csedepartment/Dr-Kiran-principal.jpeg";
 import sumanthCGowda from "../../assets/images/csedepartment/sumanth-c-gowda.jpeg";
+import sanjitha from "../../assets/images/csddepartment/sanjitha.jpeg";
+
 // import manasaCK from "../../assets/images/csedepartment/Manasa-CK.jpeg";
 import mrSatishG from "../../assets/images/csedepartment/Mr-Satish-g.jpeg";
 import drVaniV from "../../assets/images/csedepartment/dr-vani-v.jpeg";
@@ -60,7 +62,7 @@ import vinayak from "../../assets/images/csedepartment/cseTechFaculty/Vinayak.jp
 import bhoomika from "../../assets/images/csedepartment/cseTechFaculty/Bhoomika.jpg";
 import supriya from "../../assets/images/csedepartment/cseTechFaculty/SUPRIYA.jpeg";
 import ankitha from "../../assets/images/csedepartment/cseTechFaculty/ankithaMoreB.png";
-import mamatha from "../../assets/images/csedepartment/cseTechFaculty/mamatha.png";
+import Saahithi from "../../assets/images/isedepartment/iseTechFaculty/saahithi-ISE-.jpeg";
 
 
 
@@ -276,6 +278,12 @@ export const facultyMembers: FacultyMember[] = [
     name: "Gowrishree D",
     designation: "Assistant Professor",
   },
+  {
+    id: 14,
+    image: sanjitha,
+    name: "Prof. Sanjitha S",
+    designation: "Assistant Professor",
+  },
 ];
 
 
@@ -324,10 +332,11 @@ export const technicalFacultyMembers: FacultyMember[] = [
   },
   {
     id: 6,
-    image: mamatha,
-    name: "L Mamatha",
+    image: Saahithi,
+    name: "Ms Saahithi",
     designation: "Programmer",
   },
+  
 ];
 
 
