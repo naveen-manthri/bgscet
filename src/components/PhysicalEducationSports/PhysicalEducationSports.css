@@ -1,6 +1,4 @@
 .physical-education {
-  --mobile-margin-top: 1.5rem;
-  --mobile-padding: 0 1.25rem;
   width: 100%;
   margin: var(--primary-margin-top) 0 0;
   padding: var(--primary-padding);
@@ -233,6 +231,7 @@
   .physical-education__message-content p { text-align: left; }
   .physical-education__recognitions article { padding-inline: 0.75rem; }
   .physical-education__recognitions p { font-size: var(--font-size); }
+  .annual-sports-day-title{font-size: var(--mobile-department-title-medium-font);}
   .physical-education__recognitions article:nth-child(3) { column-gap: 1rem; padding: 1.5rem 0; }
 }
 
@@ -240,6 +239,9 @@
   .physical-education {
     box-sizing: border-box;
     
+  }
+  .annual-sports-day-title{
+    margin-top: var(--mobile-annual-sports-margin-top);
   }
 
   .physical-education__message-grid {
@@ -283,14 +285,14 @@
     font-size: var(--mobile-font-size);
     line-height: var(--mobile-line-height);
   }
-  .physical-education__annual, .physical-education__achievement, .physical-education__recognitions{
+  .physical-education__achievement, .physical-education__recognitions{
     margin-top: var(--mobile-margin-top);
     padding: 0;
   }
-      .physical-education__sports-gallery{
-        margin-top: 0.5rem;
-      }
-
+  .physical-education__annual{
+    
+    padding:0;
+  }
   .physical-education__message-content p {
     text-align: left;
   }
@@ -345,31 +347,9 @@
     padding-bottom: clamp(0.5rem, 2vw, 1rem);
   }
 
-  .physical-education__sports-gallery {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.5rem;
-  }
-
-  .physical-education__sports-image,
-  .physical-education__sports-image--1,
-  .physical-education__sports-image--2,
-  .physical-education__sports-image--3,
-  .physical-education__sports-image--4,
-  .physical-education__sports-image--5,
-  .physical-education__sports-image--6,
-  .physical-education__sports-image--7,
-  .physical-education__sports-image--8,
-  .physical-education__sports-image--9,
-  .physical-education__sports-image--10,
-  .physical-education__sports-image--11,
-  .physical-education__sports-image--12 {
-    grid-column: span 1;
-    grid-row: auto;
-    aspect-ratio: 1 / 1;
-  }
-
-  .physical-education__sports-image--12 {
-    grid-column: 1 / -1;
-    aspect-ratio: 16 / 9;
+}
+@media (max-width: 768px) {
+  .physical-education__sports-gallery{
+    margin-top: 0.5rem;
   }
 }

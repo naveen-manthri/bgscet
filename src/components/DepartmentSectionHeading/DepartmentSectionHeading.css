@@ -82,16 +82,20 @@
 }
 
 @media (max-width: 48rem) {
+  .department-section-heading--small .department-section-heading__title {
+    font-size: var(--mobile-department-title-small-font);
+  }
+
   .department-section-heading--default .department-section-heading__title {
-    font-size: 1.25rem;
+    font-size: var(--mobile-department-title-default-font);
   }
 
   .department-section-heading--medium .department-section-heading__title {
-    font-size: 1.8rem;
+    font-size: var(--mobile-department-title-medium-font);
   }
 
   .department-section-heading--large .department-section-heading__title {
-    font-size: 2.1rem;
+    font-size: var(--mobile-department-title-large-font);
   }
 }
 
@@ -107,19 +111,19 @@
   }
 
   .department-section-heading--small .department-section-heading__title {
-    font-size: 1.05rem;
+    font-size: var(--mobile-department-title-small-font);
   }
 
   .department-section-heading--default .department-section-heading__title {
-    font-size: 1.25rem;
+    font-size: var(--mobile-department-title-default-font);
   }
 
   .department-section-heading--medium .department-section-heading__title {
-    font-size: 1.7rem;
+    font-size: var(--mobile-department-title-medium-font);
   }
 
   .department-section-heading--large .department-section-heading__title {
-    font-size: 2rem;
+    font-size: var(--mobile-department-title-large-font);
   }
 }
 
@@ -138,18 +142,18 @@
   }
 
   .department-section-heading--small .department-section-heading__title {
-    font-size: clamp(1.05rem, 2vw, 1.35rem);
+    font-size: var(--mobile-department-title-small-font);
   }
 
   .department-section-heading--default .department-section-heading__title {
-    font-size: clamp(1.25rem, 2.7vw, 1.8rem);
+    font-size: var(--mobile-department-title-default-font);
   }
 
   .department-section-heading--medium .department-section-heading__title {
-    font-size: clamp(1.5rem, 3.2vw, 2.1rem);
+    font-size: var(--mobile-department-title-medium-font);
   }
 
   .department-section-heading--large .department-section-heading__title {
-    font-size: clamp(1.75rem, 3.6vw, 2.35rem);
+    font-size: var(--mobile-department-title-large-font);
   }
 }

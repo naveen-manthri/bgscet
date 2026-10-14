@@ -7,6 +7,7 @@ import { initialEnquiryFormData } from "../../data/enquiryData";
 declare global {
   interface Window {
     grecaptcha?: {
+      ready: (callback: () => void) => void;
       render: (container: HTMLElement, options: { sitekey: string; callback: () => void; "expired-callback": () => void }) => number;
       reset: (widgetId?: number) => void;
     };
@@ -31,10 +32,13 @@ const EnquiryForm: React.FC<EnquiryFormProps> = ({ isOpen, onClose }) => {
     let interval: number | undefined;
     const renderWidget = () => {
       if (cancelled || !window.grecaptcha || !captchaContainer.current || captchaWidgetId.current !== null) return;
-      captchaWidgetId.current = window.grecaptcha.render(captchaContainer.current, {
-        sitekey: RECAPTCHA_SITE_KEY,
-        callback: () => setCaptchaVerified(true),
-        "expired-callback": () => setCaptchaVerified(false),
+      window.grecaptcha.ready(() => {
+        if (cancelled || !window.grecaptcha || !captchaContainer.current || captchaWidgetId.current !== null) return;
+        captchaWidgetId.current = window.grecaptcha.render(captchaContainer.current, {
+          sitekey: RECAPTCHA_SITE_KEY,
+          callback: () => setCaptchaVerified(true),
+          "expired-callback": () => setCaptchaVerified(false),
+        });
       });
     };
 

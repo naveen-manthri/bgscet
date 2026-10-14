@@ -152,8 +152,8 @@
 }
 
 .enquiry-form__captcha {
-  min-height: 4.8rem;
-  overflow: hidden;
+  min-height: 5rem;
+  overflow: visible;
 }
 
 .enquiry-form__captcha-message {
@@ -250,8 +250,8 @@
   }
 
   .enquiry-form__captcha {
-    min-height: 3rem;
-    padding: 0.65rem;
+    min-height: 5rem;
+    padding: 0;
   }
 
   .enquiry-form__submit {

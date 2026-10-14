@@ -134,16 +134,20 @@
 
 /* mobile version*/
 --mobile-font-size: clamp(0.9rem, 2vw, 1rem);
+--mobile-department-title-small-font: clamp(0.9rem, 3vw, 1.05rem);
+--mobile-department-title-default-font: clamp(1.1rem, 4vw, 1.25rem);
+--mobile-department-title-medium-font: clamp(1.25rem, 4vw, 1.7rem);
+--mobile-department-title-large-font: clamp(1.7rem, 6vw, 2.1rem);
 --mobile-line-height: 1.5;
 --mobile-para-desc-gap: clamp(0.75rem, 2vw, 1rem);
 --mobile-margin-top: clamp(1.25rem, 3.4vw, 1.8rem);
 --visit-campus-mobile-margin-top: clamp(2rem, 5vw, 3rem);
---mobile-padding: 0 clamp(0.85rem, 4vw, 1.25rem);
+--mobile-padding: 0 clamp(0.9rem, 4vw, 1.25rem);
 --mobile-description-font-size: clamp(0.9rem, 2vw, 1rem);
 --mobile-description-line-height: 1.5;
 --mobile-list-padding-left: clamp(1rem, 3.5vw, 1.25rem);
 --mobile--campus-placements-title-size: clamp(1.4rem, 3.2vw, 1.6rem);
-
+--mobile-annual-sports-margin-top: clamp(2.1rem, 4vw, 2.5rem);
 
 --committee-buttons-gap: clamp(0.35rem, 1vw, 0.5rem);
 
@@ -165,7 +169,7 @@
 
 @media (max-width: 768px) {
   :root {
-    --gallery-title-size: 1.8rem;
+    --gallery-title-size: var(--mobile-department-title-medium-font);
   }
 
   :root .mobile-margin-top {
