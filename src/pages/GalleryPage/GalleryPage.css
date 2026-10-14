@@ -17,7 +17,7 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  background: #dedede;
+  background: var(--video-loading-bg);
 }
 
 .gallery-page__video-heading {
@@ -151,7 +151,7 @@
   margin: 0;
   overflow: hidden;
   border-radius: 0.25rem;
-  background: #f0f0f0;
+  background: var(--image-loading-background);
 }
 
 .gallery-page__photo img {

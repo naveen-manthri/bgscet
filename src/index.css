@@ -127,7 +127,9 @@
 
 /*  images border*/
 --home-mutt-vm-image-border: clamp(1rem, 2vw, 2rem);
+--image-loading-background: #f0f0f0;
 --guru-image-radius: 0.75rem;
+--video-loading-bg: #dedede;
 
 /* mobile version*/
 --mobile-font-size: clamp(0.9rem, 2vw, 1rem);
@@ -137,7 +139,7 @@
 --visit-campus-mobile-margin-top: clamp(2rem, 5vw, 3rem);
 --mobile-padding: 0 clamp(0.85rem, 4vw, 1.25rem);
 --mobile-description-font-size: clamp(0.9rem, 2vw, 1rem);
---mobile-description-line-height: 1.6;
+--mobile-description-line-height: 1.5;
 --mobile-list-padding-left: clamp(1rem, 3.5vw, 1.25rem);
 --mobile--campus-placements-title-size: clamp(1.4rem, 3.2vw, 1.6rem);
 
@@ -209,6 +211,10 @@ button {
 img {
   display: block;
   max-width: 100%;
+}
+
+.image-loading-background {
+  background-color: var(--image-loading-background);
 }
 
 .image-hover-scale {
@@ -1288,3 +1294,5 @@ grid-template-columns: 1fr;  gap: 1.5rem;
     transition: none;
   }
 }
+
+
