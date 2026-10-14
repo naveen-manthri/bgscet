@@ -37,6 +37,7 @@
 .profile-card__content {
   
   gap: 1rem;
+  margin-top: 3rem;
 }
 .profile-card__content a {
   color: var(--text);
@@ -97,6 +98,7 @@
 
   .profile-card__content {
     gap: 0;
+    margin-top: 0;
   }
 
   .profile-card__content p {

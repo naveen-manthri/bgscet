@@ -130,13 +130,13 @@
 --guru-image-radius: 0.75rem;
 
 /* mobile version*/
---mobile-font-size: clamp(0.85rem, 2vw, 1rem);
+--mobile-font-size: clamp(0.9rem, 2vw, 1rem);
 --mobile-line-height: 1.5;
 --mobile-para-desc-gap: clamp(0.75rem, 2vw, 1rem);
 --mobile-margin-top: clamp(1.25rem, 3.4vw, 1.8rem);
 --visit-campus-mobile-margin-top: clamp(2rem, 5vw, 3rem);
 --mobile-padding: 0 clamp(0.85rem, 4vw, 1.25rem);
---mobile-description-font-size: clamp(0.82rem, 1.9vw, 0.95rem);
+--mobile-description-font-size: clamp(0.9rem, 2vw, 1rem);
 --mobile-description-line-height: 1.6;
 --mobile-list-padding-left: clamp(1rem, 3.5vw, 1.25rem);
 --mobile--campus-placements-title-size: clamp(1.4rem, 3.2vw, 1.6rem);

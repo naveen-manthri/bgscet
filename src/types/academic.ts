@@ -1,4 +1,4 @@
-import type { NumberedListItem } from "./numberedList";
+import type { NumberedListItemValue } from "./numberedList";
 
 export interface AcademicTitle {
   black: string;
@@ -35,7 +35,7 @@ export interface AcademicSection {
     comedk: ExaminationItem;
   };
 
-  documents: NumberedListItem[];
+  documents: NumberedListItemValue[];
 }
 
 export interface ManagementFeeSection {

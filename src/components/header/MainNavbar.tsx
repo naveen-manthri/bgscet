@@ -24,9 +24,13 @@ function MainNavbar() {
     }
 
     const menu = menuRef.current;
-    const menuItems = menu
-      ? Array.from(menu.querySelectorAll<HTMLLIElement>(':scope > .main-navbar__item'))
-      : [];
+    if (!menu) {
+      setIsQuickLinksSwapped(false);
+      setProfessionalBodiesWidth(12);
+      return;
+    }
+
+    const menuItems = Array.from(menu.querySelectorAll<HTMLLIElement>(':scope > .main-navbar__item'));
     const quickLinks = menuItems.find((item) => item.dataset.navLabel === 'Quick Links');
     const quickLinksBounds = quickLinks?.getBoundingClientRect();
 
