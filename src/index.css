@@ -207,16 +207,10 @@ button {
 }
 
 /* image background colour and animation */
-img {
-  background: var(--image-loading-background, #e9e9e9);
-  /* background-color: var(--image-loading-background); */
-    }
-img {
+
+img:not(.main-header__logo):not(.main-header__emblem):not(.footer__logo) {
   display: block;
   max-width: 100%;
-}
-
-.image-loading-background {
   background-color: var(--image-loading-background);
 }
 
@@ -1297,5 +1291,3 @@ grid-template-columns: 1fr;  gap: 1.5rem;
     transition: none;
   }
 }
-
-
