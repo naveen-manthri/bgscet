@@ -254,12 +254,22 @@ max-width: none;
   }
 }
 
-@media (min-width: 37.5rem) and (max-width: 64rem) {
+@media (min-width: 48rem) and (max-width: 64rem) {
   .campus-placements__card {
-    height: 6.5rem;
+    box-sizing: border-box;
+    flex: 0 0 clamp(8.5rem, 13vw, 10rem);
+    height: clamp(5.25rem, 8vw, 6.25rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(0.6rem, 1.2vw, 0.9rem);
   }
 
   .campus-placements__logo {
-    height: 5rem;
+    display: block;
+    width: 100%;
+    max-width: 8rem;
+    height: min(4.5rem, 100%);
+    object-fit: contain;
   }
 }

@@ -15,14 +15,18 @@ const NumberedList = ({ data, className = "" }: NumberedListProps) => {
 
       <ol className="numbered-list__list">
         {data.items.map((item, index) => {
-          const label = typeof item === "string" ? item : item.label;
+          const key = typeof item === "string" ? `${item}-${index}` : `${item.label}-${index}`;
 
           return (
-            <li key={`${label}-${index}`} className="numbered-list__item">
-              {typeof item === "string" || !item.href ? (
-                label
+            <li key={key} className="numbered-list__item">
+              {typeof item === "string" ? (
+                item
+              ) : item.href ? (
+                <a href={item.href} className="numbered-list__link">
+                  {item.label}
+                </a>
               ) : (
-                <a href={item.href}>{label}</a>
+                item.label
               )}
             </li>
           );

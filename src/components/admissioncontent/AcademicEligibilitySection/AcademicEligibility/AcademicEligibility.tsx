@@ -33,12 +33,12 @@ export default function AcademicEligibility() {
           </article>
 
           <aside className="academic-eligibility__images display-block">
-            <figure className="image-hover-container">
-              <img src={academicTop} alt="" className="image-hover-scale" />
+            <figure>
+              <img src={academicTop} alt="" />
             </figure>
 
-            <figure className="image-hover-container">
-              <img src={studentsGroup} alt="" className="image-hover-scale" />
+            <figure>
+              <img src={studentsGroup} alt="" />
             </figure>
           </aside>
         </div>

@@ -519,3 +519,20 @@
     width: 52.5%;
   }
 }
+
+/* Tablet and Android Desktop-site layout widths. Keep the source image's
+   1920:876 ratio so `object-fit: cover` does not cut off its sides. */
+@media (min-width: 48.01rem) and (max-width: 64rem) {
+  .home-hero__carousel {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 1920 / 876;
+  }
+
+  .banner-section:not(.banner-section--full-image) > .banner-image {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: auto;
+    object-fit: contain;
+  }
+}

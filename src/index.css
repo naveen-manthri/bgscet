@@ -626,7 +626,15 @@ img {
 }
 
 .main-navbar__dropdown--professional-bodies {
+  width: 12rem;
+}
+
+.main-navbar__dropdown--professional-bodies-5rem {
   width: 5rem;
+}
+
+.main-navbar__dropdown--professional-bodies-8rem {
+  width: 8rem;
 }
 
 .main-navbar__dropdown-item:hover > .main-navbar__dropdown--nested,

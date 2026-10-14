@@ -8,11 +8,80 @@ function MainNavbar() {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [openSubmenu, setOpenSubmenu] = useState<string | null>(null);
   const [openNestedSubmenu, setOpenNestedSubmenu] = useState<string | null>(null);
+  const [isQuickLinksSwapped, setIsQuickLinksSwapped] = useState(false);
+  const [professionalBodiesWidth, setProfessionalBodiesWidth] = useState<5 | 8 | 12>(12);
   const [rootDropdownMaxWidths, setRootDropdownMaxWidths] = useState(new Map<string, number>());
   const [nestedDropdownMaxWidths, setNestedDropdownMaxWidths] = useState(new Map<string, number>());
   const menuRef = useRef<HTMLUListElement>(null);
   const rootDropdownRefs = useRef(new Map<string, HTMLUListElement>());
   const nestedDropdownRefs = useRef(new Map<string, HTMLUListElement>());
+
+  const updateProfessionalBodiesWidth = () => {
+    if (window.matchMedia('(max-width: 58em)').matches) {
+      setIsQuickLinksSwapped(false);
+      setProfessionalBodiesWidth(12);
+      return;
+    }
+
+    const menu = menuRef.current;
+    const menuItems = menu
+      ? Array.from(menu.querySelectorAll<HTMLLIElement>(':scope > .main-navbar__item'))
+      : [];
+    const quickLinks = menuItems.find((item) => item.dataset.navLabel === 'Quick Links');
+    const quickLinksBounds = quickLinks?.getBoundingClientRect();
+
+    if (!quickLinks || !quickLinksBounds || quickLinks.getClientRects().length === 0) {
+      setIsQuickLinksSwapped(false);
+      setProfessionalBodiesWidth(12);
+      return;
+    }
+
+    const itemsByLabel = new Map(menuItems.map((item) => [item.dataset.navLabel, item]));
+    const menuWidth = menu.clientWidth;
+    const columnGap = parseFloat(getComputedStyle(menu).columnGap) || 0;
+    const originalRows: string[][] = [];
+    let currentRow: string[] = [];
+    let currentRowWidth = 0;
+
+    navItems.forEach((item) => {
+      const element = itemsByLabel.get(item.label);
+      if (!element) {
+        return;
+      }
+
+      const itemWidth = element.getBoundingClientRect().width;
+      const nextWidth = currentRowWidth + (currentRow.length ? columnGap : 0) + itemWidth;
+      if (currentRow.length && nextWidth > menuWidth) {
+        originalRows.push(currentRow);
+        currentRow = [];
+        currentRowWidth = 0;
+      }
+
+      currentRowWidth += (currentRow.length ? columnGap : 0) + itemWidth;
+      currentRow.push(item.label);
+    });
+    if (currentRow.length) {
+      originalRows.push(currentRow);
+    }
+
+    const originalQuickLinksRow = originalRows.find((row) => row.includes('Quick Links'));
+    const originalQuickLinksRank = originalQuickLinksRow
+      ? originalQuickLinksRow.length - originalQuickLinksRow.indexOf('Quick Links')
+      : 0;
+    setIsQuickLinksSwapped(originalQuickLinksRank === 1);
+
+    const itemsOnSameRow = menuItems.filter((item) => {
+      if (item.getClientRects().length === 0) {
+        return false;
+      }
+      return Math.abs(item.getBoundingClientRect().top - quickLinksBounds.top) < 1;
+    });
+    const rankFromRight = itemsOnSameRow.filter(
+      (item) => item.getBoundingClientRect().left > quickLinksBounds.left + 1,
+    ).length + 1;
+
+    setProfessionalBodiesWidth(rankFromRight === 2 ? 5 : rankFromRight === 3 ? 8 : 12);
+  };
 
   const getDropdownClickState = (current: string | null, label: string) => {
     if (!window.matchMedia('(max-width: 58em)').matches) {
@@ -71,6 +140,18 @@ function MainNavbar() {
       return;
     }
 
+    if (dropdown.classList.contains('main-navbar__dropdown--professional-bodies')) {
+      setNestedDropdownMaxWidths((current) => {
+        if (!current.has(key)) {
+          return current;
+        }
+        const next = new Map(current);
+        next.delete(key);
+        return next;
+      });
+      return;
+    }
+
     const parentBounds = parent.getBoundingClientRect();
     const viewportWidth = document.documentElement.clientWidth;
     const viewportPadding = 8;
@@ -99,12 +180,24 @@ function MainNavbar() {
 
   useEffect(() => {
     const updateNestedDropdownDirections = () => {
+      updateProfessionalBodiesWidth();
       rootDropdownRefs.current.forEach((_, key) => updateRootDropdownWidth(key));
       nestedDropdownRefs.current.forEach((_, key) => updateNestedDropdownDirection(key));
     };
 
     window.addEventListener('resize', updateNestedDropdownDirections);
-    return () => window.removeEventListener('resize', updateNestedDropdownDirections);
+    const menu = menuRef.current;
+    const resizeObserver = menu ? new ResizeObserver(updateNestedDropdownDirections) : null;
+    if (menu && resizeObserver) {
+      resizeObserver.observe(menu);
+      menu.querySelectorAll('.main-navbar__item').forEach((item) => resizeObserver.observe(item));
+    }
+
+    updateNestedDropdownDirections();
+    return () => {
+      window.removeEventListener('resize', updateNestedDropdownDirections);
+      resizeObserver?.disconnect();
+    };
   }, []);
 
   const closeMenu = () => {
@@ -113,6 +206,18 @@ function MainNavbar() {
     setOpenSubmenu(null);
     setOpenNestedSubmenu(null);
   };
+
+  const displayedNavItems = navItems.slice();
+  if (isQuickLinksSwapped) {
+    const quickLinksIndex = displayedNavItems.findIndex((item) => item.label === 'Quick Links');
+    const conferenceIndex = displayedNavItems.findIndex((item) => item.label === 'Conference-2025');
+    const quickLinksItem = displayedNavItems[quickLinksIndex];
+    const conferenceItem = displayedNavItems[conferenceIndex];
+    if (quickLinksIndex >= 0 && conferenceIndex >= 0 && quickLinksItem && conferenceItem) {
+      displayedNavItems[quickLinksIndex] = conferenceItem;
+      displayedNavItems[conferenceIndex] = quickLinksItem;
+    }
+  }
 
   return (
     <nav className="main-navbar" aria-label="Primary navigation">
@@ -144,7 +249,7 @@ function MainNavbar() {
               ×
             </button>
           </li>
-          {navItems.map((item) => {
+          {displayedNavItems.map((item) => {
             const hasChildren = Boolean(item.children?.length);
 
             return (
@@ -242,8 +347,12 @@ function MainNavbar() {
                         >
                           {hasSubmenu ? (
                             <span className="main-navbar__dropdown-link main-navbar__dropdown-link--parent" role="button"tabIndex={0} aria-haspopup="true"
-                              aria-expanded={openSubmenu === child.label} onClick={() => setOpenSubmenu((current) => getDropdownClickState(current, child.label))} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') {
+                              aria-expanded={openSubmenu === child.label} onClick={() => {
+                                updateNestedDropdownDirection(child.path);
+                                setOpenSubmenu((current) => getDropdownClickState(current, child.label));
+                              }} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') {
                                   event.preventDefault();
+                                  updateNestedDropdownDirection(child.path);
                                   setOpenSubmenu((current) => getDropdownClickState(current, child.label));
                                 } }} >
                               {child.label}<span aria-hidden="true">›</span>
@@ -261,8 +370,8 @@ function MainNavbar() {
                             <ul ref={(element) => {   if (element) {   nestedDropdownRefs.current.set(child.path, element); } else {
                                   nestedDropdownRefs.current.delete(child.path);
                                 }  }}
-                              className={`main-navbar__dropdown main-navbar__dropdown--nested${child.label === 'Professional Bodies' ? ' main-navbar__dropdown--professional-bodies' : ''}${openSubmenu === child.label ? ' is-open' : ''}`}
-                              style={nestedMaxWidth !== undefined ? { maxWidth: `${nestedMaxWidth}px` } : undefined}>
+                              className={`main-navbar__dropdown main-navbar__dropdown--nested${child.label === 'Professional Bodies' ? ` main-navbar__dropdown--professional-bodies main-navbar__dropdown--professional-bodies-${professionalBodiesWidth}rem` : ''}${openSubmenu === child.label ? ' is-open' : ''}`}
+                              style={child.label !== 'Professional Bodies' && nestedMaxWidth !== undefined ? { maxWidth: `${nestedMaxWidth}px` } : undefined}>
                               {child.children?.map((subChild) => {
                                 const isPdf = subChild.path.toLowerCase().endsWith('.pdf');
                                 const isImage = /\.(png|jpe?g|webp|svg)$/i.test(subChild.path);
@@ -287,9 +396,13 @@ function MainNavbar() {
                                       }}
                                     >
                                       <span  className="main-navbar__dropdown-link main-navbar__dropdown-link--parent"
-                                        role="button"  tabIndex={0}  aria-haspopup="true"  aria-expanded={openNestedSubmenu === subChild.label} onClick={() => setOpenNestedSubmenu((current) => getDropdownClickState(current, subChild.label))} onKeyDown={(event) => {
+                                        role="button"  tabIndex={0}  aria-haspopup="true"  aria-expanded={openNestedSubmenu === subChild.label} onClick={() => {
+                                          updateNestedDropdownDirection(subChild.path);
+                                          setOpenNestedSubmenu((current) => getDropdownClickState(current, subChild.label));
+                                        }} onKeyDown={(event) => {
                                           if (event.key === 'Enter' || event.key === ' ') {
                                             event.preventDefault();
+                                            updateNestedDropdownDirection(subChild.path);
                                             setOpenNestedSubmenu((current) => getDropdownClickState(current, subChild.label));
                                           } }} > {subChild.label}<span aria-hidden="true">›</span>
                                       </span>

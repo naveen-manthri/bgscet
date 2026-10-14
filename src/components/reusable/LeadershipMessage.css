@@ -55,13 +55,13 @@
   margin-top: var(--para-desc-gap);
 }
 
-@media (min-width: 769px) {
+@media (min-width: 601px) {
   .leadership-message__description > .leadership-message__paragraph:first-of-type {
     margin-top: 0;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .leadership-message {
     margin-top: var(--mobile-margin-top);
     padding: var(--mobile-padding);

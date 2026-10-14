@@ -9,7 +9,7 @@ interface Props {
 const Section = ({ section }: Props) => {
   return (
     <section className="iic-section flex flex-direction-column">
-      <DepartmentSectionHeading title={section.title} className="department-section-heading--default"/>
+      <DepartmentSectionHeading title={section.title} className="department-section-heading--medium"/>
 
       {section.content.map((content, index) => {
         if (content.type === "paragraph") {
