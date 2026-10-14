@@ -22,7 +22,7 @@ const NSS = () => {
 
       <div className="flex flex-align-center nss__intro">
         <div className="nss__intro-image">
-          <img src={introduction.image} alt={introduction.alt} />
+          <img src={introduction.image} alt={introduction.alt} className="nss-img" />
         </div>
 
         <div className="nss__intro-content flex-one">

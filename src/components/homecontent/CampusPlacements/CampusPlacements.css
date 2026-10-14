@@ -60,6 +60,21 @@ max-width: none;
   width: 100%;
   padding-block: var(--list-item-gap);
   overflow: hidden;
+  /* Fade the moving cards into the section's own gradient without a color seam. */
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    #000 9%,
+    #000 91%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    #000 9%,
+    #000 91%,
+    transparent 100%
+  );
 }
 
 .campus-placements__carousel--bottom {

@@ -152,21 +152,13 @@
 }
 
 .enquiry-form__captcha {
-  gap: var(--list-item-gap);
-  min-height: 3.3rem;
-  padding: 0.75rem;
-  border: 0.0625rem solid var(--clr-border);
-  border-radius: var(--list-item-gap);
+  min-height: 4.8rem;
+  overflow: hidden;
 }
 
-.enquiry-form__captcha span {
-  font-size: 0.95rem;
-}
-
-.enquiry-form__captcha input {
-  width: 1.25rem;
-  height: 1.25rem;
-  accent-color: var(--clr-primary);
+.enquiry-form__captcha-message {
+  color: var(--clr-placeholder);
+  font-size: 0.8rem;
 }
 
 .enquiry-form__submit {

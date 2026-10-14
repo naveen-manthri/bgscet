@@ -31,7 +31,7 @@
 
 @media (max-width: 64rem) {
   .library-rules {
-    padding: 4rem 0;
+    padding: 0 0 4rem;
   }
 }
 

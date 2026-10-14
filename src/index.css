@@ -98,6 +98,7 @@
 /* Guru Section Colors */
 --guru-section-bg:  #EEEEEE;
 --guru-title:#7D2720;
+--guru-section-padding: clamp(1.5rem, 4vw, 3rem) clamp(1.25rem, 4vw, 4rem);
 
 /*Margins*/
 --primary-margin-top: clamp(2rem, 4vw, 3rem);
@@ -208,7 +209,7 @@ button {
 
 /* image background colour and animation */
 
-img:not(.main-header__logo):not(.main-header__emblem):not(.footer__logo) {
+img:not(.main-header__logo):not(.main-header__emblem):not(.footer__logo):not(.star-icon-badge):not(.campus-placements__logo):not(.nss-img) {
   display: block;
   max-width: 100%;
   background-color: var(--image-loading-background);

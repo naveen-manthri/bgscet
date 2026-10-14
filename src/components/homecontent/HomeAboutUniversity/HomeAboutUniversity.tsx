@@ -25,7 +25,7 @@ function HomeAboutUniversity() {
                   </textPath>
                 </text>
               </svg>
-              <img className="home-about-university__badge-star" src={starImage} alt="" aria-hidden="true" />
+              <img className="home-about-university__badge-star star-icon-badge" src={starImage} alt="" aria-hidden="true" />
             </div>
         </div>
 

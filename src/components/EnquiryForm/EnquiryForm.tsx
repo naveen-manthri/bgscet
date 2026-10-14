@@ -4,11 +4,70 @@ import "./EnquiryForm.css";
 import type { EnquiryFormData, EnquiryFormProps } from "../../types/enquiry";
 import { initialEnquiryFormData } from "../../data/enquiryData";
 
+declare global {
+  interface Window {
+    grecaptcha?: {
+      render: (container: HTMLElement, options: { sitekey: string; callback: () => void; "expired-callback": () => void }) => number;
+      reset: (widgetId?: number) => void;
+    };
+  }
+}
+
+const RECAPTCHA_SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY || "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI";
+
 const EnquiryForm: React.FC<EnquiryFormProps> = ({ isOpen, onClose }) => {
   const dialogRef = useRef<HTMLDivElement>(null);
   const firstInputRef = useRef<HTMLInputElement>(null);
   const [formData, setFormData] = useState<EnquiryFormData>(initialEnquiryFormData);
   const [acceptedTerms, setAcceptedTerms] = useState(false);
+  const [captchaVerified, setCaptchaVerified] = useState(false);
+  const captchaContainer = useRef<HTMLDivElement>(null);
+  const captchaWidgetId = useRef<number | null>(null);
+
+  useEffect(() => {
+    if (!isOpen || !captchaContainer.current || captchaWidgetId.current !== null) return;
+
+    let cancelled = false;
+    let interval: number | undefined;
+    const renderWidget = () => {
+      if (cancelled || !window.grecaptcha || !captchaContainer.current || captchaWidgetId.current !== null) return;
+      captchaWidgetId.current = window.grecaptcha.render(captchaContainer.current, {
+        sitekey: RECAPTCHA_SITE_KEY,
+        callback: () => setCaptchaVerified(true),
+        "expired-callback": () => setCaptchaVerified(false),
+      });
+    };
+
+    if (window.grecaptcha) {
+      renderWidget();
+    } else {
+      let script = document.querySelector<HTMLScriptElement>('script[src="https://www.google.com/recaptcha/api.js?render=explicit"]');
+      if (!script) {
+        script = document.createElement("script");
+        script.src = "https://www.google.com/recaptcha/api.js?render=explicit";
+        script.async = true;
+        script.defer = true;
+        document.head.appendChild(script);
+      }
+      interval = window.setInterval(() => {
+        if (window.grecaptcha) {
+          window.clearInterval(interval);
+          renderWidget();
+        }
+      }, 100);
+      script.addEventListener("error", () => { if (interval !== undefined) window.clearInterval(interval); }, { once: true });
+    }
+
+    return () => {
+      cancelled = true;
+      if (interval !== undefined) window.clearInterval(interval);
+      if (captchaWidgetId.current !== null) {
+        window.grecaptcha?.reset(captchaWidgetId.current);
+        captchaWidgetId.current = null;
+        setCaptchaVerified(false);
+      }
+    };
+  }, [isOpen]);
 
   useEffect(() => {
     if (!isOpen) return;
@@ -71,10 +130,13 @@ const EnquiryForm: React.FC<EnquiryFormProps> = ({ isOpen, onClose }) => {
 
   const handleEnquirySubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    if (!captchaVerified) return;
     console.log({ ...formData, acceptedTerms });
     alert("Form Submitted Successfully!");
     setFormData(initialEnquiryFormData);
     setAcceptedTerms(false);
+    setCaptchaVerified(false);
+    if (captchaWidgetId.current !== null) window.grecaptcha?.reset(captchaWidgetId.current);
     onClose();
   };
 
@@ -82,20 +144,8 @@ const EnquiryForm: React.FC<EnquiryFormProps> = ({ isOpen, onClose }) => {
 
   return createPortal(
     <div className="enquiry-form" role="presentation" onMouseDown={handleOverlayClick}>
-      <div
-        className="enquiry-form__container flex flex-column"
-        ref={dialogRef}
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="enquiry-form-title"
-        tabIndex={-1}
-      >
-        <button
-          type="button"
-          className="enquiry-form__close"
-          onClick={onClose}
-          aria-label="Close enquiry form"
-        >
+      <div className="enquiry-form__container flex flex-column" ref={dialogRef}  role="dialog"  aria-modal="true" aria-labelledby="enquiry-form-title" tabIndex={-1} >
+        <button type="button" className="enquiry-form__close" onClick={onClose} aria-label="Close enquiry form" >
           ×
         </button>
 
@@ -118,11 +168,11 @@ const EnquiryForm: React.FC<EnquiryFormProps> = ({ isOpen, onClose }) => {
 
           <div className="enquiry-form__bottom flex flex-align-center flex-justify-between">
             <div className="enquiry-form__captcha flex flex-align-center flex-one">
-              <input type="checkbox" />
-              <span>I'm not a robot</span>
+              <div ref={captchaContainer} />
             </div>
             <button type="submit" className="enquiry-form__submit">Submit</button>
           </div>
+          {!captchaVerified && <p className="enquiry-form__captcha-message" role="status">Complete the reCAPTCHA before submitting.</p>}
         </form>
       </div>
     </div>,

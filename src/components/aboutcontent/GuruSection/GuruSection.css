@@ -52,7 +52,7 @@
 }
 .guru-section {
   width: 100%;
-  padding: 3rem 4rem;
+  padding: var(--guru-section-padding);
   background-color: var(--guru-section-bg);
 }
 
@@ -81,10 +81,6 @@
 }
 
 @media (max-width: 64rem) {
-  .guru-section {
-    padding: var(--spacing-12) 4rem;
-  }
-
   .guru-section__header {
     margin-bottom: var(--spacing-10);
   }
@@ -92,6 +88,12 @@
 
   .guru-section__list {
     gap: var(--spacing-12);
+  }
+}
+
+@media (min-width: 30.0625rem) and (max-width: 64rem) {
+  .guru-section {
+    margin-top: 0;
   }
 }
 

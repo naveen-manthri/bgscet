@@ -19,7 +19,7 @@
 .department-faculty__image {
   width: 100%;
   display: block;
-  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .department-faculty__info {
@@ -104,7 +104,7 @@
   }
 
   .department-faculty__image {
-    padding-bottom: 0.75rem;
+    margin-bottom: 0.75rem;
   }
 
   .department-faculty__name {
@@ -125,7 +125,7 @@
   }
 
   .department-faculty__image {
-    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 }
 
