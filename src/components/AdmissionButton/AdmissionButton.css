@@ -103,3 +103,11 @@
     white-space: normal;
   }
 }
+
+@media (min-width: 48.01rem) and (max-width: 64rem) {
+  .admission-button {
+    width: clamp(12rem, 20vw, 15rem);
+    height: clamp(3rem, 5vw, 3.4rem);
+    font-size: clamp(0.85rem, 1.15vw, 0.95rem);
+  }
+}

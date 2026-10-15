@@ -2,7 +2,7 @@
 
 .home-about-university {
   gap: 2rem;
-  padding: 0 clamp(3.25rem, 5vw, 4rem) 0;
+  padding: var(--primary-padding);
   padding-inline: 4rem;
   margin-top: var(--primary-margin-top);
   margin-bottom: 0;

@@ -112,3 +112,26 @@
     font-size: var(--body-size-mobile);
   }
 }
+
+@media (min-width: 48rem) and (max-width: 64rem) {
+  .shared-section-heading {
+    --heading-size: clamp(2rem, 4.2vw, 3rem);
+    --heading-underline-padding-bottom: clamp(0.4rem, 0.9vw, 0.7rem);
+    --heading-underline-margin-bottom: clamp(0.45rem, 1vw, 0.75rem);
+    gap: clamp(0.5rem, 1vw, 0.75rem);
+  }
+
+  .section-title {
+    max-width: 100%;
+    font-size: var(--heading-size);
+    overflow-wrap: anywhere;
+  }
+
+  .section-title-second-line {
+    margin-top: clamp(0.08rem, 0.25vw, 0.15rem);
+  }
+
+  .section-subtitle {
+    font-size: clamp(1.25rem, 2.4vw, 1.8rem);
+  }
+}

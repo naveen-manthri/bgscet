@@ -114,16 +114,6 @@
   color: var(--clr-description);
 }
 
-@media (max-width: 64rem) {
-  .statistics-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .statistics-title {
-    font-size: 2.4rem;
-  }
-}
-
 @media (max-width: 40rem) {
   .statistics {
     padding: 3.25rem 1rem;
@@ -212,5 +202,23 @@
 
   .statistics-card {
     padding-inline: 0.4rem;
+  }
+}
+
+@media (min-width: 48rem) and (max-width: 64rem) {
+  .statistics-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .statistics-title {
+    font-size: clamp(2rem, 3.75vw, 2.4rem);
+  }
+
+  .statistics-value {
+    font-size: clamp(1.8rem, 2.45vw, 2.5rem);
+  }
+
+  .statistics-label {
+    font-size: clamp(1.05rem, 1.35vw, 1.375rem);
   }
 }

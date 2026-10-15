@@ -270,9 +270,40 @@ max-width: none;
 }
 
 @media (min-width: 48rem) and (max-width: 64rem) {
+  .campus-placements {
+    padding-block: clamp(2rem, 3.5vw, 2.5rem);
+    padding-inline: 0;
+  }
+
+  .campus-placements__inner {
+    margin-inline: clamp(1.25rem, 5vw, 4rem);
+  }
+
+  .campus-placements__heading {
+    margin-bottom: clamp(1.75rem, 3vw, 2.5rem);
+  }
+
+  .campus-placements__title {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+  }
+
+  .campus-placements__title::after {
+    margin-top: clamp(0.65rem, 1vw, 1rem);
+  }
+
+  .campus-placements__description {
+    max-width: min(100%, 42rem);
+    font-size: clamp(0.95rem, 1.5vw, 1.125rem);
+    line-height: 1.5;
+  }
+
+  .campus-placements__track {
+    gap: clamp(0.75rem, 1.25vw, 1rem);
+  }
+
   .campus-placements__card {
     box-sizing: border-box;
-    flex: 0 0 clamp(8.5rem, 13vw, 10rem);
+    flex: 0 0 clamp(13.4rem, 28vw, 18rem);
     height: clamp(5.25rem, 8vw, 6.25rem);
     display: flex;
     align-items: center;
@@ -282,9 +313,10 @@ max-width: none;
 
   .campus-placements__logo {
     display: block;
-    width: 100%;
-    max-width: 8rem;
-    height: min(4.5rem, 100%);
+    width: clamp(6.5rem, 12.5vw, 8rem);
+    max-width: 100%;
+    height: clamp(3.25rem, 6vw, 4.25rem);
     object-fit: contain;
+    object-position: center;
   }
 }
