@@ -126,11 +126,12 @@
  --bullet-list-gap: clamp(0.6rem, 1vw, 0.75rem);
  --list-padding-left: clamp(1rem, 1.5vw, 1.5rem);
 
-/*  images border*/
+/*  images border, gap*/
 --home-mutt-vm-image-border: clamp(1rem, 2vw, 2rem);
 --image-loading-background: #f0f0f0;
 --guru-image-radius: 0.75rem;
 --video-loading-bg: #dedede;
+--academic-images-gap: clamp(1rem, 1.6vw, 1.25rem);
 
 /* Button Typography */
 

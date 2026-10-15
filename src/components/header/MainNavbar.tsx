@@ -87,6 +87,75 @@ function MainNavbar() {
     setProfessionalBodiesWidth(rankFromRight === 2 ? 5 : rankFromRight === 3 ? 8 : 12);
   };
 
+  const updateTabletNavbarConditions = () => {
+    if (!window.matchMedia('(min-width: 44.01em) and (max-width: 58em)').matches) {
+      return;
+    }
+
+    const menu = menuRef.current;
+    if (!menu) {
+      setIsQuickLinksSwapped(false);
+      setProfessionalBodiesWidth(12);
+      return;
+    }
+
+    const menuItems = Array.from(menu.querySelectorAll<HTMLLIElement>(':scope > .main-navbar__item'));
+    const quickLinks = menuItems.find((item) => item.dataset.navLabel === 'Quick Links');
+    const quickLinksBounds = quickLinks?.getBoundingClientRect();
+
+    if (!quickLinks || !quickLinksBounds || quickLinks.getClientRects().length === 0) {
+      setIsQuickLinksSwapped(false);
+      setProfessionalBodiesWidth(12);
+      return;
+    }
+
+    const itemsByLabel = new Map(menuItems.map((item) => [item.dataset.navLabel, item]));
+    const menuWidth = menu.clientWidth;
+    const columnGap = parseFloat(getComputedStyle(menu).columnGap) || 0;
+    const originalRows: string[][] = [];
+    let currentRow: string[] = [];
+    let currentRowWidth = 0;
+
+    navItems.forEach((item) => {
+      const element = itemsByLabel.get(item.label);
+      if (!element) {
+        return;
+      }
+
+      const itemWidth = element.getBoundingClientRect().width;
+      const nextWidth = currentRowWidth + (currentRow.length ? columnGap : 0) + itemWidth;
+      if (currentRow.length && nextWidth > menuWidth) {
+        originalRows.push(currentRow);
+        currentRow = [];
+        currentRowWidth = 0;
+      }
+
+      currentRowWidth += (currentRow.length ? columnGap : 0) + itemWidth;
+      currentRow.push(item.label);
+    });
+    if (currentRow.length) {
+      originalRows.push(currentRow);
+    }
+
+    const originalQuickLinksRow = originalRows.find((row) => row.includes('Quick Links'));
+    const originalQuickLinksRank = originalQuickLinksRow
+      ? originalQuickLinksRow.length - originalQuickLinksRow.indexOf('Quick Links')
+      : 0;
+    setIsQuickLinksSwapped(originalQuickLinksRank === 1);
+
+    const itemsOnSameRow = menuItems.filter((item) => {
+      if (item.getClientRects().length === 0) {
+        return false;
+      }
+      return Math.abs(item.getBoundingClientRect().top - quickLinksBounds.top) < 1;
+    });
+    const rankFromRight = itemsOnSameRow.filter(
+      (item) => item.getBoundingClientRect().left > quickLinksBounds.left + 1,
+    ).length + 1;
+
+    setProfessionalBodiesWidth(rankFromRight === 2 ? 5 : rankFromRight === 3 ? 8 : 12);
+  };
+
   const getDropdownClickState = (current: string | null, label: string) => {
     if (!window.matchMedia('(max-width: 58em)').matches) {
       return label;
@@ -184,7 +253,11 @@ function MainNavbar() {
 
   useEffect(() => {
     const updateNestedDropdownDirections = () => {
-      updateProfessionalBodiesWidth();
+      if (window.matchMedia('(min-width: 44.01em) and (max-width: 58em)').matches) {
+        updateTabletNavbarConditions();
+      } else {
+        updateProfessionalBodiesWidth();
+      }
       rootDropdownRefs.current.forEach((_, key) => updateRootDropdownWidth(key));
       nestedDropdownRefs.current.forEach((_, key) => updateNestedDropdownDirection(key));
     };

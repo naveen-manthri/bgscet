@@ -15,25 +15,8 @@ export default function AcademicEligibility() {
 
       <div className="flex flex-direction-column academic-eligibility__body">
         <div className="academic-eligibility__wrapper">
-          <article className="academic-eligibility__content">
-          <p>
-            <strong>{academicData.eligibility.generalMerit.heading}</strong>{" "}
-            {academicData.eligibility.generalMerit.description}
-          </p>
-
-          <p>
-            <strong>{academicData.eligibility.reservedCategory.heading}</strong>{" "}
-            {academicData.eligibility.reservedCategory.description}
-          </p>
-
-          <p>{academicData.eligibility.note}</p>
-
-          <BulletSection data={{ title: "", points: academicData.entranceExaminations }} />
-
-          </article>
-
           <aside className="academic-eligibility__images display-block">
-            <figure className= "image-hover-container">
+            <figure className="image-hover-container">
               <img src={academicTop} alt="" className="image-hover-scale academic-top-img" />
             </figure>
 
@@ -41,46 +24,62 @@ export default function AcademicEligibility() {
               <img src={studentsGroup} alt="" className="image-hover-scale academic-bottom-img" />
             </figure>
           </aside>
-        </div>
 
-        <article className="academic-eligibility__content academic-eligibility__examinations">
-          <section className="academic-eligibility__block">
-            <h3>{academicData.examinations.kcet.title}</h3>
+          <article className="academic-eligibility__content academic-eligibility__eligibility">
+            <p>
+              <strong>{academicData.eligibility.generalMerit.heading}</strong>{" "}
+              {academicData.eligibility.generalMerit.description}
+            </p>
 
             <p>
-              {academicData.examinations.kcet.content.map((item, index) =>
-                item.type === "link" ? (
-                  <a key={item.href} href={item.href} target="_blank" rel="noreferrer">
-                    {item.label}
-                  </a>
-                ) : (
-                  <span key={index}>{item.value}</span>
-                ),
-              )}
+              <strong>{academicData.eligibility.reservedCategory.heading}</strong>{" "}
+              {academicData.eligibility.reservedCategory.description}
             </p>
-          </section>
 
-          <section className="academic-eligibility__block academic-eligibility__block--comedk">
-            <h3>{academicData.examinations.comedk.title}</h3>
+            <p>{academicData.eligibility.note}</p>
 
-            <p>
-              {academicData.examinations.comedk.content.map((item, index) =>
-                item.type === "link" ? (
-                  <a key={item.href} href={item.href} target="_blank" rel="noreferrer">
-                    {item.label}
-                  </a>
-                ) : (
-                  <span key={index}>{item.value}</span>
-                ),
-              )}
-              <span className="academic-eligibility__documents-label"> DOCUMENTS NEEDED</span>
-            </p>
-          </section>
+            <BulletSection data={{ title: "", points: academicData.entranceExaminations }} />
+          </article>
 
-          <section className="academic-eligibility__documents">
+          <article className="academic-eligibility__content academic-eligibility__examinations">
+            <section className="academic-eligibility__block">
+              <h3>{academicData.examinations.kcet.title}</h3>
+
+              <p>
+                {academicData.examinations.kcet.content.map((item, index) =>
+                  item.type === "link" ? (
+                    <a key={item.href} href={item.href} target="_blank" rel="noreferrer">
+                      {item.label}
+                    </a>
+                  ) : (
+                    <span key={index}>{item.value}</span>
+                  ),
+                )}
+              </p>
+            </section>
+
+            <section className="academic-eligibility__block academic-eligibility__block--comedk">
+              <h3>{academicData.examinations.comedk.title}</h3>
+
+              <p>
+                {academicData.examinations.comedk.content.map((item, index) =>
+                  item.type === "link" ? (
+                    <a key={item.href} href={item.href} target="_blank" rel="noreferrer">
+                      {item.label}
+                    </a>
+                  ) : (
+                    <span key={index}>{item.value}</span>
+                  ),
+                )}
+                <span className="academic-eligibility__documents-label"> DOCUMENTS NEEDED</span>
+              </p>
+            </section>
+          </article>
+
+          <section className="academic-eligibility__content academic-eligibility__documents academic-eligibility__documents--comedk">
             <NumberedList data={{ items: academicData.documents }} />
           </section>
-        </article>
+        </div>
       </div>
     </section>
   );

@@ -46,8 +46,9 @@
 }
 
 .guru-card__image-container {
-  width: 100%;
+  width: calc(100% - 2rem);
   aspect-ratio: 4 / 5;
+  margin-inline: auto;
   border-radius: var(--guru-image-radius);
 }
 
