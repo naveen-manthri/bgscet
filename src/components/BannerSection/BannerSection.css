@@ -536,3 +536,40 @@
     object-fit: contain;
   }
 }
+
+@media (min-width: 64.01rem) and (max-aspect-ratio: 1.65) {
+  .home-hero__carousel {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 1920 / 876;
+  }
+
+  .home-hero__text-wrap {
+    top: 50%;
+    left: 4%;
+    width: min(48rem, 48%);
+    margin-top: 0;
+    transform: translateY(-50%);
+  }
+
+  .home-hero__title {
+    width: 100%;
+    font-size: clamp(2rem, 5vw, 4.5rem);
+  }
+
+  .home-hero__description {
+    width: 100%;
+    margin-top: clamp(0.75rem, 1.8vw, 2rem);
+  }
+
+  .home-hero__actions {
+    margin-top: clamp(0.9rem, 1.8vw, 2rem);
+  }
+
+  .banner-section:not(.banner-section--full-image) > .banner-image {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: auto;
+    object-fit: contain;
+  }
+}

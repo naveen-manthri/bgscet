@@ -154,6 +154,7 @@
     float: none;
     width: 100%;
     margin-left: 0;
+    margin-top:var(--mobile-margin-top);
     grid-area: images;
     grid-template-rows: auto;
     gap: var(--list-item-gap);

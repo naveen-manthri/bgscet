@@ -9,6 +9,7 @@ function MainNavbar() {
   const [openSubmenu, setOpenSubmenu] = useState<string | null>(null);
   const [openNestedSubmenu, setOpenNestedSubmenu] = useState<string | null>(null);
   const [isQuickLinksSwapped, setIsQuickLinksSwapped] = useState(false);
+  const [isStudentCornerSwapped, setIsStudentCornerSwapped] = useState(false);
   const [professionalBodiesWidth, setProfessionalBodiesWidth] = useState<5 | 8 | 12>(12);
   const [rootDropdownMaxWidths, setRootDropdownMaxWidths] = useState(new Map<string, number>());
   const [nestedDropdownMaxWidths, setNestedDropdownMaxWidths] = useState(new Map<string, number>());
@@ -89,12 +90,14 @@ function MainNavbar() {
 
   const updateTabletNavbarConditions = () => {
     if (!window.matchMedia('(min-width: 44.01em) and (max-width: 58em)').matches) {
+      setIsStudentCornerSwapped(false);
       return;
     }
 
     const menu = menuRef.current;
     if (!menu) {
       setIsQuickLinksSwapped(false);
+      setIsStudentCornerSwapped(false);
       setProfessionalBodiesWidth(12);
       return;
     }
@@ -142,6 +145,10 @@ function MainNavbar() {
       ? originalQuickLinksRow.length - originalQuickLinksRow.indexOf('Quick Links')
       : 0;
     setIsQuickLinksSwapped(originalQuickLinksRank === 1);
+
+    setIsStudentCornerSwapped(
+      window.matchMedia('(min-width: 48.125em) and (max-width: 56.25em)').matches,
+    );
 
     const itemsOnSameRow = menuItems.filter((item) => {
       if (item.getClientRects().length === 0) {
@@ -293,6 +300,16 @@ function MainNavbar() {
     if (quickLinksIndex >= 0 && conferenceIndex >= 0 && quickLinksItem && conferenceItem) {
       displayedNavItems[quickLinksIndex] = conferenceItem;
       displayedNavItems[conferenceIndex] = quickLinksItem;
+    }
+  }
+  if (isStudentCornerSwapped) {
+    const studentCornerIndex = displayedNavItems.findIndex((item) => item.label === 'Student Corner');
+    const placementIndex = displayedNavItems.findIndex((item) => item.label === 'Placement');
+    const studentCornerItem = displayedNavItems[studentCornerIndex];
+    const placementItem = displayedNavItems[placementIndex];
+    if (studentCornerIndex >= 0 && placementIndex >= 0 && studentCornerItem && placementItem) {
+      displayedNavItems[studentCornerIndex] = placementItem;
+      displayedNavItems[placementIndex] = studentCornerItem;
     }
   }
 
