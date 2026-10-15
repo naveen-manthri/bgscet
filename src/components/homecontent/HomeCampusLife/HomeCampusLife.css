@@ -152,14 +152,14 @@
   }
 
   .home-campus-life .section-title {
-    font-size: 1.9rem;
-    line-height: 1.2;
+    font-size: var(--heading-size);
+    /* line-height: 1.2; */
     overflow-wrap: anywhere;
   }
 
   .home-campus-life .section-subtitle {
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: var(--section-sub-title-mobile);
+    /* line-height: 1.5; */
   }
 
   .campus-life-grid {

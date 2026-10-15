@@ -37,7 +37,7 @@ function PhysicalEducationSports() {
       </section>
 
       <section className="physical-education__achievement" aria-label="Sports achievers">
-        <img src={achievementImage} alt={achievementAlt} />
+        <img className="physical-education__achievement-image" src={achievementImage} alt={achievementAlt} />
         <div className="physical-education__recognitions">
           {recognitions.map((recognition) => (
             <article key={recognition.image}>

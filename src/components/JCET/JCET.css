@@ -153,6 +153,17 @@
     box-sizing: border-box;
   }
 
+  .jcet__section,
+  .jcet__article-submission-content,
+  .jcet__information,
+  .jcet .bullet-section {
+    margin-top: var(--mobile-margin-top);
+  }
+
+  .jcet__article-submission-content {
+    gap: var(--mobile-margin-top);
+  }
+
   .jcet__bibliographic-details {
     box-sizing: border-box;
     padding: 0;

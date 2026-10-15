@@ -109,7 +109,7 @@
   }
 
   .section-subtitle {
-    font-size: var(--body-size-mobile);
+    font-size: var(--section-sub-title-mobile);
   }
 }
 
