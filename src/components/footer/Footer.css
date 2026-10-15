@@ -46,7 +46,7 @@
   margin: clamp(2.2rem, 4vw, 3.1rem) 0 clamp(1rem, 2vw, 1.4rem);
   color: var(--white);
   font-size: var(--card-title);
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   line-height: 1.2;
 }
 

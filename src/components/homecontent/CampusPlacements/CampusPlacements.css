@@ -26,7 +26,7 @@ max-width: none;
 
   font-family: "Poppins", sans-serif;
   font-size: 3.125rem;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   line-height: 1.2;
   letter-spacing: 0;
 

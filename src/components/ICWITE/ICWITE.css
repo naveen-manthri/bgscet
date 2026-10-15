@@ -6,7 +6,7 @@
 .icwite-2025__link {
   color: var(--secondary-deep);
   font-size: clamp(1.25rem, 2vw, 1.35rem);
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   text-decoration: none;
 }
 

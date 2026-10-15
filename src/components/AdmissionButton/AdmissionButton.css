@@ -16,7 +16,7 @@
 
   --btn-font-family: "Poppins", sans-serif;
   --btn-font-size: 1rem;
-  --btn-font-weight: 700;
+  --btn-font-weight: var(--fw-bold);
 
   --transition: 0.3s ease;
 }

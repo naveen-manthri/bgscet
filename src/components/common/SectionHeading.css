@@ -61,7 +61,7 @@
   color: var(--primary-deep);
   font-family: "Poppins", sans-serif;
   font-size: var(--heading-size);
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   line-height: 1.15;
 }
 
@@ -72,7 +72,7 @@
 
   color: var(--primary-deep);
   font-style: italic;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
 }
 .section-heading-line {
   width: var(--heading-underline-width);

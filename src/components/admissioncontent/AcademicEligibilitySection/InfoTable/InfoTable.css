@@ -22,7 +22,7 @@
 
 .academic-info-table th {
   padding: var(--list-item-gap);
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   color: var(--academic-heading-black);
   background: var(--color-table-header);
 }

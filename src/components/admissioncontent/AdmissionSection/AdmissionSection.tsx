@@ -18,7 +18,7 @@ const AdmissionSection = () => {
   const accessibleTitle = `${admissionTitleStart} ${admissionTitleMiddle} ${admissionTitleEnd}`.replace(/\s+/g, " ").trim();
 
   return (
-    <section className="admission mobile-margin-top mobile-padding">
+    <section className="admission">
       <div className="admission__title academic-section-heading">
         <h2 aria-label={accessibleTitle}>
           <span className="academic-section-heading__black">{admissionTitleStart}</span>{" "}

@@ -71,7 +71,7 @@
   padding: 0 0.5rem var(--heading-underline-padding-bottom);
   color: var(--gallery-accent);
   font-size: var(--gallery-title-size);
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   line-height: 1.2;
   text-align: center;
 }

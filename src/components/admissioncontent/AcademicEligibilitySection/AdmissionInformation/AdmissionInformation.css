@@ -10,7 +10,7 @@
   padding: 0;
   font-family: var(--font-main);
   font-size: var(--primary-title-size-medium);
-   font-weight: 700;
+   font-weight: var(--fw-bold);
 
 }
 .admission-information__card {
@@ -25,7 +25,7 @@
   margin: 0 0 var(--list-item-gap);
   color: var(--academic-heading-red);
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
 }
 
 .admission-information__card p {
@@ -76,7 +76,7 @@
 .admission-information__contact h3 {
   margin: 0;
   font-size: var(--font-size);
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   color: var(--academic-heading-black);
 }
 

@@ -10,7 +10,7 @@
 
   --title-font-size: 1.75rem;
   --title-line-height: 1.5;
-  --title-font-weight: 700;
+  --title-font-weight: var(--fw-bold);
 
   --image-max-width: 62.5rem;
 }

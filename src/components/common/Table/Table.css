@@ -38,7 +38,7 @@
 .table-section__table th {
   background: #f3f3f3;
   color: var(--heading-color);
-  font-weight: 700;
+  font-weight: var(--fw-bold);
 }
 
 .table-section__table td {

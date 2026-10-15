@@ -49,7 +49,7 @@
   padding: 0 2rem;
   color: var(--white);
   font-size: 4rem;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   line-height: 1.2;
   text-align: center;
 }
@@ -265,7 +265,7 @@
   margin: 0;
   font-family: 'Playfair Display', serif;
   font-size: clamp(3rem, 5vw, 5.5rem);
-  font-weight: 800;
+  font-weight: var(--fw-large);
   line-height: 1.1;
 }
 

@@ -134,7 +134,7 @@
 }
 
 .physical-education__recognitions img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
-.physical-education__recognitions h2 { margin: 0.85rem 0 0.45rem; font-size: var(--font-size); font-weight: 700; color: var(--text); }
+.physical-education__recognitions h2 { margin: 0.85rem 0 0.45rem; font-size: var(--font-size); font-weight: var(--fw-bold); color: var(--text); }
 .physical-education__recognitions p { margin: 0; font-size: var(--font-size); line-height: 1.55; color: var(--text); }
 
 .physical-education__recognitions article:nth-child(3) {
@@ -165,7 +165,7 @@
   text-align: center;
 }
 
-.physical-education__annual h2 { display: grid; margin: 0; color: var(--primary-deep); font-size: clamp(2.5rem, 6vw, 5rem); font-weight: 800; line-height: 1; }
+.physical-education__annual h2 { display: grid; margin: 0; color: var(--primary-deep); font-size: clamp(2.5rem, 6vw, 5rem); font-weight: var(--fw-bold); line-height: 1; }
 .physical-education__annual h2 span,
 .physical-education__annual h2 em { color: var(--primary-deep); }
 .physical-education__annual em {

@@ -47,7 +47,7 @@
   margin: 0;
   color: var(--color-heading);
   font-size: var(--section-title);
-  font-weight: 800;
+  font-weight: var(--fw-bold);
   line-height: 1.15;
 }
 

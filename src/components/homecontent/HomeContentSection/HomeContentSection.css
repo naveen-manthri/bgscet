@@ -43,8 +43,8 @@
 
 .home-section-title {
   color: var(--title-color);
-  font-size: var(--section-title);
-  font-weight: 800;
+  font-size: var(--primary-title-size-medium);
+  font-weight: var(--fw-bold);
   order: 1;
   margin: 0;
 }

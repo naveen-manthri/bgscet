@@ -6,8 +6,8 @@
   --white-clr:#ffffff;
 
   background: #ffffff;
-  padding: 0rem 4rem ;
-  margin-top: 3rem;
+  padding: var(--primary-padding);
+  margin-top: var(--primary-margin-top);
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(18rem, 1fr);
   column-gap: clamp(1rem, 2vw, 2rem);
@@ -83,7 +83,7 @@
   color: var(--primary-deep);
   font-family: var(--font-main);
   font-size: clamp(2.5rem, 4.2vw, 6.25rem);
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   line-height: 1.1;
   padding-bottom: var(--heading-underline-padding-bottom, clamp(0.45rem, 1vw, 0.85rem));
   white-space: normal;
@@ -110,7 +110,7 @@
   margin: 2rem 0 1rem;
   color: #000000;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   line-height: 1.4;
 }
 
@@ -140,7 +140,7 @@
   background: var(--admission-primary);
   color: var(--white-clr);
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   line-height: 1;
 }
 
@@ -216,6 +216,8 @@
     grid-template-columns: 1fr;
     row-gap: 0;
     box-sizing: border-box;
+    padding: var(--mobile-padding);
+    margin-top: var(--mobile-margin-top);
   }
 
   .admission__content {
@@ -304,8 +306,6 @@
     box-sizing: border-box;
     grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
     column-gap: clamp(1.25rem, 3vw, 3rem);
-    padding-right: clamp(1.5rem, 4.1vw, 2.625rem);
-    padding-left: clamp(1.5rem, 4.1vw, 2.625rem);
   }
 
   .admission__title {

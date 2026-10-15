@@ -20,7 +20,7 @@
 
 .academic-eligibility__content strong {
   color: var(--academic-heading-black);
-  font-weight: 700;
+  font-weight: var(--fw-bold);
 }
 
 .academic-eligibility__content > .bullet-section {
@@ -42,7 +42,7 @@
 .academic-eligibility__block h3 {
   margin-top: 1rem;
   font-size: var(--font-size);
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   color: var(--academic-sub-heading-black);
 }
 
@@ -53,7 +53,7 @@
   margin: 0rem;
   /* 4C4949 */
   font-size: var(--font-size);
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   color: var(--academic-heading-black);
 }
 
@@ -81,17 +81,23 @@
 }
 
 .academic-eligibility__images figure {
+  display: block;
   width: 100%;
   margin: 0;
   min-height: 0;
   overflow: hidden;
+  border-radius: inherit;
+}
+
+.academic-eligibility__images figure.image-hover-container {
+  width: 90%;
+  margin-left: auto;
 }
 
 .academic-eligibility__images img {
   display: block;
-  width: 90%;
+  width: 100%;
   height: auto;
-  margin-left: auto;
   object-fit: contain;
 }
 .academic-eligibility__block p {
@@ -102,7 +108,7 @@
   display: block;
   margin-top: clamp(1rem, 2vw, 1.5rem);
   font-size: clamp(0.9rem, 1.5vw, 1.25rem);
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   line-height: 1.4;
 }
 
@@ -154,6 +160,10 @@
   }
 
   .academic-eligibility__images figure {
+    width: 100%;
+  }
+
+  .academic-eligibility__images figure.image-hover-container {
     width: 100%;
   }
 
