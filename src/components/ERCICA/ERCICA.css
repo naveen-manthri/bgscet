@@ -1,5 +1,4 @@
 :root {
-  --ercica-page-padding: 4rem;
   --ercica-section-gap: 3.5rem;
   --ercica-paragraph-gap: 1.5rem;
 
@@ -12,11 +11,11 @@
 .ercica {
   width: 100%;
   margin-top: var(--primary-margin-top);
+  padding: var(--primary-padding);
+
 }
 
-.ercica__container {
-  padding: 0 var(--ercica-page-padding);
-}
+
 
 .ercica__section:first-child {
   margin-bottom: 0;

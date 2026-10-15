@@ -2,7 +2,7 @@
   --color-white: #ffffff;
   background: #ffffff;
   padding: var(--primary-padding);
-  margin-top: 3rem;
+  margin-top: var(--primary-margin-top);
 }
 
 /* .grievance-redressal-cell .title-description {
@@ -31,7 +31,7 @@
   color: var(--color-white);
   background: var(--btn-primary);
   border: none;
-  border-radius: 8px;
+  border-radius: var(--button-border-radius);
   font-weight: 600;
   transition: background-color 0.3s ease, transform 0.2s ease;
   box-shadow: none;
@@ -50,7 +50,7 @@
 @media (max-width: 64rem) {
   .grievance-redressal-cell .title-description,
   .grievance-redressal-cell .bullet-section {
-    margin-inline: 1.5rem;
+    margin-inline: 0;
   }
 }
 

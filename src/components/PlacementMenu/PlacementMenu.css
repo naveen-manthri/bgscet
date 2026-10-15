@@ -1,6 +1,6 @@
 .placement-menu-page {
   margin-top: var(--primary-margin-top);
-  padding: 0rem 4rem;
+  padding: var(--primary-padding);
 }
 
 @media (max-width: 48rem) {

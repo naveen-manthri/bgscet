@@ -1,6 +1,6 @@
 .yrc-club {
-  padding: 3rem 4rem 0;
-  margin-bottom: 2rem;
+  padding: var(--primary-padding);
+  margin-top: var(--primary-margin-top);
 }
 
 @media (max-width: 48rem) {

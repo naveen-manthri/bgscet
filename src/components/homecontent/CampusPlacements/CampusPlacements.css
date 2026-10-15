@@ -238,7 +238,7 @@ max-width: none;
 
   .campus-placements__description {
     max-width: 100%;
-    font-size: 1rem;
+    font-size: var(--mobile-font-size);
     line-height: var(--mobile-line-height);
   }
 

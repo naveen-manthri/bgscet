@@ -2,7 +2,7 @@
   --btn-primary: #cc2a09;
   --btn-primary-hover: #b82508;
 
-  padding: 0 4rem 0;
+  padding: var(--primary-padding);
   margin-top: var(--primary-margin-top);
   gap: 2rem;
 }

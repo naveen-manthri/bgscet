@@ -15,7 +15,7 @@ function CampusPlacements() {
           </h2>
 
           <p className="campus-placements__description">
-            A Track Record Of Top-Tier Hiring Across Product,<br/> Services And
+            A Track Record Of Top-Tier Hiring Across Product, Services And
             Research Organisations Globally.
           </p>
         </div>

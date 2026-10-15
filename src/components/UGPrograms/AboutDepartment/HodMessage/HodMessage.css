@@ -40,6 +40,8 @@
   height: auto;
 
   display: block;
+  
+  background-color: var(--image-loading-background);
 
   border-radius: 0.25rem;
   object-fit: cover;

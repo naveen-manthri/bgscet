@@ -187,6 +187,13 @@
   }
 }
 
+@media (min-width: 48.001rem) and (max-width: 64rem) {
+  .contact-card__designation,
+  .contact-card__organization {
+    margin-bottom: clamp(0.9rem, 1.5vw, 1.05rem);
+  }
+}
+
 @media (max-width: 48rem) {
   .contact-enquiry {
     padding: 3rem 0;

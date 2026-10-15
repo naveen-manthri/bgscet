@@ -5,17 +5,17 @@
 }
 
 .patent-page {
-  padding: 0 var(--page-padding);
+  padding: var(--primary-padding);
 
-  gap: var(--table-gap);
-  margin-top: var(--margin-top);
+  gap: var(--primary-margin-top);
+margin-top: var(--primary-margin-top);
 }
 
 @media (max-width: 48rem) {
   .patent-page {
     box-sizing: border-box;
     
-    gap: 2rem;
+    gap: var(--mobile-margin-top);
     width: 100%;
     max-width: 100%;
   }

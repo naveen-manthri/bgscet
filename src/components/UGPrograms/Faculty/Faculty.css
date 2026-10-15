@@ -19,6 +19,7 @@
 .department-faculty__image {
   width: 100%;
   display: block;
+  background-color: var(--image-loading-background);
   margin-bottom: 1.5rem;
 }
 

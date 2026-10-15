@@ -101,7 +101,7 @@
 --guru-section-padding: clamp(1.5rem, 4vw, 3rem) clamp(1.25rem, 4vw, 4rem);
 
 /*Margins*/
---primary-margin-top: clamp(2rem, 4vw, 3rem);
+--primary-margin-top: clamp(2.5rem, 4vw, 3rem);
 --primary-margin-bottom: clamp(2rem, 4vw, 3rem);
 --primary-margin: clamp(2rem, 4vw, 3rem) 0;
 --margin-left-right: clamp(1.25rem, 4vw, 4rem);
@@ -131,6 +131,11 @@
 --image-loading-background: #f0f0f0;
 --guru-image-radius: 0.75rem;
 --video-loading-bg: #dedede;
+
+/* Button Typography */
+
+--button-border-radius: 0.5rem;
+
 
 /* mobile version*/
 --mobile-font-size: clamp(0.9rem, 2vw, 1rem);

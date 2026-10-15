@@ -21,7 +21,7 @@
   color: var(--color-white);
   background: var(--btn-primary);
 
-  border-radius: 8px;
+  border-radius: var(--button-border-radius);
   font-size: var(--font-size);
 
   font-weight: 600;

@@ -45,7 +45,7 @@
   width: min(92%, var(--container-width));
   margin-inline: auto;
   margin-top: var(--visit-campus-margin-top);
-  padding: 0 0 3rem;
+  padding: clamp(0rem, 5.2vw, 4rem) clamp(0rem, 2vw, 1.5rem) 3rem;
   
 }
 
@@ -98,7 +98,6 @@
 @media (max-width: 64rem) {
   .visit-campus {
     width: 100%;
-    padding: 4rem 1.5rem;
   }
 
   .visit-campus__container {
@@ -108,12 +107,6 @@
   .visit-campus__actions {
     gap: 1rem;
   }
-}
-@media (max-width: 768px) {
-    .visit-campus {
-        margin-top: 3rem;
-        padding: var(--mobile-padding);
-    }
 }
 @media (max-width: 48rem) {
   
@@ -191,18 +184,9 @@
   }
 }
 
-@media (min-width: 601px) and (max-width: 64rem) {
-  .visit-campus {
-    margin-top: var(--primary-margin-top);
-  }
-}
-
 @media (min-width: 37.5rem) and (max-width: 64rem) {
   .visit-campus {
     width: min(92%, var(--container-width));
-    margin-top: var(--visit-campus-margin-top);
-    /* padding: 0 0rem; */
-    
   }
 
   .visit-campus__container {

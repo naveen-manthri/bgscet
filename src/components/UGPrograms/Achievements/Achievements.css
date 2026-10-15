@@ -38,6 +38,7 @@
   max-width: 100%;
   max-height: 60vh;
   height: auto;
+  background-color: var(--image-loading-background);
   object-fit: contain;
   cursor:pointer;
 }
