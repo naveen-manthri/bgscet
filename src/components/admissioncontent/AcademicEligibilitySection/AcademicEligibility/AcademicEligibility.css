@@ -59,8 +59,8 @@
 
 .academic-eligibility__documents ol {
   margin: 0;
-  padding-left: var(--list-item-gap);
-  padding-left: 1.25rem;
+  padding-left: var(--list-padding-left);
+  
 }
 
 .academic-eligibility__documents li {

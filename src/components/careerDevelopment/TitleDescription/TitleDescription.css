@@ -39,7 +39,7 @@
   
   gap: var(--bullet-list-gap);
   margin: 0;
-  padding-left: 2rem;
+  padding-left: var(--list-padding-left);
 }
 
 .title-bullet-description__item {

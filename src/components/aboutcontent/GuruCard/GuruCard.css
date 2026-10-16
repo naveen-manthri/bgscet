@@ -62,9 +62,9 @@
 }
 
 .guru-card__caption {
-  width: 100%;
+  width: calc(100% - 2rem);
   max-width: none;
-  margin-top: 0rem;
+  margin: 0 auto;
   padding: 0.9rem 1rem;
 
   background: var(--guru-image-desc);
@@ -132,8 +132,7 @@
     align-self: flex-start;
   }
 
-  .guru-card__image,
-  .guru-card__caption {
+  .guru-card__image {
     width: 100%;
     max-width: none;
   }
@@ -214,8 +213,7 @@
     line-height: var(--mobile-line-height);
   }
 
-  .guru-card__image,
-  .guru-card__caption {
+  .guru-card__image {
     width: 100%;
     max-width: none;
   }

@@ -1,9 +1,4 @@
-.committee-table {
-  --mobile-margin-top: 1.5rem;
-  --mobile-padding: 0 1.25rem;
-  --mobile-font-size: 1rem;
-  gap: 2rem;
-}
+
 
 .committee-table__wrapper {
   width: 100%;

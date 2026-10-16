@@ -39,7 +39,7 @@
   }
 
   .hostel > .bullet-section .bullet-section__list {
-    padding: 0 20px;
+    padding-left: var(--mobile-list-padding-left);
   }
 
   .hostel .hostel-facility__content {

@@ -13,7 +13,7 @@
 
 .numbered-list__list {
   margin: 0;
-  padding-left: 2rem;
+  padding-left: var(--list-padding-left);
   display: flex;
   flex-direction: column;
   gap: var(--list-item-gap);
@@ -41,8 +41,8 @@
   }
 
   .numbered-list__list {
-    padding-left: 1.5rem;
-    gap: var(--list-item-gap);
+    padding-left: var(--mobile-list-padding-left);
+    gap: var(--bullet-list-gap);
   }
 }
 
@@ -54,7 +54,7 @@
   }
 
   .numbered-list__list {
-    padding-left: 1.25rem;
-    gap: var(--list-item-gap);
+    padding-left: var(--mobile-list-padding-left);
+    gap: var(--bullet-list-gap);
   }
 }

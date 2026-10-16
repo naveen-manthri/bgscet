@@ -1,13 +1,11 @@
 .hostel-facility__content {
-  --mobile-margin-top: 1.5rem;
-  --mobile-padding: 0 1.25rem;
   gap: 1.5rem;
 }
 
 .hostel-facility__intro-list,
 .hostel-facility__facility-list {
-  gap: 1rem;
-    padding-left: var(--list-padding-left);
+  gap: var(--bullet-list-gap);
+  padding-left: var(--list-padding-left);
 
 }
 
@@ -53,7 +51,7 @@
 @media (max-width: 36rem) {
   .hostel-facility__intro-list,
   .hostel-facility__facility-list {
-    padding-left: 1rem;
+    padding-left: var(--mobile-list-padding-left);
     gap: var(--bullet-list-gap);
   }
 

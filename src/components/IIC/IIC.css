@@ -61,11 +61,11 @@
   color: var(--text);
   font-size: var(--font-size);
   line-height: var(--line-height);
-  padding-left: 1rem;
+  padding-left: var(--list-padding-left);
 }
-.iic-section ol li{
+/* .iic-section ol li{
   margin-bottom: var(--list-item-gap);
-}
+} */
 
 @media (max-width: 48rem) {
   .iic-container {

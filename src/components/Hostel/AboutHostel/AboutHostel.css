@@ -1,6 +1,5 @@
 .about-hostel {
-  --mobile-margin-top: 1.5rem;
-  --mobile-padding: 0 1.25rem;
+ 
   gap: 0rem;
   margin-top: var(--primary-margin-top);
 }

@@ -36,11 +36,10 @@
 
 .nss__list {
   margin: 0;
-  padding-left: 2rem;
+  padding-left: var(--list-padding-left);
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-}
+  gap: var(--bullet-list-gap);}
 
 .nss__list li {
   color: var(--text);
@@ -100,9 +99,9 @@
     margin-bottom: 0;
   }
 
-  .nss .bullet-section__list {
-    margin-top: 0.1rem;
-  }
+  /* .nss .bullet-section__list {
+    margin-top: 0rem;
+  } */
 
   .nss__section p,
   .nss__intro-content p,
@@ -113,7 +112,7 @@
   }
 
   .nss__list {
-    gap: 0.5rem;
+    gap: var(--bullet-list-gap);
     padding-left: var(--mobile-list-padding-left);
   }
 }
