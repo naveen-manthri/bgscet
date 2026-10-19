@@ -57,4 +57,7 @@
   .ercica__container {
     padding: 0;
   }
+  .ercica__section + .ercica__section{
+    margin-top: var(--mobile-margin-top);
+  }
 }

@@ -218,6 +218,10 @@
     max-width: none;
   }
 
+  .guru-card__image-container {
+    width: 100%;
+  }
+
   .guru-card__caption {
     display: none;
   }

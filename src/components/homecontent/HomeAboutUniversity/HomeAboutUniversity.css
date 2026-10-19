@@ -171,7 +171,7 @@
 
   .home-about-university .department-section-heading__title {
     max-width: none;
-    font-size: clamp(1.4rem, 7vw, 2rem);
+    /* font-size: clamp(1.4rem, 7vw, 2rem); */
     white-space: nowrap;
   }
 

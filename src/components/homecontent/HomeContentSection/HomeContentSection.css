@@ -242,3 +242,13 @@
     border-radius: 1rem;
   }
 }
+@media(max-width: 48rem){
+  .home-section-title{
+    font-size: var(--mobile-department-title-medium-font);
+  }
+}
+@media (max-width: 48rem) {
+  .home-content-section.home-content-section {
+    gap: var(--heading-underline-margin-bottom);
+  }
+}
