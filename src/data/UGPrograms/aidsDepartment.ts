@@ -193,25 +193,25 @@ export const facultyMembers: FacultyMember[] = [
 {
   id: 2,
   image: mrsMamatha,
-  name: "Mamatha Jadhav V",
+  name: "Prof. Mamatha Jadhav V",
   designation: "Assistant Professor",
 },
 {
   id: 3,
   image: sindhuG,
-  name: "SINDHU.G",
+  name: "Prof. SINDHU.G",
   designation: "Assistant Professor",
 },
 {
   id: 4,
   image: sushmaM,
-  name: "SUSHMA M",
+  name: "Prof. SUSHMA M",
   designation: "Assistant Professor",
 },
 {
   id: 5,
   image: manjunathaEC,
-  name: "MANJUNATHA E C",
+  name: "Prof. MANJUNATHA E C",
   designation: "Assistant Professor",
 },
 {
@@ -223,13 +223,13 @@ export const facultyMembers: FacultyMember[] = [
 {
   id: 7,
   image: ashwiniR,
-  name: "ASHWINI R",
+  name: "Prof. ASHWINI R",
   designation: "Assistant Professor",
 },
 {
   id: 8,
   image: padma,
-  name: "Padma Karekere Ramakrishna",
+  name: "Prof. Padma K Ramakrishna",
   designation: "Assistant Professor",
 },
 ];

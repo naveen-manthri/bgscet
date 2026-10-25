@@ -21,7 +21,7 @@ import samvitPhoto3 from "../../assets/images/gallery/samvit/smvit-3.png";
 import samvitPhoto4 from "../../assets/images/gallery/samvit/smvit-4.png";
 import samvitPhoto5 from "../../assets/images/gallery/samvit/smvit-5.png";
 import samvitPhoto6 from "../../assets/images/gallery/samvit/smvit-6.png";
-import redCrossPhoto1 from "../../assets/images/gallery/redcrossday/redCrossDay-1.png";
+// import redCrossPhoto1 from "../../assets/images/gallery/redcrossday/redCrossDay-1.png";
 import redCrossPhoto2 from "../../assets/images/gallery/redcrossday/redCrossDay-2.png";
 import redCrossPhoto3 from "../../assets/images/gallery/redcrossday/redCrossDay-3.png";
 import redCrossPhoto4 from "../../assets/images/gallery/redcrossday/redCrossDay-4.png";
@@ -60,7 +60,7 @@ export const gallerySamvit = [
 ];
 
 export const galleryRedCrossPhotos = [
-  { src: redCrossPhoto1, alt: "Youth Red Cross committee activity" },
+  // { src: redCrossPhoto1, alt: "Youth Red Cross committee activity" },
   { src: redCrossPhoto2, alt: "World Red Cross Day activity" },
   { src: redCrossPhoto3, alt: "Student Red Cross activity" },
   { src: redCrossPhoto4, alt: "Rotary blood donation activity" },

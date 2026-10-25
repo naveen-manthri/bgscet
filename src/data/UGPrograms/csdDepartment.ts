@@ -153,7 +153,7 @@ export const facultyMembers: FacultyMember[] = [
   {
   id: 1,
   image: hod,
-  name: "Dr.Madhu Patil",
+  name: "Dr. Madhu Patil",
   designation: "Professor and HOD",
 },
 {
@@ -165,7 +165,7 @@ export const facultyMembers: FacultyMember[] = [
 {
   id: 3,
   image: nagarajKalligud,
-  name: "Nagaraj .B. Kalligudd",
+  name: "Prof. Nagaraj B Kalligudd",
   designation: "Assistant Professor",
 },
 // {
@@ -183,25 +183,25 @@ export const facultyMembers: FacultyMember[] = [
 {
   id: 4,
   image: aishwaryaS,
-  name: "Aishwarya.S",
+  name: "Prof. Aishwarya.S",
   designation: "Assistant Professor",
 },
 {
   id: 5,
   image: trishaS,
-  name: "Trisha S",
+  name: "Prof. Trisha S",
   designation: "Assistant Professor",
 },
 {
   id : 6,
   image : sushma,
-  name: "Sushma R",
+  name: "Prof. Sushma R",
   designation : "Assistant Professor",
 },
 {
   id : 7,
   image : apoorva,
-  name: "Apoorva I S",
+  name: "Prof. Apoorva I S",
   designation : "Assistant Professor",
 },
 ];

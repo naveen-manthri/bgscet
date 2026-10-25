@@ -5,7 +5,7 @@ import LibraryImage from "../assets/images/library/bgs_lib_25_2 1.png";
 export const libraryAboutData: LibraryAboutData = {
   title: "About The Library",
 
-  heading: "BGSCT Library: Enriching Knowledge",
+  heading: "BGSCET Library: Enriching Knowledge",
 
   introduction:
     "Established in 2022, the BGSCET Library boasts a rich collection that has steadily grown over the years. Here are key highlights:",

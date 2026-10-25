@@ -15,12 +15,21 @@
   
   margin-bottom: 1rem;
 }
-
+.dept-img{
+  overflow: hidden;
+  /* Keep the image viewport fixed while the image scales inside it. */
+  /* aspect-ratio: 4 / 3; */
+}
 .department-faculty__image {
   width: 100%;
+  height: 100%;
   display: block;
+  object-fit: cover;
   background-color: var(--image-loading-background);
-  margin-bottom: 1.5rem;
+}
+
+.department-faculty__info {
+  margin-top: 1.5rem;
 }
 
 .department-faculty__info {
@@ -105,7 +114,11 @@
   }
 
   .department-faculty__image {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0;
+  }
+
+  .department-faculty__info {
+    margin-top: 0.75rem;
   }
 
   .department-faculty__name {
@@ -126,7 +139,11 @@
   }
 
   .department-faculty__image {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .department-faculty__info {
+    margin-top: 1.5rem;
   }
 }
 
