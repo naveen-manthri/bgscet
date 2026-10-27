@@ -56,7 +56,7 @@ function StudentTestimonials() {
       <div className="student-testimonials__inner mobile-padding">
         <SectionHeading subtitle="Student Voices" title="Four Years that" titleSecondLine="Changed Everything." underlineFitContent center />
 
-        <div className={`flex student-testimonials__scroller${isDragging ? ' is-dragging' : ''}`} ref={scrollerRef} role="list" tabIndex={0} aria-label="Student testimonial videos" onPointerDown={handlePointerDown} onPointerMove={handlePointerMove} onPointerUp={handlePointerEnd} onPointerCancel={handlePointerEnd} onPointerLeave={() => setIsDragging(false)} >
+        <div className={` student-testimonials__scroller flex flex-justify-center ${isDragging ? ' is-dragging' : ''}`} ref={scrollerRef} role="list" tabIndex={0} aria-label="Student testimonial videos" onPointerDown={handlePointerDown} onPointerMove={handlePointerMove} onPointerUp={handlePointerEnd} onPointerCancel={handlePointerEnd} onPointerLeave={() => setIsDragging(false)} >
           {studentVideos.map((student) => {
             const isPlaying = playingVideoId === student.id;
 

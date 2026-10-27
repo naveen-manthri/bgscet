@@ -147,6 +147,7 @@
   .student-testimonials__scroller {
     gap: 1rem;
     padding-bottom: 0.5rem;
+    justify-content: flex-start;
   }
 
   .student-testimonials__card {

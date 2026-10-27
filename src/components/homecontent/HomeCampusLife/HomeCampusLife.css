@@ -89,23 +89,19 @@
 }
 
 .campus-life-button {
-  
-
-  padding: var(--campus-button-padding-y)
-    var(--campus-button-padding-x);
-
-  border-radius: var(--campus-button-radius);
-
+  width: var(--btn-width);
+  height: var(--btn-height);
+  padding: 0;
+  border: 0.06rem solid var(--btn-text);
+  border-radius: var(--btn-radius);
   background: var(--campus-button-bg);
-
   color: var(--campus-button-text);
-
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-
+  font-family: var(--btn-font-family);
+  font-size: var(--btn-font-size);
+  font-weight: var(--btn-font-weight);
+  line-height: 1.5;
+  text-align: center;
   text-decoration: none;
-
   transition: background 0.25s ease;
 }
 
@@ -133,13 +129,28 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 18rem);
   }
+}
 
+@media (min-width: 601px) and (max-width: 64rem) {
   .campus-life-button {
-    width: 100%;
-    max-width: 18rem;
+    width: clamp(12rem, 20vw, 15rem);
+    height: clamp(3rem, 5vw, 3.4rem);
+    font-size: clamp(0.85rem, 1.15vw, 0.95rem);
   }
 }
 
+@media (max-width: 600px) {
+  .campus-life-button {
+    width: 100%;
+    max-width: 100%;
+    height: 3.25rem;
+    min-height: 3.25rem;
+    padding: 0 1rem;
+    font-size: var(--button-text);
+    line-height: 1.3;
+    white-space: normal;
+  }
+}
 @media (max-width: 768px) {
   .campus-life-button-wrapper {
     margin-top: var(--mobile-margin-top);
@@ -217,11 +228,11 @@
   }
 }
 
-@media (min-width: 37.5rem) and (max-width: 48rem) {
+/* @media (min-width: 37.5rem) and (max-width: 48rem) {
   .campus-life-grid {
     grid-template-rows: 16rem 18rem 32rem;
   }
-}
+} */
 
 @media (max-width: 37.5rem) {
   .home-campus-life .section-title,

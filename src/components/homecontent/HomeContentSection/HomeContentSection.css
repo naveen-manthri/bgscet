@@ -157,7 +157,7 @@
   .home-content-section {
     display: grid;
     align-items: center;
-    gap: clamp(1.5rem, 3vw, 2rem);
+    gap: clamp(2rem, 4vw, 3rem);
   }
 
   .home-content-section--about-mutt,
