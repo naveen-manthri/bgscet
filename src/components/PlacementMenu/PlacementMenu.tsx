@@ -4,7 +4,7 @@ import Advertisement from '../Advertisement/Advertisement';
 import VisitCampus from '../VisitCampus/VisitCampus';
 import { placementMenuContent } from '../../data/placementMenu/placementMenu';
 import type { PlacementMenuPageProps } from '../../types/placementMenu';
-import toppersBanner from '../../assets/images/home/toppers.png';
+import toppersBanner from '../../assets/images/home/toppers.jpeg';
 import './PlacementMenu.css';
 
 function PlacementMenu({ type }: PlacementMenuPageProps) {

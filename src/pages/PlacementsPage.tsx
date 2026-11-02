@@ -2,7 +2,7 @@ import BannerSection from '../components/BannerSection/BannerSection';
 import PlacementMarquee from '../components/reusable/PlacementMarquee';
 import PlacementPosterGallery from '../components/reusable/PlacementPosterGallery';
 import Advertisement from '../components/Advertisement/Advertisement';
-import toppersBanner from '../assets/images/home/toppers.png';
+import toppersBanner from '../assets/images/home/toppers.jpeg';
 import './PlacementsPage.css';
 
 function PlacementsPage() {

@@ -1,4 +1,4 @@
-import toppersBanner from "../../assets/images/home/toppers.png";
+import toppersBanner from "../../assets/images/home/toppers.jpeg";
 import type { StaffDetailsPageData } from "./types";
 
 export { toppersBanner };

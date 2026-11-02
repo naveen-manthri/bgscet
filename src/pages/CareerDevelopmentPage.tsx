@@ -3,7 +3,7 @@ import BannerSection from "../components/BannerSection/BannerSection";
 import PlacementPosterGallery from "../components/reusable/PlacementPosterGallery";
 import Advertisement from '../components/Advertisement/Advertisement';
 import VisitCampus from '../components/VisitCampus/VisitCampus';
-import toppersBanner from '../assets/images/home/toppers.png';
+import toppersBanner from '../assets/images/home/toppers.jpeg';
 
 
 const CareerDevelopmentPage = () => {
