@@ -16,6 +16,7 @@
     grid-template-columns: 1fr;
     gap: var(--mobile-para-desc-gap);
     padding: var(--mobile-padding);
+    margin-bottom: 0;
   }
 
   .features-page__image-wrap {

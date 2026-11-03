@@ -90,7 +90,7 @@
     max-width: 100%;
   }
 
-  .linkages__institution-table {
+  .linkages .table-section.linkages__institution-table {
     width: 100%;
     max-width: 100%;
     margin-right: 0;
@@ -98,6 +98,11 @@
     margin-bottom: 0;
     padding: 0;
   }
+
+  /* .linkages .linkages__institution-table .table-section__table th,
+  .linkages .linkages__institution-table .table-section__table td {
+    padding: 0;
+  } */
 
   .linkages__institution-table + .linkages__text {
     margin-top: var(--mobile-para-desc-gap);

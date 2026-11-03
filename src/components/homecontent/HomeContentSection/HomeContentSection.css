@@ -198,7 +198,7 @@
     align-items: stretch;
     gap: 1rem;
     margin-top: 0;
-    padding: 2rem 1.25rem 1rem;
+    padding: clamp(1.25rem, 3.4vw, 1.8rem) clamp(0.9rem, 4vw, 1.25rem);
   }
 
   .home-content-section--vision-mission {
@@ -207,7 +207,7 @@
     align-items: stretch;
     gap: 1rem;
     margin-bottom: var(--mobile-margin-top);
-    padding: 2rem 1.25rem;
+    padding: clamp(1.25rem, 3.4vw, 1.8rem) clamp(0.9rem, 4vw, 1.25rem);
   }
 
   .home-content-section__content {
