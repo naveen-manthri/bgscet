@@ -120,6 +120,12 @@
   height: 3.35rem;
 }
 
+@media (min-width: 64.01rem) {
+  .home-about-university {
+    align-items: flex-start;
+  }
+}
+
 @media (max-width: 600px) {
   .home-about-university__media {
     width: min(100%, 34rem);
