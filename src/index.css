@@ -175,7 +175,7 @@
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   :root {
     --gallery-title-size: var(--mobile-department-title-medium-font);
   }

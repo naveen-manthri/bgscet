@@ -57,7 +57,7 @@
   border-top: 0.0625rem solid var(--border-color);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   
 
   .achievement-list {

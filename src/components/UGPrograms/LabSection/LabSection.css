@@ -23,7 +23,7 @@
   .department-lab-section__description { padding: var(--primary-padding); }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .department-lab-section {
     margin: 0;
     

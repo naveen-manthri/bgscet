@@ -198,7 +198,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .gallery-page .physical-education__annual {
     padding: var(--mobile-padding);
     margin-top: var(--mobile-margin-top);

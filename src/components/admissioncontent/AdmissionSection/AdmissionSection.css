@@ -181,13 +181,13 @@
   min-width: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .admission__image {
     aspect-ratio: 1.15 / 1;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 48rem) and (max-width: 1199px) {
   .admission__image-wrapper {
     align-self: center;
     transform: translateY(2rem);
@@ -301,7 +301,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .admission {
     box-sizing: border-box;
     grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);

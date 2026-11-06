@@ -109,7 +109,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .library-about {
     margin-bottom: 0;
   }

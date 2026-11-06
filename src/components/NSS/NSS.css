@@ -67,7 +67,7 @@
   margin-bottom: -3rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .nss {
     box-sizing: border-box;
     gap: 0;
@@ -117,7 +117,7 @@
   }
 }
 
-@media (min-width: 601px) and (max-width: 768px) {
+@media (min-width: 601px) and (max-width: 48rem) {
   .nss__intro {
     flex-direction: row;
     align-items: center;

@@ -129,7 +129,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .guru-section {
     margin-top: 0;
     padding: var(--mobile-padding);

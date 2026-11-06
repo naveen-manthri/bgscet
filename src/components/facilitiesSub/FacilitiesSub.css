@@ -16,7 +16,7 @@
   margin-top: var(--para-desc-gap);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   
 
   .facilities-sub__description {

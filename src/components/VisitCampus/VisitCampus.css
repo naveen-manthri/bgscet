@@ -144,7 +144,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .visit-campus {
     margin-top: var(--visit-campus-mobile-margin-top);
     padding: var(--mobile-padding);
@@ -179,7 +179,7 @@
   }
 
   .visit-campus .admission-button {
-    height: 4rem;
+    height: 2rem;
     font-size: var(--button-text);
   }
 }

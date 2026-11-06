@@ -130,7 +130,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .department-tabs {
    background: transparent; 
     margin-top: var(--mobile-margin-top);

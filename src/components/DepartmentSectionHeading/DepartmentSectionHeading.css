@@ -99,7 +99,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .department-section-heading {
     --heading-underline-margin-bottom: clamp(0.4rem, 1.4vw, 0.65rem);
   }

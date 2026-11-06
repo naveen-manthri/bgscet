@@ -146,7 +146,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .statistics {
     width: 100%;
     margin-inline: 0;

@@ -37,7 +37,7 @@
   background: var(--btn-secondary);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   
 
   .ndli-club__grid {

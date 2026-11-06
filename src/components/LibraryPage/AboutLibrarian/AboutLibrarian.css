@@ -145,7 +145,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .about-librarian {
     margin-top: var(--mobile-margin-top);
     padding: var(--mobile-padding);

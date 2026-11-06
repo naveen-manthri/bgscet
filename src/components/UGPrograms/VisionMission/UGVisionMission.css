@@ -57,7 +57,7 @@
   line-height: var(--line-height);;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .vision-mission:not(.vision-mission--columns) .vision-mission__section + .vision-mission__section {
     margin-top: 1.5rem;
   }

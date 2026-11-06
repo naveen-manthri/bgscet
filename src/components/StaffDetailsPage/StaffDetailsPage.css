@@ -38,7 +38,7 @@
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .staff-details-page__content {
     padding: var(--mobile-padding);
   }

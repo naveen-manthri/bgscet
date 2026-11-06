@@ -72,7 +72,7 @@
   outline-offset: 0.25rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .career-hero {
     gap: 1rem;
     box-sizing: border-box;

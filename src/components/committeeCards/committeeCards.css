@@ -38,7 +38,7 @@
   background: var(--btn-secondary);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .committee-heading {
     padding-inline: 1.25rem;
     box-sizing: border-box;

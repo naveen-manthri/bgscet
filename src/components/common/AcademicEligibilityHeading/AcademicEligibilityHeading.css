@@ -18,7 +18,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .academic-section-heading h2 {
     font-size: var(--mobile-academic-heading-size);
   }
@@ -49,7 +49,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .academic-section-heading {
     --heading-underline-padding-bottom: clamp(0.35rem, 1vw, 0.55rem);
     --heading-underline-margin-bottom: clamp(0.4rem, 1.4vw, 0.65rem);

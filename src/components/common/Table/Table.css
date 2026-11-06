@@ -85,7 +85,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .table-section {
     box-sizing: border-box;
   }

@@ -151,7 +151,7 @@
     white-space: normal;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .campus-life-button-wrapper {
     margin-top: var(--mobile-margin-top);
     margin-bottom: var(--mobile-margin-top);

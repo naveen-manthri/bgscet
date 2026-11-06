@@ -250,7 +250,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .contact-enquiry {
     box-sizing: border-box;
     margin-bottom: 0;
