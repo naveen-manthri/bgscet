@@ -10,7 +10,7 @@
 
 .home-about-university__media {
   gap: 1.5rem;
-  margin-top: var(--primary-margin-top);
+  margin-top: 5.5rem;
   position: relative;
   margin-bottom: 0;
 }
@@ -30,7 +30,7 @@
 .home-about-university__badge {
   position: absolute;
   left: 33%;
-  bottom: 25%;
+  bottom: 15%;
   z-index: 3;
   width: clamp(5.4rem, 11vw, 7.7rem);
   height: clamp(5.4rem, 11vw, 7.7rem);

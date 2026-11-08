@@ -672,6 +672,10 @@ img:not(.main-header__logo):not(.main-header__emblem):not(.footer__logo):not(.st
   width: 12rem;
 }
 
+.main-navbar__dropdown--professional-bodies-4rem {
+  width: 4rem;
+}
+
 .main-navbar__dropdown--professional-bodies-5rem {
   width: 5rem;
 }

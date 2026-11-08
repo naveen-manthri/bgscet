@@ -303,9 +303,13 @@
 
 .home-hero__action {
   display: flex;
+  flex: 1 1 0;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  width: auto;
   height: 100%;
+  min-width: 0;
   border-radius: 0.3rem;
   color: var(--white);
   font-family: var(--font-main);
@@ -318,12 +322,10 @@
 }
 
 .home-hero__action--apply {
-  width: 41%;
   background-color: #CC2A09;
 }
 
 .home-hero__action--news {
-  width: 52.5%;
   background-color: #FF1300;
 }
 
@@ -511,13 +513,6 @@
     font-size: clamp(0.75rem, 1vw, 1.1rem);
   }
 
-  .home-hero__action--apply {
-    width: 41%;
-  }
-
-  .home-hero__action--news {
-    width: 52.5%;
-  }
 }
 
 /* Tablet and Android Desktop-site layout widths. Keep the source image's
@@ -576,13 +571,29 @@
 
 @media (min-width: 64.01rem) {
   .home-hero__carousel {
-    height: auto;
+    top: -1.05rem;
+    height: calc(100vh - 0.25rem);
+    margin-bottom: -1.5rem;
     aspect-ratio: auto;
   }
 
-  .home-hero__slide--active {
-    position: relative;
-    inset: auto;
+}
+
+@media (min-width: 37.5rem) and (max-width: 64rem) {
+  .home-hero__carousel {
     height: auto;
+    min-height: 0;
+    aspect-ratio: 1920 / 876;
+  }
+
+  .home-hero__slide {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .home-hero__text-wrap {
+    top: 54%;
+    margin-top: 0;
+    transform: translateY(-50%);
   }
 }

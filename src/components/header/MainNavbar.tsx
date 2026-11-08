@@ -10,7 +10,7 @@ function MainNavbar() {
   const [openNestedSubmenu, setOpenNestedSubmenu] = useState<string | null>(null);
   const [isQuickLinksSwapped, setIsQuickLinksSwapped] = useState(false);
   const [isStudentCornerSwapped, setIsStudentCornerSwapped] = useState(false);
-  const [professionalBodiesWidth, setProfessionalBodiesWidth] = useState<5 | 8 | 12>(12);
+  const [professionalBodiesWidth, setProfessionalBodiesWidth] = useState<4 | 5 | 8 | 12>(12);
   const [rootDropdownMaxWidths, setRootDropdownMaxWidths] = useState(new Map<string, number>());
   const [nestedDropdownMaxWidths, setNestedDropdownMaxWidths] = useState(new Map<string, number>());
   const menuRef = useRef<HTMLUListElement>(null);
@@ -94,11 +94,12 @@ function MainNavbar() {
       return;
     }
 
+    setProfessionalBodiesWidth(4);
+
     const menu = menuRef.current;
     if (!menu) {
       setIsQuickLinksSwapped(false);
       setIsStudentCornerSwapped(false);
-      setProfessionalBodiesWidth(12);
       return;
     }
 
@@ -108,7 +109,6 @@ function MainNavbar() {
 
     if (!quickLinks || !quickLinksBounds || quickLinks.getClientRects().length === 0) {
       setIsQuickLinksSwapped(false);
-      setProfessionalBodiesWidth(12);
       return;
     }
 
@@ -150,17 +150,6 @@ function MainNavbar() {
       window.matchMedia('(min-width: 48.125em) and (max-width: 56.25em)').matches,
     );
 
-    const itemsOnSameRow = menuItems.filter((item) => {
-      if (item.getClientRects().length === 0) {
-        return false;
-      }
-      return Math.abs(item.getBoundingClientRect().top - quickLinksBounds.top) < 1;
-    });
-    const rankFromRight = itemsOnSameRow.filter(
-      (item) => item.getBoundingClientRect().left > quickLinksBounds.left + 1,
-    ).length + 1;
-
-    setProfessionalBodiesWidth(rankFromRight === 2 ? 5 : rankFromRight === 3 ? 8 : 12);
   };
 
   const getDropdownClickState = (current: string | null, label: string) => {
