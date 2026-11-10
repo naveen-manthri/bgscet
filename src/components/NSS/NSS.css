@@ -6,7 +6,7 @@
   padding: var(--primary-padding);
   margin-top: var(--primary-margin-top);
   
-  gap: 3rem;
+  gap: var(--primary-margin-top);
 }
 
 .nss__section p,

@@ -18,9 +18,10 @@ import "./NSS.css";
 const NSS = () => {
   return (
     <section className="nss flex flex-direction-column mobile-margin-top mobile-padding">
-      <DepartmentSectionHeading title={introduction.title} className="department-section-heading--medium" />
 
-      <div className="flex flex-align-center nss__intro">
+    <div className="nss__intro-content">
+      <DepartmentSectionHeading title={introduction.title} className="department-section-heading--medium" />
+      <div className=" nss__intro flex flex-align-center">
         <div className="nss__intro-image">
           <img src={introduction.image} alt={introduction.alt} className="nss-img" />
         </div>
@@ -29,6 +30,10 @@ const NSS = () => {
           <p>{introduction.description}</p>
         </div>
       </div>
+
+    </div>
+
+      
 
       <div className="flex flex-direction-column nss__section">
         <DepartmentSectionHeading title={vision.title} className="department-section-heading--medium" />

@@ -70,9 +70,9 @@
 }
 
 @media (max-width: 64rem) {
-  .library-about {
+  /* .library-about {
     padding: 4rem 0;
-  }
+  } */
 
   .library-about__image {
     margin-top: 2rem;

@@ -143,13 +143,13 @@
 
 
 @media (max-width: 64rem) {
-  .contact-enquiry {
+  /* .contact-enquiry {
     margin: 4rem 0;
-  }
+  } */
 
   .contact-enquiry__description {
     max-width: none;
-    margin: 1.25rem 0 2.5rem;
+    margin: 1rem 0 1.5rem;
   }
 
   .contact-enquiry__contacts {
@@ -158,6 +158,7 @@
 
   .contact-card {
     padding: 1.5rem;
+    padding-left: 0;
   }
 
   .contact-enquiry__form {
