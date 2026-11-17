@@ -4,7 +4,6 @@
   overflow: hidden;
   color: var(--white);
   background: linear-gradient(to bottom, #E3473A, var(--primary-deep));
-  margin-top: var(--primary-margin-top);
 }
 
 .campus-placements__inner {
@@ -214,7 +213,6 @@ max-width: none;
 
 @media (max-width: 48rem) {
   .campus-placements {
-    margin-top: var(--mobile-margin-top);
     padding: var(--mobile-padding);
     padding-top: 2rem;
   }

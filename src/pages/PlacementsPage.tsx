@@ -1,7 +1,9 @@
 import BannerSection from '../components/BannerSection/BannerSection';
 import PlacementMarquee from '../components/reusable/PlacementMarquee';
 import PlacementPosterGallery from '../components/reusable/PlacementPosterGallery';
+import PlacementOffers from '../components/reusable/PlacementOffers';
 import Advertisement from '../components/Advertisement/Advertisement';
+import { placementOffersData } from '../data/placementOffersData';
 import toppersBanner from '../assets/images/home/toppers.jpeg';
 import './PlacementsPage.css';
 
@@ -10,6 +12,7 @@ function PlacementsPage() {
     <>
       <BannerSection image={toppersBanner} title="Placements" fullImage />
       <Advertisement />
+      <PlacementOffers data={placementOffersData} />
       <PlacementPosterGallery />
 
       <PlacementMarquee />

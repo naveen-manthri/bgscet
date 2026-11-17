@@ -29,7 +29,7 @@ function HomeContentSection({
   );
 
   const imageElement = (
-    <div className="image-hover-container home-content-section__image-container">
+    <div className=" home-content-section__image-container image-hover-container">
       <img className="home-content-section__image image-hover-scale" src={image} alt={imageAlt} />
     </div>
   );

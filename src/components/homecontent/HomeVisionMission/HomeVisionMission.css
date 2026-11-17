@@ -1,0 +1,115 @@
+.home-vision-mission {
+  padding: 2rem clamp(1.25rem, 6.5vw, 4rem);
+  background-color: #f6f7fa;
+}
+
+.home-vision-mission__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: center;
+  gap: 1rem;
+  /* width: min(100%, 76rem); */
+  margin: 0 auto;
+}
+
+.home-vision-mission__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  object-fit: cover;
+}
+
+.home-vision-mission .image-container-vision-mission {
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+
+.home-vision-mission__content {
+  min-width: 0;
+  color: #4c4949;
+}
+
+.home-vision-mission__content h2 {
+  margin: 0 0 0.75rem;
+  color: #87352f;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.home-vision-mission__content p,
+.home-vision-mission__content ul {
+  margin: 0;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+}
+
+.home-vision-mission__mission {
+  margin-top: 1rem;
+}
+
+.home-vision-mission__mission ul {
+  padding-left: 1.25rem;
+}
+
+@media (min-width: 601px) and (max-width: 1023px) {
+  .home-vision-mission {
+    padding-inline: clamp(1.5rem, 4vw, 3rem);
+  }
+
+  .home-vision-mission__inner {
+    grid-template-columns: minmax(0, min(42vw, 28rem)) minmax(0, 1fr);
+    align-items: stretch;
+    gap: clamp(2rem, 4vw, 3rem);
+  }
+
+  .home-vision-mission__image {
+    height: 100%;
+    min-height: 0;
+  }
+
+  .home-vision-mission__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-vision-mission {
+    padding-inline: 4rem;
+  }
+
+  .home-vision-mission__inner {
+    grid-template-columns: minmax(0, 30rem) minmax(0, 1fr);
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 8rem;
+  }
+
+  .home-vision-mission__image {
+    height: 100%;
+    max-width: 100%;
+    min-height: 0;
+  }
+
+  .home-vision-mission__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: end;
+    max-width: 48rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .home-vision-mission{
+    padding: var(--mobile-padding);
+    padding-bottom: 1.25rem;
+  }
+  .home-vision-mission__content h2 {
+     font-size: var(--mobile-department-title-medium-font);
+     margin-bottom:  var(--heading-underline-margin-bottom);
+  }
+}
