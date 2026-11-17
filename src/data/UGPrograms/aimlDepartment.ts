@@ -1,5 +1,6 @@
 import careerImage from "../../assets/images/csedepartment/career-opportunities.jpg";
 import aimlBannerImage from "../../assets/images/aimldepartment/aiml-banner.png";
+import aimlBannerImage1 from "../../assets/images/aimldepartment/aiml-banner1.jpg";
 import laxmi from "../../assets/images/aimldepartment/Laxmi.jpg";
 // import nishitaNMurthy from "../../assets/images/aimldepartment/Nishita N Murthy.png";
 import pratyakshaS from "../../assets/images/aimldepartment/Pratyaksha S.jpeg";
@@ -427,6 +428,7 @@ const aimlDepartment: UGDepartmentData = {
   banner: {
     image: aimlBannerImage,
     title: "AIML Department",
+     slides: [{ image: aimlBannerImage1, alt: "AIML department banner" }],
   },
   tabs: departmentTabs,
   hodMessage,

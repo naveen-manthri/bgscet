@@ -1,4 +1,5 @@
 import bannerImage from "../../assets/images/Mathematicsdepartment/math-banner.png";
+import mathBanner from "../../assets/images/Mathematicsdepartment/math-banner1.jpg";
 import labImage from "../../assets/images/Mathematicsdepartment/math-lab.png";
 import hodImage from "../../assets/images/Mathematicsdepartment/Dr-Deepthy.png";
 import manjulaImage from "../../assets/images/Mathematicsdepartment/Manjula.png";
@@ -12,7 +13,7 @@ const mathematicsDepartment: UGDepartmentData = {
   slug: "mathematics",
   singlePage: true,
   labPlacement: "afterVision",
-  banner: { image: bannerImage, title: "Mathematics Department" },
+  banner: { image: bannerImage, title: "Mathematics Department",slides: [{ image: mathBanner  , alt: "Mathematics department banner" }], },
   tabs: [
     { id: "hod", label: "HOD Message" },
     { id: "vision", label: "Vision & Mission" },

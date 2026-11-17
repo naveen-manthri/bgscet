@@ -60,7 +60,11 @@ const UGDepartment = ({ data }: UGDepartmentProps) => {
 
   return (
     <>
-      <BannerSection {...data.banner} />
+      <BannerSection  {...data.banner}
+        carouselSlides={[
+          { image: data.banner.image, alt: data.banner.title },
+          ...(data.banner.slides ?? []),
+        ]} />
       <Advertisement />
 
       <main className={`ug-department${data.slug === "cse" ? " ug-department--cse" : ""}`}>

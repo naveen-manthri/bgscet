@@ -2,6 +2,7 @@ import careerImage from "../../assets/images/csedepartment/career-opportunities.
 
 
 import iseBannerImage from "../../assets/images/isedepartment/ise-banner.png";
+import iseBanner1 from "../../assets/images/isedepartment/ise-banner1.jpg";
 import sushmitaNS from "../../assets/images/isedepartment/SUSHMITA-N-S.png";
 import maheshwariPatil from "../../assets/images/isedepartment/Maheshwari_Patil.jpg";
 import poojithaK from "../../assets/images/isedepartment/Poojitha_K.jpg";
@@ -380,7 +381,7 @@ const iseDepartment: UGDepartmentData = {
   slug: "ise",
   banner: {
     image: iseBannerImage,
-    title: "ISE Department",
+    title: "ISE Department", slides: [{ image: iseBanner1  , alt: "ISE department banner" }],
   },
   tabs: departmentTabs,
   hodMessage,

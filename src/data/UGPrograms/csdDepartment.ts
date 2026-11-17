@@ -2,6 +2,7 @@ import careerImage from "../../assets/images/csedepartment/career-opportunities.
 
 
 import csdBannerImage from "../../assets/images/csddepartment/csd-banner.png";
+import csdBannerImage1 from "../../assets/images/csddepartment/csd-banner1.jpg";
 import trishaS from "../../assets/images/csddepartment/Trisha-s.png";
 import sushma from "../../assets/images/csddepartment/sushmaR.png";
 import apoorva from "../../assets/images/csddepartment/apoorva.jpeg";
@@ -398,6 +399,8 @@ const csdDepartment: UGDepartmentData = {
   banner: {
     image: csdBannerImage,
     title: "CSD Department",
+    slides: [{ image: csdBannerImage1, alt: "CSD department banner" }],
+
   },
   tabs: departmentTabs,
   hodMessage,

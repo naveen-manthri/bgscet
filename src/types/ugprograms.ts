@@ -6,6 +6,7 @@ export interface DepartmentTab {
 export interface DepartmentBanner {
   image: string;
   title: string;
+  slides?: { image: string; alt: string }[];
 }
 
 export interface HodMessage {

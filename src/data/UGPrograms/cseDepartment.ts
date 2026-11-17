@@ -3,6 +3,7 @@ import careerImage from "../../assets/images/csedepartment/career-opportunities.
 
 
 import cseBannerImage from "../../assets/images/banner/department-banner-cse.png";
+import cseBannerImage1 from "../../assets/images/csedepartment/cse-banner1.jpg";
 import DrKiran from "../../assets/images/csedepartment/Dr-Kiran-principal.jpeg";
 import sumanthCGowda from "../../assets/images/csedepartment/sumanth-c-gowda.jpeg";
 import sanjitha from "../../assets/images/csddepartment/sanjitha.jpeg";
@@ -579,6 +580,7 @@ const cseDepartment: UGDepartmentData = {
   banner: {
     image: cseBannerImage,
     title: "CSE Department",
+    slides: [{ image: cseBannerImage1, alt: "CSE department banner" }],
   },
   tabs: departmentTabs,
   hodMessage,

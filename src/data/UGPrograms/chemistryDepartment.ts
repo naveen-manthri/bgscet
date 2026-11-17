@@ -1,4 +1,5 @@
 import bannerImage from "../../assets/images/Chemistrydepartment/chem-lab.png";
+import chemBanner from "../../assets/images/Chemistrydepartment/chem-banner.jpg";
 import labImage from "../../assets/images/Chemistrydepartment/chem-lab.png";
 import shivaKumar from "../../assets/images/Chemistrydepartment/Shivakumar.png";
 import hodImage from "../../assets/images/Chemistrydepartment/Dr-Vinay-KumarB.png";
@@ -8,7 +9,11 @@ import type { UGDepartmentData } from "../../types/ugprograms";
 const chemistryDepartment: UGDepartmentData = {
   slug: "chemistry",
   singlePage: true,
-  banner: { image: bannerImage, title: "Chemistry Department" },
+  banner: {
+    image: bannerImage,
+    title: "Chemistry Department",
+    slides: [{ image: chemBanner, alt: "Chemistry department banner" }],
+  },
   tabs: [
     { id: "hod", label: "HOD Message" },
     { id: "about", label: "About The Department" },

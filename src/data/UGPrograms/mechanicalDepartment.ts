@@ -1,4 +1,5 @@
 import bannerImage from "../../assets/images/mechanicalEngg/mech-banner.png";
+import mechBanner from "../../assets/images/mechanicalEngg/mech-banner1.jpg";
 import hodImage from "../../assets/images/mechanicalEngg/hod.png";
 import channaImage from "../../assets/images/mechanicalEngg/Dr-Channa-Keshava.png";
 import tejasImage from "../../assets/images/mechanicalEngg/Tejas.png";
@@ -9,7 +10,7 @@ const mechanicalDepartment: UGDepartmentData = {
   singlePage: true,
   banner: {
     image: bannerImage,
-    title: "Mechanical Engineering",
+    title: "Mechanical Engineering", slides: [{ image: mechBanner  , alt: "Mechanical department banner" }],
   },
   tabs: [
     { id: "hod", label: "HOD Message" },

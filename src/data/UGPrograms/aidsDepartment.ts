@@ -1,6 +1,7 @@
 import careerImage from "../../assets/images/csedepartment/career-opportunities.jpg";
 
 import aidsBannerImage from "../../assets/images/aidsdepartment/aids-banner.png";
+import aidsBanner1 from "../../assets/images/aidsdepartment/aids-banner1.jpg";
 import ashwiniR from "../../assets/images/aidsdepartment/ASHWINI-R.jpeg";
 import drChandiniAG from "../../assets/images/aidsdepartment/Dr. Chandini-A-G.jpeg";
 import manjunathaEC from "../../assets/images/aidsdepartment/MANJUNATHA-E-C.jpeg";
@@ -515,6 +516,7 @@ const aidsDepartment: UGDepartmentData = {
   banner: {
     image: aidsBannerImage,
     title: "AI & DS Department",
+    slides: [{ image: aidsBanner1 , alt: "AIDS department banner" }],
   },
   tabs: departmentTabs,
   hodMessage,

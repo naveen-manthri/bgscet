@@ -1,4 +1,5 @@
 import bannerImage from "../../assets/images/Physicsdepartment/phy-banner.png";
+import physicBanner from "../../assets/images/Physicsdepartment/physics-banner.jpg";
 import labImage from "../../assets/images/Physicsdepartment/phy-lab.png";
 import hodImage from "../../assets/images/Physicsdepartment/Dr-Ambika.png";
 // import neetaImage from "../../assets/images/Physicsdepartment/Dr-Neeta-Shukla.png";
@@ -9,7 +10,7 @@ import type { UGDepartmentData } from "../../types/ugprograms";
 const physicsDepartment: UGDepartmentData = {
   slug: "physics",
   singlePage: true,
-  banner: { image: bannerImage, title: "Physics Department" },
+  banner: { image: bannerImage, title: "Physics Department", slides: [{ image: physicBanner  , alt: "Physics department banner" }], },
   tabs: [
     { id: "hod", label: "HOD Message" },
     { id: "about", label: "About The Department" },

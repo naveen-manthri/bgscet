@@ -12,6 +12,7 @@ interface BannerSectionProps {
   title: string;
   homeHero?: boolean;
   homeHeroSlides?: BannerSlide[];
+  carouselSlides?: BannerSlide[];
   fullImage?: boolean;
 }
 
@@ -20,18 +21,22 @@ function BannerSection({
   title,
   homeHero = false,
   homeHeroSlides,
+  carouselSlides,
   fullImage = false,
 }: BannerSectionProps) {
   const slides = homeHeroSlides?.length
     ? homeHeroSlides
+    : carouselSlides?.length
+      ? carouselSlides
     : [{ image, alt: title }];
+  const isCarousel = homeHero || Boolean(carouselSlides?.length);
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
   const [isLatestNewsOpen, setIsLatestNewsOpen] = useState(false);
   const homeHeroTitleRef = useRef<HTMLHeadingElement>(null);
   const homeHeroDescriptionRef = useRef<HTMLParagraphElement>(null);
 
   useEffect(() => {
-    if (!homeHero || slides.length < 2) {
+    if (!isCarousel || slides.length < 2) {
       return;
     }
 
@@ -40,7 +45,7 @@ function BannerSection({
     }, 5000);
 
     return () => window.clearInterval(intervalId);
-  }, [homeHero, slides.length]);
+  }, [isCarousel, slides.length]);
 
   useEffect(() => {
     const titleElement = homeHeroTitleRef.current;
@@ -118,8 +123,59 @@ function BannerSection({
           </>
         ) : (
           <>
-            <img src={image} alt={title} className="banner-image" />
-            <h2 className="banner-title flex flex-center">{title}</h2>
+            {carouselSlides?.length ? (
+              <>
+                <div className="banner-carousel">
+                  {slides.map((slide, index) => (
+                    <img
+                      key={slide.image}
+                      src={slide.image}
+                      alt={slide.alt}
+                      className={`banner-carousel__slide${index === activeSlideIndex ? " banner-carousel__slide--active" : ""}`}
+                      aria-hidden={index !== activeSlideIndex}
+                    />
+                  ))}
+                </div>
+                <h2 className="banner-title flex flex-center">{title}</h2>
+                {slides.length > 1 && (
+                  <div className="home-hero__controls" role="group" aria-label="Department banner carousel controls">
+                    <button
+                      className="home-hero__control"
+                      type="button"
+                      aria-label="Previous banner"
+                      onClick={() => setActiveSlideIndex((activeSlideIndex - 1 + slides.length) % slides.length)}
+                    >
+                      &#8249;
+                    </button>
+                    <div className="home-hero__indicators">
+                      {slides.map((slide, index) => (
+                        <button
+                          key={slide.image}
+                          className={`home-hero__indicator${index === activeSlideIndex ? " home-hero__indicator--active" : ""}`}
+                          type="button"
+                          aria-label={`Show banner ${index + 1}`}
+                          aria-pressed={index === activeSlideIndex}
+                          onClick={() => setActiveSlideIndex(index)}
+                        />
+                      ))}
+                    </div>
+                    <button
+                      className="home-hero__control"
+                      type="button"
+                      aria-label="Next banner"
+                      onClick={() => setActiveSlideIndex((activeSlideIndex + 1) % slides.length)}
+                    >
+                      &#8250;
+                    </button>
+                  </div>
+                )}
+              </>
+            ) : (
+              <>
+                <img src={image} alt={title} className="banner-image" />
+                <h2 className="banner-title flex flex-center">{title}</h2>
+              </>
+            )}
           </>
         )}
     </section>
