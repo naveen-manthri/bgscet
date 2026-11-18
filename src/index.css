@@ -462,7 +462,6 @@ img:not(.main-header__logo):not(.main-header__emblem):not(.footer__logo):not(.st
   z-index: 1200;
   background: var(--primary-deep);
   box-shadow: var(--shadow-soft);
-  height: 6.25rem;
 }
 
 .main-navbar__inner {

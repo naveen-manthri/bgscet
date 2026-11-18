@@ -132,7 +132,7 @@ export const navItems: NavItem[] = [
     children: [
       { label: 'ICWITE 2025', path: '/icwite-2025' },
       { label: 'ERCICA-2024', path: '/conference-2024' },
-       {label: 'Journal - JCET', path:'/journal-jcet'},
+      //  {label: 'Journal - JCET', path:'/journal-jcet'},
     ],
   },
   {
@@ -185,7 +185,7 @@ export const navItems: NavItem[] = [
       {label: 'Patents', path: 'research/patents'},
     ],
   },
-  { label: 'Advaya 2.0-2k26', path: '/advaya-2-0-2k26' },
+  // { label: 'Advaya 2.0-2k26', path: '/advaya-2-0-2k26' },
 ];
 
 export const announcementItems: string[] = [
