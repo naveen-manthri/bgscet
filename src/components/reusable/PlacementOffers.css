@@ -87,8 +87,42 @@
   }
 }
 
-@media (max-width: 30rem) {
+@media (max-width: 48rem) {
+  .placement-offers > .container {
+    width: 100%;
+    margin-inline: 0;
+    padding: var(--mobile-padding);
+  }
+
+  .placement-offers__total {
+    padding: var(--mobile-padding);
+    padding-block: 0.5rem;
+  }
+
+  .placement-offers__departments {
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .placement-offers__departments::-webkit-scrollbar {
+    display: none;
+  }
+
   .placement-offers__department {
     flex: 0 0 4.5rem;
   }
+}
+@media (max-width: 48rem) {
+    .placement-offers__departments{
+      padding: var(--mobile-margin-top) 0.5rem;
+      margin-top:0;
+      margin-bottom: 0;
+    }
 }
