@@ -199,6 +199,10 @@
     padding-inline: clamp(1.25rem, 4vw, 4rem);
   }
 
+  .home-about-university__badge {
+    bottom: 20%;
+  }
+
   .home-about-university__media {
     display: flex;
     width: auto;

@@ -64,7 +64,7 @@
   background: var(--primary-color);
 } */
 
-@media (max-width: 62rem) {
+@media (max-width: 600px) {
   .about-hostel__content {
     gap: 1.5rem;
   }
@@ -80,7 +80,7 @@
   }
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 600px) {
   .about-hostel {
     box-sizing: border-box;
   }
@@ -116,5 +116,12 @@
   .about-hostel__description p {
     font-size: 0.9rem;
     line-height: var(--line-height);
+  }
+}
+
+@media (min-width: 601px) and (max-width: 64rem) {
+  .about-hostel {
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
   }
 }

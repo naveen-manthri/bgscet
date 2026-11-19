@@ -61,6 +61,13 @@
   }
 }
 
+@media (min-width: 601px) and (max-width: 1023px) {
+  .leadership-message {
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+  }
+}
+
 @media (max-width: 600px) {
   .leadership-message {
     margin-top: var(--mobile-margin-top);

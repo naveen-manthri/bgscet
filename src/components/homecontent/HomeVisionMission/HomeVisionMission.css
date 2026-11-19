@@ -16,13 +16,13 @@
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 0.75rem;
+  border-radius: var(--home-mutt-vm-image-border);
   object-fit: cover;
 }
 
 .home-vision-mission .image-container-vision-mission {
   overflow: hidden;
-  border-radius: 0.75rem;
+  border-radius: var(--home-mutt-vm-image-border);
 }
 
 .home-vision-mission__content {

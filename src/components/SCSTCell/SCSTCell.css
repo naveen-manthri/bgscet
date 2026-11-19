@@ -100,3 +100,39 @@
     font-size: clamp(0.9rem, 2vw, 1rem);
   }
 }
+
+@media (min-width: 601px) and (max-width: 64rem) {
+  .scstcell-page {
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+  }
+
+  .scstcell-page__list {
+    gap: clamp(1.25rem, 2vw, 2rem);
+  }
+
+  .scstcell-page__row {
+    grid-template-columns: minmax(0, 1fr) clamp(140px, 18vw, 180px);
+    gap: 0;
+    column-gap: 1.5rem;
+  }
+
+  .scstcell-page__label {
+    font-size: clamp(1.35rem, 2vw, 2.25rem);
+    line-height: 1.3;
+  }
+
+  .scstcell-page .scstcell-page__button {
+    min-height: 1.8rem;
+    padding: 1rem;
+    font-size: var(--font-size);
+    line-height: normal;
+    overflow-wrap: normal;
+  }
+}
+
+@media (min-width: 64.01rem) {
+  .scstcell-page__list {
+    width: 100%;
+  }
+}

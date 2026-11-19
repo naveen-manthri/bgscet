@@ -355,3 +355,58 @@
     margin-top: 0.5rem;
   }
 }
+
+@media (min-width: 601px) and (max-width: 64rem) {
+  .physical-education__message {
+    margin-top: var(--mobile-margin-top);
+    padding: var(--mobile-padding);
+  }
+
+  .physical-education__message .physical-education__message-grid {
+    grid-template-columns: 21rem minmax(0, 1fr);
+    grid-template-rows: auto minmax(0, 1fr);
+    column-gap: 3.5rem;
+    row-gap: 1.25rem;
+    align-items: stretch;
+  }
+
+  .physical-education__message .physical-education__people {
+    grid-row: 1 / -1;
+    grid-template-columns: none;
+    gap: 1.5rem;
+  }
+
+  .physical-education__message .physical-education__people figure {
+    display: block;
+  }
+
+  .physical-education__message .physical-education__people figcaption {
+    flex: initial;
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+  }
+
+  .physical-education__message .physical-education__people strong {
+    font-size: 1.375rem;
+  }
+
+  .physical-education__message .physical-education__people span {
+    font-size: 1rem;
+  }
+
+  .physical-education__message .physical-education__message-content {
+    display: contents;
+    font-size: var(--font-size);
+    line-height: 1.9;
+  }
+
+  .physical-education__message .physical-education__message-content p {
+    text-align: justify;
+  }
+
+  .physical-education__message .physical-education__message-content .physical-education__tug-of-war {
+    height: 100%;
+    max-height: none;
+    object-fit: cover;
+  }
+}

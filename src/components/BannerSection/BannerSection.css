@@ -630,3 +630,27 @@
     transform: translateY(-50%);
   }
 }
+
+@media (min-width: 601px) and (max-width: 64rem) {
+  .banner-section:not(.banner-section--full-image) > .banner-image {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: auto;
+    object-fit: cover;
+  }
+}
+
+/* @media (min-width: 64.01rem) {
+  .home-hero__carousel,
+  .banner-carousel {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 1920 / 876;
+  }
+
+  .home-hero__slide,
+  .banner-carousel__slide {
+    object-fit: contain;
+    object-position: center;
+  }
+} */
