@@ -3,14 +3,14 @@ import careerImage from "../../assets/images/csedepartment/career-opportunities.
 
 import iseBannerImage from "../../assets/images/isedepartment/ise-banner.png";
 import iseBanner1 from "../../assets/images/isedepartment/ise-banner1.jpg";
-import sushmitaNS from "../../assets/images/isedepartment/SUSHMITA-N-S.png";
-import maheshwariPatil from "../../assets/images/isedepartment/Maheshwari_Patil.jpg";
-import poojithaK from "../../assets/images/isedepartment/Poojitha_K.jpg";
-import jyothiR from "../../assets/images/isedepartment/jyothi-r.jpg";
-import mrsHemalathaKN from "../../assets/images/isedepartment/Mrs.HemalathaKN.jpg";
-import anoopNPrasad from "../../assets/images/isedepartment/AnoopNPrasad-.jpg";
-import sheshan from "../../assets/images/isedepartment/sheshan.jpeg";
-import hod from "../../assets/images/isedepartment/chaitra_hod.jpeg";
+import sushmitaNS from "../../assets/images/isedepartment/iseFaculty/Sushmitha.jpg";
+import maheshwariPatil from "../../assets/images/isedepartment/iseFaculty/maheshwari-ise.jpg";
+import poojithaK from "../../assets/images/isedepartment/iseFaculty/poojitha-ise.jpg";
+import jyothiR from "../../assets/images/isedepartment/iseFaculty/Jyothi-ISE.jpg";
+import mrsHemalathaKN from "../../assets/images/isedepartment/iseFaculty/Hemaltha-ISE.jpg";
+import anoopNPrasad from "../../assets/images/isedepartment/iseFaculty/Anoop-ISE.jpg";
+import sheshan from "../../assets/images/isedepartment/iseFaculty/Sheshan-ISE.jpg";
+import hod from "../../assets/images/isedepartment/iseFaculty/chaitra-ise.jpg";
 import event1Image from "../../assets/images/isedepartment/EVENTS/ise-1.jpg";
 import event2Image from "../../assets/images/isedepartment/EVENTS/ise-2.jpeg";
 import event3Image from "../../assets/images/isedepartment/EVENTS/ise-3.jpeg";
@@ -25,12 +25,12 @@ import topper2022_4semImage from "../../assets/images/isedepartment/ISE-Achievem
 import goldMedalImage from "../../assets/images/isedepartment/ISE-Achievements/ISE-Gold-medal.png";
 import danceImage from "../../assets/images/isedepartment/ISE-Achievements/ISE-dep-2nd-Prize-Dance-1.png";
 import volleyballImage from "../../assets/images/isedepartment/ISE-Achievements/ISE-VTU-Volleyball-Tournament-1.png";
-import sindhu from "../../assets/images/isedepartment/iseTechFaculty/Navya.jpeg";
-import Arpitha from "../../assets/images/isedepartment/iseTechFaculty/Arpitha.jpeg";
+import sindhu from "../../assets/images/isedepartment/iseTechFaculty/sindhu-ise.jpg";
+import Arpitha from "../../assets/images/isedepartment/iseTechFaculty/Arpitha.jpg";
 import gttc from "../../assets/images/isedepartment/EVENTS/gttc.jpeg";
 import aiGithub from "../../assets/images/isedepartment/EVENTS/aiGithub.jpeg";
 import bigData from "../../assets/images/isedepartment/EVENTS/bigData.jpeg";
-import mamatha from "../../assets/images/csedepartment/cseTechFaculty/mamatha.png";
+import mamatha from "../../assets/images/isedepartment/iseTechFaculty/mamatha-ise.jpg";
 
 
 import type {

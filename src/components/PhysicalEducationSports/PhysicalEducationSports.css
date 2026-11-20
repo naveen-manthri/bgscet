@@ -24,7 +24,7 @@
 
 .physical-education__people {
   display: grid;
-  gap: 1.5rem;
+  gap: 3.5rem;
   align-content: start;
   grid-row: 1 / -1;
 }
@@ -36,7 +36,7 @@
 
 .physical-education__people figure img {
   width: 100%;
-  aspect-ratio: 627 / 706;
+  /* aspect-ratio: 627 / 706; */
   object-fit: cover;
 }
 

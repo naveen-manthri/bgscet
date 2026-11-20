@@ -1,6 +1,6 @@
 import type { CareerDevelopmentData } from "../types/careerDevelopment";
 
-import coordinatorImage from "../assets/images/careerDevelopment/shilpatrainingplacement.png";
+import coordinatorImage from "../assets/images/careerDevelopment/shilpa-placement.jpg";
 
 export const careerDevelopmentData: CareerDevelopmentData = {
   about: {

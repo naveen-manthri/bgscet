@@ -1,26 +1,26 @@
-import hodImage from "../../assets/images/csedepartment/hod.png";
+import hodImage from "../../assets/images/csedepartment/cseFaculty/manjula-cse.jpg";
 import careerImage from "../../assets/images/csedepartment/career-opportunities.jpg";
 
 
 import cseBannerImage from "../../assets/images/banner/department-banner-cse.png";
 import cseBannerImage1 from "../../assets/images/csedepartment/cse-banner1.jpg";
-import DrKiran from "../../assets/images/csedepartment/Dr-Kiran-principal.jpeg";
-import sumanthCGowda from "../../assets/images/csedepartment/sumanth-c-gowda.jpeg";
-import sanjitha from "../../assets/images/csddepartment/sanjitha.jpeg";
+import DrKiran from "../../assets/images/csedepartment/cseFaculty/kiransir-CSE.jpg";
+import sumanthCGowda from "../../assets/images/csedepartment/cseFaculty/sumanth-cse.jpg";
+import sanjitha from "../../assets/images/csedepartment/cseFaculty/Sanjitha-CSE.jpg";
 
 // import manasaCK from "../../assets/images/csedepartment/Manasa-CK.jpeg";
-import mrSatishG from "../../assets/images/csedepartment/Mr-Satish-g.jpeg";
-import drVaniV from "../../assets/images/csedepartment/dr-vani-v.jpeg";
-import mrChethanHV from "../../assets/images/csedepartment/Mr.-Chethan-H-V.jpg";
-import mrsVedha from "../../assets/images/csedepartment/Mrs.vedha.jpg";
-import DRraviKumar from "../../assets/images/csedepartment/pricipal.jpg";
+import mrSatishG from "../../assets/images/csedepartment/cseFaculty/sathish-cse.jpg";
+import drVaniV from "../../assets/images/csedepartment/cseFaculty/vani-cse.jpg";
+import mrChethanHV from "../../assets/images/csedepartment/cseFaculty/chethan-cse.jpg";
+import mrsVedha from "../../assets/images/csedepartment/cseFaculty/Veda-CSE.jpg";
+import DRraviKumar from "../../assets/images/csedepartment/cseFaculty/pricipal.jpg";
 // import jayashree from "../../assets/images/csedepartment/jayashree.jpeg";
 // import rohiniC from "../../assets/images/csedepartment/rohini-c.jpeg";
-import mrsAshaSN from "../../assets/images/csedepartment/Mrs.-Asha-S-N.jpg";
-import likhithaShree from "../../assets/images/csedepartment/likhithaShree.jpeg";
-import ashwiniS from "../../assets/images/csedepartment/ashwiniS.png";
-import ashwiniThilak from "../../assets/images/csedepartment/ashwiniS-thilak.png";
-import gowriShree from "../../assets/images/csedepartment/gowrishree.png";
+import mrsAshaSN from "../../assets/images/csedepartment/cseFaculty/Asha-CSE.jpg";
+import likhithaShree from "../../assets/images/csedepartment/cseFaculty/likithashree-cse.jpg";
+import ashwiniS from "../../assets/images/csedepartment/cseFaculty/ashwiniS-cse.jpg";
+import ashwiniThilak from "../../assets/images/csedepartment/cseFaculty/ashwinithilak-cse.jpg";
+import gowriShree from "../../assets/images/csedepartment/cseFaculty/gowrishree-cse.jpg";
 import volleyballTour from "../../assets/images/achievement/cse-achievements/Volleyball-tour-.jpg";
 import jvtmImage from "../../assets/images/achievement/cse-achievements/JVTM-image-.jpeg";
 import rohiniInternship from "../../assets/images/achievement/cse-achievements/Rohini-internship.jpeg";
@@ -61,8 +61,8 @@ import sahana from "../../assets/images/csedepartment/cseTechFaculty/sahana-CSE.
 // import soumya from "../../assets/images/csedepartment/cseTechFaculty/soumya-CSE.jpeg";
 import vinayak from "../../assets/images/csedepartment/cseTechFaculty/Vinayak.jpeg";
 import bhoomika from "../../assets/images/csedepartment/cseTechFaculty/Bhoomika.jpg";
-import supriya from "../../assets/images/csedepartment/cseTechFaculty/SUPRIYA.jpeg";
-import ankitha from "../../assets/images/csedepartment/cseTechFaculty/ankithaMoreB.png";
+import supriya from "../../assets/images/csedepartment/cseTechFaculty/SUPRIYA.jpg";
+import ankitha from "../../assets/images/csedepartment/cseTechFaculty/ankithaMoreB.jpg";
 import Saahithi from "../../assets/images/isedepartment/iseTechFaculty/saahithi-ISE-.jpeg";
 
 

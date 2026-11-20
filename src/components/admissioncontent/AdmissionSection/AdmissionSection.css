@@ -15,7 +15,7 @@
   align-items: start;
 }
 
-.admission__title {
+.admission__title.academic-section-heading {
   grid-column: 1 / -1;
   width: 100%;
   margin-bottom: 0;

@@ -3,17 +3,17 @@ import careerImage from "../../assets/images/csedepartment/career-opportunities.
 
 import csdBannerImage from "../../assets/images/csddepartment/csd-banner.png";
 import csdBannerImage1 from "../../assets/images/csddepartment/csd-banner1.jpg";
-import trishaS from "../../assets/images/csddepartment/Trisha-s.png";
-import sushma from "../../assets/images/csddepartment/sushmaR.png";
-import apoorva from "../../assets/images/csddepartment/apoorva.jpeg";
+import trishaS from "../../assets/images/csddepartment/csdFaculty/thrisha-csd.jpg";
+import sushma from "../../assets/images/csddepartment/csdFaculty/sushma-csd.jpg";
+import apoorva from "../../assets/images/csddepartment/csdFaculty/apoorva-csd.jpg";
 // import sowjanyaK from "../../assets/images/csddepartment/Sowjanya-K.png";
 // import sanjitha from "../../assets/images/csddepartment/sanjitha.jpeg";
-import nagarajKalligud from "../../assets/images/csddepartment/Nagaraj_kalligud.jpg";
-import drChandrakalaHL from "../../assets/images/csddepartment/Dr. Chandrakala-H-L.jpeg";
-import hod from "../../assets/images/csddepartment/Dr.-Madhu-Patil.jpg";
-import aishwaryaS from "../../assets/images/csddepartment/Aishwarya.S.jpeg";
-import kavya from "../../assets/images/csddepartment/KavyaR.png";
-import chethanKumar from "../../assets/images/csddepartment/ChethanKumar_CSD.jpeg";
+import nagarajKalligud from "../../assets/images/csddepartment/csdFaculty/Nagaraj-CSD.jpg";
+import drChandrakalaHL from "../../assets/images/csddepartment/csdFaculty/chandrakala-csd.jpg";
+import hod from "../../assets/images/csddepartment/csdFaculty/Madhu-CSD.jpg";
+import aishwaryaS from "../../assets/images/csddepartment/csdFaculty/aishwarya-csd.jpg";
+import kavya from "../../assets/images/csddepartment/csdTechFaculty/kavya-csd.jpg";
+import chethanKumar from "../../assets/images/csddepartment/csdTechFaculty/chethan-csd.jpg";
 import event1Image from "../../assets/images/csddepartment/CSD-EVENTS/CSD-EVENTS-1.jpeg";
 import event2Image from "../../assets/images/csddepartment/CSD-EVENTS/CSD-EVENTS-2.jpeg";
 import event3Image from "../../assets/images/csddepartment/CSD-EVENTS/CSD-EVENTS-3.jpeg";

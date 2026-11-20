@@ -1,12 +1,12 @@
 import bannerImage from "../../assets/images/Mathematicsdepartment/math-banner.png";
 import mathBanner from "../../assets/images/Mathematicsdepartment/math-banner1.jpg";
 import labImage from "../../assets/images/Mathematicsdepartment/math-lab.png";
-import hodImage from "../../assets/images/Mathematicsdepartment/Dr-Deepthy.png";
-import manjulaImage from "../../assets/images/Mathematicsdepartment/Manjula.png";
-import kiranImage from "../../assets/images/Mathematicsdepartment/Kiran-Gowda.png";
-import chaitraImage from "../../assets/images/Mathematicsdepartment/Chaitra.png";
+import hodImage from "../../assets/images/Mathematicsdepartment/Dr-Deepthy.jpg";
+import manjulaImage from "../../assets/images/Mathematicsdepartment/manjula-maths.jpg";
+import kiranImage from "../../assets/images/Mathematicsdepartment/kiran-maths.jpg";
+import chaitraImage from "../../assets/images/Mathematicsdepartment/Chaitra-maths.jpg";
 import naveenImage from "../../assets/images/Mathematicsdepartment/naveen.png";
-import bhavyaImage from "../../assets/images/Mathematicsdepartment/Bhavya.png";
+import bhavyaImage from "../../assets/images/Mathematicsdepartment/bhavya-maths.jpg";
 import type { UGDepartmentData } from "../../types/ugprograms";
 
 const mathematicsDepartment: UGDepartmentData = {

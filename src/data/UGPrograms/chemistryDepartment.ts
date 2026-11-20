@@ -1,9 +1,9 @@
 import bannerImage from "../../assets/images/Chemistrydepartment/chem-lab.png";
 import chemBanner from "../../assets/images/Chemistrydepartment/chem-banner.jpg";
 import labImage from "../../assets/images/Chemistrydepartment/chem-lab.png";
-import shivaKumar from "../../assets/images/Chemistrydepartment/Shivakumar.png";
-import hodImage from "../../assets/images/Chemistrydepartment/Dr-Vinay-KumarB.png";
-import sangeethaImage from "../../assets/images/Chemistrydepartment/Dr-Sangeetha.png";
+import shivaKumar from "../../assets/images/Chemistrydepartment/shivakumar-chem.jpg";
+import hodImage from "../../assets/images/Chemistrydepartment/vinay-chem.jpg";
+import sangeethaImage from "../../assets/images/Chemistrydepartment/sangeetha-chem.jpg";
 import type { UGDepartmentData } from "../../types/ugprograms";
 
 const chemistryDepartment: UGDepartmentData = {

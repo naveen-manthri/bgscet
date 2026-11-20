@@ -24,9 +24,11 @@ function LeadershipMessage({ title, variant, data }: LeadershipMessageProps) {
 
       <div className="leadership-message__top">
         <div className="leadership-message__content">
-          <figure className="leadership-message__image-wrapper image-hover-container">
-            <img className="leadership-message__image image-hover-scale" src={image} alt={imageAlt} />
-            <figcaption className="guru-card__caption">{name}</figcaption>
+          <figure className="leadership-message__image-wrapper">
+            <div className="leadership-message__image-frame image-hover-container">
+              <img className="leadership-message__image image-hover-scale" src={image} alt={imageAlt} />
+            </div>
+            <figcaption className="leadership-message__caption">{name}</figcaption>
           </figure>
           <div className="leadership-message__description">
             {topParagraphs.map((paragraph, index) => (

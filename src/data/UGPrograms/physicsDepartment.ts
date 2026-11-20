@@ -1,9 +1,9 @@
 import bannerImage from "../../assets/images/Physicsdepartment/phy-banner.png";
 import physicBanner from "../../assets/images/Physicsdepartment/physics-banner.jpg";
 import labImage from "../../assets/images/Physicsdepartment/phy-lab.png";
-import hodImage from "../../assets/images/Physicsdepartment/Dr-Ambika.png";
+import hodImage from "../../assets/images/Physicsdepartment/ambhika-phy.jpg";
 // import neetaImage from "../../assets/images/Physicsdepartment/Dr-Neeta-Shukla.png";
-import vinodKumar from "../../assets/images/Physicsdepartment/Dr-Vinod.jpeg";
+import vinodKumar from "../../assets/images/Physicsdepartment/vinod-phy.jpg";
 
 import type { UGDepartmentData } from "../../types/ugprograms";
 

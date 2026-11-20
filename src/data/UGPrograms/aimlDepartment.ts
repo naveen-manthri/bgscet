@@ -1,17 +1,17 @@
 import careerImage from "../../assets/images/csedepartment/career-opportunities.jpg";
 import aimlBannerImage from "../../assets/images/aimldepartment/aiml-banner.png";
 import aimlBannerImage1 from "../../assets/images/aimldepartment/aiml-banner1.jpg";
-import laxmi from "../../assets/images/aimldepartment/Laxmi.jpg";
+import laxmi from "../../assets/images/aimldepartment/aimlFaculty/laxmi-aiml.jpg";
 // import nishitaNMurthy from "../../assets/images/aimldepartment/Nishita N Murthy.png";
-import pratyakshaS from "../../assets/images/aimldepartment/Pratyaksha S.jpeg";
+import pratyakshaS from "../../assets/images/aimldepartment/aimlFaculty/prathyaksha-aiml.jpg";
 // import drMadhuraGangaiah from "../../assets/images/aimldepartment/Dr.-Madhura-Gangaiah.jpg";
-import drManjulaL from "../../assets/images/aimldepartment/Dr. Manjula L.jpeg";
-import msVandanaSSardar from "../../assets/images/aimldepartment/Ms.-Vandana-S-Sardar.jpg";
-import hod from "../../assets/images/aimldepartment/Dr.JalajaG.jpg";
-import hemadarshi from "../../assets/images/aimldepartment/hemadarshini.jpeg";
-import lakshmi from "../../assets/images/aimldepartment/lakshmiG.jpeg";
-import narendra from "../../assets/images/aimldepartment/narendraKumar.png";
-import ravikiran from "../../assets/images/aimldepartment/Dr-Ravikiran-H-K.jpeg";
+import drManjulaL from "../../assets/images/aimldepartment/aimlFaculty/Manjula-AIML.jpg";
+import msVandanaSSardar from "../../assets/images/aimldepartment/aimlFaculty/vandhana-aiml.jpg";
+import hod from "../../assets/images/aimldepartment/aimlFaculty/Jalaja-aiml.jpg";
+import hemadarshi from "../../assets/images/aimldepartment/aimlFaculty/hemadarshini-aiml.jpg";
+import lakshmi from "../../assets/images/aimldepartment/aimlFaculty/lakshmiG-aiml.jpg";
+import narendra from "../../assets/images/aimldepartment/aimlFaculty/narendraKumar.png";
+import ravikiran from "../../assets/images/aimldepartment/aimlFaculty/ravikiran-aiml.jpg";
 import event1Image from "../../assets/images/aimldepartment/AIML-EVENTS/AIML-EVENT-1.jpeg";
 import event2Image from "../../assets/images/aimldepartment/AIML-EVENTS/AIML-EVENT-2.jpg";
 import event3Image from "../../assets/images/aimldepartment/AIML-EVENTS/AIML-EVENT-3.jpg";
@@ -38,9 +38,9 @@ import pySpark from "../../assets/images/aimldepartment/AIML-EVENTS/pyspark.jpeg
 
 import monica from "../../assets/images/aimldepartment/AIML-TECHFACULTY/Monica.png";
 import akshata from "../../assets/images/aimldepartment/AIML-TECHFACULTY/Akshata.jpg";
-import ranjitha from "../../assets/images/aimldepartment/AIML-TECHFACULTY/ranjitha_sbgscet.png";
-import rithika from "../../assets/images/aimldepartment/AIML-TECHFACULTY/Rithika.jpeg";
-import harshitha from "../../assets/images/aimldepartment/AIML-TECHFACULTY/Harshitha-AIML.jpeg";
+import ranjitha from "../../assets/images/aimldepartment/AIML-TECHFACULTY/ranjitha_sbgscet.jpg";
+import rithika from "../../assets/images/aimldepartment/AIML-TECHFACULTY/Rithika.jpg";
+import harshitha from "../../assets/images/aimldepartment/AIML-TECHFACULTY/Harshitha-AIML.jpg";
 
 import type {
   DepartmentTab,
@@ -225,28 +225,29 @@ export const facultyMembers: FacultyMember[] = [
 
 
 export const technicalFacultyMembers: FacultyMember[] = [
+  
   {
     id: 1,
-    image: akshata,
-    name: "Akshata S Aiholli",
-    designation: "Programmer",
-  },
-  {
-    id: 2,
     image: harshitha,
     name: "Ms Harshitha",
     designation: "Programmer",
   },
   {
-    id: 3,
+    id: 2,
     image: ranjitha,
     name: "Ranjitha S",
     designation: "Programmer",
   },
   {
-    id: 4,
+    id: 3,
     image: rithika,
     name: "Rithika C K",
+    designation: "Programmer",
+  },
+  {
+    id: 4,
+    image: akshata,
+    name: "Akshata S Aiholli",
     designation: "Programmer",
   },
   {

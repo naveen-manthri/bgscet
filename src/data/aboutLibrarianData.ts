@@ -1,7 +1,7 @@
 import type { AboutLibrarianData } from "../types/aboutLibrarian";
 
-import librarianImage from "../assets/images/library/Mr. Channakeshavappa.D.png";
-import assistantLibrarianImage from "../assets/images/library/Mrs-Ramya.png";
+import librarianImage from "../assets/images/library/chanakeshava-lib.jpg";
+import assistantLibrarianImage from "../assets/images/library/ramya-lib.jpg";
 
 export const aboutLibrarianData: AboutLibrarianData = {
   title: "ABOUT LIBRARIAN",

@@ -60,7 +60,7 @@
   padding: 0;
   border: 0.08rem solid var(--border);
   border-radius: var(--radius);
-  background: var(--surface);
+  /* background: var(--surface); */
   box-shadow: var(--shadow-soft);
   user-select: none;
   overflow: hidden;

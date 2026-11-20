@@ -28,7 +28,11 @@
   margin: 0 0 var(--para-desc-gap) clamp(1.5rem, 3vw, 2.5rem);
 }
 
-.leadership-message__image-wrapper .guru-card__caption {
+.leadership-message__image-frame {
+  border-radius: var(--guru-image-radius);
+}
+
+.leadership-message__image-wrapper .leadership-message__caption {
   width: 100%;
   max-width: none;
   margin-top: 1rem;
@@ -93,7 +97,7 @@
     margin: 0;
   }
 
-  .leadership-message__image-wrapper .guru-card__caption {
+  .leadership-message__image-wrapper .leadership-message__caption {
     width: 100%;
     max-width: none;
   }

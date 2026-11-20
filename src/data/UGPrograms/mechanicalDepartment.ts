@@ -1,8 +1,8 @@
 import bannerImage from "../../assets/images/mechanicalEngg/mech-banner.png";
 import mechBanner from "../../assets/images/mechanicalEngg/mech-banner1.jpg";
-import hodImage from "../../assets/images/mechanicalEngg/hod.png";
-import channaImage from "../../assets/images/mechanicalEngg/Dr-Channa-Keshava.png";
-import tejasImage from "../../assets/images/mechanicalEngg/Tejas.png";
+import hodImage from "../../assets/images/mechanicalEngg/nithin-mech.jpg";
+import channaImage from "../../assets/images/mechanicalEngg/chennakeshava-mech.jpg";
+import tejasImage from "../../assets/images/mechanicalEngg/keshav-mech.jpg";
 import type { UGDepartmentData } from "../../types/ugprograms";
 
 const mechanicalDepartment: UGDepartmentData = {

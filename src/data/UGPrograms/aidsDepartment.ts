@@ -2,14 +2,14 @@ import careerImage from "../../assets/images/csedepartment/career-opportunities.
 
 import aidsBannerImage from "../../assets/images/aidsdepartment/aids-banner.png";
 import aidsBanner1 from "../../assets/images/aidsdepartment/aids-banner1.jpg";
-import ashwiniR from "../../assets/images/aidsdepartment/ASHWINI-R.jpeg";
-import drChandiniAG from "../../assets/images/aidsdepartment/Dr. Chandini-A-G.jpeg";
-import manjunathaEC from "../../assets/images/aidsdepartment/MANJUNATHA-E-C.jpeg";
-import sushmaM from "../../assets/images/aidsdepartment/SUSHMA-M.jpeg";
-import sindhuG from "../../assets/images/aidsdepartment/SINDHU-G.jpeg";
-import mrsMamatha from "../../assets/images/aidsdepartment/Mrs-Mamatha.jpeg";
-import padma from "../../assets/images/aidsdepartment/padmaKarekere.jpeg";
-import hod from "../../assets/images/aidsdepartment/Parvathi.jpeg";
+import ashwiniR from "../../assets/images/aidsdepartment/aidsFaculty/ashwini-aids.jpg";
+import drChandiniAG from "../../assets/images/aidsdepartment/aidsFaculty/chandini-aids.jpg";
+import manjunathaEC from "../../assets/images/aidsdepartment/aidsFaculty/manjunath-aids.jpg";
+import sushmaM from "../../assets/images/aidsdepartment/aidsFaculty/sushma-aids.jpg";
+import sindhuG from "../../assets/images/aidsdepartment/aidsFaculty/sindhu-aids.jpg";
+import mrsMamatha from "../../assets/images/aidsdepartment/aidsFaculty/mamatha-aids.jpg";
+import padma from "../../assets/images/aidsdepartment/aidsFaculty/padma-aids.jpg";
+import hod from "../../assets/images/aidsdepartment/aidsFaculty/Parvathi.jpg";
 import event1Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-1.jpeg";
 import event2Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-2.jpeg";
 import event3Image from "../../assets/images/aidsdepartment/AI-DS-EVENTS/AI-DS-EVENT-3.jpeg";
@@ -47,7 +47,7 @@ import rangoliEventManiaImage from "../../assets/images/aidsdepartment/AI-DS-ACH
 import debateEventManiaImage from "../../assets/images/aidsdepartment/AI-DS-ACHIEVEMENTS/Debate-Competition-event-mania.png";
 import soloWesternDanceImage from "../../assets/images/aidsdepartment/AI-DS-ACHIEVEMENTS/Solo-Western-Dance-Compt-1.png";
 import niveditha from "../../assets/images/aidsdepartment/AI-DS-TECHFACULTY/Niveditha.jpeg";
-import sindu from "../../assets/images/aidsdepartment/AI-DS-TECHFACULTY/Sindhu.jpeg";
+import sindu from "../../assets/images/aidsdepartment/AI-DS-TECHFACULTY/Sindhu.jpg";
 
 import type {
   DepartmentTab,

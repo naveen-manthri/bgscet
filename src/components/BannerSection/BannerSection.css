@@ -207,7 +207,7 @@
 
 .home-hero__text-wrap {
   position: absolute;
-  top: 28%;
+  top: 35%;
   left: 4rem;
   z-index: 2;
   width: min(48rem, 48%);
