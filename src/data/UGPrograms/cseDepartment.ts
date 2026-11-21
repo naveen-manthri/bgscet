@@ -59,7 +59,7 @@ import aiNative from "../../assets/images/csedepartment/CSE-EVENTS/aiNative-soft
 import sahana from "../../assets/images/csedepartment/cseTechFaculty/sahana-CSE.jpeg";
 // import pooja from "../../assets/images/csedepartment/cseTechFaculty/Pooja-CSE.jpg";
 // import soumya from "../../assets/images/csedepartment/cseTechFaculty/soumya-CSE.jpeg";
-import vinayak from "../../assets/images/csedepartment/cseTechFaculty/Vinayak.jpeg";
+import vinayak from "../../assets/images/csedepartment/cseTechFaculty/Vinayak-cse.jpg";
 import bhoomika from "../../assets/images/csedepartment/cseTechFaculty/Bhoomika.jpg";
 import supriya from "../../assets/images/csedepartment/cseTechFaculty/SUPRIYA.jpg";
 import ankitha from "../../assets/images/csedepartment/cseTechFaculty/ankithaMoreB.jpg";
@@ -289,12 +289,7 @@ export const facultyMembers: FacultyMember[] = [
 
 
 export const technicalFacultyMembers: FacultyMember[] = [
-  {
-    id: 1,
-    image: sahana,
-    name: "Sahana S Gatti",
-    designation: "Programmer",
-  },
+  
   // {
   //   id: 2,
   //   image: pooja,
@@ -308,29 +303,36 @@ export const technicalFacultyMembers: FacultyMember[] = [
   //   designation: "Programmer",
   // },
   {
-    id: 2,
+    id: 1,
     image: vinayak,
     name: "Vinayak P H",
     designation: "System Administrator",
   },
   {
-    id: 3,
-    image: bhoomika,
-    name: "Bhoomika",
-    designation: "-",
-  },
-  {
-    id: 4,
+    id: 2,
     image: supriya,
     name: "SUPRIYA M S",
     designation: "Programmer",
   },
   {
-    id: 5,
+    id: 3,
     image: ankitha,
     name: "Ankitha More B",
     designation: "Programmer",
   },
+  {
+    id: 4,
+    image: sahana,
+    name: "Sahana S Gatti",
+    designation: "Programmer",
+  },
+  {
+    id: 5,
+    image: bhoomika,
+    name: "Bhoomika",
+    designation: "-",
+  },
+  
   {
     id: 6,
     image: Saahithi,
