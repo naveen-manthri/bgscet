@@ -330,7 +330,7 @@ export const technicalFacultyMembers: FacultyMember[] = [
     id: 5,
     image: bhoomika,
     name: "Bhoomika",
-    designation: "-",
+    designation: "Programmer",
   },
   
   {
