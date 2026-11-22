@@ -59,7 +59,7 @@ import aiNative from "../../assets/images/csedepartment/CSE-EVENTS/aiNative-soft
 import sahana from "../../assets/images/csedepartment/cseTechFaculty/sahana-CSE.jpeg";
 // import pooja from "../../assets/images/csedepartment/cseTechFaculty/Pooja-CSE.jpg";
 // import soumya from "../../assets/images/csedepartment/cseTechFaculty/soumya-CSE.jpeg";
-import vinayak from "../../assets/images/csedepartment/cseTechFaculty/Vinayak-cse.jpg";
+import vinayak from "../../assets/images/csedepartment/cseTechFaculty/vinayak-cse.jpg";
 import bhoomika from "../../assets/images/csedepartment/cseTechFaculty/Bhoomika.jpg";
 import supriya from "../../assets/images/csedepartment/cseTechFaculty/SUPRIYA.jpg";
 import ankitha from "../../assets/images/csedepartment/cseTechFaculty/ankithaMoreB.jpg";
