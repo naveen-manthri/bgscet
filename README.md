@@ -11,6 +11,14 @@ Currently, two official plugins are available:
 
 The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
+## Form email notifications (FormSubmit.co)
+
+The enquiry form (and `ContactForm`) post natively to [FormSubmit.co](https://formsubmit.co/documentation), which emails each submission to the site owner as a table (`_template=table`). No backend or SMTP is used.
+
+- The owner email lives in `src/config/formSubmit.ts`; override it with `VITE_FORMSUBMIT_RECIPIENT` (`.env.local`, or Vercel environment variables).
+- The first submission sends an activation email to that address. The owner must click the activation link before notifications start arriving.
+- After submitting, visitors are redirected to `/thank-you` (`_next`). FormSubmit shows its own reCAPTCHA page on submissions.
+
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:

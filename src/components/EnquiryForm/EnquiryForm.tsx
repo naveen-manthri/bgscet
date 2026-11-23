@@ -3,6 +3,8 @@ import { createPortal } from "react-dom";
 import "./EnquiryForm.css";
 import type { EnquiryFormData, EnquiryFormProps } from "../../types/enquiry";
 import { initialEnquiryFormData } from "../../data/enquiryData";
+import { FORMSUBMIT_ENDPOINT } from "../../config/formSubmit";
+import FormSubmitFields from "../FormSubmitFields/FormSubmitFields";
 
 declare global {
   interface Window {
@@ -133,15 +135,13 @@ const EnquiryForm: React.FC<EnquiryFormProps> = ({ isOpen, onClose }) => {
   };
 
   const handleEnquirySubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    if (!captchaVerified) return;
-    console.log({ ...formData, acceptedTerms });
-    alert("Form Submitted Successfully!");
-    setFormData(initialEnquiryFormData);
-    setAcceptedTerms(false);
-    setCaptchaVerified(false);
-    if (captchaWidgetId.current !== null) window.grecaptcha?.reset(captchaWidgetId.current);
-    onClose();
+    // Block the native POST until the existing reCAPTCHA is solved; otherwise FormSubmit receives it.
+    if (!captchaVerified) {
+      event.preventDefault();
+      return;
+    }
+    // Google's widget injects a token textarea into the form; keep it out of the email table.
+    event.currentTarget.querySelector<HTMLTextAreaElement>('[name="g-recaptcha-response"]')?.setAttribute("disabled", "");
   };
 
   if (!isOpen) return null;
@@ -158,7 +158,8 @@ const EnquiryForm: React.FC<EnquiryFormProps> = ({ isOpen, onClose }) => {
         </h2>
         <div className="enquiry-form__underline" />
 
-        <form className="enquiry-form__form flex flex-column" onSubmit={handleEnquirySubmit}>
+        <form className="enquiry-form__form flex flex-column" action={FORMSUBMIT_ENDPOINT} method="POST" onSubmit={handleEnquirySubmit}>
+          <FormSubmitFields formName="Enquiry Form" />
           <input ref={firstInputRef} className="enquiry-form__input" type="text" name="name" placeholder="Name" value={formData.name} onChange={handleInputChange} required />
           <input className="enquiry-form__input" type="tel" name="mobile" placeholder="Mobile Number" value={formData.mobile} onChange={handleInputChange} required />
           <input className="enquiry-form__input" type="email" name="email" placeholder="Email ID" value={formData.email} onChange={handleInputChange} required />
@@ -166,7 +167,7 @@ const EnquiryForm: React.FC<EnquiryFormProps> = ({ isOpen, onClose }) => {
           <textarea className="enquiry-form__textarea" name="notes" placeholder="Notes" rows={5} value={formData.notes} onChange={handleInputChange} />
 
           <label className="enquiry-form__terms flex flex-align-start">
-            <input type="checkbox" checked={acceptedTerms} onChange={(event) => setAcceptedTerms(event.target.checked)} required />
+            <input type="checkbox" name="Accepted Terms" value="Yes" checked={acceptedTerms} onChange={(event) => setAcceptedTerms(event.target.checked)} required />
             <span>By clicking submit you are agreeing to our terms and conditions and privacy policy.</span>
           </label>
 

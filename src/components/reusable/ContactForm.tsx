@@ -1,15 +1,7 @@
-import { useState } from 'react';
-import type { FormEvent } from 'react';
+import { FORMSUBMIT_ENDPOINT } from '../../config/formSubmit';
+import FormSubmitFields from '../FormSubmitFields/FormSubmitFields';
 
 function ContactForm() {
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);
-  };
-
   return (
     <div className="contact-form-card">
       <h3 className="mb-3">Send Us a Message</h3>
@@ -17,33 +9,29 @@ function ContactForm() {
         Our admissions and support team will get back to you within 24 hours.
       </p>
 
-      <form onSubmit={handleSubmit}>
+      <form action={FORMSUBMIT_ENDPOINT} method="POST">
+        <FormSubmitFields formName="Contact Form" />
         <div className="row g-3">
           <div className="col-md-6">
-            <input type="text" className="form-control" placeholder="Your Name" required />
+            <input type="text" name="Name" className="form-control" placeholder="Your Name" required />
           </div>
           <div className="col-md-6">
-            <input type="email" className="form-control" placeholder="Your Email" required />
+            <input type="email" name="email" className="form-control" placeholder="Your Email" required />
           </div>
           <div className="col-md-6">
-            <input type="tel" className="form-control" placeholder="Phone Number" required />
+            <input type="tel" name="Phone" className="form-control" placeholder="Phone Number" required />
           </div>
           <div className="col-md-6">
-            <input type="text" className="form-control" placeholder="Subject" required />
+            <input type="text" name="Subject" className="form-control" placeholder="Subject" required />
           </div>
           <div className="col-12">
-            <textarea className="form-control" rows={5} placeholder="Type your message..." required />
+            <textarea name="Message" className="form-control" rows={5} placeholder="Type your message..." required />
           </div>
           <div className="col-12 d-grid d-md-inline-block">
             <button className="btn btn-brand-primary" type="submit">
               Submit Inquiry
             </button>
           </div>
-          {submitted && (
-            <div className="col-12">
-              <div className="alert alert-success mb-0">Thank you! Your message has been submitted.</div>
-            </div>
-          )}
         </div>
       </form>
     </div>

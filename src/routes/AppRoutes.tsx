@@ -44,6 +44,7 @@ const SCSTCellPage = lazy(() => import('../pages/SCSTCellPage'));
 const GrievanceRedressalCellPage = lazy(() => import('../pages/GrievanceRedressalCellPage'));
 const NDLIClubPage = lazy(() => import('../pages/NDLIClubPage'));
 const YRCClubPage = lazy(() => import('../pages/YRCClubPage'));
+const ThankYouPage = lazy(() => import('../pages/ThankYouPage'));
 const NotFoundPage = lazy(() => import('../pages/NotFoundPage'));
 
 function AppRoutes() {
@@ -99,6 +100,7 @@ function AppRoutes() {
           <Route path="quick-links/ndli-club" element={<NDLIClubPage />} />
           <Route path="quick-links/yrc-club" element={<YRCClubPage />} />
           <Route path="advaya-2-0-2k26" element={<AdvayaPage />} />
+          <Route path="thank-you" element={<ThankYouPage />} />
           <Route path="404" element={<NotFoundPage />} />
           <Route path="*" element={<Navigate to="/404" replace />} />
         </Route>
